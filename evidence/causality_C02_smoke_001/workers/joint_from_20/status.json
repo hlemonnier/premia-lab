@@ -1,0 +1,28 @@
+{
+  "status": "running",
+  "started_utc": "2026-10-26T19:41:43.791233+00:00",
+  "scenario": {
+    "name": "joint_from_20",
+    "kind": "suffix",
+    "cutoff": 20,
+    "mode": "joint",
+    "forecast_count": 21,
+    "earning_day_limit": 20,
+    "score_day_exclusive": 20
+  },
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/causality_C02_smoke_001/worker_used.py --worker /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/causality_C02_smoke_001/manifests/joint_from_20.json",
+  "process_controls": {
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "cpu_affinity": [
+      8
+    ]
+  },
+  "returned_by_scorer": false
+}

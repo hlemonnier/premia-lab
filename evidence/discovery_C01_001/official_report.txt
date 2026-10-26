@@ -1,0 +1,1 @@
+C01_linear             sharpe  0.62   return   4.3%/yr   vol  6.9%   beta  0.02   cost 0.65%/yr   gross 0.96   forecast 10.5s (0.04 h per century)   rebalance 17.5 ms/call

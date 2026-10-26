@@ -40,4 +40,15 @@ Plan and execute a disciplined, source-grounded quantitative research take-home 
 
 ## Next gate
 
-Freeze C01/C02 specifications before their first runs, complete configuration-aware causal workflow support, then execute the unchanged scorer on discovery only. Count every selectable pipeline in the experiment ledger. Validation and locked audit remain unopened.
+## First executed candidate wave
+
+- C01/C02 specifications preceded implementation. Both configured causality smoke002 runs completed28 fresh-process scenarios with exact protected equality. The earlier smoke001 runs were interrupted during a harness instrumentation revision and remain explicitly incomplete, not passes.
+- C04's new factor solver had its failure plan and73-check verifier written before implementation, with expected red evidence. Independent review prompted a zero-cap numerical-edge correction; the unchanged verifier passed73 checks again. Full discovery later completed without solver fallback.
+- Four preregistered discovery pipelines completed the unchanged official scorer: net Sharpes C01=0.622345, C02=0.637567, C03=0.106491, C04=0.654213. All realized net market betas were between0.0076 and0.0282. Each run has20 recorded workflow checks and full-fee/target reconciliation. These are development-sample results, not clean future estimates.
+- Faster forgetting was worse even before costs. Additive curvature and the factor risk model delivered only tiny pooled net gains. Gross scaling was active on63–97% of calls, a material implementation approximation rather than a rare safety event.
+- Admitted bounded second-wave tests C05/C06 for covariance-weighted alpha learning, C07 for exact joint gross constraints, and C08 for a simpler higher-risk-aversion sizing control. All decisions precede their results. Eight total slots reserved, four scored so far, within the fixed twelve.
+- Published planning, diagnostics and component evidence to the private GitHub main branch as0fdf79e. Imported its verified Git objects locally and preserved the two original local checkpoint commits and recovery commit on `recovered-checkpoints` before aligning main to the identical published tree.
+
+## Next gate
+
+Complete the second-wave contrasts and independent comparison review. Decide which research direction has earned further work before finalist freeze. Validation and locked audit remain unopened.

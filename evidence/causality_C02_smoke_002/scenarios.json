@@ -1,0 +1,248 @@
+[
+  {
+    "name": "baseline",
+    "kind": "baseline",
+    "forecast_count": 600,
+    "earning_day_limit": 599,
+    "score_day_exclusive": 599
+  },
+  {
+    "name": "repeat",
+    "kind": "repeat",
+    "forecast_count": 600,
+    "earning_day_limit": 599,
+    "score_day_exclusive": 599
+  },
+  {
+    "name": "returns_from_0",
+    "kind": "suffix",
+    "cutoff": 0,
+    "mode": "returns",
+    "forecast_count": 1,
+    "earning_day_limit": 0,
+    "score_day_exclusive": 0
+  },
+  {
+    "name": "characteristics_from_0",
+    "kind": "suffix",
+    "cutoff": 0,
+    "mode": "characteristics",
+    "forecast_count": 1,
+    "earning_day_limit": 0,
+    "score_day_exclusive": 0
+  },
+  {
+    "name": "joint_from_0",
+    "kind": "suffix",
+    "cutoff": 0,
+    "mode": "joint",
+    "forecast_count": 1,
+    "earning_day_limit": 0,
+    "score_day_exclusive": 0
+  },
+  {
+    "name": "returns_from_20",
+    "kind": "suffix",
+    "cutoff": 20,
+    "mode": "returns",
+    "forecast_count": 21,
+    "earning_day_limit": 20,
+    "score_day_exclusive": 20
+  },
+  {
+    "name": "characteristics_from_20",
+    "kind": "suffix",
+    "cutoff": 20,
+    "mode": "characteristics",
+    "forecast_count": 21,
+    "earning_day_limit": 20,
+    "score_day_exclusive": 20
+  },
+  {
+    "name": "joint_from_20",
+    "kind": "suffix",
+    "cutoff": 20,
+    "mode": "joint",
+    "forecast_count": 21,
+    "earning_day_limit": 20,
+    "score_day_exclusive": 20
+  },
+  {
+    "name": "returns_from_21",
+    "kind": "suffix",
+    "cutoff": 21,
+    "mode": "returns",
+    "forecast_count": 22,
+    "earning_day_limit": 21,
+    "score_day_exclusive": 21
+  },
+  {
+    "name": "characteristics_from_21",
+    "kind": "suffix",
+    "cutoff": 21,
+    "mode": "characteristics",
+    "forecast_count": 22,
+    "earning_day_limit": 21,
+    "score_day_exclusive": 21
+  },
+  {
+    "name": "joint_from_21",
+    "kind": "suffix",
+    "cutoff": 21,
+    "mode": "joint",
+    "forecast_count": 22,
+    "earning_day_limit": 21,
+    "score_day_exclusive": 21
+  },
+  {
+    "name": "returns_from_127",
+    "kind": "suffix",
+    "cutoff": 127,
+    "mode": "returns",
+    "forecast_count": 128,
+    "earning_day_limit": 127,
+    "score_day_exclusive": 127
+  },
+  {
+    "name": "characteristics_from_127",
+    "kind": "suffix",
+    "cutoff": 127,
+    "mode": "characteristics",
+    "forecast_count": 128,
+    "earning_day_limit": 127,
+    "score_day_exclusive": 127
+  },
+  {
+    "name": "joint_from_127",
+    "kind": "suffix",
+    "cutoff": 127,
+    "mode": "joint",
+    "forecast_count": 128,
+    "earning_day_limit": 127,
+    "score_day_exclusive": 127
+  },
+  {
+    "name": "returns_from_252",
+    "kind": "suffix",
+    "cutoff": 252,
+    "mode": "returns",
+    "forecast_count": 253,
+    "earning_day_limit": 252,
+    "score_day_exclusive": 252
+  },
+  {
+    "name": "characteristics_from_252",
+    "kind": "suffix",
+    "cutoff": 252,
+    "mode": "characteristics",
+    "forecast_count": 253,
+    "earning_day_limit": 252,
+    "score_day_exclusive": 252
+  },
+  {
+    "name": "joint_from_252",
+    "kind": "suffix",
+    "cutoff": 252,
+    "mode": "joint",
+    "forecast_count": 253,
+    "earning_day_limit": 252,
+    "score_day_exclusive": 252
+  },
+  {
+    "name": "returns_from_253",
+    "kind": "suffix",
+    "cutoff": 253,
+    "mode": "returns",
+    "forecast_count": 254,
+    "earning_day_limit": 253,
+    "score_day_exclusive": 253
+  },
+  {
+    "name": "characteristics_from_253",
+    "kind": "suffix",
+    "cutoff": 253,
+    "mode": "characteristics",
+    "forecast_count": 254,
+    "earning_day_limit": 253,
+    "score_day_exclusive": 253
+  },
+  {
+    "name": "joint_from_253",
+    "kind": "suffix",
+    "cutoff": 253,
+    "mode": "joint",
+    "forecast_count": 254,
+    "earning_day_limit": 253,
+    "score_day_exclusive": 253
+  },
+  {
+    "name": "returns_from_254",
+    "kind": "suffix",
+    "cutoff": 254,
+    "mode": "returns",
+    "forecast_count": 255,
+    "earning_day_limit": 254,
+    "score_day_exclusive": 254
+  },
+  {
+    "name": "characteristics_from_254",
+    "kind": "suffix",
+    "cutoff": 254,
+    "mode": "characteristics",
+    "forecast_count": 255,
+    "earning_day_limit": 254,
+    "score_day_exclusive": 254
+  },
+  {
+    "name": "joint_from_254",
+    "kind": "suffix",
+    "cutoff": 254,
+    "mode": "joint",
+    "forecast_count": 255,
+    "earning_day_limit": 254,
+    "score_day_exclusive": 254
+  },
+  {
+    "name": "returns_from_400",
+    "kind": "suffix",
+    "cutoff": 400,
+    "mode": "returns",
+    "forecast_count": 401,
+    "earning_day_limit": 400,
+    "score_day_exclusive": 400
+  },
+  {
+    "name": "characteristics_from_400",
+    "kind": "suffix",
+    "cutoff": 400,
+    "mode": "characteristics",
+    "forecast_count": 401,
+    "earning_day_limit": 400,
+    "score_day_exclusive": 400
+  },
+  {
+    "name": "joint_from_400",
+    "kind": "suffix",
+    "cutoff": 400,
+    "mode": "joint",
+    "forecast_count": 401,
+    "earning_day_limit": 400,
+    "score_day_exclusive": 400
+  },
+  {
+    "name": "prefix_384",
+    "kind": "prefix",
+    "length": 384,
+    "forecast_count": 384,
+    "earning_day_limit": 383,
+    "score_day_exclusive": 383
+  },
+  {
+    "name": "synthetic_append_64",
+    "kind": "append",
+    "append_days": 64,
+    "forecast_count": 600,
+    "earning_day_limit": 599,
+    "score_day_exclusive": 599
+  }
+]

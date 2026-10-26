@@ -1,0 +1,57 @@
+Causality E2E: starting baseline in a fresh interpreter
+Causality E2E: baseline: REFERENCE_COMPLETED
+Causality E2E: starting repeat in a fresh interpreter
+Causality E2E: repeat: PASS
+Causality E2E: starting returns_from_0 in a fresh interpreter
+Causality E2E: returns_from_0: PASS
+Causality E2E: starting characteristics_from_0 in a fresh interpreter
+Causality E2E: characteristics_from_0: PASS
+Causality E2E: starting joint_from_0 in a fresh interpreter
+Causality E2E: joint_from_0: PASS
+Causality E2E: starting returns_from_20 in a fresh interpreter
+Causality E2E: returns_from_20: PASS
+Causality E2E: starting characteristics_from_20 in a fresh interpreter
+Causality E2E: characteristics_from_20: PASS
+Causality E2E: starting joint_from_20 in a fresh interpreter
+Causality E2E: joint_from_20: PASS
+Causality E2E: starting returns_from_21 in a fresh interpreter
+Causality E2E: returns_from_21: PASS
+Causality E2E: starting characteristics_from_21 in a fresh interpreter
+Causality E2E: characteristics_from_21: PASS
+Causality E2E: starting joint_from_21 in a fresh interpreter
+Causality E2E: joint_from_21: PASS
+Causality E2E: starting returns_from_127 in a fresh interpreter
+Causality E2E: returns_from_127: PASS
+Causality E2E: starting characteristics_from_127 in a fresh interpreter
+Causality E2E: characteristics_from_127: PASS
+Causality E2E: starting joint_from_127 in a fresh interpreter
+Causality E2E: joint_from_127: PASS
+Causality E2E: starting returns_from_252 in a fresh interpreter
+Causality E2E: returns_from_252: PASS
+Causality E2E: starting characteristics_from_252 in a fresh interpreter
+Causality E2E: characteristics_from_252: PASS
+Causality E2E: starting joint_from_252 in a fresh interpreter
+Causality E2E: joint_from_252: PASS
+Causality E2E: starting returns_from_253 in a fresh interpreter
+Causality E2E: returns_from_253: PASS
+Causality E2E: starting characteristics_from_253 in a fresh interpreter
+Causality E2E: characteristics_from_253: PASS
+Causality E2E: starting joint_from_253 in a fresh interpreter
+Causality E2E: joint_from_253: PASS
+Causality E2E: starting returns_from_254 in a fresh interpreter
+Causality E2E: returns_from_254: PASS
+Causality E2E: starting characteristics_from_254 in a fresh interpreter
+Causality E2E: characteristics_from_254: PASS
+Causality E2E: starting joint_from_254 in a fresh interpreter
+Causality E2E: joint_from_254: PASS
+Causality E2E: starting returns_from_400 in a fresh interpreter
+Causality E2E: returns_from_400: PASS
+Causality E2E: starting characteristics_from_400 in a fresh interpreter
+Causality E2E: characteristics_from_400: PASS
+Causality E2E: starting joint_from_400 in a fresh interpreter
+Causality E2E: joint_from_400: PASS
+Causality E2E: starting prefix_384 in a fresh interpreter
+Causality E2E: prefix_384: PASS
+Causality E2E: starting synthetic_append_64 in a fresh interpreter
+Causality E2E: synthetic_append_64: PASS
+Causality E2E finished: EXECUTED_PASS_SCOPE_ONLY; evidence /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/causality_C02_smoke_002
