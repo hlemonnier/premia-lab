@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+cache/
+scratch/
+*.zip
+*.npy
+*.npz
+source/**/returns.csv
+source/**/characteristics.csv
+source/**/figures/
+source/**/.*
+evidence/preflight_002/inputs/
+evidence/**/.*
+evidence/**/daily_diagnostics.csv
+

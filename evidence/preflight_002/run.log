@@ -1,0 +1,26 @@
+{"name": "source_file_count", "status": "PASS", "actual": 12}
+{"name": "archive_content_integrity", "status": "PASS", "actual": {"matched_members": 12}}
+{"name": "returns_shape", "status": "PASS", "actual": [3780, 1000]}
+{"name": "returns_day_keys", "status": "PASS", "actual": {"first": 1, "last": 3780, "unique": true}}
+{"name": "returns_stock_keys_unique", "status": "PASS", "actual": 1000}
+{"name": "returns_finite", "status": "PASS", "actual": {"nonfinite_count": 0}}
+{"name": "cost_shape", "status": "PASS", "actual": [1000, 1]}
+{"name": "cost_stock_order", "status": "PASS", "actual": {"exact_order_match": true}}
+{"name": "costs_valid", "status": "PASS", "actual": {"nonfinite_count": 0, "negative_count": 0}}
+{"name": "characteristics_shape", "status": "PASS", "actual": {"rows": 3780000, "features": 13}}
+{"name": "characteristics_order", "status": "PASS", "actual": {"exact_day_stock_grid_match": true}}
+{"name": "characteristics_finite", "status": "PASS", "actual": {"nonfinite_count": 0}}
+{"name": "one_core_affinity", "status": "PASS", "actual": {"affinity": [0], "error": null}}
+{"name": "prefix_load_shape", "status": "PASS", "actual": {"returns": [504, 1000], "characteristics": [504, 1000, 13], "costs": [1000]}}
+{"name": "prefix_returns_equal", "status": "PASS", "actual": {"exact_numeric_match": true}}
+{"name": "prefix_costs_equal", "status": "PASS", "actual": {"exact_numeric_match": true}}
+{"name": "prefix_characteristics_equal", "status": "PASS", "actual": {"exact_numeric_match": true}}
+{"name": "scored_row_count", "status": "PASS", "actual": [250, 5]}
+{"name": "finite_scoring_outputs", "status": "PASS", "actual": {"nonfinite": 0}}
+{"name": "nonnegative_costs", "status": "PASS", "actual": {"negative_cost_count": 0}}
+{"name": "equal_weight_gross", "status": "PASS", "actual": {"maximum_abs_error": 4.440892098500626e-16}}
+{"name": "repeat_economic_outputs", "status": "PASS", "actual": {"max_abs_difference": 0.0}}
+{"name": "nonzero_net_dispersion", "status": "PASS", "actual": 0.0095417626968799}
+{"name": "equal_weight_beta_expected", "status": "PASS", "actual": 0.9999892123827355}
+supplied_equal_weight_prefix sharpe  2.74   return  41.6%/yr   vol 15.1%   beta  1.00   cost 0.22%/yr   gross 1.00   forecast 0.0s (0.00 h per century)   rebalance 0.0 ms/call
+

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/305f831f543f/continual_takehome/tools/verify_portfolio.py", line 280, in main
+    raise FileNotFoundError("Expected preimplementation failure: allocator does not exist; numerical cases NOT RUN")
+FileNotFoundError: Expected preimplementation failure: allocator does not exist; numerical cases NOT RUN
+

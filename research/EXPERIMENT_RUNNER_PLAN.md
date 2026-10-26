@@ -1,0 +1,31 @@
+# Candidate discovery E2E runner — specification before implementation
+
+**Created:** 2026-10-26. **Status:** specification only; the runner has not yet been implemented or executed. This document establishes observable outcomes before the first candidate execution. It adds no unit tests after implementation.
+
+## Scope and immutable authority
+
+Use only the verified `cache/discovery` arrays for actual rows `[0,2016)`. Check their identities against the cache metadata before importing the candidate. Do not read later actual numeric rows or the supplied figures. Freeze and invoke the supplied `score.py` without changes. The score mask must be exactly `[253,2015)`, giving 1,762 rows, with one continuous portfolio from the scorer's default start 252.
+
+Each command is a new interpreter. Fix numerical-library threads before importing NumPy and constrain CPU affinity to one available core when supported. Copy the runner, plan, protocol, candidate and sibling Python helpers, scorer, and chosen JSON configuration into a new evidence directory before running. Existing evidence directories must never be overwritten. Import the frozen candidate rather than a mutable live source file. Call its `configure(config)` once if present; a nonempty configuration without that interface is an error. Use the official declared-argument adapter.
+
+## Failure modes and expected observable outcomes
+
+1. **Wrong inputs or window:** reject a wrong cache hash, dimensions, dtype/finiteness, protocol mask, or scorer identity before scoring. Expected dimensions are returns `(2016,1000)`, characteristics `(2016,1000,13)`, costs `(1000,)`; costs must be nonnegative.
+2. **Forecast contract:** exactly one complete forecast call when supplied; numeric finite output of shape `(2016,1000)` for this first single-channel candidate family. No forecast is a documented alternative, not a fabricated zero forecast. Capture the returned output unchanged.
+3. **Portfolio contract:** each close selects a finite vector of 1,000 weights. There must be 1,763 rebalance calls, for earning days 253 through 2015 inclusive; the final selected book is not subsequently earned by the official scorer. Record every target, drifted book, full-cost trade estimate, turnover, and timing. The supplied scorer alone calculates P&L and charges fees.
+4. **Scorer fidelity:** returned rows must have shape `(1762,5)` and finite values. The official cost and exposure columns must match transparent trade records after the discarded opening call. The first trade is free; all retained fees equal the full supplied per-stock cost times the absolute trade. Gross returns must stay above −1. Net bankruptcy, if observed, is reported separately even though the supplied scorer tests gross bankruptcy only.
+5. **Independent reporting:** calculate net as official gross minus official fees. Use population standard deviation and centered OLS beta against the official raw equal-weight market. Undefined statistics become JSON null with an explanation, never invented zeroes. Save an official report as well as exact numerical metrics. Preserve a complete daily ledger and fixed four-block summaries; pooled Sharpe is not the average of block Sharpes.
+6. **Controls and timing:** report actual single-core candidate-call and official wrapper-inclusive timings, including the discarded opening call separately. Check configured stock and gross caps when the configuration declares them. Report realized absolute beta against the assignment's conservative `<0.2` interpretation and our `0.1` design goal. A prefix forecast-time extrapolation is explicitly an extrapolation; it is not a completed century-long run.
+7. **Mutations or partial failure:** expose inputs as read-only arrays and compare their file hashes afterward. Preserve partial trace rows, traceback, exact completed stages, and nonzero exit status on any exception or interrupt. Never mark a partial run passed.
+
+## Metrics and interpretation
+
+Record daily-net annualized Sharpe, arithmetic annual mean, annual volatility, realized beta, annualized full fees, gross-return Sharpe, geometric total return, annualized geometric return, max drawdown, net extrema, average/full traded absolute exposure, gross/stock/net exposures, and first/last scored row. Report each fixed discovery block `[0,504)`, `[504,1008)`, `[1008,1512)`, `[1512,2016)` intersected with the actual score mask, retaining continuous state. Optional estimated-beta diagnostics are recorded only if the candidate offers a documented read-only `estimate_risk(returns_history)` interface returning `(betas, variances)`.
+
+Positive profitability is **unknown**, not an expected pass condition. Poor or negative performance is a research result. Engineering workflow success and observed candidate feasibility are separate statuses. A successful discovery run establishes only this executed path; causality, later validation, locked audit, long-horizon runtime, and final clean-folder delivery have their own gates.
+
+## Evidence and reproduction
+
+Each run preserves setup, UTC timestamps, exact original and rerun commands, frozen source/configuration hashes, original archive/cache identities, environment and thread/CPU settings, expected outcomes, per-check actual outcomes, stdout/stderr, official report, daily CSV ledger, target diagnostics, array outputs and hashes, block metrics, and a final status. The exact rerun uses the frozen runner and frozen strategy/configuration with a new output directory. Raw caches are reproducible from the source archive via `tools/prepare_discovery.py`; their absence is a stated setup failure.
+
+The source snapshots and summary CSV/JSON evidence can be committed. Larger `.npy` matrices may remain excluded by the project's Git rules provided their exact identities, generating inputs and commands, and human-readable summaries remain versioned.

@@ -1,0 +1,18 @@
+{
+  "original_scorer": {
+    "path": "/workspace/scratch/305f831f543f/continual_takehome/source/Quant Research Take-Home/score.py",
+    "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+  },
+  "frozen_scorer": {
+    "path": "source/score.py",
+    "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+  },
+  "runner": {
+    "path": "runner_used.py",
+    "sha256": "5b29bafaf21eb9168704df0afbee1adf50cfee0ef313ff8c67765d437c9bcb8c"
+  },
+  "plan": {
+    "path": "expectations.md",
+    "sha256": "734cf9f0d045540ca6e7b57c38bb21180e074754bc392bb21b5c6ac140078c7c"
+  }
+}

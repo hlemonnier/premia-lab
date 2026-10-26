@@ -1,0 +1,181 @@
+{
+  "files": [
+    {
+      "name": "characteristics.csv",
+      "url": "https://drive.google.com/file/d/1XdLKw_cakId5HPqRD4KEJEZV7eGkq4ea/view?usp=drivesdk",
+      "result": {
+        "id": "1XdLKw_cakId5HPqRD4KEJEZV7eGkq4ea",
+        "title": "characteristics.csv",
+        "mime_type": "text/csv",
+        "size": "359865977",
+        "url": "https://drive.google.com/file/d/1XdLKw_cakId5HPqRD4KEJEZV7eGkq4ea/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1XdLKw_cakId5HPqRD4KEJEZV7eGkq4ea/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "costs.csv",
+      "url": "https://drive.google.com/file/d/1wPhDbno2M6kauEdxwD49dKx9ddsTL_nl/view?usp=drivesdk",
+      "result": {
+        "id": "1wPhDbno2M6kauEdxwD49dKx9ddsTL_nl",
+        "title": "costs.csv",
+        "mime_type": "text/csv",
+        "size": "17011",
+        "url": "https://drive.google.com/file/d/1wPhDbno2M6kauEdxwD49dKx9ddsTL_nl/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1wPhDbno2M6kauEdxwD49dKx9ddsTL_nl/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "example_equal_weight.py",
+      "url": "https://drive.google.com/file/d/1uR7dLKfgPo6JtIZObxA7nLgb3nR4Wf91/view?usp=drivesdk",
+      "result": {
+        "id": "1uR7dLKfgPo6JtIZObxA7nLgb3nR4Wf91",
+        "title": "example_equal_weight.py",
+        "mime_type": "text/x-python-script",
+        "size": "217",
+        "url": "https://drive.google.com/file/d/1uR7dLKfgPo6JtIZObxA7nLgb3nR4Wf91/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1uR7dLKfgPo6JtIZObxA7nLgb3nR4Wf91/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "example_naive_mv.py",
+      "url": "https://drive.google.com/file/d/1RqrBiFZFg6b78qh_Qa1WKYHraYYHyprG/view?usp=drivesdk",
+      "result": {
+        "id": "1RqrBiFZFg6b78qh_Qa1WKYHraYYHyprG",
+        "title": "example_naive_mv.py",
+        "mime_type": "text/x-python-script",
+        "size": "1547",
+        "url": "https://drive.google.com/file/d/1RqrBiFZFg6b78qh_Qa1WKYHraYYHyprG/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1RqrBiFZFg6b78qh_Qa1WKYHraYYHyprG/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "README.md",
+      "url": "https://drive.google.com/file/d/1AsSkH5mIiO4nB0paZ9vZscKZfp1nhHdV/view?usp=drivesdk",
+      "result": {
+        "id": "1AsSkH5mIiO4nB0paZ9vZscKZfp1nhHdV",
+        "title": "README.md",
+        "mime_type": "text/markdown",
+        "size": "10889",
+        "url": "https://drive.google.com/file/d/1AsSkH5mIiO4nB0paZ9vZscKZfp1nhHdV/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1AsSkH5mIiO4nB0paZ9vZscKZfp1nhHdV/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "score.py",
+      "url": "https://drive.google.com/file/d/174Nk_W_yZ8pyWHG6onTrf-lLfShABN6p/view?usp=drivesdk",
+      "result": {
+        "id": "174Nk_W_yZ8pyWHG6onTrf-lLfShABN6p",
+        "title": "score.py",
+        "mime_type": "text/x-python-script",
+        "size": "4716",
+        "url": "https://drive.google.com/file/d/174Nk_W_yZ8pyWHG6onTrf-lLfShABN6p/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/174Nk_W_yZ8pyWHG6onTrf-lLfShABN6p/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "strategy.py",
+      "url": "https://drive.google.com/file/d/1vrogO4Ux6xjJBSwDZayNCVTAjgluNpKM/view?usp=drivesdk",
+      "result": {
+        "id": "1vrogO4Ux6xjJBSwDZayNCVTAjgluNpKM",
+        "title": "strategy.py",
+        "mime_type": "text/x-python-script",
+        "size": "1779",
+        "url": "https://drive.google.com/file/d/1vrogO4Ux6xjJBSwDZayNCVTAjgluNpKM/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1vrogO4Ux6xjJBSwDZayNCVTAjgluNpKM/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "returns.csv",
+      "url": "https://drive.google.com/file/d/1Xp3zdgDO7x0H_b9m6EIuXFnFKvK8eOiv/view?usp=drivesdk",
+      "result": {
+        "id": "1Xp3zdgDO7x0H_b9m6EIuXFnFKvK8eOiv",
+        "title": "returns.csv",
+        "mime_type": "text/csv",
+        "size": "35898789",
+        "url": "https://drive.google.com/file/d/1Xp3zdgDO7x0H_b9m6EIuXFnFKvK8eOiv/view?usp=drivesdk",
+        "display_url": "https://drive.google.com/file/d/1Xp3zdgDO7x0H_b9m6EIuXFnFKvK8eOiv/view?usp=drivesdk",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:49:38.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    }
+  ],
+  "comparison_scope": "Remote names/sizes plus fetched README text; no remote CSV byte comparison"
+}

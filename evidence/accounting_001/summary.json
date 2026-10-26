@@ -1,0 +1,1046 @@
+{
+  "scope": "Synthetic CSV-to-original-scorer accounting/interface E2E only",
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "started_utc": "2026-10-26T14:36:15.927576+00:00",
+  "checks": [
+    {
+      "name": "original_scorer_identity",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "expected": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "frozen_scorer_identity",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "expected": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "loaded_returns_exact",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          256,
+          2
+        ],
+        "exact_numeric_match": true
+      },
+      "expected": {
+        "shape": [
+          256,
+          2
+        ]
+      }
+    },
+    {
+      "name": "loaded_characteristics_exact",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          256,
+          2,
+          13
+        ],
+        "exact_numeric_match": true
+      },
+      "expected": {
+        "shape": [
+          256,
+          2,
+          13
+        ]
+      }
+    },
+    {
+      "name": "loaded_costs_exact",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          2
+        ],
+        "exact_numeric_match": true
+      },
+      "expected": {
+        "shape": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "scheduled_trades.call_days",
+      "status": "PASS",
+      "actual": [
+        252,
+        253,
+        254
+      ],
+      "expected": [
+        252,
+        253,
+        254
+      ]
+    },
+    {
+      "name": "scheduled_trades.raw_shape",
+      "status": "PASS",
+      "actual": [
+        3,
+        5
+      ],
+      "expected": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "scheduled_trades.returned_shape",
+      "status": "PASS",
+      "actual": [
+        2,
+        5
+      ],
+      "expected": [
+        2,
+        5
+      ]
+    },
+    {
+      "name": "scheduled_trades.opening_inclusive_economic_rows",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          4
+        ],
+        "max_abs_error": 2.168404344971009e-19,
+        "values": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.00015000000000000001,
+            1.0,
+            0.0
+          ],
+          [
+            0.03,
+            0.001204854368932039,
+            0.6,
+            0.03
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.00015,
+            1.0,
+            0.0
+          ],
+          [
+            0.03,
+            0.0012048543689320388,
+            0.6,
+            0.03
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.scored_economic_rows",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          2,
+          4
+        ],
+        "max_abs_error": 2.168404344971009e-19,
+        "values": [
+          [
+            0.0,
+            0.00015000000000000001,
+            1.0,
+            0.0
+          ],
+          [
+            0.03,
+            0.001204854368932039,
+            0.6,
+            0.03
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.0,
+            0.00015,
+            1.0,
+            0.0
+          ],
+          [
+            0.03,
+            0.0012048543689320388,
+            0.6,
+            0.03
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.held_positions",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          2
+        ],
+        "max_abs_error": 0.0,
+        "values": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.55,
+            0.45
+          ],
+          [
+            0.49514563106796117,
+            0.5048543689320388
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.55,
+            0.45
+          ],
+          [
+            0.49514563106796117,
+            0.5048543689320388
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.target_positions",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          2
+        ],
+        "max_abs_error": 0.0,
+        "values": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            -0.3,
+            0.3
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ],
+          [
+            -0.3,
+            0.3
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.opening_removed_once",
+      "status": "PASS",
+      "actual": {
+        "exact_returned_slice_match": true
+      }
+    },
+    {
+      "name": "scheduled_trades.opening_trade_free",
+      "status": "PASS",
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "name": "scheduled_trades.timing_finite_nonnegative",
+      "status": "PASS",
+      "actual": {
+        "forecast_seconds": 0.0007562239989056252,
+        "rebalance_seconds": [
+          4.621499829227105e-05,
+          1.719899955787696e-05,
+          1.225900268764235e-05
+        ]
+      }
+    },
+    {
+      "name": "scheduled_trades.caller_inputs_unchanged",
+      "status": "PASS",
+      "actual": [
+        "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+        "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+        "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+      ],
+      "expected": [
+        "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+        "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+        "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+      ]
+    },
+    {
+      "name": "scheduled_trades.forecast_full_input",
+      "status": "PASS",
+      "actual": [
+        [
+          [
+            256,
+            2
+          ],
+          [
+            256,
+            2,
+            13
+          ],
+          [
+            2
+          ]
+        ]
+      ],
+      "expected": [
+        [
+          [
+            256,
+            2
+          ],
+          [
+            256,
+            2,
+            13
+          ],
+          [
+            2
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "scheduled_trades.forecast_row_delivery",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          2
+        ],
+        "max_abs_error": 0.0,
+        "values": [
+          [
+            253.0,
+            -253.0
+          ],
+          [
+            254.0,
+            -254.0
+          ],
+          [
+            255.0,
+            -255.0
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            253.0,
+            -253.0
+          ],
+          [
+            254.0,
+            -254.0
+          ],
+          [
+            255.0,
+            -255.0
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.return_history_shapes",
+      "status": "PASS",
+      "actual": [
+        [
+          253,
+          2
+        ],
+        [
+          254,
+          2
+        ],
+        [
+          255,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "scheduled_trades.characteristic_history_shapes",
+      "status": "PASS",
+      "actual": [
+        [
+          253,
+          2,
+          13
+        ],
+        [
+          254,
+          2,
+          13
+        ],
+        [
+          255,
+          2,
+          13
+        ]
+      ]
+    },
+    {
+      "name": "scheduled_trades.latest_return_delivery",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          2
+        ],
+        "max_abs_error": 0.0,
+        "values": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.1,
+            -0.1
+          ],
+          [
+            0.02,
+            0.04
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.1,
+            -0.1
+          ],
+          [
+            0.02,
+            0.04
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.cost_delivery",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          2
+        ],
+        "max_abs_error": 0.0,
+        "values": [
+          [
+            0.001,
+            0.002
+          ],
+          [
+            0.001,
+            0.002
+          ],
+          [
+            0.001,
+            0.002
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.001,
+            0.002
+          ],
+          [
+            0.001,
+            0.002
+          ],
+          [
+            0.001,
+            0.002
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.unrounded_metrics",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          6
+        ],
+        "max_abs_error": 2.7755575615628914e-17,
+        "values": [
+          15.709977605575705,
+          3.609288349514563,
+          0.2297449710070607,
+          0.9648381877022654,
+          0.1707116504854369,
+          0.8
+        ]
+      },
+      "expected": {
+        "values": [
+          15.709977605575705,
+          3.609288349514563,
+          0.2297449710070607,
+          0.9648381877022654,
+          0.17071165048543688,
+          0.8
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "scheduled_trades.report_parse",
+      "status": "PASS",
+      "actual": "scheduled_trades       sharpe 15.71   return 360.9%/yr   vol 23.0%   beta  0.96   cost 17.07%/yr   gross 0.80   forecast 0.0s (0.00 h per century)   rebalance 0.0 ms/call"
+    },
+    {
+      "name": "scheduled_trades.official_report_metrics",
+      "status": "PASS",
+      "actual": {
+        "sharpe": "15.71",
+        "annual_return": "360.9",
+        "annual_volatility": "23.0",
+        "beta": "0.96",
+        "annual_cost": "17.07",
+        "mean_gross": "0.80"
+      },
+      "expected": {
+        "sharpe": "15.71",
+        "annual_return": "360.9",
+        "annual_volatility": "23.0",
+        "beta": "0.96",
+        "annual_cost": "17.07",
+        "mean_gross": "0.80"
+      }
+    },
+    {
+      "name": "buy_and_hold.call_days",
+      "status": "PASS",
+      "actual": [
+        252,
+        253,
+        254
+      ],
+      "expected": [
+        252,
+        253,
+        254
+      ]
+    },
+    {
+      "name": "buy_and_hold.raw_shape",
+      "status": "PASS",
+      "actual": [
+        3,
+        5
+      ],
+      "expected": [
+        3,
+        5
+      ]
+    },
+    {
+      "name": "buy_and_hold.returned_shape",
+      "status": "PASS",
+      "actual": [
+        2,
+        5
+      ],
+      "expected": [
+        2,
+        5
+      ]
+    },
+    {
+      "name": "buy_and_hold.opening_inclusive_economic_rows",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          4
+        ],
+        "max_abs_error": 2.220446049250313e-16,
+        "values": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.029,
+            0.0,
+            1.0000000000000002,
+            0.03
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.029,
+            0.0,
+            1.0,
+            0.03
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "buy_and_hold.scored_economic_rows",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          2,
+          4
+        ],
+        "max_abs_error": 2.220446049250313e-16,
+        "values": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.029,
+            0.0,
+            1.0000000000000002,
+            0.03
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.029,
+            0.0,
+            1.0,
+            0.03
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "buy_and_hold.held_positions",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          2
+        ],
+        "max_abs_error": 1.1102230246251565e-16,
+        "values": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.55,
+            0.45
+          ],
+          [
+            0.5451895043731779,
+            0.45481049562682224
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.55,
+            0.45
+          ],
+          [
+            0.5451895043731778,
+            0.45481049562682213
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "buy_and_hold.target_positions",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          3,
+          2
+        ],
+        "max_abs_error": 1.1102230246251565e-16,
+        "values": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.55,
+            0.45
+          ],
+          [
+            0.5451895043731779,
+            0.45481049562682224
+          ]
+        ]
+      },
+      "expected": {
+        "values": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.55,
+            0.45
+          ],
+          [
+            0.5451895043731778,
+            0.45481049562682213
+          ]
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "buy_and_hold.opening_removed_once",
+      "status": "PASS",
+      "actual": {
+        "exact_returned_slice_match": true
+      }
+    },
+    {
+      "name": "buy_and_hold.opening_trade_free",
+      "status": "PASS",
+      "actual": 0.0,
+      "expected": 0.0
+    },
+    {
+      "name": "buy_and_hold.timing_finite_nonnegative",
+      "status": "PASS",
+      "actual": {
+        "forecast_seconds": 0.0,
+        "rebalance_seconds": [
+          2.1390002075349912e-05,
+          9.662999218562618e-06,
+          6.54099858365953e-06
+        ]
+      }
+    },
+    {
+      "name": "buy_and_hold.caller_inputs_unchanged",
+      "status": "PASS",
+      "actual": [
+        "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+        "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+        "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+      ],
+      "expected": [
+        "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+        "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+        "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+      ]
+    },
+    {
+      "name": "buy_and_hold.no_forecast_path",
+      "status": "PASS",
+      "actual": {
+        "has_forecast": false,
+        "forecast_seconds": 0.0
+      }
+    },
+    {
+      "name": "buy_and_hold.no_trade_cost",
+      "status": "PASS",
+      "actual": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "buy_and_hold.unrounded_metrics",
+      "status": "PASS",
+      "actual": {
+        "shape": [
+          6
+        ],
+        "max_abs_error": 1.1102230246251565e-16,
+        "values": [
+          15.874507866387544,
+          3.6540000000000004,
+          0.2301803640626194,
+          0.9666666666666667,
+          0.0,
+          1.0
+        ]
+      },
+      "expected": {
+        "values": [
+          15.874507866387544,
+          3.6540000000000004,
+          0.2301803640626194,
+          0.9666666666666668,
+          0.0,
+          1.0
+        ],
+        "rtol": 1e-12,
+        "atol": 1e-13
+      }
+    },
+    {
+      "name": "buy_and_hold.report_parse",
+      "status": "PASS",
+      "actual": "buy_and_hold           sharpe 15.87   return 365.4%/yr   vol 23.0%   beta  0.97   cost 0.00%/yr   gross 1.00   forecast 0.0s (0.00 h per century)   rebalance 0.0 ms/call"
+    },
+    {
+      "name": "buy_and_hold.official_report_metrics",
+      "status": "PASS",
+      "actual": {
+        "sharpe": "15.87",
+        "annual_return": "365.4",
+        "annual_volatility": "23.0",
+        "beta": "0.97",
+        "annual_cost": "0.00",
+        "mean_gross": "1.00"
+      },
+      "expected": {
+        "sharpe": "15.87",
+        "annual_return": "365.4",
+        "annual_volatility": "23.0",
+        "beta": "0.97",
+        "annual_cost": "0.00",
+        "mean_gross": "1.00"
+      }
+    },
+    {
+      "name": "original_scorer_unchanged",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "expected": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "frozen_scorer_unchanged",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "expected": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "synthetic_files_unchanged",
+      "status": "PASS",
+      "actual": [
+        {
+          "path": "inputs/characteristics.csv",
+          "bytes": 30077,
+          "sha256": "913d739f6df5d94a5c9ba4ceb4207f34c9ca24a6986839a18236e12f9db80683"
+        },
+        {
+          "path": "inputs/costs.csv",
+          "bytes": 30,
+          "sha256": "6d968c33319134ec898ac4674b11abaf5a50205e674365ad3aafd39b7b1ac185"
+        },
+        {
+          "path": "inputs/returns.csv",
+          "bytes": 3233,
+          "sha256": "3dd44d776f1ffc178f85b7c7ddf24d5579f7618fcd0867915367cf7401a95435"
+        }
+      ],
+      "expected": [
+        {
+          "path": "inputs/characteristics.csv",
+          "bytes": 30077,
+          "sha256": "913d739f6df5d94a5c9ba4ceb4207f34c9ca24a6986839a18236e12f9db80683"
+        },
+        {
+          "path": "inputs/costs.csv",
+          "bytes": 30,
+          "sha256": "6d968c33319134ec898ac4674b11abaf5a50205e674365ad3aafd39b7b1ac185"
+        },
+        {
+          "path": "inputs/returns.csv",
+          "bytes": 3233,
+          "sha256": "3dd44d776f1ffc178f85b7c7ddf24d5579f7618fcd0867915367cf7401a95435"
+        }
+      ]
+    }
+  ],
+  "actual_market_rows_read": 0,
+  "run_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/305f831f543f/continual_takehome/tools/verify_accounting.py --scorer '/workspace/scratch/305f831f543f/continual_takehome/source/Quant Research Take-Home/score.py' --plan /workspace/scratch/305f831f543f/continual_takehome/verification/ACCOUNTING_PLAN.md --out /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001",
+  "unverified": [
+    "candidate alpha",
+    "candidate causality",
+    "candidate beta",
+    "candidate safety",
+    "candidate optimizer",
+    "candidate runtime",
+    "hidden-future performance"
+  ],
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001/runner_used.py --scorer /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001/source/score.py --plan /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001/expectations.md --out /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001_rerun",
+  "cases": {
+    "scheduled_trades": {
+      "status": "PASS",
+      "metrics": {
+        "sharpe": 15.709977605575705,
+        "annual_return": 3.609288349514563,
+        "annual_volatility": 0.2297449710070607,
+        "beta": 0.9648381877022654,
+        "annual_cost": 0.1707116504854369,
+        "mean_gross": 0.8
+      },
+      "expected_metrics": {
+        "sharpe": 15.709977605575705,
+        "annual_return": 3.609288349514563,
+        "annual_volatility": 0.2297449710070607,
+        "beta": 0.9648381877022654,
+        "annual_cost": 0.17071165048543688,
+        "mean_gross": 0.8
+      },
+      "forecast_seconds": 0.0007562239989056252,
+      "returned_rows": 2,
+      "control_sha256": "40084a63aecc0697f08bd87cd3f2928c9f5240ed3adb8adf05990d86cfdeae14",
+      "input_hashes_after": [
+        "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+        "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+        "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+      ]
+    },
+    "buy_and_hold": {
+      "status": "PASS",
+      "metrics": {
+        "sharpe": 15.874507866387544,
+        "annual_return": 3.6540000000000004,
+        "annual_volatility": 0.2301803640626194,
+        "beta": 0.9666666666666667,
+        "annual_cost": 0.0,
+        "mean_gross": 1.0
+      },
+      "expected_metrics": {
+        "sharpe": 15.874507866387544,
+        "annual_return": 3.6540000000000004,
+        "annual_volatility": 0.2301803640626194,
+        "beta": 0.9666666666666668,
+        "annual_cost": 0.0,
+        "mean_gross": 1.0
+      },
+      "forecast_seconds": 0.0,
+      "returned_rows": 2,
+      "control_sha256": "b5e66b6d78829c9e3078aab06d15114850ec158e54c90a7159b6cd1ff4a79342",
+      "input_hashes_after": [
+        "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+        "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+        "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+      ]
+    }
+  },
+  "finished_utc": "2026-10-26T14:36:19.517041+00:00",
+  "exit_code": 0
+}
