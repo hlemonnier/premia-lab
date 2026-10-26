@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-26T20:52:44.613298+00:00",
+  "verifier_sha256": "4b4ffc4e0329e29fad1a85629bd5ee0babfdbfd87fe1f17a0c2f00e7cba23bce",
+  "files": {
+    "submission/gross_portfolio.py": "2a2d1fb7dfb6b9bcd1d8509e3b73b957d34d158eb198648c8ba78bdc2fe9cac8",
+    "submission/strategy_gross.py": "891bafcd0eff4c9b58c77fa3c12bfa851f71a1588113977f1fd0c2b43b54129b",
+    "research/configs/C07_additive_exact_gross.json": "f9db65b3bbe61ca7c8e6ac15fa502a4f7f7b0f63354893121fb75fedcf303a34"
+  },
+  "red_status": "FAIL",
+  "oracle_status": "ORACLE_FIXTURES_READY"
+}

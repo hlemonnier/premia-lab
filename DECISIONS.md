@@ -18,3 +18,19 @@ This records actual contributions at this phase. No predictive market discovery 
 | Applicant's later interpretation, challenges and decisions about findings | Not yet recorded | Add only after they occur |
 
 The final top-of-file note must distinguish implemented AI work from genuine applicant contributions. The current record supports a disciplined process, not a claim of personal signal discovery.
+
+## Execution contributions
+
+| Work or judgment | Actual origin | Evidence / status |
+|---|---|---|
+| Authorize a private GitHub project, commits and parallel research | User instruction | Private repository established; working checkpoints published |
+| Adaptive linear and additive benchmark specifications | Alpha AI agent, challenged by lead and independent reviewers | C01/C02 implemented; configured smoke and discovery workflows executed |
+| Factor risk, numerical dual optimizer and exact gross-constrained optimizer | Portfolio AI agent, independently reviewed by alpha/verification agents | Preimplementation plans/checks/red stages preserved; C04/C07 discovery completed |
+| Explicit configuration in causality workers, chronology review and evidence comparison | Verification AI agent, cross-reviewed | C01/C02 smoke passes; interrupted runs separately retained |
+| GLS learning, risk-rank, memory and sizing contrasts | Lead and specialist AI research decisions responding to recorded results | C03 and C05–C10 executed; unfavorable outcomes preserved |
+| Paired block-bootstrap interpretation | Verification AI agent, independently reviewed by alpha agent | First-wave reporting workflow executed; limited interpretation retained |
+| Recognize that marginal curvature under correlated predictors can hide interactions | Lead AI reasoning; independently challenged and supported by alpha reviewer | C11 prospectively admitted; no generator-identification claim |
+| Repository integration, private publication, current reporting and experiment admissions | Lead AI agent | Versioned worklog, ledger, code and evidence |
+| Applicant's personal economic interpretation or empirical discovery | Not yet supplied in this conversation | Must not be invented in the employer note |
+
+The current research is modest: the leading ten-candidate discovery score is 0.762944 net Sharpe. Correct engineering and many verification checks do not themselves establish a durable alpha mechanism.

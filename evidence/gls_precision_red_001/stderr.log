@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_gls_precision.py", line 167, in main
+    raise FileNotFoundError("Helper intentionally absent before implementation; no numerical check has run")
+FileNotFoundError: Helper intentionally absent before implementation; no numerical check has run

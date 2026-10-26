@@ -1,0 +1,91 @@
+{
+  "source": "Saved C07 target trace and C02/C07 completed summaries only; no additional strategy run",
+  "created_utc": "2026-10-26T20:58:28.092196+00:00",
+  "forecast_identity": {
+    "C07": "5984df185016962a3328ebea477690d055bb46072b7933d46637e25f88a84b45",
+    "C02": "5984df185016962a3328ebea477690d055bb46072b7933d46637e25f88a84b45",
+    "equal": true
+  },
+  "budget_bound": {
+    "calls": 1407,
+    "mean_ms": 26.330336626821317,
+    "p95_ms": 33.023539398709545,
+    "max_ms": 10845.67930999765
+  },
+  "budget_slack": {
+    "calls": 356,
+    "mean_ms": 23.448161042058803,
+    "p95_ms": 41.65265124720463,
+    "max_ms": 729.2297619933379
+  },
+  "solver_fields": {
+    "gross_unconstrained_target": {
+      "minimum": 0.7604250056640043,
+      "maximum": 2.251607108637966,
+      "mean": 1.2092451120692191,
+      "nonzero_count": 1763
+    },
+    "gross_budget_bound": {
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "mean": 0.7980714690867838,
+      "nonzero_count": 1407
+    },
+    "gross_multiplier": {
+      "minimum": 0.0,
+      "maximum": 0.0006428056125703707,
+      "mean": 9.082712426500096e-05,
+      "nonzero_count": 1407
+    },
+    "gross_solver_iterations": {
+      "minimum": 0.0,
+      "maximum": 6.0,
+      "mean": 3.3664208735110606,
+      "nonzero_count": 1407
+    },
+    "gross_scalar_evaluations": {
+      "minimum": 0.0,
+      "maximum": 28.0,
+      "mean": 14.93817356778219,
+      "nonzero_count": 1407
+    },
+    "gross_constraint_excess": {
+      "minimum": -0.23957499433599572,
+      "maximum": 4.440892098500626e-16,
+      "mean": -0.025779835126502646,
+      "nonzero_count": 771
+    },
+    "gross_normalized_beta_residual": {
+      "minimum": 2.5271989015295164e-21,
+      "maximum": 4.9015943785541335e-14,
+      "mean": 4.415008416026408e-15,
+      "nonzero_count": 1763
+    }
+  },
+  "slowest_calls": [
+    {
+      "target_earning_index": "883",
+      "candidate_rebalance_ms": "10845.67930999765",
+      "gross_budget_bound": "1.0",
+      "gross_solver_iterations": "4.0",
+      "gross_scalar_evaluations": "17.0",
+      "gross_constraint_excess": "0.0"
+    },
+    {
+      "target_earning_index": "884",
+      "candidate_rebalance_ms": "1588.0609300002106",
+      "gross_budget_bound": "1.0",
+      "gross_solver_iterations": "4.0",
+      "gross_scalar_evaluations": "21.0",
+      "gross_constraint_excess": "0.0"
+    },
+    {
+      "target_earning_index": "1289",
+      "candidate_rebalance_ms": "729.2297619933379",
+      "gross_budget_bound": "0.0",
+      "gross_solver_iterations": "0.0",
+      "gross_scalar_evaluations": "0.0",
+      "gross_constraint_excess": "-0.08125560925219721"
+    }
+  ]
+}

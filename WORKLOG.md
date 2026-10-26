@@ -51,4 +51,16 @@ Plan and execute a disciplined, source-grounded quantitative research take-home 
 
 ## Next gate
 
-Complete the second-wave contrasts and independent comparison review. Decide which research direction has earned further work before finalist freeze. Validation and locked audit remain unopened.
+## Ten-candidate discovery checkpoint
+
+- C05 through C10 all completed the unchanged scorer with 20 recorded workflow checks and exit 0. Their net Sharpes were 0.602469, 0.762944, 0.679825, 0.626206, 0.700155 and 0.739890 respectively. No input, fee convention, scoring window or tolerance was changed to obtain a favorable result.
+- GLS alone did not improve the benchmark; the GLS/factor combination C06 is the current leader. Raising covariance ranks to 50 did not beat it. These remain modest development results, not evidence of a strong hidden-future edge.
+- The exact gross-constrained C07 optimizer reduced fees and removed postsolve scaling, with byte-identical C02 forecasts. Its average elapsed time met the requirement; a 10.85-second outlier is preserved, with no unusual iteration count and no proven host-cause explanation.
+- C08's higher risk aversion also removed scaling, without improving Sharpe materially. C09's longer memory improved the pooled number but weakened the final block. These contrary observations are retained in the current checkpoint report.
+- The first-wave comparison completed 99 reporting checks and an independent review. Its paired block bootstrap does not establish the tiny additive/factor gains, while the fast-learning loss has negative ranges under both predeclared block lengths. No resampling result is a probability of hidden-future superiority.
+- Admitted C11 before implementation to test the additive assumption using all 78 pairwise interactions under stronger shrinkage. The motivating conditional-Gaussian identity is illustrative; neither Gaussianity nor the simulator's formula is claimed. A known-interaction whole-strategy synthetic workflow is being specified before code. Slot 12 is still unassigned.
+- Published the first four models, full run evidence and the second-wave preregistration as GitHub commit `95bfe30`. The local main branch is aligned to its byte-identical tree, with the prior local checkpoint preserved on `recovered-wave1`.
+
+## Next gate
+
+Complete the single C11 hypothesis and independently review the discovery checkpoint. Nominee-specific causality, long-history runtime, protected validation and audit have not yet been executed. Validation and locked audit remain unopened.

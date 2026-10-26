@@ -1,0 +1,303 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-26T21:02:14.385560+00:00",
+  "scope": "Saved-evidence review of predeclared discovery workflow and rank-refresh expectations; no new candidate fit, scoring, holdout access or unit test",
+  "checks": [
+    {
+      "name": "recorded_artifact_identities",
+      "status": "PASS",
+      "actual": {
+        "checked_files": 28,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "run_configuration_matches_admission",
+      "status": "PASS",
+      "actual": "1f919c5dff46fceb9b47d5b882e494ec290d3dc0220e9782d086e43979afda19"
+    },
+    {
+      "name": "plan_unchanged_after_admission",
+      "status": "PASS",
+      "actual": "847369032146345c6be641409bc72d3f40c1f6e984ecdab56f943b187aed0a83"
+    },
+    {
+      "name": "executed_imported_sources_match_admission",
+      "status": "PASS",
+      "actual": {
+        "checked_files": 7,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "workflow_completed",
+      "status": "PASS",
+      "actual": {
+        "exit_code": 0,
+        "status": "EXECUTED_PASS_SCOPE_ONLY"
+      }
+    },
+    {
+      "name": "all_workflow_checks_pass",
+      "status": "PASS",
+      "actual": {
+        "check_count": 20
+      }
+    },
+    {
+      "name": "preregistered_refresh_sequence",
+      "status": "PASS",
+      "actual": {
+        "actual": [
+          253,
+          274,
+          295,
+          316,
+          337,
+          358,
+          379,
+          400,
+          421,
+          442,
+          463,
+          484,
+          505,
+          526,
+          547,
+          568,
+          589,
+          610,
+          631,
+          652,
+          673,
+          694,
+          715,
+          736,
+          757,
+          778,
+          799,
+          820,
+          841,
+          862,
+          883,
+          904,
+          925,
+          946,
+          967,
+          988,
+          1009,
+          1030,
+          1051,
+          1072,
+          1093,
+          1114,
+          1135,
+          1156,
+          1177,
+          1198,
+          1219,
+          1240,
+          1261,
+          1282,
+          1303,
+          1324,
+          1345,
+          1366,
+          1387,
+          1408,
+          1429,
+          1450,
+          1471,
+          1492,
+          1513,
+          1534,
+          1555,
+          1576,
+          1597,
+          1618,
+          1639,
+          1660,
+          1681,
+          1702,
+          1723,
+          1744,
+          1765,
+          1786,
+          1807,
+          1828,
+          1849,
+          1870,
+          1891,
+          1912,
+          1933,
+          1954,
+          1975,
+          1996
+        ],
+        "expected": [
+          253,
+          274,
+          295,
+          316,
+          337,
+          358,
+          379,
+          400,
+          421,
+          442,
+          463,
+          484,
+          505,
+          526,
+          547,
+          568,
+          589,
+          610,
+          631,
+          652,
+          673,
+          694,
+          715,
+          736,
+          757,
+          778,
+          799,
+          820,
+          841,
+          862,
+          883,
+          904,
+          925,
+          946,
+          967,
+          988,
+          1009,
+          1030,
+          1051,
+          1072,
+          1093,
+          1114,
+          1135,
+          1156,
+          1177,
+          1198,
+          1219,
+          1240,
+          1261,
+          1282,
+          1303,
+          1324,
+          1345,
+          1366,
+          1387,
+          1408,
+          1429,
+          1450,
+          1471,
+          1492,
+          1513,
+          1534,
+          1555,
+          1576,
+          1597,
+          1618,
+          1639,
+          1660,
+          1681,
+          1702,
+          1723,
+          1744,
+          1765,
+          1786,
+          1807,
+          1828,
+          1849,
+          1870,
+          1891,
+          1912,
+          1933,
+          1954,
+          1975,
+          1996
+        ]
+      }
+    },
+    {
+      "name": "preregistered_cache_ages",
+      "status": "PASS",
+      "actual": {
+        "minimum": 0.0,
+        "maximum": 20.0
+      }
+    },
+    {
+      "name": "mean_rebalance_strictly_below_100ms",
+      "status": "PASS",
+      "actual": 27.883279723921458
+    }
+  ],
+  "run_summary_sha256": "381f89010cf59fed2a34c9c601909d5d7099bc17530b9f83de664aad592704ab",
+  "run_artifact_manifest_sha256": "2b2ee293f6c14b01eb0e34489b805fac57311273c09c83841a714da551147ca6",
+  "observed_factor_diagnostics": {
+    "factor_age_days": {
+      "minimum": 0.0,
+      "maximum": 20.0,
+      "mean": 9.994327850255246
+    },
+    "factor_diagonal_identity_error": {
+      "minimum": 1.3552527156068805e-20,
+      "maximum": 2.168404344971009e-19,
+      "mean": 9.337637400156993e-20
+    },
+    "factor_dual_gradient_inf": {
+      "minimum": 1.951563910473908e-18,
+      "maximum": 4.158878536691946e-12,
+      "mean": 3.0838683845328985e-15
+    },
+    "factor_dual_iterations": {
+      "minimum": 3.0,
+      "maximum": 6.0,
+      "mean": 5.0873511060692005
+    },
+    "factor_fallback": {
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "nonzero_call_count": 0
+    },
+    "factor_inner_solves": {
+      "minimum": 4.0,
+      "maximum": 7.0,
+      "mean": 6.0873511060692005
+    },
+    "factor_max_diagonal_fraction": {
+      "minimum": 0.4302844126180022,
+      "maximum": 0.48498967010777255,
+      "mean": 0.4632717878372198
+    },
+    "factor_rank": {
+      "minimum": 50.0,
+      "maximum": 50.0,
+      "mean": 50.0
+    },
+    "factor_refreshed": {
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "mean": 0.0476460578559274,
+      "nonzero_call_count": 84
+    }
+  },
+  "observed_candidate_feasibility": {
+    "realized_abs_beta_below_0_2": true,
+    "realized_abs_beta_below_design_0_1": true,
+    "candidate_mean_rebalance_below_100ms": true,
+    "net_solvency": true,
+    "weight_cap_observed": true,
+    "gross_cap_observed": true
+  },
+  "observed_net_sharpe": 0.7398896878719762,
+  "C06_net_sharpe": 0.762944047825874,
+  "causality": "NOT_EXECUTED_FOR_C10",
+  "century_runtime": "NOT_EXECUTED",
+  "independent_source_review": "Alpha-model agent approved plan/config/startup cap by read-only source review; no numerical rerun or tests"
+}

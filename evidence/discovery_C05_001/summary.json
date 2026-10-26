@@ -1,0 +1,405 @@
+{
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "started_utc": "2026-10-26T20:50:52.396480+00:00",
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/run_candidate.py --project . --strategy submission/strategy_gls.py --config research/configs/C05_gls_diagonal.json --out evidence/discovery_C05_001",
+  "input_slice": [
+    0,
+    2016
+  ],
+  "score_slice": [
+    253,
+    2015
+  ],
+  "checks": [
+    {
+      "name": "config_is_object",
+      "status": "PASS",
+      "actual": "dict"
+    },
+    {
+      "name": "frozen_scope",
+      "status": "PASS",
+      "actual": {
+        "name": "discovery",
+        "input_slice": [
+          0,
+          2016
+        ],
+        "score_slice": [
+          253,
+          2015
+        ],
+        "scored_days": 1762
+      }
+    },
+    {
+      "name": "official_scorer_identity",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "cache_scope",
+      "status": "PASS",
+      "actual": {
+        "status": "READY",
+        "input_slice": [
+          0,
+          2016
+        ]
+      }
+    },
+    {
+      "name": "cache_identity",
+      "status": "PASS",
+      "actual": {
+        "returns.npy": "563cbcab745cc6ffc9d04739fd49a64a7881e3cfee81f2a157080a6336c3ba04",
+        "characteristics.npy": "5b95d6c1ceb7c8a9209ca76fc6e7116f4b496933fe64771029a1192737fed1f4",
+        "costs.npy": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+      }
+    },
+    {
+      "name": "input_shapes",
+      "status": "PASS",
+      "actual": [
+        [
+          2016,
+          1000
+        ],
+        [
+          2016,
+          1000,
+          13
+        ],
+        [
+          1000
+        ]
+      ]
+    },
+    {
+      "name": "input_values",
+      "status": "PASS",
+      "actual": "float64, finite, nonnegative costs"
+    },
+    {
+      "name": "rebalance_interface",
+      "status": "PASS",
+      "actual": "callable rebalance"
+    },
+    {
+      "name": "forecast_shape",
+      "status": "PASS",
+      "actual": [
+        2016,
+        1000
+      ]
+    },
+    {
+      "name": "forecast_finite",
+      "status": "PASS",
+      "actual": "all finite"
+    },
+    {
+      "name": "forecast_call_count",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "name": "score_shape",
+      "status": "PASS",
+      "actual": [
+        1762,
+        5
+      ]
+    },
+    {
+      "name": "score_finite",
+      "status": "PASS",
+      "actual": "all finite"
+    },
+    {
+      "name": "rebalance_count",
+      "status": "PASS",
+      "actual": 1763
+    },
+    {
+      "name": "earning_day_sequence",
+      "status": "PASS",
+      "actual": {
+        "first": 253,
+        "last": 2015
+      }
+    },
+    {
+      "name": "full_cost_accounting",
+      "status": "PASS",
+      "actual": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "target_gross_accounting",
+      "status": "PASS",
+      "actual": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "gross_solvency",
+      "status": "PASS",
+      "actual": -0.02650907859896539
+    },
+    {
+      "name": "input_files_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_sources_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "candidate_feasibility": {
+    "realized_abs_beta_below_0_2": true,
+    "realized_abs_beta_below_design_0_1": true,
+    "candidate_mean_rebalance_below_100ms": true,
+    "net_solvency": true,
+    "weight_cap_observed": true,
+    "gross_cap_observed": true
+  },
+  "causality_status": "NOT_TESTED_BY_THIS_RUN",
+  "validation_status": "NOT_OPENED",
+  "audit_status": "NOT_OPENED",
+  "long_horizon_runtime": "NOT_EXECUTED",
+  "returned_by_official_scorer": true,
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C05_001/runner_used.py --project /workspace/scratch/a72f2bd378f1/continual-research-takehome --strategy /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C05_001/source/candidate/strategy_gls.py --config /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C05_001/config.json --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C05_001_rerun --protocol /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C05_001/protocol_used.json --expectations /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C05_001/expectations.md --scorer /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C05_001/source/score.py",
+  "process_controls": {
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "cpu_affinity": [
+      1
+    ]
+  },
+  "configuration": {
+    "candidate_id": "C05_gls_diagonal",
+    "basis": "additive",
+    "alpha_half_life": 252.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "risk_window": 252,
+    "risk_min_days": 20,
+    "variance_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "risk_aversion": 1000.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.01,
+    "gross_cap": 1.0,
+    "learning_factor_rank": 10,
+    "learning_factor_shrinkage": 0.5,
+    "learning_factor_refresh_days": 21
+  },
+  "estimated_beta_diagnostic": "AVAILABLE",
+  "portfolio_diagnostics": "AVAILABLE",
+  "completed_rebalances": 1763,
+  "execution_seconds": 51.09136610200221,
+  "metrics": {
+    "scored_days": 1762,
+    "first_return_index": 253,
+    "last_return_index": 2014,
+    "daily_net_mean": 0.00013431278818008753,
+    "daily_net_std_ddof0": 0.003539018762126061,
+    "net_sharpe": 0.6024690898333518,
+    "gross_sharpe": 0.7070812636537606,
+    "annual_arithmetic_net_return": 0.033846822621382056,
+    "annual_net_volatility": 0.05618018117866327,
+    "realized_net_market_beta": 0.016345981783344482,
+    "annual_full_cost": 0.005880239590673207,
+    "mean_gross_exposure": 0.9298051390206494,
+    "min_daily_net_return": -0.026579914474537114,
+    "max_daily_net_return": 0.020153649739725603,
+    "min_daily_gross_return": -0.02650907859896539,
+    "net_bankruptcy_observed": false,
+    "geometric_total_return": 0.25307828419033473,
+    "annual_geometric_return": 0.03279178244713521,
+    "max_drawdown": 0.07460117913076048,
+    "official_instrumented_mean_rebalance_ms": 19.303430055608402,
+    "undefined_metrics": {}
+  },
+  "blocks": [
+    {
+      "block": 1,
+      "nominal_input_slice": [
+        0,
+        504
+      ],
+      "scored_days": 251,
+      "first_return_index": 253,
+      "last_return_index": 503,
+      "daily_net_mean": 0.0003301834785905881,
+      "daily_net_std_ddof0": 0.005169535465657,
+      "net_sharpe": 1.0139209341068613,
+      "gross_sharpe": 1.1182333005702605,
+      "annual_arithmetic_net_return": 0.0832062366048282,
+      "annual_net_volatility": 0.08206383141514145,
+      "realized_net_market_beta": -4.300554814712511e-05,
+      "annual_full_cost": 0.008586637600421337,
+      "mean_gross_exposure": 0.9368097215008532,
+      "min_daily_net_return": -0.01652206067251472,
+      "max_daily_net_return": 0.020153649739725603,
+      "min_daily_gross_return": -0.01647468350472325,
+      "net_bankruptcy_observed": false,
+      "geometric_total_return": 0.08275926165613035,
+      "annual_geometric_return": 0.08310231624332268,
+      "max_drawdown": 0.06407582843578452,
+      "official_instrumented_mean_rebalance_ms": 14.445330083653825,
+      "undefined_metrics": {}
+    },
+    {
+      "block": 2,
+      "nominal_input_slice": [
+        504,
+        1008
+      ],
+      "scored_days": 504,
+      "first_return_index": 504,
+      "last_return_index": 1007,
+      "daily_net_mean": 6.082159160634682e-05,
+      "daily_net_std_ddof0": 0.003943753602523733,
+      "net_sharpe": 0.24482078033052088,
+      "gross_sharpe": 0.3274373477281676,
+      "annual_arithmetic_net_return": 0.015327041084799398,
+      "annual_net_volatility": 0.06260514758635721,
+      "realized_net_market_beta": 0.03998257985866873,
+      "annual_full_cost": 0.005168842322252572,
+      "mean_gross_exposure": 0.9263424571305112,
+      "min_daily_net_return": -0.026579914474537114,
+      "max_daily_net_return": 0.013322268504291933,
+      "min_daily_gross_return": -0.02650907859896539,
+      "net_bankruptcy_observed": false,
+      "geometric_total_return": 0.027083442548271774,
+      "annual_geometric_return": 0.0134512531682388,
+      "max_drawdown": 0.05983883627183273,
+      "official_instrumented_mean_rebalance_ms": 21.78920764892234,
+      "undefined_metrics": {}
+    },
+    {
+      "block": 3,
+      "nominal_input_slice": [
+        1008,
+        1512
+      ],
+      "scored_days": 504,
+      "first_return_index": 1008,
+      "last_return_index": 1511,
+      "daily_net_mean": 0.00016643483580181803,
+      "daily_net_std_ddof0": 0.0028385583863367657,
+      "net_sharpe": 0.930779202180351,
+      "gross_sharpe": 1.015338831948477,
+      "annual_arithmetic_net_return": 0.04194157862205814,
+      "annual_net_volatility": 0.04506071743310332,
+      "realized_net_market_beta": 0.009286318398418116,
+      "annual_full_cost": 0.00380478485645024,
+      "mean_gross_exposure": 0.8669339518995738,
+      "min_daily_net_return": -0.013584972101405612,
+      "max_daily_net_return": 0.008984763146134727,
+      "min_daily_gross_return": -0.013528535084663932,
+      "net_bankruptcy_observed": false,
+      "geometric_total_return": 0.08528792147214426,
+      "annual_geometric_return": 0.04177153036169317,
+      "max_drawdown": 0.06872574257739039,
+      "official_instrumented_mean_rebalance_ms": 17.89052940474658,
+      "undefined_metrics": {}
+    },
+    {
+      "block": 4,
+      "nominal_input_slice": [
+        1512,
+        2016
+      ],
+      "scored_days": 503,
+      "first_return_index": 1512,
+      "last_return_index": 2014,
+      "daily_net_mean": 7.802353923133502e-05,
+      "daily_net_std_ddof0": 0.0026176038773044565,
+      "net_sharpe": 0.4731752187678945,
+      "gross_sharpe": 0.64915939576525,
+      "annual_arithmetic_net_return": 0.019661931886296426,
+      "annual_net_volatility": 0.04155317334135613,
+      "realized_net_market_beta": 0.00954116690461892,
+      "annual_full_cost": 0.0073221233061515284,
+      "mean_gross_exposure": 0.9927755560765557,
+      "min_daily_net_return": -0.010421561221567179,
+      "max_daily_net_return": 0.011748469615294417,
+      "min_daily_gross_return": -0.010379320706610953,
+      "net_bankruptcy_observed": false,
+      "geometric_total_return": 0.03823484089231455,
+      "annual_geometric_return": 0.018976100009523007,
+      "max_drawdown": 0.05135944275111948,
+      "official_instrumented_mean_rebalance_ms": 20.65264101776493,
+      "undefined_metrics": {}
+    }
+  ],
+  "timing": {
+    "forecast_candidate_seconds": 16.49413995500072,
+    "forecast_official_instrumented_seconds": 16.498264750996896,
+    "forecast_century_extrapolation_hours": 0.05727131928819695,
+    "forecast_extrapolation_is_actual_century_run": false,
+    "all_calls_candidate_ms": {
+      "0": 3.9446240043616854,
+      "0.5": 8.298857006593607,
+      "0.9": 15.73556919611292,
+      "0.95": 19.32742809585761,
+      "0.99": 37.56931607727874,
+      "1": 1166.7169640059
+    },
+    "all_calls_candidate_mean_ms": 11.601960114631945,
+    "scored_calls_candidate_mean_ms": 11.603601556239106,
+    "discarded_opening_candidate_ms": 8.709740002814215
+  },
+  "trading": {
+    "mean_daily_abs_turnover": 0.04791315770575692,
+    "total_abs_turnover_charged": 84.4229838775437,
+    "maximum_gross": 1.0000000000000002,
+    "maximum_abs_stock_weight": 0.0075866044550758896,
+    "maximum_abs_net_exposure": 0.09171473520693049,
+    "opening_trade_full_cost_waived": 0.0004946351900501928,
+    "max_abs_estimated_beta_exposure": 1.4205273439496467e-13,
+    "rescale_call_count": 854,
+    "rescale_call_fraction": 0.4844015882019285,
+    "minimum_gross_scale": 0.5343584470491165,
+    "mean_pre_scale_gross": 1.0074691700608347,
+    "maximum_pre_scale_gross": 1.8714029983474432,
+    "mean_pre_scale_box_saturation_fraction": 1.3613159387407828e-05
+  },
+  "input_hashes_after": {
+    "returns.npy": "563cbcab745cc6ffc9d04739fd49a64a7881e3cfee81f2a157080a6336c3ba04",
+    "characteristics.npy": "5b95d6c1ceb7c8a9209ca76fc6e7116f4b496933fe64771029a1192737fed1f4",
+    "costs.npy": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+  },
+  "output_arrays": {
+    "forecasts.npy": {
+      "sha256": "0149e9d11a5d681a5bf96df539468800685b31b09c210bfbedbebc94f8f36cf0",
+      "bytes": 16128128
+    },
+    "held_books.npy": {
+      "sha256": "d3d1a33b79894fa953227f13d98144ac1358d9e9d9d4ae23a66e727a91b2db0d",
+      "bytes": 14104128
+    },
+    "targets.npy": {
+      "sha256": "a718c36f85fb7d73ccf0ed8bae41b4ecdbef4270bc7dac8de9e74ceceae5071e",
+      "bytes": 14104128
+    }
+  },
+  "finished_utc": "2026-10-26T20:51:45.935984+00:00",
+  "exit_code": 0,
+  "limitations": [
+    "Discovery outcomes only; this is a development-sample experiment.",
+    "Causality, later validation, audit and century-long runtime are not established by this runner.",
+    "Single-core wall timings are measurements on this environment; no guarantee on other hardware."
+  ]
+}
