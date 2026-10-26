@@ -1,0 +1,1 @@
+C11_interactions       sharpe  0.60   return   4.2%/yr   vol  6.9%   beta  0.02   cost 0.82%/yr   gross 0.98   forecast 26.8s (0.09 h per century)   rebalance 17.6 ms/call

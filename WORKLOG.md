@@ -2,7 +2,7 @@
 
 ## Objective
 
-Plan and execute a disciplined, source-grounded quantitative research take-home for Continual Research. Current phase: discovery implementation and experiments under the frozen protocol.
+Plan and execute a disciplined, source-grounded quantitative research take-home for Continual Research. Current phase: an eleven-configuration discovery checkpoint is complete. The next work is finalist engineering verification, followed by the protected evaluation gates.
 
 ## 2026-10-26 — intake and planning
 
@@ -38,8 +38,6 @@ Plan and execute a disciplined, source-grounded quantitative research take-home 
 - Three parallel agents now own alpha implementation, independent E2E verification, and portfolio research/review. Root owns experiment admission, scored comparisons, shared worklog and repository publication.
 - Large raw data, numerical caches and bulky reproducible daily diagnostic matrices remain outside Git; their identities and generating commands remain recorded. Committed sources and compact results are the durable research record.
 
-## Next gate
-
 ## First executed candidate wave
 
 - C01/C02 specifications preceded implementation. Both configured causality smoke002 runs completed28 fresh-process scenarios with exact protected equality. The earlier smoke001 runs were interrupted during a harness instrumentation revision and remain explicitly incomplete, not passes.
@@ -48,8 +46,6 @@ Plan and execute a disciplined, source-grounded quantitative research take-home 
 - Faster forgetting was worse even before costs. Additive curvature and the factor risk model delivered only tiny pooled net gains. Gross scaling was active on63–97% of calls, a material implementation approximation rather than a rare safety event.
 - Admitted bounded second-wave tests C05/C06 for covariance-weighted alpha learning, C07 for exact joint gross constraints, and C08 for a simpler higher-risk-aversion sizing control. All decisions precede their results. Eight total slots reserved, four scored so far, within the fixed twelve.
 - Published planning, diagnostics and component evidence to the private GitHub main branch as0fdf79e. Imported its verified Git objects locally and preserved the two original local checkpoint commits and recovery commit on `recovered-checkpoints` before aligning main to the identical published tree.
-
-## Next gate
 
 ## Ten-candidate discovery checkpoint
 
@@ -61,6 +57,15 @@ Plan and execute a disciplined, source-grounded quantitative research take-home 
 - Admitted C11 before implementation to test the additive assumption using all 78 pairwise interactions under stronger shrinkage. The motivating conditional-Gaussian identity is illustrative; neither Gaussianity nor the simulator's formula is claimed. A known-interaction whole-strategy synthetic workflow is being specified before code. Slot 12 is still unassigned.
 - Published the first four models, full run evidence and the second-wave preregistration as GitHub commit `95bfe30`. The local main branch is aligned to its byte-identical tree, with the prior local checkpoint preserved on `recovered-wave1`.
 
+## Eleven-candidate discovery checkpoint
+
+- Published the complete C01–C10 code and evidence as private GitHub commit `e663d9bcb102126ffa943b58cc5c720b7a502613`. The published tree exactly matches the immutable local checkpoint; prior local history is preserved on `recovered-wave2`.
+- C11's specification, executable synthetic verifier and expected missing-module stage preceded implementation. Independent source reviewers approved its 26 unchanged additive terms, 78 centered products, fixed penalties, chronology and unchanged C02 portfolio.
+- The fixed synthetic workflow completed four fresh-process runs and 40 checks, with all 12 protected comparisons exactly equal and forecast/truth correlation 0.997914. Its strong artificial signal is engineering evidence, not actual-market performance.
+- C11 then completed the original scorer on discovery with exit 0 and 20 checks. Net Sharpe 0.603346 was below C02's 0.637567, gross Sharpe was also lower and fees were slightly higher. Candidate mean rebalance time was 10.46 ms; the maximum 721.85 ms is retained. No setting was changed after either result.
+- Closed this discovery checkpoint at eleven scored configurations. Slot 12 remains unassigned; the negative interaction result does not justify a pair-selection or penalty search. C06 remains the provisional leader at net Sharpe 0.762944.
+- Updated the current report, reproduction guide and contribution ledger. All research and implementation are attributed to the actual AI contributors; no applicant empirical finding or final strategy success is invented.
+
 ## Next gate
 
-Complete the single C11 hypothesis and independently review the discovery checkpoint. Nominee-specific causality, long-history runtime, protected validation and audit have not yet been executed. Validation and locked audit remain unopened.
+Independently verify the exact finalist configurations for causality and long-history runtime using permitted or synthetic inputs, then freeze at most three nominees before opening validation. The final nominee identities and simplicity ranks have not been frozen. Protected validation, the single-candidate locked audit and clean final-submission execution remain unexecuted. Validation and audit remain unopened.

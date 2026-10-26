@@ -84,6 +84,16 @@ A predeclared synthetic whole-strategy workflow may verify the new forecaster on
 
 Slot 12 remains unassigned. A later actual-data follow-up requires another prospective entry; no obligation to exhaust the budget.
 
+## C11 result and discovery checkpoint closure
+
+C11 completed the exact admitted discovery configuration with exit 0 and 20 passing workflow checks. Net Sharpe was 0.603346 versus C02's 0.637567; gross Sharpe was 0.722123 versus 0.750111. Annual full fees rose to 0.8199% from 0.7773%, while annual volatility remained approximately 6.91%. The fixed block net Sharpes were 1.110764, 0.536817, 0.544525 and 0.362120. Realized net market beta was 0.022222; candidate mean rebalance time was 10.46 ms on the recorded pinned CPU. Full records and source snapshots are in `evidence/discovery_C11_001`.
+
+Before this market run, the unchanged preimplementation synthetic verifier completed four fresh-process original-scorer workflows and 40 checks. Its 12 protected comparisons matched exactly, and forecast correlation with its known artificial interaction truth was 0.997914. This is synthetic capability evidence only. Independent source review and verification dispositions preceded the economic run. Red-stage evidence, build order and synthetic results remain preserved.
+
+The lead's decision after C11 is to close this discovery checkpoint at eleven scored configurations. The fixed interaction extension did not earn another interaction tuning experiment. Slot 12 remains unassigned; no additional diagnostic scan, selected-pair search, penalty grid, candidate combination or holdout access is implied. This is evidence against the tested specification, not proof that the actual conditional mean has no interactions.
+
+C06 remains the provisional development leader at net Sharpe 0.762944. No shortlist or final winner has been frozen. Exact nominee-specific causality/runtime gates, protected validation, the locked audit and clean final packaging remain separate work.
+
 ## Protected periods
 
 Validation [2016,3024): **not opened**. Locked audit [3024,3780): **not opened**. No current result measures performance on the employer's unseen continuation.

@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-10-26T21:07:17.715522+00:00",
+  "stage": "PLAN_BEFORE_VERIFIER_AND_IMPLEMENTATION",
+  "plan_sha256": "2f91a5b2d2676244d0255ec5f53b1ff6ba77cd48339eebfa9ff6f6726bc56ecb",
+  "verifier_exists": false,
+  "candidate_exists": false
+}

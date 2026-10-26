@@ -1,0 +1,197 @@
+{
+  "reviewed_utc": "2026-10-26T21:16:31.864216+00:00",
+  "scope": "Independent saved C11 discovery evidence audit; no candidate import, fitting, scorer replay, holdout access or new isolated model test",
+  "disposition": "APPROVE_RECORDED_DISCOVERY_RESULT",
+  "checks": [
+    {
+      "name": "saved_artifact_sizes_and_hashes",
+      "status": "PASS",
+      "actual": {
+        "files": 29,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "frozen_source_manifest",
+      "status": "PASS",
+      "actual": {
+        "files": 15,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "reviewed_synthetic_and_discovery_imported_source_identity",
+      "status": "PASS",
+      "actual": {
+        "strategy_interactions.py": {
+          "discovery": "6a66bf842ea4fbdfde53e9d3423ffeed60088c2db3c27699cdbab2e3c89c7ae2",
+          "synthetic": "6a66bf842ea4fbdfde53e9d3423ffeed60088c2db3c27699cdbab2e3c89c7ae2",
+          "live": "6a66bf842ea4fbdfde53e9d3423ffeed60088c2db3c27699cdbab2e3c89c7ae2"
+        },
+        "strategy.py": {
+          "discovery": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+          "synthetic": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+          "live": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7"
+        },
+        "portfolio.py": {
+          "discovery": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+          "synthetic": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+          "live": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475"
+        }
+      }
+    },
+    {
+      "name": "original_scorer_identity",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "exact_admitted_config_file",
+      "status": "PASS",
+      "actual": "6e8f446417d3d8c51c6fd081ecc775e6f5a0982deebdec01712436655c344dfc"
+    },
+    {
+      "name": "synthetic_and_market_config_value_identity",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "same_discovery_inputs_as_parent",
+      "status": "PASS",
+      "actual": {
+        "returns.npy": "563cbcab745cc6ffc9d04739fd49a64a7881e3cfee81f2a157080a6336c3ba04",
+        "characteristics.npy": "5b95d6c1ceb7c8a9209ca76fc6e7116f4b496933fe64771029a1192737fed1f4",
+        "costs.npy": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+      }
+    },
+    {
+      "name": "unchanged_input_hashes_after_execution",
+      "status": "PASS",
+      "actual": {
+        "returns.npy": "563cbcab745cc6ffc9d04739fd49a64a7881e3cfee81f2a157080a6336c3ba04",
+        "characteristics.npy": "5b95d6c1ceb7c8a9209ca76fc6e7116f4b496933fe64771029a1192737fed1f4",
+        "costs.npy": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+      }
+    },
+    {
+      "name": "completed_original_workflow",
+      "status": "PASS",
+      "actual": {
+        "status": "EXECUTED_PASS_SCOPE_ONLY",
+        "exit_code": 0,
+        "checks": 20
+      }
+    },
+    {
+      "name": "exact_saved_date_windows",
+      "status": "PASS",
+      "actual": {
+        "daily_rows": 1762,
+        "targets": 1763,
+        "first": 253,
+        "last": 2014
+      }
+    },
+    {
+      "name": "net_is_gross_minus_full_fee",
+      "status": "PASS",
+      "actual": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "captured_official_fee_matches_daily_ledger",
+      "status": "PASS",
+      "actual": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "reported_primary_metrics_match_saved_ledger",
+      "status": "PASS",
+      "actual": {
+        "net_sharpe": 0.6033462154364932,
+        "gross_sharpe": 0.7221228565881533,
+        "annual_full_cost": 0.008199491840130389
+      }
+    },
+    {
+      "name": "recorded_candidate_feasibility",
+      "status": "PASS",
+      "actual": {
+        "realized_abs_beta_below_0_2": true,
+        "realized_abs_beta_below_design_0_1": true,
+        "candidate_mean_rebalance_below_100ms": true,
+        "net_solvency": true,
+        "weight_cap_observed": true,
+        "gross_cap_observed": true
+      }
+    }
+  ],
+  "summary_sha256": "0fb61fe3851d2bbcd222743d027d859e22552bd9b8333014e36ce30fab11c87d",
+  "source_manifest_sha256": "04ac6169e689a3055516a9cbdf0c337eff26f85ffe12e45e7929dd125f216e1f",
+  "artifact_manifest_sha256": "397ebbacc4edc34d6e21182a48f5fa1af6de877f0c5ecccced159c2f6f01b557",
+  "metrics": {
+    "scored_days": 1762,
+    "first_return_index": 253,
+    "last_return_index": 2014,
+    "daily_net_mean": 0.0001653396229033252,
+    "daily_net_std_ddof0": 0.004350213985357556,
+    "net_sharpe": 0.6033462154364932,
+    "gross_sharpe": 0.7221228565881533,
+    "annual_arithmetic_net_return": 0.04166558497163795,
+    "annual_net_volatility": 0.06905750613102764,
+    "realized_net_market_beta": 0.022221662243226165,
+    "annual_full_cost": 0.008199491840130389,
+    "mean_gross_exposure": 0.9781786191160011,
+    "min_daily_net_return": -0.032208773190106704,
+    "max_daily_net_return": 0.02128770918882275,
+    "min_daily_gross_return": -0.032099870043335754,
+    "net_bankruptcy_observed": false,
+    "geometric_total_return": 0.3160280740337602,
+    "annual_geometric_return": 0.040057184536025685,
+    "max_drawdown": 0.08367873040143259,
+    "official_instrumented_mean_rebalance_ms": 17.5591149971247,
+    "undefined_metrics": {}
+  },
+  "timing": {
+    "forecast_candidate_seconds": 26.80540594199556,
+    "forecast_official_instrumented_seconds": 26.812587891996372,
+    "forecast_century_extrapolation_hours": 0.09307432618748458,
+    "forecast_extrapolation_is_actual_century_run": false,
+    "all_calls_candidate_ms": {
+      "0": 3.732682998816017,
+      "0.5": 7.021692996204365,
+      "0.9": 13.831339798343834,
+      "0.95": 16.419376403064234,
+      "0.99": 30.507537318917134,
+      "1": 721.85085399542
+    },
+    "all_calls_candidate_mean_ms": 10.458922981371655,
+    "scored_calls_candidate_mean_ms": 10.453173144812729,
+    "discarded_opening_candidate_ms": 20.590134998201393
+  },
+  "trading": {
+    "mean_daily_abs_turnover": 0.0654925214364893,
+    "total_abs_turnover_charged": 115.39782277109416,
+    "maximum_gross": 1.0000000000000004,
+    "maximum_abs_stock_weight": 0.007132872173124601,
+    "maximum_abs_net_exposure": 0.09457138058452355,
+    "opening_trade_full_cost_waived": 0.00049419249094694,
+    "max_abs_estimated_beta_exposure": 1.4157614350985464e-13,
+    "rescale_call_count": 1419,
+    "rescale_call_fraction": 0.8048780487804879,
+    "minimum_gross_scale": 0.4400401290414563,
+    "mean_pre_scale_gross": 1.2420617536334546,
+    "maximum_pre_scale_gross": 2.272520013523107,
+    "mean_pre_scale_box_saturation_fraction": 4.707884288145207e-05
+  },
+  "remaining_unexecuted": [
+    "configured full-discovery causality",
+    "long-history runtime",
+    "validation",
+    "audit",
+    "final clean-folder release"
+  ],
+  "decision_scope": "Root closes this research checkpoint at eleven scored configurations; slot12 unassigned"
+}

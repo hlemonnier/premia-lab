@@ -1,0 +1,3 @@
+# Synthetic whole-strategy workflow setup
+
+Use the Python, NumPy and Pandas versions in environment.json. No supplied market arrays are needed. The frozen controller regenerates the exact seed/recipe in expectations.md, then starts the frozen causality worker in a fresh interpreter for every case. Each worker imports the frozen complete candidate and unchanged original scorer. Truth is retained only for controller evaluation and is not a candidate argument. Run bash rerun.sh to retain the original CPU affinity and write a new evidence directory. The red-stage snapshot deliberately lacks the candidate, so its frozen rerun remains an expected missing-module run.
