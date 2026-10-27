@@ -94,6 +94,14 @@ The only admitted audit policy is the selected unchanged C09. Its canonical cont
 
 The audit readback also requires exact identity of the entire earlier C09 validation prefix: 3,024 forecasts, 2,771 targets/held books and 2,770 economic rows. This extends the ordinary historical-prefix check without changing the selected policy. Any failure, undefined ratio, beta shortfall or unfavorable economics remains visible and cannot justify substituting another policy.
 
+The audit is now complete. Frozen audit nomination SHA256: `b68c5db46c641f68bdaa7526464c846dd29e1b4ab65c7fd1ab6e8f775762cea4`. Use `evidence/audit_C09_001/rerun.txt` for the canonical policy, `evidence/audit_uncertainty_001/rerun.txt` for fixed saved-ledger reporting, `evidence/audit_independent_readback_002/rerun.txt` for successful complete reconciliation, and `evidence/handoff_audit_001/rerun.txt` for the exact clean package. The canonical and handoff runs score the same observations; the second is reproducibility evidence.
+
+On a fresh clone, excluded NPY arrays must first be regenerated with the frozen run commands and checked against the original recorded hashes. Reuse original summaries/ledgers as references; do not rewrite their hashes or timings to agree with a new run. Independent readback of the original packet requires restoring its expected numerical files at their recorded locations after confirming their identities.
+
+The first audit readback is a preserved failure at an unavailable partial characteristics-copy inventory entry. `evidence/audit_artifact_manifest_investigation_001/recover.py` restores exactly the original 214,433,792-byte prefix and SHA256 from canonical `characteristics.npy`, only if the recorded destination is missing. It uses exclusive creation and verifies all original canonical/manifest/code identities before and after. Run this recovery only when reproducing that original packet and the specific recorded artifact is absent. Do not delete an existing artifact to force recovery, rewrite the original manifest, or describe readback001 as passed. Readback002 uses the unchanged reviewer after that documented byte recovery.
+
+The final download is `artifacts/continual_research_C09.zip`, SHA256 `cba024cae44dd84b17b17dcde48e4276e677a52883220c54da455664a770b7fa`. Its exact four members match the pre-audit package manifest. `tools/build_research_artifacts.py --project . --out artifacts_reproduction` rebuilds the shareable figure and deterministic code archive from completed saved evidence without executing a candidate. The build manifest identifies every consumed ledger/report and plotting environment.
+
 ## Inputs
 
 Use the user's original archive named `Quant Research Take-Home-20261026T134123Z-1-001(1).zip`. Expected size: 136,015,226 bytes. Expected SHA-256:

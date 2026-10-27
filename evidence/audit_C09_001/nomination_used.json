@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737",
+  "scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+  "admission_plan_sha256": "105cc2ce46b4e84d98c0921f725ab90b13a4d8f13da9e854a085cb63840545cd",
+  "replay_plan_sha256": "32dc6a11c84ce4009490cccd057f0b0836f22581ef42e05ede77c51ebb0dd436",
+  "controller_sha256": "d3c3cfd4a1fde10398fc5546f3dc48d395f68a4c06fbe73311c8b5c2cdc37dfe",
+  "metric_helper_sha256": "6d34f2e9779ee50ab3a376e0f096c9524d09c3576649952c117fab32cb692f69",
+  "uncertainty_reporting_plan_sha256": "ff7526bf7b869400274aed83e8c7f2d9a4e1f10a561da0591423e0cbafeef132",
+  "status": "ROOT_APPROVED_PROTECTED_REPLAY",
+  "stage": "audit",
+  "frozen_utc": "2026-10-27T11:38:25.575180+00:00",
+  "candidates": [
+    {
+      "candidate_id": "C09_additive_long_memory",
+      "strategy_path": "submission/strategy.py",
+      "config_path": "research/configs/C09_additive_long_memory.json",
+      "config_sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+      "source_sha256": {
+        "submission/factor_portfolio.py": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+        "submission/gls_precision.py": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e",
+        "submission/gross_portfolio.py": "2a2d1fb7dfb6b9bcd1d8509e3b73b957d34d158eb198648c8ba78bdc2fe9cac8",
+        "submission/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+        "submission/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+        "submission/strategy_factor.py": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+        "submission/strategy_gls.py": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6",
+        "submission/strategy_gls_factor.py": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628",
+        "submission/strategy_gross.py": "891bafcd0eff4c9b58c77fa3c12bfa851f71a1588113977f1fd0c2b43b54129b"
+      },
+      "discovery_reference": "evidence/discovery_C09_001",
+      "discovery_reference_sha256": {
+        "summary.json": "98d73cc856f550f3acab179145deacb643b2f03f96b41a98b18246dc448a4b5a",
+        "source_manifest.json": "49acd70ccf86b727986f72eceb0d94099c1b50ecfe3b6131ea18344f31245397",
+        "input_manifest.json": "2c0475e569965440dab62714354ba7377b256f1c25332e459431da122300e1ec",
+        "daily.csv": "f0ae20b43801cf7f3e2b9a4d606207ee00455836d258e9aaf18dc8404b1d0623"
+      },
+      "simplicity_rank": 1,
+      "engineering_gate_status": "PASSED",
+      "evidence": [
+        {
+          "role": "source_review",
+          "path": "reviews/C09_CAUSALITY_SOURCE_AUDIT.md",
+          "sha256": "3f7ac2009b40d9eb530d138221ebdc21feb06214989c60cca299b95adb638e73"
+        },
+        {
+          "role": "causality",
+          "path": "evidence/C09_causality_001/summary.json",
+          "sha256": "4bbc6f0d2d987f01d26d96a6152b943c417ab0b6455331a3b4dea097102f6c05",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "long_history",
+          "path": "evidence/C09_long_history_001/summary.json",
+          "sha256": "b9c57b1e15e561bc64371c64767c30703042d070ca12cf4050d1774afc06c482",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "controller_verification",
+          "path": "evidence/protected_replay_discovery_001/summary.json",
+          "sha256": "c93783920644352300a939af287fbaed53afbd0b6675fa2a3a08b0487be31bb1",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "controller_verification",
+          "path": "evidence/protected_replay_zero_001/summary.json",
+          "sha256": "68da4f379866e7b10b1a4fe394ea2b41e232d17bbbed552193fd204368d216ad",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "controller_verification",
+          "path": "evidence/protected_controller_independent_readback_001/summary.json",
+          "sha256": "11daf7f7aeaecf302c5b3cc5bf1dc53bde39cd8d4aba774a197c7ab8b88f01c5",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "independent_causality_review",
+          "path": "evidence/C09_causality_admission_002/saved_evidence_review.json",
+          "sha256": "b708d5f028f0587cf3db50439f1e912103b5628a446d8b3215e7958cfd827d49"
+        },
+        {
+          "role": "independent_long_history_review",
+          "path": "evidence/long_history_independent_readback_001/summary.json",
+          "sha256": "c1834a53ec30ae3918bda598a4f87e386a858457b26eebe4370d3facb4ceace0"
+        },
+        {
+          "role": "controller_source_review",
+          "path": "reviews/PROTECTED_CONTROLLER_SOURCE_REVIEW.md",
+          "sha256": "190402cc8e2f250c7daa5b2c8203276a7f3267c5854c9b7c30f7aa8f5ce994d5"
+        },
+        {
+          "role": "validation_evaluation",
+          "path": "evidence/validation_C09_001/summary.json",
+          "sha256": "b1355fe15276e48ffff92194718df74469d6615e27a017b591e9ead28ee9d125",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "validation_independent_review",
+          "path": "evidence/validation_independent_readback_001/summary.json",
+          "sha256": "c082d7e4b94ba05497e55a2af991c53943330820e5f8dc7df982b3038b0b428c",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "validation_uncertainty_report",
+          "path": "evidence/validation_uncertainty_001/summary.json",
+          "sha256": "69e22c5cfe9803a2c7079dd06ae25eb8470f889cf43015358f9b80c507af222b",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "handoff_source_review",
+          "path": "reviews/HANDOFF_PACKAGE_SOURCE_REVIEW.md",
+          "sha256": "fe413a15d545fbd26a1f381d9f8e2640981d5488c563a9635afa2f130dc89ea5"
+        },
+        {
+          "role": "handoff_discovery_equivalence",
+          "path": "evidence/handoff_discovery_001/summary.json",
+          "sha256": "095fa56f8b52758e504bfbdd035204a878a1dcda638d63a355f08c72353c423f",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        },
+        {
+          "role": "handoff_independent_readback",
+          "path": "evidence/handoff_discovery_independent_readback_001/summary.json",
+          "sha256": "bbbf212417acf3b2b7c8318d6f4e60250001253ecd10b19dbda1a6e9be074c16",
+          "status": "EXECUTED_PASS_SCOPE_ONLY"
+        }
+      ]
+    }
+  ],
+  "selected_candidate_id": "C09_additive_long_memory",
+  "selection_record": {
+    "path": "research/VALIDATION_SELECTION.json",
+    "sha256": "941c07313d3d3f1914a93a57d85f032e8e0e609f7dd0495ff7f4f618bc5a42fa"
+  },
+  "selection_published_commit": "f57491f606b64f1c457dda53d3bd310bf9c14b7b",
+  "handoff_package_manifest_sha256": "97ec4469c51311730d906a68bd594ecd48b75d87bb29f0beccb6f7e3e5d8d813",
+  "package_binding": {
+    "manifest_path": "evidence/handoff_discovery_001/package_manifest.json",
+    "manifest_sha256": "97ec4469c51311730d906a68bd594ecd48b75d87bb29f0beccb6f7e3e5d8d813",
+    "discovery_equivalence_summary_path": "evidence/handoff_discovery_001/summary.json",
+    "discovery_equivalence_summary_sha256": "095fa56f8b52758e504bfbdd035204a878a1dcda638d63a355f08c72353c423f"
+  },
+  "audit_readback_plan_path": "verification/AUDIT_READBACK_PLAN.md",
+  "audit_readback_plan_sha256": "6384a9f41a2824c3c8c28f7a3ab9acab3efdf1ee4d8c18c9e17b44950d753c40",
+  "uncertainty_reporter_sha256": "859829789c827670529b6065c914e9c60bf158b2d3badbdda3403222dc3a213c",
+  "research_disposition": {
+    "audit_outcomes_opened_at_freeze": false,
+    "distinct_audit_candidate_configurations": 1,
+    "input_slice": [
+      0,
+      3780
+    ],
+    "score_slice": [
+      3024,
+      3779
+    ],
+    "scored_days": 755,
+    "new_model_or_parameter": false,
+    "no_reselection_after_audit": true,
+    "permitted_same_policy_replay": "The byte-identical discovery-verified handoff may reproduce the complete canonical selected audit once, after it completes. No candidate substitution or retuning."
+  },
+  "release_note": "Publish this audit nomination and the frozen independent readback source before root explicitly releases the sole canonical audit command. Preserve the unchanged package and note. An unfavorable economic outcome is reported, without changing policy or selection."
+}

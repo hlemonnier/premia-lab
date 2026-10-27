@@ -1,0 +1,34 @@
+{
+  "out": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/handoff_audit_001",
+  "clean": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/handoff_audit_001/clean",
+  "stage": "audit",
+  "cpu": 7,
+  "inputs": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/inputs",
+  "input_sha256": {
+    "returns.npy": "82544a656bcdcb53b6b5d001969a582406b5ac3537df8807f683a9225c21c95d",
+    "characteristics.npy": "7bd1f466d282b7bfbac35defc3f9f30528d59a59c146dda959e1a8c9257b25d1",
+    "costs.npy": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+  },
+  "package_files": {
+    "model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+    "model/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+    "strategy.py": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946"
+  },
+  "config": {
+    "candidate_id": "C09_additive_long_memory",
+    "basis": "additive",
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "risk_window": 252,
+    "risk_min_days": 20,
+    "variance_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "risk_aversion": 1000.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.01,
+    "gross_cap": 1.0
+  }
+}

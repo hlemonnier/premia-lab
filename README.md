@@ -4,9 +4,11 @@ Private research workspace for the supplied anonymous simulated stock market. Th
 
 ## Status
 
-C09 is selected by the frozen validation rule: pooled net Sharpe **0.659210**, versus **0.398603** for discovery leader C06, with both policies passing the tested beta/runtime requirements. Both uncertainty ranges and the paired difference include zero; a reliable hidden-future edge is not established. All twelve discovery configurations and their unfavorable results are retained. The literature-informed C12 local-shape extension failed its fixed parent comparison and did not enter validation.
+C09 is selected by the frozen validation rule: pooled net Sharpe **0.659210**, versus **0.398603** for discovery leader C06. The unchanged C09 then earned **1.799231 net Sharpe after full costs** in the separately reserved 755-observation audit, with realized net market beta **0.005666**. Its two prespecified audit bootstrap Sharpe ranges remain above zero, while the earlier validation ranges and paired model difference include zero. This is positive evidence under the supplied simulated-market cost model, with future stationarity and the hidden continuation unresolved.
 
-Read [the continued research report](research/CONTINUED_RESEARCH_20261027.md) for the complete comparison, literature, contrary evidence and uncertainty. The selected [handoff](handoff/strategy.py) contains a fixed C09 wrapper and three helper-package files; its clean-directory discovery replay is exact. The single-policy audit remains unopened at this checkpoint. `submission/` retains development candidates; its default `strategy.py` is still C01. Use `handoff/` for the selected fixed policy and explicit JSON configurations for research comparisons.
+Read [the continued research report](research/CONTINUED_RESEARCH_20261027.md) for all twelve discovery results, literature, contrary evidence, failed attempts and uncertainty. The selected [handoff](handoff/strategy.py) and [four-file ZIP](artifacts/continual_research_C09.zip) reproduce both discovery and the entire canonical audit exactly from a clean directory. `submission/` retains development candidates; its default `strategy.py` is still C01. Use `handoff/` for the selected fixed policy and explicit JSON configurations for research comparisons.
+
+![Protected results and uncertainty](artifacts/research_summary.png)
 
 ## Start here
 
@@ -25,12 +27,12 @@ Read [the continued research report](research/CONTINUED_RESEARCH_20261027.md) fo
 
 Restore the large CSVs and supplied figures from the original archive described in REPRODUCE.md. They are excluded from Git; source hashes identify the exact inputs. Cached arrays and bulky derived numerical arrays are also excluded. Small inspectable results, configuration, source snapshots and rerun instructions remain versioned.
 
-Discovery used rows `[0,2016)`. Two frozen policies have completed validation on the original masks within `[2016,3024)`. The audit remains closed pending the selected-policy freeze/release. Full-file input hygiene checked identity, shape, ordering and finiteness; it did not substitute for protected-period admission.
+Discovery used rows `[0,2016)`. Two frozen policies completed validation on the original masks within `[2016,3024)`, and only the selected unchanged C09 entered audit `[3024,3779)`. These intervals are now exposed and cannot be reused as clean confirmation for a redesigned policy. The employer's continuation remains unobserved. Full-file input hygiene did not substitute for the recorded protected-period admission gates.
 
 ## Verification discipline
 
 Prefer complete E2E workflows and save inspectable evidence for every run. If isolated testing is needed, specify failures and outcomes, write the tests, then implement the covered component. Never write unit tests after the implementation they cover. Never describe an unexecuted check as passed.
 
-The employer-facing hand-in will be a compact strategy module and declared helpers. This repository also preserves the research trail needed to understand and reproduce it.
+The employer-facing handoff is the verified compact strategy module and declared helpers. This repository preserves the research trail needed to assess and reproduce it. No external submission has been made.
 
 `RESEARCH_PROTOCOL.json` and `PACKAGE_MANIFEST.json` preserve the planning freeze; their historical status fields are not the current run dashboard. Executed candidate identities and checks live in the individual `evidence/` manifests and the current worklog.

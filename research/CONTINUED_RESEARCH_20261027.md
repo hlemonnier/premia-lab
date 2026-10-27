@@ -8,7 +8,9 @@ The frozen validation rule selects **C09, the longer-memory additive characteris
 
 This is an observed ranking of complete policies, with substantial statistical uncertainty. The fixed bootstrap ranges include zero for both policies and for their paired Sharpe difference. The result does not establish that nonlinear terms, longer memory, or a particular risk-model component caused the improvement. In particular, the protected finalists are both additive policies; their comparison is not a fresh linear-versus-nonlinear ablation.
 
-The final internal audit and packaging disposition are recorded in the audit section below when their separately authorized workflows finish. Neither validation nor internal audit can establish performance on the employer's unseen continuation.
+The separately reserved audit is now complete: the unchanged selected C09 earned **1.799231 net Sharpe after full costs**, with realized net-market beta **0.005666**, over 755 observations. Both prespecified audit bootstrap ranges remain above zero. The final package reproduced the complete canonical audit exactly. This supplies positive evidence for this fixed policy under the supplied simulated-market cost model. Neither validation nor internal audit establishes performance on the employer's unseen continuation.
+
+![Protected performance and uncertainty](../artifacts/research_summary.png)
 
 ## What the controlled discovery experiments found
 
@@ -115,11 +117,62 @@ These stresses subtract multiples of the recorded fee series while preserving gr
 
 Both retained models completed actual 25,200-row original-scorer workflows on deterministic repetitions of discovery inputs, with 24,947 targets and 24,946 scored economic rows. C06's forecast took 72.64 seconds and mean rebalance 8.19 ms; C09 took 43.19 seconds and 2.19 ms. All original discovery forecast/target/held/economic prefixes were exact, with full fees checked throughout execution. A separate 61-check saved-artifact review covered input construction, identities, timing and historical reconciliation. These host-specific runtime measurements are comfortably inside the stated budgets, without guaranteeing another machine's timing. Repeated discovery observations supply no independent alpha evidence.
 
-The selected handoff is intentionally small: a top-level `strategy.py`, an empty package initializer, and byte-identical original `model/strategy.py` and `model/portfolio.py` helpers. The wrapper uses a literal original C09 configuration and direct function aliases. It adds no learner or optimizer. Its complete note, including honest contribution attribution, is written before audit. A clean-directory workflow with a fresh isolated interpreter must reproduce the original discovery arrays and economics exactly before the package is frozen for audit. The unchanged package then reproduces the sole selected canonical audit as an engineering rerun, not another candidate selection.
+The selected handoff is intentionally small: a top-level `strategy.py`, an empty package initializer, and byte-identical original `model/strategy.py` and `model/portfolio.py` helpers. The wrapper uses a literal original C09 configuration and direct function aliases. It adds no learner or optimizer. Its complete note, including honest contribution attribution, was written before audit. The clean-directory discovery workflow passed 15 controller and 26 worker checks, reproducing the original arrays and all 1,762 economic/net rows exactly. A separate lead-agent artifact review passed 53 checks. That package was frozen before audit and remained unchanged afterward.
+
+The final archive, [continual_research_C09.zip](../artifacts/continual_research_C09.zip), contains exactly those four files. Its 8,709 bytes have SHA256 `cba024cae44dd84b17b17dcde48e4276e677a52883220c54da455664a770b7fa`. Every archived member was compared to the frozen package manifest. Source data and research evidence are outside the small handoff. The [archive manifest](../artifacts/handoff_archive_manifest.json) records exact file identities.
 
 ## Locked audit and final disposition
 
-At this report's pre-audit checkpoint, the audit remains closed. The separately frozen selected-policy audit and unchanged clean-package replay must be completed before reporting an audit score or claiming final packaging equivalence. This section will be updated with their actual evidence; pending work is not a pass.
+Selection and the discovery-verified handoff were committed as `f57491f606b64f1c457dda53d3bd310bf9c14b7b`. The sole audit nomination, its explicit release and independent readback source were then committed as `5522f41eb6b6b72b69b9a5f01268031ecea3869a`, before audit access. Only C09 was evaluated. No candidate, setting, source, note, cost convention or score window changed after either protected result.
+
+The canonical run executed once continuously on `[0,3780)`, with 3,527 targets and 3,526 complete economic rows. Its fixed audit mask was `[3024,3779)`: 755 observations, including full closing costs under the original endpoint rule. It passed all 102 controller checks.
+
+| Fixed C09 audit metric | Result |
+|---|---:|
+| Net Sharpe | **1.799231** |
+| Gross Sharpe | 1.861206 |
+| Annual arithmetic net return | **9.676070%** |
+| Annual net volatility | 5.377893% |
+| Annual full fees | 0.333119% |
+| Realized net market beta | **0.005666** |
+| Maximum audit drawdown | 7.019703% |
+| Mean gross exposure | 0.805479 |
+| Full-replay mean candidate rebalance | 2.264577 ms |
+
+The original beta and runtime conditions pass. These are audit-period outcomes, not a comparison with an unexecuted C06 audit. All dollar/percentage-return descriptions are fractions of the scorer's capital convention; annual return here is the arithmetic daily mean times 252, not an annual realized cash-flow claim.
+
+The unchanged reporter passed 153 checks on the saved audit ledger. Both fixed bootstrap lengths used 1,000 finite replicates, with the prescribed generator reset for the audit sample.
+
+| C09 audit empirical 95% range | 21-observation blocks | 63-observation blocks |
+|---|---:|---:|
+| Annual arithmetic net mean | [3.572%, 16.822%] | [3.395%, 17.086%] |
+| Net Sharpe | [0.655, 3.172] | [0.630, 3.032] |
+
+Both Sharpe and mean ranges stay above zero under these specified resampling assumptions. That strengthens the positive-after-cost interpretation relative to the selected validation result. The ranges are still broad; 755 observations, dependence assumptions and possible response changes limit what they establish about future decades. They are not a no-overfit certificate, and they do not erase the earlier model-selection process.
+
+| Audit fee multiplier, fixed decisions | Net Sharpe | Annual arithmetic net return |
+|---|---:|---:|
+| 1.0 | 1.799231 | 9.676070% |
+| 1.5 | 1.768240 | 9.509511% |
+| 2.0 | 1.737247 | 9.342951% |
+
+The fee stress leaves a positive point estimate at twice recorded costs. It remains an ex-post sensitivity of saved decisions, not a rerun with new allocation choices or a claim about real-market capacity. Complete results are in `evidence/audit_C09_001`, `evidence/audit_uncertainty_001` and `reviews/AUDIT_UNCERTAINTY_REVIEW.md`.
+
+### Independent audit reconciliation and preserved artifact failure
+
+The first independent readback stopped at a missing inventory entry before loading a numeric array. The original inventory had captured a 214,433,792-byte partial characteristics copy that was no longer present. Its recorded SHA256 exactly matched the first 214,433,792 bytes of the retained canonical characteristics file. The investigation and failed readback remain preserved; the specific infrastructure origin is unresolved.
+
+The lead authorized exact byte reconstruction at that recorded path, using exclusive file creation and the original expected size/hash. Before/after checks confirmed that all three canonical inputs, the original artifact manifest, summary, controller, reviewer and nomination were unchanged. No manifest entry was removed, reference rewritten, model rerun or tolerance relaxed.
+
+The **same frozen reviewer** then completed `evidence/audit_independent_readback_002` with **182 checks passed**. It verified full input/source/output identities, complete drift/fees/net/market accounting, selected policy/package bindings, the exact 755-row mask and reported metrics. Crucially, it reserialized the earlier prefix directly from the full audit arrays: all **3,024 validation forecasts, 2,771 targets and held books, and 2,770 economic rows** matched their earlier validation identities exactly. The original discovery prefix also remained exact. Recovery details are in `evidence/audit_artifact_manifest_investigation_001`; readback 001 remains a failure, not a retroactive pass.
+
+### Final clean-package replay
+
+The unchanged four-file package then replayed the completed canonical audit in a fresh isolated directory. All 20 controller and 26 worker checks passed. Every forecast, target and held-book array, and all 3,526 economic/net rows, matched exactly, including full costs. Its fixed audit metrics were identical. Mean candidate rebalance was 2.191670 ms and forecast time 6.226206 seconds in that replay; those are new timing measurements of the same observations, not another independent performance sample.
+
+The wrapper, helpers, configuration, note and verifier retained their frozen hashes. Exact run/readback records are in `evidence/handoff_audit_001`, `evidence/handoff_audit_readback_001` and `reviews/HANDOFF_AUDIT_RESULTS.md`. The tested package is ready for review; no external submission was made.
+
+The current evidence supports a fixed, low-beta candidate with positive audit performance after the supplied full fees. Any further research must acknowledge that discovery, validation and this audit are now exposed. A changed strategy would need new genuinely unseen evaluation data for another clean confirmation; this audit cannot be reused as though its outcomes were unknown.
 
 ## Contribution and interpretation boundary
 

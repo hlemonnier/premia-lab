@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "DISCOVERY_VERIFIED_PACKAGE",
+  "frozen_utc": "2026-10-27T11:32:45.932063+00:00",
+  "candidate_id": "C09_additive_long_memory",
+  "engine_module": "strategy",
+  "config_sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+  "selection_sha256": "941c07313d3d3f1914a93a57d85f032e8e0e609f7dd0495ff7f4f618bc5a42fa",
+  "files": {
+    "model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+    "model/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+    "strategy.py": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946"
+  },
+  "discovery_reference": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/discovery_C09_repro_20261027",
+  "discovery_evidence": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/handoff_discovery_001",
+  "verifier_sha256": "2b3c12d17b599940d37b19ac0609442d9b963a465ce7db139b45f9107dd5b739"
+}
