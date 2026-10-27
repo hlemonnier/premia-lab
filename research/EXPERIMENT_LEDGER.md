@@ -94,6 +94,22 @@ The lead's decision after C11 is to close this discovery checkpoint at eleven sc
 
 C06 remains the provisional development leader at net Sharpe 0.762944. No shortlist or final winner has been frozen. Exact nominee-specific causality/runtime gates, protected validation, the locked audit and clean final packaging remain separate work.
 
+## C12 admission after literature review — 27 October 2026
+
+The user requested continued alpha research, stronger protection against lookahead and overfitting, and a review of SSRN, arXiv and Alpha Architect. The existing eleven configurations and all unfavorable results remain in the selection history. This is the original twelfth discovery slot; no expanded search budget is admitted.
+
+| Slot | ID | Fixed complete contrast | Admission state |
+|---:|---|---|---|
+| 12 | C12 | C02's original 26 columns plus three fixed local hinge terms for every characteristic; identical EW252 learner clock and entire diagonal portfolio | Admitted before candidate implementation and market results |
+
+The fixed knots are -1, 0 and +1 on each existing centered linear column z. Let q be its original centered square divided by sqrt(2), h_a the currently cross-section-centered positive part max(z-a,0), Q(a) the standard-normal survival function and phi(a) its density. The new column is `(h_a - Q(a)*z - phi(a)/sqrt(2)*q) / s_a`, where `s_a^2 = Var((Z-a)+) - Q(a)^2 - phi(a)^2/2` is a fixed standard-normal reference residual variance. Its values are approximately 0.118118205, 0.106148883 and 0.118118205. Normality is a reference convention, not an empirical assumption. All 13 characteristics receive all three terms: 39 new columns and 65 total, with no feature selection or fitted orthogonalization. The original 26 columns stay byte-identical. Ridge remains 0.1 for those columns and is fixed at 0.3 for the new columns. No knots, penalties, seeds, horizons or subsets may be tuned after results.
+
+The literature motivates testing local additive shapes beyond global quadratics; it does not establish an edge in this market. The fixed reference scaling avoids imposing a much larger effective penalty merely because residual hinge columns have small reference variance. It does not guarantee empirical orthogonality or identical joint shrinkage. Detailed equations, sources, contrary evidence and failure criteria are recorded in `LOCAL_ADDITIVE_PLAN.md` and the literature reviews.
+
+An independent reviewer must freeze the synthetic whole-strategy expectations and controller, preserve the expected missing-module run, and release implementation only afterward. Required workflows are known-signal baseline and repeat, a joint future alteration at row 400, prefix truncation at 384 and an exact zero-return cash control. Independent source review and a passing synthetic workflow precede the single discovery run. A poor result rejects this specification; it does not authorize another variant. Full original costs and the original discovery score mask remain unchanged.
+
+The first attempt at this continued-work session was lost in a workspace reset before publication. Its reported partial C06 causal comparisons are unavailable and are not counted as passes. The C12 constants above preserve that prior prospective decision; this replacement admission is recorded before source creation in the recovered workspace. Twelve slots are reserved; eleven are scored at this admission point.
+
 ## Protected periods
 
 Validation [2016,3024): **not opened**. Locked audit [3024,3780): **not opened**. No current result measures performance on the employer's unseen continuation.

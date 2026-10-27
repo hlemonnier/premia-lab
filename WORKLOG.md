@@ -2,7 +2,7 @@
 
 ## Objective
 
-Plan and execute a disciplined, source-grounded quantitative research take-home for Continual Research. Current phase: an eleven-configuration discovery checkpoint is complete. The next work is finalist engineering verification, followed by the protected evaluation gates.
+Execute a disciplined, source-grounded quantitative research take-home for Continual Research. Current phase: independent full-discovery causality verification of C06 and one literature-informed local additive contrast in the original twelfth discovery slot. Progress is governed by evidence gates, without a fixed execution timetable. Protected evaluation remains gated.
 
 ## 2026-10-26 — intake and planning
 
@@ -65,6 +65,16 @@ Plan and execute a disciplined, source-grounded quantitative research take-home 
 - C11 then completed the original scorer on discovery with exit 0 and 20 checks. Net Sharpe 0.603346 was below C02's 0.637567, gross Sharpe was also lower and fees were slightly higher. Candidate mean rebalance time was 10.46 ms; the maximum 721.85 ms is retained. No setting was changed after either result.
 - Closed this discovery checkpoint at eleven scored configurations. Slot 12 remains unassigned; the negative interaction result does not justify a pair-selection or penalty search. C06 remains the provisional leader at net Sharpe 0.762944.
 - Updated the current report, reproduction guide and contribution ledger. All research and implementation are attributed to the actual AI contributors; no applicant empirical finding or final strategy success is invented.
+
+## 27 October 2026 — continued research and independent audit
+
+- User requested continued alpha research, explicit overfit/lookahead protection, literature from SSRN/arXiv/Alpha Architect, parallel reviewers and no fixed execution schedule. The original search budget and protected periods remain binding.
+- The user reports having noticed the same broad signal patterns. This is recorded as a self-report of interpretation, without inventing personal code, independently reproduced findings or a discovered mechanism.
+- Recovered committed code and selected prior evidence byte-for-byte from private GitHub main `22c4f8cf63c73aadab67e452c19daf9496d98d67`, then verified the original attachment and full source CSV hashes. Raw late-period data were hashed only; no late-period outcome statistics or supplied figures were inspected.
+- A workspace reset removed prior uncommitted continued-work files and running agents. Unavailable partial causal checks are not passes. The replacement plan, source review and executions are recorded afresh; completed historical GitHub evidence remains authoritative.
+- Three independent agents own C06 timing/causality review, C12 literature/specification/implementation, and C12 preimplementation E2E verification plus cost/persistence literature. Candidate source ownership is separate from verifier ownership.
+- Prospectively admitted C12 as the original twelfth configuration: fixed reference-scaled local hinges at -1/0/+1 on all 13 characteristics, ridge 0.3 on new terms, with C02's original 26 terms and entire portfolio policy unchanged. No grid, selected-feature search or extra configuration is authorized.
+- Source review and future-alteration tests address implementation lookahead. Fixed specifications, complete exposure records and untouched chronological periods address selection optimism. No finite test certifies universal causality or absence of overfitting.
 
 ## Next gate
 

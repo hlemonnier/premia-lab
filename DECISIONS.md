@@ -32,6 +32,10 @@ The final top-of-file note must distinguish implemented AI work from genuine app
 | Recognize that marginal curvature under correlated predictors can hide interactions | Lead AI reasoning; independently challenged and supported by alpha reviewer | C11 prospectively admitted, implemented and verified; discovery result did not improve C02; no generator-identification claim |
 | Stop this discovery checkpoint after the negative interaction result, leaving one slot unassigned | Lead AI decision informed by specialist review | Eleven configurations scored; no extra tuning or holdout exposure |
 | Repository integration, private publication, current reporting and experiment admissions | Lead AI agent | Versioned worklog, ledger, code and evidence |
-| Applicant's personal economic interpretation or empirical discovery | Not yet supplied in this conversation | Must not be invented in the employer note |
+| Applicant's interpretation of the early patterns | User self-report on 27 October: had noticed the same broad findings and emphasized no overfit/lookahead | Record that report accurately; do not infer independent code, reproduced analysis or mechanism discovery |
 
 The current research is modest: the leading eleven-candidate discovery score is 0.762944 net Sharpe. Correct engineering and many verification checks do not themselves establish a durable alpha mechanism.
+
+## Continued research, 27 October 2026
+
+The user authorized continued experiments and literature review, with no fixed execution timetable. The lead retained the frozen data boundaries and experiment budget and admitted one local additive shape contrast as C12. Specialist AI agents own the literature adaptation, source implementation, independent preimplementation verification and C06 causal audit. A source review or finite perturbation pass must not be presented as proof that a selected development backtest is free of overfitting. Prior uncommitted work lost during a workspace reset is reconstructed transparently, not represented as preserved evidence.
