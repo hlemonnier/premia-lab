@@ -1,0 +1,179 @@
+{
+  "reviewed_utc": "2026-10-27T11:27:53.156405+00:00",
+  "scope": "Readback of the one pre-approved saved-ledger synthetic E2E; no reporter/model execution or protected data",
+  "packet": "evidence/protected_uncertainty_zero_001",
+  "summary_sha256": "1f83877501a2fd8c0bd7a5566a8ac0afd1ed0cd0b4de9fbf1dff3a5b7403eb20",
+  "reporter_sha256": "859829789c827670529b6065c914e9c60bf158b2d3badbdda3403222dc3a213c",
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "exit_code": 0,
+  "recorded_checks": 151,
+  "all_recorded_checks_pass": true,
+  "protected_outcome_read_started": false,
+  "model_executions": 0,
+  "selection_rule_changed": false,
+  "artifact_count": 40,
+  "artifact_mismatches": [],
+  "blocks": {
+    "21": {
+      "seed": 20261048,
+      "seed_matches_plan": true,
+      "sample_size": 1007,
+      "replicate_rows": 1000,
+      "start_matrix_shape": [
+        1000,
+        48
+      ],
+      "start_dimensions_match_plan": true,
+      "starts_within_nonwrapping_bounds": true,
+      "replicate_indices_complete": true,
+      "all_annual_means_exact_zero": true,
+      "all_sharpes_undefined": true,
+      "all_paired_differences_undefined": true,
+      "intervals": {
+        "block_length": 21,
+        "seed": 20261048,
+        "sample_size": 1007,
+        "replicates": 1000,
+        "candidates": {
+          "ZERO_A": {
+            "annual_arithmetic_net_return": {
+              "lower_2_5_percent": 0.0,
+              "upper_97_5_percent": 0.0,
+              "finite_replicates": 1000,
+              "undefined_replicates": 0,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": null
+            },
+            "net_sharpe": {
+              "lower_2_5_percent": null,
+              "upper_97_5_percent": null,
+              "finite_replicates": 0,
+              "undefined_replicates": 1000,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": "No finite replicates"
+            }
+          },
+          "ZERO_B": {
+            "annual_arithmetic_net_return": {
+              "lower_2_5_percent": 0.0,
+              "upper_97_5_percent": 0.0,
+              "finite_replicates": 1000,
+              "undefined_replicates": 0,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": null
+            },
+            "net_sharpe": {
+              "lower_2_5_percent": null,
+              "upper_97_5_percent": null,
+              "finite_replicates": 0,
+              "undefined_replicates": 1000,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": "No finite replicates"
+            }
+          }
+        },
+        "paired_sharpe_difference": {
+          "direction": "ZERO_A minus ZERO_B",
+          "lower_2_5_percent": null,
+          "upper_97_5_percent": null,
+          "finite_replicates": 0,
+          "undefined_replicates": 1000,
+          "total_replicates": 1000,
+          "quantile_method": "linear",
+          "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+          "undefined_reason": "No finite replicates"
+        }
+      }
+    },
+    "63": {
+      "seed": 20261090,
+      "seed_matches_plan": true,
+      "sample_size": 1007,
+      "replicate_rows": 1000,
+      "start_matrix_shape": [
+        1000,
+        16
+      ],
+      "start_dimensions_match_plan": true,
+      "starts_within_nonwrapping_bounds": true,
+      "replicate_indices_complete": true,
+      "all_annual_means_exact_zero": true,
+      "all_sharpes_undefined": true,
+      "all_paired_differences_undefined": true,
+      "intervals": {
+        "block_length": 63,
+        "seed": 20261090,
+        "sample_size": 1007,
+        "replicates": 1000,
+        "candidates": {
+          "ZERO_A": {
+            "annual_arithmetic_net_return": {
+              "lower_2_5_percent": 0.0,
+              "upper_97_5_percent": 0.0,
+              "finite_replicates": 1000,
+              "undefined_replicates": 0,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": null
+            },
+            "net_sharpe": {
+              "lower_2_5_percent": null,
+              "upper_97_5_percent": null,
+              "finite_replicates": 0,
+              "undefined_replicates": 1000,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": "No finite replicates"
+            }
+          },
+          "ZERO_B": {
+            "annual_arithmetic_net_return": {
+              "lower_2_5_percent": 0.0,
+              "upper_97_5_percent": 0.0,
+              "finite_replicates": 1000,
+              "undefined_replicates": 0,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": null
+            },
+            "net_sharpe": {
+              "lower_2_5_percent": null,
+              "upper_97_5_percent": null,
+              "finite_replicates": 0,
+              "undefined_replicates": 1000,
+              "total_replicates": 1000,
+              "quantile_method": "linear",
+              "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+              "undefined_reason": "No finite replicates"
+            }
+          }
+        },
+        "paired_sharpe_difference": {
+          "direction": "ZERO_A minus ZERO_B",
+          "lower_2_5_percent": null,
+          "upper_97_5_percent": null,
+          "finite_replicates": 0,
+          "undefined_replicates": 1000,
+          "total_replicates": 1000,
+          "quantile_method": "linear",
+          "conditioning": "Quantiles of finite replicates; undefined ratios are excluded and counted",
+          "undefined_reason": "No finite replicates"
+        }
+      }
+    }
+  },
+  "all_interval_ratios_null": true,
+  "all_cost_stresses_exact_zero_null_ratios": true,
+  "review_disposition": "PASS_SCOPE_ONLY"
+}

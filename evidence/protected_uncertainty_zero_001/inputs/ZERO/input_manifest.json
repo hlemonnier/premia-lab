@@ -1,0 +1,52 @@
+{
+  "kind": "synthetic_exact_zero",
+  "input_slice": [
+    0,
+    3024
+  ],
+  "source_sha256": null,
+  "files": {
+    "returns.npy": {
+      "sha256": "b7f37b16ca750da0534f930a124350e6e6f53a05d6dd117079144cd905fefec0",
+      "shape": [
+        3024,
+        1000
+      ],
+      "dtype": "float64",
+      "strides": [
+        8,
+        24192
+      ],
+      "c_contiguous": false,
+      "f_contiguous": true
+    },
+    "characteristics.npy": {
+      "sha256": "a8bdf2d277768fef488e038bc8c43745c7378aa03cf233e77027826dad2856ab",
+      "shape": [
+        3024,
+        1000,
+        13
+      ],
+      "dtype": "float64",
+      "strides": [
+        104000,
+        104,
+        8
+      ],
+      "c_contiguous": true,
+      "f_contiguous": false
+    },
+    "costs.npy": {
+      "sha256": "6d439ccd370f4327c5093ea65b59b053dd7961abd8a3e4b13492f24d8e2e59ff",
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "strides": [
+        8
+      ],
+      "c_contiguous": true,
+      "f_contiguous": true
+    }
+  }
+}
