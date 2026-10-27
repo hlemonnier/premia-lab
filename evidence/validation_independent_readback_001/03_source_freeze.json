@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-10-27T11:32:48.855512+00:00",
+  "reviewer_sha256": "7cbfaeed4988ae9d2e2f1770eccfa190167a797da11f9929aa62003eca91280b",
+  "expectations_sha256": "adcf3443118be8ca809a5a82b6d9a8427396e5d72e4c8dd8755fa3ec8087fd87",
+  "syntax_only": "PASS after correcting a joined-line transcription before execution",
+  "source_implemented_after_parent_ranking_notification": true,
+  "saved_validation_arrays_or_ledgers_read_yet": false,
+  "candidate_execution_planned": false,
+  "audit_access_planned": false,
+  "command": "python evidence/validation_independent_readback_001/review.py"
+}

@@ -4,9 +4,9 @@ Private research workspace for the supplied anonymous simulated stock market. Th
 
 ## Status
 
-All twelve admitted discovery configurations have been executed. C06 remains the development leader at 0.762944 net Sharpe and realized net-market beta 0.006330. The literature-informed local additive challenger C12 scored 0.625698, below its parent's 0.637567, and is rejected for further evaluation under its fixed admission rule. A strong hidden-future edge has not been established. C06 and the simpler C09 model have completed source, causality and full 25,200-row runtime gates. Their exact specifications are frozen in [the validation nomination](research/VALIDATION_NOMINATION.json). Validation and locked audit remain unopened at this checkpoint.
+C09 is selected by the frozen validation rule: pooled net Sharpe **0.659210**, versus **0.398603** for discovery leader C06, with both policies passing the tested beta/runtime requirements. Both uncertainty ranges and the paired difference include zero; a reliable hidden-future edge is not established. All twelve discovery configurations and their unfavorable results are retained. The literature-informed C12 local-shape extension failed its fixed parent comparison and did not enter validation.
 
-Read [the earlier eleven-candidate checkpoint](research/DISCOVERY_CHECKPOINT.md), [the continued experiment ledger](research/EXPERIMENT_LEDGER.md), and [the current worklog](WORKLOG.md) for the comparison, contrary evidence, limitations and next gate. `submission/` currently holds development candidates; its default `strategy.py` is the C01 benchmark, not a selected employer hand-in. Use the explicit JSON configuration and runner when reproducing a named candidate.
+Read [the continued research report](research/CONTINUED_RESEARCH_20261027.md) for the complete comparison, literature, contrary evidence and uncertainty. The selected [handoff](handoff/strategy.py) contains a fixed C09 wrapper and three helper-package files; its clean-directory discovery replay is exact. The single-policy audit remains unopened at this checkpoint. `submission/` retains development candidates; its default `strategy.py` is still C01. Use `handoff/` for the selected fixed policy and explicit JSON configurations for research comparisons.
 
 ## Start here
 
@@ -25,7 +25,7 @@ Read [the earlier eleven-candidate checkpoint](research/DISCOVERY_CHECKPOINT.md)
 
 Restore the large CSVs and supplied figures from the original archive described in REPRODUCE.md. They are excluded from Git; source hashes identify the exact inputs. Cached arrays and bulky derived numerical arrays are also excluded. Small inspectable results, configuration, source snapshots and rerun instructions remain versioned.
 
-Discovery may inspect rows `[0,2016)` only. Validation and audit data remain closed until their protocol gates. Full-file input hygiene has already checked identity, shape, ordering and finiteness.
+Discovery used rows `[0,2016)`. Two frozen policies have completed validation on the original masks within `[2016,3024)`. The audit remains closed pending the selected-policy freeze/release. Full-file input hygiene checked identity, shape, ordering and finiteness; it did not substitute for protected-period admission.
 
 ## Verification discipline
 

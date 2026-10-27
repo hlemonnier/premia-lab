@@ -1,0 +1,50 @@
+{
+  "controller.stderr.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "controller.stdout.log": {
+    "sha256": "c7e6b3155eda9af43e0b17e73391aa273a2f3ed20817701902c70fc64aee6a50",
+    "bytes": 66
+  },
+  "expectations.md": {
+    "sha256": "f9b052fbd78b732397a1f9d0154e7fe342b7b2095ca4cda15ebf6922c68bc10f",
+    "bytes": 13400
+  },
+  "prospective_input_manifest.json": {
+    "sha256": "aab66ed56a459e7cf79f2a8c414cd55322ac0d6a5ffa459c5f59d309e08c846b",
+    "bytes": 14083
+  },
+  "protocol_used.json": {
+    "sha256": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737",
+    "bytes": 6688
+  },
+  "rerun.txt": {
+    "sha256": "abad50776cf8d6c3c70fdff4b9a4b8d91ca0676f947352d071ed690f95fcc361",
+    "bytes": 1007
+  },
+  "runner_used.py": {
+    "sha256": "2b3c12d17b599940d37b19ac0609442d9b963a465ce7db139b45f9107dd5b739",
+    "bytes": 26345
+  },
+  "score_used.py": {
+    "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+    "bytes": 4716
+  },
+  "setup.md": {
+    "sha256": "a37ced4f150d1ed57c38a027f5d657f8e666a8b82a7f0b21d24b8e37ce9b9fac",
+    "bytes": 471
+  },
+  "stderr.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "stdout.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "summary.json": {
+    "sha256": "3ad0275f4a7dd6df901c3a141046fde5f0912f6b1cc5a320ebc57bd5d542e57f",
+    "bytes": 2152
+  }
+}

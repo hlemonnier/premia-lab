@@ -1,0 +1,37 @@
+{
+  "input_slice": [
+    0,
+    2016
+  ],
+  "cache_sha256": {
+    "returns.npy": "563cbcab745cc6ffc9d04739fd49a64a7881e3cfee81f2a157080a6336c3ba04",
+    "characteristics.npy": "5b95d6c1ceb7c8a9209ca76fc6e7116f4b496933fe64771029a1192737fed1f4",
+    "costs.npy": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+  },
+  "source_sha256": {
+    "returns.csv": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+    "characteristics.csv": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08",
+    "costs.csv": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186"
+  },
+  "source_archive": {
+    "filename": "Quant Research Take-Home-20261026T134123Z-1-001(1).zip",
+    "bytes": 136015226,
+    "sha256": "ba49564fb0d8888124fdc0b680f88c843c17359a089129f1fe28e0b94e003dd6"
+  },
+  "metadata_sha256": "aab66ed56a459e7cf79f2a8c414cd55322ac0d6a5ffa459c5f59d309e08c846b",
+  "features": [
+    "Woe",
+    "Malice",
+    "Dread",
+    "Frolic",
+    "Up",
+    "Down",
+    "Charm",
+    "Strange",
+    "Top",
+    "Bottom",
+    "Snap",
+    "Crackle",
+    "Pop"
+  ]
+}

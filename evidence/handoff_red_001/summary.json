@@ -1,0 +1,52 @@
+{
+  "status": "EXPECTED_RED_MISSING_WRAPPER",
+  "started_utc": "2026-10-27T11:30:39.743976+00:00",
+  "stage": "discovery",
+  "scorer_workflows": 0,
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_handoff.py --project /workspace/scratch/a72f2bd378f1/continual-research-takehome --handoff /workspace/scratch/a72f2bd378f1/continual-research-takehome/handoff --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/handoff_red_001 --expect-missing-wrapper --stage discovery --cpu 7",
+  "checks": [
+    {
+      "name": "identity:expectations.md",
+      "status": "PASS",
+      "actual": "f9b052fbd78b732397a1f9d0154e7fe342b7b2095ca4cda15ebf6922c68bc10f"
+    },
+    {
+      "name": "identity:score_used.py",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "identity:protocol_used.json",
+      "status": "PASS",
+      "actual": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737"
+    },
+    {
+      "name": "red_discovery_only",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "wrapper_actually_absent",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "red_expected_input_scope",
+      "status": "PASS",
+      "actual": null
+    }
+  ],
+  "numeric_inputs_accessed": false,
+  "prospective_input_sha256": {
+    "returns.npy": "563cbcab745cc6ffc9d04739fd49a64a7881e3cfee81f2a157080a6336c3ba04",
+    "characteristics.npy": "5b95d6c1ceb7c8a9209ca76fc6e7116f4b496933fe64771029a1192737fed1f4",
+    "costs.npy": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+  },
+  "reason": "Selected deployment entry point is absent; zero strategy/scorer workflows executed",
+  "finished_utc": "2026-10-27T11:30:39.745482+00:00",
+  "exit_code": 1,
+  "limitations": [
+    "Same-policy packaging equivalence only; no model selection or overfit certification.",
+    "A completed audit replay requires the already completed selected canonical audit and unchanged frozen package."
+  ]
+}

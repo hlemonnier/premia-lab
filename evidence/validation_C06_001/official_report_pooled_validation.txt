@@ -1,0 +1,1 @@
+C06_gls_factor:pooled_validation sharpe  0.40   return   1.5%/yr   vol  3.7%   beta  0.00   cost 0.64%/yr   gross 0.82   forecast 7.7s (0.02 h per century)   rebalance 8.6 ms/call

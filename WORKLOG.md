@@ -96,4 +96,17 @@ Execute a disciplined, source-grounded quantitative research take-home for Conti
 
 ## Next gate
 
-Publish the completed engineering evidence and concrete nomination, finish the fixed uncertainty reporter's synthetic workflow, then release the two frozen continuous validation replays. Select by the unchanged pooled daily net-Sharpe rule among eligible candidates. Freeze one selected policy and its equivalent handoff before opening audit. At this checkpoint all protected market outcomes remain unopened; no result-driven redesign or fixed execution schedule is admitted.
+The nomination/engineering checkpoint was published as `c79f7b1`; the fixed reporter, completed synthetic verification and explicit validation release were published as `6b9ea85`, both before numeric validation access.
+
+## Protected validation completed; exact C09 selected
+
+- Both frozen continuous validation replays completed with exit 0, preserving the original discovery forecast, target, held-book and economic prefixes exactly. C06 pooled net Sharpe was 0.398603; C09 was 0.659210. Both satisfy the unchanged beta, runtime and path requirements. C06 leads block A, while C09 leads block B and the prescribed pooled comparison.
+- The fixed rule selects C09 with no numerical tie, no extra profitability floor and no retuning. Selection is frozen in `research/VALIDATION_SELECTION.json`, SHA256 `941c07313d3d3f1914a93a57d85f032e8e0e609f7dd0495ff7f4f618bc5a42fa`. C09's original configuration SHA remains `aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba`.
+- Independent saved-output reconciliation passed 288 checks, including full array/input/source identities, all costs/drift/net rows, exact original prefixes, score masks, metrics, eligibility and selection. The reviewer records that the ranking was disclosed before its readback source was complete; this is independent arithmetic reconciliation, not a blinded prediction exercise.
+- The unchanged uncertainty reporter passed 291 checks. C09's net-Sharpe percentile ranges are [−0.202,1.700] for 21-observation blocks and [−0.021,1.673] for 63. Paired C06-minus-C09 ranges also include zero. At twice saved fees, fixed decisions retain net Sharpe 0.607738 for C09 and 0.225502 for C06. These diagnostics did not change selection.
+- The selected four-file C09 handoff was built after its prospective verifier and expected missing-wrapper record. Root reviewed the literal config, exact helper bytes, direct aliases and honest note. One pre-execution wording correction clarified that C12 failed a fixed parent comparison rather than a significant paired test. No executable statement changed.
+- Clean-folder discovery then passed 15 controller and 26 worker checks, exactly reproducing all original C09 arrays and 1,762 economic/net rows. Root's separate saved-artifact readback passed 53 checks. The frozen package manifest SHA is `97ec4469c51311730d906a68bd594ecd48b75d87bb29f0beccb6f7e3e5d8d813`; the complete note and executable package are frozen before audit.
+
+## Next protected gate
+
+Commit the exact C09 selection and discovery-verified package with its single-policy audit nomination. Then run only that unchanged canonical policy through the fixed 755-observation audit, followed by the identical package's full-path reproducibility replay. An independent audit readback also compares the entire earlier validation prefix exactly. At this checkpoint audit remains unopened, no result-driven redesign is admitted, and no outgoing submission is authorized.

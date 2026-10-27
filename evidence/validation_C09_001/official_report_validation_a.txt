@@ -1,0 +1,1 @@
+C09_additive_long_memory:validation_a sharpe  0.37   return   1.4%/yr   vol  3.9%   beta  0.00   cost 0.20%/yr   gross 0.78   forecast 5.3s (0.01 h per century)   rebalance 2.0 ms/call

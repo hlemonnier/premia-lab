@@ -1,0 +1,21 @@
+{
+  "status": "EXPECTED_RED_PRESERVED_BEFORE_WRAPPER",
+  "recorded_utc": "2026-10-27T11:30:48.239620+00:00",
+  "evidence_path": "evidence/handoff_red_001",
+  "source_sha256": "2b3c12d17b599940d37b19ac0609442d9b963a465ce7db139b45f9107dd5b739",
+  "summary_sha256": "3ad0275f4a7dd6df901c3a141046fde5f0912f6b1cc5a320ebc57bd5d542e57f",
+  "artifact_manifest_sha256": "ab64a960e3a2d53df86da95ea9b407021a68b3bf1d620f76d1816ee341541e1c",
+  "checks": {
+    "expected_red_status": true,
+    "expected_exit_one": true,
+    "zero_scorer_workflows": true,
+    "zero_numeric_input_access": true,
+    "wrapper_still_absent": true,
+    "frozen_source_matches": true,
+    "frozen_plan_matches": true,
+    "all_recorded_artifacts_match": true,
+    "all_setup_checks_pass": true
+  },
+  "artifact_count": 12,
+  "actual_process_exit_code": 1
+}
