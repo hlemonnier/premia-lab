@@ -1,0 +1,46 @@
+{
+  "config.json": {
+    "sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+    "bytes": 365
+  },
+  "daily.csv": {
+    "sha256": "970795ed5140a9ac18cc489826f5379f8afc033c30d47b8483a84cb8eda003f7",
+    "bytes": 20617
+  },
+  "fixture_definition.json": {
+    "sha256": "57b94c17681739b07d2f4e09d90f1e6169d8fdb7fd17c760e99ba1d219921161",
+    "bytes": 881
+  },
+  "input_manifest.json": {
+    "sha256": "e7fd115a5f1b0486db9e31791ca29fbbd8175b474f5e46ce541850ae1ed72e4b",
+    "bytes": 397
+  },
+  "inputs/returns.npy": {
+    "sha256": "18f820912cc216eb75b3e3bfd0fdc5c4594aee4c316b61930bfd8e05af4a8430",
+    "bytes": 53888
+  },
+  "source/candidate/factor_portfolio.py": {
+    "sha256": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+    "bytes": 6813
+  },
+  "source/candidate/portfolio.py": {
+    "sha256": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+    "bytes": 7640
+  },
+  "source/candidate/strategy.py": {
+    "sha256": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+    "bytes": 10951
+  },
+  "source/candidate/strategy_factor.py": {
+    "sha256": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+    "bytes": 7547
+  },
+  "source_manifest.json": {
+    "sha256": "11eedccc38a4dd558f570d1e4ea455fb2cefd20a85b610c0fb2b7fc7d4fda905",
+    "bytes": 512
+  },
+  "targets.npy": {
+    "sha256": "55a24d97e238086d63c84912df5ef8c2ca631a2d24911f910f082d488ec95887",
+    "bytes": 21504
+  }
+}

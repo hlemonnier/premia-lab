@@ -1,0 +1,57 @@
+{
+  "artifact_manifest.json": {
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/artifact_manifest.json",
+    "sha256": "2e1aff5ae8e1257a6abef712b821e4859778dd20f0bb60f2a9903cf0c350d95b",
+    "bytes": 6287
+  },
+  "input_manifest.json": {
+    "sha256": "df920fd644c6aba72817f9e04170dfcec935f1f25e5694bd717021bc2d38e4f9",
+    "bytes": 1284,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/input_manifest.json"
+  },
+  "source_manifest.json": {
+    "sha256": "8746451b648ff1a917cfc2fa9f3decb4e2e31060298ecf51274af1f1648f41c3",
+    "bytes": 2187,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source_manifest.json"
+  },
+  "config.json": {
+    "sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+    "bytes": 365,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/config.json"
+  },
+  "source/candidate/strategy.py": {
+    "sha256": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+    "bytes": 10951,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/strategy.py"
+  },
+  "source/candidate/portfolio.py": {
+    "sha256": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+    "bytes": 7640,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/portfolio.py"
+  },
+  "source/candidate/strategy_factor.py": {
+    "sha256": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+    "bytes": 7547,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/strategy_factor.py"
+  },
+  "source/candidate/factor_portfolio.py": {
+    "sha256": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+    "bytes": 6813,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/factor_portfolio.py"
+  },
+  "inputs/returns.npy": {
+    "sha256": "82544a656bcdcb53b6b5d001969a582406b5ac3537df8807f683a9225c21c95d",
+    "bytes": 30240128,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/inputs/returns.npy"
+  },
+  "targets.npy": {
+    "sha256": "948c0fb8aa9462586c6972ac409c25d0c768e20ab7817cf4fe434908ee4de617",
+    "bytes": 28216128,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/targets.npy"
+  },
+  "daily.csv": {
+    "sha256": "4ab5ba9808248a9ae28b1f5cfb835567a8ecf6a1d1adffc52242040d9d3b87f1",
+    "bytes": 456368,
+    "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/daily.csv"
+  }
+}

@@ -12,6 +12,12 @@ Read [the continued research report](research/CONTINUED_RESEARCH_20261027.md) fo
 
 ## Start here
 
+The [exploratory-notes follow-up](research/NOTES_AND_ATTRIBUTION_20261027.md)
+reviews the newly supplied notes, reconciles the frozen C09 evidence, and adds
+one prespecified descriptive attribution of its saved positions. The audit's
+strong gross mean is mainly associated with the fixed residual-factor span;
+the remainder is not identified stock-specific alpha. The handoff is unchanged.
+
 - [Master plan](Continual_Research_Master_Plan.md): requirements, research design, exact score windows and release gates.
 - [Frozen protocol](RESEARCH_PROTOCOL.json): machine-readable discovery/validation/audit masks and experiment budget.
 - [Worklog](WORKLOG.md): current objective, decisions, completed work and next gate.

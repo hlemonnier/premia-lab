@@ -2,6 +2,53 @@
 
 The repository contains frozen plans, all twelve development configurations, independent reviews, complete-run evidence and reproduction scripts. The selected fixed C09 policy is in `handoff/`; its top-level `strategy.py` needs the accompanying `model/` directory. The supplied scaffold in `source/` remains unchanged. Development candidates in `submission/` require their explicit named JSON configurations; their default strategy is C01, not the selected handoff.
 
+## Exploratory-notes and frozen-attribution follow-up
+
+Read `research/NOTES_AND_ATTRIBUTION_20261027.md` for the later descriptive
+analysis of the unchanged C09 policy. It does not run a new strategy or create
+an untouched confirmation sample. The admission was published in `27fdb7f0`;
+the tested tool, independent review and release were published in `49fc43f2`
+before the single actual attribution.
+
+The complete preimplementation synthetic workflow can be reproduced from the
+current checkout with a **new** output directory:
+
+```bash
+python tools/verify_frozen_attribution.py --project . --out evidence/frozen_attribution_synthetic_reproduction
+```
+
+It generates its own known-component inputs and invokes the attribution tool in
+nine fresh processes. Original results are retained in
+`evidence/frozen_attribution_synthetic_001`. The original expected missing-tool
+record in `evidence/frozen_attribution_red_001` describes the preimplementation
+environment. Once the implementation exists, its old command cannot reproduce
+that absence. To reenact only the missing-tool behavior, pass `--expect-missing`
+and `--implementation` pointing to an explicitly new, nonexistent path; label
+the new result a reenactment and retain the original record unchanged.
+
+The actual run command is in `evidence/frozen_attribution_real_001/rerun.txt`.
+It uses the original `evidence/audit_C09_001` packet, authenticating artifact
+manifest SHA256 `2e1aff5ae8e1257a6abef712b821e4859778dd20f0bb60f2a9903cf0c350d95b`
+and every consumed file before numeric access. It needs original return and
+target arrays, the original daily ledger/configuration/manifests, and four
+original helper files; it does not need characteristics, forecasts or another
+strategy replay. Excluded NPY files must be restored or regenerated with their
+**original recorded identities** as described below. Preserve the original
+metadata; do not rewrite its hashes or timings to accommodate a new replay.
+
+The source/synthetic review is `reviews/FROZEN_ATTRIBUTION_SOURCE_REVIEW.md`.
+The independent actual-output reconciliation, with its exact self-contained
+command and all 146 observed checks, is
+`reviews/FROZEN_ATTRIBUTION_ACTUAL_REVIEW.md`. The real packet includes the full
+3,526-row decomposition, original input hashes, frozen helper source, fixed
+stage summaries, expectations and logs. Fees remain the original separate
+subtraction; the three components are not separately implemented portfolios.
+
+`research/FROZEN_ATTRIBUTION_RELEASE_20261027.json` points to the preserved
+release002 snapshots. Release001 is an unexecuted draft that caught the review
+document before its completed source/synthetic section was saved. No actual
+attribution occurred under that draft, and the diagnostic code did not change.
+
 ## Selected handoff
 
 The four required files are `handoff/strategy.py`, `handoff/model/__init__.py`, `handoff/model/strategy.py` and `handoff/model/portfolio.py`. The outer entry point contains the complete pre-audit note and literal original C09 configuration. Both engine/helper files retain their original bytes. The handoff itself needs only NumPy and the Python standard library; research verification additionally uses the original scorer's dependencies and recorded environment.

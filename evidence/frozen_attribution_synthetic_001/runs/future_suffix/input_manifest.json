@@ -1,0 +1,23 @@
+{
+  "kind": "synthetic_frozen_attribution",
+  "input_slice": [
+    0,
+    420
+  ],
+  "files": {
+    "returns.npy": {
+      "sha256": "18f820912cc216eb75b3e3bfd0fdc5c4594aee4c316b61930bfd8e05af4a8430",
+      "shape": [
+        420,
+        16
+      ],
+      "dtype": "float64",
+      "strides": [
+        8,
+        3360
+      ],
+      "c_contiguous": false,
+      "f_contiguous": true
+    }
+  }
+}

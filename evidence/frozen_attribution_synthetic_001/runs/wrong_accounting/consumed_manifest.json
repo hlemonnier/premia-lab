@@ -1,0 +1,57 @@
+{
+  "artifact_manifest.json": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/artifact_manifest.json",
+    "sha256": "fcf4525b1c0f4f8280d790a9cba010fef339fc360595e2997a0d6cbf5ad00a9a",
+    "bytes": 1485
+  },
+  "input_manifest.json": {
+    "sha256": "e084c00bf90664382ca20e72f971ebb1978196a4b6da71abf3330fe4f028a47b",
+    "bytes": 397,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/input_manifest.json"
+  },
+  "source_manifest.json": {
+    "sha256": "11eedccc38a4dd558f570d1e4ea455fb2cefd20a85b610c0fb2b7fc7d4fda905",
+    "bytes": 512,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/source_manifest.json"
+  },
+  "config.json": {
+    "sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+    "bytes": 365,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/config.json"
+  },
+  "source/candidate/strategy.py": {
+    "sha256": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+    "bytes": 10951,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/source/candidate/strategy.py"
+  },
+  "source/candidate/portfolio.py": {
+    "sha256": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+    "bytes": 7640,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/source/candidate/portfolio.py"
+  },
+  "source/candidate/strategy_factor.py": {
+    "sha256": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+    "bytes": 7547,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/source/candidate/strategy_factor.py"
+  },
+  "source/candidate/factor_portfolio.py": {
+    "sha256": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+    "bytes": 6813,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/source/candidate/factor_portfolio.py"
+  },
+  "inputs/returns.npy": {
+    "sha256": "006fa64772040de5c1046309071422cf25f7ff1208900045c1221415e8bce407",
+    "bytes": 53888,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/inputs/returns.npy"
+  },
+  "targets.npy": {
+    "sha256": "55a24d97e238086d63c84912df5ef8c2ca631a2d24911f910f082d488ec95887",
+    "bytes": 21504,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/targets.npy"
+  },
+  "daily.csv": {
+    "sha256": "642587006d6fa820ae817905307df5a6ad839339512926779d3f5c07cbae4963",
+    "bytes": 20643,
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/wrong_accounting/daily.csv"
+  }
+}

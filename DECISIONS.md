@@ -64,3 +64,11 @@ The user supplied the instructions and the reported interpretation/challenge of 
 The later attachment is preserved exactly as `research/user_exploration_notes_20261027.md`. It records the user's own methodological points with `[me]` and distinguishes ideas attributed to outside reviews D1/D3. Its explicit scope says that returns, characteristics and supplied figures were not opened. Its contribution is therefore a documented critique and hypothesis list, not independently reproduced market evidence.
 
 The notes emphasize the label boundary, daily dependence, drifted holdings, cost-aware decisions, causal risk estimation and honest attribution. AI reviewers mapped those points to completed work and corrected several technical overstatements. The notes and literature motivate a new descriptive factor/remainder attribution of the already-tested C09 positions. They did not retroactively cause the earlier model implementation or protected selection. The pre-audit strategy note remains byte-identical; this dated ledger records the later contribution without rewriting that chronology.
+
+The descriptive follow-up was completed with an AI-authored prospective protocol,
+a separate AI author's preimplementation whole-workflow verifier, an AI-authored
+implementation, and independent source/synthetic/actual-output reviews. Its
+finding that the audit's larger mean is concentrated in the fixed residual-factor
+span is a new AI-executed analysis motivated by the user's notes and the cited
+research. It is not attributed to a prior human experiment and does not change
+the selected policy or its protected-selection history.
