@@ -1,0 +1,17 @@
+{
+  "source/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+  "source/candidate/strategy_gls.py": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6",
+  "source/candidate/gls_precision.py": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e",
+  "source/candidate/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+  "source/candidate/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+  "source/candidate/strategy_gls_factor.py": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628",
+  "source/candidate/factor_portfolio.py": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+  "source/candidate/strategy_factor.py": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+  "reference/source_manifest.json": "cd377221a1bfad5eadedd920d553e09e2c4a95dd292f9f2bda83b59b1f9d5fbd",
+  "reference/daily.csv": "4d87353339cd0fd2dc81fb75b303e05f5b1e3d3b530ba1abc8090810fc881cab",
+  "reference/summary.json": "7c457816f90e2dd8a4e7cdbd49cc1d4f44e6254d43486fe1b645798a89f913dc",
+  "runner_used.py": "518924f19e8e2ad4b0f06cd8a3bbfba32f707fa9eaa18e65a27f69cb1486489c",
+  "expectations.md": "edef032d85505e54ac3842d6f067df45215aca94f7b0c7b09e5b1051e1ed1a2e",
+  "protocol_used.json": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737",
+  "config.json": "f424033fae2e2ca4a8f0a532a2da41dc4841235f1c8c67394e26e9081c9a49fb"
+}

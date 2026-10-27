@@ -4,7 +4,7 @@ Private research workspace for the supplied anonymous simulated stock market. Th
 
 ## Status
 
-Eleven complete discovery configurations have been executed under the frozen protocol. The best current development score is C06's 0.762944 net Sharpe, with realized net market beta 0.006330. A strong hidden-future edge has not been established. Continued work on 27 October adds an independent full-discovery causal audit and one prospectively specified local additive contrast, C12, in the original twelfth slot. C12 is not yet scored. Validation and locked audit remain unopened.
+All twelve admitted discovery configurations have been executed. C06 remains the development leader at 0.762944 net Sharpe and realized net-market beta 0.006330. The literature-informed local additive challenger C12 scored 0.625698, below its parent's 0.637567, and is rejected for further evaluation under its fixed admission rule. A strong hidden-future edge has not been established. C06 and the simpler C09 model are completing exact engineering gates before the protected comparison. Validation and locked audit remain unopened.
 
 Read [the current research checkpoint](research/DISCOVERY_CHECKPOINT.md) for the complete comparison, contrary evidence, limitations and next gate. `submission/` currently holds development candidates; its default `strategy.py` is the C01 benchmark, not a selected employer hand-in. Use the explicit JSON configuration and runner when reproducing a named candidate.
 

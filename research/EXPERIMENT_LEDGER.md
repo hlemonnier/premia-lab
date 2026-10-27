@@ -110,6 +110,16 @@ An independent reviewer must freeze the synthetic whole-strategy expectations an
 
 The first attempt at this continued-work session was lost in a workspace reset before publication. Its reported partial C06 causal comparisons are unavailable and are not counted as passes. The C12 constants above preserve that prior prospective decision; this replacement admission is recorded before source creation in the recovered workspace. Twelve slots are reserved; eleven are scored at this admission point.
 
+## C12 completed; discovery budget exhausted
+
+The exact C12 configuration completed the unchanged discovery scorer with exit 0 and all 20 workflow checks. Net Sharpe is **0.625697781**, below C02's **0.637567**; gross Sharpe is **0.747484576**, also slightly below the parent. Annual full fees rose to **0.833189%**, compared with C02's approximately **0.7773%**. Annual arithmetic net return is 4.281326%, volatility 6.842482%, realized net-market beta 0.021764 and candidate mean rebalance latency 2.261 ms on this execution. Fixed block net Sharpes are 1.089574, 0.580713, 0.562401 and 0.402337. Source, exact metrics, daily records and rerun commands are in `evidence/discovery_C12_001`.
+
+Before that market run, the independent five-workflow synthetic gate passed 55 checks and 12 exactly equal protected numerical comparisons. Its known-truth correlation was 0.988107. The zero-return control produced exactly zero forecasts, positions and economics, with undefined Sharpe and beta recorded as null. The expected missing-module stage preceded implementation and remains preserved. These fixture results never entered the market-alpha ranking.
+
+C12 does not meet its predeclared parent-improvement criterion and is excluded from protected nomination. No local-term retuning, additional configuration or search-budget expansion follows. All twelve admitted discovery configurations have now been scored. The admission rule for the next stage, written before the C12 result, retains C06 and C09 subject to their exact engineering gates; see `PROTECTED_EVALUATION_ADMISSION_PLAN.md`.
+
+An exact C06 standard-run reproduction was executed after a verification fixture's byte-identity failure. It reproduces the original forecast, target and drifted-held-book array hashes and net Sharpe exactly. The discrepancy was associated with C-versus-Fortran input layout in verification fixtures. Original failures and the finite current-layout causal results remain separate; fixture corrections preserve the original candidate, scorer, tolerances and exact-reference gates. They are engineering reruns, not new model configurations.
+
 ## Protected periods
 
 Validation [2016,3024): **not opened**. Locked audit [3024,3780): **not opened**. No current result measures performance on the employer's unseen continuation.

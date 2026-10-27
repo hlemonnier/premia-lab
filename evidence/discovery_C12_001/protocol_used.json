@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_PREDICTIVE_RESEARCH",
+  "date": "2026-10-26",
+  "timezone": "Europe/Paris",
+  "purpose": "Maximize hidden-continuation annualized daily net Sharpe, obeying the supplied causal and runtime contract and market-beta condition.",
+  "authority": {
+    "readme": "source/Quant Research Take-Home/README.md",
+    "scorer": "source/Quant Research Take-Home/score.py",
+    "modify_originals": false
+  },
+  "source_archive": {
+    "filename": "Quant Research Take-Home-20261026T134123Z-1-001(1).zip",
+    "bytes": 136015226,
+    "sha256": "ba49564fb0d8888124fdc0b680f88c843c17359a089129f1fe28e0b94e003dd6"
+  },
+  "index_convention": "All slice bounds are zero-based array indices with an exclusive upper bound; CSV day label = array index + 1.",
+  "replay": {
+    "start": 252,
+    "first_earned_return_index": 253,
+    "continuous_state": true,
+    "free_first_trade": true,
+    "score_std_ddof": 0,
+    "cost_timing": "Same day's closing rebalance cost subtracted from that day's gross return; drift denominator uses gross return."
+  },
+  "periods": [
+    {
+      "name": "discovery",
+      "input_slice": [
+        0,
+        2016
+      ],
+      "score_slice": [
+        253,
+        2015
+      ],
+      "scored_days": 1762
+    },
+    {
+      "name": "validation_a",
+      "input_slice": [
+        0,
+        3024
+      ],
+      "score_slice": [
+        2016,
+        2520
+      ],
+      "scored_days": 504
+    },
+    {
+      "name": "validation_b",
+      "input_slice": [
+        0,
+        3024
+      ],
+      "score_slice": [
+        2520,
+        3023
+      ],
+      "scored_days": 503
+    },
+    {
+      "name": "pooled_validation",
+      "input_slice": [
+        0,
+        3024
+      ],
+      "score_slice": [
+        2016,
+        3023
+      ],
+      "scored_days": 1007
+    },
+    {
+      "name": "locked_audit",
+      "input_slice": [
+        0,
+        3780
+      ],
+      "score_slice": [
+        3024,
+        3779
+      ],
+      "scored_days": 755
+    }
+  ],
+  "data_access": {
+    "already_permitted_full_file": [
+      "hashes",
+      "byte sizes",
+      "schema",
+      "dimensions",
+      "exact ordered identifiers",
+      "finiteness"
+    ],
+    "already_viewed_outcomes": [
+      0,
+      504
+    ],
+    "already_viewed_full_sample_figures": false,
+    "pre_freeze_research": [
+      0,
+      2016
+    ],
+    "validation": "At most three finalist specifications frozen before opening either block; same replay for both blocks; online updates under fixed policy allowed.",
+    "locked_audit": "One frozen candidate after candidate engineering gates. Debug/runtime/causality checks before freeze use discovery/synthetic data.",
+    "contamination_rule": "Any result-driven redesign after exposure is recorded; the reused interval is not described as untouched."
+  },
+  "first_wave_budget": {
+    "scored_discovery_configurations": 12,
+    "primary_alpha_families": 2,
+    "validation_finalists": 3,
+    "explanatory_ablations": 6,
+    "accounting": "Every complete selectable pipeline counts; candidate-changing ablations count inside twelve. All diagnostics, feature scans, horizons, seeds, hand changes and stresses that influence choices are logged as exposures.",
+    "changes": "Increase only with a written rationale and updated budget before more results; disclose whether previous results motivated expansion.",
+    "locked_audit_distinct_candidate_configurations": 1,
+    "locked_audit_reproducibility_reruns": "Exact reruns of the same frozen code/configuration for reproducibility and clean-folder execution are allowed and logged; no model/configuration change or retuning. A changed candidate is a new exposure and changes the clean-holdout claim."
+  },
+  "hypotheses": {
+    "diagnostic_forward_horizons_days": [
+      1,
+      5,
+      20
+    ],
+    "nonlinear_challenger": "Earned by discovery evidence; no prescribed winner or model architecture."
+  },
+  "selection": {
+    "primary": "Pooled daily net Sharpe over [2016,3023); never mean of block Sharpes.",
+    "eligible": "Candidate passes causal, output/finite arithmetic, tested-path safety and measured runtime gates; pooled realized validation abs(beta) < 0.2 under our conservative interpretation.",
+    "beta_design_goal_abs": 0.1,
+    "beta_note": "The brief literally says beta under0.2. Absolute-beta screening and0.1 design goal are our choices, not extra employer requirements; future compliance is not guaranteed.",
+    "tie_absolute_sharpe_tolerance": 1e-06,
+    "tie_breaker": "Simplicity rank assigned before validation, then lower measured runtime.",
+    "diagnostic_role": "Block stability, costs, risk, uncertainty and tails are reported; no arbitrary minimum Sharpe or requirement that every short block be profitable. Findings that trigger redesign consume validation and must be disclosed.",
+    "undefined_metrics": "No invented Sharpe or beta when variance is zero."
+  },
+  "verification": {
+    "policy": "E2E preferred. No unit tests written after covered implementation. If isolation necessary: failure modes/expectations, then tests, then implementation.",
+    "future_alteration": "If rows[c:] change, all forecast channels through rowc inclusive and targets for earning days<=c must match; compare net/cost ledgers strictly beforec.",
+    "state": "Compare protected decisions and consumed state, not arbitrary future cache elements; use fresh processes for independent candidate runs.",
+    "suffix_validity": "Admissible perturbations only; later suffix failure is not itself proof of prefix leakage. Unavailable comparisons remain unverified.",
+    "evidence": "Setup/inputs/code hashes/exact command/environment/expectations/actual per-check outcomes/logs/daily outputs/status for every run.",
+    "scope_note": "Two-stock golden fixture checks scorer/harness; arbitrary universe generality is not an assignment requirement."
+  },
+  "current_status": {
+    "source_review": "COMPLETE",
+    "input_hygiene": "EXECUTED_PASS",
+    "supplied_example_e2e": "EXECUTED_PASS_SCOPE_ONLY",
+    "supplied_example_assignment_beta": "FAIL_BY_DESIGN",
+    "candidate_implementation": "NOT_STARTED",
+    "candidate_causality": "NOT_RUN",
+    "candidate_performance": "NOT_RUN",
+    "long_horizon_runtime": "NOT_RUN",
+    "final_clean_environment": "NOT_RUN"
+  },
+  "deadline": {
+    "operational_target_date": "2026-10-28",
+    "exact_hour": null,
+    "confirmation": "Earlier email proposed finish Wednesday; no explicit final hour found."
+  },
+  "attribution": "Record actual AI and human contributions; do not invent human discoveries.",
+  "external_actions": "No outgoing email or submission authorized by this planning request."
+}

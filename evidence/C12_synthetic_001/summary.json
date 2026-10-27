@@ -1,0 +1,823 @@
+{
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "started_utc": "2026-10-27T11:00:06.873813+00:00",
+  "checks": [
+    {
+      "name": "exact_admitted_configuration",
+      "status": "PASS",
+      "actual": {
+        "candidate_id": "C12_local_additive",
+        "basis": "additive",
+        "alpha_half_life": 252.0,
+        "ridge": 0.1,
+        "local_ridge": 0.3,
+        "min_training_days": 126,
+        "feature_clip": 4.0,
+        "risk_window": 252,
+        "risk_min_days": 20,
+        "variance_shrinkage": 0.2,
+        "variance_floor": 1e-06,
+        "risk_aversion": 1000.0,
+        "cost_horizon": 20.0,
+        "weight_cap": 0.01,
+        "gross_cap": 1.0
+      }
+    },
+    {
+      "name": "original_scorer_identity",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "baseline:finite_complete_outputs",
+      "status": "PASS",
+      "actual": {
+        "targets": [
+          347,
+          1000
+        ],
+        "target_earning_days": [
+          347
+        ],
+        "scored_rows": [
+          346,
+          5
+        ],
+        "score_days": [
+          346
+        ],
+        "forecast_prefix": [
+          600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "baseline:unchanged_inputs_and_config",
+      "status": "PASS",
+      "actual": {
+        "inputs_unchanged": true,
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "baseline:frozen_source_config_and_scorer_identity",
+      "status": "PASS",
+      "actual": {
+        "source_files": 11,
+        "scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "baseline:exact_day_sequences",
+      "status": "PASS",
+      "actual": {
+        "targets": 347,
+        "scored_days": 346
+      }
+    },
+    {
+      "name": "baseline:controls_and_solvency",
+      "status": "PASS",
+      "actual": {
+        "maximum_stock_weight": 0.0011440309312931753,
+        "maximum_gross": 1.0000000000000004,
+        "minimum_net": 0.0009245559063818144
+      }
+    },
+    {
+      "name": "baseline:declared_startup",
+      "status": "PASS",
+      "actual": {
+        "first_active_row": 127
+      }
+    },
+    {
+      "name": "baseline:known_signal_correlation",
+      "status": "PASS",
+      "actual": {
+        "correlation": 0.9881070516475063,
+        "minimum": 0.9
+      }
+    },
+    {
+      "name": "baseline:positive_net_outcome",
+      "status": "PASS",
+      "actual": {
+        "daily_net_mean": 0.0016185720954029563,
+        "net_sharpe": 126.67904587317918,
+        "sharpe_minimum_exclusive": 1.0
+      }
+    },
+    {
+      "name": "baseline:realized_beta",
+      "status": "PASS",
+      "actual": {
+        "net_market_beta": 0.001178122475917433,
+        "absolute_limit_exclusive": 0.2
+      }
+    },
+    {
+      "name": "baseline:original_gross_accounting",
+      "actual_shape": [
+        346
+      ],
+      "expected_shape": [
+        346
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 346,
+      "mismatched_elements": 0,
+      "max_abs_error": 2.6020852139652106e-18,
+      "max_relative_error": 1.477817797497399e-15
+    },
+    {
+      "name": "baseline:full_drift_based_fees",
+      "actual_shape": [
+        346
+      ],
+      "expected_shape": [
+        346
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 346,
+      "mismatched_elements": 0,
+      "max_abs_error": 8.470329472543003e-21,
+      "max_relative_error": 7.819190145906579e-16
+    },
+    {
+      "name": "baseline:posttrade_gross_accounting",
+      "actual_shape": [
+        346
+      ],
+      "expected_shape": [
+        346
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 346,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "repeat:finite_complete_outputs",
+      "status": "PASS",
+      "actual": {
+        "targets": [
+          347,
+          1000
+        ],
+        "target_earning_days": [
+          347
+        ],
+        "scored_rows": [
+          346,
+          5
+        ],
+        "score_days": [
+          346
+        ],
+        "forecast_prefix": [
+          600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "repeat:unchanged_inputs_and_config",
+      "status": "PASS",
+      "actual": {
+        "inputs_unchanged": true,
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "repeat:frozen_source_config_and_scorer_identity",
+      "status": "PASS",
+      "actual": {
+        "source_files": 11,
+        "scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "repeat:exact_day_sequences",
+      "status": "PASS",
+      "actual": {
+        "targets": 347,
+        "scored_days": 346
+      }
+    },
+    {
+      "name": "repeat:controls_and_solvency",
+      "status": "PASS",
+      "actual": {
+        "maximum_stock_weight": 0.0011440309312931753,
+        "maximum_gross": 1.0000000000000004,
+        "minimum_net": 0.0009245559063818144
+      }
+    },
+    {
+      "name": "repeat:protected_date_indices",
+      "status": "PASS",
+      "actual": {
+        "forecast_last_inclusive": 599,
+        "target_last_inclusive": 599,
+        "economic_stop_exclusive": 599
+      }
+    },
+    {
+      "name": "repeat:protected_forecasts",
+      "actual_shape": [
+        600,
+        1000
+      ],
+      "expected_shape": [
+        600,
+        1000
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 600000,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "repeat:protected_targets",
+      "actual_shape": [
+        347,
+        1000
+      ],
+      "expected_shape": [
+        347,
+        1000
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 347000,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "repeat:protected_gross_fee_exposure_market",
+      "actual_shape": [
+        346,
+        4
+      ],
+      "expected_shape": [
+        346,
+        4
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 1384,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "repeat:protected_net",
+      "actual_shape": [
+        346
+      ],
+      "expected_shape": [
+        346
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 346,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "joint_from_400:finite_complete_outputs",
+      "status": "PASS",
+      "actual": {
+        "targets": [
+          347,
+          1000
+        ],
+        "target_earning_days": [
+          347
+        ],
+        "scored_rows": [
+          346,
+          5
+        ],
+        "score_days": [
+          346
+        ],
+        "forecast_prefix": [
+          600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "joint_from_400:unchanged_inputs_and_config",
+      "status": "PASS",
+      "actual": {
+        "inputs_unchanged": true,
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "joint_from_400:frozen_source_config_and_scorer_identity",
+      "status": "PASS",
+      "actual": {
+        "source_files": 11,
+        "scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "joint_from_400:admissible_nonidentity_intervention",
+      "status": "PASS",
+      "actual": {
+        "kind": "suffix",
+        "returns_changed": 200000,
+        "characteristics_changed": 2600000,
+        "cutoff": 400,
+        "mode": "joint",
+        "prefix_returns_unchanged": true,
+        "prefix_characteristics_unchanged": true
+      }
+    },
+    {
+      "name": "joint_from_400:exact_day_sequences",
+      "status": "PASS",
+      "actual": {
+        "targets": 347,
+        "scored_days": 346
+      }
+    },
+    {
+      "name": "joint_from_400:controls_and_solvency",
+      "status": "PASS",
+      "actual": {
+        "maximum_stock_weight": 0.0011506207363221011,
+        "maximum_gross": 1.0000000000000007,
+        "minimum_net": -0.0003182014923537811
+      }
+    },
+    {
+      "name": "joint_from_400:protected_date_indices",
+      "status": "PASS",
+      "actual": {
+        "forecast_last_inclusive": 400,
+        "target_last_inclusive": 400,
+        "economic_stop_exclusive": 400
+      }
+    },
+    {
+      "name": "joint_from_400:protected_forecasts",
+      "actual_shape": [
+        401,
+        1000
+      ],
+      "expected_shape": [
+        401,
+        1000
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 401000,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "joint_from_400:protected_targets",
+      "actual_shape": [
+        148,
+        1000
+      ],
+      "expected_shape": [
+        148,
+        1000
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 148000,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "joint_from_400:protected_gross_fee_exposure_market",
+      "actual_shape": [
+        147,
+        4
+      ],
+      "expected_shape": [
+        147,
+        4
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 588,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "joint_from_400:protected_net",
+      "actual_shape": [
+        147
+      ],
+      "expected_shape": [
+        147
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 147,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "prefix_384:finite_complete_outputs",
+      "status": "PASS",
+      "actual": {
+        "targets": [
+          131,
+          1000
+        ],
+        "target_earning_days": [
+          131
+        ],
+        "scored_rows": [
+          130,
+          5
+        ],
+        "score_days": [
+          130
+        ],
+        "forecast_prefix": [
+          384,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "prefix_384:unchanged_inputs_and_config",
+      "status": "PASS",
+      "actual": {
+        "inputs_unchanged": true,
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "prefix_384:frozen_source_config_and_scorer_identity",
+      "status": "PASS",
+      "actual": {
+        "source_files": 11,
+        "scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "prefix_384:exact_day_sequences",
+      "status": "PASS",
+      "actual": {
+        "targets": 131,
+        "scored_days": 130
+      }
+    },
+    {
+      "name": "prefix_384:controls_and_solvency",
+      "status": "PASS",
+      "actual": {
+        "maximum_stock_weight": 0.0011440309312931753,
+        "maximum_gross": 1.0000000000000004,
+        "minimum_net": 0.00111395845147046
+      }
+    },
+    {
+      "name": "prefix_384:protected_date_indices",
+      "status": "PASS",
+      "actual": {
+        "forecast_last_inclusive": 383,
+        "target_last_inclusive": 383,
+        "economic_stop_exclusive": 383
+      }
+    },
+    {
+      "name": "prefix_384:protected_forecasts",
+      "actual_shape": [
+        384,
+        1000
+      ],
+      "expected_shape": [
+        384,
+        1000
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 384000,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "prefix_384:protected_targets",
+      "actual_shape": [
+        131,
+        1000
+      ],
+      "expected_shape": [
+        131,
+        1000
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 131000,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "prefix_384:protected_gross_fee_exposure_market",
+      "actual_shape": [
+        130,
+        4
+      ],
+      "expected_shape": [
+        130,
+        4
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 520,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "prefix_384:protected_net",
+      "actual_shape": [
+        130
+      ],
+      "expected_shape": [
+        130
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 130,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "zero_returns:finite_complete_outputs",
+      "status": "PASS",
+      "actual": {
+        "targets": [
+          347,
+          1000
+        ],
+        "target_earning_days": [
+          347
+        ],
+        "scored_rows": [
+          346,
+          5
+        ],
+        "score_days": [
+          346
+        ],
+        "forecast_prefix": [
+          600,
+          1000
+        ]
+      }
+    },
+    {
+      "name": "zero_returns:unchanged_inputs_and_config",
+      "status": "PASS",
+      "actual": {
+        "inputs_unchanged": true,
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "zero_returns:frozen_source_config_and_scorer_identity",
+      "status": "PASS",
+      "actual": {
+        "source_files": 11,
+        "scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+        "config_sha256": "93c43f580b7a7091558eaadcb014ff010e061ea15660f5c44d6b0ac553bf0bad"
+      }
+    },
+    {
+      "name": "zero_returns:exact_day_sequences",
+      "status": "PASS",
+      "actual": {
+        "targets": 347,
+        "scored_days": 346
+      }
+    },
+    {
+      "name": "zero_returns:controls_and_solvency",
+      "status": "PASS",
+      "actual": {
+        "maximum_stock_weight": 0.0,
+        "maximum_gross": 0.0,
+        "minimum_net": 0.0
+      }
+    },
+    {
+      "name": "zero_returns:exact_zero_forecasts_targets_economics",
+      "status": "PASS",
+      "actual": {
+        "forecast_nonzero": 0,
+        "target_nonzero": 0,
+        "economic_nonzero": 0,
+        "net_nonzero": 0
+      }
+    },
+    {
+      "name": "zero_returns:original_gross_accounting",
+      "actual_shape": [
+        346
+      ],
+      "expected_shape": [
+        346
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 346,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "zero_returns:full_drift_based_fees",
+      "actual_shape": [
+        346
+      ],
+      "expected_shape": [
+        346
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 346,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "zero_returns:posttrade_gross_accounting",
+      "actual_shape": [
+        346
+      ],
+      "expected_shape": [
+        346
+      ],
+      "atol": 1e-14,
+      "rtol": 1e-12,
+      "status": "PASS",
+      "elements": 346,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "max_relative_error": 0.0
+    },
+    {
+      "name": "zero_returns:undefined_variance_metrics",
+      "status": "PASS",
+      "actual": {
+        "net_variance": 0.0,
+        "market_variance": 0.0,
+        "net_sharpe": null,
+        "net_market_beta": null,
+        "sharpe_reason": "undefined: zero net-return variance",
+        "beta_reason": "undefined: zero market-return variance"
+      }
+    }
+  ],
+  "workflows": [
+    {
+      "name": "baseline",
+      "exit_code": 0,
+      "worker_status": "EXECUTED_PASS",
+      "status": "COMPLETED",
+      "pid": 6
+    },
+    {
+      "name": "repeat",
+      "exit_code": 0,
+      "worker_status": "EXECUTED_PASS",
+      "status": "COMPLETED",
+      "pid": 8
+    },
+    {
+      "name": "joint_from_400",
+      "exit_code": 0,
+      "worker_status": "EXECUTED_PASS",
+      "status": "COMPLETED",
+      "pid": 10
+    },
+    {
+      "name": "prefix_384",
+      "exit_code": 0,
+      "worker_status": "EXECUTED_PASS",
+      "status": "COMPLETED",
+      "pid": 12
+    },
+    {
+      "name": "zero_returns",
+      "exit_code": 0,
+      "worker_status": "EXECUTED_PASS",
+      "status": "COMPLETED",
+      "pid": 14
+    }
+  ],
+  "scope": "Synthetic full C12 strategy through original scorer; no actual market data",
+  "seed": 20261027,
+  "input_shape": [
+    600,
+    1000,
+    13
+  ],
+  "process_controls": {
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "cpu_affinity": [
+      5
+    ]
+  },
+  "run_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_c12_local_workflow.py --project . --strategy submission/strategy_local_additive.py --config research/configs/C12_local_additive.json --out evidence/C12_synthetic_001",
+  "validation": "NOT_OPENED",
+  "audit": "NOT_OPENED",
+  "century_runtime": "NOT_EXECUTED",
+  "actual_data_causality": "NOT_TESTED_BY_THIS_WORKFLOW",
+  "rerun_command": "taskset -c 5 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/runner_used.py --project /workspace/scratch/a72f2bd378f1/continual-research-takehome --strategy /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/source/candidate/strategy_local_additive.py --config /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/config.json --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001_rerun --worker-script /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/worker_used.py --scorer /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/source/score.py --plan /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/expectations.md --model-plan /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/model_expectations.md --protocol /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C12_synthetic_001/protocol_used.json",
+  "baseline_metrics": {
+    "forecast_truth_correlation": 0.9881070516475063,
+    "net_sharpe": 126.67904587317918,
+    "gross_sharpe": 127.54807539366027,
+    "annual_arithmetic_net_mean": 0.407880168041545,
+    "annual_net_volatility": 0.003219791917677385,
+    "annual_full_fees": 0.002788669444808927,
+    "paid_full_fees_sum": 0.0038288874123170186,
+    "net_market_beta": 0.001178122475917433,
+    "maximum_gross": 1.0000000000000004,
+    "maximum_stock_weight": 0.0011440309312931753,
+    "opening_full_cost_waived": 1.0009577691432687e-05,
+    "maximum_abs_true_beta_exposure": 0.0053006878442799586,
+    "forecast_instrumented_seconds": 1.515446161998625,
+    "mean_official_rebalance_ms": 1.9969569161704475,
+    "maximum_official_rebalance_ms": 5.9264450010232395
+  },
+  "cash_control_metrics": {
+    "net_sharpe": null,
+    "net_market_beta": null,
+    "sharpe_reason": "undefined: zero net-return variance",
+    "beta_reason": "undefined: zero market-return variance",
+    "annual_arithmetic_net_mean": 0.0,
+    "annual_net_volatility": 0.0,
+    "paid_full_fees_sum": 0.0,
+    "maximum_gross": 0.0,
+    "maximum_stock_weight": 0.0,
+    "forecast_instrumented_seconds": 1.2849669980005274,
+    "mean_official_rebalance_ms": 0.8798520607053507,
+    "maximum_official_rebalance_ms": 3.265618999648723,
+    "official_report": "NOT_CALLED: variance-based metrics undefined; original scorer.run completed"
+  },
+  "final_integrity": {
+    "frozen_sources": true,
+    "generated_inputs": true
+  },
+  "finished_utc": "2026-10-27T11:00:21.293695+00:00",
+  "exit_code": 0
+}
