@@ -122,4 +122,8 @@ An exact C06 standard-run reproduction was executed after a verification fixture
 
 ## Protected periods
 
-Validation [2016,3024): **not opened**. Locked audit [3024,3780): **not opened**. No current result measures performance on the employer's unseen continuation.
+The exact C06 and C09 specifications passed their source, canonical-layout causal and complete 25,200-row runtime gates. The protected controller also passed its prospective discovery-parity and synthetic-zero workflows, with independent saved-output review. These are engineering reruns of existing policies and do not consume an additional selectable configuration.
+
+Concrete nomination `VALIDATION_NOMINATION.json` is frozen at `fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5`, before either block is opened. It admits two candidates, C06 and C09, with predetermined simplicity ranks 3 and 1. C12 is excluded. The original pooled net-Sharpe ranking, eligibility, tie rule and single distinct audit candidate remain unchanged. A prospective uncertainty-reporting plan and clean handoff plan add reporting/engineering work only; they admit no new alpha search.
+
+Validation [2016,3024): **not opened at nomination**. Locked audit [3024,3780): **not opened**. No current result measures performance on the employer's unseen continuation.

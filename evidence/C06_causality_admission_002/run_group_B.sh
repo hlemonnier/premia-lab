@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd /workspace/scratch/a72f2bd378f1/continual-research-takehome
+exec taskset -c 3 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_causality.py --project /workspace/scratch/a72f2bd378f1/continual-research-takehome --strategy /workspace/scratch/a72f2bd378f1/continual-research-takehome/submission/strategy_gls_factor.py --config /workspace/scratch/a72f2bd378f1/continual-research-takehome/research/configs/C06_gls_factor.json --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001 --days 2016 --cuts 254 273 274 --prefix-days 1008 --append-days 64 --timeout-seconds 600

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -euo pipefail
+exec taskset -c 7 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -u /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_causality.py --project /workspace/scratch/a72f2bd378f1/continual-research-takehome --strategy /workspace/scratch/a72f2bd378f1/continual-research-takehome/submission/strategy.py --config /workspace/scratch/a72f2bd378f1/continual-research-takehome/research/configs/C09_additive_long_memory.json --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C09_causality_001 --days 2016 --cuts 127 253 254 1008 2015 --prefix-days 1008 --append-days 64 --timeout-seconds 600

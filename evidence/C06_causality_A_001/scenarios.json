@@ -1,0 +1,113 @@
+[
+  {
+    "name": "baseline",
+    "kind": "baseline",
+    "forecast_count": 2016,
+    "earning_day_limit": 2015,
+    "score_day_exclusive": 2015
+  },
+  {
+    "name": "repeat",
+    "kind": "repeat",
+    "forecast_count": 2016,
+    "earning_day_limit": 2015,
+    "score_day_exclusive": 2015
+  },
+  {
+    "name": "returns_from_127",
+    "kind": "suffix",
+    "cutoff": 127,
+    "mode": "returns",
+    "forecast_count": 128,
+    "earning_day_limit": 127,
+    "score_day_exclusive": 127
+  },
+  {
+    "name": "characteristics_from_127",
+    "kind": "suffix",
+    "cutoff": 127,
+    "mode": "characteristics",
+    "forecast_count": 128,
+    "earning_day_limit": 127,
+    "score_day_exclusive": 127
+  },
+  {
+    "name": "joint_from_127",
+    "kind": "suffix",
+    "cutoff": 127,
+    "mode": "joint",
+    "forecast_count": 128,
+    "earning_day_limit": 127,
+    "score_day_exclusive": 127
+  },
+  {
+    "name": "returns_from_147",
+    "kind": "suffix",
+    "cutoff": 147,
+    "mode": "returns",
+    "forecast_count": 148,
+    "earning_day_limit": 147,
+    "score_day_exclusive": 147
+  },
+  {
+    "name": "characteristics_from_147",
+    "kind": "suffix",
+    "cutoff": 147,
+    "mode": "characteristics",
+    "forecast_count": 148,
+    "earning_day_limit": 147,
+    "score_day_exclusive": 147
+  },
+  {
+    "name": "joint_from_147",
+    "kind": "suffix",
+    "cutoff": 147,
+    "mode": "joint",
+    "forecast_count": 148,
+    "earning_day_limit": 147,
+    "score_day_exclusive": 147
+  },
+  {
+    "name": "returns_from_253",
+    "kind": "suffix",
+    "cutoff": 253,
+    "mode": "returns",
+    "forecast_count": 254,
+    "earning_day_limit": 253,
+    "score_day_exclusive": 253
+  },
+  {
+    "name": "characteristics_from_253",
+    "kind": "suffix",
+    "cutoff": 253,
+    "mode": "characteristics",
+    "forecast_count": 254,
+    "earning_day_limit": 253,
+    "score_day_exclusive": 253
+  },
+  {
+    "name": "joint_from_253",
+    "kind": "suffix",
+    "cutoff": 253,
+    "mode": "joint",
+    "forecast_count": 254,
+    "earning_day_limit": 253,
+    "score_day_exclusive": 253
+  },
+  {
+    "name": "prefix_504",
+    "kind": "prefix",
+    "length": 504,
+    "forecast_count": 504,
+    "earning_day_limit": 503,
+    "score_day_exclusive": 503
+  },
+  {
+    "name": "synthetic_append_64",
+    "kind": "append",
+    "append_days": 64,
+    "forecast_count": 2016,
+    "earning_day_limit": 2015,
+    "score_day_exclusive": 2015
+  }
+]

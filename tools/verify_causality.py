@@ -53,6 +53,20 @@ def array_hash(array):
     return hashlib.sha256(memoryview(np.ascontiguousarray(array)).cast("B")).hexdigest()
 
 
+def array_layout(array):
+    return {"shape": list(array.shape), "strides": list(array.strides), "dtype": str(array.dtype),
+            "c_contiguous": bool(array.flags.c_contiguous), "f_contiguous": bool(array.flags.f_contiguous)}
+
+
+def append_preserving_order(array, suffix):
+    """Keep the canonical source's C/F representation when adding test rows."""
+    order = "F" if array.flags.f_contiguous and not array.flags.c_contiguous else "C"
+    result = np.empty((len(array) + len(suffix), *array.shape[1:]), dtype=array.dtype, order=order)
+    result[:len(array)] = array
+    result[len(array):] = suffix
+    return result
+
+
 def ready(value):
     if hasattr(value, "tolist"):
         return ready(value.tolist())
@@ -122,10 +136,12 @@ def require(condition, message):
 def scenario_inputs(inputs, scenario):
     base_returns = np.load(inputs / "returns.npy", allow_pickle=False)
     base_chars = np.load(inputs / "characteristics.npy", allow_pickle=False)
-    costs = np.load(inputs / "costs.npy", allow_pickle=False).copy()
-    returns, chars = base_returns.copy(), base_chars.copy()
+    base_costs = np.load(inputs / "costs.npy", allow_pickle=False)
+    costs = base_costs.copy(order="K")
+    returns, chars = base_returns.copy(order="K"), base_chars.copy(order="K")
     kind = scenario["kind"]
-    alteration = {"kind": kind, "returns_changed": 0, "characteristics_changed": 0}
+    alteration = {"kind": kind, "returns_changed": 0, "characteristics_changed": 0,
+                  "source_layouts": [array_layout(a) for a in (base_returns, base_chars, base_costs)]}
     if kind == "suffix":
         cut, mode = scenario["cutoff"], scenario["mode"]
         if mode in ("returns", "joint"):
@@ -147,13 +163,13 @@ def scenario_inputs(inputs, scenario):
         if mode in ("characteristics", "joint"):
             require(alteration["characteristics_changed"] > 0, "Characteristic perturbation is an identity intervention")
     elif kind == "prefix":
-        returns = returns[:scenario["length"]].copy()
-        chars = chars[:scenario["length"]].copy()
+        returns = returns[:scenario["length"]].copy(order="K")
+        chars = chars[:scenario["length"]].copy(order="K")
     elif kind == "append":
         count = scenario["append_days"]
         require(0 < count <= len(base_returns), "Invalid synthetic append length")
-        returns = np.concatenate([returns, 0.5 * base_returns[:count][::-1]])
-        chars = np.concatenate([chars, base_chars[:count][::-1]])
+        returns = append_preserving_order(returns, 0.5 * base_returns[:count][::-1])
+        chars = append_preserving_order(chars, base_chars[:count][::-1])
         alteration["synthetic_append_days"] = count
         alteration["synthetic_recipe"] = "Reverse first append_days permitted panels; scale their returns by0.5"
     elif kind not in ("baseline", "repeat"):
@@ -197,11 +213,13 @@ def worker(manifest_path):
         arrays, alteration = scenario_inputs(Path(config["inputs"]), scenario)
         status["alteration"] = alteration
         status["input_shapes"] = [list(a.shape) for a in arrays]
+        status["input_layouts"] = [array_layout(a) for a in arrays]
         status["input_hashes_before"] = [array_hash(a) for a in arrays]
         for array in arrays:
             array.setflags(write=False)
         write_json(out / "input_manifest.json", {"base": config["input_manifest"], "scenario": scenario,
-                   "actual_array_hashes": status["input_hashes_before"], "alteration": alteration})
+                   "actual_array_hashes": status["input_hashes_before"],
+                   "actual_array_layouts": status["input_layouts"], "alteration": alteration})
         strategy_path, scorer_path = Path(config["strategy"]), Path(config["scorer"])
         sys.path.insert(0, str(strategy_path.parent))
         strategy = import_file(strategy_path, strategy_path.stem)

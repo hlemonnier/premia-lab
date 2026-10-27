@@ -4,9 +4,9 @@ Private research workspace for the supplied anonymous simulated stock market. Th
 
 ## Status
 
-All twelve admitted discovery configurations have been executed. C06 remains the development leader at 0.762944 net Sharpe and realized net-market beta 0.006330. The literature-informed local additive challenger C12 scored 0.625698, below its parent's 0.637567, and is rejected for further evaluation under its fixed admission rule. A strong hidden-future edge has not been established. C06 and the simpler C09 model are completing exact engineering gates before the protected comparison. Validation and locked audit remain unopened.
+All twelve admitted discovery configurations have been executed. C06 remains the development leader at 0.762944 net Sharpe and realized net-market beta 0.006330. The literature-informed local additive challenger C12 scored 0.625698, below its parent's 0.637567, and is rejected for further evaluation under its fixed admission rule. A strong hidden-future edge has not been established. C06 and the simpler C09 model have completed source, causality and full 25,200-row runtime gates. Their exact specifications are frozen in [the validation nomination](research/VALIDATION_NOMINATION.json). Validation and locked audit remain unopened at this checkpoint.
 
-Read [the current research checkpoint](research/DISCOVERY_CHECKPOINT.md) for the complete comparison, contrary evidence, limitations and next gate. `submission/` currently holds development candidates; its default `strategy.py` is the C01 benchmark, not a selected employer hand-in. Use the explicit JSON configuration and runner when reproducing a named candidate.
+Read [the earlier eleven-candidate checkpoint](research/DISCOVERY_CHECKPOINT.md), [the continued experiment ledger](research/EXPERIMENT_LEDGER.md), and [the current worklog](WORKLOG.md) for the comparison, contrary evidence, limitations and next gate. `submission/` currently holds development candidates; its default `strategy.py` is the C01 benchmark, not a selected employer hand-in. Use the explicit JSON configuration and runner when reproducing a named candidate.
 
 ## Start here
 

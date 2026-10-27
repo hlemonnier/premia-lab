@@ -1,0 +1,35 @@
+{"name": "controller_contract_identities", "status": "PASS", "actual": ["expectations.md", "protocol_used.json", "admission_plan_used.md", "config.json"]}
+{"name": "frozen_masks", "status": "PASS", "actual": {"validation_a": [2016, 2520], "validation_b": [2520, 3023], "pooled_validation": [2016, 3023]}}
+{"name": "fixed_engineering_configuration", "status": "PASS", "actual": "f424033fae2e2ca4a8f0a532a2da41dc4841235f1c8c67394e26e9081c9a49fb"}
+{"name": "historical_reference_completed", "status": "PASS", "actual": {"status": "EXECUTED_PASS_SCOPE_ONLY", "candidate_id": "C06_gls_factor"}}
+{"name": "historical_reference_scope", "status": "PASS", "actual": [0, 2016]}
+{"name": "historical_dependency_closure", "status": "PASS", "actual": {"factor_portfolio.py": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5", "gls_precision.py": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e", "portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475", "strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7", "strategy_factor.py": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959", "strategy_gls.py": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6", "strategy_gls_factor.py": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628"}}
+{"name": "candidate_source:factor_portfolio.py", "status": "PASS", "actual": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5"}
+{"name": "candidate_source:gls_precision.py", "status": "PASS", "actual": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e"}
+{"name": "candidate_source:portfolio.py", "status": "PASS", "actual": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475"}
+{"name": "candidate_source:strategy.py", "status": "PASS", "actual": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7"}
+{"name": "candidate_source:strategy_factor.py", "status": "PASS", "actual": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959"}
+{"name": "candidate_source:strategy_gls.py", "status": "PASS", "actual": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6"}
+{"name": "candidate_source:strategy_gls_factor.py", "status": "PASS", "actual": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628"}
+{"name": "original_scorer_identity", "status": "PASS", "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"}
+{"name": "input_shapes_values", "status": "PASS", "actual": [{"shape": [3024, 1000], "dtype": "float64", "strides": [8, 24192], "c_contiguous": false, "f_contiguous": true}, {"shape": [3024, 1000, 13], "dtype": "float64", "strides": [104000, 104, 8], "c_contiguous": true, "f_contiguous": false}, {"shape": [1000], "dtype": "float64", "strides": [8], "c_contiguous": true, "f_contiguous": true}]}
+{"name": "canonical_input_layout", "status": "PASS", "actual": [{"shape": [3024, 1000], "dtype": "float64", "strides": [8, 24192], "c_contiguous": false, "f_contiguous": true}, {"shape": [3024, 1000, 13], "dtype": "float64", "strides": [104000, 104, 8], "c_contiguous": true, "f_contiguous": false}, {"shape": [1000], "dtype": "float64", "strides": [8], "c_contiguous": true, "f_contiguous": true}]}
+{"name": "consumed_configuration", "status": "PASS", "actual": {"candidate_id": "C06_gls_factor", "basis": "additive", "alpha_half_life": 252.0, "ridge": 0.1, "min_training_days": 126, "feature_clip": 4.0, "risk_window": 252, "risk_min_days": 20, "variance_shrinkage": 0.2, "variance_floor": 1e-06, "risk_aversion": 1000.0, "cost_horizon": 20.0, "weight_cap": 0.01, "gross_cap": 1.0, "learning_factor_rank": 10, "learning_factor_shrinkage": 0.5, "learning_factor_refresh_days": 21, "factor_rank": 10, "factor_shrinkage": 0.5, "factor_refresh_days": 21}}
+{"name": "complete_forecasts", "status": "PASS", "actual": [3024, 1000]}
+{"name": "complete_continuous_path", "status": "PASS", "actual": {"forecasts_called": 1, "targets": 2771, "rows": 2770}}
+{"name": "exact_captured_full_costs", "status": "PASS", "actual": {"shape": [2770], "expected_shape": [2770], "exact_required": true, "exact_observed": true, "max_abs_error": 0.0, "atol": 1e-14, "rtol": 1e-12}}
+{"name": "exact_captured_target_gross", "status": "PASS", "actual": {"shape": [2770], "expected_shape": [2770], "exact_required": true, "exact_observed": true, "max_abs_error": 0.0, "atol": 1e-14, "rtol": 1e-12}}
+{"name": "reconciled_gross", "status": "PASS", "actual": {"shape": [2770], "expected_shape": [2770], "exact_required": false, "exact_observed": true, "max_abs_error": 0.0, "atol": 1e-14, "rtol": 1e-12}}
+{"name": "reconciled_drifted_holdings", "status": "PASS", "actual": {"shape": [2770, 1000], "expected_shape": [2770, 1000], "exact_required": false, "exact_observed": true, "max_abs_error": 0.0, "atol": 1e-14, "rtol": 1e-12}}
+{"name": "reconciled_full_costs", "status": "PASS", "actual": {"shape": [2770], "expected_shape": [2770], "exact_required": false, "exact_observed": true, "max_abs_error": 0.0, "atol": 1e-14, "rtol": 1e-12}}
+{"name": "full_path_solvency", "status": "PASS", "actual": 0.0}
+{"name": "exact_cash_path", "status": "PASS", "actual": "exact zero forecasts/targets/held/economics"}
+{"name": "exact_mask:validation_a", "status": "PASS", "actual": {"slice": [2016, 2520], "rows": 504}}
+{"name": "undefined_cash_metrics:validation_a", "status": "PASS", "actual": {"net_sharpe": "Zero variance or nonpositive compounding wealth", "gross_sharpe": "Zero variance or nonpositive compounding wealth", "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"}}
+{"name": "exact_mask:validation_b", "status": "PASS", "actual": {"slice": [2520, 3023], "rows": 503}}
+{"name": "undefined_cash_metrics:validation_b", "status": "PASS", "actual": {"net_sharpe": "Zero variance or nonpositive compounding wealth", "gross_sharpe": "Zero variance or nonpositive compounding wealth", "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"}}
+{"name": "exact_mask:pooled_validation", "status": "PASS", "actual": {"slice": [2016, 3023], "rows": 1007}}
+{"name": "undefined_cash_metrics:pooled_validation", "status": "PASS", "actual": {"net_sharpe": "Zero variance or nonpositive compounding wealth", "gross_sharpe": "Zero variance or nonpositive compounding wealth", "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"}}
+{"name": "input_files_unchanged", "status": "PASS", "actual": {"returns.npy": "b7f37b16ca750da0534f930a124350e6e6f53a05d6dd117079144cd905fefec0", "characteristics.npy": "a8bdf2d277768fef488e038bc8c43745c7378aa03cf233e77027826dad2856ab", "costs.npy": "6d439ccd370f4327c5093ea65b59b053dd7961abd8a3e4b13492f24d8e2e59ff"}}
+{"name": "frozen_sources_unchanged", "status": "PASS", "actual": 18}
+EXECUTED_PASS_SCOPE_ONLY
