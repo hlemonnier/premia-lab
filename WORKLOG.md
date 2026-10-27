@@ -2,7 +2,7 @@
 
 ## Objective
 
-Execute a disciplined, source-grounded quantitative research take-home for Continual Research. Current phase: independent full-discovery causality verification of C06 and one literature-informed local additive contrast in the original twelfth discovery slot. Progress is governed by evidence gates, without a fixed execution timetable. Protected evaluation remains gated.
+Execute a disciplined, source-grounded quantitative research take-home for Continual Research. The bounded twelve-candidate cycle, C09 validation selection, single-policy audit and exact handoff are complete. Current work incorporates the newly supplied exploratory notes, refreshes the independent review, and admits one descriptive attribution of the frozen policy's realized return. All supplied periods are now exposed. Progress follows evidence gates, without a fixed execution timetable.
 
 ## 2026-10-26 — intake and planning
 
@@ -124,3 +124,13 @@ The selected C09 and its discovery-verified package were published as `f57491f6`
 ## Current disposition
 
 The authorized bounded research cycle and tested handoff are complete. C09 has positive reserved-audit evidence after full supplied fees and very low measured market beta. No finite test proves universal absence of lookahead or research overfitting, and hidden-continuation performance remains unknown. Discovery, validation and audit outcomes are now exposed; a redesigned policy would require genuinely unseen evaluation data for another clean confirmation. There is no calendar execution schedule and no external submission has been made.
+
+## 27 October — supplied exploratory notes and frozen-policy follow-up
+
+- Recovered the newer completed checkpoint `4e2a17816ce674c6a781771ca1e6cbe24c1d19c6`, beyond the earlier chat excerpt. Independently confirmed the same remote main commit and private repository visibility. Historical validation/audit results are recovered executions, not new runs in this follow-up.
+- The original retained checkout is partial: local clone could not read a missing historical Git object. Copied its available tracked working tree and Git metadata into a writable current checkout without changing the retained source. Current code/evidence identities and remote head agree; unavailable historical objects are not fabricated or counted as restored.
+- Read the new user attachment in full and preserved its exact bytes in `research/user_exploration_notes_20261027.md` (SHA256 `21c6bbbf95f93267f6afa8280f52517f07f23ff43d867ab8529fe6330ee4b2ef`). It explicitly states that returns and characteristic files were not inspected by its author. Treat the user's `[me]` material as methodological analysis and hypotheses, keep D1/D3 review attribution distinct, and do not retroactively credit the notes with producing the already-frozen C09 implementation.
+- Three independent agents reviewed the notes, revisited primary literature through SSRN/arXiv/Alpha Architect, and audited the frozen C09 code/evidence. The new compact readback passed 63 recorded checks, including exact package members, source/configuration bindings, saved performance arithmetic, and all 2,770 earlier economic rows within the longer audit trace. It executed no candidate and found no new release-blocking lookahead defect.
+- The notes review corrects same-day-correlation causation claims, the blanket rejection of market-overlay hedging or diagonal covariance, the independent-stock interpretation of constrained no-trade bands, and the annual/daily Sharpe-error conversion. Remaining implementation approximations are stated rather than repaired by post-audit retuning.
+- Admitted `research/FROZEN_ATTRIBUTION_PLAN_20261027.md` before diagnostic implementation or numeric attribution access. It asks whether the existing frozen portfolio's realized return lies in the market, a fixed prior-estimated rank-10 residual-factor span, or the remaining component. It uses the existing C04 risk-estimator convention and original stage masks, does not produce new targets, and is an additional descriptive exposure rather than a thirteenth selectable configuration.
+- The independent complete-workflow verifier and expected missing-tool run must precede implementation. Source review and synthetic gates must pass before the single actual attribution is released. The four-file C09 handoff, its complete note, all parameters and the selection remain frozen.

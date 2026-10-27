@@ -58,3 +58,9 @@ The preceding tables preserve their historical checkpoint statuses. The complete
 | Final report, result figure, deterministic archive and private publication | Lead AI integration | Complete evidence and four-file archive retained; no external submission |
 
 The user supplied the instructions and the reported interpretation/challenge of the early patterns. The record does not support attributing AI implementations, numerical results, source reviews or a discovered simulator mechanism to the user. The top-of-file note states that distinction. Positive reserved-audit evidence improves the empirical case for this fixed candidate; it does not establish a universal no-lookahead/no-overfit claim or guarantee the hidden continuation. Future research must treat all now-opened periods as exposed.
+
+## Newly supplied exploratory notes
+
+The later attachment is preserved exactly as `research/user_exploration_notes_20261027.md`. It records the user's own methodological points with `[me]` and distinguishes ideas attributed to outside reviews D1/D3. Its explicit scope says that returns, characteristics and supplied figures were not opened. Its contribution is therefore a documented critique and hypothesis list, not independently reproduced market evidence.
+
+The notes emphasize the label boundary, daily dependence, drifted holdings, cost-aware decisions, causal risk estimation and honest attribution. AI reviewers mapped those points to completed work and corrected several technical overstatements. The notes and literature motivate a new descriptive factor/remainder attribution of the already-tested C09 positions. They did not retroactively cause the earlier model implementation or protected selection. The pre-audit strategy note remains byte-identical; this dated ledger records the later contribution without rewriting that chronology.
