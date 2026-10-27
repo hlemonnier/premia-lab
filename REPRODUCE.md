@@ -1,6 +1,14 @@
-# Reproducing the research and its planning preflight
+# Reproducing the selected strategy and research evidence
 
-The repository contains the frozen plan, development strategies, independent reviews, complete-run evidence and reproduction scripts. It is not the final strategy submission. The supplied `strategy.py` in `source/` remains the unchanged original scaffold. Candidate implementations are in `submission/` and require their named JSON configurations for research comparisons.
+The repository contains frozen plans, all twelve development configurations, independent reviews, complete-run evidence and reproduction scripts. The selected fixed C09 policy is in `handoff/`; its top-level `strategy.py` needs the accompanying `model/` directory. The supplied scaffold in `source/` remains unchanged. Development candidates in `submission/` require their explicit named JSON configurations; their default strategy is C01, not the selected handoff.
+
+## Selected handoff
+
+The four required files are `handoff/strategy.py`, `handoff/model/__init__.py`, `handoff/model/strategy.py` and `handoff/model/portfolio.py`. The outer entry point contains the complete pre-audit note and literal original C09 configuration. Both engine/helper files retain their original bytes. The handoff itself needs only NumPy and the Python standard library; research verification additionally uses the original scorer's dependencies and recorded environment.
+
+The discovery-verified package manifest is `evidence/handoff_discovery_001/package_manifest.json`, SHA256 `97ec4469c51311730d906a68bd594ecd48b75d87bb29f0beccb6f7e3e5d8d813`. The selected configuration SHA256 is `aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba`. The top-level handoff entry-point SHA256 is `7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946`.
+
+To use the employer's original command, put these four files in a clean copy of the supplied task folder, retaining the helper directory, then run `python score.py strategy`. This loads the entire supplied history; it is appropriate only after that history's recorded release. The original command reports a full-history score, which is not the separately frozen validation or audit estimate. For those estimates, use the controlled replays below.
 
 ## Reproduce an executed discovery candidate
 
@@ -32,6 +40,59 @@ The source code chooses no candidate based on the final row count, and the score
 ## Reproduce the first-wave comparison
 
 `evidence/comparison_wave1_001/rerun.txt` points to its frozen reporting script and expected inputs. It reads completed C01–C04 daily ledgers, fits no strategy, and performs the predeclared paired moving-block bootstrap. The frozen copies of its inputs, actual bootstrap draws, summaries and report are retained. A reporting pass is separate from candidate causality and from out-of-sample validation.
+
+## Frozen validation and reporting
+
+The original nomination is `research/VALIDATION_NOMINATION.json`, SHA256 `fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5`. It admits only C06 and C09. The explicit original commands are preserved in `research/VALIDATION_RELEASE_RECORD.json` and each completed packet's `rerun.txt`. An exact selected validation reproduction from the project root is:
+
+```bash
+python tools/run_protected_candidate.py \
+  --project . \
+  --strategy submission/strategy.py \
+  --config research/configs/C09_additive_long_memory.json \
+  --reference evidence/discovery_C09_001 \
+  --out evidence/validation_C09_reproduction \
+  --mode validation --cpu 6 \
+  --nomination-manifest research/VALIDATION_NOMINATION.json \
+  --nomination-sha256 fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5
+```
+
+The controller validates all nominated identities and evidence before bounded numeric parsing. It reads exactly 3,024 return rows and the matching characteristic panels, preserves F-order returns/C-order characteristics, runs once continuously from start 252, and reports exactly 504/503/1,007 validation observations. The original historical prefix must remain exact. The controller records access start even if a later step fails; an incomplete protected run cannot be called unopened.
+
+CPU numbers identify this Linux environment. On another machine choose an available single CPU and record that change; absolute timing is host-specific. Preserve all other configuration/source/mask identities. Every output directory must be new.
+
+The fixed uncertainty report can be reproduced from the completed saved validation ledgers without executing another candidate:
+
+```bash
+python tools/report_protected_uncertainty.py \
+  --project . --mode validation \
+  --run C06=evidence/validation_C06_001 \
+  --run C09=evidence/validation_C09_001 \
+  --nomination-sha256 fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5 \
+  --out evidence/validation_uncertainty_reproduction
+```
+
+The reporter validates consumed artifacts, exact score indices and original metrics. It uses the predetermined 21/63-observation moving blocks, 1,000 paired draws and seeds, with fixed fee multipliers 1/1.5/2. It consumes ledgers and source/provenance metadata, not the large model/input NPY arrays. Its saved `rerun.txt` points to its own copied inputs and plans. Preserve its full input snapshots when copying that evidence packet.
+
+## Canonical causality, long-history and package equivalence
+
+Use the frozen commands in these completed packets:
+
+- C06 canonical causal workflows: `evidence/C06_causality_A_002`, `B_002` and `C_002`; strict reconciliation in `evidence/C06_causality_reconciliation_002`.
+- C09 canonical causal workflow: `evidence/C09_causality_001`; readback and explicit CPU rerun in `evidence/C09_causality_admission_002`.
+- Full 25,200-row workload: `evidence/C06_long_history_002` and `evidence/C09_long_history_001`, with independent readback in `evidence/long_history_independent_readback_001`.
+- Protected-controller pre-access workflows: `evidence/protected_replay_discovery_001` and `evidence/protected_replay_zero_001`; the latter is entirely synthetic.
+- Clean selected package: `evidence/handoff_discovery_001`, plus separate root artifact readback in `evidence/handoff_discovery_independent_readback_001`.
+
+The long-history workload deterministically repeats discovery values and preserves canonical array layout. It is actual runtime/path evidence, not 25,200 independent market observations. Earlier C-layout fixture failures are retained separately. Do not replace the original historical references or broaden the exact equality gate to conceal a changed numerical layout.
+
+The handoff verifier starts an isolated fresh interpreter in a clean directory, uses only the copied four-file package and original scorer, records actual import paths, and requires exact complete forecast/target/held-array hashes and all economic/net rows. Its expected missing-wrapper stage preceded wrapper implementation. The selected record is frozen at SHA256 `941c07313d3d3f1914a93a57d85f032e8e0e609f7dd0495ff7f4f618bc5a42fa`.
+
+## Single-policy audit boundary
+
+The only admitted audit policy is the selected unchanged C09. Its canonical controller uses input `[0,3780)`, continuous state from start 252 and score mask `[3024,3779)`, exactly 755 observations. A separate root audit nomination binds the selection and discovery-verified package before access. The unchanged wrapper then reproduces the entire canonical audit path as a same-policy engineering check, not a second selectable audit candidate. Use the final audit packets' frozen rerun commands after their recorded release; do not run another candidate or tune a setting on the audit.
+
+The audit readback also requires exact identity of the entire earlier C09 validation prefix: 3,024 forecasts, 2,771 targets/held books and 2,770 economic rows. This extends the ordinary historical-prefix check without changing the selected policy. Any failure, undefined ratio, beta shortfall or unfavorable economics remains visible and cannot justify substituting another policy.
 
 ## Inputs
 
@@ -70,10 +131,10 @@ Expected successful conclusion: 24 checks pass, 250 scored rows for the first 50
 
 `evidence/preflight_001/` records a real early failure in the preflight inventory assumption. Its original artifacts remain historical; see `REPRODUCE_FAILURE.md` there for the separate, explicitly unexecuted reproduction setup. That expected failure is not mixed with the successful scope result in preflight 002.
 
-## Executed and remaining gates
+## Executed gates and historical evidence
 
-The synthetic accounting workflow has executed with 44 passing checks. C01 and C02 each completed their configured 600-row causal smoke workflow with 28 fresh-process scenarios and exact protected equality; earlier interrupted smoke runs remain explicitly incomplete. New diagonal, factor, precision and exact-gross numerical components have preimplementation check records and subsequent executed evidence. Eleven actual discovery configurations have completed the unmodified scorer with 20 workflow checks each at this checkpoint.
+The synthetic accounting workflow executed with 44 passing checks. C01 and C02 each completed their configured 600-row causal smoke workflow with 28 fresh-process scenarios and exact protected equality; earlier interrupted smoke runs remain explicitly incomplete. New diagonal, factor, precision and exact-gross numerical components have preimplementation check records and subsequent executed evidence. All twelve actual discovery configurations completed the unmodified scorer with 20 workflow checks each.
 
 C11's known-interaction synthetic whole-strategy workflow completed four fresh-process runs and 40 checks after its preimplementation specification/verifier and expected missing-module record. Its frozen rerun is in `evidence/interaction_workflow_001/rerun.txt`; it regenerates synthetic inputs and does not require the market CSVs. That deliberately strong fixture demonstrates capability and tested prefix invariance, not actual-market profitability or the full finalist causal gate.
 
-Full finalist-specific causality, long-history runtime, protected validation, the locked audit, and clean final-submission execution remain unexecuted. No earlier component or smoke result substitutes for those gates. Consult the current worklog rather than the frozen planning protocol's historical status fields.
+C12's known-local-effect synthetic workflow completed five fresh-process paths and 55 checks, with exactly preserved protected comparisons and a zero-return control. Its negative single discovery result remains in the comparison. Canonical finalist-specific causality, actual long-history runtime, two-policy protected validation and clean C09 discovery equivalence have completed their separate gates. Consult the current worklog and continued research report for the later audit/final-package disposition rather than the frozen planning protocol's historical status fields. A reconciliation pass does not imply a significant alpha or guarantee future profitability.

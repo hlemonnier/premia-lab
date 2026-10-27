@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-10-27T11:35:53.697506+00:00",
+  "plan_sha256": "6384a9f41a2824c3c8c28f7a3ab9acab3efdf1ee4d8c18c9e17b44950d753c40",
+  "audit_input_or_outcome_accessed": false,
+  "reviewer_implemented": false,
+  "actual_audit_release_received": false
+}
