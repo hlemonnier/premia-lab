@@ -26,6 +26,7 @@ CONFIG = {
     "beta_window": 252, "factor_half_life": 126.0, "specific_half_life": 126.0,
     "specific_shrinkage": 0.2, "variance_floor": 1e-6, "factor_risk_scale": 0.3,
     "risk_beta_column": False,   # R27 experiment: add the forecast's beta column to the risk loadings
+    "matched_diagonal": False,   # control: keep marginal variances d + diag(phi*D F D'), drop correlations
     # allocation
     "risk_aversion": 1000.0, "cost_horizon": 20.0, "weight_cap": 0.01, "gross_cap": 1.0,
 }
@@ -189,6 +190,9 @@ def rebalance(held_positions, expected_returns, returns_history, characteristics
     beta = _window_beta(R, cfg["beta_window"])          # hedge betas from the last year through today
     D_today = risk_loadings(X[T - 1], beta, cfg)        # today's published characteristics (+ beta)
     cert = {}
+    if cfg["matched_diagonal"]:
+        d = d + np.sum((D_today @ L) ** 2, axis=1)     # same marginal variances, no cross-stock covariance
+        L = np.zeros_like(L)
     w = allocate_factor(expected_returns, held_positions, d, D_today, L, beta,
                         np.asarray(trading_costs, dtype=np.float64) / cfg["cost_horizon"],
                         cfg["risk_aversion"], cfg["weight_cap"], warm=_STATE.warm, info=cert)
