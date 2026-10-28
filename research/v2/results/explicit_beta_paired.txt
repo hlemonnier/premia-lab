@@ -1,0 +1,8 @@
+V2_B0_beta_neutral: Sharpe 1.044 vs V2 1.243 diff -0.198 corr 0.961; realized beta -0.0139; ex-post market-removed Sharpe 1.101
+    21-day blocks 95% [-0.342, -0.059]
+    63-day blocks 95% [-0.343, -0.055]
+   126-day blocks 95% [-0.347, -0.068]
+V2_B05_explicit_beta: Sharpe 1.231 vs V2 1.243 diff -0.012 corr 0.986; realized beta 0.0364; ex-post market-removed Sharpe 1.099
+    21-day blocks 95% [-0.100, +0.084]
+    63-day blocks 95% [-0.109, +0.075]
+   126-day blocks 95% [-0.117, +0.071]

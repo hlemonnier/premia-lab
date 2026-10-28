@@ -40,13 +40,17 @@ EVIDENCE (supplied scorer, full fees; all rows already examined during research)
   This strategy      1.243       1.098     1.657      1.148     0.18%    0.047
 Paired block bootstrap of the difference: +0.36, 95% ranges [-0.00, +0.82]
 (63-day), [-0.04, +0.77] (21), [-0.03, +0.88] (126). Selected on the full sample
-among about 25 variants; expect shrinkage. Rejected under a frozen rule: adding
-the beta column to the risk model (better risk score, net Sharpe 1.167).
+among about 25 variants; expect shrinkage. Rejected under frozen rules: adding the
+beta column to the risk model (better risk score, net Sharpe 1.167); correcting
+betas with past-only shrinkage and holding zero beta (realized -0.014, Sharpe 1.044)
+or an explicit 0.05 (realized 0.036, Sharpe 1.231, a tie with V2). All three books
+have market-removed Sharpe 1.08-1.10: the stock-selection core is about 1.1.
 
 WHAT COULD GO WRONG OVER DECADES
-Premia can change; the 1,008-day memory adapts slowly. Part of the edge is market
-premium earned through beta-estimation error: if the market drifts down, that part
-turns negative, and realized beta (0.047 here) grows with book size. The 0.3
+Premia can change; the 1,008-day memory adapts slowly. About 0.04-0.05 of beta is
+carried implicitly through beta-estimation error (corrected betas remove it); it
+earned this sample's market premium and would lose if the market drifts down.
+Realized beta also grows with book size. The 0.3
 penalty was chosen, not estimated. Costs are not binding (0.18% a year).
 
 WHERE THE AI DID THE WORK AND WHERE I DID

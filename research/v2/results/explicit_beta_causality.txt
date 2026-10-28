@@ -1,0 +1,16 @@
+cut 400 altered          rows<=cut identical True
+cut 400 altered_fortran  rows<=cut identical True
+cut 400 truncated        rows<=cut identical True
+cut 600 altered          rows<=cut identical True
+cut 600 altered_fortran  rows<=cut identical True
+cut 600 truncated        rows<=cut identical True
+cut 1500 altered          rows<=cut identical True
+cut 1500 altered_fortran  rows<=cut identical True
+cut 1500 truncated        rows<=cut identical True
+cut 3024 altered          rows<=cut identical True
+cut 3024 altered_fortran  rows<=cut identical True
+cut 3024 truncated        rows<=cut identical True
+cut 3700 altered          rows<=cut identical True
+cut 3700 altered_fortran  rows<=cut identical True
+cut 3700 truncated        rows<=cut identical True
+PASS
