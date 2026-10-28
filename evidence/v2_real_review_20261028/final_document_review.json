@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-28 Europe/Paris",
+  "reviewed_source": "afed8d0cb017acda151c4ea262fc30db7568a4bb",
+  "independent_reviews": [
+    "quantitative reasoning",
+    "causality/scope/numbers"
+  ],
+  "corrections_applied": [
+    "explicit 0<eta<1 qualifier",
+    "termination logic wording",
+    "risk response cross-sectional demeaning",
+    "prespecified terminology",
+    "one fixed primary QLIKE risk score at physical factor scale1 with fixed floor/sample/zero-book convention"
+  ],
+  "documents": {
+    "reviews/V2_INDEPENDENT_REVIEW_20261028.md": "7b17a9c092fbf007c8098e48edc183c35ecb1eebc0ffe4dbdbc8162350800f87",
+    "research/v2/REVIEWER_NEXT_EXPERIMENTS_20261028.md": "c0cd41d11dc64b9fd36e153ac8f8dff285291c4f051d398286cdbeb8dfc40210"
+  }
+}

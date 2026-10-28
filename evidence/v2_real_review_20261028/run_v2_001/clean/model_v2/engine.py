@@ -1,0 +1,171 @@
+"""Forecast and rebalance for the V2 strategy. NumPy and the standard library only.
+
+Forecast: C09's learner (exponentially weighted ridge on the 13 standardized
+characteristics and their centered squares, half-life 1,008 days) plus one
+column, each stock's trailing market beta. Pair s uses design X[s] (and the
+beta estimated from rows before s+1) against the market-residual return of day
+s+1; row t predicts with X[t-1]. The newest pair used at row t is s = t-2.
+
+Rebalance: risk model Sigma = diag(d) + phi * D F D', where D is today's
+characteristic basis (the same 26 columns), F an exponentially weighted
+covariance of daily characteristic factor returns, d the variance those factors
+leave unexplained. The exact allocator in allocator.py trades off forecast,
+risk and linear costs around the drifted book, with an estimated-beta hedge and
+per-stock caps. State is absorbed one day at a time from history through today.
+"""
+import math
+
+import numpy as np
+
+from .allocator import allocate_factor
+
+CONFIG = {
+    # forecast
+    "alpha_half_life": 1008.0, "ridge": 0.1, "min_training_days": 126, "feature_clip": 4.0,
+    # risk model
+    "beta_window": 252, "factor_half_life": 126.0, "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2, "variance_floor": 1e-6, "factor_risk_scale": 0.3,
+    # allocation
+    "risk_aversion": 1000.0, "cost_horizon": 20.0, "weight_cap": 0.01, "gross_cap": 1.0,
+}
+
+
+def configure(config):
+    global CONFIG, _STATE
+    unknown = set(config) - set(CONFIG)
+    if unknown:
+        raise ValueError(f"unknown configuration keys: {sorted(unknown)}")
+    CONFIG = {**CONFIG, **config}
+    _STATE = None
+
+
+# ---------------------------------------------------------------- shared pieces
+def _standardize(v, clip):
+    c = v - v.mean(axis=0)
+    z = np.clip(c / np.maximum(np.sqrt(np.mean(c * c, axis=0)), 1e-12), -clip, clip)
+    return z - z.mean(axis=0)
+
+
+def basis(panel, clip=4.0):
+    """13 standardized characteristics and their centered squares, from one published panel."""
+    z = _standardize(np.asarray(panel, dtype=np.float64), clip)
+    s = z * z
+    return np.hstack([z, (s - s.mean(axis=0)) / math.sqrt(2.0)])
+
+
+def causal_betas(R, window=252, min_days=20):
+    """beta[t] uses return rows [t-window, t) only; 1 before min_days."""
+    T, N = R.shape
+    m = R.mean(axis=1)
+
+    def csum(a):
+        out = np.zeros((T + 1,) + a.shape[1:]); np.cumsum(a, axis=0, out=out[1:]); return out
+    Sm, Smm, Sr, Smr = csum(m), csum(m * m), csum(R), csum(R * m[:, None])
+    beta = np.ones((T, N))
+    for t in range(min_days, T):
+        lo = max(0, t - window); n = t - lo
+        mm = (Smm[t] - Smm[lo]) / n - ((Sm[t] - Sm[lo]) / n) ** 2
+        if mm > 1e-12:
+            beta[t] = ((Smr[t] - Smr[lo]) / n - (Sm[t] - Sm[lo]) / n * (Sr[t] - Sr[lo]) / n) / mm
+    return beta, m
+
+
+def _window_beta(R, window=252, min_days=20):
+    """Betas from the last `window` rows of R (all of which are already published)."""
+    W = R[-window:]
+    if len(W) < min_days:
+        return np.ones(R.shape[1])
+    c = W - W.mean(axis=0); m = W.mean(axis=1); m = m - m.mean()
+    mv = m @ m
+    return np.ones(R.shape[1]) if mv <= 1e-12 * len(W) else (m @ c) / mv
+
+
+# ---------------------------------------------------------------- forecast
+def forecast(returns_history, characteristics_history):
+    cfg = CONFIG
+    R = np.ascontiguousarray(returns_history, dtype=np.float64)   # canonical layout keeps reductions prefix-stable
+    X = characteristics_history
+    T, N = R.shape
+    if np.shape(X)[:2] != (T, N) or np.shape(X)[2] != 13:
+        raise ValueError("characteristics_history must be (days, stocks, 13)")
+    beta, m = causal_betas(R, cfg["beta_window"])
+    E = R - beta * m[:, None]                          # residual of day s uses beta from rows < s
+
+    def zcol(v):
+        v = v - v.mean(); v = np.clip(v / max(v.std(), 1e-12), -cfg["feature_clip"], cfg["feature_clip"])
+        return v - v.mean()
+
+    def design(s):
+        return np.hstack([basis(X[s], cfg["feature_clip"]), zcol(beta[s + 1])[:, None]])
+
+    decay = 2.0 ** (-1.0 / cfg["alpha_half_life"])
+    width = 27
+    gram = np.zeros((width, width)); mom = np.zeros(width); mass = 0.0; pairs = 0
+    ridge = cfg["ridge"] * np.eye(width)
+    pred = np.zeros((T, N))
+    for t in range(2, T):
+        s = t - 2                                      # newest matured pair: X[t-2] -> e[t-1]
+        D = design(s); y = E[s + 1]
+        gram = decay * gram + D.T @ D / N
+        mom = decay * mom + D.T @ y / N
+        mass = decay * mass + 1.0; pairs += 1
+        if pairs >= cfg["min_training_days"]:
+            coef = np.linalg.solve(gram / mass + ridge, mom / mass)
+            pred[t] = design(t - 1) @ coef
+    return pred
+
+
+# ---------------------------------------------------------------- risk state
+class _RiskState:
+    def __init__(self, n, k, cfg):
+        self.cfg = cfg; self.upto = 1
+        self.aF = 2 ** (-1 / cfg["factor_half_life"]); self.aS = 2 ** (-1 / cfg["specific_half_life"])
+        self.S2 = np.zeros((k, k)); self.wF = 0.0
+        self.U2 = np.zeros(n); self.wS = 0.0
+        self.warm = {}
+
+    def absorb(self, R, X, s):
+        """Use return row s and characteristics row s-1, both published by the close of day s."""
+        D = basis(X[s - 1], self.cfg["feature_clip"])
+        beta = _window_beta(R[:s], self.cfg["beta_window"])
+        e = R[s] - beta * R[s].mean(); e = e - e.mean()
+        G = D.T @ D / len(e)
+        f = np.linalg.solve(G + 1e-10 * np.eye(G.shape[0]), D.T @ e / len(e))
+        u = e - D @ f
+        self.S2 = self.aF * self.S2 + np.outer(f, f); self.wF = self.aF * self.wF + 1
+        self.U2 = self.aS * self.U2 + u * u; self.wS = self.aS * self.wS + 1
+        self.upto = s + 1
+
+    def model(self):
+        F = self.S2 / self.wF
+        ev, Q = np.linalg.eigh(0.5 * (F + F.T))
+        L = Q * np.sqrt(np.maximum(ev, 0.0) * self.cfg["factor_risk_scale"])
+        d = self.U2 / self.wS
+        sh = self.cfg["specific_shrinkage"]
+        d = (1 - sh) * d + sh * np.median(d)
+        return L, np.maximum(d, self.cfg["variance_floor"])
+
+
+_STATE = None
+
+
+def rebalance(held_positions, expected_returns, returns_history, characteristics_history, trading_costs):
+    global _STATE
+    if expected_returns is None:
+        raise ValueError("this strategy requires its forecast row")
+    cfg = CONFIG
+    R = np.ascontiguousarray(returns_history, dtype=np.float64)
+    X = characteristics_history
+    T, n = R.shape
+    if _STATE is None or _STATE.upto > T:              # new or restarted run: rebuild from history
+        _STATE = _RiskState(n, 26, cfg)
+    while _STATE.upto < T:
+        _STATE.absorb(R, X, _STATE.upto)
+    L, d = _STATE.model()
+    D_today = basis(X[T - 1], cfg["feature_clip"])     # today's published characteristics
+    beta = _window_beta(R, cfg["beta_window"])          # hedge betas from the last year through today
+    w = allocate_factor(expected_returns, held_positions, d, D_today, L, beta,
+                        np.asarray(trading_costs, dtype=np.float64) / cfg["cost_horizon"],
+                        cfg["risk_aversion"], cfg["weight_cap"], warm=_STATE.warm)
+    gross = float(np.abs(w).sum())
+    return w * (min(1.0, cfg["gross_cap"] / gross) if gross else 1.0)

@@ -1,0 +1,5 @@
+{
+  "failure": "fixed positional rebalance forwarding in audit observer",
+  "fix": "original scorer declared-argument adapter used for both calls",
+  "replay_sha256": "d007e78b11f62f0c790ca223c0ed0630a227c49747a394e30743b2479d233ddf"
+}

@@ -1,0 +1,60 @@
+{
+  "full": {
+    "n": 3526,
+    "sharpe": 0.8848112283903203,
+    "gross_sharpe": 0.9573000802333188,
+    "annual_net": 0.051845218916510664,
+    "annual_vol": 0.058594666583096276,
+    "annual_cost": 0.0042494901571726576,
+    "beta": 0.008838132544969696,
+    "mean_gross": 0.8608691430530804
+  },
+  "discovery": {
+    "n": 1762,
+    "sharpe": 0.7001546509305838,
+    "gross_sharpe": 0.786047051542182,
+    "annual_net": 0.047901487432364234,
+    "annual_vol": 0.06841558128436026,
+    "annual_cost": 0.005879786749547076,
+    "beta": 0.014403642679766002,
+    "mean_gross": 0.9814148477831269
+  },
+  "validation": {
+    "n": 1007,
+    "sharpe": 0.6592096865251774,
+    "gross_sharpe": 0.7106861025958578,
+    "annual_net": 0.026759435195337314,
+    "annual_vol": 0.040593206899600505,
+    "annual_cost": 0.00208759684496776,
+    "beta": 0.0058582611275865915,
+    "mean_gross": 0.6918211713586235
+  },
+  "audit": {
+    "n": 755,
+    "sharpe": 1.7992307122434619,
+    "gross_sharpe": 1.861205986590739,
+    "annual_net": 0.09676070359652598,
+    "annual_vol": 0.05377893059410653,
+    "annual_cost": 0.003331189682351053,
+    "beta": 0.005665548854062867,
+    "mean_gross": 0.8054792798702111
+  },
+  "rounded_sharpe_matches_published": {
+    "full": true,
+    "discovery": true,
+    "validation": true,
+    "audit": true
+  },
+  "forecast_seconds_instrumented": 5.869923981999818,
+  "rebalance_seconds_instrumented_mean": 0.002426758430811528,
+  "net_dollars": {
+    "mean": 0.01006573419628863,
+    "min": -0.06246500145334531,
+    "max": 0.09871293815799123
+  },
+  "baseline_comparison": {
+    "exact": false,
+    "max_abs": 5.218048215738236e-15,
+    "within_1e_10": true
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "failure": "missing trading_costs forwarding in audit observer",
+  "replay_sha256": "fa0e49b4a28769312c5dad56984bd6e851f4d4b780d24f92daf6ba47da53f248",
+  "amendment_sha256": "8b49d92cadd46722b16202ecd12d6671f8852711ce244d5ec5a8238d01908153"
+}

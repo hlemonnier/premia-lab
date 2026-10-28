@@ -1,0 +1,317 @@
+{
+  "scope": "Independent saved-artifact arithmetic/source readback; no policy execution or new statistical specification",
+  "inputs": {
+    "returns.csv": {
+      "expected": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+      "actual": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+      "match": true
+    },
+    "characteristics.csv": {
+      "expected": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08",
+      "actual": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08",
+      "match": true
+    },
+    "costs.csv": {
+      "expected": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186",
+      "actual": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186",
+      "match": true
+    },
+    "run_c09_003_manifest_matches_canonical": true,
+    "run_v2_001_manifest_matches_canonical": true
+  },
+  "sources": {
+    "run_c09_003/model/__init__.py": {
+      "manifest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    "run_c09_003/model/portfolio.py": {
+      "manifest": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+      "actual": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+      "original": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+      "match": true
+    },
+    "run_c09_003/model/strategy.py": {
+      "manifest": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+      "actual": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+      "original": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+      "match": true
+    },
+    "run_c09_003/score.py": {
+      "manifest": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "original": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "match": true
+    },
+    "run_c09_003/strategy.py": {
+      "manifest": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946",
+      "actual": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946",
+      "original": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946",
+      "match": true
+    },
+    "run_c09_003_artifact_manifest": {
+      "entries": 16,
+      "missing": [],
+      "mismatch": []
+    },
+    "run_v2_001/model_v2/__init__.py": {
+      "manifest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "match": true
+    },
+    "run_v2_001/model_v2/allocator.py": {
+      "manifest": "8b50e5c4fa8ec2efb2baa9de8635ad8988f36387c780de271971245d50f3fe8f",
+      "actual": "8b50e5c4fa8ec2efb2baa9de8635ad8988f36387c780de271971245d50f3fe8f",
+      "original": "8b50e5c4fa8ec2efb2baa9de8635ad8988f36387c780de271971245d50f3fe8f",
+      "match": true
+    },
+    "run_v2_001/model_v2/engine.py": {
+      "manifest": "e06cb49f2cf6c396697687ae6607859541ff2054fd8b66320ef357a2ec696cd1",
+      "actual": "e06cb49f2cf6c396697687ae6607859541ff2054fd8b66320ef357a2ec696cd1",
+      "original": "e06cb49f2cf6c396697687ae6607859541ff2054fd8b66320ef357a2ec696cd1",
+      "match": true
+    },
+    "run_v2_001/score.py": {
+      "manifest": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "original": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+      "match": true
+    },
+    "run_v2_001/strategy.py": {
+      "manifest": "49269965f5f204a52ddb37d5723edbdf711da742db9cc6b75ffd7ced30549f73",
+      "actual": "49269965f5f204a52ddb37d5723edbdf711da742db9cc6b75ffd7ced30549f73",
+      "original": "49269965f5f204a52ddb37d5723edbdf711da742db9cc6b75ffd7ced30549f73",
+      "match": true
+    },
+    "run_v2_001_artifact_manifest": {
+      "entries": 17,
+      "missing": [],
+      "mismatch": []
+    }
+  },
+  "source_and_artifact_identity_errors": [],
+  "metrics": {
+    "run_c09_003": {
+      "rows": 3526,
+      "indices_match": true,
+      "stage_metrics": {
+        "full": {
+          "recalculated": {
+            "n": 3526.0,
+            "sharpe": 0.8848112283903204,
+            "annual_net": 0.051845218916510664,
+            "annual_vol": 0.058594666583096276,
+            "annual_cost": 0.0042494901571726576,
+            "beta": 0.008838132544969696,
+            "mean_gross": 0.8608691430530804
+          },
+          "max_abs_summary_error": 1.1102230246251565e-16
+        },
+        "discovery": {
+          "recalculated": {
+            "n": 1762.0,
+            "sharpe": 0.7001546509305838,
+            "annual_net": 0.047901487432364234,
+            "annual_vol": 0.06841558128436026,
+            "annual_cost": 0.005879786749547076,
+            "beta": 0.014403642679766002,
+            "mean_gross": 0.9814148477831269
+          },
+          "max_abs_summary_error": 0.0
+        },
+        "validation": {
+          "recalculated": {
+            "n": 1007.0,
+            "sharpe": 0.6592096865251773,
+            "annual_net": 0.026759435195337314,
+            "annual_vol": 0.040593206899600505,
+            "annual_cost": 0.00208759684496776,
+            "beta": 0.0058582611275865915,
+            "mean_gross": 0.6918211713586235
+          },
+          "max_abs_summary_error": 1.1102230246251565e-16
+        },
+        "audit": {
+          "recalculated": {
+            "n": 755.0,
+            "sharpe": 1.799230712243462,
+            "annual_net": 0.09676070359652598,
+            "annual_vol": 0.05377893059410653,
+            "annual_cost": 0.003331189682351053,
+            "beta": 0.005665548854062867,
+            "mean_gross": 0.8054792798702111
+          },
+          "max_abs_summary_error": 2.220446049250313e-16
+        }
+      }
+    },
+    "run_v2_001": {
+      "rows": 3526,
+      "indices_match": true,
+      "stage_metrics": {
+        "full": {
+          "recalculated": {
+            "n": 3526.0,
+            "sharpe": 1.2425030733031566,
+            "annual_net": 0.047550364408877575,
+            "annual_vol": 0.038269816333304014,
+            "annual_cost": 0.0017556622280725143,
+            "beta": 0.04649641302072478,
+            "mean_gross": 1.5837944354089444
+          },
+          "max_abs_summary_error": 0.0
+        },
+        "discovery": {
+          "recalculated": {
+            "n": 1762.0,
+            "sharpe": 1.0980016385754547,
+            "annual_net": 0.046339354743336524,
+            "annual_vol": 0.04220335663930076,
+            "annual_cost": 0.0022731681764684092,
+            "beta": 0.0425737252066896,
+            "mean_gross": 1.677343528714167
+          },
+          "max_abs_summary_error": 2.220446049250313e-16
+        },
+        "validation": {
+          "recalculated": {
+            "n": 1007.0,
+            "sharpe": 1.6568592904246342,
+            "annual_net": 0.06315065775255146,
+            "annual_vol": 0.03811467764191771,
+            "annual_cost": 0.0014754176216559625,
+            "beta": 0.05378579790021658,
+            "mean_gross": 1.6550461840260675
+          },
+          "max_abs_summary_error": 2.220446049250313e-16
+        },
+        "audit": {
+          "recalculated": {
+            "n": 755.0,
+            "sharpe": 1.1475575640626992,
+            "annual_net": 0.031170987272118002,
+            "annual_vol": 0.02716289644047426,
+            "annual_cost": 0.0009207266004920586,
+            "beta": 0.03855182594558804,
+            "mean_gross": 1.2708363243088423
+          },
+          "max_abs_summary_error": 0.0
+        }
+      }
+    }
+  },
+  "c09_canonical_ledger_readback": {
+    "indices_equal": true,
+    "max_abs": 5.218048215738236e-15,
+    "expected_from_summary": {
+      "exact": false,
+      "max_abs": 5.218048215738236e-15,
+      "within_1e_10": true
+    }
+  },
+  "paired": {
+    "json_sha256": "624aaaa3147355eca10f6bf27d71c193bdd8a518113381383c2e3d0c05b4400e",
+    "source_hash_matches": true,
+    "plan_hash_matches": true,
+    "input_hashes_match": true,
+    "n": 3526,
+    "observed_difference": 0.35769184491283,
+    "intervals": [
+      {
+        "block_length": 63,
+        "corrected_endpoint": false,
+        "draws": 2000,
+        "seed": 20261027,
+        "percentile_95": [
+          -0.002030344485364325,
+          0.8195337072057641
+        ],
+        "resampled_positive_fraction": 0.9725
+      },
+      {
+        "block_length": 63,
+        "corrected_endpoint": true,
+        "draws": 2000,
+        "seed": 20261027,
+        "percentile_95": [
+          -0.0031676483383881373,
+          0.8245358480839862
+        ],
+        "resampled_positive_fraction": 0.974
+      },
+      {
+        "block_length": 21,
+        "corrected_endpoint": true,
+        "draws": 2000,
+        "seed": 20261027,
+        "percentile_95": [
+          -0.03511083768986469,
+          0.7671686823013002
+        ],
+        "resampled_positive_fraction": 0.9675
+      },
+      {
+        "block_length": 126,
+        "corrected_endpoint": true,
+        "draws": 2000,
+        "seed": 20261027,
+        "percentile_95": [
+          -0.03210287107722658,
+          0.88097778259766
+        ],
+        "resampled_positive_fraction": 0.9605
+      }
+    ],
+    "all_intervals_include_zero": true,
+    "independent_saved_csv_difference": 0.35769184491283,
+    "difference_matches_saved_exact": true,
+    "independent_correlation": 0.6954191834581044
+  },
+  "failure_record": {
+    "sha256": "dd007ef6f1aa0189b919e5d3fc6649926e47dd2198ee9d39320a3f5782a754ce",
+    "attempt_outcomes": {
+      "V2_replay": {
+        "exit_code": 0,
+        "directory": "run_v2_001"
+      },
+      "C09_replay_attempts": [
+        {
+          "exit_code": 1,
+          "directory": "run_c09_001",
+          "failure": "audit forecast argument forwarding"
+        },
+        {
+          "exit_code": 1,
+          "directory": "run_c09_002",
+          "failure": "audit rebalance argument forwarding"
+        },
+        {
+          "exit_code": 0,
+          "directory": "run_c09_003"
+        }
+      ],
+      "paired_readback_attempts": [
+        {
+          "exit_code": 1,
+          "reason": "no C09 ledger after failed replay001"
+        },
+        {
+          "exit_code": 1,
+          "reason": "no C09 ledger after failed replay002"
+        },
+        {
+          "exit_code": 0,
+          "output": "paired_readback.json"
+        }
+      ]
+    }
+  },
+  "review_inputs_sha256": {
+    "PLAN.md": "04029aad97a84e6bbfa29500350eba6b98473c0fa5b05bce4fcc9baa4cae6e8c",
+    "PAIRED_READBACK_PLAN.md": "3ffe2159e8c478947afb7498b7ed2304eb36d045107236795c8d2e95a901a57a",
+    "paired_readback.py": "3d22a624f22a8b0886e814f9703811cf4f30ae073a883f6e11e2ac8ac19a8bad",
+    "HARNESS_FAILURES.md": "dd007ef6f1aa0189b919e5d3fc6649926e47dd2198ee9d39320a3f5782a754ce"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "clean/model/__init__.py": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "clean/model/portfolio.py": {
+    "bytes": 7640,
+    "sha256": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475"
+  },
+  "clean/model/strategy.py": {
+    "bytes": 10951,
+    "sha256": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7"
+  },
+  "clean/score.py": {
+    "bytes": 4716,
+    "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+  },
+  "clean/strategy.py": {
+    "bytes": 4183,
+    "sha256": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946"
+  },
+  "daily.csv": {
+    "bytes": 438889,
+    "sha256": "bdb923e903e269934a84ca73cc9adafd11292ba625b0791f73a04c118d2a2daf"
+  },
+  "decision_observations.csv": {
+    "bytes": 239675,
+    "sha256": "9f4e7ffc383eb9592a2cb9b013e41c39ffe6b81d56599229d66bf8aa98ede199"
+  },
+  "environment.json": {
+    "bytes": 1351,
+    "sha256": "49c1beb499173714f682c6aa43610bf7d5c6b0b7a3947e84c84831f840dd82c4"
+  },
+  "forecasts.npy": {
+    "bytes": 30240128,
+    "sha256": "224b1fdb7b687cbda950bf200991ddab8286d18b57240f9e9b69082762ab8b2e"
+  },
+  "held.npy": {
+    "bytes": 28216128,
+    "sha256": "af87b8f37065a9fef53ca71ea6e60b8efffa1f356f31f7ef38de13e6e72d4714"
+  },
+  "input_csv_hashes.json": {
+    "bytes": 264,
+    "sha256": "cec22885d1cdda153ba7bc7411e35d94ea04cee9f52cc8b42557fb98bf241ab9"
+  },
+  "loaded_arrays.json": {
+    "bytes": 861,
+    "sha256": "5d8772954c11626fa153a0bea0e96bf2900f0350bcad8fd89f5fe345b43fec5d"
+  },
+  "replay.py": {
+    "bytes": 15238,
+    "sha256": "d007e78b11f62f0c790ca223c0ed0630a227c49747a394e30743b2479d233ddf"
+  },
+  "source_manifest.json": {
+    "bytes": 444,
+    "sha256": "ac6c092bd2ac890a8557fa0ebc91d3a8c1bb443ef75c7a64f0c970e0740fb868"
+  },
+  "summary.json": {
+    "bytes": 1683,
+    "sha256": "da185e02e0fac7c13166bcaa6525856e40c46f46daa2c145cd7fda62017ed933"
+  },
+  "targets.npy": {
+    "bytes": 28216128,
+    "sha256": "2a8db54f78247ca460b8a55584964ba8d063094ddfa1793a5d3d746ea53c14aa"
+  }
+}

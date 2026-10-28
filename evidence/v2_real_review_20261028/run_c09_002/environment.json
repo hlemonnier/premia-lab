@@ -1,0 +1,42 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "thread_env": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "argv": [
+    "evidence/v2_real_review_20261028/replay.py",
+    "--policy",
+    "c09",
+    "--package",
+    "handoff",
+    "--data",
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home",
+    "--scorer",
+    "source/Quant Research Take-Home/score.py",
+    "--out",
+    "evidence/v2_real_review_20261028/run_c09_002",
+    "--expected-inputs",
+    "evidence/audit_C09_001/input_manifest.json",
+    "--baseline-ledger",
+    "evidence/audit_C09_001/daily.csv"
+  ],
+  "cwd": "/workspace/scratch/a83c191d516f/continual-research-takehome"
+}

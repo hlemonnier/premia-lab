@@ -1,0 +1,36 @@
+{
+  "V2_replay": {
+    "exit_code": 0,
+    "directory": "run_v2_001"
+  },
+  "C09_replay_attempts": [
+    {
+      "exit_code": 1,
+      "directory": "run_c09_001",
+      "failure": "audit forecast argument forwarding"
+    },
+    {
+      "exit_code": 1,
+      "directory": "run_c09_002",
+      "failure": "audit rebalance argument forwarding"
+    },
+    {
+      "exit_code": 0,
+      "directory": "run_c09_003"
+    }
+  ],
+  "paired_readback_attempts": [
+    {
+      "exit_code": 1,
+      "reason": "no C09 ledger after failed replay001"
+    },
+    {
+      "exit_code": 1,
+      "reason": "no C09 ledger after failed replay002"
+    },
+    {
+      "exit_code": 0,
+      "output": "paired_readback.json"
+    }
+  ]
+}

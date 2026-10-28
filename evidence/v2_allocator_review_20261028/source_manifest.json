@@ -1,0 +1,21 @@
+{
+  "commit": "afed8d0cb017acda151c4ea262fc30db7568a4bb",
+  "files": {
+    "handoff_v2/model_v2/allocator.py": {
+      "sha256": "8b50e5c4fa8ec2efb2baa9de8635ad8988f36387c780de271971245d50f3fe8f",
+      "bytes": 6178
+    },
+    "research/v2/test_allocator.py": {
+      "sha256": "fd4e291901d8e7eeec11dfac85e069482f0e0f7d9807359c3a7b9d760d854263",
+      "bytes": 5413
+    },
+    "research/v2/ALLOCATOR_SPEC.md": {
+      "sha256": "4e9041eb99b01332757db3d8862e59f98c6a79244bf2055eb5c2b6d970d62e35",
+      "bytes": 3178
+    },
+    "handoff/model/portfolio.py": {
+      "sha256": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+      "bytes": 7640
+    }
+  }
+}
