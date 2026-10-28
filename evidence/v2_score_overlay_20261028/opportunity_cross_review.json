@@ -1,0 +1,25 @@
+{
+  "review": "independent scalar readback of opportunity conclusions",
+  "checks": {
+    "fee_removal": true,
+    "beta_feat__fr_beta": true,
+    "decor_beta__fr_beta": true
+  },
+  "results": {
+    "fee_removal_gain": 0.04725169513279193,
+    "beta_feat__fr_beta": {
+      "correlation": 0.5083005156652722,
+      "equal_risk_sharpe": 1.2218618183952297,
+      "half_half_sharpe": 0.9654503999032101,
+      "variance_ratio": 259.5296272378637
+    },
+    "decor_beta__fr_beta": {
+      "correlation": 0.5326136406450802,
+      "equal_risk_sharpe": 1.256165316026248,
+      "half_half_sharpe": 1.0471797750541925,
+      "variance_ratio": 168.54935050082847
+    }
+  },
+  "all_passed": true,
+  "interpretation": "hindsight reference mixtures only; no actual blend score"
+}

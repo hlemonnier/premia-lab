@@ -1,0 +1,30 @@
+{
+  "recorded_utc": "2026-10-28T16:35:10.145022+00:00",
+  "e2e_exit_code": 0,
+  "e2e_checks": 38,
+  "e2e_all_passed": true,
+  "actual_not_started_at_record": true,
+  "source_binding": {
+    "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "e2e.py": "20886671b882437fe2afe34543d529fc38018422dcae2ddd4ef843b568f1ea79",
+    "run_pilot.py": "4b009b55a9e2406c5b5bdcca1ece7ec09df6b6834b9e0a8691ff756828e2368e"
+  },
+  "actual_completed_utc": "2026-10-28T16:37:09.848071+00:00",
+  "actual_exit_code": 0,
+  "actual_source_unchanged": true,
+  "actual_source_binding_passed": true,
+  "actual_policy_results": {
+    "fixed_one": {
+      "net_sharpe": 1.2425030733073608,
+      "all_checks": true
+    },
+    "VTvol": {
+      "net_sharpe": 1.2771094976732769,
+      "all_checks": true
+    },
+    "VTvar": {
+      "net_sharpe": 1.274190778924302,
+      "all_checks": true
+    }
+  }
+}

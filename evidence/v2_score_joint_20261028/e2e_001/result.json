@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "fixed_one_economics": true,
+    "fixed_one_actual_virtual": true,
+    "fixed_one_direct_targets": true,
+    "fixed_one_direct_forecast": true,
+    "fixed_one_accounting": true,
+    "joint_F2_VTvol_same_virtual": true,
+    "joint_F2_VTvol_same_forecast": true,
+    "joint_F2_VTvol_accounting": true,
+    "joint_F2_VTvol_finite": true,
+    "joint_F2_VTvol_bounds": true,
+    "joint_F2_VTvol_certified": true,
+    "joint_F2_VTvol_startup": true,
+    "joint_F2_VTvol_active_at_63": true,
+    "joint_F2_VTvol_moment_clock": true,
+    "joint_F2_VTvol_future_forecast": true,
+    "joint_F2_VTvol_future_decisions": true,
+    "joint_F2_VTvol_future_economics": true,
+    "joint_F2_VTvol_prefix_forecast": true,
+    "joint_F2_VTvol_prefix_decisions": true,
+    "joint_F2_VTvol_prefix_economics": true,
+    "joint_F2_VTvol_session_reset": true,
+    "source_unchanged": true
+  },
+  "all_passed": true,
+  "fixture": "synthetic; not a performance claim",
+  "fixed_one_accounting_max_error": 0.0
+}

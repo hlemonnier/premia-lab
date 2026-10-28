@@ -1,0 +1,8 @@
+{
+  "copied_dependencies": {
+    "evidence/v2_score_joint_20261028/overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "evidence/v2_score_joint_20261028/prototype.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+  },
+  "joint_implementation_absent": true,
+  "e2e_sha256": "2a0ebbcdbcf14bc95975729b7699474b25f2a21f754ed5d7fb2b0ac3748cc9ba"
+}

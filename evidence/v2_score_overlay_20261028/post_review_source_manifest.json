@@ -1,0 +1,15 @@
+{
+  "changes": [
+    "Numerical-tie guard aligned with master plan before execution",
+    "E2E source identity bound before actual replay",
+    "All synthetic mutation/prefix/repeat ledgers and arrays retained"
+  ],
+  "strategy_overlay_unchanged": true,
+  "existing_e2e_assertions_unchanged": true,
+  "sha256": {
+    "PLAN.md": "8f039d3384eb05674e339fda0b5fe8e92e3672ed654c4560feb4d336ef03d7bf",
+    "e2e.py": "20886671b882437fe2afe34543d529fc38018422dcae2ddd4ef843b568f1ea79",
+    "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "run_pilot.py": "4b009b55a9e2406c5b5bdcca1ece7ec09df6b6834b9e0a8691ff756828e2368e"
+  }
+}

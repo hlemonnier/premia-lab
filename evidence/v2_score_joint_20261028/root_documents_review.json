@@ -1,0 +1,93 @@
+{
+  "reviewer": "/root/score_allocation_research",
+  "reviewed_at_utc": "2026-10-28T16:55:05.221172+00:00",
+  "scope": "Independent document, frozen-source and saved-evidence inspection; no new strategy replay, test or production change.",
+  "decision": "ACCEPTED; no required numerical, arithmetic, accounting or implementation-scope correction",
+  "documents": [
+    {
+      "path": "research/v2/SCORE_RESEARCH_RESULTS_20261028.md",
+      "sha256": "913c2fd1495203fd2c013f535e03e0cdc9df955f3f279d8d2ece45261feb4abc"
+    },
+    {
+      "path": "research/v2/SCORE_IMPLEMENTATION_HANDOFF_20261028.md",
+      "sha256": "1551ba76c384e033de6054a4c942640c4d93e76bb763e083d27dc84c18c6df7b"
+    }
+  ],
+  "checks": {
+    "scores_and_costs": "Full and original-stage tables agree with saved summaries and independent actual_readback_001.json.",
+    "joint_net_sharpe": 1.318334966090838,
+    "baseline_net_sharpe": 1.2425030733073608,
+    "joint_net_beta": 0.052720354679718875,
+    "joint_annual_fee_percent": 0.3364064134436446,
+    "forecast_combination": "Handoff arithmetic matches prototype.py: half fast plus half slow for first 13 coefficients; remaining 14 stay slow.",
+    "overlay_clock": "Normalized gross second moments use the own F2 virtual book. Opening row 252 does not count; close 315 is earned observation 63 and sets exposure for row 316.",
+    "accounting": "Virtual and actual portfolios use their own gross-return drift denominators. Original scorer charges actual stock trades, with the free opening preserved. No virtual-fee substitution.",
+    "operational_scope": "Current replay mean/p99 runtime, stock maximum and certificates match saved evidence. Long-history integration/runtime gate remains outstanding and is not claimed passed.",
+    "statistical_scope": "All historical segments are described as development. Conditional bootstrap intervals include zero; no significance claim, hidden-data claim or new veto is introduced.",
+    "literature": "Claims about forecast-window combination, heterogeneous coefficients, volatility-management counterevidence and portfolio combinations are appropriately limited to motivation and context."
+  },
+  "independent_accounting_evidence": {
+    "path": "evidence/v2_score_opportunity_20261028/actual_readback_001.json",
+    "sha256": "2b9d5c6cf0608dc911412a4c27f97cbf827efa42b703101d07a8ea6f4647cdad",
+    "reviewer": "/root/score_opportunity_audit",
+    "joint_max_stock_level_accounting_discrepancy": 2.2551405187698492e-17,
+    "note": "This document review inspected the existing independent readback; it did not rerun that accountant."
+  },
+  "nonblocking_notes": [
+    {
+      "topic": "Literature access provenance",
+      "detail": "The Wiley full HTML for DOI 10.1111/jofi.13395 opened successfully during this review (tool reference turn64view2). The previously reported direct-access failure can be updated without changing any technical conclusion. Abstract/introduction directly support the proposed future conditional multifactor/cost question."
+    },
+    {
+      "topic": "Endpoint wording",
+      "detail": "Optional clarity: closing rebalance fees, not a forced liquidation. score.py does not liquidate the final book."
+    }
+  ],
+  "owner_document_repairs": [
+    {
+      "path": "research/v2/SCORE_ALLOCATION_RESEARCH_20261028.md",
+      "sha256": "6012ac934c54f0f2e3620f3e46f56dff81d9fddb84dc116ed47532745a4372db",
+      "changes": "Repaired four broken relative v2 links; identified factor_shrinkage as exploration-engine-only, absent from current handoff_v2 CONFIG."
+    },
+    {
+      "path": "evidence/v2_score_joint_20261028/RESULTS.md",
+      "sha256": "e0462085860dda0cfcee2e81bcb876ff0030b104e25c3903246e3613f989c729",
+      "changes": "Corrected the e2e_001 directory reference."
+    }
+  ],
+  "source_freeze": {
+    "prototype.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "joint.py": "fcf6dd9a917299516bb3b5bee92f9488b0546f7bf3914f7a2289bfeb4c104b33",
+    "plans_harnesses_policy_and_parameters_changed": false,
+    "additional_economic_runs_or_tests": false
+  },
+  "post_wording_reviews": [
+    {
+      "reviewed_at_utc": "2026-10-28T16:57:05.122865+00:00",
+      "reviewer": "/root/score_allocation_research",
+      "scope": "Only the three declared wording edits in the root results report and unchanged handoff identity; no broader review, strategy run or test.",
+      "decision": "ACCEPTED; final wording accurately scopes precommit timing, endpoint rebalance fees and the subsequently inspected publisher HTML.",
+      "prior_review_record_sha256": "793bef46d9c0a121fcc08a46dbc48afb1aaba35a868302557fd030030512e876",
+      "prior_document_hashes_preserved": true,
+      "inverse_of_three_declared_edits_matches_previously_reviewed_report_sha256": "913c2fd1495203fd2c013f535e03e0cdc9df955f3f279d8d2ece45261feb4abc",
+      "changes": [
+        "Precommit described as before scoring the supplied market.",
+        "Endpoint costs explicitly described as closing rebalance fees without forced liquidation.",
+        "Publisher full-HTML inspection recorded after the earlier access failure."
+      ],
+      "final_documents": [
+        {
+          "path": "research/v2/SCORE_RESEARCH_RESULTS_20261028.md",
+          "sha256": "78e97398c35f4d5e95b00eceaaac8e867dcf856350a2648351efcf46e714435e"
+        },
+        {
+          "path": "research/v2/SCORE_IMPLEMENTATION_HANDOFF_20261028.md",
+          "sha256": "1551ba76c384e033de6054a4c942640c4d93e76bb763e083d27dc84c18c6df7b"
+        }
+      ],
+      "policy_parameters_plans_harnesses_unchanged": true,
+      "freeze": "No further changes or experiments planned by this reviewer."
+    }
+  ]
+}
