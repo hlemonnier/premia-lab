@@ -1,0 +1,81 @@
+{
+  "policy": "V2",
+  "rows": 3526,
+  "decisions": 3527,
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "performance": {
+    "full": {
+      "sharpe": 1.2425030733073608,
+      "ret_pct": 4.755036440913077,
+      "vol_pct": 3.8269816333378306,
+      "net_beta": 0.04649641302064499
+    },
+    "discovery": {
+      "sharpe": 1.0980016386006128,
+      "ret_pct": 4.633935474460489,
+      "vol_pct": 4.220335663948892,
+      "net_beta": 0.042573725207528175
+    },
+    "validation": {
+      "sharpe": 1.6568592904246346,
+      "ret_pct": 6.315065775255167,
+      "vol_pct": 3.811467764191784,
+      "net_beta": 0.05378579790021688
+    },
+    "audit": {
+      "sharpe": 1.1475575640056013,
+      "ret_pct": 3.1170987270340436,
+      "vol_pct": 2.7162896440276776,
+      "net_beta": 0.038551825943851585
+    }
+  },
+  "max_differences_from_committed_day_net_gross_fee_market": [
+    0.0,
+    3.432366483049898e-10,
+    3.441221439748343e-10,
+    6.567205248575805e-12,
+    0.0
+  ],
+  "max_pre_gross": 2.6225713705697697,
+  "max_post_gross": 2.6225713705697697,
+  "gross_scaled_decisions": 0,
+  "max_abs_target_beta_error": 2.182021234922996e-13,
+  "max_abs_weight": 0.014781443885661362,
+  "mean_net_dollars": 0.40086201146377354,
+  "certificate_statuses": {
+    "ok": 3527
+  },
+  "max_abs_certificate_gap": 4.449346178531377e-18,
+  "forecast_seconds": 2.533028491998266,
+  "instrumented_wall_seconds": 16.047939103998942,
+  "source_unchanged": true,
+  "checks": {
+    "earning_rows": true,
+    "decision_rows": true,
+    "committed_ledger_tolerance": true,
+    "all_certified": true,
+    "all_finite": true,
+    "stock_caps": true,
+    "gross_cap": true,
+    "final_target_hedge": true
+  }
+}

@@ -1,0 +1,1 @@
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python evidence/v2_followup_causal_beta_20261028/readback_and_e2e.py > evidence/v2_followup_causal_beta_20261028/stdout.log 2> evidence/v2_followup_causal_beta_20261028/stderr.log

@@ -1,0 +1,5 @@
+{
+  "sha256": "859a6db4e7a824475a38115332e4babf2423ceb23451c4606157b9140a0f02b3",
+  "correction": "Remove one excess closing brace; no semantic change to planned observer",
+  "ast_parse": "pass"
+}

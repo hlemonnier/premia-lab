@@ -1,0 +1,21 @@
+{
+  "reviewer": "followup_engineering",
+  "review_type": "independent final integrated-document accuracy review",
+  "sha256": {
+    "reviews/V2_FOLLOWUP_INDEPENDENT_REVIEW_20261028.md": "d1f2ba29a9f25fa1aeaca25dff5415d017547b41ec4424de73b91b591b59b4e4",
+    "research/v2/REVIEWER_NEXT_DECISION_20261028.md": "9ab3a0585e4a856dae88ee6fa3135ba13d75914e7d309c302fe5244e87e03da7"
+  },
+  "confirmed": [
+    "latest actual-path feasibility/certificate/gross figures independently read from CSVs",
+    "default restart/layout and corrected-path causal scope described with scorer-layout qualification",
+    "affine-target dual and post-scaling caveat correctly separated from actual path",
+    "residual-plus-market variance identity including cross term correct",
+    "proposed joint factor-market second moment reconstruction is PSD by construction",
+    "matching-hedge zero-target books correctly serve as invariance controls",
+    "candidate retention decision preserves frozen rules and distinction from equivalence",
+    "no unsupported claim of tradable pure selection Sharpe in integrated conclusion"
+  ],
+  "recommendation": "For after-close zero-based row t, explicitly state maturity s+252 <= t+1, preserving engine T=t+1 convention. Tidy spaces between numbers and adjacent words before publication.",
+  "material_accuracy_issue_found": false,
+  "new_strategy_executions": 0
+}

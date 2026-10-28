@@ -1,0 +1,287 @@
+{
+  "reviewed_commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+  "previous_review_commit": "46218809d21115c66864d691a04549f539be7f5d",
+  "previous_review_tree": "81755d9d3a116cd284819aede002e4ee09d6eac7",
+  "changes": [
+    {
+      "path": "handoff_v2/model_v2/allocator.py",
+      "git_blob_sha": "c032eb2cf7e337abf669140b47888dcb11fbf2a5"
+    },
+    {
+      "path": "handoff_v2/model_v2/engine.py",
+      "git_blob_sha": "2afdae5146a358c136cee8d8c98867adab56d193"
+    },
+    {
+      "path": "handoff_v2/strategy.py",
+      "git_blob_sha": "96b62c03ec1f9cfbbc4a1f4afe86f9da775d0a8c"
+    },
+    {
+      "path": "research/v2/EXPLICIT_BETA_PLAN.md",
+      "git_blob_sha": "b5e78060163e07cfea64ea8720f8eb110cf064c7"
+    },
+    {
+      "path": "research/v2/EXPLICIT_BETA_RESULTS.md",
+      "git_blob_sha": "cff03470bf08da6f12cbd5f5cb386b20a5b3497c"
+    },
+    {
+      "path": "research/v2/R27_PLAN.md",
+      "git_blob_sha": "03c7f99fea09294a25b92918afcb4adc3ad7fb6b"
+    },
+    {
+      "path": "research/v2/REVIEW_FOLLOWUP_20261028.md",
+      "git_blob_sha": "a7634dbcbf09319a273f7b2a0ba187a116d996d0"
+    },
+    {
+      "path": "research/v2/beta_correction_diagnostic.py",
+      "git_blob_sha": "c322d1637831120c4e325b17123087ba9898c92e"
+    },
+    {
+      "path": "research/v2/beta_diagnostics.py",
+      "git_blob_sha": "c94d1f9a97392d977390648b06b0c1873e3daf75"
+    },
+    {
+      "path": "research/v2/exploration/compare.py",
+      "git_blob_sha": "337dff01c964d027e91f7947e05b186304a2344e"
+    },
+    {
+      "path": "research/v2/exploration/drift_test.py",
+      "git_blob_sha": "18d1d0fb6e61106ea4a72dee1ef88a668db6a6f3"
+    },
+    {
+      "path": "research/v2/r27_shadow.py",
+      "git_blob_sha": "3ff3b5da6a54a5d15d41c55a9520372cb70b954f"
+    },
+    {
+      "path": "research/v2/results/F26.npy",
+      "git_blob_sha": "3d99775df986a25ecbb01860a627f17c5c4fefa0"
+    },
+    {
+      "path": "research/v2/results/beta_correction_diagnostic.json",
+      "git_blob_sha": "002c0ee585d520952fd5c139a71c6a30b04070a8"
+    },
+    {
+      "path": "research/v2/results/beta_diagnostics.json",
+      "git_blob_sha": "86d96d2060588b0b2f16725611f11c9d3f6b5c88"
+    },
+    {
+      "path": "research/v2/results/candidates/V2_B05_explicit_beta.json",
+      "git_blob_sha": "52a8e4ea7b98772aeed83c92064aff6795f5baf9"
+    },
+    {
+      "path": "research/v2/results/candidates/V2_B0_beta_neutral.json",
+      "git_blob_sha": "f3c4d0766f8c4c2c358b0205063398929686d328"
+    },
+    {
+      "path": "research/v2/results/candidates/V2_R27_beta_risk.json",
+      "git_blob_sha": "6282c4cc673bc09a269d6b77e9c810836894f28b"
+    },
+    {
+      "path": "research/v2/results/candidates/V2_matched_diagonal.json",
+      "git_blob_sha": "87a926b691c69825daf8ccf4181468ad61d17dea"
+    },
+    {
+      "path": "research/v2/results/candidates_B0.log",
+      "git_blob_sha": "881af9a4663185f11980a03df7f5bde43d181377"
+    },
+    {
+      "path": "research/v2/results/candidates_B05.log",
+      "git_blob_sha": "1917c71eefe01ef41b98a7596de141e87f3fb35f"
+    },
+    {
+      "path": "research/v2/results/candidates_R27.log",
+      "git_blob_sha": "d184d9477665b89c0fac3c03a26d54273a12845c"
+    },
+    {
+      "path": "research/v2/results/candidates_matched.log",
+      "git_blob_sha": "ae01b6dce680b572fec8717ed3084eaddd11448a"
+    },
+    {
+      "path": "research/v2/results/candidates_vs_v2_paired.txt",
+      "git_blob_sha": "aa6f5b1b27d060ab1097437b2e66246e73b5e3ff"
+    },
+    {
+      "path": "research/v2/results/comparison.json",
+      "git_blob_sha": "0725a7fa06af1e3f75ef1a8237ae1cc92fba8151"
+    },
+    {
+      "path": "research/v2/results/comparison_stdout.txt",
+      "git_blob_sha": "41681dc9641b24e43c13c6e5fa5f8d520f3db0af"
+    },
+    {
+      "path": "research/v2/results/drift_test_stdout.txt",
+      "git_blob_sha": "67b0b9d3ac1f939e8c19214ae0c4e69f509bc13b"
+    },
+    {
+      "path": "research/v2/results/explicit_beta_causality.txt",
+      "git_blob_sha": "22b90d56e400d1ee2322c00c68967cf3e2a4e6d9"
+    },
+    {
+      "path": "research/v2/results/explicit_beta_paired.txt",
+      "git_blob_sha": "80d3d2714e9533864279ff25579657330473f7c6"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_C09_engine.npy",
+      "git_blob_sha": "239e461bdfe857a5b339e8eff092142f9cef4e5b"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_C09_reimpl.npy",
+      "git_blob_sha": "6cebb0d1becefa21422098a3c899943312103947"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_V2_B05_explicit_beta.npy",
+      "git_blob_sha": "afa7c642710fc36f3bcc7f191827d2890e0732b9"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_V2_B0_beta_neutral.npy",
+      "git_blob_sha": "ba915033e11b0dd98213a38759d136241c40ec1e"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_V2_R27_beta_risk.npy",
+      "git_blob_sha": "98890b56820533815a5a2137f8f27d15f4437107"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_V2_matched_diagonal.npy",
+      "git_blob_sha": "27449f4d85a9e7569f3ad3f790babb028697cf04"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_beta_feat.npy",
+      "git_blob_sha": "1507881d20e0df7e864b9e9c8db8c9390e7f9ba9"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_cost_h120.npy",
+      "git_blob_sha": "3729f8768afa332e8822ce88749440d3c3d99ba4"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_cost_h250.npy",
+      "git_blob_sha": "5883a755873ff2517a87d16e43b7eea56385651e"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_cost_h5.npy",
+      "git_blob_sha": "12c1c80bfba208c024cdf217fb9afbfb66b92aa9"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_cost_h60.npy",
+      "git_blob_sha": "6ca772e3fbfef85782301d72a30db6b0d32c5a09"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_decor.npy",
+      "git_blob_sha": "72d4a0ac7422928149f313050e8a92a460a5fe08"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_decor_beta.npy",
+      "git_blob_sha": "c9ed89e7e70118977e883fabeac548321d5644c8"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_fr_beta.npy",
+      "git_blob_sha": "e867a43a5a7a3196e605d186782cc95537f80336"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_fr_beta_phi01.npy",
+      "git_blob_sha": "ee246a75acfbc8fcf866ad642f02c081c479d1c0"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_fr_beta_phi03.npy",
+      "git_blob_sha": "4be0b9b7fbff3cde81369002d88a2f8ff316c01b"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_fr_beta_phi03_x5.npy",
+      "git_blob_sha": "91dcd8fb4303714b5be5bb7e16291397bb57ca5f"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_fr_decor_beta.npy",
+      "git_blob_sha": "84ba340dcec5c98e4fd396de9f9cbdfcc14feaf3"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_groups.npy",
+      "git_blob_sha": "8e8c96d30c944815931cae27284fafbecd6dc3c0"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_groups_plus.npy",
+      "git_blob_sha": "ef974fd2e048171ed30d00597ae31c540e96b638"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_h20.npy",
+      "git_blob_sha": "eecd178b1c49fdb48746a9ab132a602629cfccb6"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_h5.npy",
+      "git_blob_sha": "42fea33151c8611084558913827a2d6a693a7e63"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_hl_252.npy",
+      "git_blob_sha": "a0db443f37ab87352624737e409ebdf3c02bb704"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_hl_inf.npy",
+      "git_blob_sha": "3f65567fbabb1fb92ea4108c9e175e9750232c1c"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_neutral_k10.npy",
+      "git_blob_sha": "ca5364bbcc4ddf74fbac4114b0513d87ee2e8656"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_neutral_k20.npy",
+      "git_blob_sha": "a5ab5d89906fe322976f086fd1cfba51329b381a"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_rev_scaled_h20.npy",
+      "git_blob_sha": "3270f34e7295aae30794a3f4d79fcb3225afeffb"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_rev_scaled_h60.npy",
+      "git_blob_sha": "d77162a8e9596b0f5c7ad51b7aa3bc41b13a863e"
+    },
+    {
+      "path": "research/v2/results/ledgers/net_reversal.npy",
+      "git_blob_sha": "421824f6a9c1b1e70029c0ca897c0b1327f773af"
+    },
+    {
+      "path": "research/v2/results/r27_shadow.json",
+      "git_blob_sha": "ccc5466ff9a593c9e075da528e9fdad4ccec73a7"
+    },
+    {
+      "path": "research/v2/results/r27_shadow.log",
+      "git_blob_sha": "239ae08dce1463da84bcc83e02e14195a64c5185"
+    },
+    {
+      "path": "research/v2/results/test_allocator_beta_target_after.log",
+      "git_blob_sha": "fda094f5defdc63be04596b75c5a86cc3bd5d393"
+    },
+    {
+      "path": "research/v2/results/test_allocator_beta_target_before.log",
+      "git_blob_sha": "14439382827ee72a42bfe4463dad320609514766"
+    },
+    {
+      "path": "research/v2/run_candidate.py",
+      "git_blob_sha": "8af4c6c2aac5fef73aa36bc3529f1ac2ee25cf43"
+    },
+    {
+      "path": "research/v2/test_allocator_beta_target.py",
+      "git_blob_sha": "deb9ed680c84857fb71d6c77f7f8e3d01bd68e67"
+    },
+    {
+      "path": "verification/V2_FIX_PLAN.md",
+      "git_blob_sha": "5b4d19fd6322829a3caeb8ff786dddb0d376ccae"
+    },
+    {
+      "path": "verification/v2_package_checks.py",
+      "git_blob_sha": "4f981378329d0f67d948a20bad8bf1a990ddfc99"
+    },
+    {
+      "path": "verification/v2_package_checks_after_fix.json",
+      "git_blob_sha": "e6f8f6769bd1bff00d9e37ae172aff0bcdc590be"
+    },
+    {
+      "path": "verification/v2_package_checks_after_fix.log",
+      "git_blob_sha": "bbc498266c5893f29f6cadcf4be59a643af3418a"
+    },
+    {
+      "path": "verification/v2_package_checks_synthetic_after_fix.json",
+      "git_blob_sha": "f96bc935dbafdc01d1456ec12f6547d343f65217"
+    },
+    {
+      "path": "verification/v2_package_checks_synthetic_before_fix.json",
+      "git_blob_sha": "539bfe39a357ba3098dd69ad15116a4070e70ead"
+    }
+  ]
+}

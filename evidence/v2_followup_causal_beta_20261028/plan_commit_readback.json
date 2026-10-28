@@ -1,0 +1,100 @@
+{
+  "commits": [
+    {
+      "sha": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+      "message": "Explicit-beta results: exposure controlled, V2 retained under frozen rules",
+      "committer_date": "2026-10-28T12:51:50Z",
+      "parents": [
+        "52a3a21da979b5a52b4068d06520ef6ad253817b"
+      ]
+    },
+    {
+      "sha": "52a3a21da979b5a52b4068d06520ef6ad253817b",
+      "message": "Add in-progress logs for B0 and B05 runs",
+      "committer_date": "2026-10-28T12:49:24Z",
+      "parents": [
+        "c9fcbd8e4778395aaee1c4b2e6862fecb62ef090"
+      ]
+    },
+    {
+      "sha": "c9fcbd8e4778395aaee1c4b2e6862fecb62ef090",
+      "message": "Explicit-beta experiment: frozen plan, allocator beta target, causal beta correction",
+      "committer_date": "2026-10-28T12:49:01Z",
+      "parents": [
+        "ec312ec36fd7b18bf83b188140d00949743f34ee"
+      ]
+    },
+    {
+      "sha": "ec312ec36fd7b18bf83b188140d00949743f34ee",
+      "message": "R27 rejected under frozen rule; matched-diagonal control; follow-up report and note",
+      "committer_date": "2026-10-28T12:20:21Z",
+      "parents": [
+        "b4aefa1488e201515a29d24eeadfd2ce346f7604"
+      ]
+    },
+    {
+      "sha": "b4aefa1488e201515a29d24eeadfd2ce346f7604",
+      "message": "Add in-progress logs for R27 and matched-diagonal runs",
+      "committer_date": "2026-10-28T12:18:11Z",
+      "parents": [
+        "2108ecafe7fea7147de280f144461f86aadcaea7"
+      ]
+    },
+    {
+      "sha": "2108ecafe7fea7147de280f144461f86aadcaea7",
+      "message": "R27 stage 1 passes the frozen risk gate; commit ledgers; matched-diagonal option",
+      "committer_date": "2026-10-28T12:17:45Z",
+      "parents": [
+        "5bd1c16952e6132b27f7b514ac739903d60b6b00"
+      ]
+    },
+    {
+      "sha": "5bd1c16952e6132b27f7b514ac739903d60b6b00",
+      "message": "Fix V2 session reset, panel layout and allocator certificate; beta diagnostics",
+      "committer_date": "2026-10-28T12:16:46Z",
+      "parents": [
+        "46218809d21115c66864d691a04549f539be7f5d"
+      ]
+    },
+    {
+      "sha": "46218809d21115c66864d691a04549f539be7f5d",
+      "message": "Review V2 factor risk and specify beta-risk research follow-up",
+      "committer_date": "2026-10-28T09:17:20Z",
+      "parents": [
+        "afed8d0cb017acda151c4ea262fc30db7568a4bb"
+      ]
+    },
+    {
+      "sha": "afed8d0cb017acda151c4ea262fc30db7568a4bb",
+      "message": "Record V2 century-length runtime check",
+      "committer_date": "2026-10-28T00:05:21Z",
+      "parents": [
+        "6f629161c7075ce9a89ebb30c0aeb910c4611cb5"
+      ]
+    },
+    {
+      "sha": "6f629161c7075ce9a89ebb30c0aeb910c4611cb5",
+      "message": "Add V2 characteristic factor-risk strategy and full-sample exploration",
+      "committer_date": "2026-10-28T00:03:39Z",
+      "parents": [
+        "fb8c7024edbc432262709965dbeadc3da02547e1"
+      ]
+    }
+  ],
+  "plan_identity_checks": [
+    {
+      "path": "research/v2/R27_PLAN.md",
+      "ref": "5bd1c16952e6132b27f7b514ac739903d60b6b00",
+      "sha": "03c7f99fea09294a25b92918afcb4adc3ad7fb6b",
+      "current_git_blob_sha": "03c7f99fea09294a25b92918afcb4adc3ad7fb6b",
+      "unchanged_since_plan_commit": true
+    },
+    {
+      "path": "research/v2/EXPLICIT_BETA_PLAN.md",
+      "ref": "c9fcbd8e4778395aaee1c4b2e6862fecb62ef090",
+      "sha": "b5e78060163e07cfea64ea8720f8eb110cf064c7",
+      "current_git_blob_sha": "b5e78060163e07cfea64ea8720f8eb110cf064c7",
+      "unchanged_since_plan_commit": true
+    }
+  ]
+}

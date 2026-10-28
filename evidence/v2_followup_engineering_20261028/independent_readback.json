@@ -1,0 +1,188 @@
+{
+  "actual_reviewed_commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+  "equality_checks": 21,
+  "bitwise_equal_checks": 20,
+  "failed_comparisons": {
+    "future_R_F_ledger_protected": {
+      "bitwise_equal": false,
+      "allclose": true,
+      "max_abs": 2.6020852139652106e-18,
+      "first_mismatch": [
+        0,
+        0
+      ],
+      "mismatch_count": 31,
+      "shape": [
+        47,
+        4
+      ]
+    }
+  },
+  "future_stimuli": {
+    "future_later_forecast_changed": true,
+    "future_later_targets_changed": true,
+    "future_R_F_later_forecast_changed": true,
+    "future_R_F_later_targets_changed": true,
+    "future_X_F_later_forecast_changed": true,
+    "future_X_F_later_targets_changed": true
+  },
+  "worker_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "all_arrays_finite": true,
+  "all_runs_trade": true,
+  "source_unchanged": true,
+  "cases": {
+    "baseline": {
+      "all_finite": true,
+      "nonzero_targets": 8346,
+      "target_shape": [
+        87,
+        96
+      ],
+      "ledger_shape": [
+        86,
+        4
+      ]
+    },
+    "cold_alt_custom_start": {
+      "all_finite": true,
+      "nonzero_targets": 3831,
+      "target_shape": [
+        40,
+        96
+      ],
+      "ledger_shape": [
+        39,
+        4
+      ]
+    },
+    "cold_alt_default_start": {
+      "all_finite": true,
+      "nonzero_targets": 8352,
+      "target_shape": [
+        87,
+        96
+      ],
+      "ledger_shape": [
+        86,
+        4
+      ]
+    },
+    "future": {
+      "all_finite": true,
+      "nonzero_targets": 8346,
+      "target_shape": [
+        87,
+        96
+      ],
+      "ledger_shape": [
+        86,
+        4
+      ]
+    },
+    "future_R_F": {
+      "all_finite": true,
+      "nonzero_targets": 8346,
+      "target_shape": [
+        87,
+        96
+      ],
+      "ledger_shape": [
+        86,
+        4
+      ]
+    },
+    "future_X_F": {
+      "all_finite": true,
+      "nonzero_targets": 8346,
+      "target_shape": [
+        87,
+        96
+      ],
+      "ledger_shape": [
+        86,
+        4
+      ]
+    },
+    "repeat": {
+      "all_finite": true,
+      "nonzero_targets": 8346,
+      "target_shape": [
+        87,
+        96
+      ],
+      "ledger_shape": [
+        86,
+        4
+      ]
+    },
+    "truncated": {
+      "all_finite": true,
+      "nonzero_targets": 4602,
+      "target_shape": [
+        48,
+        96
+      ],
+      "ledger_shape": [
+        47,
+        4
+      ]
+    },
+    "warm_alt_custom_start": {
+      "all_finite": true,
+      "nonzero_targets": 3831,
+      "target_shape": [
+        40,
+        96
+      ],
+      "ledger_shape": [
+        39,
+        4
+      ]
+    },
+    "warm_alt_default_start": {
+      "all_finite": true,
+      "nonzero_targets": 8352,
+      "target_shape": [
+        87,
+        96
+      ],
+      "ledger_shape": [
+        86,
+        4
+      ]
+    }
+  },
+  "metadata_caveat": "The unchanged old runner hardcodes the earlier commit in its environment.json; actual package hashes and reviewed commit are in review_identity.json.",
+  "pass": false,
+  "failed_comparison_scope": {
+    "case": "future_R_F_ledger_protected",
+    "column_0_gross_return": {
+      "mismatches": 31,
+      "max_abs": 2.6020852139652106e-18
+    },
+    "column_1_trading_cost": {
+      "mismatches": 0,
+      "max_abs": 0.0
+    },
+    "column_2_gross_exposure": {
+      "mismatches": 0,
+      "max_abs": 0.0
+    },
+    "column_3_market_return": {
+      "mismatches": 0,
+      "max_abs": 0.0
+    },
+    "interpretation": "Strict scorer P&L equality across return layouts fails at last-bit roundoff; protected decisions are bitwise equal."
+  }
+}

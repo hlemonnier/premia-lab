@@ -1,0 +1,28 @@
+{
+  "review_type": "independent pre-execution observer source review",
+  "reviewer": "followup_engineering",
+  "sha256": {
+    "evidence/v2_followup_review_20261028/LATEST_PACKAGE_REPLAY_PLAN.md": "f4944462ab19f7f5b0b6c20286392222f08e648ca5e256d89293bf14490a31f2",
+    "evidence/v2_followup_review_20261028/replay_latest.py": "0cfaf778c85ff670e3b3dd947ebaee0c3cd562a346bc0a473abf448f89865bff"
+  },
+  "approved_logic": [
+    "exact copied current package and unchanged original scorer",
+    "fresh process required for each fixed V2/B0/B05 policy",
+    "configuration inherits literal wrapper settings",
+    "correct declared-argument forwarding through original scorer",
+    "correct beta positional argument index 5 at actual engine allocator call",
+    "observational wrappers return original arrays unchanged",
+    "eta reads completed slope list after real hedge update and does not mutate state",
+    "raw beta recomputation is pure and uses published current prefix",
+    "pre-gross and final estimated-beta constraint distinguished",
+    "committed day/net/gross/fee/market comparator mappings",
+    "finite/cap/certificate and final hedge checks recorded separately",
+    "runtime explicitly instrumented"
+  ],
+  "qualifications": [
+    "Loader explicitly canonicalizes CSV arrays to C-contiguous float64, matching candidate runner; it does not literally call score.load.",
+    "Direct latest V2 versus earlier independent V2 CSV comparison must also be performed after replay; two comparisons each below 1e-8 do not establish a direct difference below 1e-8."
+  ],
+  "execution_blocker_found": false,
+  "executions_by_this_review": []
+}

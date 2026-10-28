@@ -1,0 +1,13 @@
+{
+  "reviewed_commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+  "reviewers": {
+    "followup_quant_challenge": "Source/statistics/units and next diagnostic approved; conditional-mean wording correction applied.",
+    "followup_causal_beta": "Timing and raw-risk specification approved; warm-up, phase cohort, MSE second-moment and omitted factor/idiosyncratic covariance clarifications applied.",
+    "followup_engineering": "Latest actual CSVs independently read back; actual target/cap/certificate results and direct old/new agreement verified; prefix-length clarification applied."
+  },
+  "report_sha256": {
+    "reviews/V2_FOLLOWUP_INDEPENDENT_REVIEW_20261028.md": "d1f2ba29a9f25fa1aeaca25dff5415d017547b41ec4424de73b91b591b59b4e4",
+    "research/v2/REVIEWER_NEXT_DECISION_20261028.md": "9ab3a0585e4a856dae88ee6fa3135ba13d75914e7d309c302fe5244e87e03da7"
+  },
+  "markdown_links_checked": true
+}

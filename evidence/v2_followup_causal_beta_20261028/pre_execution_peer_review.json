@@ -1,0 +1,12 @@
+{
+  "reviewer": "/root/followup_engineering",
+  "timing_slices_approved": true,
+  "original_scorer_used": true,
+  "review_precedes_execution": true,
+  "prospective_amendment": "Add X-only layout case; both-Fortran original scorer arithmetic gets 1e-12 economic/target tolerance, exact forecasts; preserve exact mutation/prefix criteria; stimulus and source checks added.",
+  "identities": {
+    "PLAN.md": "f6280e64e1dbc7d31c1f2a4ce1820a092d22feba238608383df59e7033fc160e",
+    "readback_and_e2e.py": "a59854a8b39e5df8b19bd5dd61514aeae39613c4a0d6671ebff53cde81fb8456",
+    "command.txt": "891dd0048a79e6b62620249208373e8904998b0ad9e2c46cfec349c216f77ead"
+  }
+}
