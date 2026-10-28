@@ -69,7 +69,7 @@ class JointState(engine._RiskState):
 
 
 def per_day(R, X, W, over):
-    cfg = {**V2._CONFIG, **over, "factor_risk_scale": 1.0}
+    cfg = {**engine.CONFIG, **V2._CONFIG, **over, "factor_risk_scale": 1.0}   # engine defaults first (attempt 001 omitted them)
     T, n = R.shape
     st = JointState(n, 26, cfg); tr = engine._EtaTracker(cfg["beta_window"])
     recs = []

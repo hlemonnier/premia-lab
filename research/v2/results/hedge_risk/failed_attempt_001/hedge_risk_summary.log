@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/home/claude/continual-research-takehome/research/v2/hedge_risk_diagnostics.py", line 173, in <module>
+    summarize(); sys.exit(0)
+    ~~~~~~~~~^^
+  File "/home/claude/continual-research-takehome/research/v2/hedge_risk_diagnostics.py", line 134, in summarize
+    df = pd.read_csv(os.path.join(OUT, f"{book}.csv")); earn = df["earn"].to_numpy()
+  File "/usr/local/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/usr/local/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/pandas/io/common.py", line 930, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '/home/claude/continual-research-takehome/research/v2/results/hedge_risk/V2.csv'

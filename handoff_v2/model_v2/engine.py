@@ -29,6 +29,8 @@ CONFIG = {
     "matched_diagonal": False,   # control: keep marginal variances d + diag(phi*D F D'), drop correlations
     "beta_shrinkage": False,     # correct betas toward the cross-sectional mean by a causally estimated eta
     "beta_target": 0.0,          # explicit market exposure: hedge constraint b'w = beta_target
+    "premium_model": "fixed",    # "fixed": one EW learner (alpha_half_life); "adaptive": stable + learned deviation
+    "adaptive_half_life": 252.0, # half-life of the dynamic learner in the adaptive model
     # allocation
     "risk_aversion": 1000.0, "cost_horizon": 20.0, "weight_cap": 0.01, "gross_cap": 1.0,
 }
@@ -150,11 +152,13 @@ def forecast(returns_history, characteristics_history):
     def design(s):
         return np.hstack([basis(X[s], cfg["feature_clip"]), zcol(beta[s + 1])[:, None]])
 
-    decay = 2.0 ** (-1.0 / cfg["alpha_half_life"])
     width = 27
-    gram = np.zeros((width, width)); mom = np.zeros(width); mass = 0.0; pairs = 0
     ridge = cfg["ridge"] * np.eye(width)
     pred = np.zeros((T, N))
+    if cfg["premium_model"] == "adaptive":
+        return _adaptive_forecast(E, design, T, N, width, ridge, cfg, pred)
+    decay = 2.0 ** (-1.0 / cfg["alpha_half_life"])
+    gram = np.zeros((width, width)); mom = np.zeros(width); mass = 0.0; pairs = 0
     for t in range(2, T):
         s = t - 2                                      # newest matured pair: X[t-2] -> e[t-1]
         D = design(s); y = E[s + 1]
@@ -164,6 +168,46 @@ def forecast(returns_history, characteristics_history):
         if pairs >= cfg["min_training_days"]:
             coef = np.linalg.solve(gram / mass + ridge, mom / mass)
             pred[t] = design(t - 1) @ coef
+    return pred
+
+
+KAPPA_PATH = []   # adaptive model: (row, kappa) per forecast row, for reporting
+
+
+def _adaptive_forecast(E, design, T, N, width, ridge, cfg, pred):
+    """theta = theta_inf + kappa * (theta_dyn - theta_inf). Both learners use the same matured
+    pairs as the fixed model. kappa is the clipped least-squares weight that would have best
+    predicted already matured labels with the coefficients in force at the time; the
+    prediction made at row r (design X[r-1]) is scored against E[r], available from row r+1."""
+    KAPPA_PATH.clear()
+    a_dyn = 2.0 ** (-1.0 / cfg["adaptive_half_life"])
+    G = {"inf": np.zeros((width, width)), "dyn": np.zeros((width, width))}
+    Mo = {"inf": np.zeros(width), "dyn": np.zeros(width)}
+    Ms = {"inf": 0.0, "dyn": 0.0}
+    dec = {"inf": 1.0, "dyn": a_dyn}
+    pairs = 0; num = den = 0.0; scored = 0; prev = None
+    for t in range(2, T):
+        s = t - 2
+        D = design(s); y = E[s + 1]
+        for k in G:
+            G[k] = dec[k] * G[k] + D.T @ D / N
+            Mo[k] = dec[k] * Mo[k] + D.T @ y / N
+            Ms[k] = dec[k] * Ms[k] + 1.0
+        pairs += 1
+        if prev is not None:                           # prediction made at row t-1 meets its label E[t-1]
+            a_prev, d_prev = prev
+            num += float((E[t - 1] - a_prev) @ d_prev) / N
+            den += float(d_prev @ d_prev) / N
+            scored += 1
+        if pairs >= cfg["min_training_days"]:
+            th_inf = np.linalg.solve(G["inf"] / Ms["inf"] + ridge, Mo["inf"] / Ms["inf"])
+            th_dyn = np.linalg.solve(G["dyn"] / Ms["dyn"] + ridge, Mo["dyn"] / Ms["dyn"])
+            Dn = design(t - 1)
+            a = Dn @ th_inf; dl = Dn @ (th_dyn - th_inf)
+            kappa = float(np.clip(num / den, 0.0, 1.0)) if (scored >= 252 and den > 0) else 0.0
+            pred[t] = a + kappa * dl
+            prev = (a, dl)
+            KAPPA_PATH.append((t, kappa))
     return pred
 
 
