@@ -3,7 +3,7 @@
 Solves, for the drifted book h,
 
     maximize   mu'w - gamma/2 (w' diag(d) w + ||L'B'w||^2) - kappa'|w - h|
-    subject to b'w = 0,  |w_i| <= cap_i,
+    subject to b'w = beta_target (default 0),  |w_i| <= cap_i,
 
 where F = L L' is the factor covariance. The equalities z = L'B'w and b'w = 0
 are dualized; given the multipliers each stock solves the scalar no-trade-band /
@@ -32,7 +32,7 @@ def _vec(x, name, n=None):
 
 
 def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
-                    max_iter=100, tol=1e-13, info=None):
+                    max_iter=100, tol=1e-13, info=None, beta_target=0.0):
     mu = _vec(mu, "mu"); n = mu.size
     h = _vec(held, "held", n); d = _vec(d, "d", n); b = _vec(beta, "beta", n)
     kappa = _vec(kappa, "kappa", n)
@@ -66,6 +66,14 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
     m = A.shape[1]
     reg = np.zeros(m); reg[:r] = 1.0 / gamma
     expo_tol = max(64 * np.finfo(float).eps * float(np.abs(bn) @ cap), np.nextafter(0, 1))
+    beta_target = float(beta_target)
+    if not np.isfinite(beta_target):
+        raise ValueError("beta_target must be finite")
+    if not use_beta and beta_target != 0.0:
+        raise ValueError("a nonzero beta_target needs a nonzero movable beta")
+    c = beta_target / bscale if use_beta else 0.0          # target in normalized-beta units
+    if abs(c) >= float(np.abs(bn) @ cap):
+        raise ValueError("beta_target is not attainable within the caps")
 
     def primal(theta):
         s = mu - A @ theta
@@ -81,11 +89,13 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
     def dual(theta, w, s):
         phi = s @ w - 0.5 * (diag * w) @ w - kappa @ np.abs(w - h)
         lam = theta[:r]
-        return phi + lam @ lam / (2 * gamma)
+        return phi + lam @ lam / (2 * gamma) + (theta[r] * c if use_beta else 0.0)
 
     def grad(theta, w):
         g = -(A.T @ w)
         g[:r] += theta[:r] / gamma
+        if use_beta:
+            g[r] += c
         return g
 
     theta = np.zeros(m)
@@ -126,7 +136,7 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
             def expo(nu):
                 th = theta.copy(); th[r] = nu
                 wv = primal(th)[0]
-                return float(bn @ wv), wv, th
+                return float(bn @ wv) - c, wv, th
             e0, w0, th0 = expo(theta[r])
             if abs(e0) > expo_tol:
                 step = max(np.max(np.abs(mu[movable])), np.max(diag[movable] * cap[movable]),
@@ -169,7 +179,7 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
 
     def certify(w, theta):
         q = M.T @ w - theta[:r] / gamma
-        e = float(bn @ w) if use_beta else 0.0
+        e = float(bn @ w) - c if use_beta else 0.0
         nu = float(theta[r]) if use_beta else 0.0
         gap = 0.5 * gamma * float(q @ q) - nu * e
         primal_value = float(mu @ w - 0.5 * (diag * w) @ w - 0.5 * gamma * float((M.T @ w) @ (M.T @ w))

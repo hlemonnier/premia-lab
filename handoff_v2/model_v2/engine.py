@@ -27,6 +27,8 @@ CONFIG = {
     "specific_shrinkage": 0.2, "variance_floor": 1e-6, "factor_risk_scale": 0.3,
     "risk_beta_column": False,   # R27 experiment: add the forecast's beta column to the risk loadings
     "matched_diagonal": False,   # control: keep marginal variances d + diag(phi*D F D'), drop correlations
+    "beta_shrinkage": False,     # correct betas toward the cross-sectional mean by a causally estimated eta
+    "beta_target": 0.0,          # explicit market exposure: hedge constraint b'w = beta_target
     # allocation
     "risk_aversion": 1000.0, "cost_horizon": 20.0, "weight_cap": 0.01, "gross_cap": 1.0,
 }
@@ -97,6 +99,28 @@ def _window_beta(R, window=252, min_days=20):
     return np.ones(R.shape[1]) if mv <= 1e-12 * len(W) else (m @ c) / mv
 
 
+class _EtaTracker:
+    """Causal beta-shrinkage intensity. On grid dates s = window, window+step, ... a pair is
+    complete once s + window <= t: regress realized betas over rows [s, s+window) on betas
+    estimated from rows [s-window, s). eta_t = 1 - mean slope over completed pairs, else 0."""
+
+    def __init__(self, window=252, step=21):
+        self.window, self.step, self.next_s, self.slopes = window, step, window, []
+
+    def eta(self, R, t):
+        while self.next_s + self.window <= t:
+            s = self.next_s
+            pre = _window_beta(R[:s], self.window); post = _window_beta(R[s:s + self.window], self.window)
+            x = pre - pre.mean()
+            self.slopes.append(float(x @ (post - post.mean()) / (x @ x)))
+            self.next_s += self.step
+        return 1.0 - float(np.mean(self.slopes)) if self.slopes else 0.0
+
+
+def _correct(beta, eta):
+    return (1.0 - eta) * beta + eta * beta.mean()
+
+
 # ---------------------------------------------------------------- forecast
 def forecast(returns_history, characteristics_history):
     """Also starts a new scoring session: the scorer calls forecast once per run, so the
@@ -111,7 +135,13 @@ def forecast(returns_history, characteristics_history):
     if np.shape(X)[:2] != (T, N) or np.shape(X)[2] != 13:
         raise ValueError("characteristics_history must be (days, stocks, 13)")
     beta, m = causal_betas(R, cfg["beta_window"])
-    E = R - beta * m[:, None]                          # residual of day s uses beta from rows < s
+    if cfg["beta_shrinkage"]:                          # labels use corrected betas; eta_t from rows < t only
+        tracker = _EtaTracker(cfg["beta_window"])
+        eta = np.array([tracker.eta(R, t) for t in range(T)])
+        bc = (1.0 - eta)[:, None] * beta + (eta * beta.mean(axis=1))[:, None]
+        E = R - bc * m[:, None]
+    else:
+        E = R - beta * m[:, None]                      # residual of day s uses beta from rows < s
 
     def zcol(v):
         v = v - v.mean(); v = np.clip(v / max(v.std(), 1e-12), -cfg["feature_clip"], cfg["feature_clip"])
@@ -145,11 +175,14 @@ class _RiskState:
         self.S2 = np.zeros((k, k)); self.wF = 0.0
         self.U2 = np.zeros(n); self.wS = 0.0
         self.warm = {}
+        self.eta = _EtaTracker(cfg["beta_window"])
 
     def absorb(self, R, X, s):
         """Use return row s and characteristics row s-1, both published by the close of day s."""
         beta = _window_beta(R[:s], self.cfg["beta_window"])
-        D = risk_loadings(X[s - 1], beta, self.cfg)
+        D = risk_loadings(X[s - 1], beta, self.cfg)        # beta column (if any) uses raw betas, as the forecast does
+        if self.cfg["beta_shrinkage"]:
+            beta = _correct(beta, self.eta.eta(R, s))
         e = R[s] - beta * R[s].mean(); e = e - e.mean()
         G = D.T @ D / len(e)
         f = np.linalg.solve(G + 1e-10 * np.eye(G.shape[0]), D.T @ e / len(e))
@@ -189,13 +222,16 @@ def rebalance(held_positions, expected_returns, returns_history, characteristics
     L, d = _STATE.model()
     beta = _window_beta(R, cfg["beta_window"])          # hedge betas from the last year through today
     D_today = risk_loadings(X[T - 1], beta, cfg)        # today's published characteristics (+ beta)
+    if cfg["beta_shrinkage"]:
+        beta = _correct(beta, _STATE.eta.eta(R, T))     # hedge corrected betas; eta from rows < T
     cert = {}
     if cfg["matched_diagonal"]:
         d = d + np.sum((D_today @ L) ** 2, axis=1)     # same marginal variances, no cross-stock covariance
         L = np.zeros_like(L)
     w = allocate_factor(expected_returns, held_positions, d, D_today, L, beta,
                         np.asarray(trading_costs, dtype=np.float64) / cfg["cost_horizon"],
-                        cfg["risk_aversion"], cfg["weight_cap"], warm=_STATE.warm, info=cert)
+                        cfg["risk_aversion"], cfg["weight_cap"], warm=_STATE.warm, info=cert,
+                        beta_target=cfg["beta_target"])
     CERTIFICATES.append(cert)
     gross = float(np.abs(w).sum())
     return w * (min(1.0, cfg["gross_cap"] / gross) if gross else 1.0)

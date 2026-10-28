@@ -1,0 +1,8 @@
+{
+ "dates": 144,
+ "eta_first": 0.09480528749040684,
+ "eta_last": 0.17727840712348708,
+ "mse_raw": 0.04313413259015087,
+ "mse_corrected": 0.03929552541627599,
+ "share_of_dates_corrected_better": 0.9652777777777778
+}
