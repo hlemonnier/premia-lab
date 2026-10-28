@@ -172,3 +172,41 @@ Next gate: prospective E2E harnesses, independent source review, original-scorer
 replays, and an honest comparison retaining every outcome. Claude remains the
 production implementer; these files are research evidence and a handoff. No
 outgoing message or submission has been made.
+
+
+### Completed score-research outcome
+
+The precommitted four standalone alternatives and conditional joint were run
+through the unchanged scorer. Net Sharpe: V2 1.242503; F1 daily-ridge averaging
+1.137993 (rejected); F2 partial fast/slow coefficients 1.291780; inverse-volatility
+sizing 1.277109; inverse-variance sizing 1.274191. The admitted F2 + inverse-volatility
+joint leads at 1.318335, a gain of 0.075832 (about 6.1%) over V2, with beta 0.052720
+and annual actual fees 0.336406%. No additional parameter grid was run.
+
+Independent saved-target reconstruction verifies actual stock-level drift and
+full fees for the winner to 2.26e-17, with exact virtual/actual target hashes and
+moment clocks. Canonical F2 future/prefix invariance passes; original strict
+mixed-layout failures remain recorded. A truncated F2 NPZ checkpoint required
+one unchanged replay, reproducing the original forecast/target hashes exactly.
+Rejected F1's analogous independent target readback remains blocked; its CSV
+score is independently verified. No failed criterion was silently relabeled.
+
+The 63-day paired interval for joint minus V2 is [-0.08197,+0.21792]. All historic
+periods remain development data, and the gain is concentrated in the final
+segment. This uncertainty is disclosed without adding an unrecorded significance
+veto to the score-first rule. No hidden future history was accessed.
+
+Decision: nominate the joint research prototype for faithful Claude production
+integration, preserve F2 alone and V2 as comparators, and run the new package's
+long-history/runtime gate after integration. Reports and exact instructions:
+research/v2/SCORE_RESEARCH_RESULTS_20261028.md and
+research/v2/SCORE_IMPLEMENTATION_HANDOFF_20261028.md. The research prototypes do
+not modify the production handoff, send messages to the evaluator or submit work.
+
+Publication preflight observed concurrent Claude head c51d31f. A separate static
+production readback confirms new fallback/final-book safeguards and an optional
+learned adaptive forecast, with unchanged temporal clocks. The integration
+handoff now preserves those safeguards and requires a separate exact F2 mode;
+the ce3-based research score must be reproduced on the integrated head. Our
+publication remains on its own research branch and does not overwrite Claude's
+work. This readback executed no policy or additional experiment.

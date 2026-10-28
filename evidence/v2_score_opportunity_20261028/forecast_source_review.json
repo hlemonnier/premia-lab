@@ -1,0 +1,27 @@
+{
+  "reviewer": "score_opportunity_audit",
+  "status": "ACCEPT_FOR_SPECIFIED_E2E_EXECUTION",
+  "files": {
+    "PLAN.md": "f887dd56bc7293571cf862d6b2419c844e37fe8473390566587cc80070259f6e",
+    "run_research.py": "ea097d7d69be37cea7b6edc9c34d697dc3622a3c76172f20812689ccce1939ef",
+    "prototype.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+  },
+  "syntax_parse": "PASS",
+  "scope": "Independent pre-execution static scientific/accounting/causality review, no claim of numerical outcome",
+  "findings": [
+    "F1 matches daily ridge slope average with normalized1008-day weights; F2 changes onlyfirst13 coefficient block via equal252/1008 blend",
+    "Newest label at forecastt isreturnt-1; featuresdesign(t-1) and betat all depend strictlyonrows<t",
+    "126 matured pairs produces firsteligible forecastrow127; eachforecastresetsrisk/certificate state",
+    "Observedallocator wrapper returns sourceweightsunchanged; scorerfullfeesanddrift independentlyreconciled includingterminalcost andfreeopening",
+    "ConstantGramfixture hasfixedpanels and nearzeromarket triggeringbetafallback; requires nonzeroforecast so equivalence notvacuous",
+    "Futuremutation protects forecast<=cut anddecisions/economics<cut; prefixothercounts alignunchangedendpoint",
+    "Productionconfig/scorerloadedfrompinned snapshot, baselineledgercomparison tolerance1e-8",
+    "Syntheticzero Sharpe/beta undefined ratherthan falselyfinite; exactzeroforecast/positions/economics required",
+    "Runtimeactualmeanandextrapolation areseparatedfromunexecutedcenturygate"
+  ],
+  "limitations": [
+    "Noeconomiccheck has been executed orpassedbythis review",
+    "Endsourceidentity coverspinnedsourcefiles; executedcontroller/prototypecopies andstart hashes provide other sourceprovenance"
+  ],
+  "blocking_issues": []
+}

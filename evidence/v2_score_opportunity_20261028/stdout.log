@@ -1,0 +1,437 @@
+{
+  "verified": 29,
+  "v2": {
+    "full": {
+      "n": 3526,
+      "net_sharpe": 1.2425030656280773,
+      "gross_sharpe": 1.2897547607608693,
+      "unchanged_holdings_fee_removal_sharpe_gain": 0.04725169513279193,
+      "net_mean_ann_pct": 4.755036417372535,
+      "gross_mean_ann_pct": 4.930602640379558,
+      "net_vol_ann_pct": 3.8269816380444057,
+      "gross_vol_ann_pct": 3.822899352952054,
+      "fee_ann_pct": 0.17556622300702338,
+      "net_beta": 0.04649641311505339
+    },
+    "discovery": {
+      "n": 1762,
+      "net_sharpe": 1.0980016305319993,
+      "gross_sharpe": 1.153551266710953,
+      "unchanged_holdings_fee_removal_sharpe_gain": 0.05554963617895381,
+      "net_mean_ann_pct": 4.633935447795667,
+      "gross_mean_ann_pct": 4.861252265847478,
+      "net_vol_ann_pct": 4.220335670676966,
+      "gross_vol_ann_pct": 4.2141623056841295,
+      "fee_ann_pct": 0.2273168180518101,
+      "net_beta": 0.042573725256474605
+    },
+    "validation": {
+      "n": 1007,
+      "net_sharpe": 1.6568592943985658,
+      "gross_sharpe": 1.69633912265805,
+      "unchanged_holdings_fee_removal_sharpe_gain": 0.03947982825948415,
+      "net_mean_ann_pct": 6.315065799427701,
+      "gross_mean_ann_pct": 6.462607561638322,
+      "net_vol_ann_pct": 3.8114677696394543,
+      "gross_vol_ann_pct": 3.8097379676723184,
+      "fee_ann_pct": 0.1475417622106202,
+      "net_beta": 0.053785798051935306
+    },
+    "audit": {
+      "n": 755,
+      "net_sharpe": 1.1475575352464045,
+      "gross_sharpe": 1.1820257161020817,
+      "unchanged_holdings_fee_removal_sharpe_gain": 0.034468180855677266,
+      "net_mean_ann_pct": 3.117098644707563,
+      "gross_mean_ann_pct": 3.20917130466434,
+      "net_vol_ann_pct": 2.7162896403606087,
+      "gross_vol_ann_pct": 2.71497587653769,
+      "fee_ann_pct": 0.09207265995677859,
+      "net_beta": 0.038551825991876926
+    }
+  },
+  "reference_blends": {
+    "beta_feat__fr_beta": {
+      "descriptive_not_executed": true,
+      "net_corr": 0.5083005156652722,
+      "net_variance_ratio_a_over_b": 259.52962723786374,
+      "hindsight_risk_equalizing_coefficients": [
+        0.32706326191183865,
+        5.268964048481762
+      ],
+      "net_gross_fee_identity_error": 2.0261028098322864e-18,
+      "hindsight_equal_risk": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.22186181839523,
+          "gross_sharpe": 1.293282296060476,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.07142047766524606,
+          "net_mean_ann_pct": 4.060760858419503,
+          "gross_mean_ann_pct": 4.296661738146841,
+          "net_vol_ann_pct": 3.3234206988747954,
+          "gross_vol_ann_pct": 3.3222922414039777,
+          "fee_ann_pct": 0.23590087972733703,
+          "net_beta": 0.048294688079787526
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 0.9581593161623966,
+          "gross_sharpe": 1.043101227039665,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.08494191087726832,
+          "net_mean_ann_pct": 3.4236346521271055,
+          "gross_mean_ann_pct": 3.725219098855652,
+          "net_vol_ann_pct": 3.573137154100206,
+          "gross_vol_ann_pct": 3.5712920302355258,
+          "fee_ann_pct": 0.3015844467285467,
+          "net_beta": 0.04415489007812328
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.5967008184953386,
+          "gross_sharpe": 1.6492537487487609,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.052552930253422225,
+          "net_mean_ann_pct": 5.162429837464185,
+          "gross_mean_ann_pct": 5.3322280880337845,
+          "net_vol_ann_pct": 3.233185439416906,
+          "gross_vol_ann_pct": 3.2331156391666145,
+          "fee_ann_pct": 0.16979825056960013,
+          "net_beta": 0.05608184540793719
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.5228895034655912,
+          "gross_sharpe": 1.584329018026524,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.06143951456093277,
+          "net_mean_ann_pct": 4.245522201111152,
+          "gross_mean_ann_pct": 4.416261568345119,
+          "net_vol_ann_pct": 2.7878071202472356,
+          "gross_vol_ann_pct": 2.787464925591096,
+          "fee_ann_pct": 0.17073936723396732,
+          "net_beta": 0.039775828442561875
+        }
+      },
+      "fixed_raw_half_half": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 0.9654503999032101,
+          "gross_sharpe": 1.0395854406905434,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.07413504078733324,
+          "net_mean_ann_pct": 2.9172125919335388,
+          "gross_mean_ann_pct": 3.1412149363546766,
+          "net_vol_ann_pct": 3.021607937835025,
+          "gross_vol_ann_pct": 3.0216034328723653,
+          "fee_ann_pct": 0.22400234442113767,
+          "net_beta": 0.012328851456338033
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 0.7430097773704455,
+          "gross_sharpe": 0.8300527906899879,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.08704301331954245,
+          "net_mean_ann_pct": 2.6056444022041103,
+          "gross_mean_ann_pct": 2.9109491135239347,
+          "net_vol_ann_pct": 3.5068776772031676,
+          "gross_vol_ann_pct": 3.5069445536159036,
+          "fee_ann_pct": 0.3053047113198241,
+          "net_beta": 0.01401250613065438
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 0.9172196208925244,
+          "gross_sharpe": 0.972261168557081,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.0550415476645566,
+          "net_mean_ann_pct": 1.9889215454600675,
+          "gross_mean_ann_pct": 2.108170988159688,
+          "net_vol_ann_pct": 2.1684245519352237,
+          "gross_vol_ann_pct": 2.16831758414089,
+          "fee_ann_pct": 0.11924944269962029,
+          "net_beta": 0.01238056212505519
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.8164227943222029,
+          "gross_sharpe": 1.8795699058996154,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.06314711157741248,
+          "net_mean_ann_pct": 5.011490462732299,
+          "gross_mean_ann_pct": 5.185566883115887,
+          "net_vol_ann_pct": 2.758988974591862,
+          "gross_vol_ann_pct": 2.758911422682057,
+          "fee_ann_pct": 0.17407642038358756,
+          "net_beta": 0.009502566275580238
+        }
+      }
+    },
+    "decor_beta__fr_beta": {
+      "descriptive_not_executed": true,
+      "net_corr": 0.5326136406450802,
+      "net_variance_ratio_a_over_b": 168.54935050082847,
+      "hindsight_risk_equalizing_coefficients": [
+        0.4058463959273025,
+        5.268964048481762
+      ],
+      "net_gross_fee_identity_error": 2.422514229147299e-18,
+      "hindsight_equal_risk": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.2561653160262478,
+          "gross_sharpe": 1.3398162888512528,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.083650972825005,
+          "net_mean_ann_pct": 4.208278970447273,
+          "gross_mean_ann_pct": 4.487077146307171,
+          "net_vol_ann_pct": 3.3500996379678267,
+          "gross_vol_ann_pct": 3.3490241786464274,
+          "fee_ann_pct": 0.2787981758598975,
+          "net_beta": 0.04829230598274221
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 0.9835353322845592,
+          "gross_sharpe": 1.0873896629358646,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.10385433065130534,
+          "net_mean_ann_pct": 3.4487612308702627,
+          "gross_mean_ann_pct": 3.8109425611176824,
+          "net_vol_ann_pct": 3.506494497619591,
+          "gross_vol_ann_pct": 3.5046705803956644,
+          "fee_ann_pct": 0.36218133024741817,
+          "net_beta": 0.042862874140208417
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.5866450027037282,
+          "gross_sharpe": 1.6434927674163242,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.056847764712596005,
+          "net_mean_ann_pct": 5.328365530409412,
+          "gross_mean_ann_pct": 5.519328517626687,
+          "net_vol_ann_pct": 3.358259422447739,
+          "gross_vol_ann_pct": 3.358291942046952,
+          "fee_ann_pct": 0.19096298721727345,
+          "net_beta": 0.05613673126873243
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.5888042601198253,
+          "gross_sharpe": 1.6576227322838744,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.06881847216404902,
+          "net_mean_ann_pct": 4.658787818390189,
+          "gross_mean_ann_pct": 4.860146667891931,
+          "net_vol_ann_pct": 2.932260401944561,
+          "gross_vol_ann_pct": 2.931998079681024,
+          "fee_ann_pct": 0.2013588495017422,
+          "net_beta": 0.041761298644260966
+        }
+      },
+      "fixed_raw_half_half": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.0471797750541927,
+          "gross_sharpe": 1.1427868831200663,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.09560710806587358,
+          "net_mean_ann_pct": 2.5749393012193984,
+          "gross_mean_ann_pct": 2.810062709403448,
+          "net_vol_ann_pct": 2.4589276479161786,
+          "gross_vol_ann_pct": 2.4589560406323026,
+          "fee_ann_pct": 0.23512340818404973,
+          "net_beta": 0.010722762434655664
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 0.8031464972045228,
+          "gross_sharpe": 0.9228390932013417,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.11969259599681892,
+          "net_mean_ann_pct": 2.1645568226959853,
+          "gross_mean_ann_pct": 2.4872514407349886,
+          "net_vol_ann_pct": 2.695095888770062,
+          "gross_vol_ann_pct": 2.695216814132438,
+          "fee_ann_pct": 0.32269461803900357,
+          "net_beta": 0.010387827924385066
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 0.9586324322346086,
+          "gross_sharpe": 1.0217911136006672,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.06315868136605862,
+          "net_mean_ann_pct": 1.883102020673236,
+          "gross_mean_ann_pct": 2.0070803649642746,
+          "net_vol_ann_pct": 1.9643629376106686,
+          "gross_vol_ann_pct": 1.9642765906346242,
+          "fee_ann_pct": 0.12397834429103807,
+          "net_beta": 0.010987266298295335
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.8497839126679887,
+          "gross_sharpe": 1.922307548835841,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.07252363616785229,
+          "net_mean_ann_pct": 4.566796981967348,
+          "gross_mean_ann_pct": 4.745921551370736,
+          "net_vol_ann_pct": 2.4688272779821863,
+          "gross_vol_ann_pct": 2.4688669376785675,
+          "fee_ann_pct": 0.17912456940338722,
+          "net_beta": 0.010763135042839335
+        }
+      }
+    },
+    "fr_beta_phi03_x5__C09_engine": {
+      "descriptive_not_executed": true,
+      "net_corr": 0.6954191834981199,
+      "net_variance_ratio_a_over_b": 0.4265761614171131,
+      "hindsight_risk_equalizing_coefficients": [
+        0.5,
+        0.32656399120888735
+      ],
+      "net_gross_fee_identity_error": 2.3310346708438345e-18,
+      "hindsight_equal_risk": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.155255684921515,
+          "gross_sharpe": 1.2201913743741872,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.06493568945267225,
+          "net_mean_ann_pct": 4.070596373878032,
+          "gross_mean_ann_pct": 4.297152532256428,
+          "net_vol_ann_pct": 3.5235458496398375,
+          "gross_vol_ann_pct": 3.5217037445952735,
+          "fee_ann_pct": 0.22655615837839616,
+          "net_beta": 0.026134422385064165
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 0.9642996588830919,
+          "gross_sharpe": 1.0409183660850327,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.07661870720194086,
+          "net_mean_ann_pct": 3.8812578216435902,
+          "gross_mean_ann_pct": 4.1869288937049705,
+          "net_vol_ann_pct": 4.024949906276116,
+          "gross_vol_ann_pct": 4.022341261450026,
+          "fee_ann_pct": 0.3056710720613795,
+          "net_beta": 0.025990573640830704
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.3408195690775226,
+          "gross_sharpe": 1.3884453222924715,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.047625753214948885,
+          "net_mean_ann_pct": 4.03139969613431,
+          "gross_mean_ann_pct": 4.1733439735837266,
+          "net_vol_ann_pct": 3.006668301319538,
+          "gross_vol_ann_pct": 3.005767606817307,
+          "fee_ann_pct": 0.14194427744941734,
+          "net_beta": 0.02880599617639514
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.661026573488206,
+          "gross_sharpe": 1.7159349807441482,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.05490840725594226,
+          "net_mean_ann_pct": 4.718405481892056,
+          "gross_mean_ann_pct": 4.873226471599923,
+          "net_vol_ann_pct": 2.840656228625688,
+          "gross_vol_ann_pct": 2.8399831731890886,
+          "fee_ann_pct": 0.15482098970786734,
+          "net_beta": 0.021126077211509574
+        }
+      },
+      "fixed_raw_half_half": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.110115574687767,
+          "gross_sharpe": 1.1776408152136308,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.06752524052586395,
+          "net_mean_ann_pct": 4.9697791602447365,
+          "gross_mean_ann_pct": 5.270036779977353,
+          "net_vol_ann_pct": 4.476812391036444,
+          "gross_vol_ann_pct": 4.475079932603507,
+          "fee_ann_pct": 0.30025761973261705,
+          "net_beta": 0.027667272812892395
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 0.9153790816777835,
+          "gross_sharpe": 0.9950343901551733,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.07965530847738977,
+          "net_mean_ann_pct": 4.712042104197705,
+          "gross_mean_ann_pct": 5.119689851001904,
+          "net_vol_ann_pct": 5.147640140040211,
+          "gross_vol_ann_pct": 5.1452391009354965,
+          "fee_ann_pct": 0.4076477468041985,
+          "net_beta": 0.028488683923936532
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.230778029474672,
+          "gross_sharpe": 1.2798753639556566,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.049097334480984633,
+          "net_mean_ann_pct": 4.495504660142097,
+          "gross_mean_ann_pct": 4.673655384370557,
+          "net_vol_ann_pct": 3.6525714243216507,
+          "gross_vol_ann_pct": 3.651648837060109,
+          "fee_ann_pct": 0.17815072422846076,
+          "net_beta": 0.02982202961281757
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.7167293050888515,
+          "gross_sharpe": 1.774105441254339,
+          "unchanged_holdings_fee_removal_sharpe_gain": 0.057376136165487646,
+          "net_mean_ann_pct": 6.396584507802421,
+          "gross_mean_ann_pct": 6.60918032176858,
+          "net_vol_ann_pct": 3.7260297758308254,
+          "gross_vol_ann_pct": 3.7253593659550006,
+          "fee_ann_pct": 0.21259581396615956,
+          "net_beta": 0.022108687376117507
+        }
+      }
+    }
+  },
+  "v2_lagged_risk_buckets": {
+    "1": {
+      "n": 680,
+      "lagged_second_moment_mean": 2.2793647667512056e-06,
+      "realized_gross_second_moment": 2.3288105971481226e-06,
+      "net_mean_ann_pct": 4.560076319514203,
+      "gross_mean_ann_pct": 4.650749950969505,
+      "fee_ann_pct": 0.09067363145530224,
+      "net_vol_ann_pct": 2.4058729703761847,
+      "net_sharpe": 1.8953936370136721
+    },
+    "2": {
+      "n": 680,
+      "lagged_second_moment_mean": 4.059170638996894e-06,
+      "realized_gross_second_moment": 4.180790331717183e-06,
+      "net_mean_ann_pct": 4.699842613265,
+      "gross_mean_ann_pct": 4.830575657978,
+      "fee_ann_pct": 0.1307330447129995,
+      "net_vol_ann_pct": 3.2334752425346185,
+      "net_sharpe": 1.4534957779917757
+    },
+    "3": {
+      "n": 680,
+      "lagged_second_moment_mean": 5.2903986832961835e-06,
+      "realized_gross_second_moment": 5.426420433666315e-06,
+      "net_mean_ann_pct": 4.631182463649814,
+      "gross_mean_ann_pct": 4.782620175682084,
+      "fee_ann_pct": 0.1514377120322693,
+      "net_vol_ann_pct": 3.68894026087043,
+      "net_sharpe": 1.2554235460991325
+    },
+    "4": {
+      "n": 680,
+      "lagged_second_moment_mean": 6.509525971783578e-06,
+      "realized_gross_second_moment": 6.151021914794947e-06,
+      "net_mean_ann_pct": 5.084953624752001,
+      "gross_mean_ann_pct": 5.26998231401255,
+      "fee_ann_pct": 0.18502868926054905,
+      "net_vol_ann_pct": 3.9271889194424583,
+      "net_sharpe": 1.2948074892903065
+    },
+    "5": {
+      "n": 680,
+      "lagged_second_moment_mean": 1.0127730150863095e-05,
+      "realized_gross_second_moment": 8.242929331274543e-06,
+      "net_mean_ann_pct": 2.955317495255672,
+      "gross_mean_ann_pct": 3.1825940561703243,
+      "fee_ann_pct": 0.2272765609146516,
+      "net_vol_ann_pct": 4.558064581836797,
+      "net_sharpe": 0.648371132570646
+    }
+  }
+}

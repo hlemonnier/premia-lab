@@ -1,0 +1,1238 @@
+{
+  "scope": "Independent saved-output accounting, not a new strategy run",
+  "plan_sha256": "614c1dc3bbbf85b8d0670a2537efcd14bf5d1ee7056df3e2a2ef01f3c3524913",
+  "source_sha256": "df4ac78a168fc4116d28871be35b61c624d09fdba4e768464e35a473287dfff7",
+  "command_argv": [
+    "evidence/v2_score_opportunity_20261028/actual_readback.py",
+    "--out",
+    "evidence/v2_score_opportunity_20261028/actual_readback_001.json",
+    "--f1-ledger-only",
+    "--f2-arrays",
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verified_arrays",
+    "--joint-folder",
+    "evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "results": {
+    "V2": {
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.2425030733073608,
+          "gross_sharpe": 1.289754768448261,
+          "net_return_ann_pct": 4.755036440913077,
+          "net_vol_ann_pct": 3.8269816333378306,
+          "cost_ann_pct": 0.17556622280712195,
+          "net_beta": 0.046496413020644986,
+          "mean_gross": 1.583794435408416,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.0980016386006128,
+          "gross_sharpe": 1.153551274774689,
+          "net_return_ann_pct": 4.633935474460489,
+          "net_vol_ann_pct": 4.220335663948892,
+          "cost_ann_pct": 0.22731681764770023,
+          "net_beta": 0.04257372520752814,
+          "mean_gross": 1.6773435287138725,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.6568592904246346,
+          "gross_sharpe": 1.696339118737846,
+          "net_return_ann_pct": 6.315065775255167,
+          "net_vol_ann_pct": 3.811467764191784,
+          "cost_ann_pct": 0.14754176216559697,
+          "net_beta": 0.0537857979002169,
+          "mean_gross": 1.655046184026067,
+          "worst_gross_daily_return": -0.015426410140496453
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.1475575640056013,
+          "gross_sharpe": 1.1820257448477773,
+          "net_return_ann_pct": 3.1170987270340436,
+          "net_vol_ann_pct": 2.7162896440276776,
+          "cost_ann_pct": 0.09207266004659462,
+          "net_beta": 0.03855182594385159,
+          "mean_gross": 1.2708363243070617,
+          "worst_gross_daily_return": -0.007414854971041062
+        }
+      },
+      "accounting_max_error": 1.734723475976807e-17,
+      "summary_differences": {
+        "full": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "discovery": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "validation": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 6.938893903907228e-18,
+          "mean_gross": 0.0
+        },
+        "audit": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        }
+      },
+      "constraints": {
+        "certificates": {
+          "ok": 3527
+        },
+        "max_abs_weight": 0.014781443885661362,
+        "max_gross": 2.6225713705697697
+      },
+      "runtime_ms": 4.335240615454527,
+      "target_sha256": "fdd86404934e1d8f96a9210072d04c0cc7fad681f7cc5c86392bbc370780d4c5",
+      "forecast_sha256": "5c2d347857d22a4933e1d405ca3352c19a7dbda99b60f3441ce6da08ef3092ad",
+      "sharpe_difference_vs_v2": 0.0,
+      "numerical_score_improvement": false,
+      "beta_runtime_solvent_eligible": true
+    },
+    "F1": {
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.1379930040889625,
+          "gross_sharpe": 1.1793535469570806,
+          "net_return_ann_pct": 4.133164926598068,
+          "net_vol_ann_pct": 3.631977447793659,
+          "cost_ann_pct": 0.14511722294361104,
+          "net_beta": 0.03158430565835681,
+          "mean_gross": 1.2633249723743698,
+          "worst_gross_daily_return": -0.017212880363231882
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 0.999519233287479,
+          "gross_sharpe": 1.0485803124239201,
+          "net_return_ann_pct": 4.131809693778724,
+          "net_vol_ann_pct": 4.1337970858138995,
+          "cost_ann_pct": 0.19619897092048036,
+          "net_beta": 0.027838301713489708,
+          "mean_gross": 1.4264637073209285,
+          "worst_gross_daily_return": -0.017212880363231882
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.4810027269894672,
+          "gross_sharpe": 1.514255870917247,
+          "net_return_ann_pct": 5.017094185448644,
+          "net_vol_ann_pct": 3.387633320329684,
+          "cost_ann_pct": 0.10954749191128195,
+          "net_beta": 0.0368595264164808,
+          "mean_gross": 1.156217559999085,
+          "worst_gross_daily_return": -0.011018484523518755
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.224562164074755,
+          "gross_sharpe": 1.2543015472872745,
+          "net_return_ann_pct": 3.091968702581954,
+          "net_vol_ann_pct": 2.5249585470560083,
+          "cost_ann_pct": 0.0733671636865452,
+          "net_beta": 0.027409207931985483,
+          "mean_gross": 1.0259755766361298,
+          "worst_gross_daily_return": -0.006816216268188117
+        }
+      },
+      "accounting_max_error": null,
+      "stock_level_accounting_status": "BLOCKED: original target NPZ truncated; no rejected-policy rerun",
+      "summary_differences": {
+        "full": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "discovery": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "validation": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 6.938893903907228e-18,
+          "mean_gross": 0.0
+        },
+        "audit": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 3.469446951953614e-18,
+          "mean_gross": 0.0
+        }
+      },
+      "constraints": {
+        "source": "saved scalar decision records, not independent target-array reconstruction",
+        "certificates": {
+          "ok": 3527
+        },
+        "max_abs_weight": 0.013848109006302256,
+        "max_gross": 1.8182146073938794
+      },
+      "runtime_ms": 4.214471020992238,
+      "sharpe_difference_vs_v2": -0.10451006921839823,
+      "numerical_score_improvement": false,
+      "beta_runtime_solvent_eligible": true,
+      "paired_intervals": {
+        "21": {
+          "lo": -0.19594118455954523,
+          "hi": -0.011565762671457555,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "63": {
+          "lo": -0.20202406739849393,
+          "hi": -0.02190130689977128,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "126": {
+          "lo": -0.20118119322125447,
+          "hi": -0.02935308776502295,
+          "draws": 2000,
+          "seed": 20261027
+        }
+      }
+    },
+    "F2": {
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.2917800643338373,
+          "gross_sharpe": 1.345829937237836,
+          "net_return_ann_pct": 5.126509812623367,
+          "net_vol_ann_pct": 3.968562415667156,
+          "cost_ann_pct": 0.20714538765706275,
+          "net_beta": 0.049045622551238885,
+          "mean_gross": 1.588755653435358,
+          "worst_gross_daily_return": -0.017497788262106857
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.1177064436408344,
+          "gross_sharpe": 1.180582611566725,
+          "net_return_ann_pct": 4.71869689085106,
+          "net_vol_ann_pct": 4.22176763648271,
+          "cost_ann_pct": 0.256821868774334,
+          "net_beta": 0.044578521210636095,
+          "mean_gross": 1.6668788719412155,
+          "worst_gross_daily_return": -0.017497788262106857
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.528936123190426,
+          "gross_sharpe": 1.5762332781333233,
+          "net_return_ann_pct": 6.1693258545563285,
+          "net_vol_ann_pct": 4.0350448661536085,
+          "cost_ann_pct": 0.1849402973791382,
+          "net_beta": 0.056037665313286036,
+          "mean_gross": 1.6683207571015297,
+          "worst_gross_daily_return": -0.016663680962203692
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.4987436631619722,
+          "gross_sharpe": 1.5379002529968198,
+          "net_return_ann_pct": 4.789859404318632,
+          "net_vol_ann_pct": 3.195916367855216,
+          "cost_ann_pct": 0.12084055707377103,
+          "net_beta": 0.04288611233761785,
+          "mean_gross": 1.3007492451592477,
+          "worst_gross_daily_return": -0.010161857652104337
+        }
+      },
+      "accounting_max_error": 1.214306433183765e-17,
+      "summary_differences": {
+        "full": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "discovery": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "validation": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 6.938893903907228e-18,
+          "mean_gross": 0.0
+        },
+        "audit": {
+          "net_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        }
+      },
+      "constraints": {
+        "certificates": {
+          "ok": 3527
+        },
+        "max_abs_weight": 0.015033262260729423,
+        "max_gross": 2.5771619072371768
+      },
+      "runtime_ms": 4.273887351956338,
+      "target_sha256": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850",
+      "forecast_sha256": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927",
+      "sharpe_difference_vs_v2": 0.049276991026476535,
+      "numerical_score_improvement": true,
+      "beta_runtime_solvent_eligible": true,
+      "paired_intervals": {
+        "21": {
+          "lo": -0.06775481440729893,
+          "hi": 0.1698096865936282,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "63": {
+          "lo": -0.07251256081942987,
+          "hi": 0.15736239722113937,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "126": {
+          "lo": -0.07283676666561849,
+          "hi": 0.16518447472578837,
+          "draws": 2000,
+          "seed": 20261027
+        }
+      }
+    },
+    "fixed_one": {
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.2425030733073608,
+          "gross_sharpe": 1.289754768448261,
+          "net_return_ann_pct": 4.755036440913077,
+          "net_vol_ann_pct": 3.8269816333378306,
+          "cost_ann_pct": 0.17556622280712195,
+          "net_beta": 0.046496413020644986,
+          "mean_gross": 1.583794435408416,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.0980016386006128,
+          "gross_sharpe": 1.153551274774689,
+          "net_return_ann_pct": 4.633935474460489,
+          "net_vol_ann_pct": 4.220335663948892,
+          "cost_ann_pct": 0.22731681764770023,
+          "net_beta": 0.04257372520752814,
+          "mean_gross": 1.6773435287138725,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.6568592904246346,
+          "gross_sharpe": 1.696339118737846,
+          "net_return_ann_pct": 6.315065775255167,
+          "net_vol_ann_pct": 3.811467764191784,
+          "cost_ann_pct": 0.14754176216559697,
+          "net_beta": 0.0537857979002169,
+          "mean_gross": 1.655046184026067,
+          "worst_gross_daily_return": -0.015426410140496453
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.1475575640056013,
+          "gross_sharpe": 1.1820257448477773,
+          "net_return_ann_pct": 3.1170987270340436,
+          "net_vol_ann_pct": 2.7162896440276776,
+          "cost_ann_pct": 0.09207266004659462,
+          "net_beta": 0.03855182594385159,
+          "mean_gross": 1.2708363243070617,
+          "worst_gross_daily_return": -0.007414854971041062
+        }
+      },
+      "accounting_max_error": 1.734723475976807e-17,
+      "summary_differences": {
+        "full": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "discovery": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "validation": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "audit": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        }
+      },
+      "moment_clock_max_error": 0.0,
+      "constraints": {
+        "certificates": {
+          "ok": 3527
+        },
+        "max_abs_weight": 0.014781443885661362,
+        "max_gross": 2.6225713705697697
+      },
+      "runtime_ms": 3.210752248173608,
+      "target_sha256": "fdd86404934e1d8f96a9210072d04c0cc7fad681f7cc5c86392bbc370780d4c5",
+      "virtual_target_source": "V2",
+      "baseline_cross_replay_max_error": 0.0,
+      "sharpe_difference_vs_v2": 0.0,
+      "numerical_score_improvement": false,
+      "beta_runtime_solvent_eligible": true
+    },
+    "VTvol": {
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.2771094976732769,
+          "gross_sharpe": 1.3502826580012384,
+          "net_return_ann_pct": 5.495274962857365,
+          "net_vol_ann_pct": 4.302900395673999,
+          "cost_ann_pct": 0.30798196231861225,
+          "net_beta": 0.05208961401632383,
+          "mean_gross": 1.8717182980309046,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.0870121028835769,
+          "gross_sharpe": 1.1639983711711652,
+          "net_return_ann_pct": 5.218227427349492,
+          "net_vol_ann_pct": 4.80052376004537,
+          "cost_ann_pct": 0.36070536410923637,
+          "net_beta": 0.049151304704696336,
+          "mean_gross": 1.9474087864351244,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.7571661103686753,
+          "gross_sharpe": 1.8263484680569662,
+          "net_return_ann_pct": 6.658090673617154,
+          "net_vol_ann_pct": 3.7891071506154894,
+          "cost_ann_pct": 0.26166719976021585,
+          "net_beta": 0.051345664981575806,
+          "mean_gross": 1.7995910700185944,
+          "worst_gross_daily_return": -0.013567890834350768
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.298085440378495,
+          "gross_sharpe": 1.3668612595961838,
+          "net_return_ann_pct": 4.76427734825471,
+          "net_vol_ann_pct": 3.6702340231668766,
+          "cost_ann_pct": 0.2466972278861292,
+          "net_beta": 0.058010472612231606,
+          "mean_gross": 1.7919886628547943,
+          "worst_gross_daily_return": -0.011297213899011517
+        }
+      },
+      "accounting_max_error": 1.734723475976807e-17,
+      "summary_differences": {
+        "full": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "discovery": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "validation": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "audit": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        }
+      },
+      "moment_clock_max_error": 0.0,
+      "constraints": {
+        "certificates": {
+          "ok": 3527
+        },
+        "max_abs_weight": 0.016717487927354953,
+        "max_gross": 3.349980367086605
+      },
+      "runtime_ms": 3.2122040870812736,
+      "target_sha256": "ab86e0df4c137c607a3bfba38ad673adc1cfebb5c3a14cbe0840238a80abb846",
+      "virtual_target_source": "V2",
+      "sharpe_difference_vs_v2": 0.0346064243659161,
+      "numerical_score_improvement": true,
+      "beta_runtime_solvent_eligible": true,
+      "paired_intervals": {
+        "21": {
+          "lo": -0.05608090558862587,
+          "hi": 0.12892075239236853,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "63": {
+          "lo": -0.059672929062193944,
+          "hi": 0.12822887414232362,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "126": {
+          "lo": -0.05299548904770694,
+          "hi": 0.11833072765549243,
+          "draws": 2000,
+          "seed": 20261027
+        }
+      }
+    },
+    "VTvar": {
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.274190778924302,
+          "gross_sharpe": 1.3643465085588338,
+          "net_return_ann_pct": 6.2838792210362096,
+          "net_vol_ann_pct": 4.931662765870263,
+          "cost_ann_pct": 0.43671662521321786,
+          "net_beta": 0.057363354596317924,
+          "mean_gross": 2.17650190747067,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.064624707259854,
+          "gross_sharpe": 1.163584788128703,
+          "net_return_ann_pct": 5.93012983906853,
+          "net_vol_ann_pct": 5.570159886981753,
+          "cost_ann_pct": 0.5398966292598286,
+          "net_beta": 0.05709976643932109,
+          "mean_gross": 2.2810204761701143,
+          "worst_gross_daily_return": -0.017464188281962018
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.8067353909520139,
+          "gross_sharpe": 1.9023954422402176,
+          "net_return_ann_pct": 7.356246159202111,
+          "net_vol_ann_pct": 4.071568086860756,
+          "cost_ann_pct": 0.39357545205944044,
+          "net_beta": 0.05081170541875692,
+          "mean_gross": 2.0212555517668718,
+          "worst_gross_daily_return": -0.011933279357690871
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.3460217367028042,
+          "gross_sharpe": 1.4055726990427042,
+          "net_return_ann_pct": 5.8665791204181,
+          "net_vol_ann_pct": 4.358457936042541,
+          "cost_ann_pct": 0.2536272485044691,
+          "net_beta": 0.0700292829477754,
+          "mean_gross": 2.140693899603086,
+          "worst_gross_daily_return": -0.013464736357370095
+        }
+      },
+      "accounting_max_error": 1.734723475976807e-17,
+      "summary_differences": {
+        "full": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "discovery": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "validation": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "audit": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        }
+      },
+      "moment_clock_max_error": 0.0,
+      "constraints": {
+        "certificates": {
+          "ok": 3527
+        },
+        "max_abs_weight": 0.0236056149104496,
+        "max_gross": 4.382262690834709
+      },
+      "runtime_ms": 3.2529831894494246,
+      "target_sha256": "ef725153befa4a445ba669ccd7d891b3d5acea4f5f2376bb47dab3b3a4c8affe",
+      "virtual_target_source": "V2",
+      "sharpe_difference_vs_v2": 0.03168770561694134,
+      "numerical_score_improvement": true,
+      "beta_runtime_solvent_eligible": true,
+      "paired_intervals": {
+        "21": {
+          "lo": -0.12283853709342629,
+          "hi": 0.18928746477852137,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "63": {
+          "lo": -0.134781592721645,
+          "hi": 0.18518797312675161,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "126": {
+          "lo": -0.1269899589925506,
+          "hi": 0.1720351501984301,
+          "draws": 2000,
+          "seed": 20261027
+        }
+      }
+    },
+    "F2_VTvol": {
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.318334966090838,
+          "gross_sharpe": 1.3971448452491269,
+          "net_return_ann_pct": 5.786507169490866,
+          "net_vol_ann_pct": 4.389254110925369,
+          "cost_ann_pct": 0.3364064134436446,
+          "net_beta": 0.052720354679718875,
+          "mean_gross": 1.8236404523560383,
+          "worst_gross_daily_return": -0.017497788262106857
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.1035119417440034,
+          "gross_sharpe": 1.1879776615117073,
+          "net_return_ann_pct": 5.3480042956358735,
+          "net_vol_ann_pct": 4.8463492721101185,
+          "cost_ann_pct": 0.39859058820414545,
+          "net_beta": 0.05224478995263861,
+          "mean_gross": 1.9575628563948158,
+          "worst_gross_daily_return": -0.017497788262106857
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.6339700632722531,
+          "gross_sharpe": 1.7102035191583718,
+          "net_return_ann_pct": 6.331495412374987,
+          "net_vol_ann_pct": 3.87491518644796,
+          "cost_ann_pct": 0.29181238234904905,
+          "net_beta": 0.05135825367220883,
+          "mean_gross": 1.7590927381607782,
+          "worst_gross_daily_return": -0.01445730965317969
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.5930290672960778,
+          "gross_sharpe": 1.6604346308392006,
+          "net_return_ann_pct": 6.192094972385583,
+          "net_vol_ann_pct": 3.886994342730803,
+          "cost_ann_pct": 0.25098372686306386,
+          "net_beta": 0.0560595666110961,
+          "mean_gross": 1.5979530071494246,
+          "worst_gross_daily_return": -0.013923090483795352
+        }
+      },
+      "accounting_max_error": 2.2551405187698492e-17,
+      "summary_differences": {
+        "full": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "discovery": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "validation": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        },
+        "audit": {
+          "net_sharpe": 0.0,
+          "gross_sharpe": 0.0,
+          "net_return_ann_pct": 0.0,
+          "net_vol_ann_pct": 0.0,
+          "cost_ann_pct": 0.0,
+          "net_beta": 0.0,
+          "mean_gross": 0.0
+        }
+      },
+      "moment_clock_max_error": 0.0,
+      "constraints": {
+        "certificates": {
+          "ok": 3527
+        },
+        "max_abs_weight": 0.016440760452184875,
+        "max_gross": 3.159930204588383
+      },
+      "runtime_ms": 3.4021331304341245,
+      "target_sha256": "7d8582a62d0d4bcb03a4911484f2f30564abd0483e00e072f0a64d54778cb0c4",
+      "virtual_target_source": "F2",
+      "sharpe_difference_vs_v2": 0.07583189278347713,
+      "numerical_score_improvement": true,
+      "beta_runtime_solvent_eligible": true,
+      "paired_intervals": {
+        "21": {
+          "lo": -0.06585018583141553,
+          "hi": 0.21972205828002636,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "63": {
+          "lo": -0.08196608134468941,
+          "hi": 0.21792274198271755,
+          "draws": 2000,
+          "seed": 20261027
+        },
+        "126": {
+          "lo": -0.08429427067719138,
+          "hi": 0.22798495423165432,
+          "draws": 2000,
+          "seed": 20261027
+        }
+      }
+    }
+  },
+  "source_identity_records": {
+    "forecast": {
+      "commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+      "source_sha256": {
+        "handoff_v2/strategy.py": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3",
+        "handoff_v2/model_v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "handoff_v2/model_v2/engine.py": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8",
+        "handoff_v2/model_v2/allocator.py": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518",
+        "source/Quant Research Take-Home/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+      },
+      "prototype_sha256": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+    },
+    "overlay": {
+      "commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+      "sha256": {
+        "handoff_v2/strategy.py": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3",
+        "handoff_v2/model_v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "handoff_v2/model_v2/engine.py": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8",
+        "handoff_v2/model_v2/allocator.py": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518",
+        "source/Quant Research Take-Home/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+      }
+    },
+    "joint": {
+      "commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+      "sha256": {
+        "handoff_v2/strategy.py": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3",
+        "handoff_v2/model_v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "handoff_v2/model_v2/engine.py": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8",
+        "handoff_v2/model_v2/allocator.py": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518",
+        "source/Quant Research Take-Home/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+      }
+    }
+  },
+  "forecast_actual_strict_verification": {
+    "baseline_reproduction": {
+      "max_differences": [
+        0.0,
+        3.432366483049898e-10,
+        3.441221439748343e-10,
+        6.567205248575805e-12,
+        0.0
+      ],
+      "pass": true
+    },
+    "F1_future": {
+      "max_differences": {
+        "forecast": 0.0,
+        "targets": 2.044804880974027e-10,
+        "economics": 1.0182488185961347e-09
+      },
+      "tolerance": 1e-12,
+      "pass": false,
+      "protected_forecast_rows": 1501,
+      "protected_decisions": 1248,
+      "protected_earning_rows": 1247
+    },
+    "F1_prefix": {
+      "max_differences": {
+        "forecast": 0.0,
+        "targets": 0.0,
+        "economics": 0.0
+      },
+      "tolerance": 1e-12,
+      "pass": true,
+      "protected_forecast_rows": 1500,
+      "protected_decisions": 1247,
+      "protected_earning_rows": 1246
+    },
+    "F2_future": {
+      "max_differences": {
+        "forecast": 0.0,
+        "targets": 1.6722931633211813e-12,
+        "economics": 2.3102186830215032e-11
+      },
+      "tolerance": 1e-12,
+      "pass": false,
+      "protected_forecast_rows": 1501,
+      "protected_decisions": 1248,
+      "protected_earning_rows": 1247
+    },
+    "F2_prefix": {
+      "max_differences": {
+        "forecast": 0.0,
+        "targets": 0.0,
+        "economics": 0.0
+      },
+      "tolerance": 1e-12,
+      "pass": true,
+      "protected_forecast_rows": 1500,
+      "protected_decisions": 1247,
+      "protected_earning_rows": 1246
+    },
+    "source_identity": {
+      "pass": true
+    }
+  },
+  "forecast_actual_original_status": {
+    "status": "FAIL",
+    "checks": 6,
+    "prototype_sha256": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+  },
+  "causal_disposition": "Original mixed-layout numerical failures remain distinct from separate canonical-layout checks; source and check admission is a root decision, not inferred from a score improvement.",
+  "inputs": {
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_followup_review_20261028/replay_V2_002/input_hashes.json": {
+      "bytes": 264,
+      "sha256": "cec22885d1cdda153ba7bc7411e35d94ea04cee9f52cc8b42557fb98bf241ab9"
+    },
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/returns.csv": {
+      "bytes": 35898789,
+      "sha256": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d"
+    },
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/characteristics.csv": {
+      "bytes": 359865977,
+      "sha256": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08"
+    },
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/costs.csv": {
+      "bytes": 17011,
+      "sha256": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/prototype.py": {
+      "bytes": 2763,
+      "sha256": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/executed_prototype.py": {
+      "bytes": 2763,
+      "sha256": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/overlay.py": {
+      "bytes": 4127,
+      "sha256": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/overlay.py": {
+      "bytes": 4127,
+      "sha256": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/source_manifest.json": {
+      "bytes": 708,
+      "sha256": "12e0983dfe1706ffdbb5f0d49cba6b7c43f1a4dc3257b8edaee654e14b367445"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/clean/handoff_v2/strategy.py": {
+      "bytes": 4608,
+      "sha256": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/clean/handoff_v2/model_v2/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/clean/handoff_v2/model_v2/engine.py": {
+      "bytes": 10710,
+      "sha256": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/clean/handoff_v2/model_v2/allocator.py": {
+      "bytes": 8424,
+      "sha256": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/clean/source/Quant Research Take-Home/score.py": {
+      "bytes": 4716,
+      "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/source_manifest.json": {
+      "bytes": 611,
+      "sha256": "327bbdf5ca122ae66e344ea5ee74c01d6d0782d60574a3e266280a65aaeaf8ed"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/source/handoff_v2/strategy.py": {
+      "bytes": 4608,
+      "sha256": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/source/handoff_v2/model_v2/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/source/handoff_v2/model_v2/engine.py": {
+      "bytes": 10710,
+      "sha256": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/source/handoff_v2/model_v2/allocator.py": {
+      "bytes": 8424,
+      "sha256": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/source/source/Quant Research Take-Home/score.py": {
+      "bytes": 4716,
+      "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/source_manifest.json": {
+      "bytes": 611,
+      "sha256": "327bbdf5ca122ae66e344ea5ee74c01d6d0782d60574a3e266280a65aaeaf8ed"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/source/handoff_v2/strategy.py": {
+      "bytes": 4608,
+      "sha256": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/source/handoff_v2/model_v2/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/source/handoff_v2/model_v2/engine.py": {
+      "bytes": 10710,
+      "sha256": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/source/handoff_v2/model_v2/allocator.py": {
+      "bytes": 8424,
+      "sha256": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/source/source/Quant Research Take-Home/score.py": {
+      "bytes": 4716,
+      "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/baseline_V2/arrays.npz": {
+      "bytes": 55275436,
+      "sha256": "3b7b5a109c1c31c03eb327be63a4ff30130fbe2c3410447ae71d27daf1cd38c9"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/baseline_V2/daily.csv": {
+      "bytes": 452416,
+      "sha256": "1d4b3cff20615095d11f0f697c50f264ec3713c26f7c947df1d84d1f09ba31ea"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/baseline_V2/summary.json": {
+      "bytes": 2959,
+      "sha256": "565e2af8a5f53bb57c4cf4c6efd24eaa5c4a6bb4dca4133ac271a2d06c5a6701"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/baseline_V2/decisions.csv": {
+      "bytes": 382173,
+      "sha256": "d43651e0acf77b2d4d94e45ed20f7adfd6fd87b61a19b8f686a6f91d82ba776b"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F1_base/arrays.npz": {
+      "bytes": 44162991,
+      "sha256": "47bf0b57f133761a22afc1c047f76893ea3b6825c5e252c6a9f2da11aae7339a"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F1_base/daily.csv": {
+      "bytes": 452962,
+      "sha256": "4c791d3ada8ff6a71109821a1cffb9194979cd8bc9ef133479a76878cb3a907d"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F1_base/summary.json": {
+      "bytes": 2956,
+      "sha256": "d0a6dd68f62003518cabeeeb77c264dfea89a510d5bd60dc03bda394e0ff5c08"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F1_base/decisions.csv": {
+      "bytes": 383362,
+      "sha256": "33a9704c0ec87b5d8d86aed3a37d306168606b82cf7f4fbab44c4e7fb310c09d"
+    },
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verified_arrays/forecast.npy": {
+      "bytes": 30240128,
+      "sha256": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350"
+    },
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verified_arrays/targets.npy": {
+      "bytes": 28216128,
+      "sha256": "4da574ed4313cf793af1a29d9236bf3652f1e1f922edf49dd00272f3327ea3aa"
+    },
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verified_arrays/indices.npy": {
+      "bytes": 28344,
+      "sha256": "5eccf6dc463d3e6770117c3e0e9ffc4b19550f0802add212594b618efd20b7e1"
+    },
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verified_arrays/rows.npy": {
+      "bytes": 141168,
+      "sha256": "2b1358accf89fd12cf17f172213230d8daf813c66556e90e1ad5847878f4024f"
+    },
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verified_arrays/days.npy": {
+      "bytes": 28336,
+      "sha256": "5d4020b6128f11e4eb6a1bb26496c1857580438574443fab6f4b301825fd0d39"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F2_base/daily.csv": {
+      "bytes": 452133,
+      "sha256": "9ba506a3d7743b862b0ed8a7dbf52759aedb5e4591e5632bcdae41be89b9e50b"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F2_base/summary.json": {
+      "bytes": 2953,
+      "sha256": "970c37f7013c3352f8792f32662c93e025e0770601f95cafa41513c251a30e98"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F2_base/decisions.csv": {
+      "bytes": 382110,
+      "sha256": "d760edf5654f815f326ce497ac5412f4e493ce1dbabfbeccfdc8a084d3438db6"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/fixed_one/summary.json": {
+      "bytes": 2825,
+      "sha256": "04f9179c4c12455330e370681e175d442c4843cda9af709a9f5a43cf0ab4abf6"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/fixed_one/array_hashes.json": {
+      "bytes": 262,
+      "sha256": "640ff43a0509de2e3c9cddf20ce2399f73576389830f3905551c98d23891ce9c"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/fixed_one/decisions.csv": {
+      "bytes": 1047365,
+      "sha256": "397336c18f8f7a6b11c167c9381a00911a7b7a8d5adfab53b1a216b2cf5b03bc"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/fixed_one/daily.csv": {
+      "bytes": 456879,
+      "sha256": "86f2812c98570f47df619280c3a1c617a54bd0acb1542763ecdfc2c71e9dd973"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvol/summary.json": {
+      "bytes": 3403,
+      "sha256": "d864db5a1d5f0c46b07abfe664ca82761f9084f7e936ca08d2a82c338ee340f9"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvol/array_hashes.json": {
+      "bytes": 262,
+      "sha256": "756e9c30e6b5293d7a0cf296e26002334c856c65c0df3765d082e8931eedeeff"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvol/decisions.csv": {
+      "bytes": 1097138,
+      "sha256": "6808ed8fb359c62dc03fe6e533fad11454567c5581dd69f925fbe21da738deb5"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvol/daily.csv": {
+      "bytes": 456205,
+      "sha256": "6d84e013edd344ed5aca3037ef479164802d4120fd93e35cef9f6cfd896a5218"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvar/summary.json": {
+      "bytes": 3363,
+      "sha256": "342ac82b913c7d9efaf30d92e874cce95166340dd337a1cd9747a546826e0114"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvar/array_hashes.json": {
+      "bytes": 262,
+      "sha256": "45adf64d23171dea1c69c1fdbd7220e2e43b175fec7bdd6ef8394b3423ab0992"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvar/decisions.csv": {
+      "bytes": 1088449,
+      "sha256": "dc53ae49a63559b4376afc4fe95b6e9b8a114012e3b333c94a7afdf5d2048b74"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvar/daily.csv": {
+      "bytes": 456107,
+      "sha256": "697c002c70e7736ab7585cb26d45b826645d15bcfdfe19b527293714e7166af5"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/summary.json": {
+      "bytes": 4995,
+      "sha256": "f9caec70d54a0346200240187ad9d2bbe152022b0960671b43e248c59c45ed5c"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/array_hashes.json": {
+      "bytes": 262,
+      "sha256": "7ed25f53e0acb830dc0efe776e1be56234e6221f214eb993a47210b13773aa60"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/decisions.csv": {
+      "bytes": 1097683,
+      "sha256": "28d1d88eb55fd9f18c11656efa96fde33dc7ee1f3153b185426f1474d60dd1b6"
+    },
+    "evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/daily.csv": {
+      "bytes": 456159,
+      "sha256": "6b5a467fff8ca72be740195ca41e52b0d8b15057f899dfdb6b88fe448ced246c"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/verification.json": {
+      "bytes": 1392,
+      "sha256": "ad627085e8f22cc4f095af7d2ee200e3d0b9c2e46d21a04e1803ef81f3b87c11"
+    },
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/status.json": {
+      "bytes": 128,
+      "sha256": "12129f65564a9551b6173383e960a87868260a80b1b388869100f3b38d39754b"
+    },
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verification.json": {
+      "bytes": 579,
+      "sha256": "b3de1ab2222d561e6f3a88630bc4053549e4284848defb0d3d2a9af47b5deaed"
+    },
+    "evidence/v2_score_forecast_20261028/baseline_repair_001/verified_array_manifest.json": {
+      "bytes": 1273,
+      "sha256": "c7d43dac1843f30604844a70832685c321f04078fe83e9a3441128e80727237a"
+    }
+  },
+  "F2_repaired_artifact_verification": {
+    "original_F2_reproduction": {
+      "original_forecast_hash": true,
+      "original_target_hash": true,
+      "max_economic_difference": 4.440892098500626e-16,
+      "pass": true
+    },
+    "canonical_future": {
+      "max_differences": {
+        "forecast": 0.0,
+        "targets": 0.0,
+        "economics": 0.0
+      },
+      "tolerance": 1e-12,
+      "pass": true,
+      "protected_forecast_rows": 1501,
+      "protected_decisions": 1248,
+      "protected_earning_rows": 1247
+    },
+    "source_identity": {
+      "pass": true
+    },
+    "new_npz_integrity": {
+      "is_zipfile": true,
+      "bad_member": null
+    }
+  },
+  "F2_repaired_artifact_manifest": {
+    "forecast": {
+      "shape": [
+        3780,
+        1000
+      ],
+      "bytes": 30240128,
+      "file_sha256": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350",
+      "array_sha256": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927"
+    },
+    "targets": {
+      "shape": [
+        3527,
+        1000
+      ],
+      "bytes": 28216128,
+      "file_sha256": "4da574ed4313cf793af1a29d9236bf3652f1e1f922edf49dd00272f3327ea3aa",
+      "array_sha256": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850"
+    },
+    "indices": {
+      "shape": [
+        3527
+      ],
+      "bytes": 28344,
+      "file_sha256": "5eccf6dc463d3e6770117c3e0e9ffc4b19550f0802add212594b618efd20b7e1",
+      "array_sha256": "029cb92995c19c6e6a91f8a9a3541803fe1e1d63e12847ebb0a2295571019935"
+    },
+    "rows": {
+      "shape": [
+        3526,
+        5
+      ],
+      "bytes": 141168,
+      "file_sha256": "2b1358accf89fd12cf17f172213230d8daf813c66556e90e1ad5847878f4024f",
+      "array_sha256": "ae82bf6d57e4f98ead4fb07b9bf0dde6451cf943980c46919b233b288826dd61"
+    },
+    "days": {
+      "shape": [
+        3526
+      ],
+      "bytes": 28336,
+      "file_sha256": "5d4020b6128f11e4eb6a1bb26496c1857580438574443fab6f4b301825fd0d39",
+      "array_sha256": "14d037da9b457924a2036f455581754d043151fa7c4b3236c424f2a922658595"
+    }
+  }
+}
