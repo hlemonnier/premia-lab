@@ -53,7 +53,9 @@ The scale was picked from {0.1, 0.3, 1.0}.
   beta 0.05, cost 0.18%/yr, gross 1.58, 10.5 ms per rebalance. Its daily ledger
   matches the research run to 3.4e-11 (labels computed directly rather than as
   cumulative-sum differences).
-- Century-length runtime: see `results/century_v2.txt`.
+- Century-length runtime (25,200 tiled rows, unmodified scorer): forecast 27.9 s
+  (0.008 h per century), rebalance mean 4.8 ms, p99 7.8 ms, max 246 ms (the
+  one-off risk-state build); worst daily return -1.75%. See `results/century_v2.txt`.
 
 ## Attribution
 
