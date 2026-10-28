@@ -1,0 +1,38 @@
+{
+ "name": "h20",
+ "forecast_s": 1.9,
+ "rebalance_ms": 3.46,
+ "wall_s": 14.2,
+ "all": {
+  "sharpe": 0.831,
+  "gross_sharpe": 0.895,
+  "ret_pct": 4.83,
+  "cost_pct": 0.374,
+  "beta": 0.0087,
+  "gross": 0.86
+ },
+ "discovery": {
+  "sharpe": 0.675,
+  "gross_sharpe": 0.751,
+  "ret_pct": 4.58,
+  "cost_pct": 0.516,
+  "beta": 0.0152,
+  "gross": 0.983
+ },
+ "validation": {
+  "sharpe": 0.518,
+  "gross_sharpe": 0.561,
+  "ret_pct": 2.09,
+  "cost_pct": 0.174,
+  "beta": 0.0051,
+  "gross": 0.688
+ },
+ "audit": {
+  "sharpe": 1.744,
+  "gross_sharpe": 1.803,
+  "ret_pct": 9.27,
+  "cost_pct": 0.311,
+  "beta": 0.0055,
+  "gross": 0.801
+ }
+}

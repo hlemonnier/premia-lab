@@ -1,0 +1,38 @@
+{
+ "name": "reversal",
+ "forecast_s": 3.9,
+ "rebalance_ms": 3.39,
+ "wall_s": 16.0,
+ "all": {
+  "sharpe": 0.746,
+  "gross_sharpe": 0.907,
+  "ret_pct": 4.33,
+  "cost_pct": 0.941,
+  "beta": 0.0073,
+  "gross": 0.87
+ },
+ "discovery": {
+  "sharpe": 0.563,
+  "gross_sharpe": 0.779,
+  "ret_pct": 3.73,
+  "cost_pct": 1.438,
+  "beta": 0.0088,
+  "gross": 0.989
+ },
+ "validation": {
+  "sharpe": 0.494,
+  "gross_sharpe": 0.564,
+  "ret_pct": 2.06,
+  "cost_pct": 0.289,
+  "beta": 0.0057,
+  "gross": 0.695
+ },
+ "audit": {
+  "sharpe": 1.599,
+  "gross_sharpe": 1.715,
+  "ret_pct": 8.97,
+  "cost_pct": 0.649,
+  "beta": 0.0081,
+  "gross": 0.829
+ }
+}

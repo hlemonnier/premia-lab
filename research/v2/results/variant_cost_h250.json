@@ -1,0 +1,38 @@
+{
+ "name": "cost_h250",
+ "forecast_s": 3.5,
+ "rebalance_ms": 3.43,
+ "wall_s": 15.8,
+ "all": {
+  "sharpe": 0.869,
+  "gross_sharpe": 0.974,
+  "ret_pct": 5.05,
+  "cost_pct": 0.614,
+  "beta": 0.0086,
+  "gross": 0.862
+ },
+ "discovery": {
+  "sharpe": 0.676,
+  "gross_sharpe": 0.782,
+  "ret_pct": 4.58,
+  "cost_pct": 0.714,
+  "beta": 0.0144,
+  "gross": 0.982
+ },
+ "validation": {
+  "sharpe": 0.659,
+  "gross_sharpe": 0.784,
+  "ret_pct": 2.67,
+  "cost_pct": 0.504,
+  "beta": 0.0054,
+  "gross": 0.692
+ },
+ "audit": {
+  "sharpe": 1.778,
+  "gross_sharpe": 1.877,
+  "ret_pct": 9.54,
+  "cost_pct": 0.529,
+  "beta": 0.0054,
+  "gross": 0.808
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "name": "h5",
+ "forecast_s": 2.5,
+ "rebalance_ms": 4.11,
+ "wall_s": 17.1,
+ "all": {
+  "sharpe": 0.858,
+  "gross_sharpe": 0.925,
+  "ret_pct": 5.03,
+  "cost_pct": 0.389,
+  "beta": 0.0092,
+  "gross": 0.86
+ },
+ "discovery": {
+  "sharpe": 0.673,
+  "gross_sharpe": 0.75,
+  "ret_pct": 4.6,
+  "cost_pct": 0.533,
+  "beta": 0.0149,
+  "gross": 0.981
+ },
+ "validation": {
+  "sharpe": 0.616,
+  "gross_sharpe": 0.663,
+  "ret_pct": 2.49,
+  "cost_pct": 0.19,
+  "beta": 0.0061,
+  "gross": 0.691
+ },
+ "audit": {
+  "sharpe": 1.793,
+  "gross_sharpe": 1.853,
+  "ret_pct": 9.63,
+  "cost_pct": 0.32,
+  "beta": 0.0058,
+  "gross": 0.805
+ }
+}

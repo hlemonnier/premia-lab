@@ -1,0 +1,38 @@
+{
+ "name": "fr_beta_phi03_x5",
+ "forecast_s": 4.1,
+ "rebalance_ms": 6.46,
+ "wall_s": 27.2,
+ "all": {
+  "sharpe": 1.243,
+  "gross_sharpe": 1.29,
+  "ret_pct": 4.76,
+  "cost_pct": 0.176,
+  "beta": 0.0465,
+  "gross": 1.584
+ },
+ "discovery": {
+  "sharpe": 1.098,
+  "gross_sharpe": 1.154,
+  "ret_pct": 4.63,
+  "cost_pct": 0.227,
+  "beta": 0.0426,
+  "gross": 1.677
+ },
+ "validation": {
+  "sharpe": 1.657,
+  "gross_sharpe": 1.696,
+  "ret_pct": 6.32,
+  "cost_pct": 0.148,
+  "beta": 0.0538,
+  "gross": 1.655
+ },
+ "audit": {
+  "sharpe": 1.148,
+  "gross_sharpe": 1.182,
+  "ret_pct": 3.12,
+  "cost_pct": 0.092,
+  "beta": 0.0386,
+  "gross": 1.271
+ }
+}

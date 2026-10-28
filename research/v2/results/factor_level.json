@@ -1,0 +1,110 @@
+{
+ "hl252_linear13_mean": {
+  "discovery": 0.81,
+  "validation": 0.31,
+  "audit": 2.22,
+  "all": 0.97
+ },
+ "hl252_linear13_diag": {
+  "discovery": 0.74,
+  "validation": 0.3,
+  "audit": 2.11,
+  "all": 0.92
+ },
+ "hl252_linear13_mv": {
+  "discovery": 1.17,
+  "validation": 0.34,
+  "audit": 1.95,
+  "all": 1.11
+ },
+ "hl252_all26_mean": {
+  "discovery": 0.81,
+  "validation": 0.64,
+  "audit": 2.17,
+  "all": 1.06
+ },
+ "hl252_all26_diag": {
+  "discovery": 0.76,
+  "validation": 0.65,
+  "audit": 2.05,
+  "all": 1.01
+ },
+ "hl252_all26_mv": {
+  "discovery": 0.99,
+  "validation": 0.56,
+  "audit": 1.88,
+  "all": 1.04
+ },
+ "hl1008_linear13_mean": {
+  "discovery": 0.83,
+  "validation": 0.48,
+  "audit": 1.99,
+  "all": 0.99
+ },
+ "hl1008_linear13_diag": {
+  "discovery": 0.7,
+  "validation": 0.24,
+  "audit": 1.94,
+  "all": 0.83
+ },
+ "hl1008_linear13_mv": {
+  "discovery": 1.13,
+  "validation": 0.62,
+  "audit": 1.49,
+  "all": 1.05
+ },
+ "hl1008_all26_mean": {
+  "discovery": 0.91,
+  "validation": 0.98,
+  "audit": 1.97,
+  "all": 1.16
+ },
+ "hl1008_all26_diag": {
+  "discovery": 0.81,
+  "validation": 0.81,
+  "audit": 1.9,
+  "all": 1.03
+ },
+ "hl1008_all26_mv": {
+  "discovery": 1.06,
+  "validation": 1.01,
+  "audit": 1.41,
+  "all": 1.11
+ },
+ "hl99999_linear13_mean": {
+  "discovery": 0.82,
+  "validation": 0.78,
+  "audit": 1.42,
+  "all": 0.92
+ },
+ "hl99999_linear13_diag": {
+  "discovery": 0.64,
+  "validation": 0.47,
+  "audit": 1.43,
+  "all": 0.72
+ },
+ "hl99999_linear13_mv": {
+  "discovery": 1.07,
+  "validation": 0.93,
+  "audit": 0.73,
+  "all": 0.93
+ },
+ "hl99999_all26_mean": {
+  "discovery": 0.93,
+  "validation": 1.26,
+  "audit": 1.41,
+  "all": 1.11
+ },
+ "hl99999_all26_diag": {
+  "discovery": 0.78,
+  "validation": 1.0,
+  "audit": 1.39,
+  "all": 0.94
+ },
+ "hl99999_all26_mv": {
+  "discovery": 1.04,
+  "validation": 1.34,
+  "audit": 0.84,
+  "all": 1.08
+ }
+}
