@@ -5,14 +5,16 @@ Solves, for the drifted book h,
     maximize   mu'w - gamma/2 (w' diag(d) w + ||L'B'w||^2) - kappa'|w - h|
     subject to b'w = beta_target (default 0),  |w_i| <= cap_i,
 
-where F = L L' is the factor covariance. The equalities z = L'B'w and b'w = 0
+where F = L L' is the factor covariance. The equalities z = L'B'w and b'w = target
 are dualized; given the multipliers each stock solves the scalar no-trade-band /
 clip problem of the original C09 allocator. The convex dual is minimized by
 damped Newton with Armijo backtracking, then the beta multiplier is polished by
 bisection so the hedge holds to floating-point tolerance. A final certificate
 checks finiteness, caps, the hedge and the duality gap
-gamma/2 ||M'w - lam/gamma||^2 - nu * bn'w; if it fails, the joint solve resumes
-from the polished point once. `info` (a dict) receives the certificate and status.
+gamma/2 ||M'w - lam/gamma||^2 - nu * (bn'w - c), with c the normalized target. If it
+fails: resume from the polished point, then a cold start, then a certified
+matched-diagonal fallback (status `fallback_diagonal`); an uncertified vector is never
+returned. `info` (a dict) receives the certificate and status.
 Specification and pre-implementation tests: research/v2/ALLOCATOR_SPEC.md and
 research/v2/test_allocator.py.
 """
@@ -32,7 +34,7 @@ def _vec(x, name, n=None):
 
 
 def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
-                    max_iter=100, tol=1e-13, info=None, beta_target=0.0):
+                    max_iter=100, tol=1e-13, info=None, beta_target=0.0, _fallback=False):
     mu = _vec(mu, "mu"); n = mu.size
     h = _vec(held, "held", n); d = _vec(d, "d", n); b = _vec(beta, "beta", n)
     kappa = _vec(kappa, "kappa", n)
@@ -56,7 +58,13 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
     M = B @ L
     r = M.shape[1]
     movable = cap > 0
+    if not np.isfinite(float(beta_target)):
+        raise ValueError("beta_target must be finite")
     if not movable.any():
+        if float(beta_target) != 0.0:
+            raise ValueError("a nonzero beta_target is infeasible when every cap is zero")
+        if info is not None:
+            info.update(status="ok", gap=0.0, factor_residual=0.0, hedge_residual=0.0, primal=0.0)
         return np.zeros(n)
     bscale = float(np.max(np.abs(b[movable])))
     use_beta = bscale > 0
@@ -67,13 +75,11 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
     reg = np.zeros(m); reg[:r] = 1.0 / gamma
     expo_tol = max(64 * np.finfo(float).eps * float(np.abs(bn) @ cap), np.nextafter(0, 1))
     beta_target = float(beta_target)
-    if not np.isfinite(beta_target):
-        raise ValueError("beta_target must be finite")
     if not use_beta and beta_target != 0.0:
         raise ValueError("a nonzero beta_target needs a nonzero movable beta")
     c = beta_target / bscale if use_beta else 0.0          # target in normalized-beta units
-    if abs(c) >= float(np.abs(bn) @ cap):
-        raise ValueError("beta_target is not attainable within the caps")
+    if use_beta and abs(c) >= float(np.abs(bn) @ cap):
+        raise ValueError("beta_target must lie strictly inside the attainable range (|target| < sum |b_i| cap_i)")
 
     def primal(theta):
         s = mu - A @ theta
@@ -193,9 +199,26 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
     ok, cert = certify(w, theta)
     status = "ok"
     if not ok:
-        w, theta = solve_pass(theta, max_iter)      # resume the joint solve from the polished point
+        w, theta = solve_pass(theta, max_iter)      # 2: resume the joint solve from the polished point
         ok, cert = certify(w, theta)
-        status = "ok_after_recovery" if ok else "not_certified"
+        status = "ok_after_recovery"
+    if not ok:
+        w, theta = solve_pass(np.zeros(m), 2 * max_iter)    # 3: cold start, more iterations
+        ok, cert = certify(w, theta)
+        status = "ok_after_cold_restart"
+    if not ok:
+        if _fallback:
+            raise RuntimeError("allocator could not certify a solution")
+        # 4: certified fallback - the matched-diagonal problem (same caps and target,
+        # factor risk folded into each stock's variance, no cross-stock covariance).
+        sub = {}
+        w = allocate_factor(mu, h, d + np.sum(M * M, axis=1), B, np.zeros_like(L), b, kappa, gamma, cap,
+                            warm=None, max_iter=max_iter, tol=tol, info=sub, beta_target=beta_target, _fallback=True)
+        if info is not None:
+            info.update(sub, status="fallback_diagonal")
+        if warm is not None:
+            warm.pop("theta", None)
+        return w
     if info is not None:
         info.update(cert, status=status)
     if warm is not None:

@@ -224,14 +224,41 @@ def rebalance(held_positions, expected_returns, returns_history, characteristics
     D_today = risk_loadings(X[T - 1], beta, cfg)        # today's published characteristics (+ beta)
     if cfg["beta_shrinkage"]:
         beta = _correct(beta, _STATE.eta.eta(R, T))     # hedge corrected betas; eta from rows < T
-    cert = {}
     if cfg["matched_diagonal"]:
         d = d + np.sum((D_today @ L) ** 2, axis=1)     # same marginal variances, no cross-stock covariance
         L = np.zeros_like(L)
-    w = allocate_factor(expected_returns, held_positions, d, D_today, L, beta,
-                        np.asarray(trading_costs, dtype=np.float64) / cfg["cost_horizon"],
-                        cfg["risk_aversion"], cfg["weight_cap"], warm=_STATE.warm, info=cert,
-                        beta_target=cfg["beta_target"])
-    CERTIFICATES.append(cert)
+    kappa = np.asarray(trading_costs, dtype=np.float64) / cfg["cost_horizon"]
+    target, gamma = float(cfg["beta_target"]), float(cfg["risk_aversion"])
+
+    def solve(g):
+        info = {}
+        w = allocate_factor(expected_returns, held_positions, d, D_today, L, beta, kappa, g,
+                            cfg["weight_cap"], warm=_STATE.warm, info=info, beta_target=target)
+        return w, info
+
+    w, cert = solve(gamma)
     gross = float(np.abs(w).sum())
-    return w * (min(1.0, cfg["gross_cap"] / gross) if gross else 1.0)
+    cert["gross_action"] = "none"
+    if gross > cfg["gross_cap"]:
+        if target == 0.0:                              # scaling keeps b'w = 0 exactly
+            w = w * (cfg["gross_cap"] / gross); cert["gross_action"] = "scaled"
+        else:                                          # scaling would change a nonzero target: re-solve
+            for _ in range(30):
+                gamma *= 1.01 * gross / cfg["gross_cap"]
+                w, cert = solve(gamma)
+                gross = float(np.abs(w).sum())
+                if gross <= cfg["gross_cap"] * (1 + 1e-12):
+                    break
+            cert["gross_action"] = "resolved_risk_aversion"
+    _final_check(w, beta, target, cfg)
+    CERTIFICATES.append(cert)
+    return w
+
+
+def _final_check(w, beta, target, cfg):
+    """Post-processing certificate on the book actually returned."""
+    tol = 1e-9 * max(1.0, float(np.abs(beta).sum()) * cfg["weight_cap"])
+    if not (np.isfinite(w).all() and np.all(np.abs(w) <= cfg["weight_cap"])
+            and float(np.abs(w).sum()) <= cfg["gross_cap"] * (1 + 1e-12)
+            and abs(float(beta @ w) - target) <= tol):
+        raise RuntimeError("final book failed its post-processing check")

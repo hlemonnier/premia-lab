@@ -1,0 +1,53 @@
+{
+ "all27": {
+  "n": 3526,
+  "k": 27,
+  "sample_max_sharpe": 2.0209746799391195,
+  "bias_corrected_max_sharpe": 1.4563932134240716
+ },
+ "linear13": {
+  "n": 3526,
+  "k": 13,
+  "sample_max_sharpe": 1.4137198393297443,
+  "bias_corrected_max_sharpe": 1.0300501788582863
+ },
+ "26_no_beta": {
+  "n": 3526,
+  "k": 26,
+  "sample_max_sharpe": 1.8944792125822372,
+  "bias_corrected_max_sharpe": 1.3047430927426054
+ },
+ "by_period_all27": {
+  "discovery": {
+   "n": 1762,
+   "k": 27,
+   "sample_max_sharpe": 2.3224747706521334,
+   "bias_corrected_max_sharpe": 1.2014958850616726
+  },
+  "validation": {
+   "n": 1007,
+   "k": 27,
+   "sample_max_sharpe": 3.0371411066408345,
+   "bias_corrected_max_sharpe": 1.4838732990514392
+  },
+  "audit": {
+   "n": 755,
+   "k": 27,
+   "sample_max_sharpe": 3.9714939527795448,
+   "bias_corrected_max_sharpe": 2.480927732241362
+  }
+ },
+ "first_half": {
+  "n": 1763,
+  "k": 27,
+  "sample_max_sharpe": 2.3087183579690174,
+  "bias_corrected_max_sharpe": 1.1760834932598996
+ },
+ "second_half": {
+  "n": 1763,
+  "k": 27,
+  "sample_max_sharpe": 2.841405054945236,
+  "bias_corrected_max_sharpe": 2.020259326674685
+ },
+ "causal_factor_timer_no_costs_sharpe": 0.8440457694940212
+}
