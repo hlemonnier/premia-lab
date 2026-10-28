@@ -145,3 +145,30 @@ The authorized bounded research cycle and tested handoff are complete. C09 has p
 - New substantive finding: annual arithmetic gross return attributed to the fixed residual-factor span was 3.1537 percentage points in discovery, 1.4153 in validation and 7.7465 in audit; the remainder contributed 2.2244, 1.4694 and 2.2627 points. Original full fees were separately retained at 0.5880, 0.2088 and 0.3331 points. The strong audit earnings are therefore materially associated with common residual-factor payoffs under this fixed explanatory basis.
 - The remainder is not identified economic alpha; the factor component is not identified risk compensation. The near-zero estimated-market term is partly constructional. A hypothetical rehedged portfolio would have different holdings and costs, so no counterfactual net result is inferred by subtracting a component. The rank-ten span is an explanatory convention, not a discovered simulator mechanism.
 - Added the integrated `research/NOTES_AND_ATTRIBUTION_20261027.md`, updated navigation and reproduction instructions, and retained complete expected/failing/passing evidence. Final C09 code, configuration, pre-audit note and ZIP remain byte-identical. No new selectable strategy, audit confirmation sample, calendar schedule or external submission was created.
+
+
+## 28 October 2026 — score-directed research reopened
+
+The user explicitly prioritizes the official future net-Sharpe objective. The
+supplied brief permits development on all fifteen historical years; none of the
+previously exposed periods is new confirmation. Production V2 at ce3fe4e stays
+unchanged while isolated research prototypes are evaluated.
+
+The independent review at 87660c1 remains valid, but its beta-diagnostic priority
+is superseded by research/v2/SCORE_RESEARCH_PLAN_20261028.md. The new plan fixes
+two forecast alternatives, two causal volatility-sizing alternatives, and at
+most one conditional joint candidate before any of their economic results.
+Primary selection uses the original scorer's net Sharpe with the existing beta,
+causality, solvency and runtime conditions; no purity-of-alpha condition or
+additional significance hurdle is imposed.
+
+Completed before these trials: an independently reviewed observational readback
+of 29 ledgers. Same-holdings fee removal adds only 0.04725 Sharpe; the proposed
+reference blends offer little headroom; lagged risk variation motivates a causal
+sizing test. Full method, inputs and results are under
+evidence/v2_score_opportunity_20261028/.
+
+Next gate: prospective E2E harnesses, independent source review, original-scorer
+replays, and an honest comparison retaining every outcome. Claude remains the
+production implementer; these files are research evidence and a handoff. No
+outgoing message or submission has been made.
