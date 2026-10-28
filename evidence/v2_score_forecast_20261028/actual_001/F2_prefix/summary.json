@@ -1,0 +1,79 @@
+{
+  "variant": "F2",
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "shape": [
+    1500,
+    1000
+  ],
+  "checks": {
+    "finite": true,
+    "warmup_zero": true,
+    "counts": true,
+    "input_unchanged": true,
+    "drift_reconciles": true,
+    "scorer_reconciles": true,
+    "all_certified": true,
+    "stock_caps": true,
+    "gross_cap": true,
+    "estimated_hedge": true
+  },
+  "performance": {
+    "full": {
+      "n": 1246,
+      "sharpe": 1.0015062784045197,
+      "annual_net_return_pct": 4.423731095892138,
+      "annual_vol_pct": 4.417077747070642,
+      "annual_cost_pct": 0.2838422888683609,
+      "beta": 0.040460003699285894,
+      "mean_gross": 1.4872548092890647
+    },
+    "discovery": {
+      "n": 1246,
+      "sharpe": 1.0015062784045197,
+      "annual_net_return_pct": 4.423731095892138,
+      "annual_vol_pct": 4.417077747070642,
+      "annual_cost_pct": 0.2838422888683609,
+      "beta": 0.040460003699285894,
+      "mean_gross": 1.4872548092890647
+    }
+  },
+  "forecast_seconds": 1.1039313299988862,
+  "observed_rebalance_ms": 4.421386281752131,
+  "wall_seconds": 6.855155757002649,
+  "forecast_century_extrapolation_seconds": 18.54604634398129,
+  "certificates": {
+    "ok": 1247
+  },
+  "max_gross_before_scale": 1.964042426423184,
+  "gross_scalings": 0,
+  "max_estimated_hedge_error": 4.144179197950264e-13,
+  "mean_net_stock_investment": 0.23774712377018198,
+  "forecast_sha256": "17e8e152b6482f29504a1883e129737b029da29c53f1115e74d79e0c71bc4a22",
+  "targets_sha256": "4042bb6d9fa8d96579bc438120027d621323c9bfa27e69f674a35b7cc94bde85",
+  "input_array_sha256": [
+    "0db5b19c5616593eca365377948e8bf8bcd4b0c05bf611f0483b7b5ceb6c8fc7",
+    "4b3fe4de5c914abe2b8bc4aab8009a220f036491bf6847d3ca934f2f30b42ec8",
+    "f8f7aca2ca5ccc702e7910f5ee9ccb3a1f427d144d9719bb9b114817509de872"
+  ],
+  "scorer_max_error": 1.0408340855860843e-17,
+  "drift_max_error": 3.469446951953614e-18
+}

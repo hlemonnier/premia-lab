@@ -1,0 +1,28 @@
+{
+  "disk": {
+    "total": 33770192896,
+    "used": 1891225600,
+    "free": 30144204800
+  },
+  "files": {
+    "actual_001/F1_base/arrays.npz": {
+      "size": 44162991,
+      "mtime_ns": 1793205311151795411,
+      "ctime_ns": 1793205313595731968,
+      "is_zipfile": false
+    },
+    "actual_001/F2_base/arrays.npz": {
+      "size": 44147545,
+      "mtime_ns": 1793205384400191960,
+      "ctime_ns": 1793205386800006966,
+      "is_zipfile": false
+    },
+    "actual_c_future_001/F2_future_C/arrays.npz": {
+      "size": 55389886,
+      "mtime_ns": 1793205581248446509,
+      "ctime_ns": 1793205581248446509,
+      "is_zipfile": true,
+      "bad_member": null
+    }
+  }
+}

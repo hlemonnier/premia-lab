@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python",
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/run_research.py",
+    "--mode",
+    "synthetic",
+    "--out",
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/expected_red_001"
+  ],
+  "exit_code": 3,
+  "prototype_existed": false,
+  "controller_sha256": "ea097d7d69be37cea7b6edc9c34d697dc3622a3c76172f20812689ccce1939ef"
+}

@@ -1,0 +1,33 @@
+Starting F1_base F1 shape (420, 64)
+Completed F1_base {'n': 166, 'sharpe': -3.098167568345992, 'annual_net_return_pct': -4.0010290036267175, 'annual_vol_pct': 1.2914178834306023, 'annual_cost_pct': 1.698056988941384, 'beta': 0.002624941488538273, 'mean_gross': 2.99697677226377} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F1_future_C F1 shape (420, 64)
+Completed F1_future_C {'n': 166, 'sharpe': -3.142328685244954, 'annual_net_return_pct': -14.457607158191182, 'annual_vol_pct': 4.600921356851684, 'annual_cost_pct': 8.76473452084517, 'beta': -0.04273533581907582, 'mean_gross': 1.7303436050275631} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+{
+  "repeat_original_baseline": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 420,
+    "protected_decisions": 167,
+    "protected_earning_rows": 166
+  },
+  "future_C_layout": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 321,
+    "protected_decisions": 68,
+    "protected_earning_rows": 67
+  },
+  "source_identity": {
+    "pass": true
+  }
+}

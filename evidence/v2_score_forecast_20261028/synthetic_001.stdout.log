@@ -1,0 +1,119 @@
+Starting constant_V2 V2 shape (420, 64)
+Completed constant_V2 {'n': 166, 'sharpe': 34.20336039715751, 'annual_net_return_pct': 43.076099227842285, 'annual_vol_pct': 1.259411318877959, 'annual_cost_pct': 0.10814065140327343, 'beta': -380907276509115.2, 'mean_gross': 3.031966091195164} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting constant_F1 F1 shape (420, 64)
+Completed constant_F1 {'n': 166, 'sharpe': 34.203360396760914, 'annual_net_return_pct': 43.07609922787804, 'annual_vol_pct': 1.2594113188936074, 'annual_cost_pct': 0.10814065140638937, 'beta': -380907276693079.44, 'mean_gross': 3.0319660912240103} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F1_base F1 shape (420, 64)
+Completed F1_base {'n': 166, 'sharpe': -3.098167568345992, 'annual_net_return_pct': -4.0010290036267175, 'annual_vol_pct': 1.2914178834306023, 'annual_cost_pct': 1.698056988941384, 'beta': 0.002624941488538273, 'mean_gross': 2.99697677226377} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F1_repeat F1 shape (420, 64)
+Completed F1_repeat {'n': 166, 'sharpe': -3.098167568345992, 'annual_net_return_pct': -4.0010290036267175, 'annual_vol_pct': 1.2914178834306023, 'annual_cost_pct': 1.698056988941384, 'beta': 0.002624941488538273, 'mean_gross': 2.99697677226377} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F1_future F1 shape (420, 64)
+Completed F1_future {'n': 166, 'sharpe': -3.1423286847065035, 'annual_net_return_pct': -14.45760715589288, 'annual_vol_pct': 4.60092135690867, 'annual_cost_pct': 8.764734520917395, 'beta': -0.042735335800359125, 'mean_gross': 1.7303436050566618} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F1_prefix F1 shape (360, 64)
+Completed F1_prefix {'n': 106, 'sharpe': -8.663637192212605, 'annual_net_return_pct': -10.051744841497836, 'annual_vol_pct': 1.1602222736811907, 'annual_cost_pct': 1.6267034973810635, 'beta': 0.001389068803732801, 'mean_gross': 3.019193186948335} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F1_zero F1 shape (420, 64)
+Completed F1_zero {'n': 166, 'sharpe': None, 'annual_net_return_pct': 0.0, 'annual_vol_pct': 0.0, 'annual_cost_pct': 0.0, 'beta': None, 'mean_gross': 0.0} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F2_base F2 shape (420, 64)
+Completed F2_base {'n': 166, 'sharpe': 1.4009941990750874, 'annual_net_return_pct': 1.9166930712329515, 'annual_vol_pct': 1.3680949375081783, 'annual_cost_pct': 1.8783230063289025, 'beta': -0.007565474553683727, 'mean_gross': 3.0193886543396347} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F2_repeat F2 shape (420, 64)
+Completed F2_repeat {'n': 166, 'sharpe': 1.4009941990750874, 'annual_net_return_pct': 1.9166930712329515, 'annual_vol_pct': 1.3680949375081783, 'annual_cost_pct': 1.8783230063289025, 'beta': -0.007565474553683727, 'mean_gross': 3.0193886543396347} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F2_future F2 shape (420, 64)
+Completed F2_future {'n': 166, 'sharpe': -2.0267063769609304, 'annual_net_return_pct': -9.15125804197839, 'annual_vol_pct': 4.515334902977316, 'annual_cost_pct': 9.561283954131001, 'beta': -0.05041433813284497, 'mean_gross': 1.7887098222506792} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F2_prefix F2 shape (360, 64)
+Completed F2_prefix {'n': 106, 'sharpe': -2.464811265265617, 'annual_net_return_pct': -3.114924207770071, 'annual_vol_pct': 1.2637576968532702, 'annual_cost_pct': 1.6138755106062206, 'beta': -0.007473677886803625, 'mean_gross': 3.045564051768077} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+Starting F2_zero F2 shape (420, 64)
+Completed F2_zero {'n': 166, 'sharpe': None, 'annual_net_return_pct': 0.0, 'annual_vol_pct': 0.0, 'annual_cost_pct': 0.0, 'beta': None, 'mean_gross': 0.0} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}
+{
+  "constant_Gram_F1": {
+    "max_differences": {
+      "forecast": 9.107298248878237e-18,
+      "targets": 1.0535513000203833e-09,
+      "economics": 2.106065988272121e-09
+    },
+    "tolerance": 1e-09,
+    "pass": false,
+    "protected_forecast_rows": 420,
+    "protected_decisions": 167,
+    "protected_earning_rows": 166
+  },
+  "F1_repeat": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 420,
+    "protected_decisions": 167,
+    "protected_earning_rows": 166
+  },
+  "F1_future": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 1.0850034655451868e-09,
+      "economics": 1.9303389997560316e-09
+    },
+    "tolerance": 1e-12,
+    "pass": false,
+    "protected_forecast_rows": 321,
+    "protected_decisions": 68,
+    "protected_earning_rows": 67
+  },
+  "F1_prefix": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 360,
+    "protected_decisions": 107,
+    "protected_earning_rows": 106
+  },
+  "F1_zero": {
+    "pass": true
+  },
+  "F2_repeat": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 420,
+    "protected_decisions": 167,
+    "protected_earning_rows": 166
+  },
+  "F2_future": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 1.3010426069826053e-18
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 321,
+    "protected_decisions": 68,
+    "protected_earning_rows": 67
+  },
+  "F2_prefix": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 360,
+    "protected_decisions": 107,
+    "protected_earning_rows": 106
+  },
+  "F2_zero": {
+    "pass": true
+  },
+  "source_identity": {
+    "pass": true
+  }
+}
