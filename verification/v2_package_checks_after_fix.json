@@ -1,0 +1,33 @@
+{
+ "restart_same_length_history": {
+  "pass": true,
+  "max_target_diff": 0.0,
+  "max_gross_return_diff": 0.0
+ },
+ "characteristic_fortran_layout": {
+  "pass": true,
+  "max_forecast_diff": 0.0,
+  "max_target_diff": 0.0
+ },
+ "allocator_certificate_synthetic": {
+  "pass": true,
+  "calls": 87,
+  "recoveries": 0,
+  "failed": 0
+ },
+ "economic_agreement_with_old_package": {
+  "pass": true,
+  "max_abs_daily_net_diff": 0.0,
+  "sharpe": 1.2425030732954572
+ },
+ "allocator_certificate_real": {
+  "pass": true,
+  "calls": 3527,
+  "recoveries": 0,
+  "max_abs_gap": 1.2619248965792423e-17
+ },
+ "packaged_forecast_causality": {
+  "pass": true,
+  "max_protected_diff": 0.0
+ }
+}

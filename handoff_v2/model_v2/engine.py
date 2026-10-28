@@ -25,6 +25,7 @@ CONFIG = {
     # risk model
     "beta_window": 252, "factor_half_life": 126.0, "specific_half_life": 126.0,
     "specific_shrinkage": 0.2, "variance_floor": 1e-6, "factor_risk_scale": 0.3,
+    "risk_beta_column": False,   # R27 experiment: add the forecast's beta column to the risk loadings
     # allocation
     "risk_aversion": 1000.0, "cost_horizon": 20.0, "weight_cap": 0.01, "gross_cap": 1.0,
 }
@@ -47,10 +48,25 @@ def _standardize(v, clip):
 
 
 def basis(panel, clip=4.0):
-    """13 standardized characteristics and their centered squares, from one published panel."""
-    z = _standardize(np.asarray(panel, dtype=np.float64), clip)
+    """13 standardized characteristics and their centered squares, from one published panel.
+
+    The panel is canonicalized to C-contiguous float64 first, so results do not depend on
+    the caller's memory layout (reductions follow one accumulation order)."""
+    z = _standardize(np.ascontiguousarray(panel, dtype=np.float64), clip)
     s = z * z
     return np.hstack([z, (s - s.mean(axis=0)) / math.sqrt(2.0)])
+
+
+def _zcol(v, clip):
+    """Centered, clipped standardization of one cross-sectional vector (as in the forecast)."""
+    v = v - v.mean(); v = np.clip(v / max(v.std(), 1e-12), -clip, clip)
+    return v - v.mean()
+
+
+def risk_loadings(panel, beta, cfg):
+    """Risk loading matrix: the 26-column basis, plus the beta column when configured."""
+    D = basis(panel, cfg["feature_clip"])
+    return np.hstack([D, _zcol(beta, cfg["feature_clip"])[:, None]]) if cfg["risk_beta_column"] else D
 
 
 def causal_betas(R, window=252, min_days=20):
@@ -82,6 +98,11 @@ def _window_beta(R, window=252, min_days=20):
 
 # ---------------------------------------------------------------- forecast
 def forecast(returns_history, characteristics_history):
+    """Also starts a new scoring session: the scorer calls forecast once per run, so the
+    rebalance risk state and solver warm start are reset here."""
+    global _STATE
+    _STATE = None
+    CERTIFICATES.clear()
     cfg = CONFIG
     R = np.ascontiguousarray(returns_history, dtype=np.float64)   # canonical layout keeps reductions prefix-stable
     X = characteristics_history
@@ -126,8 +147,8 @@ class _RiskState:
 
     def absorb(self, R, X, s):
         """Use return row s and characteristics row s-1, both published by the close of day s."""
-        D = basis(X[s - 1], self.cfg["feature_clip"])
         beta = _window_beta(R[:s], self.cfg["beta_window"])
+        D = risk_loadings(X[s - 1], beta, self.cfg)
         e = R[s] - beta * R[s].mean(); e = e - e.mean()
         G = D.T @ D / len(e)
         f = np.linalg.solve(G + 1e-10 * np.eye(G.shape[0]), D.T @ e / len(e))
@@ -147,6 +168,7 @@ class _RiskState:
 
 
 _STATE = None
+CERTIFICATES = []   # one allocator certificate per rebalance call in the current session
 
 
 def rebalance(held_positions, expected_returns, returns_history, characteristics_history, trading_costs):
@@ -157,15 +179,19 @@ def rebalance(held_positions, expected_returns, returns_history, characteristics
     R = np.ascontiguousarray(returns_history, dtype=np.float64)
     X = characteristics_history
     T, n = R.shape
-    if _STATE is None or _STATE.upto > T:              # new or restarted run: rebuild from history
-        _STATE = _RiskState(n, 26, cfg)
+    # Session contract: forecast() starts a session; within it the history is append-only.
+    # A shrinking history (or no prior state) rebuilds the state from the supplied history.
+    if _STATE is None or _STATE.upto > T:
+        _STATE = _RiskState(n, 27 if cfg["risk_beta_column"] else 26, cfg)
     while _STATE.upto < T:
         _STATE.absorb(R, X, _STATE.upto)
     L, d = _STATE.model()
-    D_today = basis(X[T - 1], cfg["feature_clip"])     # today's published characteristics
     beta = _window_beta(R, cfg["beta_window"])          # hedge betas from the last year through today
+    D_today = risk_loadings(X[T - 1], beta, cfg)        # today's published characteristics (+ beta)
+    cert = {}
     w = allocate_factor(expected_returns, held_positions, d, D_today, L, beta,
                         np.asarray(trading_costs, dtype=np.float64) / cfg["cost_horizon"],
-                        cfg["risk_aversion"], cfg["weight_cap"], warm=_STATE.warm)
+                        cfg["risk_aversion"], cfg["weight_cap"], warm=_STATE.warm, info=cert)
+    CERTIFICATES.append(cert)
     gross = float(np.abs(w).sum())
     return w * (min(1.0, cfg["gross_cap"] / gross) if gross else 1.0)

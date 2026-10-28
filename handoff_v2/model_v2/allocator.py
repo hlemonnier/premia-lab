@@ -9,7 +9,10 @@ where F = L L' is the factor covariance. The equalities z = L'B'w and b'w = 0
 are dualized; given the multipliers each stock solves the scalar no-trade-band /
 clip problem of the original C09 allocator. The convex dual is minimized by
 damped Newton with Armijo backtracking, then the beta multiplier is polished by
-bisection so the hedge holds to floating-point tolerance.
+bisection so the hedge holds to floating-point tolerance. A final certificate
+checks finiteness, caps, the hedge and the duality gap
+gamma/2 ||M'w - lam/gamma||^2 - nu * bn'w; if it fails, the joint solve resumes
+from the polished point once. `info` (a dict) receives the certificate and status.
 Specification and pre-implementation tests: research/v2/ALLOCATOR_SPEC.md and
 research/v2/test_allocator.py.
 """
@@ -29,7 +32,7 @@ def _vec(x, name, n=None):
 
 
 def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
-                    max_iter=100, tol=1e-13):
+                    max_iter=100, tol=1e-13, info=None):
     mu = _vec(mu, "mu"); n = mu.size
     h = _vec(held, "held", n); d = _vec(d, "d", n); b = _vec(beta, "beta", n)
     kappa = _vec(kappa, "kappa", n)
@@ -88,78 +91,103 @@ def allocate_factor(mu, held, d, B, L, beta, kappa, gamma, cap, warm=None,
     theta = np.zeros(m)
     if warm is not None and isinstance(warm.get("theta"), np.ndarray) and warm["theta"].shape == (m,):
         theta = warm["theta"].copy()
-    w, s, inner = primal(theta)
-    val = dual(theta, w, s)
-    for _ in range(max_iter):
-        g = grad(theta, w)
-        if np.max(np.abs(g[:r]), initial=0.0) <= tol * (1 + np.max(np.abs(theta[:r]), initial=0.0) / gamma) \
-                and (not use_beta or abs(g[r]) <= expo_tol):
-            break
-        Ai = A[inner]
-        H = Ai.T @ (Ai / diag[inner, None]) + np.diag(reg)
-        H[np.diag_indices(m)] += 1e-12 * max(np.trace(H), 1e-300)
-        try:
-            step = -np.linalg.solve(H, g)
-        except np.linalg.LinAlgError:
-            step = -g
-        slope = g @ step
-        if slope >= 0:
-            step = -g; slope = -(g @ g)
-        t = 1.0
-        for _ in range(60):
-            cand = theta + t * step
-            wc, sc, ic = primal(cand)
-            vc = dual(cand, wc, sc)
-            if vc <= val + 1e-4 * t * slope:
-                break
-            t *= 0.5
-        else:
-            break
-        theta, w, s, inner, val = cand, wc, sc, ic, vc
 
-    if use_beta:
-        def expo(nu):
-            th = theta.copy(); th[r] = nu
-            wv = primal(th)[0]
-            return float(bn @ wv), wv, th
-        e0, w0, th0 = expo(theta[r])
-        if abs(e0) > expo_tol:
-            step = max(np.max(np.abs(mu[movable])), np.max(diag[movable] * cap[movable]),
-                       np.max(kappa[movable]), 1e-300)
-            lo = hi = theta[r]
-            if e0 > 0:
-                while True:
-                    hi += step; e, _, _ = expo(hi)
-                    if e <= 0:
-                        break
-                    step *= 2
-                    if step > 1e300:
-                        raise RuntimeError("cannot bracket beta hedge")
+    def solve_pass(theta, iters):
+        w, s, inner = primal(theta)
+        val = dual(theta, w, s)
+        for _ in range(iters):
+            g = grad(theta, w)
+            if np.max(np.abs(g[:r]), initial=0.0) <= tol * (1 + np.max(np.abs(theta[:r]), initial=0.0) / gamma) \
+                    and (not use_beta or abs(g[r]) <= expo_tol):
+                break
+            Ai = A[inner]
+            H = Ai.T @ (Ai / diag[inner, None]) + np.diag(reg)
+            H[np.diag_indices(m)] += 1e-12 * max(np.trace(H), 1e-300)
+            try:
+                step = -np.linalg.solve(H, g)
+            except np.linalg.LinAlgError:
+                step = -g
+            slope = g @ step
+            if slope >= 0:
+                step = -g; slope = -(g @ g)
+            t = 1.0
+            for _ in range(60):
+                cand = theta + t * step
+                wc, sc, ic = primal(cand)
+                vc = dual(cand, wc, sc)
+                if vc <= val + 1e-4 * t * slope:
+                    break
+                t *= 0.5
             else:
-                while True:
-                    lo -= step; e, _, _ = expo(lo)
-                    if e >= 0:
-                        break
-                    step *= 2
-                    if step > 1e300:
-                        raise RuntimeError("cannot bracket beta hedge")
-            best = (abs(e0), w0, th0)
-            for _ in range(200):
-                mid = 0.5 * (lo + hi)
-                if mid in (lo, hi):
-                    break
-                e, wv, th = expo(mid)
-                if abs(e) < best[0]:
-                    best = (abs(e), wv, th)
-                if abs(e) <= expo_tol:
-                    break
-                if e > 0:
-                    lo = mid
+                break
+            theta, w, s, inner, val = cand, wc, sc, ic, vc
+
+        if use_beta:
+            def expo(nu):
+                th = theta.copy(); th[r] = nu
+                wv = primal(th)[0]
+                return float(bn @ wv), wv, th
+            e0, w0, th0 = expo(theta[r])
+            if abs(e0) > expo_tol:
+                step = max(np.max(np.abs(mu[movable])), np.max(diag[movable] * cap[movable]),
+                           np.max(kappa[movable]), 1e-300)
+                lo = hi = theta[r]
+                if e0 > 0:
+                    while True:
+                        hi += step; e, _, _ = expo(hi)
+                        if e <= 0:
+                            break
+                        step *= 2
+                        if step > 1e300:
+                            raise RuntimeError("cannot bracket beta hedge")
                 else:
-                    hi = mid
-            if best[0] > expo_tol:
-                raise RuntimeError("beta hedge did not converge")
-            _, w, theta = best
+                    while True:
+                        lo -= step; e, _, _ = expo(lo)
+                        if e >= 0:
+                            break
+                        step *= 2
+                        if step > 1e300:
+                            raise RuntimeError("cannot bracket beta hedge")
+                best = (abs(e0), w0, th0)
+                for _ in range(200):
+                    mid = 0.5 * (lo + hi)
+                    if mid in (lo, hi):
+                        break
+                    e, wv, th = expo(mid)
+                    if abs(e) < best[0]:
+                        best = (abs(e), wv, th)
+                    if abs(e) <= expo_tol:
+                        break
+                    if e > 0:
+                        lo = mid
+                    else:
+                        hi = mid
+                if best[0] > expo_tol:
+                    raise RuntimeError("beta hedge did not converge")
+                _, w, theta = best
+        return w, theta
+
+    def certify(w, theta):
+        q = M.T @ w - theta[:r] / gamma
+        e = float(bn @ w) if use_beta else 0.0
+        nu = float(theta[r]) if use_beta else 0.0
+        gap = 0.5 * gamma * float(q @ q) - nu * e
+        primal_value = float(mu @ w - 0.5 * (diag * w) @ w - 0.5 * gamma * float((M.T @ w) @ (M.T @ w))
+                             - kappa @ np.abs(w - h))
+        ok = (np.isfinite(w).all() and bool(np.all(np.abs(w) <= cap)) and abs(e) <= expo_tol
+              and abs(gap) <= 1e-12 * max(abs(primal_value), 1e-12))
+        return ok, {"gap": gap, "factor_residual": float(np.max(np.abs(q), initial=0.0)),
+                    "hedge_residual": e, "primal": primal_value}
+
+    w, theta = solve_pass(theta, max_iter)
+    ok, cert = certify(w, theta)
+    status = "ok"
+    if not ok:
+        w, theta = solve_pass(theta, max_iter)      # resume the joint solve from the polished point
+        ok, cert = certify(w, theta)
+        status = "ok_after_recovery" if ok else "not_certified"
+    if info is not None:
+        info.update(cert, status=status)
     if warm is not None:
         warm["theta"] = theta.copy()
     return w

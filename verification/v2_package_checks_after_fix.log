@@ -1,0 +1,8 @@
+PASS restart_same_length_history {"max_target_diff": 0.0, "max_gross_return_diff": 0.0}
+PASS characteristic_fortran_layout {"max_forecast_diff": 0.0, "max_target_diff": 0.0}
+PASS allocator_certificate_synthetic {"calls": 87, "recoveries": 0, "failed": 0}
+PASS economic_agreement_with_old_package {"max_abs_daily_net_diff": 0.0, "sharpe": 1.2425030732954572}
+PASS allocator_certificate_real {"calls": 3527, "recoveries": 0, "max_abs_gap": 1.2619248965792423e-17}
+PASS packaged_forecast_causality {"max_protected_diff": 0.0}
+ALL PASS
+exit 0

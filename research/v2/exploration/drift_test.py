@@ -10,7 +10,11 @@ correlation and short-range dependence, destroys slow mean drift).
 """
 import numpy as np
 from common import NAMES
-F = np.load("out/F26.npy")[253:3779]
+import os
+F = np.load(os.environ.get("V2_F26", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "results", "F26.npy")))[253:3779]
+# Use the same rows in the observed statistic and in the block-shuffle null: keep the
+# largest multiple of the 63-day block length from the start (drops the last T % 63 rows).
+F = F[: (len(F) // 63) * 63]
 names = NAMES + [n + "^2" for n in NAMES]
 T, K = F.shape; S = 6
 
