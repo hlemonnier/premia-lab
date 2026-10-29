@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Europe/Paris",
+  "allow_modes": [
+    "temporal"
+  ],
+  "harness_sha256": "ba5379050c51e20b74aba1e45f787e5e5f643fbaf2bb316179263b0289ce516d",
+  "plan_sha256": "8d64a56d242aaa516012fd8fa9cc9f1206175eb703591985d7a2e66d0d79acd8",
+  "bindings_sha256": "fce32c98e78cef9b008fd6823e98321327474b84e0ae268dfb3822a225f3f2f7",
+  "peer_review_sha256": "a1bb0836ff77441bb529f9bc661249324c73ad33200db5b91749dace09b53811",
+  "pinned_source_manifest_sha256": "55839b73a23619b33a7777b5a58110a40042d8deed8a87a89e0f86741cec55c8",
+  "production_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+  "research_commit": "9e56aa755d20c5876485188f4c50ce959f6d63f3",
+  "scope": "unchanged existing fifteen-check temporal workflow; newly source-bound exact original research reference; no new cutpoint or policy",
+  "temporal_runtime_require_separate_success_bound_release": true,
+  "prerequisite_sha256": {
+    "temporal": "8665d0bf6748cc6c45d88da201cc4aadff258770cb7f0a5dab18916ee4c5fd66"
+  },
+  "root_readback": "Both replays passed; original forecast and all three target streams recovered byte-for-byte in both research and package; historical economic rows exact."
+}

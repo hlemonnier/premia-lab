@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "evidence/v3_evidence_audit_20261029/runtime_001/source/production/verification/v3_runtime_check.py",
+    "--data",
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home",
+    "--sleeve",
+    "0.05"
+  ],
+  "source_sha256": "0ae1a4b160c910f869fa337f4e711ca6b18d6f0393fb4315e2e6d1519ee3043b"
+}

@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "evidence/v3_evidence_audit_20261029/temporal_001/source/production/verification/v3_integration_checks.py",
+    "--data",
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home",
+    "--reference",
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v3_evidence_audit_20261029/replay_001/research",
+    "--report",
+    "evidence/v3_evidence_audit_20261029/temporal_001/existing_temporal_report.json"
+  ],
+  "source_sha256": "91679f84d0598efe7e43553fd197d483373425c1c30c9046b8e7ed4db9b67b8c"
+}

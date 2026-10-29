@@ -1,0 +1,119 @@
+{
+  "all_passed": true,
+  "exit_code": 0,
+  "existing_runtime_result": {
+    "rows": 24946,
+    "forecast_s": 60.57106748699971,
+    "forecast_h_per_century": 0.016825296524166585,
+    "rebalance_ms_mean": 12.4171169667271,
+    "rebalance_ms_p99": 33.50172565005775,
+    "rebalance_ms_max": 295.59632399968905,
+    "wall_s": 372.39499596999985,
+    "certificate_statuses": [
+      "ok"
+    ],
+    "min_one_plus_gross_return": 0.9821459741878932,
+    "pass": true
+  },
+  "input_shapes": [
+    [
+      25200,
+      1000
+    ],
+    [
+      25200,
+      1000,
+      13
+    ],
+    [
+      1000
+    ]
+  ],
+  "runtime_input_raw_sha256": [
+    "6ebfd3a3313d3624b6304a53a7daeb79d3a6b96e9ec1180671331c34d37c1b27",
+    "9a75bdb46170dc18f376ecf2122edb3e6c9476d337890d7bae53865453183f74",
+    "f8f7aca2ca5ccc702e7910f5ee9ccb3a1f427d144d9719bb9b114817509de872"
+  ],
+  "forecast_rows": 25200,
+  "decisions": 24947,
+  "certificate_count": 49894,
+  "certificate_statuses": [
+    "ok"
+  ],
+  "last_day": 25198,
+  "earned_observations": 24946,
+  "array_manifest": {
+    "rows": {
+      "path": "rows.npy",
+      "shape": [
+        24946,
+        5
+      ],
+      "dtype": "float64",
+      "file_sha256": "7e3ee3ae6117934da67dd8071f02c2d2dc2794a69793433716711348a36dbb9e",
+      "array_sha256": "bbc4017bab27b132a8c05e8fc943b1e395cd3fafa2c267eaeedd4ac9d107ff04"
+    },
+    "forecast": {
+      "path": "forecast.npy",
+      "shape": [
+        25200,
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "c5ba2508692dfdc0725f52bc0232735d6d560532be9b1001f94c0bc9e0d6ad7e",
+      "array_sha256": "67016067a78144f9e2e56116adb97f8317c58c0d1a9c2340308db2771dfb6004"
+    },
+    "final_targets": {
+      "path": "final_targets.npy",
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "638fe0b207ef36c5232d5b47294d81758555fe1c4b5f3b0931fc62f66591d875",
+      "array_sha256": "916eacf889d94aacc8374df1e34dc29080a5d79568420e28594380a2a9bbcdf6"
+    },
+    "final_inner_targets": {
+      "path": "final_inner_targets.npy",
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "ec15b910e955e82a205fe1ff70fd25bd2838a9ecb2410376cc1d0eee726216ce",
+      "array_sha256": "531209d8e18d6ea422714da40160a7c51e3e56415d484ea44dc56cb66c481277"
+    },
+    "final_virtual_targets": {
+      "path": "final_virtual_targets.npy",
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "6832c44b40682a0c16c2de7005a6a25bacc8e02437b8e650eac62b0e7c00c8b7",
+      "array_sha256": "0b304e492a193a2d7821e11f85b189327b46616d71fa38fbcc303cb428ebe14a"
+    }
+  },
+  "performance": {},
+  "not_alpha_evidence": true,
+  "mode": "runtime",
+  "elapsed_seconds": 392.97708423799986,
+  "source_bindings_unchanged": true,
+  "environment_after": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "pid": 5,
+    "cpu_affinity": [
+      1
+    ],
+    "thread_variables": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "numpy_build_configuration": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/include\n    lib directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=64\n    pc file directory: /project/.openblas\n    version: 0.3.30\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/include\n    lib directory: /opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=64\n    pc file directory: /project/.openblas\n    version: 0.3.30\nCompilers:\n  c:\n    commands: cc\n    linker: ld.bfd\n    name: gcc\n    version: 14.2.1\n  c++:\n    commands: c++\n    linker: ld.bfd\n    name: gcc\n    version: 14.2.1\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.2.1\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: linux\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: linux\nPython Information:\n  path: /tmp/build-env-aw1mwcap/bin/python\n  version: '3.12'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n  - AVX512_SPR\n  not found:\n  - AVX512_KNL\n  - AVX512_KNM\n\n"
+  },
+  "release_sha256": "1cdbfb0b9f263924ad7246be0d1ac8be70e84ad4eb92f9b3c0c9afcc7ec5c2c3",
+  "harness_sha256": "ba5379050c51e20b74aba1e45f787e5e5f643fbaf2bb316179263b0289ce516d",
+  "plan_sha256": "8d64a56d242aaa516012fd8fa9cc9f1206175eb703591985d7a2e66d0d79acd8",
+  "bindings_sha256": "fce32c98e78cef9b008fd6823e98321327474b84e0ae268dfb3822a225f3f2f7"
+}

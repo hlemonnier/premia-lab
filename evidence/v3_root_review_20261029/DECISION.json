@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-29",
+  "timezone": "Europe/Paris",
+  "production_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+  "research_commit": "9e56aa755d20c5876485188f4c50ce959f6d63f3",
+  "integration_accepted": true,
+  "selected_sleeve": 0.05,
+  "net_sharpe": 1.444733300556666,
+  "net_beta": 0.10297751974238421,
+  "sample_status": "all supplied history is exposed development data",
+  "original_forecast_and_all_three_target_streams_recovered_exactly": true,
+  "production_change_required": false,
+  "documentation_corrections_required": [
+    "reference deviation and subsequent exact recovery",
+    "full precision versus rounded clean-folder log",
+    "common-market-mean sensitivity for both books",
+    "failure-path coverage qualification",
+    "selection uncertainty and actual attribution"
+  ],
+  "no_new_policy_or_parameter_search": true,
+  "no_external_message_or_submission": true,
+  "evidence": {
+    "replay": {
+      "path": "evidence/v3_evidence_audit_20261029/replay_001/result.json",
+      "sha256": "8665d0bf6748cc6c45d88da201cc4aadff258770cb7f0a5dab18916ee4c5fd66"
+    },
+    "temporal": {
+      "path": "evidence/v3_evidence_audit_20261029/temporal_001/result.json",
+      "sha256": "9d91f352f5bd650f76f58e2d84fc534ce8a111a24ce93a135b5f5c5322125e11"
+    },
+    "runtime": {
+      "path": "evidence/v3_evidence_audit_20261029/runtime_001/result.json",
+      "sha256": "241cd9b1f78191f9d2cfb19a7f3c886fb2dcba769988b731a10a68ffa1f30ca1"
+    },
+    "integrated_review": {
+      "path": "reviews/V3_INDEPENDENT_REVIEW_20261029.md",
+      "sha256": "ff43679d011a680c10971ce0ca12db420fe116c012dd0c946068c7868098e3d9"
+    },
+    "claude_handoff": {
+      "path": "reviews/V3_CLAUDE_HANDOFF_20261029.md",
+      "sha256": "9270f842a1fc41877802f65dff49a56189315af1ffdc1348dea3f06cd759d378"
+    },
+    "evidence_review": {
+      "path": "reviews/V3_EVIDENCE_REVIEW_20261029.md",
+      "sha256": "6898c9ab82a1818f62105d25fc644a3d90567cde7b1085d6c625f3abf01228a0"
+    },
+    "policy_review": {
+      "path": "reviews/V3_POLICY_REVIEW_20261029.md",
+      "sha256": "d17cd9ddaba32bc7b40b2e5571ab290c17ceb2269332642a31c442cb699cb8e0"
+    },
+    "market_review": {
+      "path": "reviews/V3_MARKET_REVIEW_20261029.md",
+      "sha256": "e01693327759fa4ec34915839af8e3ead64990525557ff48c5347878396ff98d"
+    },
+    "archive_manifest": {
+      "path": "evidence/v3_archive_20261029/packet/manifest.json",
+      "sha256": "3e487e00a671834c6a7cd80d638e5326da8adcb7b8f5723e9cc62e9d54028a12"
+    },
+    "runtime_archive_manifest": {
+      "path": "evidence/v3_evidence_audit_20261029/runtime_packaging_001/manifest.json",
+      "sha256": "414ca37bd2ccbc5f84fc150885e574e87953e04a7556a74ecf0385c7f093c1ae"
+    }
+  },
+  "review_crosscheck": "Market reviewer accepted the integrated interpretation; clarified virtual-only controller, sequential Sharpe attribution and annualized volatility wording."
+}

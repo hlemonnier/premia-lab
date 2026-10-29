@@ -1,0 +1,14 @@
+{
+ "rows": 24946,
+ "forecast_s": 60.57106748699971,
+ "forecast_h_per_century": 0.016825296524166585,
+ "rebalance_ms_mean": 12.4171169667271,
+ "rebalance_ms_p99": 33.50172565005775,
+ "rebalance_ms_max": 295.59632399968905,
+ "wall_s": 372.39499596999985,
+ "certificate_statuses": [
+  "ok"
+ ],
+ "min_one_plus_gross_return": 0.9821459741878932,
+ "pass": true
+}
