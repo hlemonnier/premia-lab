@@ -210,3 +210,24 @@ handoff now preserves those safeguards and requires a separate exact F2 mode;
 the ce3-based research score must be reproduced on the integrated head. Our
 publication remains on its own research branch and does not overwrite Claude's
 work. This readback executed no policy or additional experiment.
+
+## 29 October 2026 — second score-directed research wave
+
+The user requests continued research to improve the official score. The fixed
+leader is the published F2 + VTvol prototype at 1.318334966090838; remote Claude
+head remains c51d31f. Production integration remains Claude's task. All supplied
+periods are exposed development data; optimize net Sharpe subject to the brief.
+
+The new prospective specification is research/v2/SCORE2_RESEARCH_PLAN_20261029.md:
+E1 cost-aware scalar exposure, E2 actual-book allocation at dynamic risk aversion,
+F3 strongly shrunk market-volatility interactions, and M1 a costed +0.05 stock-
+replicated market sleeve. At most one conditional composition of individually
+improving distinct families is allowed, with no subsequent subset search. Plans,
+E2E harnesses and independent reviews precede actual policy scores. No window,
+penalty, sleeve-weight or feature-subset grid is included.
+
+The environment runtime guide was read. This executor has no supported network-
+policy snapshot or environment_status tool exposed; no credential or TCP-readiness
+assumption is made. Existing GitHub and web connectors serve external read/write
+work, and all numerical execution remains local. Original source/scorer and
+Claude's production branch are preserved. No outgoing messages or submission.
