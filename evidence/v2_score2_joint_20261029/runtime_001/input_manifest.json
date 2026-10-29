@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "returns.csv": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+    "characteristics.csv": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08",
+    "costs.csv": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186"
+  },
+  "array_sha256": [
+    "49c750ec23a236807cdbb83171164d47e896b73ab0802d5e951d317dd607c409",
+    "b2fcec939cd5769bd30f2b2d83d7caa002db8b672abfffc1a10703543b994f95",
+    "f8f7aca2ca5ccc702e7910f5ee9ccb3a1f427d144d9719bb9b114817509de872"
+  ]
+}

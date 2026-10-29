@@ -1,0 +1,247 @@
+{
+  "reviewer": "score2_challenge",
+  "decision": "accepted_for_root_actual_release",
+  "required_changes": [],
+  "scope_sha256": "44649e4120ca0626eb0b171fe4a30c2172a78cf8962c326abaf796094b63692c",
+  "audit_script_sha256": "e2b80fa519abfbe8ad91d4a9f7a7560247241b6dc01c8775bb9740449ae108ad",
+  "source_review_sha256": "1e39f7c32bc7c5c78f4452f338ad71bf2a34d544c14d20a1bd99a6934cfd6dde",
+  "synthetic_result_sha256": "e6c3631ad15f4a72494082331e49daf9dc4ac0c11201444e6f805e56f5dfdee6",
+  "source_files": {
+    "run_actual.py": "855c10958ed8dec3fb8530b910a2b667e48118572f7a280e48ef54e9c1a557ca",
+    "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "runtime.py": "f988ea777ae411f5c9886bbf94fcce525ddce43e4bde906aaf21b26ffb8fd2d2",
+    "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "e2e.py": "5994d6f2b31163d8f618d8a83c2171c70d8dae5be3e0ce92b357d14647cdd3fd",
+    "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+  },
+  "prospective_checks_passed": 220,
+  "artifact_files_verified": 136,
+  "atomic_arrays_verified": 68,
+  "workflows_reconstructed": {
+    "E1": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.734723475976807e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "E1_extreme": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        6.938893903907228e-18,
+        2.168404344971009e-19,
+        0.0,
+        0.0
+      ],
+      "max_gross": 5.000000000000002,
+      "final_decision_index": 418
+    },
+    "E1_future": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.734723475976807e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "E1_prefix": {
+      "n_decisions": 108,
+      "n_earning_rows": 107,
+      "max_column_errors_g_cost_gross_market": [
+        1.734723475976807e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 359
+    },
+    "E1_repeat": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.734723475976807e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "E1_zero_cost": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.3010426069826053e-18,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.037393354926116,
+      "final_decision_index": 418
+    },
+    "E1_zero_returns": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_gross": 0.0,
+      "final_decision_index": 418
+    },
+    "E2": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        2.168404344971009e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "E2_extreme": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        5.204170427930421e-18,
+        2.168404344971009e-19,
+        0.0,
+        0.0
+      ],
+      "max_gross": 5.0000000000000036,
+      "final_decision_index": 418
+    },
+    "E2_future": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        2.168404344971009e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "E2_prefix": {
+      "n_decisions": 108,
+      "n_earning_rows": 107,
+      "max_column_errors_g_cost_gross_market": [
+        2.168404344971009e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 359
+    },
+    "E2_repeat": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        2.168404344971009e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "E2_zero_cost": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.734723475976807e-18,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.037393354926116,
+      "final_decision_index": 418
+    },
+    "E2_zero_returns": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_gross": 0.0,
+      "final_decision_index": 418
+    },
+    "baseline": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.3010426069826053e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "direct_reference": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.3010426069826053e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.0331345209231304,
+      "final_decision_index": 418
+    },
+    "zero_cost_reference": {
+      "n_decisions": 167,
+      "n_earning_rows": 166,
+      "max_column_errors_g_cost_gross_market": [
+        1.3010426069826053e-18,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_gross": 2.037393354926116,
+      "final_decision_index": 418
+    }
+  },
+  "independently_verified_differences": {
+    "E1": {
+      "zero_cost_target_error": 0.0,
+      "zero_cost_economic_error": 0.0,
+      "future_prefix_restart_exact": true,
+      "reference_virtual_and_forecast_exact": true
+    },
+    "E2": {
+      "zero_cost_target_error": 7.979727989493313e-16,
+      "zero_cost_economic_error": 2.6645352591003757e-15,
+      "future_prefix_restart_exact": true,
+      "reference_virtual_and_forecast_exact": true
+    }
+  },
+  "math_review_sha256": "f0ffb99787f30625dbe22e8fda4d841beb5a596cdb524fa477113bf51257ebde",
+  "limitations": [
+    "No new policy run or actual-market scoring occurred in this audit.",
+    "E2 retains ce3 post-solve proportional gross scaling; a solver certificate is not a certificate of a globally optimal gross-constrained QP.",
+    "Actual market and long-history runtime admission remain outstanding."
+  ]
+}

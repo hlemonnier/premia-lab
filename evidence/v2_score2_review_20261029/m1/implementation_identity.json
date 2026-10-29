@@ -1,0 +1,7 @@
+{
+  "sleeve_sha256": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b",
+  "harness_sha256": "e330cb61294201eb38804d96218d478b7c31d198305d8f22326eb4cc787cd134",
+  "plan_sha256": "f8a0e5e084ca928ed418841689da9c0bc21949ecd51f4ceb834115a2d867d58a",
+  "expected_missing_policy_failure_recorded_before_implementation": true,
+  "actual_policy_execution": false
+}

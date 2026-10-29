@@ -1,0 +1,51 @@
+{
+  "utc_started": "2026-10-29T00:20:26.351740+00:00",
+  "release_sha256": "fe3363fac0a7ec18d98b14931a3fa9e546bf79718026771b48e849c67c3d09fc",
+  "verified_data": {
+    "returns.csv": {
+      "path": "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/returns.csv",
+      "sha256": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d"
+    },
+    "characteristics.csv": {
+      "path": "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/characteristics.csv",
+      "sha256": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08"
+    },
+    "costs.csv": {
+      "path": "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/costs.csv",
+      "sha256": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186"
+    }
+  },
+  "source_identities_verified": true,
+  "command": [
+    "taskset",
+    "-c",
+    "3",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/e2e.py",
+    "--snapshot",
+    "/workspace/scratch/a83c191d516f/v2-followup-snapshot",
+    "--out",
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001",
+    "--mode",
+    "actual",
+    "--data",
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home",
+    "--release",
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_root_20261029/M1_ACTUAL_RELEASE.json",
+    "--e2e-result",
+    "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/synthetic_002/result.json"
+  ],
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "cpu": 3,
+  "status": "completed",
+  "returncode": 0,
+  "wall_seconds": 63.65400964199944,
+  "utc_finished": "2026-10-29T00:21:30.006028+00:00"
+}

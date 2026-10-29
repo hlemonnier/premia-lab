@@ -1,0 +1,29 @@
+{
+  "reviewer": "score2_challenge",
+  "scope": "Read-only reinspection of original brief/scorer for disallowance of the fixed .05 market sleeve, gross-five control, and conclusion wording. No policy execution.",
+  "original_sources": {
+    "README.md": {
+      "path": "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/README.md",
+      "sha256": "46aabfab474fa674dbe9286840c20d5f97a749883ed97a197485ea4c01ba6503"
+    },
+    "score.py": {
+      "path": "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/score.py",
+      "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    }
+  },
+  "conclusion": "No original rule disallows the fixed +.05 equal-weight stock sleeve or self-imposed gross-five limit; both remain subject to the full future book beta, causality, solvency and runtime conditions.",
+  "findings": [
+    "The brief permits long, short, leverage and concentration, with no additional portfolio constraint beyond the stated beta and solvency requirements. Gross five and per-stock caps are our choices, not assignment mandates.",
+    "The beta condition concerns regression of the full future daily net return on the equal-weight market over the entire future run. Current sample beta is evidence, not a guarantee of the future condition; the sleeve does not have its own separate beta allowance.",
+    "The brief explicitly discourages a strategy that is mostly long the market. Report the fixed market allocation honestly and distinguish it from unchanged stock-selection alpha; the numeric beta condition remains binding.",
+    "Stateful policies, helper files and arbitrary first-axis-days forecast signals are permitted. Whole-sample parameter selection is expressly allowed, but every forecast row/position remains restricted to prior-day information.",
+    "Runtime is average rebalance below100ms on one core; a single call above100ms is not by itself a violation. Forecasting may take about one hour per century.",
+    "The submission must be portable strategy.py plus required helper files and a short note describing beliefs, construction, AI/human attribution and expected long-run failure modes. Research loaders or absolute evidence paths are not a production handoff.",
+    "The original scorer uses actual stock-trade costs, free opening, gross-return position drift, and a final charged target that is not earned. No extra costless market instrument exists."
+  ],
+  "wording_cautions": [
+    "All current historical segment scores are exposed development; future modified-data checks demonstrate tested causal invariance, not future profitability.",
+    "The century replay is an operational stress on repeated data and cannot be reported as new out-of-sample alpha evidence.",
+    "Keep the inherited E2 post-solve proportional gross-scaling qualification when describing optimizer certificates."
+  ]
+}

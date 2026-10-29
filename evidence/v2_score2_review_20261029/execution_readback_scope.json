@@ -1,0 +1,17 @@
+{
+  "reviewer": "score2_challenge",
+  "scope": "Read-only independent audit of the already completed, prospectively specified E1/E2 synthetic workflows. No policy execution or new economic candidate.",
+  "input": "evidence/v2_score2_execution_20261029/e2e_001",
+  "result_sha256": "e6c3631ad15f4a72494082331e49daf9dc4ac0c11201444e6f805e56f5dfdee6",
+  "checks": [
+    "Bind executed source copies and current source to the prior accepted hashes.",
+    "Read every atomic NPY and verify declared file hash, array hash, dtype and shape.",
+    "Regenerate only the specified deterministic synthetic inputs; verify their saved hashes.",
+    "Independently reconstruct earning gross returns, actual drift, stock-level netted fees, closing gross and market means from saved targets, under the existing 1e-12 accounting tolerance.",
+    "Verify saved future/prefix/restart invariance and common virtual-reference equality, without running the policy.",
+    "Retain observed zero-cost floating-point discrepancies under the original 1e-8 tolerance and confirm the separate forced-cap workflows reach gross five."
+  ],
+  "new_model_or_test_implementation": false,
+  "market_data_access": false,
+  "actual_policy_scoring": false
+}

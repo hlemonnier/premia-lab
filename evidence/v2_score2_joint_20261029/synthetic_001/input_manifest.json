@@ -1,0 +1,12 @@
+{
+  "seed": 20261028,
+  "array_sha256": [
+    "47103f0bd88ea8161351db0a02409c34be6a72733140f04f23ae05856fa8f302",
+    "b7f40ad6a2ac24b6fd86085d22c8e37082e4b1ab0bb01778466fccf4c1332b26",
+    "c86ba67a39a20bb3e2999b0496d51764f2cf42dc812cb76bda9c510cf36b2bc1"
+  ],
+  "returns_shape": [
+    420,
+    64
+  ]
+}

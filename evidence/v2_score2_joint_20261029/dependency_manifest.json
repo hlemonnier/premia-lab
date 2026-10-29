@@ -1,0 +1,27 @@
+{
+  "common.py": {
+    "source": "evidence/v2_score2_execution_20261029/common.py",
+    "sha256": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "copy_exact": true
+  },
+  "execution.py": {
+    "source": "evidence/v2_score2_execution_20261029/execution.py",
+    "sha256": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "copy_exact": true
+  },
+  "forecast_reference.py": {
+    "source": "evidence/v2_score2_execution_20261029/forecast_reference.py",
+    "sha256": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "copy_exact": true
+  },
+  "reference_overlay.py": {
+    "source": "evidence/v2_score2_execution_20261029/reference_overlay.py",
+    "sha256": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "copy_exact": true
+  },
+  "sleeve.py": {
+    "source": "evidence/v2_score2_review_20261029/m1/sleeve.py",
+    "sha256": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b",
+    "copy_exact": true
+  }
+}

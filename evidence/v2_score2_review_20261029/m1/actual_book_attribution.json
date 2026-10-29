@@ -1,0 +1,109 @@
+{
+  "type": "descriptive_actual_book_difference_no_new_candidate",
+  "scope_sha256": "a8c59da587ff4800fd090c760be19bf103154f4c55357f4d00ce9814ccde8ae4",
+  "script_sha256": "991336b0cdaee2b4865ddebfd150ae412609b8075137144bd4f2d6ac5730d9dc",
+  "result_sha256": "98495701d57df8397b1aac70e54ab72727e8f8bb2cbffeb84c4e107e8ab17b5c",
+  "source_arrays": {
+    "M0": {
+      "rows": {
+        "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/M0/rows.npy",
+        "shape": [
+          3526,
+          5
+        ],
+        "dtype": "float64",
+        "sha256": "aab3a7981664657a59b4dfcf996c69620d8f5ebbe5f1c8a8bb7d09215814920c",
+        "array_sha256": "9e48e372904a9ce1f875cddb7364eb0a13286369674d286f0be9eb23f71a1c28",
+        "readback_exact": true
+      },
+      "targets": {
+        "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/M0/targets.npy",
+        "shape": [
+          3527,
+          1000
+        ],
+        "dtype": "float64",
+        "sha256": "4915f9f1088394467f356371c979323751c8b5b7d4115599a57277b4cc0b5026",
+        "array_sha256": "7d8582a62d0d4bcb03a4911484f2f30564abd0483e00e072f0a64d54778cb0c4",
+        "readback_exact": true
+      }
+    },
+    "M1": {
+      "rows": {
+        "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/M1/rows.npy",
+        "shape": [
+          3526,
+          5
+        ],
+        "dtype": "float64",
+        "sha256": "76c07deef6bbcdd09fbaf5294febcd67f0b0488f6e4b3427f6b1a7fdc592a6b5",
+        "array_sha256": "402a5e5e1f5042bc37cd23aa870c08dbe9f99e3cef1d7ba1aa1965c2e5ed9f91",
+        "readback_exact": true
+      },
+      "targets": {
+        "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/M1/targets.npy",
+        "shape": [
+          3527,
+          1000
+        ],
+        "dtype": "float64",
+        "sha256": "a2b17450b5c71bcd4de767c1c769d232d34a38ce12297d498604bf3d880c9bad",
+        "array_sha256": "de80768594a334deea24a57272c3c5f20a9214ec3eda8768bc7ce38f2234990a",
+        "readback_exact": true
+      }
+    }
+  },
+  "no_gross_cap_binding": true,
+  "daily_identity_errors": {
+    "target_increment_max_error": 1.429791614965259e-18,
+    "gross_increment_max_error": 6.179952383167375e-18,
+    "net_increment_max_error": 6.288372600415926e-18
+  },
+  "segments": {
+    "full": {
+      "n": 3526,
+      "gross_increment_ann_percentage_points": 0.7239962169086781,
+      "market_005_ann_percentage_points": 0.7239962169086783,
+      "incremental_actual_cost_ann_percentage_points": 0.0006338897903534075,
+      "incremental_actual_cost_ann_bps": 0.06338897903534076,
+      "net_increment_ann_percentage_points": 0.7233623271183246,
+      "incremental_cost_market_slope": 9.2577130009539e-06,
+      "net_beta_increment": 0.04999074228699901,
+      "net_beta_identity_error": 3.469446951953614e-17
+    },
+    "discovery": {
+      "n": 1762,
+      "gross_increment_ann_percentage_points": 0.5000592570374568,
+      "market_005_ann_percentage_points": 0.5000592570374575,
+      "incremental_actual_cost_ann_percentage_points": 0.0006972126492503012,
+      "incremental_actual_cost_ann_bps": 0.06972126492503013,
+      "net_increment_ann_percentage_points": 0.49936204438820636,
+      "incremental_cost_market_slope": 1.1295483031449582e-05,
+      "net_beta_increment": 0.04998870451696856,
+      "net_beta_identity_error": 6.938893903907228e-18
+    },
+    "validation": {
+      "n": 1007,
+      "gross_increment_ann_percentage_points": 1.1878793955312814,
+      "market_005_ann_percentage_points": 1.187879395531281,
+      "incremental_actual_cost_ann_percentage_points": 0.0006501051527688382,
+      "incremental_actual_cost_ann_bps": 0.06501051527688381,
+      "net_increment_ann_percentage_points": 1.187229290378512,
+      "incremental_cost_market_slope": 6.716908582903279e-06,
+      "net_beta_increment": 0.04999328309141709,
+      "net_beta_identity_error": 1.3877787807814457e-17
+    },
+    "audit": {
+      "n": 755,
+      "gross_increment_ann_percentage_points": 0.6247789588609275,
+      "market_005_ann_percentage_points": 0.6247789588609272,
+      "incremental_actual_cost_ann_percentage_points": 0.00046972818549674946,
+      "incremental_actual_cost_ann_bps": 0.046972818549674944,
+      "net_increment_ann_percentage_points": 0.6243092306754309,
+      "incremental_cost_market_slope": 1.0697251642890517e-05,
+      "net_beta_increment": 0.049989302748357105,
+      "net_beta_identity_error": 6.938893903907228e-18
+    }
+  },
+  "interpretation": "M1's added gross return is the executed fixed market basket. Its incremental net return subtracts the actual combined-book fee difference. Unchanged inner targets/forecasts imply no new stock-selection or market-timing alpha is claimed. Incremental fees are not a standalone sleeve-cost estimate."
+}

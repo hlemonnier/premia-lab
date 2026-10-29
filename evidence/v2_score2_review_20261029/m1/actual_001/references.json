@@ -1,0 +1,8 @@
+{
+  "joint_ledger": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/daily.csv",
+  "joint_ledger_sha256": "6b5a467fff8ca72be740195ca41e52b0d8b15057f899dfdb6b88fe448ced246c",
+  "release": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_root_20261029/M1_ACTUAL_RELEASE.json",
+  "release_sha256": "fe3363fac0a7ec18d98b14931a3fa9e546bf79718026771b48e849c67c3d09fc",
+  "e2e_result": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/synthetic_002/result.json",
+  "e2e_result_sha256": "651480fadeb0d5acc87140a82998f3b4e6067057fd2621ad81ca0c3ea76e567b"
+}

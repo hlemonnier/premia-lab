@@ -1,0 +1,46 @@
+{
+  "targets": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/actual_M1_prefix/targets.npy",
+    "shape": [
+      1248,
+      1000
+    ],
+    "dtype": "float64",
+    "sha256": "c5ef30171f50824c41d8da1f4163cefd8d923f301e65b147bc3e092279bab9bd",
+    "array_sha256": "ae540f358b769cbadcfe8ae1bfd087e709e9b8aa47d5f76fb90d7280cea99587",
+    "readback_exact": true
+  },
+  "inner_targets": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/actual_M1_prefix/inner_targets.npy",
+    "shape": [
+      1248,
+      1000
+    ],
+    "dtype": "float64",
+    "sha256": "32f8fb02b39495a8fbbb050b8f00434e1c7b5a604390155362a1776af0b08b6b",
+    "array_sha256": "bed795eb09fa83052614a97234a7cae2c21825ac36dec4e1396adc71a7d38f86",
+    "readback_exact": true
+  },
+  "rows": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/actual_M1_prefix/rows.npy",
+    "shape": [
+      1247,
+      5
+    ],
+    "dtype": "float64",
+    "sha256": "df15d129a9b63c240589cc5ac21396649368acda6acacf02f9b7e5ee42ccb2fc",
+    "array_sha256": "ca3502bf74c5c68ecb5a0b120414a459711fc7b419946265a7c377c2d085bdd5",
+    "readback_exact": true
+  },
+  "forecast": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/actual_001/actual_M1_prefix/forecast.npy",
+    "shape": [
+      1501,
+      1000
+    ],
+    "dtype": "float64",
+    "sha256": "6d2ee5c3564f7f212b1ddcf4fd633a1f17c07427690e1715c6401d60934da5ef",
+    "array_sha256": "c63e330b3e0ef17c30c5163791fa640db5e68935a09b579b4b6d5d8fd0da3e47",
+    "readback_exact": true
+  }
+}

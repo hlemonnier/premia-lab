@@ -1,0 +1,52 @@
+{
+  "reviewer": "score2_challenge",
+  "decision": "research_economic_outcome_and_current_report_supported",
+  "required_economic_corrections": [],
+  "source_artifacts": {
+    "root_readback": {
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_root_20261029/joint_readback_001.json",
+      "sha256": "565c895d63e2dc7ee2e511bb47514c09fd08da841b6111c6b6cb5b007bb25e6f"
+    },
+    "joint_research_report": {
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/research/v2/SCORE2_JOINT_20261029.md",
+      "sha256": "00397fe35aceef85595efd3934c95f62824eb9acb7771bba576eb04307589eec"
+    },
+    "original_brief_review": {
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/ORIGINAL_BRIEF_COMPLIANCE_REVIEW.json",
+      "sha256": "5ff01eabbac2bb82df7dfd7520c898ae159db08dadf5409dc622cb704cd27ea9"
+    }
+  },
+  "observed_comparison": {
+    "joint_net_sharpe": 1.444733300556666,
+    "M1_net_sharpe": 1.426560898191992,
+    "joint_minus_M1": 0.018172402364674243,
+    "paired_63_interval_vs_M1": {
+      "point": 0.018172402364674243,
+      "lo": 0.007364008651822686,
+      "hi": 0.02975074739930807,
+      "draws": 2000,
+      "seed": 20261027,
+      "last_legal_block_start_included": true
+    },
+    "joint_audit_sharpe": 1.654663968477725,
+    "M1_audit_sharpe": 1.6644954621429757
+  },
+  "supported_interpretation": [
+    "The joint clears the frozen full-score rule versus the strongest admitted standalone; it is the sole predeclared adaptive composition.",
+    "The original scorer, saved-target accounting and all full-history physical checks are independently verified.",
+    "The arithmetic net-return gain versus M1 consists of reduced actual fees plus a smaller gross-mean increase. Gross Sharpe is slightly lower. This supports an execution mechanism, not a new forecast signal.",
+    "Audit-period Sharpe is slightly lower than M1, and the existing report surfaces it. The frozen rule did not require every segment to improve.",
+    "The market sleeve remains intentional and costed; all of the inner stock forecasts and F2 virtual portfolio are unchanged.",
+    "Paired intervals versus both the prior leader and M1 are descriptive fixed-policy intervals; neither is adjusted for adaptive selection or the earlier research history."
+  ],
+  "final_handoff_requirements": [
+    "Keep all historical segments labelled exposed development, including the former audit segment.",
+    "Describe F3 as one failed tested conditional-forecast configuration, not proof that all nonlinear or conditional forecasts fail.",
+    "Do not equate future/prefix invariance with demonstrated future profitability or absence of research overfitting.",
+    "Report long-history repeated-data runs as computational/physical stress only, without an out-of-sample alpha claim.",
+    "Identify gross five/stock caps as chosen controls and .3 factor-risk scale as a chosen penalty, not calibrated predictive risk.",
+    "Preserve E2 post-solve gross-scaling and independently optimized inner-versus-actual-netted-outer cost qualifications.",
+    "Current research is bound to ce3 source. Any current-production integration requires its own source/target/scorer equivalence and must retain Claude's later engineering fixes.",
+    "State the actual final production/integration/runtime status accurately; this review does not certify unfinished stages."
+  ]
+}

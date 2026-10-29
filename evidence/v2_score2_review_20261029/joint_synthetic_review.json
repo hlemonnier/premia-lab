@@ -1,0 +1,165 @@
+{
+  "reviewer": "score2_challenge",
+  "decision": "accepted_for_root_actual_release",
+  "required_changes": [],
+  "scope_sha256": "de63c7ed1b0f8b3dc85ce9ae10556e2c585df30f8a77953c84feeef102c338c0",
+  "source_review_sha256": "148b8420345d5ac0e8c3f15faa69610e365ec157b90fa8f265a09988237b4b53",
+  "audit_script_sha256": "3117d3c4399d133d5aefc04a65dd68036f0e6a5e9673e2d87058c12476532c12",
+  "fixture_reconstruction_source_sha256": "e2b80fa519abfbe8ad91d4a9f7a7560247241b6dc01c8775bb9740449ae108ad",
+  "synthetic_result_sha256": "f23fa2a55efaf9bbf6c8b120bfdeded7daec33ac961baef17dc68082410fdbe5",
+  "source_sha256": {
+    "PLAN.md": "ef38677e96a486edea1b693490b399ed57ed028252dae7274b5d3671a7e95a00",
+    "E2E_SPEC.md": "400d6e73c38f9e8249b13259e81fea2da92418a03d7642b8c2718f1b5b9fd2cf",
+    "e2e.py": "70442c0f8d91cdb07b383d4ca74d80d83786f1b72585db00e259d20d8caa83d3",
+    "joint.py": "2beeb7beb6d2107818d7570047c02d24f0654912fcc2cd5217bd01580b10c48f",
+    "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "sleeve.py": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b"
+  },
+  "summary_checks": 14,
+  "workflow_checks": 383,
+  "artifact_files_verified": 171,
+  "atomic_arrays_verified": 96,
+  "independent_workflow_reconstruction": {
+    "E2_M1": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 1.4094628242311558e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 1.5178830414797062e-18,
+      "explicit_weight_controller_max_error": 8.881784197001252e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "M0_E2": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 2.168404344971009e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 1.5178830414797062e-18,
+      "explicit_weight_controller_max_error": 8.881784197001252e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "extreme_joint": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 5.204170427930421e-18,
+      "inner_fee_max_error": 2.168404344971009e-19,
+      "virtual_return_max_error": 6.938893903907228e-18,
+      "explicit_weight_controller_max_error": 8.881784197001252e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 133,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "extreme_standalone_E2": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 5.204170427930421e-18,
+      "inner_fee_max_error": 2.168404344971009e-19,
+      "virtual_return_max_error": 6.938893903907228e-18,
+      "explicit_weight_controller_max_error": 8.881784197001252e-16,
+      "target_formula_max_error": 2.7755575615628914e-17,
+      "gross_cap_count": 42,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "forced_outer_cap": {
+      "decisions": 7,
+      "earning_rows": 6,
+      "actual_accounting_max_error": 9.575673587391974e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 0.0,
+      "explicit_weight_controller_max_error": 0.0,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 7,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "joint_future": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 1.4094628242311558e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 1.3010426069826053e-18,
+      "explicit_weight_controller_max_error": 7.771561172376096e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "joint_prefix": {
+      "decisions": 108,
+      "earning_rows": 107,
+      "actual_accounting_max_error": 1.4094628242311558e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 1.3010426069826053e-18,
+      "explicit_weight_controller_max_error": 7.771561172376096e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "joint_restart": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 1.4094628242311558e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 1.5178830414797062e-18,
+      "explicit_weight_controller_max_error": 8.881784197001252e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "joint_trimmed": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 1.4094628242311558e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 1.5178830414797062e-18,
+      "explicit_weight_controller_max_error": 8.881784197001252e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": true
+    },
+    "joint_zero_returns": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 0.0,
+      "inner_fee_max_error": 0.0,
+      "virtual_return_max_error": 0.0,
+      "explicit_weight_controller_max_error": 0.0,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "known_netting_reversals": {
+      "decisions": 7,
+      "earning_rows": 6,
+      "actual_accounting_max_error": 1.734723475976807e-18,
+      "inner_fee_max_error": 0.0,
+      "virtual_return_max_error": 0.0,
+      "explicit_weight_controller_max_error": 0.0,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    },
+    "standalone_E2": {
+      "decisions": 167,
+      "earning_rows": 166,
+      "actual_accounting_max_error": 2.168404344971009e-18,
+      "inner_fee_max_error": 5.421010862427522e-20,
+      "virtual_return_max_error": 1.5178830414797062e-18,
+      "explicit_weight_controller_max_error": 8.881784197001252e-16,
+      "target_formula_max_error": 0.0,
+      "gross_cap_count": 0,
+      "trimmed_path_bound_to_full_three_book_hashes": false
+    }
+  },
+  "temporal_inner_M0_trimmed_identities_exact": true,
+  "limitations": [
+    "No policy was executed by this audit.",
+    "Runtime observation equivalence is verified on the prospective synthetic path; the century gate remains outstanding.",
+    "The one actual joint economic run still requires the source-bound root release."
+  ]
+}

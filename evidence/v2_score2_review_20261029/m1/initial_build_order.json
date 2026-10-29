@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python",
+    "evidence/v2_score2_review_20261029/m1/e2e.py",
+    "--snapshot",
+    "/workspace/scratch/a83c191d516f/v2-followup-snapshot",
+    "--out",
+    "evidence/v2_score2_review_20261029/m1/expected_red_unexecuted"
+  ],
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "harness_sha256_before_policy": "5c58c7bf086af5b8792ee9ccff538d874428f9e8322eaf37e66812a6b0f70788",
+  "plan_sha256_before_policy": "f8a0e5e084ca928ed418841689da9c0bc21949ecd51f4ceb834115a2d867d58a",
+  "policy_absent": true,
+  "expected_missing_policy_exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/e2e.py\", line 2, in <module>\n    from sleeve import MarketSleeve\nModuleNotFoundError: No module named 'sleeve'\n",
+  "actual_market_execution": false
+}

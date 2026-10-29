@@ -1,0 +1,29 @@
+{
+  "reviewer": "score2_challenge",
+  "scope": "Independent static review of prospective wave-2 master specification; no new strategy execution",
+  "plan_path": "/workspace/scratch/a83c191d516f/continual-research-takehome/research/v2/SCORE2_RESEARCH_PLAN_20261029.md",
+  "plan_sha256": "5c6b189fde1ff35f19ec979698f0e939c2878e1589c4d257e7c8fa8419b25d6e",
+  "decision": "accepted",
+  "required_changes": [],
+  "findings": {
+    "E1": "Convex scalar tracking objective is dimensionally coherent as a declared penalty; actual netted stock fees divided by inherited horizon20; floor/zero-v/warmup/feasible interval explicit. No calibrated-utility claim.",
+    "E2": "gamma=200/a and cap=.05*a give frictionless homothetic equivalence only away from fixed gross5 binding; caveat is correct. Independent engines and nonresetting daily coefficient changes are required.",
+    "F3": "State updated through feature close; forecast t uses c[t-1], newest label t-1 uses c[t-2]. Interaction excludes beta and uses complete53-column fits with diagonal ridge; only original13 linear coefficients mix. No same-label state leakage in specification.",
+    "M1": "Actual basket uses stock replication, its own combined drift/costs, constant+.05 after inner multiplier, gross5 cap. Inner state independent. Pre-cap bound .1+.05/N is correct and must also apply to an admitted conditional composition containingM1.",
+    "composition": "At most one ofE1/E2, F3 andM1 admitted separately; at leasttwo families; one exact composed run and no subset/rescue search. Promotion against best admitted standalone and predetermined numericaltie handling are explicit.",
+    "selection": "NetSharpe primary; historical masks exposeddevelopment; no introduced MSE/significance veto. Beta/causality/solvency/runtime remain operational requirements."
+  },
+  "implementation_clarifications": [
+    "When F3 enters the conditional composition, the execution reference book and any volatility multiplier must use that F3 book, not a retained F2 return history. This follows the stated construction order and must be checked in source.",
+    "An outer M1 makes the chosen execution objective actual only within its independent inner book; final costs are those of the combined actual stock positions. The plan does not claim their objectives are identical."
+  ],
+  "verification_limit": "Static acceptance only. Prospective harness and source reviews, synthetic workflows and actual original-scorer outcomes remain required.",
+  "narrow_followup": {
+    "previous_plan_sha256": "5c6b189fde1ff35f19ec979698f0e939c2878e1589c4d257e7c8fa8419b25d6e",
+    "final_plan_sha256": "84e6d400dccc71c6a5b88ce189bd370c357d6bda0346246ce57ebf3c75a74fd2",
+    "only_change_verified_by_reversing_declared_text": true,
+    "decision": "accepted",
+    "required_changes": [],
+    "change": "Makes explicit that any admitted F3 composition supplies the execution reference and VT moments; no separate F2 history retained."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "reviewer": "score2_challenge",
+  "decision": "accepted_for_first_synthetic_run",
+  "required_changes": [],
+  "scope": "Independent state, timing, scorer, prospective workflow and source identity review; a separate reviewer checks scalar KKT and homogeneity mathematics.",
+  "source_sha256": {
+    "PLAN.md": "44e808526fb83ba5dc8f635e67dee7d9852396bec40dfe497c3ade51e328e744",
+    "e2e.py": "5994d6f2b31163d8f618d8a83c2171c70d8dae5be3e0ce92b357d14647cdd3fd",
+    "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "run_actual.py": "855c10958ed8dec3fb8530b910a2b667e48118572f7a280e48ef54e9c1a557ca",
+    "runtime.py": "f988ea777ae411f5c9886bbf94fcce525ddce43e4bde906aaf21b26ffb8fd2d2",
+    "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "pre_implementation_manifest.json": "d057fd384db79b591b20005c586eb9c9ba8830929b6f571bcbe143d757a00169"
+  },
+  "original_scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+  "findings": {
+    "reference_identity": "F2 forecast and virtual VT overlay are byte-identical to the previously admitted F2+VTvol reference; ce3 engine/allocator/scorer identities are pinned in common.prepare.",
+    "state_and_clock": "The inherited overlay advances the same reference virtual book and VT second moments. Modified actual output is installed in previous_actual; subsequent actual drift uses that book. E2 uses two namespaced engine modules, distinct risk/warm states, and configures only once per forecast call.",
+    "risk_updates": "E2 changes gamma and stock cap in its existing CONFIG object each decision; the published-history risk update remains causal and is not reset daily. Forecast starts reset both engines.",
+    "costs_and_constraints": "E1 objective uses actual drifted holdings and declared cost horizon. E2 allocator consumes actual holdings. Original scorer evaluates actual stock-level netted trades, free opening and final charged non-earning rebalance. Target bounds and certificates are checked prospectively.",
+    "prospective_harness": "Missing-policy failure retained before implementation, with current harness/common/runtime/PLAN hashes unchanged. Planned complete workflows cover baseline reference identity, both modifications, future/prefix/restarts, zero costs, zero returns and forced gross cap. Scalar KKT is independently reconstructed in the harness.",
+    "homogeneity_scope": "The zero-cost E2 reference equality check explicitly requires the virtual gross cap to be nonbinding; a separate 128-stock, high-forecast stress covers gross-cap binding without asserting false homogeneity.",
+    "evidence": "Actual runner saves atomic targets, scorer rows and forecast arrays with readback hashes and complete daily economic columns. Mapped row counts match original scorer endpoints. Bootstrap upper endpoint includes the last legal block start.",
+    "runtime": "Century extension is a prospective operational stress only; enforce one CPU via execution command for the strongest runtime claim. No successful policy run or timing result is asserted by this review."
+  },
+  "limitations": [
+    "This is source acceptance for the first synthetic execution, not evidence that synthetic or actual-market checks have passed.",
+    "Actual scoring remains subject to explicit root release after the source-bound synthetic workflow passes.",
+    "The separate mathematical reviewer should report scalar KKT and E2 homogeneity conclusions before admission."
+  ]
+}

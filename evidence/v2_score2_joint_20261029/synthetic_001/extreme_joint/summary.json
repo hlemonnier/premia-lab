@@ -1,0 +1,92 @@
+{
+  "checks": {
+    "finite": true,
+    "solvent": true,
+    "gross_bound": true,
+    "stock_bound": true,
+    "virtual_certificates": true,
+    "inner_certificates": true,
+    "risk_clock": true,
+    "independent_state": true,
+    "allocation_parameters": true,
+    "inner_raw_beta": true,
+    "inner_dynamic_stock_bound": true,
+    "error_supplied_held": true,
+    "error_recorded_fee": true,
+    "error_inner_fee": true,
+    "error_inner_held": true,
+    "error_target_formula": true,
+    "error_decomposition": true,
+    "error_virtual_return": true,
+    "error_q63": true,
+    "error_q1008": true,
+    "error_multiplier": true,
+    "error_recorded_inner_return": true,
+    "accounting": true,
+    "input_unchanged": true,
+    "finite_rows_forecast": true,
+    "row_count": true,
+    "decision_count": true,
+    "decision_clock": true,
+    "opening_free": true,
+    "endpoint_charged": true,
+    "forecast_warmup": true,
+    "decision_hash_readback": true
+  },
+  "all_passed": true,
+  "performance": {
+    "full": {
+      "n": 166,
+      "net_sharpe": -0.2956083518775239,
+      "gross_sharpe": 0.9095376561927772,
+      "net_return_ann_pct": -3.102948668399823,
+      "net_vol_ann_pct": 10.496823410745288,
+      "cost_ann_pct": 12.637850868402094,
+      "net_beta": -0.06637014581180545,
+      "mean_gross": 4.9999604621999,
+      "worst_gross_daily_return": -0.021801376389813977
+    },
+    "discovery": {
+      "n": 166,
+      "net_sharpe": -0.2956083518775239,
+      "gross_sharpe": 0.9095376561927772,
+      "net_return_ann_pct": -3.102948668399823,
+      "net_vol_ann_pct": 10.496823410745288,
+      "cost_ann_pct": 12.637850868402094,
+      "net_beta": -0.06637014581180545,
+      "mean_gross": 4.9999604621999,
+      "worst_gross_daily_return": -0.021801376389813977
+    }
+  },
+  "forecast_seconds": 0.0903208439995069,
+  "mean_rebalance_ms": 16.95933498225472,
+  "p99_rebalance_ms": 141.27163944940543,
+  "accounting_max_error": 0.0,
+  "independent_errors": {
+    "supplied_held": 0.0,
+    "recorded_fee": 0.0,
+    "inner_fee": 0.0,
+    "inner_held": 0.0,
+    "target_formula": 0.0,
+    "decomposition": 4.553649124439119e-18,
+    "virtual_return": 0.0,
+    "q63": 0.0,
+    "q1008": 0.0,
+    "multiplier": 0.0,
+    "recorded_inner_return": 0.0
+  },
+  "outer_cap_count": 133,
+  "decision_hashes": {
+    "targets": "d63027d05d30ccf3a9592fdbec4c6f9f6bb4b09474c939d9c2cda3e3dbc0e432",
+    "inner_targets": "b0233d4d9ccea3e33d459a1edb5c9a4e214b923e18cd61d405787be0794041bc",
+    "virtual_targets": "eb936237ad2c0107f4ce68ee1eef56dce45261f402ebed46a85cb2bee80a8cd6"
+  },
+  "input_array_sha256": [
+    "29c17e2581388388e09b47cb5000e2ef6484f8d883596abba290f20ed586f081",
+    "4399add7282ce437c1b46412100ca7d61cd6f2b5b4cb6a7d55d20082147ecdd6",
+    "9061163fa3ccb7c1c27f7398d5879ccdb658fa91738ed6bcdda5bfd94092b4ff"
+  ],
+  "trimmed_observation": false,
+  "runtime_stress_only": false,
+  "max_rss_kib": 81908
+}
