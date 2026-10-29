@@ -39,7 +39,7 @@ next to this file.
 | Every solve certified, all bounds respected (5) | 7,054 of 7,054 `ok`; max \|w\| 0.0165; max gross 3.04 | same |
 | Allocator failure paths on the shipped files (6) | 0 failures | `v3_failure_paths.log` |
 | Clean folder, unmodified `score.py strategy` | Sharpe 1.44, beta 0.10, 17.8 ms/rebalance | `v3_clean_folder_run.log` |
-| 25,200-row one-CPU runtime | see below | `v3_runtime_check.log` |
+| 25,200-row one-CPU runtime | pass: mean rebalance 11.4 ms (p99 20.4, max 317); forecast 34.8 s (0.01 h per century); all solves `ok`; worst day −1.8% | `v3_runtime_check.log` |
 
 Before the package existed, the checks failed as expected (`v3_integration_checks_before.log`,
 ModuleNotFoundError). The first clean-folder attempt failed because of my run settings:
@@ -97,4 +97,5 @@ documented this). So even the no-sleeve book is partly market carry.
 - **Beta-estimation error.** Hedges use raw trailing betas, so realized beta grows with book
   size.
 - **Cost sensitivity.** Fees are small (0.25%/yr) but rise with turnover if premia change faster.
-- **Integration and runtime.** Two solves per day; see the runtime log.
+- **Integration and runtime.** Two solves per day. The mean is 11 ms on one CPU, but single
+  calls can reach about 0.3 s.
