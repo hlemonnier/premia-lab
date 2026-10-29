@@ -1,0 +1,52 @@
+{
+  "arrays": {
+    "targets.npy": {
+      "path": "targets.npy",
+      "shape": [
+        3527,
+        1000
+      ],
+      "dtype": "float64",
+      "array_sha256": "7d8582a62d0d4bcb03a4911484f2f30564abd0483e00e072f0a64d54778cb0c4",
+      "file_sha256": "4915f9f1088394467f356371c979323751c8b5b7d4115599a57277b4cc0b5026",
+      "verified": true
+    },
+    "virtual_targets.npy": {
+      "path": "virtual_targets.npy",
+      "shape": [
+        3527,
+        1000
+      ],
+      "dtype": "float64",
+      "array_sha256": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850",
+      "file_sha256": "4da574ed4313cf793af1a29d9236bf3652f1e1f922edf49dd00272f3327ea3aa",
+      "verified": true
+    },
+    "rows.npy": {
+      "path": "rows.npy",
+      "shape": [
+        3526,
+        5
+      ],
+      "dtype": "float64",
+      "array_sha256": "a1d217710e1878ea77a8291fb1b329125fbb5b8093c8cf6a8f3e4a6c487b5fb5",
+      "file_sha256": "d39eca4b353066497fcc8705c14b1793ba0c54db6a0368fab94aff9ce24bfa77",
+      "verified": true
+    },
+    "forecast.npy": {
+      "path": "forecast.npy",
+      "shape": [
+        3780,
+        1000
+      ],
+      "dtype": "float64",
+      "array_sha256": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927",
+      "file_sha256": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350",
+      "verified": true
+    }
+  },
+  "accounting_max_error": 0.0,
+  "opening_index": 252,
+  "first_earning_index": 253,
+  "final_decision_index": 3778
+}

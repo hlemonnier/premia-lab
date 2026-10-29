@@ -1,0 +1,23 @@
+{
+  "stage": "prospective_harness_before_policy",
+  "utc": "2026-10-28T23:54:19.428175+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "evidence/v2_score2_execution_20261029/e2e.py",
+    "--snapshot",
+    "/workspace/scratch/a83c191d516f/v2-followup-snapshot",
+    "--out",
+    "evidence/v2_score2_execution_20261029/expected_red_001"
+  ],
+  "returncode": 1,
+  "expected_missing_policy": true,
+  "policy_absent": true,
+  "sha256": {
+    "PLAN.md": "44e808526fb83ba5dc8f635e67dee7d9852396bec40dfe497c3ade51e328e744",
+    "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "e2e.py": "5994d6f2b31163d8f618d8a83c2171c70d8dae5be3e0ce92b357d14647cdd3fd",
+    "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "runtime.py": "f988ea777ae411f5c9886bbf94fcce525ddce43e4bde906aaf21b26ffb8fd2d2"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "reviewer": "score2_execution",
+  "date_utc": "2026-10-29",
+  "scope": "E2 composition interface, prospective runtime observation adapter, and narrow saved synthetic full-versus-trimmed readback",
+  "status": "accepted; no required corrections",
+  "source_manifest": {
+    "path": "evidence/v2_score2_joint_20261029/pre_review_source_manifest.json",
+    "sha256": "8f547556c7d30a4b1aca2517332bdaf223081f9979a7d88c51ef7fc0b7eb1bf3",
+    "all_nine_files_match": true,
+    "all_five_dependencies_byte_identical_to_owners": true
+  },
+  "source_sha256": {
+    "PLAN.md": "ef38677e96a486edea1b693490b399ed57ed028252dae7274b5d3671a7e95a00",
+    "E2E_SPEC.md": "400d6e73c38f9e8249b13259e81fea2da92418a03d7642b8c2718f1b5b9fd2cf",
+    "e2e.py": "70442c0f8d91cdb07b383d4ca74d80d83786f1b72585db00e259d20d8caa83d3",
+    "joint.py": "2beeb7beb6d2107818d7570047c02d24f0654912fcc2cd5217bd01580b10c48f",
+    "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "sleeve.py": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b"
+  },
+  "source_findings": [
+    "The factory only composes unchanged common.wrapper(clean, E2, make_execution) with unchanged MarketSleeve. No parameter, forecast or allocator modification is introduced.",
+    "MarketSleeve drifts its independent inner_target using the inner portfolio return before supplying held_positions to E2. It separately checks outer actual holdings against its own outer return. E2 therefore receives the same independent held-book interface as standalone E2.",
+    "E2 retains separate namespaced actual and virtual engines, configure-once session resets, gamma 200/a and stock cap .05*a. The original virtual F2 state alone determines a.",
+    "Observer hashes every completed actual, inner and virtual target before trimming. Its own previous-book copies and scalar record count are updated before deleting completed diagnostic array copies.",
+    "Trimming touches only policy.records dictionaries/lists after the complete outer rebalance. It does not touch policy previous_actual, inner_target, virtual_target, learned risk state, moments, allocation configuration or warm starts.",
+    "Neither unchanged policy reads old diagnostic records for its next decision. Each appends the current record before consulting the latest record, so keeping one stripped old diagnostic record does not change the next transition.",
+    "The missing-factory red retains economic_runs=0 and a harness hash identical to the reviewed executable. Full-versus-trimmed equality and the 25,200-row runtime mode were present prospectively.",
+    "Runtime mode runs the original scorer on one selected joint, requires separate source-bound root authorization, records no alpha metric, retains scalar diagnostics and all rolling book hashes, and checks the one-core/thread and timing limits."
+  ],
+  "synthetic_readback": {
+    "result": "evidence/v2_score2_joint_20261029/synthetic_001/result.json",
+    "result_sha256": "f23fa2a55efaf9bbf6c8b120bfdeded7daec33ac961baef17dc68082410fdbe5",
+    "reported_all_passed": true,
+    "independently_rehashed_full_target_arrays_match_both_full_and_trimmed_streams": true,
+    "all_three_trimmed_final_targets_equal_last_full_targets": true,
+    "forecast_arrays_equal_exactly": true,
+    "four_economic_columns_equal_exactly": true,
+    "decisions": 167,
+    "stocks": 64,
+    "stream_sha256": {
+      "targets": "9767e2b64fdf2b082733013bff5b17d39a9afae783c346c720391988262ddc22",
+      "inner_targets": "e6598394677ea24d4f722dfb0ea5d025b9a6a9bb4ff2ed9a017f1306f3fd07ca",
+      "virtual_targets": "e054d83e46c7f352966850c86deda5bc4bffc453ca36b86bf5bdd89c63a8edf8"
+    }
+  },
+  "required_corrections": [],
+  "limitations": [
+    "E2 optimizes transaction costs of its independent inner book. The original scorer charges fully netted combined E2-plus-market-sleeve trades. The composition is not a single optimizer of total combined-book costs.",
+    "The inherited ce3 allocator applies a proportional gross reduction after its stock-cap/beta solve; a certificate does not certify a different final gross-constrained optimization problem.",
+    "The challenge reviewer separately covers complete joint state, costs and synthetic evidence. This review independently reads only the declared execution/runtime scope.",
+    "No policy, actual-market or runtime workflow was executed by this reviewer. A passing synthetic trimming comparison is not a completed 25,200-row timing gate.",
+    "This review binds the ce3 research factory. A later production integration must preserve c51 engineering fixes and demonstrate its own required equivalence and runtime evidence."
+  ]
+}

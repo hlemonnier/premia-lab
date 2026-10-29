@@ -1,0 +1,39 @@
+{
+  "path": "evidence/v2_score2_root_20261029/F3_ACTUAL_RELEASE.json",
+  "sha256": "5bf1b77f21d883bba507d95562422368fd84dcd8e338df5d36c3fa561f95e355",
+  "release": {
+    "approved": true,
+    "plan_commit": "d2997e0d98c6407da4b503a77060966904486062",
+    "plan_sha256": "84e6d400dccc71c6a5b88ce189bd370c357d6bda0346246ce57ebf3c75a74fd2",
+    "baseline_source_commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+    "all_periods_development": true,
+    "no_parameter_changes": true,
+    "allow_actual": true,
+    "source_sha256": {
+      "PLAN.md": "033d147366e9a438947ef4603606eed471c728e068ba34a8cdda0fdaf288d183",
+      "E2E_SPEC.md": "47d14d3b23d257ca22a1e4faaab320f9c51e77e153d4eecffce55b51ecf18a25",
+      "e2e.py": "dfd1d01bb9af6718e8824f7aa62b8537da3c26296753fd65f60a2eac960901ea",
+      "prototype.py": "cc9df99a01cf991143aa03ef37d0ab3746b47ca9b417dec42eee9e069f662921",
+      "baseline_forecast.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+      "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8"
+    },
+    "baseline_source_manifest": {
+      "commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+      "sha256": {
+        "handoff_v2/strategy.py": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3",
+        "handoff_v2/model_v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "handoff_v2/model_v2/engine.py": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8",
+        "handoff_v2/model_v2/allocator.py": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518",
+        "source/Quant Research Take-Home/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+      }
+    },
+    "independent_review_sha256": "74815c3f5eb1729bbb15cb4a6a54cce618d555f0acb1fa8ba8178ddef0fc6e36",
+    "synthetic_result_sha256": "47515a30e97a134337749f8f55273adf66c53090e122385295fb5ff3ab29e80f",
+    "cpu": 1,
+    "allowed_candidates": [
+      "baseline_F2_VTvol",
+      "F3_VTvol"
+    ],
+    "allowed_verification": "the already specified actual future/prefix checks"
+  }
+}

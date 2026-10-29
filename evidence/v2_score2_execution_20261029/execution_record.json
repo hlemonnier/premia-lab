@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-29T00:03:52.282157+00:00",
+  "synthetic_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python evidence/v2_score2_execution_20261029/e2e.py --snapshot /workspace/scratch/a83c191d516f/v2-followup-snapshot --out evidence/v2_score2_execution_20261029/e2e_001 > evidence/v2_score2_execution_20261029/e2e_001.stdout.log 2> evidence/v2_score2_execution_20261029/e2e_001.stderr.log",
+  "synthetic_exit_code": 0,
+  "synthetic_result_sha256": "e6c3631ad15f4a72494082331e49daf9dc4ac0c11201444e6f805e56f5dfdee6",
+  "checks": 220,
+  "all_passed": true,
+  "prospective_red_manifest_sha256": "d057fd384db79b591b20005c586eb9c9ba8830929b6f571bcbe143d757a00169",
+  "source_review": "../v2_score2_review_20261029/execution_source_review.json",
+  "math_review": "../v2_score2_forecast_20261029/execution_math_review.json",
+  "actual_run": "completed",
+  "runtime_gate": "not run",
+  "actual_release": {
+    "path": "evidence/v2_score2_root_20261029/EXECUTION_ACTUAL_RELEASE.json",
+    "sha256": "bcf4598ac2ae4dcf1649988bcf2a5d520330d9b657296150f43e9dcffcde18ec",
+    "plan_commit": "d2997e0d98c6407da4b503a77060966904486062",
+    "source_bindings_verified": true
+  },
+  "actual_start_utc": "2026-10-29T00:19:08.172718+00:00",
+  "actual_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 taskset -c 2 /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python evidence/v2_score2_execution_20261029/run_actual.py --snapshot /workspace/scratch/a83c191d516f/v2-followup-snapshot --data \"/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home\" --e2e-result evidence/v2_score2_execution_20261029/e2e_001/result.json --reference-ledger evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/daily.csv --out evidence/v2_score2_execution_20261029/actual_001 > evidence/v2_score2_execution_20261029/actual_001.stdout.log 2> evidence/v2_score2_execution_20261029/actual_001.stderr.log",
+  "actual_exit_code": 0,
+  "actual_completed_utc": "2026-10-29T00:21:35.897103+00:00",
+  "actual_result_sha256": "cbb3cb6e1ef0aced17fcce7a3963f13ebd69499c955a6936ced7849952f3abe6",
+  "actual_stderr_empty": true,
+  "actual_source_unchanged": true
+}

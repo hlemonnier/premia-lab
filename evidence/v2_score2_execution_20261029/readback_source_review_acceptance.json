@@ -1,0 +1,26 @@
+{
+  "reviewer": "score2_execution",
+  "date_utc": "2026-10-29",
+  "status": "accepted for observational saved-target readback",
+  "prior_review": {
+    "path": "readback_source_review.json",
+    "sha256": "5eafe7397e33b211e8b5e51140095e7b1ec64242aa1172492c14f9551b3a40c4",
+    "preserved_unchanged": true
+  },
+  "accepted_source": "evidence/v2_score2_root_20261029/actual_readback.py",
+  "accepted_source_sha256": "c3da767a7240ecabec9f5c00bb83c7b0e843209badcf91336701d5ee1fbd4d5b",
+  "scope_sha256": "ec9d5b27e93583ec51a2e077393a3b61ed27e5b33f0a7d03c00084e5063e0463",
+  "narrow_correction_verified": [
+    "Original returns, costs and the fixed previous-leader daily CSV are hash-asserted before loading against the exact identities in the prior review.",
+    "Both existing atomic-array manifest formats are supported. Every declared file is checked against its file hash, shape, dtype and available raw-array hash.",
+    "Targets and scorer rows must be present in the verified manifest. Optional forecast, virtual-target and inner-target arrays cannot be reported as released inputs without a verified entry.",
+    "The output records the verified manifest path, manifest hash and each verified file hash.",
+    "Economic reconstruction, endpoint treatment, stage masks, original performance definitions, paired bootstrap and actual M1-minus-M0 attribution remain unchanged."
+  ],
+  "required_corrections": [],
+  "executed_by_reviewer": {
+    "policy": false,
+    "readback": false
+  },
+  "limits": "Acceptance covers the frozen observational source. It does not substitute for running the readback or the separately required conditional-joint source/synthetic review and runtime gate."
+}

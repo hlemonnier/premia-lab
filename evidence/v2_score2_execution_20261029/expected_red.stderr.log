@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_execution_20261029/e2e.py", line 2, in <module>
+    from execution import make_execution
+ModuleNotFoundError: No module named 'execution'
