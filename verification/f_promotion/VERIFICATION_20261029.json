@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-29",
+  "audited_source_commit": "b78de17a13161d65de4031a33dad2d7bde60c70f",
+  "scope": "Promotion verification, not a new model search or independent future sample",
+  "python_and_requirements_git_blobs": {
+    "strategy.py": "9446112212e6976910932c95bb6e463382d2ed26",
+    "model_f/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "model_f/allocator.py": "dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f",
+    "model_f/config.py": "03d427d67f3f87eb22850ac4f7acc8e581ba1b2c",
+    "model_f/engine.py": "30397d946d967265ef28cbaa1165d267f1077760",
+    "model_f/factor_risk.py": "33a46ec19c9d8b227b917c935b9132eacfffe99c",
+    "model_f/policy.py": "eef0be64dc44502a42378ee738c1cb4c5412c55d",
+    "requirements.txt": "f8c52fbb464d1ce17380b1450a954b25918e7459"
+  },
+  "exact_daily_economic_row_match": true,
+  "max_daily_economic_error": 0.0,
+  "original_scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+  "result": {
+    "net_sharpe": 1.493439947872387,
+    "gross_sharpe": 1.5553595680897465,
+    "annual_net_mean": 0.06394030500984439,
+    "annual_vol": 0.04281411187703681,
+    "beta": 0.10123325604555358,
+    "annual_fees": 0.0025516059471698046,
+    "mean_gross": 1.759035609749103,
+    "max_gross": 3.1000957498188932,
+    "worst_net_day": -0.01691901954823233,
+    "n_scored": 3526,
+    "rebalance_ms_mean": 9.51226138315341,
+    "rebalance_ms_p99": 17.62791699999866,
+    "rebalance_ms_max": 147.47329400000808,
+    "finite": true,
+    "kind": "release",
+    "cost_scale": 1,
+    "forecast_seconds": 5.823091230999978,
+    "wall_seconds": 39.85386371199999,
+    "projected_forecast_hours_per_century": 0.010783502279629589,
+    "peak_rss_mib": 761.6796875,
+    "cashflow_error": 1.0408340855860843e-16,
+    "source_days": 3780,
+    "certificates": {"ok": 7054}
+  },
+  "prior_attempts": [
+    "Streaming launch unsupported before execution.",
+    "Synchronous initial replay exceeded the 120-second tool timeout after caching; no pass claimed. Cached-input retry completed successfully."
+  ],
+  "decision": "Pass for unchanged-code promotion; historical statistical gate still fails and is not relabeled."
+}
