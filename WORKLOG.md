@@ -231,3 +231,54 @@ policy snapshot or environment_status tool exposed; no credential or TCP-readine
 assumption is made. Existing GitHub and web connectors serve external read/write
 work, and all numerical execution remains local. Original source/scorer and
 Claude's production branch are preserved. No outgoing messages or submission.
+
+
+### Completed second-wave outcome
+
+The precommitted four standalone alternatives and sole conditional composition
+are complete. Net Sharpe: prior F2 + VTvol 1.318335; E1 1.329123; E2 1.339582;
+F3 1.294393 (rejected); M1 1.426561; selected F2 -> E2 -> M1 1.444733.
+The winner improves on the prior leader by 0.126398 (+9.59% relative Sharpe),
+and on original V2 by 0.202230. It has net beta 0.102978 and annual actual fees
+0.253792%. All three historical segments improve versus the prior leader;
+the final segment is slightly weaker than M1 alone. No extra policy or
+parameter rescue was added after outcomes.
+
+E2 prices actual trades around its independently held inner book and reduces
+costs. The fixed +0.05 stock-replicated market sleeve adds intentional market
+exposure around the unchanged raw-beta forecast; it is distinct from the
+previously rejected beta-corrected policy targeting total beta 0.05. The final
+scorer prices combined netted trades. This gain is not represented as a newly
+identified stock-selection premium or as one globally optimized combined-cost
+portfolio. The 0.3 factor penalty and inherited post-solve gross scaling retain
+their earlier interpretation limits.
+
+The master plan preceded scores at d2997e0. Prospective E2E harnesses, missing-
+implementation failures and independent reviews preceded actual runs. F3/M1
+JSON serialization failures and the initial readback provenance correction
+remain visible. Joint synthetic checks: 14 summary and 383 assertions across
+12 runs. Joint actual checks: 9 summary and 192 assertions across 6 runs.
+Exact E2/M0/inner-book/controller, altered-future, prefix and restart identities
+pass. Both 3,527-solve books certify on original history.
+
+Root's independent stock-target accounting confirms the selected score with
+maximum error 5.20417e-18. Paired 63-day fixed-policy intervals are
+[0.045126,0.194149] versus the previous leader and [0.007364,0.029751] versus
+M1. These are exposed-development descriptions, without adjustment for the
+research search or independent future confirmation.
+
+The separately released 25,200-row, 1,000-stock computational run completes
+with 20.036-second forecasting and 7.990-ms mean rebalance time on one CPU and
+one numerical-library thread. All 3 summary and 31 workflow checks pass.
+The maximum individual call is 150.264 ms; the brief requires the mean below
+100 ms. Repeated data are runtime evidence only, with no alpha score reported.
+
+Decision: nominate the exact combined research policy for Claude integration,
+preserving the current c51d31f production safeguards. Production has not been
+modified by this wave. Integration still requires faithful original-scorer,
+causal and runtime reproduction on the actual deployable package. Reports:
+research/v2/SCORE2_RESEARCH_RESULTS_20261029.md and
+research/v2/SCORE2_IMPLEMENTATION_HANDOFF_20261029.md. Complete text evidence,
+losslessly archived small arrays/diagnostic CSVs and explicit regeneration
+instructions for large intermediates are retained. No outgoing submission or
+calendar was created.

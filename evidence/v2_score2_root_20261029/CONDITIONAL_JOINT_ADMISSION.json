@@ -1,0 +1,28 @@
+{
+  "plan_commit": "d2997e0d98c6407da4b503a77060966904486062",
+  "reference_net_sharpe": 1.318334966090838,
+  "standalone_net_sharpes": {
+    "E1": 1.3291230770162463,
+    "E2": 1.3395817822087963,
+    "F3": 1.2943927925112546,
+    "M1": 1.426560898191992
+  },
+  "selected_execution": "E2",
+  "forecast": "unchanged F2; F3 does not qualify",
+  "outer_sleeve": "M1 fixed+0.05",
+  "decision": "one conditional E2+M1 composition admitted",
+  "composition_order": [
+    "F2 forecast",
+    "E2 actual-book allocation with independent F2 VT reference",
+    "outer independent M1 stock sleeve"
+  ],
+  "promotion_threshold": 1.4265609081919919,
+  "no_subset_search": true,
+  "no_parameter_changes": true,
+  "source_result_sha256": {
+    "execution": "cbb3cb6e1ef0aced17fcce7a3963f13ebd69499c955a6936ced7849952f3abe6",
+    "forecast": "317efd3f6d738279f98aa831abbd54a9973dcd1fe70ab36e14e631f32c67bb37",
+    "market": "98495701d57df8397b1aac70e54ab72727e8f8bb2cbffeb84c4e107e8ab17b5c"
+  },
+  "joint_economic_execution": "not yet performed"
+}

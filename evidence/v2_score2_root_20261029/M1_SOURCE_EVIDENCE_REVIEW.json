@@ -1,0 +1,123 @@
+{
+  "decision": "accepted_for_actual_release",
+  "reviewer": "root",
+  "scope_sha256": "7b915f36684b6d4b000069c1dbe8fa4d3fdde228c2f24b866ce7c7ecf098daad",
+  "readback_source_sha256": "44d340b2e56db5e8b3378b5c876f23b80a37f080aadb9a71322642a14a24bc75",
+  "synthetic_result_sha256": "651480fadeb0d5acc87140a82998f3b4e6067057fd2621ad81ca0c3ea76e567b",
+  "source_sha256": {
+    "sleeve.py": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b",
+    "e2e.py": "0095e461a0a9d1818bb53944d6cb0716c91196ffd7f217edf128b7c8b4521e3d",
+    "PLAN.md": "f8a0e5e084ca928ed418841689da9c0bc21949ecd51f4ceb834115a2d867d58a"
+  },
+  "baseline_source_manifest": {
+    "commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+    "sha256": {
+      "handoff_v2/strategy.py": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3",
+      "handoff_v2/model_v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "handoff_v2/model_v2/engine.py": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8",
+      "handoff_v2/model_v2/allocator.py": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518",
+      "source/Quant Research Take-Home/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    }
+  },
+  "reference_sources": {
+    "joint.py": "fcf6dd9a917299516bb3b5bee92f9488b0546f7bf3914f7a2289bfeb4c104b33",
+    "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "prototype.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "e2e.py": "2a0ebbcdbcf14bc95975729b7699474b25f2a21f754ed5d7fb2b0ac3748cc9ba"
+  },
+  "artifact_hashes_verified": 69,
+  "atomic_arrays_verified": 32,
+  "checks_passed": 97,
+  "workflows": {
+    "M0": {
+      "decisions": 167,
+      "economic_rows": 166,
+      "max_error_g_fee_gross_market": [
+        1.3010426069826053e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ]
+    },
+    "M1": {
+      "decisions": 167,
+      "economic_rows": 166,
+      "max_error_g_fee_gross_market": [
+        8.673617379884035e-19,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ]
+    },
+    "forced_aggregate_cap": {
+      "decisions": 7,
+      "economic_rows": 6,
+      "max_error_g_fee_gross_market": [
+        9.575673587391974e-18,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ]
+    },
+    "known_returns_reversals": {
+      "decisions": 7,
+      "economic_rows": 6,
+      "max_error_g_fee_gross_market": [
+        1.734723475976807e-18,
+        4.336808689942018e-19,
+        0.0,
+        0.0
+      ]
+    },
+    "synthetic_M1_future": {
+      "decisions": 167,
+      "economic_rows": 166,
+      "max_error_g_fee_gross_market": [
+        8.673617379884035e-19,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ]
+    },
+    "synthetic_M1_prefix": {
+      "decisions": 108,
+      "economic_rows": 107,
+      "max_error_g_fee_gross_market": [
+        8.673617379884035e-19,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ]
+    },
+    "synthetic_M1_restart": {
+      "decisions": 167,
+      "economic_rows": 166,
+      "max_error_g_fee_gross_market": [
+        8.673617379884035e-19,
+        5.421010862427522e-20,
+        0.0,
+        0.0
+      ]
+    },
+    "zero_returns": {
+      "decisions": 7,
+      "economic_rows": 6,
+      "max_error_g_fee_gross_market": [
+        0.0,
+        2.168404344971009e-19,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "inner_is_exact_M0": true,
+  "source_findings": [
+    "Independent inner and outer drift denominators and states.",
+    "Fixed market sleeve added after inner multiplier; true combined stock trades.",
+    "Causal forecast forwarding and own-session resets; no future data use.",
+    "Only proportional outer gross reduction; no implied free market instrument.",
+    "Atomic writes and final-rebalance/no-liquidation endpoint match scorer.",
+    "Original failed serialization run and expected missing-policy run preserved."
+  ],
+  "required_changes": []
+}

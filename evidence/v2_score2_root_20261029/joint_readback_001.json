@@ -1,0 +1,333 @@
+{
+  "scope_sha256": "ec9d5b27e93583ec51a2e077393a3b61ed27e5b33f0a7d03c00084e5063e0463",
+  "readback_source_sha256": "c3da767a7240ecabec9f5c00bb83c7b0e843209badcf91336701d5ee1fbd4d5b",
+  "original_scorer_unchanged": true,
+  "no_policy_execution": true,
+  "all_history_development": true,
+  "input_sha256": {
+    "returns.csv": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+    "costs.csv": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186",
+    "score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+    "prior_joint_daily.csv": "6b5a467fff8ca72be740195ca41e52b0d8b15057f899dfdb6b88fe448ced246c"
+  },
+  "results": {
+    "joint_E2_M1": {
+      "folder": "evidence/v2_score2_joint_20261029/actual_001/E2_M1",
+      "input_sha256": {
+        "targets.npy": "3813aafe0f6fa65fa3849af85108e90a902c5ab640571ad131288693fe252c32",
+        "rows.npy": "27f4b8fba1f2100e90ef8fbf7e2b4756f84f6e9b8f892c6b71c278bd4d294052",
+        "forecast.npy": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350",
+        "virtual_targets.npy": "4da574ed4313cf793af1a29d9236bf3652f1e1f922edf49dd00272f3327ea3aa",
+        "inner_targets.npy": "1529fdd4249d362e7da4de583d7c2a3b847ab0c89e2fdfeee7a60fe1e9c71c24"
+      },
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.444733300556666,
+          "gross_sharpe": 1.5023068897502845,
+          "net_return_ann_pct": 6.608952578373799,
+          "net_vol_ann_pct": 4.574513909125873,
+          "cost_ann_pct": 0.25379249486154437,
+          "net_beta": 0.1029775197423842,
+          "mean_gross": 1.8265270274181922,
+          "max_closing_gross": 3.0432651484642004,
+          "worst_gross_daily_return": -0.017854025812106863,
+          "rebalance_ms_mean": 7.810726733137122,
+          "rebalance_ms_p99": 11.44627874600701,
+          "rebalance_ms_max": 138.10446499701357
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.1990348668887263,
+          "gross_sharpe": 1.2643562748689268,
+          "net_return_ann_pct": 5.954916733825671,
+          "net_vol_ann_pct": 4.966424995861528,
+          "cost_ann_pct": 0.3137978023753424,
+          "net_beta": 0.10239993391571973,
+          "mean_gross": 1.963284252103008,
+          "max_closing_gross": 3.0432651484642004,
+          "worst_gross_daily_return": -0.017854025812106863,
+          "rebalance_ms_mean": 7.913517836560882,
+          "rebalance_ms_p99": 11.485214707499827,
+          "rebalance_ms_max": 138.10446499701357
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.8423639698233736,
+          "gross_sharpe": 1.8936674661758892,
+          "net_return_ann_pct": 7.689106371962707,
+          "net_vol_ann_pct": 4.173500186664993,
+          "cost_ann_pct": 0.2076258399057114,
+          "net_beta": 0.10135850826004075,
+          "mean_gross": 1.7498829684845274,
+          "max_closing_gross": 2.9676774486688497,
+          "worst_gross_daily_return": -0.01685010423634308,
+          "rebalance_ms_mean": 7.592593504445358,
+          "rebalance_ms_p99": 10.6477471384278,
+          "rebalance_ms_max": 13.983406002807897
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.654663968477725,
+          "gross_sharpe": 1.699259116304249,
+          "net_return_ann_pct": 6.801872258766345,
+          "net_vol_ann_pct": 4.110727246344768,
+          "cost_ann_pct": 0.17540419456107476,
+          "net_beta": 0.10696627833252347,
+          "mean_gross": 1.6103415794435134,
+          "max_closing_gross": 2.52681997848411,
+          "worst_gross_daily_return": -0.014714353916439911,
+          "rebalance_ms_mean": 7.8623283046933,
+          "rebalance_ms_p99": 12.358613200922273,
+          "rebalance_ms_max": 90.6971459990018
+        }
+      },
+      "verified_array_manifest": {
+        "path": "evidence/v2_score2_joint_20261029/actual_001/E2_M1/array_manifest.json",
+        "sha256": "b47d435638ee44de4e8acd2c0af14f3a86dac75776118e4264f4d8caa28c8f5f",
+        "verified_files": {
+          "rows.npy": "27f4b8fba1f2100e90ef8fbf7e2b4756f84f6e9b8f892c6b71c278bd4d294052",
+          "forecast.npy": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350",
+          "decision_indices.npy": "5eccf6dc463d3e6770117c3e0e9ffc4b19550f0802add212594b618efd20b7e1",
+          "virtual_returns.npy": "2ad34d21e948e542fc1064a00150c3fd630fef1c4de215ee464cecfe57749392",
+          "controller_trace.npy": "f81cce9762bbeeaefcbbdf2a8d46cb6fe65627073cd7f142301256758d851fe7",
+          "targets.npy": "3813aafe0f6fa65fa3849af85108e90a902c5ab640571ad131288693fe252c32",
+          "inner_targets.npy": "1529fdd4249d362e7da4de583d7c2a3b847ab0c89e2fdfeee7a60fe1e9c71c24",
+          "virtual_targets.npy": "4da574ed4313cf793af1a29d9236bf3652f1e1f922edf49dd00272f3327ea3aa"
+        }
+      },
+      "checks": {
+        "saved_target_accounting": true,
+        "finite": true,
+        "solvent": true,
+        "gross_cap": true,
+        "stock_bound": true,
+        "net_beta": true,
+        "mean_runtime": true
+      },
+      "max_error_g_fee_gross_market": [
+        5.204170427930421e-18,
+        2.31239994600424e-19,
+        0.0,
+        0.0
+      ],
+      "decision_rows": 3527,
+      "economic_rows": 3526,
+      "first_decision": 252,
+      "last_decision": 3778,
+      "earning_rows": [
+        253,
+        3778
+      ],
+      "first_opening_fee": 0.0,
+      "final_charged_rebalance_fee": 4.1790885620037246e-06,
+      "no_forced_liquidation": true,
+      "max_actual_weight": 0.016483975263491053,
+      "allowed_stock_weight_bound": 0.10005,
+      "max_target_gross": 3.0432651484642004,
+      "paired_intervals_vs_prior_leader": {
+        "21": {
+          "point": 0.12639833446583856,
+          "lo": 0.04642356550925607,
+          "hi": 0.20252159104511494,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        },
+        "63": {
+          "point": 0.12639833446583856,
+          "lo": 0.04512627884817285,
+          "hi": 0.19414854892191136,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        },
+        "126": {
+          "point": 0.12639833446583856,
+          "lo": 0.04112280677878099,
+          "hi": 0.19165855844561858,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        }
+      },
+      "paired_intervals_vs_M1": {
+        "21": {
+          "point": 0.018172402364674243,
+          "lo": 0.007456007046388567,
+          "hi": 0.029299432356230688,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        },
+        "63": {
+          "point": 0.018172402364674243,
+          "lo": 0.007364008651822686,
+          "hi": 0.02975074739930807,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        },
+        "126": {
+          "point": 0.018172402364674243,
+          "lo": 0.008204607285907696,
+          "hi": 0.03060748953333291,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        }
+      }
+    },
+    "M1": {
+      "folder": "evidence/v2_score2_review_20261029/m1/actual_001/M1",
+      "input_sha256": {
+        "targets.npy": "a2b17450b5c71bcd4de767c1c769d232d34a38ce12297d498604bf3d880c9bad",
+        "rows.npy": "76c07deef6bbcdd09fbaf5294febcd67f0b0488f6e4b3427f6b1a7fdc592a6b5",
+        "forecast.npy": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350",
+        "inner_targets.npy": "4915f9f1088394467f356371c979323751c8b5b7d4115599a57277b4cc0b5026"
+      },
+      "performance": {
+        "full": {
+          "n": 3526,
+          "net_sharpe": 1.426560898191992,
+          "gross_sharpe": 1.5026019869426024,
+          "net_return_ann_pct": 6.5098694966091895,
+          "net_vol_ann_pct": 4.563330948478771,
+          "cost_ann_pct": 0.33704030323399803,
+          "net_beta": 0.1027110969667179,
+          "mean_gross": 1.8342634125635875,
+          "max_closing_gross": 3.1719645411878576,
+          "worst_gross_daily_return": -0.017854025812106863,
+          "rebalance_ms_mean": 3.2900555691892874,
+          "rebalance_ms_p99": 4.756130500027211,
+          "rebalance_ms_max": 119.80602399853524
+        },
+        "discovery": {
+          "n": 1762,
+          "net_sharpe": 1.1786691068745696,
+          "gross_sharpe": 1.2614124758881902,
+          "net_return_ann_pct": 5.847366340024079,
+          "net_vol_ann_pct": 4.960990583293823,
+          "cost_ann_pct": 0.39928780085339577,
+          "net_beta": 0.10223349446960717,
+          "mean_gross": 1.9654870697359053,
+          "max_closing_gross": 3.1719645411878576,
+          "worst_gross_daily_return": -0.017854025812106863,
+          "rebalance_ms_mean": 3.3618194949077167,
+          "rebalance_ms_p99": 4.9291638589056666,
+          "rebalance_ms_max": 119.80602399853524
+        },
+        "validation": {
+          "n": 1007,
+          "net_sharpe": 1.8102604044369095,
+          "gross_sharpe": 1.881548466151362,
+          "net_return_ann_pct": 7.518724702753498,
+          "net_vol_ann_pct": 4.153394000291486,
+          "cost_ann_pct": 0.29246248750181786,
+          "net_beta": 0.10135153676362589,
+          "mean_gross": 1.7719202060698136,
+          "max_closing_gross": 3.081478630353461,
+          "worst_gross_daily_return": -0.01649571715317969,
+          "rebalance_ms_mean": 3.2057084597117944,
+          "rebalance_ms_p99": 4.800969434727447,
+          "rebalance_ms_max": 9.805214001971763
+        },
+        "audit": {
+          "n": 755,
+          "net_sharpe": 1.6644954621429757,
+          "gross_sharpe": 1.7286926280295198,
+          "net_return_ann_pct": 6.816404203061012,
+          "net_vol_ann_pct": 4.095177402457527,
+          "cost_ann_pct": 0.2514534550485606,
+          "net_beta": 0.1060488693594532,
+          "mean_gross": 1.611932847005424,
+          "max_closing_gross": 2.6252267058336205,
+          "worst_gross_daily_return": -0.014619144683795349,
+          "rebalance_ms_mean": 3.23414624371259,
+          "rebalance_ms_p99": 4.504387400666019,
+          "rebalance_ms_max": 5.688395998731721
+        }
+      },
+      "verified_array_manifest": {
+        "path": "evidence/v2_score2_review_20261029/m1/actual_001/M1/array_manifest.json",
+        "sha256": "6fd76cd6ec59feb9938047e38e43c4b9406bf1ebcd292792edcbd4d936ee0185",
+        "verified_files": {
+          "targets.npy": "a2b17450b5c71bcd4de767c1c769d232d34a38ce12297d498604bf3d880c9bad",
+          "inner_targets.npy": "4915f9f1088394467f356371c979323751c8b5b7d4115599a57277b4cc0b5026",
+          "rows.npy": "76c07deef6bbcdd09fbaf5294febcd67f0b0488f6e4b3427f6b1a7fdc592a6b5",
+          "forecast.npy": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350"
+        }
+      },
+      "checks": {
+        "saved_target_accounting": true,
+        "finite": true,
+        "solvent": true,
+        "gross_cap": true,
+        "stock_bound": true,
+        "net_beta": true,
+        "mean_runtime": true
+      },
+      "max_error_g_fee_gross_market": [
+        6.938893903907228e-18,
+        2.261577969168982e-19,
+        0.0,
+        0.0
+      ],
+      "decision_rows": 3527,
+      "economic_rows": 3526,
+      "first_decision": 252,
+      "last_decision": 3778,
+      "earning_rows": [
+        253,
+        3778
+      ],
+      "first_opening_fee": 0.0,
+      "final_charged_rebalance_fee": 4.036593601700492e-06,
+      "no_forced_liquidation": true,
+      "max_actual_weight": 0.016390760452184874,
+      "allowed_stock_weight_bound": 0.10005,
+      "max_target_gross": 3.1719645411878576,
+      "paired_intervals_vs_prior_leader": {
+        "21": {
+          "point": 0.10822593210116431,
+          "lo": 0.02908012222038909,
+          "hi": 0.1837280675500071,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        },
+        "63": {
+          "point": 0.10822593210116431,
+          "lo": 0.02759250301316306,
+          "hi": 0.17612889798384485,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        },
+        "126": {
+          "point": 0.10822593210116431,
+          "lo": 0.0226212507943916,
+          "hi": 0.17440165394061,
+          "draws": 2000,
+          "seed": 20261027,
+          "last_legal_block_start_included": true
+        }
+      }
+    }
+  },
+  "ranked_observed_scores": [
+    [
+      "joint_E2_M1",
+      1.444733300556666
+    ],
+    [
+      "M1",
+      1.426560898191992
+    ]
+  ],
+  "limitations": [
+    "Source/temporal/solver certification is recorded in each independent release packet.",
+    "Intervals are fixed-policy development-history descriptions, not search-adjusted validation.",
+    "An integrated production runtime gate is separate from current instrumented timings."
+  ]
+}
