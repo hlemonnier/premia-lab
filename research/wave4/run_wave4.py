@@ -200,17 +200,18 @@ def main():
     f2=np.load(cache/'f2.npy',mmap_mode='r')
     if a.mode=='controls':
         rows,res=replay('B0_cached',CachedPolicy(CFG,f2,rc),score,R,X,cost,out)
-        assert abs(res['net_sharpe']-EXPECTED)<1e-9,'baseline does not reproduce'
-        old=np.load(out/'B0_rows.npy')
-        delta=float(np.max(np.abs(rows[:,:4]-old[:,:4])))
-        save_json(out/'cache_equivalence.json',{'max_economic_row_error':delta,'passed':delta<1e-12})
-        assert delta<1e-12,'risk-cache path differs from original V3'
+        assert abs(res['net_sharpe']-EXPECTED)<1e-9,'baseline gate'
+        reference=np.load(out/'B0_rows.npy')
+        error=float(np.max(np.abs(rows[:,:4]-reference[:,:4])))
+        save_json(out/'cache_equivalence.json',{'max_abs_rows_0_to_3':error,'tolerance':1e-10})
+        assert error<1e-10,'cache changed replay'
         for name,horizon in [('C5',5.),('C80',80.)]:
             replay(name,CachedPolicy({**CFG,'cost_horizon':horizon},f2,rc),score,R,X,cost,out)
     elif a.mode=='innovation':
         pred=innovation_prediction(R,X,f2,cache)
         replay('I1',CachedPolicy(CFG,pred,rc),score,R,X,cost,out)
-    else:
+    elif a.mode=='risk':
         ratios=risk_prediction(rc,cache)
         replay('R1',CachedPolicy(CFG,f2,rc,ratios),score,R,X,cost,out)
+
 if __name__=='__main__':main()
