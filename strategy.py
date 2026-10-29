@@ -1,36 +1,45 @@
-"""F: causal characteristic-factor allocation with multihorizon factor risk.
+"""GLS ensemble: two causal return estimates with the unchanged F risk model.
 
-The 13 characteristics and their squares describe a useful shared return/risk
-structure. Forecasts use pooled causal ridge learners with half-lives 1008/252
-and a trailing-beta column. F leaves that alpha unchanged and predicts bounded
-corrections to the variances of the 26 characteristic factors. A shared Gamma
-GLM with three multihorizon predictors is refitted every 126 days using matured
-labels only. The old factor correlations and specific variances are retained.
+The 13 characteristics, their centered squares and trailing beta describe useful
+shared return/risk structure. F2 estimates their premia using pooled ridge
+learners with 1008/252-day half-lives. The second estimator weights each matured
+cross-section by its lagged factor-plus-specific noise covariance, profiles a
+daily nuisance intercept and uses coefficient-wise ridge shrinkage. Covariance
+inputs precede their training labels; predictions use only earlier source rows.
 
-We selected a parsimonious, causally fitted factor-variance adjustment because its historical improvement survives removing the explicit market sleeve and increasing trading costs, while improving the factor-variance forecasting diagnostic. The incremental Sharpe remains statistically uncertain, and a simpler total-risk scaling control performs similarly.
+We selected a fixed 50/50 combination of two causal estimates of the same return premia: the original F2 forecast and a covariance-weighted, coefficient-wise-regularized forecast. The historical gain survives removing the explicit market sleeve and increasing trading costs, but its added value is not statistically established.
 
-Positions come from a certified diagonal-plus-low-rank risk allocator with
-linear transaction costs, estimated-beta hedge, caps and a virtual-book risk
-multiplier. A fixed 0.05 equal-weight market position is explicit market carry,
-not stock alpha. The observed supplied-sample beta is about 0.101, not a promise
-that future beta remains below 0.2.
+The blend was fixed before testing; pure GLS scored below F. Matched controls
+support covariance weighting and coefficient-wise shrinkage acting jointly,
+not a penalty-independent GLS advantage. No reviewer-tested ridge variation
+has replaced the original configuration.
 
-Development Sharpe was 1.49344 versus V3 1.44473. All supplied years have been
-exposed to research; bootstrap intervals for incremental performance include
-zero. Do not interpret causal code or this historical score as proof against
-overfitting. Unknown future changes in factor premia, volatility, correlations
-or market carry can remove the advantage; estimated-beta hedging is imperfect.
+Construction remains F: bounded three-predictor Gamma adjustments to factor
+variances, unchanged correlations/specific risk, a certified cost-aware
+allocator, estimated-beta hedge, limits and virtual-book sizing. A fixed 0.05
+equal-weight market sleeve is explicit market carry, not stock-selection alpha.
 
-Hugo directed the research toward useful ML and insisted on causal evaluation.
-The AI assistant implemented the models, ran comparisons and authored the code
-and evidence. No independent-person review is claimed.
+Development net Sharpe was 1.53322 versus F 1.49344, with beta about 0.094.
+All fifteen years were exposed during research. Incremental-performance
+intervals include zero; causal code and small model size do not rule out
+selection overfit. Premia, volatility, correlations and market carry may change.
+Neither future outperformance, beta compliance nor a downside floor is assured;
+extreme unseen returns can cause ruin despite historical sizing checks.
 
-Requires the adjacent model_f package and NumPy, SciPy, scikit-learn (tested
-with 2.3.5, 1.17.0, 1.8.0 respectively). The supplied scorer also uses pandas.
-No source data, trained-model file, local research repository or network is needed.
+Hugo directed the research, required causal testing and attribution, and chose
+this frozen ensemble after review. GPT implemented the model and verification;
+Claude, a different AI model, reproduced and reviewed it and accepted the tiny
+stock-order solver discrepancy. This is not an independent human review or a
+new market sample. Selection under uncertainty is not a statistical-test pass.
+
+Requires gls_alpha.py, the adjacent model_f package and NumPy, SciPy and
+scikit-learn; requirements.txt pins tested versions. The original scorer also
+needs pandas. No research checkout, data-file read, saved fitted model,
+prediction cache or network is required by the strategy.
 """
-from model_f.factor_risk import FactorPolicy
-POLICY = FactorPolicy()
+from gls_alpha import CandidatePolicy
+
+POLICY = CandidatePolicy()
 
 def forecast(returns_history, characteristics_history):
     return POLICY.forecast(returns_history, characteristics_history)

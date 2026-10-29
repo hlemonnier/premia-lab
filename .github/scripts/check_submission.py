@@ -1,6 +1,7 @@
 """E2E release check: validate and execute the actual exported submission ZIP.
 
-Written before moving F to the submission root. Uses constructed data only;
+Adapted before promoting the frozen GLS ensemble at the submission root.
+Uses constructed data only;
 this is a packaging/causality regression check, not an economic validation.
 """
 from __future__ import annotations
@@ -16,7 +17,7 @@ import tempfile
 import zipfile
 
 FILES = {
-    'README.md', 'requirements.txt', 'strategy.py',
+    'README.md', 'requirements.txt', 'strategy.py', 'gls_alpha.py',
     'model_f/__init__.py', 'model_f/allocator.py', 'model_f/config.py',
     'model_f/engine.py', 'model_f/factor_risk.py', 'model_f/policy.py',
 }
@@ -25,6 +26,7 @@ MAINTENANCE = {
     '.github/scripts/check_submission.py', '.github/workflows/submission.yml',
 }
 FROZEN_BLOBS = {
+    'gls_alpha.py': 'f26b3c5b8c8578525af7db19f01898140b9b7fc7',
     'model_f/__init__.py': 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391',
     'model_f/allocator.py': 'dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f',
     'model_f/config.py': '03d427d67f3f87eb22850ac4f7acc8e581ba1b2c',
@@ -33,16 +35,11 @@ FROZEN_BLOBS = {
     'model_f/policy.py': 'eef0be64dc44502a42378ee738c1cb4c5412c55d',
     'requirements.txt': 'f8c52fbb464d1ce17380b1450a954b25918e7459',
 }
-RATIONALE = (
-    'We selected a parsimonious, causally fitted factor-variance adjustment '
-    'because its historical improvement survives removing the explicit market '
-    'sleeve and increasing trading costs, while improving the factor-variance '
-    'forecasting diagnostic. The incremental Sharpe remains statistically '
-    'uncertain, and a simpler total-risk scaling control performs similarly.'
-)
-# Executable structure of the previously audited F strategy entry point.
-ENTRYPOINT = '''from model_f.factor_risk import FactorPolicy
-POLICY = FactorPolicy()
+RATIONALE = 'We selected a fixed 50/50 combination of two causal estimates of the same return premia: the original F2 forecast and a covariance-weighted, coefficient-wise-regularized forecast. The historical gain survives removing the explicit market sleeve and increasing trading costs, but its added value is not statistically established.'
+
+# Executable structure of the audited standalone GLS entry point.
+ENTRYPOINT = '''from gls_alpha import CandidatePolicy
+POLICY = CandidatePolicy()
 def forecast(returns_history, characteristics_history):
     return POLICY.forecast(returns_history, characteristics_history)
 def rebalance(held_positions, expected_returns, returns_history,
@@ -143,7 +140,7 @@ def main() -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(['git', '-C', str(repo), 'archive', '--format=zip',
                     '--output=' + str(output), args.ref], check=True)
-    with zipfile.ZipFile(output) as archive, tempfile.TemporaryDirectory(prefix='f_submission_') as temp:
+    with zipfile.ZipFile(output) as archive, tempfile.TemporaryDirectory(prefix='gls_submission_') as temp:
         names = {i.filename for i in archive.infolist() if not i.is_dir()}
         require(names == FILES, f'export contents differ: {sorted(names ^ FILES)}')
         package = Path(temp)
@@ -155,14 +152,14 @@ def main() -> None:
         for name, expected in FROZEN_BLOBS.items():
             data = (package / name).read_bytes()
             actual = hashlib.sha1(f'blob {len(data)}\0'.encode() + data).hexdigest()
-            require(actual == expected, 'audited F source changed: ' + name)
+            require(actual == expected, 'frozen GLS/F source changed: ' + name)
         module = ast.parse((package / 'strategy.py').read_text())
         note = ast.get_docstring(module)
         require(note is not None and 150 <= len(note.split()) <= 650, 'missing or oversized strategy note')
         require(RATIONALE in ' '.join(note.split()), 'selection rationale missing from strategy note')
         require(RATIONALE in ' '.join((package / 'README.md').read_text().split()), 'README rationale missing')
         module.body = module.body[1:]
-        require(ast.dump(module) == ast.dump(ast.parse(ENTRYPOINT)), 'F executable entry point changed')
+        require(ast.dump(module) == ast.dump(ast.parse(ENTRYPOINT)), 'audited GLS executable entry point changed')
         env = dict(os.environ, PYTHONPATH='', PYTHONDONTWRITEBYTECODE='1',
                    OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
         child = subprocess.run([sys.executable, '-I', str(Path(__file__).resolve()), '--inside', str(package)],
@@ -174,7 +171,7 @@ def main() -> None:
         'archive': output.name, 'archive_files': sorted(names),
         'archive_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
         'frozen_helper_and_requirements_checks': len(FROZEN_BLOBS),
-        'entrypoint_executable_ast_unchanged': True, 'e2e': result}
+        'entrypoint_matches_audited_gls': True, 'e2e': result}
     output.with_suffix('.checks.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(receipt, indent=2))
 

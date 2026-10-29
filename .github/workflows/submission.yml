@@ -1,7 +1,7 @@
 name: Submission package
 on:
   push:
-    branches: [main, submission-ready-f-20261029]
+    branches: [main, 'submission-ready-*']
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
         continue-on-error: true
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: F-submission-${{ github.sha }}
+          name: GLS-submission-${{ github.sha }}
           path: |
             dist/Continual_Research_Submission.zip
             dist/Continual_Research_Submission.checks.json
