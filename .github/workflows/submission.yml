@@ -32,6 +32,8 @@ jobs:
       - name: Verify the exported package and causal E2E paths
         run: python .github/scripts/check_submission.py
       - name: Retain the ready-to-submit ZIP and check receipt
+        id: artifact
+        continue-on-error: true
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: F-submission-${{ github.sha }}
@@ -40,3 +42,8 @@ jobs:
             dist/Continual_Research_Submission.checks.json
           if-no-files-found: error
           retention-days: 30
+      - name: Explain an unavailable artifact upload
+        if: steps.artifact.outcome == 'failure'
+        run: |
+          echo '::warning::Package verification passed, but optional artifact upload failed. Use git archive or the local check command to obtain the ZIP.'
+          echo 'The submission checks passed. Optional artifact storage is unavailable; this is not a model/test failure. Export locally with `git archive --format=zip --output=Continual_Research_Submission.zip HEAD`.' >> "$GITHUB_STEP_SUMMARY"

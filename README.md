@@ -24,10 +24,16 @@ The strategy requires NumPy, SciPy and scikit-learn; `requirements.txt` records 
 
 Submit this folder's `strategy.py` and the entire `model_f/` directory; include this README and `requirements.txt`. Source data and the employer's scorer are deliberately not redistributed. There are no alternate candidate directories or experiments in the submission.
 
-For maintainers, the **Submission package** workflow checks the exported archive in isolation and produces `Continual_Research_Submission.zip`. The same check runs locally:
+For maintainers, the **Submission package** workflow checks the exported archive in isolation and builds `Continual_Research_Submission.zip`. Upload to GitHub artifact storage is optional and may be unavailable when the account quota is full; the verification step remains mandatory. The same check builds a local ZIP:
 
 ```bash
 python .github/scripts/check_submission.py
+```
+
+To export an already verified commit without rerunning checks:
+
+```bash
+git archive --format=zip --output=Continual_Research_Submission.zip HEAD
 ```
 
 The check preserves the audited F helper identities, validates the entry point and note, and exercises complete constructed forecast/rebalance paths, prefixes, altered futures and session resets. It is a regression check, not a fresh statistical evaluation. Git export attributes exclude maintenance files from the submission ZIP.
