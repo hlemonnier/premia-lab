@@ -17,9 +17,13 @@ EVIDENCE (supplied scorer, full fees; all rows already examined during research)
   V2                    1.243      0.047   0.18%
   stock book alone      1.340      0.053   0.24%     1.12 / 1.63
   with market sleeve    1.445      0.103   0.25%     1.19 / 1.76
-The simulated market returned 14.5%/yr (Sharpe 1.02). If the sleeve earned no premium the
-score would be 1.29; if all realized beta earned none, 1.12. Variants were pre-registered in
-waves of five with the 0.05 fixed in advance, but on exposed history: expect shrinkage.
+The sleeve's +0.105 is market exposure. The simulated market returned 14.5%/yr (Sharpe 1.02).
+A common-market-mean sensitivity, holding measured betas, volatility, nonmarket means,
+positions and costs fixed, favors the no-sleeve book below about 4.4% a year (at a zero
+market mean: 1.12 with the sleeve, 1.17 without). This is arithmetic, not a replay on an
+altered market. Variants were pre-registered in waves of five with the 0.05 fixed in advance,
+but all history is exposed development data: causality checks pass, yet future Sharpe and
+beta remain unknown.
 
 WHAT COULD GO WRONG OVER DECADES
 A falling or flat market removes the sleeve's contribution and the 0.05 of beta carried
