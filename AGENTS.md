@@ -11,3 +11,5 @@ Document failure modes and expected outcomes before implementation, then write c
 Before updating main, run `python .github/scripts/check_submission.py`. Any executable change also requires original-scorer reproduction and applicable causality/runtime checks on its research branch. Commit only allowlisted submission/maintenance files; do not merge research folders into main. Passing CI does not imply statistical superiority or enforced branch protection.
 
 Never submit externally or message the evaluator without explicit authorization.
+
+Submission documentation and the strategy note use first-person singular (I, my), never we/our/us. Describe the research path and decisions in Hugo's voice while keeping AI implementation and separate AI review accurately attributed. Keep numerical claims, dependency lists and package contents aligned with the frozen release; a supplied writing example is not authority to restore obsolete model facts.

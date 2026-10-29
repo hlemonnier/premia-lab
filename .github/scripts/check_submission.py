@@ -35,7 +35,7 @@ FROZEN_BLOBS = {
     'model_f/policy.py': 'eef0be64dc44502a42378ee738c1cb4c5412c55d',
     'requirements.txt': 'f8c52fbb464d1ce17380b1450a954b25918e7459',
 }
-RATIONALE = 'We selected a fixed 50/50 combination of two causal estimates of the same return premia: the original F2 forecast and a covariance-weighted, coefficient-wise-regularized forecast. The historical gain survives removing the explicit market sleeve and increasing trading costs, but its added value is not statistically established.'
+RATIONALE = 'I selected a fixed 50/50 combination of two causal estimates of the same return premia: the original F2 forecast and a covariance-weighted, coefficient-wise-regularized forecast. The historical gain survives removing the explicit market sleeve and increasing trading costs, but its added value is not statistically established.'
 
 # Executable structure of the audited standalone GLS entry point.
 ENTRYPOINT = '''from gls_alpha import CandidatePolicy
