@@ -1,0 +1,38 @@
+{
+  "reviewer": "v3_policy_audit",
+  "review_date": "2026-10-29",
+  "timezone": "Europe/Paris",
+  "head_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+  "parent_hardened_commit": "c51d31fe63c68255f2220935a8bc615c62bd1d0c",
+  "source_decision": "accepted; no demonstrated causal/state-isolation/selected-policy implementation defect",
+  "required_policy_code_changes": [],
+  "policy_execution_by_reviewer": false,
+  "new_tests_or_variants": false,
+  "source_manifest_sha256": "e301a250b20aaf8e47a85ad81a461ca81219f6aef9d10c836b30cbac5f2b7d89",
+  "report_sha256": "d17cd9ddaba32bc7b40b2e5571ab290c17ceb2269332642a31c442cb699cb8e0",
+  "source_findings": {
+    "forecast_clock": "Newest pair X[t-2] against residual return t-1; prediction design X[t-1] and beta[t], whose returns are strictly before t.",
+    "F2": "Two full27-column ridge fits H1008/H252; only13linear coefficients averaged; squares and beta slow.",
+    "book_states": "Distinct Book/_RiskState/warm/targets for virtual and inner; separate outer target; no caller outer holdings fed into either internal optimization.",
+    "controller": "Own virtual gross returns; opening excluded;63earned observations before EW63/EW1008 ratio is active.",
+    "dynamic_configuration": "Gamma200/a and cap.05a applied locally without risk reset; virtual gamma200/cap.05.",
+    "outer": "Fixed.05/N appended after inner allocation; combined gross reduction only; scorer charges final combined trades.",
+    "session_reset": "New books and all controller/outer/certificate/clock state on every forecast; monotone daily calls enforced.",
+    "safeguards": "Inherited allocate_factor + dynamic-book final check + actual outer final check are wired in selected path."
+  },
+  "copied_engine_exact": true,
+  "copied_allocator_exact": true,
+  "evidence_qualifications": [
+    {
+      "id": "V3-P01",
+      "severity": "scope qualification; not a demonstrated package bug",
+      "finding": "Existing forced-failure checks traverse shipped allocator and engine.rebalance; they do not force failures through the new Book/ScorePolicy entrypoint. Static wiring inspected and correct."
+    },
+    {
+      "id": "V3-P02",
+      "severity": "scope qualification; evidence reviewer to close",
+      "finding": "Runtime pass boolean gates only two numerical timings; script does not record/assert affinity/threads/expected cert count. Actual invocation/configuration must establish one-core claim."
+    }
+  ],
+  "remaining_boundary": "Numerical reference provenance and source-bound verification rerun are separately reviewed; this static acceptance is not their result."
+}

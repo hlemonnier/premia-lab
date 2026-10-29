@@ -1,0 +1,71 @@
+{
+  "forecast": {
+    "path": "forecast.npy",
+    "shape": [
+      3780,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350",
+    "array_sha256": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927"
+  },
+  "targets": {
+    "path": "targets.npy",
+    "shape": [
+      3527,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "3813aafe0f6fa65fa3849af85108e90a902c5ab640571ad131288693fe252c32",
+    "array_sha256": "451dd30485aa030de900e994aa6a68f483691807b7cde0a4044c76ba79bbd5ed"
+  },
+  "inner_targets": {
+    "path": "inner_targets.npy",
+    "shape": [
+      3527,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "1529fdd4249d362e7da4de583d7c2a3b847ab0c89e2fdfeee7a60fe1e9c71c24",
+    "array_sha256": "4e07438a684c96bde15c9f154387b04e32e01629332f818ca55f7adf974c0b20"
+  },
+  "virtual_targets": {
+    "path": "virtual_targets.npy",
+    "shape": [
+      3527,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "4da574ed4313cf793af1a29d9236bf3652f1e1f922edf49dd00272f3327ea3aa",
+    "array_sha256": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850"
+  },
+  "decision_indices": {
+    "path": "decision_indices.npy",
+    "shape": [
+      3527
+    ],
+    "dtype": "int64",
+    "file_sha256": "5eccf6dc463d3e6770117c3e0e9ffc4b19550f0802add212594b618efd20b7e1",
+    "array_sha256": "029cb92995c19c6e6a91f8a9a3541803fe1e1d63e12847ebb0a2295571019935"
+  },
+  "controller": {
+    "path": "controller.npy",
+    "shape": [
+      3527,
+      6
+    ],
+    "dtype": "float64",
+    "file_sha256": "18efe99c45ca443be90c08cfa876f74d17395cedacbce446a4be31cf385d7155",
+    "array_sha256": "55d951eaec6e4ba1b845071d316fe12f20a1a41555279eebd15e24f77b5f782b"
+  },
+  "rows": {
+    "path": "rows.npy",
+    "shape": [
+      3526,
+      5
+    ],
+    "dtype": "float64",
+    "file_sha256": "f1fd4852727de8233d807102ca684031adf9d6b2383966ead15a39b9512444d5",
+    "array_sha256": "ab804adcbed6729e888ece380803dfedbe944125a0c8d74a78455eaafae4be98"
+  }
+}

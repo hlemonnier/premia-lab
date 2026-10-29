@@ -1,0 +1,42 @@
+[
+  {
+    "source": "evidence/v2_score2_execution_20261029/actual_001/E2/daily.csv",
+    "ref": "9e56aa755d20c5876485188f4c50ce959f6d63f3",
+    "blob_sha": "566174db7c67933751611598e7cf3c521b290fd9",
+    "local": "published_E2_daily.csv"
+  },
+  {
+    "source": "evidence/v2_score2_joint_20261029/actual_001/E2_M1/daily.csv",
+    "ref": "9e56aa755d20c5876485188f4c50ce959f6d63f3",
+    "blob_sha": "95d97e3ad1c0f906766e7897ad5b314ead35bedb",
+    "local": "published_joint_daily.csv"
+  },
+  {
+    "source": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_sleeve_comparison.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "blob_sha": "d2a98a3f8dfc773ff0016fea4b4dbd354318d0da",
+    "local": "claude_sleeve_comparison.py",
+    "expected_trailing_newline": true
+  },
+  {
+    "source": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_sleeve_comparison.json",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "blob_sha": "0152de1a168f39bf0d718f79382936f83a45133d",
+    "local": "claude_sleeve_comparison.json",
+    "expected_trailing_newline": false
+  },
+  {
+    "source": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/V3_INTEGRATION_RESULTS.md",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "blob_sha": "fa5c6d93769790f49682d7afe26ffc60b49957eb",
+    "local": "claude_integration_results.md",
+    "expected_trailing_newline": true
+  },
+  {
+    "source": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/handoff_v3/strategy.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "blob_sha": "e674fbbc9d17a54264d622a3a7e79d59ffbc71c4",
+    "local": "claude_strategy.py",
+    "expected_trailing_newline": true
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "source_sha256": "a40de33bfc14f8c84b5148617973af0332d34d2a62cae9649ec5a6740bb9c8bf",
+  "script_sha256": "66ba1684c04e9d584df68a0c29bf726c45c51cf82ba1a2038804c16b6b55f0f9",
+  "scope_sha256": "f41b9a654e30f3d6844a556b622e07910d1e98e10437f4c8504f405de134414c",
+  "books": {
+    "E2": {
+      "net_sharpe": 1.339581782208796,
+      "net_beta": 0.052980727371826915,
+      "market_ols_r_squared": 0.029068285003686193,
+      "annual_net_mean": 0.05894598141826299,
+      "annual_beta_times_market_mean": 0.007671569237254551,
+      "beta_times_market_mean_share_of_net_mean": 0.13014575468375694
+    },
+    "joint": {
+      "net_sharpe": 1.4447333005566658,
+      "net_beta": 0.10297751974238421,
+      "market_ols_r_squared": 0.10161281132917786,
+      "annual_net_mean": 0.06608952578373799,
+      "annual_beta_times_market_mean": 0.014911066944024982,
+      "beta_times_market_mean_share_of_net_mean": 0.22561921525686002
+    }
+  },
+  "interpretation": "Ex-post OLS descriptions, not causal alpha attribution, tradable hedge results or future forecasts.",
+  "no_policy_execution": true,
+  "no_new_selection_threshold": true
+}

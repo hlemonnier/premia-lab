@@ -1,0 +1,22 @@
+{
+  "out": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v3_market_challenge_20261029/total_dependence_001.json",
+  "sha256": "a3eb839a2f48355a3efeac5ad5a0d7f9ea49aa302adb96fa5df05aa1cb90c1ef",
+  "books": {
+    "E2": {
+      "net_sharpe": 1.339581782208796,
+      "net_beta": 0.052980727371826915,
+      "market_ols_r_squared": 0.029068285003686193,
+      "annual_net_mean": 0.05894598141826299,
+      "annual_beta_times_market_mean": 0.007671569237254551,
+      "beta_times_market_mean_share_of_net_mean": 0.13014575468375694
+    },
+    "joint": {
+      "net_sharpe": 1.4447333005566658,
+      "net_beta": 0.10297751974238421,
+      "market_ols_r_squared": 0.10161281132917786,
+      "annual_net_mean": 0.06608952578373799,
+      "annual_beta_times_market_mean": 0.014911066944024982,
+      "beta_times_market_mean_share_of_net_mean": 0.22561921525686002
+    }
+  }
+}

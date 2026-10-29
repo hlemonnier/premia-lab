@@ -1,0 +1,67 @@
+{
+  "production": {
+    "root": "/workspace/scratch/a83c191d516f/v3-audit-snapshot",
+    "commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "sha256": {
+      "handoff_v3/strategy.py": "715f8fb607fbbad6d078c3debfeb8dc3f7de12c674df14e4f4a05ed179649d59",
+      "handoff_v3/model_v3/policy.py": "58cec7e9a2665a1149766ce89e5a7c97ccfb03cf9d21c2f9f980240fd5d218e6",
+      "handoff_v3/model_v3/engine.py": "c134317d82effbf557481e7007e110a3209658d246a75a2257e856dd7047eb26",
+      "handoff_v3/model_v3/allocator.py": "b9d855b319beb76b4b6f7009e92181c5fef854be93b34cea7cbafa2c7c459f3b",
+      "verification/v3_integration_checks.py": "91679f84d0598efe7e43553fd197d483373425c1c30c9046b8e7ed4db9b67b8c",
+      "handoff_v3/model_v3/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verification/v3_runtime_check.py": "0ae1a4b160c910f869fa337f4e711ca6b18d6f0393fb4315e2e6d1519ee3043b"
+    },
+    "git_blob_sha": {
+      "handoff_v3/strategy.py": "e674fbbc9d17a54264d622a3a7e79d59ffbc71c4",
+      "handoff_v3/model_v3/policy.py": "eef0be64dc44502a42378ee738c1cb4c5412c55d",
+      "handoff_v3/model_v3/engine.py": "30397d946d967265ef28cbaa1165d267f1077760",
+      "handoff_v3/model_v3/allocator.py": "dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f",
+      "verification/v3_integration_checks.py": "f061f712de339e0f6f0f2cea29eab739891cdef3",
+      "handoff_v3/model_v3/__init__.py": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "verification/v3_runtime_check.py": "0b96964ccf6688ee6d5dc40f4780580702229f1a"
+    }
+  },
+  "research": {
+    "root": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v3_evidence_audit_20261029/research_reference",
+    "commit": "9e56aa755d20c5876485188f4c50ce959f6d63f3",
+    "sha256": {
+      "PLAN.md": "ef38677e96a486edea1b693490b399ed57ed028252dae7274b5d3671a7e95a00",
+      "E2E_SPEC.md": "400d6e73c38f9e8249b13259e81fea2da92418a03d7642b8c2718f1b5b9fd2cf",
+      "e2e.py": "70442c0f8d91cdb07b383d4ca74d80d83786f1b72585db00e259d20d8caa83d3",
+      "joint.py": "2beeb7beb6d2107818d7570047c02d24f0654912fcc2cd5217bd01580b10c48f",
+      "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+      "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+      "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+      "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+      "sleeve.py": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b"
+    }
+  },
+  "ce3": {
+    "root": "/workspace/scratch/a83c191d516f/v2-followup-snapshot",
+    "commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+    "sha256": {
+      "handoff_v2/strategy.py": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3",
+      "handoff_v2/model_v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "handoff_v2/model_v2/engine.py": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8",
+      "handoff_v2/model_v2/allocator.py": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518",
+      "source/Quant Research Take-Home/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    }
+  },
+  "inputs": {
+    "root": "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home",
+    "sha256": {
+      "returns.csv": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+      "characteristics.csv": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08",
+      "costs.csv": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186",
+      "score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    }
+  },
+  "published_daily": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v3_market_challenge_20261029/published_joint_daily.csv",
+    "sha256": "460c9ade0270b219e89b7b834e4bd668a667c01aa20c9fa96746b9670211b0b6"
+  },
+  "published_array_manifest": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v3_evidence_audit_20261029/published_array_manifest.json",
+    "sha256": "b47d435638ee44de4e8acd2c0af14f3a86dac75776118e4264f4d8caa28c8f5f"
+  }
+}

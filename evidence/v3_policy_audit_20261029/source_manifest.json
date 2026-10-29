@@ -1,0 +1,90 @@
+[
+  {
+    "target": "parent/engine.py",
+    "ref": "c51d31fe63c68255f2220935a8bc615c62bd1d0c",
+    "path": "handoff_v2/model_v2/engine.py",
+    "git_blob_sha": "30397d946d967265ef28cbaa1165d267f1077760",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/parent/engine.py",
+    "sha256": "c134317d82effbf557481e7007e110a3209658d246a75a2257e856dd7047eb26"
+  },
+  {
+    "target": "parent/allocator.py",
+    "ref": "c51d31fe63c68255f2220935a8bc615c62bd1d0c",
+    "path": "handoff_v2/model_v2/allocator.py",
+    "git_blob_sha": "dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/parent/allocator.py",
+    "sha256": "b9d855b319beb76b4b6f7009e92181c5fef854be93b34cea7cbafa2c7c459f3b"
+  },
+  {
+    "target": "head/policy.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "handoff_v3/model_v3/policy.py",
+    "git_blob_sha": "eef0be64dc44502a42378ee738c1cb4c5412c55d",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/policy.py",
+    "sha256": "58cec7e9a2665a1149766ce89e5a7c97ccfb03cf9d21c2f9f980240fd5d218e6"
+  },
+  {
+    "target": "head/handoff_v3/strategy.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "handoff_v3/strategy.py",
+    "git_blob_sha": "e674fbbc9d17a54264d622a3a7e79d59ffbc71c4",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/handoff_v3/strategy.py",
+    "sha256": "715f8fb607fbbad6d078c3debfeb8dc3f7de12c674df14e4f4a05ed179649d59"
+  },
+  {
+    "target": "head/handoff_v3/model_v3/engine.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "handoff_v3/model_v3/engine.py",
+    "git_blob_sha": "30397d946d967265ef28cbaa1165d267f1077760",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/handoff_v3/model_v3/engine.py",
+    "sha256": "c134317d82effbf557481e7007e110a3209658d246a75a2257e856dd7047eb26"
+  },
+  {
+    "target": "head/handoff_v3/model_v3/allocator.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "handoff_v3/model_v3/allocator.py",
+    "git_blob_sha": "dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/handoff_v3/model_v3/allocator.py",
+    "sha256": "b9d855b319beb76b4b6f7009e92181c5fef854be93b34cea7cbafa2c7c459f3b"
+  },
+  {
+    "target": "head/verification/v3_integration_checks.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "verification/v3_integration_checks.py",
+    "git_blob_sha": "f061f712de339e0f6f0f2cea29eab739891cdef3",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/verification/v3_integration_checks.py",
+    "sha256": "91679f84d0598efe7e43553fd197d483373425c1c30c9046b8e7ed4db9b67b8c"
+  },
+  {
+    "target": "head/verification/V3_INTEGRATION_SPEC.md",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "verification/V3_INTEGRATION_SPEC.md",
+    "git_blob_sha": "aec2ef92a63a4e95587e1c55ad066b3b201cc7df",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/verification/V3_INTEGRATION_SPEC.md",
+    "sha256": "790b6d33cbb1e91c8460c1d176523bd04e3cba013b3c81da22df59ee82ab1ae5"
+  },
+  {
+    "target": "head/verification/v3_failure_paths.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "verification/v3_failure_paths.py",
+    "git_blob_sha": "314a225fefb55b1dd1f10bc18b40ea52f2b27c35",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/verification/v3_failure_paths.py",
+    "sha256": "8e6e49ea8e1960beeaf3f61088b8a06211df6c7c924d69b0e0a0feaf3bea1bf9"
+  },
+  {
+    "target": "head/verification/v3_runtime_check.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "verification/v3_runtime_check.py",
+    "git_blob_sha": "0b96964ccf6688ee6d5dc40f4780580702229f1a",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/verification/v3_runtime_check.py",
+    "sha256": "0ae1a4b160c910f869fa337f4e711ca6b18d6f0393fb4315e2e6d1519ee3043b"
+  },
+  {
+    "target": "head/verification/v2_failure_paths.py",
+    "ref": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "path": "verification/v2_failure_paths.py",
+    "git_blob_sha": "366f4a5cb9b459a371ef974f5a3d5e893c938dc1",
+    "local_path": "evidence/v3_policy_audit_20261029/source_copies/head/verification/v2_failure_paths.py",
+    "sha256": "54b68adfc31b2a830008cab95ecce7c85dbe73ae446d5e780ad7103039b3c728"
+  }
+]

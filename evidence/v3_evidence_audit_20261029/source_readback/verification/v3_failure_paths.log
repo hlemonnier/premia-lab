@@ -1,0 +1,13 @@
+PASS forced failure, target 0.0: certified diagonal fallback  [status=fallback_diagonal beta_err=8.7e-15]
+PASS forced failure, target 0.04: certified diagonal fallback  [status=fallback_diagonal beta_err=1.4e-14]
+PASS default V2: no uncertified status stored  [{'ok'}]
+PASS target 0.03, gross cap 0.3: no uncertified status stored  [{'ok'}]
+PASS target 0.03, gross cap 0.3: gross cap respected  [max gross 0.2998]
+PASS target 0.03, gross cap 0.3: nonzero target kept under binding cap  [max |b'w-0.03| 9.02e-16, binding days 0]
+PASS (a) zero betas, target 0: valid
+PASS (b) zero caps, nonzero target: ValueError
+PASS (c) zero caps, target 0: zeros with status ok  [ok]
+PASS (d) target at max attainable: ValueError  [beta_target must lie strictly inside the attainable range (|target| < sum |b_i| cap_i)]
+
+0 failure(s)
+exit 0
