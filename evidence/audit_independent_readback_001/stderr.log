@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/review_audit_evidence.py", line 179, in main
-    check("artifact:"+relative,p.stat().st_size==entry["bytes"] and sha(p)==entry["sha256"],entry["sha256"])
-                               ^^^^^^^^
-  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 840, in stat
-    return os.stat(self, follow_symlinks=follow_symlinks)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/inputs/.characteristics.npy.g4GTIG.3yQoQL'

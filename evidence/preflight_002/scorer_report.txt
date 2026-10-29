@@ -1,1 +1,0 @@
-supplied_equal_weight_prefix sharpe  2.74   return  41.6%/yr   vol 15.1%   beta  1.00   cost 0.22%/yr   gross 1.00   forecast 0.0s (0.00 h per century)   rebalance 0.0 ms/call

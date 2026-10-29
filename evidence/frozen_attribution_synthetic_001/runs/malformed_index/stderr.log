@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/implementation_used.py", line 274, in main
-    raise ValueError("Saved ledger has malformed chronological indices at expected row " + str(t))
-ValueError: Saved ledger has malformed chronological indices at expected row 260

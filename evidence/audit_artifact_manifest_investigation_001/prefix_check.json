@@ -1,8 +1,0 @@
-{
-  "scope": "Read-only canonical byte-prefix identity comparison; no file restoration or gate change",
-  "missing_artifact": "inputs/.characteristics.npy.g4GTIG.3yQoQL",
-  "recorded_bytes": 214433792,
-  "recorded_sha256": "35ffdd2b0a27b2c58aa2bb5ad2680b44caa3ad00a4ffc4820ee700771b01a7e5",
-  "canonical_prefix_sha256": "35ffdd2b0a27b2c58aa2bb5ad2680b44caa3ad00a4ffc4820ee700771b01a7e5",
-  "exact_recoverable_prefix": true
-}

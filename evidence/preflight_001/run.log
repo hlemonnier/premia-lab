@@ -1,8 +1,0 @@
-{"name": "source_file_count", "status": "FAIL", "actual": 14}
-Traceback (most recent call last):
-  File "/workspace/scratch/305f831f543f/continual_takehome/tools/preflight.py", line 120, in main
-    record("source_file_count", len(files) == 12, len(files))
-  File "/workspace/scratch/305f831f543f/continual_takehome/tools/preflight.py", line 103, in record
-    raise AssertionError(name)
-AssertionError: source_file_count
-

@@ -1,1 +1,0 @@
-C11_synthetic_only     sharpe 126.60   return  43.1%/yr   vol  0.3%   beta -0.00   cost 0.30%/yr   gross 1.00   forecast 13.6s (0.16 h per century)   rebalance 11.5 ms/call

@@ -1,2 +1,0 @@
-cd /workspace/scratch/a72f2bd378f1/continual-research-takehome
-taskset -c 0 python -u tools/run_candidate.py --project . --strategy submission/strategy_gross.py --config research/configs/C07_additive_exact_gross.json --out evidence/discovery_C07_001

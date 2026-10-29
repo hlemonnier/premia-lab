@@ -1,1 +1,0 @@
-scheduled_trades       sharpe 15.71   return 360.9%/yr   vol 23.0%   beta  0.96   cost 17.07%/yr   gross 0.80   forecast 0.0s (0.00 h per century)   rebalance 0.0 ms/call

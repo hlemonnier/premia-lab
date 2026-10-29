@@ -1,1 +1,0 @@
-/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/validation_independent_readback_001/review.py --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/validation_independent_readback_001_rerun

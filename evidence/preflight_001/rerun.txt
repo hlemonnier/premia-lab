@@ -1,1 +1,0 @@
-/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/305f831f543f/continual_takehome/tools/preflight.py --source '/workspace/scratch/305f831f543f/continual_takehome/source/Quant Research Take-Home' --out /workspace/scratch/305f831f543f/continual_takehome/evidence/preflight_001_rerun

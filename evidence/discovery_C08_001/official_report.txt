@@ -1,1 +1,0 @@
-C08_additive_higher_gamma sharpe  0.63   return   1.2%/yr   vol  1.9%   beta  0.01   cost 0.12%/yr   gross 0.26   forecast 17.9s (0.06 h per century)   rebalance 13.2 ms/call

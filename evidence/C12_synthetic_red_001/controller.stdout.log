@@ -1,4 +1,0 @@
-{"name": "exact_admitted_configuration", "status": "PASS", "actual": {"candidate_id": "C12_local_additive", "basis": "additive", "alpha_half_life": 252.0, "ridge": 0.1, "min_training_days": 126, "feature_clip": 4.0, "risk_window": 252, "risk_min_days": 20, "variance_shrinkage": 0.2, "variance_floor": 1e-06, "risk_aversion": 1000.0, "cost_horizon": 20.0, "weight_cap": 0.01, "gross_cap": 1.0, "local_ridge": 0.3}}
-{"name": "original_scorer_identity", "status": "PASS", "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"}
-The complete new C12 module is absent; zero candidate/scorer workflows executed
-Synthetic workflow finished: EXPECTED_RED_MISSING_MODULE

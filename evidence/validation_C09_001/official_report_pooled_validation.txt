@@ -1,1 +1,0 @@
-C09_additive_long_memory:pooled_validation sharpe  0.66   return   2.7%/yr   vol  4.1%   beta  0.01   cost 0.21%/yr   gross 0.69   forecast 5.3s (0.01 h per century)   rebalance 2.0 ms/call

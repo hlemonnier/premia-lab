@@ -1,9 +1,0 @@
-{
-  "created_utc": "2026-10-27T10:58:19.608974+00:00",
-  "verifier_sha256": "309d25d824e3fcd8964c50def826787b0f86fe4a4bde0a1c93f0abeb3c29471d",
-  "plan_sha256": "4fb69198d908491a52a5d0077140fd370def4dcf4a2da453742e3a1bfb43bea7",
-  "worker_sha256": "1123bad6b74ad6a8ef639ae313a25fcfc5fa4a793121e553a33415d6fc4964b1",
-  "candidate_exists": false,
-  "config_exists": false,
-  "scope": "Prospective E2E controller frozen before candidate implementation and candidate execution"
-}

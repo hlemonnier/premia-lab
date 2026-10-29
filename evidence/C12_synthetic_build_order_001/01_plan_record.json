@@ -1,8 +1,0 @@
-{
-  "created_utc": "2026-10-27T10:57:17.852650+00:00",
-  "plan_sha256": "4fb69198d908491a52a5d0077140fd370def4dcf4a2da453742e3a1bfb43bea7",
-  "candidate_exists": false,
-  "verifier_exists": false,
-  "model_plan_sha256": "6734f57b354abd8b1e5e2102d196e10fe07b9e9bb5297f5f573d62848d39ab12",
-  "scope": "Prospective synthetic E2E plan before controller and candidate implementation; no market inputs/results accessed"
-}

@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-exec /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001/runner_used.py --scorer /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001/source/score.py --plan /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001/expectations.md --out /workspace/scratch/305f831f543f/continual_takehome/evidence/accounting_001_rerun

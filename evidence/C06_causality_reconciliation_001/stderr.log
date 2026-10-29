@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_admission_002/reconcile_groups.py", line 244, in main
-    check(f"{label}:historical_forecast_npy_sha256", npy_sha(data["forecast_prefix"]) == original_summary["output_arrays"]["forecasts.npy"]["sha256"], npy_sha(data["forecast_prefix"]))
-  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_admission_002/reconcile_groups.py", line 118, in check
-    raise AssertionError(name)
-AssertionError: A:historical_forecast_npy_sha256

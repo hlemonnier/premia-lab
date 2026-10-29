@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/implementation_used.py", line 297, in main
-    raise ValueError(f"{name} reconciliation failed at return row {t}: {actual - expected:.17g}")
-ValueError: opening_gross reconciliation failed at return row 260: -0.001

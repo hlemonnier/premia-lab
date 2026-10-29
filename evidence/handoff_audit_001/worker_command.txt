@@ -1,1 +1,0 @@
-/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python -I /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/handoff_audit_001/runner_used.py --worker /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/handoff_audit_001/worker_manifest.json

@@ -1,7 +1,0 @@
-{"name": "preimplementation_stage", "status": "PASS"}
-{"name": "fixture_each_component_nonzero", "status": "PASS"}
-{"name": "fixture_known_component_sum", "status": "PASS", "actual": {"max_abs_error": 5.421010862427522e-20}}
-{"name": "fixture_wrong_target_is_detectable", "status": "PASS", "actual": 1.5606170112551418e-05}
-{"name": "expected_missing_tool_rejection", "status": "PASS"}
-{"name": "handoff_unchanged", "status": "PASS"}
-EXPECTED_RED_MISSING_IMPLEMENTATION

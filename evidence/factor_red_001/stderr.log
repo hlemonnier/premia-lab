@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_factor_portfolio.py", line 194, in main
-    raise FileNotFoundError("New factor solver absent: expected preimplementation red stage; numerical checks NOT RUN")
-FileNotFoundError: New factor solver absent: expected preimplementation red stage; numerical checks NOT RUN

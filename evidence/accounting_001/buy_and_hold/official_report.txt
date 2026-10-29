@@ -1,1 +1,0 @@
-buy_and_hold           sharpe 15.87   return 365.4%/yr   vol 23.0%   beta  0.97   cost 0.00%/yr   gross 1.00   forecast 0.0s (0.00 h per century)   rebalance 0.0 ms/call

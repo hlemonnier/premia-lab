@@ -1,6 +1,0 @@
-{
-  "handoff/model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "handoff/model/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
-  "handoff/model/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
-  "handoff/strategy.py": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946"
-}

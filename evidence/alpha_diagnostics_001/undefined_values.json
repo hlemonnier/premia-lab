@@ -1,7 +1,0 @@
-{
-  "pearson": 0,
-  "spearman": 0,
-  "empty_buckets": 0,
-  "interpretation": "Undefined values arise from zero cross-sectional variance, unavailable past beta, or empty rank buckets; never replaced with zero.",
-  "unavailable_beta_feature_dates": 0
-}

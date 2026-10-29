@@ -1,1 +1,0 @@
-C09_additive_long_memory sharpe  0.70   return   4.8%/yr   vol  6.8%   beta  0.01   cost 0.59%/yr   gross 0.98   forecast 14.5s (0.05 h per century)   rebalance 16.2 ms/call

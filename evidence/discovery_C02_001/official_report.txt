@@ -1,1 +1,0 @@
-C02_additive           sharpe  0.64   return   4.4%/yr   vol  6.9%   beta  0.02   cost 0.78%/yr   gross 0.97   forecast 23.1s (0.08 h per century)   rebalance 24.1 ms/call

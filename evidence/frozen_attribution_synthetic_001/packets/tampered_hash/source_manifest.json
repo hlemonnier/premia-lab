@@ -1,7 +1,0 @@
-{
-  "config.json": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
-  "source/candidate/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
-  "source/candidate/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
-  "source/candidate/strategy_factor.py": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
-  "source/candidate/factor_portfolio.py": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5"
-}

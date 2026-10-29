@@ -1,7 +1,0 @@
-{
-  "stage": "03_final_tests_before_implementation",
-  "recorded_utc": "2026-10-26T14:49:18.786233+00:00",
-  "verifier_sha256": "72e417e521c72ecc5f9d109180c5f2744d97787068403c160b111fea815de60b",
-  "allocator_exists": false,
-  "reason": "Before implementation, make red-stage rerun independent of subsequently created allocator and record working directory. Numerical cases unchanged."
-}

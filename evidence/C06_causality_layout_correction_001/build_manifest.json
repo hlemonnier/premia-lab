@@ -1,9 +1,0 @@
-{
-  "status": "IMPLEMENTED_PENDING_INDEPENDENT_SOURCE_REVIEW_NO_NEW_WORKFLOW_EXECUTED",
-  "scope": "Canonical C/F preservation in verification fixture construction and layout metadata only; no candidate/scorer/scenario/tolerance changes.",
-  "files": {
-    "01_input_layout_plan.md": "9de0b82594939ab1c906b2ead82837c7c8a6ccf272753a06c97fd3b44d26739c",
-    "02_verify_causality_before.py": "1123bad6b74ad6a8ef639ae313a25fcfc5fa4a793121e553a33415d6fc4964b1",
-    "03_verify_causality_after.py": "b46df7ed7e3dec9677a7d855ca6b082c872a7c15ce645eaf15f5246f475cdc83"
-  }
-}

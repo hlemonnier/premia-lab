@@ -1,1 +1,0 @@
-C03_additive_fast      sharpe  0.11   return   0.8%/yr   vol  7.1%   beta  0.03   cost 1.73%/yr   gross 1.00   forecast 33.8s (0.12 h per century)   rebalance 17.8 ms/call

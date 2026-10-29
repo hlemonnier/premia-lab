@@ -1,9 +1,0 @@
-{
-  "recorded_utc": "2026-10-27T11:29:23.136526+00:00",
-  "expectations_sha256": "adcf3443118be8ca809a5a82b6d9a8427396e5d72e4c8dd8755fa3ec8087fd87",
-  "reviewer_source_exists": false,
-  "reviewer_has_opened_validation_outcomes": false,
-  "nomination_sha256": "fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5",
-  "release_record_sha256": "1414df7d899065b5f33983e7e5746c6a031bdc1d4e73fe3473d8e7874d1bbae1",
-  "root_authorization": "Read only the two completed validation packets after exit0; no candidate execution or audit access."
-}

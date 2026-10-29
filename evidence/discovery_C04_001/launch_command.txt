@@ -1,2 +1,0 @@
-cd /workspace/scratch/a72f2bd378f1/continual-research-takehome
-taskset -c 3 python -u tools/run_candidate.py --project . --strategy submission/strategy_factor.py --config research/configs/C04_additive_factor.json --out evidence/discovery_C04_001

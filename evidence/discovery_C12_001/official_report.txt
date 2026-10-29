@@ -1,1 +1,0 @@
-C12_local_additive     sharpe  0.63   return   4.3%/yr   vol  6.8%   beta  0.02   cost 0.83%/yr   gross 0.98   forecast 6.0s (0.02 h per century)   rebalance 3.5 ms/call

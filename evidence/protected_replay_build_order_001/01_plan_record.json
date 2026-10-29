@@ -1,8 +1,0 @@
-{
-  "created_utc": "2026-10-27T11:11:50.198608+00:00",
-  "plan_sha256": "32dc6a11c84ce4009490cccd057f0b0836f22581ef42e05ede77c51ebb0dd436",
-  "controller_exists": false,
-  "admission_plan_sha256": "105cc2ce46b4e84d98c0921f725ab90b13a4d8f13da9e854a085cb63840545cd",
-  "metric_helper_sha256": "6d34f2e9779ee50ab3a376e0f096c9524d09c3576649952c117fab32cb692f69",
-  "numeric_protected_access": false
-}

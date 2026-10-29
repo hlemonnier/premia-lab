@@ -1,9 +1,0 @@
-# Historical arrays recovered by exact standard-workflow reproduction
-
-27 October 2026, Europe/Paris. This supplement records new evidence obtained before the separate current-scope reporter was executed. The earlier statements that historical forecast/target elementwise differences were unavailable describe the earlier state of evidence; they are not the current conclusion.
-
-Root ran the unchanged standard C06 discovery workflow in `evidence/discovery_C06_repro_20261027`. It completed and produced the exact original historical `.npy` SHA256 identities for forecasts, targets and held books. Thus those binary arrays are now available as hash-identical historical references. The source, configuration, scorer and discovery input identities remain unchanged. Historical reproducibility of the standard workflow passes; the original C-layout verification-to-F-layout historical byte-equality assertion remains failed and is preserved.
-
-The separate saved-output reporter will first verify the reproduced array files against the original committed hashes, then compare the current C-layout causality baselines to those recovered F-layout reference outputs using the already frozen `atol=1e-14, rtol=1e-12`. It will report exact-byte identity and numerical agreement separately. This adds no market exposure, configuration, candidate execution or tolerance adjustment to the reporter. The originally failed combined report is not overwritten or relabeled.
-
-The representation difference is observable in source and array flags: standard discovery preserves the original Fortran-contiguous returns map; the causality worker's `.copy()` produces C-contiguous returns. The numerical differences must be measured, and the standard reproduction must not be misreported as a general historical-portability failure. No unverified numerical-library cause is asserted.
