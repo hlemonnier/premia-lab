@@ -1,0 +1,2 @@
+cut 1500 altered rows<=cut identical: True  truncated identical: True  later rows differ: True
+cut 3000 altered rows<=cut identical: True  truncated identical: True  later rows differ: True
