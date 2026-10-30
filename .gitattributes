@@ -1,1 +1,3 @@
 * text=auto eol=lf
+# Archived object identity includes original newline bytes.
+research/archive/objects/** -text
