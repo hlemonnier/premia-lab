@@ -38,13 +38,13 @@ AI tools implemented and tested the code and drafted analyses. A different AI
 reviewed GLS, not this N0 extension; I claim no separate N0 reviewer sign-off.
 I have not measured this update on the evaluator's hidden continuation.
 
-Run with the unchanged scorer and data. All helpers are in gls_alpha.py,
-model_f/ and model_n0/. NumPy, SciPy and scikit-learn are required; the scorer
+Run with the unchanged scorer and data. All numerical components are internal to the single
+model_n0/ package; N0 is the only exposed strategy. NumPy, SciPy and scikit-learn are required; the scorer
 also needs pandas. No trained file, research checkout or network is needed.
 """
-from model_n0.network import NetworkPolicy
+from model_n0 import N0Policy
 
-POLICY = NetworkPolicy('N0')
+POLICY = N0Policy()
 
 def forecast(returns_history, characteristics_history):
     return POLICY.forecast(returns_history, characteristics_history)

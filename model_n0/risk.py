@@ -1,13 +1,11 @@
-"""F factor-risk model. Relocated unchanged statistics/fitting mathematics from Wave6.
-The package reads no files, caches, network resources or saved fitted models.
-"""
+"""Internal factor-variance estimation and risk-payload handling for N0."""
 from __future__ import annotations
 import warnings
 import numpy as np
 from sklearn.linear_model import GammaRegressor
 from sklearn.exceptions import ConvergenceWarning
 from . import engine as E
-from . import policy as P
+from . import execution as P
 from .config import CONFIG
 
 def sufficient_statistics(returns_history, characteristics_history, cfg):
@@ -113,8 +111,8 @@ class _RescaledBook(P.Book):
         return super().rebalance(held, mu, R, X, costs, gamma, cap)
 
 
-class FactorPolicy(P.ScorePolicy):
-    """F only: N alpha entries, unit specific multiplier, 26 factor multipliers."""
+class _RiskPolicy(P._ExecutionPolicy):
+    """Internal N0 payload: stock alpha, unit specific scale, 26 factor scales."""
     def __init__(self):
         super().__init__(dict(CONFIG), sleeve=.05, outer_gross_cap=5.)
 

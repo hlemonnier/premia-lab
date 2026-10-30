@@ -1,4 +1,4 @@
-"""Frozen F settings; no learned coefficients or sample data."""
+"""Frozen N0 configuration; no learned coefficients or sample data."""
 from . import engine as E
 CONFIG = {
     **E.CONFIG,

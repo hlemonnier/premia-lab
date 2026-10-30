@@ -1,6 +1,7 @@
 """E2E release check: validate and execute the actual exported submission ZIP.
 
-Adapted before packaging the frozen N0 own-history candidate.
+Existing N0 archive E2E checks adapted to the single-package layout.
+Numerical comparisons and tolerances are unchanged.
 Uses constructed data only;
 this is a packaging/causality regression check, not an economic validation.
 """
@@ -16,34 +17,17 @@ import sys
 import tempfile
 import zipfile
 
-FILES = {
-    'README.md', 'requirements.txt', 'strategy.py', 'gls_alpha.py',
-    'model_n0/__init__.py', 'model_n0/core.py', 'model_n0/network.py',
-    'model_f/__init__.py', 'model_f/allocator.py', 'model_f/config.py',
-    'model_f/engine.py', 'model_f/factor_risk.py', 'model_f/policy.py',
-}
+FILES = {'README.md', 'model_n0/allocator.py', 'model_n0/execution.py', 'strategy.py', 'model_n0/residuals.py', 'model_n0/config.py', 'model_n0/risk.py', 'model_n0/__init__.py', 'requirements.txt', 'model_n0/policy.py', 'model_n0/premia.py', 'model_n0/engine.py'}
 MAINTENANCE = {
     '.gitattributes', '.gitignore', 'AGENTS.md',
     '.github/scripts/check_submission.py', '.github/workflows/submission.yml',
 }
-FROZEN_BLOBS = {
-    'model_n0/__init__.py': 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391',
-    'model_n0/core.py': '3fb062edff05fb164fea4b9e04935de0dc13c8c4',
-    'model_n0/network.py': '05262c02863aeb2f5cce09831675798cd1836e5a',
-    'gls_alpha.py': 'f26b3c5b8c8578525af7db19f01898140b9b7fc7',
-    'model_f/__init__.py': 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391',
-    'model_f/allocator.py': 'dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f',
-    'model_f/config.py': '03d427d67f3f87eb22850ac4f7acc8e581ba1b2c',
-    'model_f/engine.py': '30397d946d967265ef28cbaa1165d267f1077760',
-    'model_f/factor_risk.py': '33a46ec19c9d8b227b917c935b9132eacfffe99c',
-    'model_f/policy.py': 'eef0be64dc44502a42378ee738c1cb4c5412c55d',
-    'requirements.txt': 'f8c52fbb464d1ce17380b1450a954b25918e7459',
-}
+FROZEN_BLOBS = {'model_n0/__init__.py': '482f7e7a6bfc04b62648347d9c4bea563cae8d40', 'model_n0/allocator.py': 'dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f', 'model_n0/config.py': 'b336ac32f308807b8afe3bbd7f1be1c80887aff8', 'model_n0/engine.py': 'a6ef8ea51e0a37cbc53fe79a5eb764321d8cc341', 'model_n0/execution.py': 'b7cc050a8502a8d03c15ba89fe755cad0915a4ab', 'model_n0/policy.py': '2e63aae2db04712e54bf91e590f4f708c88c6cc4', 'model_n0/premia.py': 'b8f1bc40194bb234e0ce2478e937a092235212d7', 'model_n0/residuals.py': 'a411f8cc33557ca0116d2bf3dd6479a84d36caf2', 'model_n0/risk.py': 'a653cd7eeea6d952b57f5c7104b9ec23c635ec9d', 'requirements.txt': 'f8c52fbb464d1ce17380b1450a954b25918e7459'}
 RATIONALE = 'I selected the frozen N0 own-history correction on top of the GLS ensemble because its historical gain at the supplied fees survives removing the explicit market sleeve and the largest signal sources. Its added value remains statistically uncertain; the model was discovered as a control, and selection on the same exposed history can overstate its future performance.'
 
 # Executable structure of the frozen N0 submission adapter.
-ENTRYPOINT = '''from model_n0.network import NetworkPolicy
-POLICY = NetworkPolicy('N0')
+ENTRYPOINT = '''from model_n0 import N0Policy
+POLICY = N0Policy()
 def forecast(returns_history, characteristics_history):
     return POLICY.forecast(returns_history, characteristics_history)
 def rebalance(held_positions, expected_returns, returns_history,
@@ -74,8 +58,12 @@ def inside(package: Path) -> dict:
     # Known own-residual reversal ensures the correction is exercised.
     for s in range(1, days):
         r[s, 0] = -.5 * r[s - 1, 0] + .008 * rng.normal()
-    require(strategy.POLICY.mode == 'N0' and strategy.POLICY.shared is None,
-            'submission must select raw-history N0, never a cached path')
+    from model_n0 import N0Policy
+    require(type(strategy.POLICY) is N0Policy, 'N0 must be the only public strategy')
+    require(not hasattr(strategy.POLICY, 'mode') and not hasattr(strategy.POLICY, 'shared'),
+            'alternate model modes or research caches are forbidden')
+    require(not (package / 'model_f').exists() and not (package / 'gls_alpha.py').exists(),
+            'legacy model packages are forbidden')
     costs = np.linspace(.0002, .0008, stocks)
 
     def replay(rr, xx):
@@ -96,6 +84,8 @@ def inside(package: Path) -> dict:
             fee = 0.0 if today == 252 else float(costs @ np.abs(weights - held))
             net.append(gross_return - fee)
             targets.append(weights.copy())
+        require(all(not name.startswith('model_f') and name != 'gls_alpha'
+                    for name in sys.modules), 'legacy module imported')
         require(np.isfinite(net).all(), 'nonfinite net cashflows')
         return forecast.copy(), np.array(targets), np.array(net)
 
@@ -106,8 +96,8 @@ def inside(package: Path) -> dict:
         require(error <= 1e-10, f'{name}: error {error}')
 
     full = replay(r, x)
-    from gls_alpha import CandidatePolicy
-    reference = CandidatePolicy().forecast(r, x)
+    from model_n0.premia import _PremiaPolicy
+    reference = _PremiaPolicy().forecast(r, x)
     equal('no_correction_before_activation', full[0][:505], reference[:505])
     require(np.max(np.abs(full[0][505:, :stocks] - reference[505:, :stocks])) > 1e-12,
             'own-history fixture did not activate N0')
@@ -167,7 +157,7 @@ def main() -> None:
         for name, expected in FROZEN_BLOBS.items():
             data = (package / name).read_bytes()
             actual = hashlib.sha1(f'blob {len(data)}\0'.encode() + data).hexdigest()
-            require(actual == expected, 'frozen GLS/F source changed: ' + name)
+            require(actual == expected, 'verified N0 component changed: ' + name)
         module = ast.parse((package / 'strategy.py').read_text())
         note = ast.get_docstring(module)
         require(note is not None and 150 <= len(note.split()) <= 650, 'missing or oversized strategy note')

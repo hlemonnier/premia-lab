@@ -1,20 +1,6 @@
-"""F2 forecast -> E2 execution -> fixed M1 market sleeve, as explicit state objects.
+"""Internal pooled-premia learner, sizing and execution components of N0.
 
-Forecast (F2): two pooled exponentially weighted ridge regressions on the 27-column design
-(13 standardized characteristics, 13 centered squares, standardized trailing beta), half-lives
-1,008 and 252, ridge 0.1, 126 matured pairs before predicting. The 13 linear coefficients are
-the average of the two fits; squares and beta use the slow fit. Row t uses X[t-1] and the beta
-known at t; its newest matured pair is X[t-2] against the residual return of day t-1.
-
-Books, each with its own risk state, solver warm start and drifted holdings:
-- virtual: the F2 reference allocation (gamma 200, cap 0.05). Its earned gross returns feed
-  EW63 / EW1008 second moments; after 63 earned days the multiplier is
-  a = clip((max(q1008, 1e-12) / max(q63, 1e-12)) ** 0.5, 0.5, 2), else 1.
-- inner (E2): the same allocator solved against its own holdings with gamma 200/a, cap 0.05a.
-- outer: inner + 0.05/N in every stock (a deliberate equal-weight market position), reduced
-  proportionally only if gross exceeds 5. This is the book returned to the scorer.
-forecast() starts a session and resets all books, moments and counts.
-"""
+The two books are stateful allocation books, not independently selected models."""
 import numpy as np
 
 from . import engine as E
@@ -89,7 +75,7 @@ class Book:
         return w, info
 
 
-class ScorePolicy:
+class _ExecutionPolicy:
     def __init__(self, cfg, sleeve=0.05, outer_gross_cap=5.0):
         if cfg["beta_shrinkage"] or cfg["risk_beta_column"] or cfg["matched_diagonal"] or cfg["beta_target"] != 0.0:
             raise ValueError("this policy uses the raw-beta, zero-target, 26-column V2 risk settings")

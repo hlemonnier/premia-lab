@@ -1,14 +1,10 @@
-"""One preregistered GLS alpha candidate; F's submission files remain unchanged.
+"""Internal N0 premium estimator: fixed combination of pooled ridge and GLS.
 
-Weight each matured training cross-section by its lagged factor-plus-specific
-noise covariance. The resulting signal is blended 50/50 with the frozen F2
-signal. This is feasible GLS, not a new source of information or a claim of
-statistical efficiency under a misspecified covariance.
-"""
+The two estimates are components of N0, not selectable submission models."""
 from __future__ import annotations
 import numpy as np
-from model_f.factor_risk import FactorPolicy
-from model_f import engine as E
+from .risk import _RiskPolicy
+from . import engine as E
 
 
 def gls_forecast(R, X, baseline, cfg):
@@ -69,7 +65,7 @@ def gls_forecast(R, X, baseline, cfg):
     return out,records
 
 
-class CandidatePolicy(FactorPolicy):
+class _PremiaPolicy(_RiskPolicy):
     def forecast(self,returns_history,characteristics_history):
         base=super().forecast(returns_history,characteristics_history)
         alpha,self.learner_records=gls_forecast(returns_history,characteristics_history,base,self.cfg)

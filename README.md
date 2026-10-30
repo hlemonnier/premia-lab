@@ -2,7 +2,7 @@
 
 Hugo Lemonnier, October 2026
 
-**Post-submission research update.** I model the anonymous characteristics as shared return and risk exposures, rather than fitting 1,000 unrelated stock forecasts. I combine two estimates of their premia and add a bounded own-stock residual correction. This is an extension of the original hand-in, not evidence that I have improved its performance on the evaluator's unseen continuation.
+**N0 — the only model in this submission.** This is a post-submission research update. I model the anonymous characteristics as shared return and risk exposures, rather than fitting 1,000 unrelated stock forecasts. I combine two estimates of their premia and add a bounded own-stock residual correction. This is an extension of the original hand-in, not evidence that I have improved its performance on the evaluator's unseen continuation.
 
 At the supplied fees, the current N0 candidate has development **net Sharpe 1.55078, beta 0.09329 and annual trading costs of 0.34385%**. Without the explicit market position, its Sharpe is **1.43669**. Every comparison below uses the original scorer and the same exposed history.
 
@@ -67,4 +67,6 @@ Place this package alongside the original unchanged `score.py`, `returns.csv`, `
 python score.py strategy
 ```
 
-`strategy.py` is the entry point; `gls_alpha.py` implements the premium combination; `model_f/` contains factor risk, sizing and allocation; `model_n0/` contains the residual correction. Include every helper directory. The thirteen-file package excludes the original data and scorer. It uses NumPy, SciPy and scikit-learn, with tested versions in `requirements.txt`; the scorer also needs pandas. No fitted-model file, network access or research checkout is required.
+`strategy.py` is the single entry point and instantiates `model_n0.N0Policy()`. All numerical components belong to the one `model_n0/` package: `premia.py` estimates the core return forecast, `risk.py` estimates factor variances, `execution.py` handles sizing and trading, `residuals.py` builds causal residual histories, and `policy.py` adds the own-history correction. The characteristic basis, allocator and settings are supporting numerical modules, not alternative models. There is no `model_f/`, no root `gls_alpha.py`, no cross-stock mode and no selectable model switch.
+
+The twelve-file package excludes the original data and scorer. Earlier model labels in the research narrative describe historical comparisons only; those alternative submissions are not included here. I retain the characteristic-factor and GLS calculations because they are components of N0 itself, not optional old models. It uses NumPy, SciPy and scikit-learn, with tested versions in `requirements.txt`; the scorer also needs pandas. No fitted-model file, network access or research checkout is required.
