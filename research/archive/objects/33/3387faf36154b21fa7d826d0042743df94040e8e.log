@@ -1,0 +1,2 @@
+strategy               sharpe  1.44   return   6.6%/yr   vol  4.6%   beta  0.10   cost 0.25%/yr   gross 1.83   forecast 4.7s (0.01 h per century)   rebalance 17.8 ms/call
+exit 0

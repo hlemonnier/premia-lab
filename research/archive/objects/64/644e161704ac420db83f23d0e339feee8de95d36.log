@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_forecast_20261029/e2e.py", line 432, in <module>
+    main()
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_forecast_20261029/e2e.py", line 360, in main
+    _, f2z = run("state_zero_F2", "F2", Rz, Xz, costs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_forecast_20261029/e2e.py", line 336, in run
+    r = execute(engine, scorer, wrapper, R, X, costs, args.out / name, runtime)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_forecast_20261029/e2e.py", line 261, in execute
+    dump(out / "summary.json", summary)
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_forecast_20261029/e2e.py", line 43, in dump
+    Path(path).write_text(json.dumps(obj, indent=2, allow_nan=False) + "\n")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable

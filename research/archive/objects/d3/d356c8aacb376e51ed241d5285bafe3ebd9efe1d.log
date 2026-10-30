@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/implementation_used.py", line 226, in main
+    authenticate("inputs/returns.npy", artifacts)
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/implementation_used.py", line 176, in authenticate
+    check("identity:" + relative, actual == {"sha256": item["sha256"], "bytes": item["bytes"]})
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/implementation_used.py", line 167, in check
+    raise ValueError(name)
+ValueError: identity:inputs/returns.npy

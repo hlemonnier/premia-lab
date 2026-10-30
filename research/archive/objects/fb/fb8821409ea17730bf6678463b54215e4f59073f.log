@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_joint_20261028/e2e.py", line 2, in <module>
+    from joint import make_joint as VolatilityOverlay
+ModuleNotFoundError: No module named 'joint'

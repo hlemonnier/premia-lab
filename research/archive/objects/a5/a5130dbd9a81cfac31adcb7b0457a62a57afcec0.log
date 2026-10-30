@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_long_history.py", line 246, in main
+    rows, official_forecast_seconds = official.run(SimpleNamespace(forecast=forecast, rebalance=rebalance),
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_long_history_001/source/score.py", line 43, in run
+    forecasts = np.asarray(with_declared_arguments(strategy.forecast)(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_long_history_001/source/score.py", line 30, in <lambda>
+    return lambda **named: function(**(named if takes_everything else {k: v for k, v in named.items() if k in parameters}))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_long_history.py", line 212, in forecast
+    check("exact_discovery_forecast_prefix", digest(out / "forecasts.npy") == expected, digest(out / "forecasts.npy"))
+  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_long_history.py", line 136, in check
+    raise AssertionError(name)
+AssertionError: exact_discovery_forecast_prefix

@@ -1,0 +1,17 @@
+PASS forecast_exact {"max_abs_diff": 0.0}
+PASS decision_indices {"n": 3527}
+PASS virtual_targets_within_1e-8 {"max_abs_diff": 0.0}
+PASS inner_targets_within_1e-8 {"max_abs_diff": 0.0}
+PASS outer_targets_within_1e-8 {"max_abs_diff": 0.0}
+PASS economics_gross_return_within_1e-8 {"max_abs_diff": 0.0}
+PASS economics_fee_within_1e-8 {"max_abs_diff": 0.0}
+PASS economics_closing_gross_within_1e-8 {"max_abs_diff": 0.0}
+PASS economics_market_return_within_1e-8 {"max_abs_diff": 0.0}
+PASS net_sharpe_within_1e-8 {"package": 1.4447333005564316, "reference": 1.4447333005564316, "diff": 0.0}
+PASS all_solves_certified {"solves": 7054, "statuses": ["ok"]}
+PASS outer_bounds {"max_weight": 0.01648397526347724, "max_gross": 3.0432651484632816}
+PASS virtual_bound {"max_weight": 0.015033262260729423}
+PASS future_alteration_and_prefix_exact {"max_protected_outer_diff": 0.0}
+PASS cross_history_restart_exact {}
+ALL PASS
+exit 0

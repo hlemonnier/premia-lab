@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_gross_portfolio.py", line 150, in main
+    raise FileNotFoundError("New gross allocator absent: expected preimplementation red stage; numerical checks NOT RUN")
+FileNotFoundError: New gross allocator absent: expected preimplementation red stage; numerical checks NOT RUN

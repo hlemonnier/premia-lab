@@ -1,0 +1,2 @@
+Starting F2_future_C F2 shape (3780, 1000)
+Completed F2_future_C {'n': 3526, 'sharpe': -1.3514486465994422, 'annual_net_return_pct': -3.7600176104226732, 'annual_vol_pct': 2.7822127166161645, 'annual_cost_pct': 5.386931220800287, 'beta': 0.04375609217825114, 'mean_gross': 0.8985967878916797} checks {'finite': True, 'warmup_zero': True, 'counts': True, 'input_unchanged': True, 'drift_reconciles': True, 'scorer_reconciles': True, 'all_certified': True, 'stock_caps': True, 'gross_cap': True, 'estimated_hedge': True}

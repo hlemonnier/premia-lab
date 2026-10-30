@@ -1,0 +1,39 @@
+{
+  "out": "evidence/v3_market_challenge_20261029/mean_sensitivity_001.json",
+  "sha256": "a40de33bfc14f8c84b5148617973af0332d34d2a62cae9649ec5a6740bb9c8bf",
+  "market": {
+    "annual_arithmetic_mean": 0.14479924338173567,
+    "annual_volatility": 0.14160440339428737,
+    "sharpe": 1.022561727678429
+  },
+  "narrow": {
+    "meaning": "Change only the added .05 sleeve's annual mean contribution, retaining the inner book's historical mean, the final book's volatility and actual fees.",
+    "sleeve_mean_zero_sharpe": 1.286465945534671,
+    "sleeve_mean_reversed_sharpe": 1.1281985905126761,
+    "unchanged_E2_sharpe": 1.339581782208796
+  },
+  "common_scenarios": [
+    {
+      "scenario": "observed_mean",
+      "assumed_market_annual_arithmetic_mean": 0.14479924338173567,
+      "joint_frozen_mean_sharpe": 1.4447333005566658,
+      "E2_frozen_mean_sharpe": 1.339581782208796,
+      "joint_minus_E2": 0.10515151834786973
+    },
+    {
+      "scenario": "zero_common_market_mean",
+      "assumed_market_annual_arithmetic_mean": 0.0,
+      "joint_frozen_mean_sharpe": 1.1187737070296175,
+      "E2_frozen_mean_sharpe": 1.16524090020262,
+      "joint_minus_E2": -0.04646719317300252
+    },
+    {
+      "scenario": "reversed_common_market_mean",
+      "assumed_market_annual_arithmetic_mean": -0.14479924338173567,
+      "joint_frozen_mean_sharpe": 0.7928141135025694,
+      "E2_frozen_mean_sharpe": 0.9909000181964444,
+      "joint_minus_E2": -0.198085904693875
+    }
+  ],
+  "conditional_breakeven_ann": 0.04437720348650681
+}

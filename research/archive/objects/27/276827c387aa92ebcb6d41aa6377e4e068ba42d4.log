@@ -1,0 +1,7 @@
+{"name": "outside_held_oracle", "status": "PASS", "actual": {"success": true, "feasible": true, "message": "Optimization terminated successfully", "iterations": 2, "objective": 0.09737499999999996}}
+{"name": "reference_0_oracle", "status": "PASS", "actual": {"success": true, "feasible": true, "message": "Optimization terminated successfully", "iterations": 5, "objective": 0.07097154237446027}}
+{"name": "reference_1_oracle", "status": "PASS", "actual": {"success": true, "feasible": true, "message": "Optimization terminated successfully", "iterations": 10, "objective": -0.1258643200584992}}
+{"name": "reference_2_oracle", "status": "PASS", "actual": {"success": true, "feasible": true, "message": "Optimization terminated successfully", "iterations": 4, "objective": -0.01779276494109866}}
+{"name": "reference_3_oracle", "status": "PASS", "actual": {"success": true, "feasible": true, "message": "Optimization terminated successfully", "iterations": 7, "objective": -0.4279969943720177}}
+{"name": "reference_4_oracle", "status": "PASS", "actual": {"success": true, "feasible": true, "message": "Optimization terminated successfully", "iterations": 11, "objective": -0.36342017772031576}}
+{"name": "reference_5_oracle", "status": "PASS", "actual": {"success": true, "feasible": true, "message": "Optimization terminated successfully", "iterations": 24, "objective": -1.3416118248569837}}

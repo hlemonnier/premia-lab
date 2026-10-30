@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/d52d234e-deca-5085-94ba-0590b42b943e/scratchpad/clean_v3/score.py", line 89, in <module>
+    rows, forecast_seconds = run(importlib.import_module(name), all_returns, all_characteristics, trading_costs)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1404, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1369, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1333, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'strategy'
+exit 1

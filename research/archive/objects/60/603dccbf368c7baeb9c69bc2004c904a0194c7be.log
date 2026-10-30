@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/claude/continual-research-takehome/research/v2/hedge_risk_diagnostics.py", line 176, in <module>
+    df = per_day(R, X, W, over); df.to_csv(os.path.join(OUT, f"{a.book}.csv"), index=False)
+  File "/home/claude/continual-research-takehome/research/v2/hedge_risk_diagnostics.py", line 79, in per_day
+    st.absorb(R, X, st.upto)
+    ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/claude/continual-research-takehome/research/v2/hedge_risk_diagnostics.py", line 56, in absorb
+    D = engine.risk_loadings(X[s - 1], beta, self.cfg)
+  File "/home/claude/continual-research-takehome/handoff_v2/model_v2/engine.py", line 72, in risk_loadings
+    return np.hstack([D, _zcol(beta, cfg["feature_clip"])[:, None]]) if cfg["risk_beta_column"] else D
+                                                                        ~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'risk_beta_column'
+FAILED V2
