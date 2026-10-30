@@ -10,7 +10,7 @@ The recorded environment was Python 3.13.5, NumPy 2.3.5, pandas 2.2.3, SciPy 1.1
 
 ```bash
 export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
-export PYTHONDONTWRITECODE=1
+export PYTHONDONTWRITEBYTECODE=1
 SOURCE='/absolute/path/Quant Research Take-Home'
 WORK='/absolute/path/new-n0-review-work'
 PRIOR='/absolute/path/N0_Review/reference'
