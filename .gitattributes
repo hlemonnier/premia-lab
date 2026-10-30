@@ -1,4 +1,1 @@
-.github export-ignore
-AGENTS.md export-ignore
-.gitignore export-ignore
-.gitattributes export-ignore
+* text=auto eol=lf

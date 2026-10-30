@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the project and the exact revision used in your research."
+title: "Premia Lab: causal forecasts and cost-aware portfolio research"
+type: software
+version: "0.1.0"
+date-released: "2026-10-30"
+authors:
+  - family-names: Lemonnier
+    given-names: Hugo
+abstract: "An inspectable research workbench for characteristic-based equity forecasts, conditional risk and transaction-cost-aware portfolio construction. Historical results concern an exposed simulated development sample, not live trading."
+keywords:
+  - quantitative finance
+  - portfolio construction
+  - causal backtesting
+  - factor models
