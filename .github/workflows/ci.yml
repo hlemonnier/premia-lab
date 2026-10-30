@@ -28,3 +28,5 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - run: python tools/check_project.py
       - run: python examples/synthetic_demo.py --days 660 --stocks 48
+      - name: Validate the clean-publication preview without remote writes
+        run: python tools/publish_public.py
