@@ -1,0 +1,88 @@
+{
+  "rows": {
+    "path": "rows.npy",
+    "shape": [
+      3526,
+      5
+    ],
+    "dtype": "float64",
+    "file_sha256": "d0c26e1ec4e1ad5291fbc2d7cfa8274d2e518f07f8a13f78899c30e510bbec02",
+    "array_sha256": "935ae924f06b0d3c8fc3301794eb66aef5c98571c42fdff9f1c424f02ba45f6c",
+    "readback_exact": true
+  },
+  "forecast": {
+    "path": "forecast.npy",
+    "shape": [
+      3780,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "1c2d9527872c47a32a2e0d2149562b88b9d7937d7e03f317da11f88c3c1709ae",
+    "array_sha256": "60f57ee17814fac18ed07c8f848a5a1222e4cc1d3955c8740a8b41df2beaa419",
+    "readback_exact": true
+  },
+  "decision_indices": {
+    "path": "decision_indices.npy",
+    "shape": [
+      3527
+    ],
+    "dtype": "int64",
+    "file_sha256": "5eccf6dc463d3e6770117c3e0e9ffc4b19550f0802add212594b618efd20b7e1",
+    "array_sha256": "029cb92995c19c6e6a91f8a9a3541803fe1e1d63e12847ebb0a2295571019935",
+    "readback_exact": true
+  },
+  "virtual_returns": {
+    "path": "virtual_returns.npy",
+    "shape": [
+      3527
+    ],
+    "dtype": "float64",
+    "file_sha256": "6df6b2cee8ed49eb7ae9a5776c6235cd53564674055a208a607dedcb5971212e",
+    "array_sha256": "a1644b86f5f3dcf730a4a35680b0ffd992e48e7a1ef4ec9b691ecc99b6680850",
+    "readback_exact": true
+  },
+  "controller_trace": {
+    "path": "controller_trace.npy",
+    "shape": [
+      3527,
+      3
+    ],
+    "dtype": "float64",
+    "file_sha256": "3d8915f791209804561344a1c64e3aa97fcf7635e2b8782196c611614b710b03",
+    "array_sha256": "2894d394b1f94100fdc36615e43e8fe3124e2c73eaf6c863381f2cfdb856b4b2",
+    "readback_exact": true
+  },
+  "targets": {
+    "path": "targets.npy",
+    "shape": [
+      3527,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "6cdbcdeb92417bdf54feec1624fd4e8d4a7a5a1a0f65d2abaf06777faa2c958e",
+    "array_sha256": "629040e42513a1946954e302e28fd0305fe2faeab105da9268249188f67fe76a",
+    "readback_exact": true
+  },
+  "inner_targets": {
+    "path": "inner_targets.npy",
+    "shape": [
+      3527,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "cac0d6870fb9f2bdd8c7e14997cdec38500beef1ac5c46b5ea3b414db3df1898",
+    "array_sha256": "abefd757a5d47838c31c7368e2b1727c053e47dc3000044267ea59f129dd1960",
+    "readback_exact": true
+  },
+  "virtual_targets": {
+    "path": "virtual_targets.npy",
+    "shape": [
+      3527,
+      1000
+    ],
+    "dtype": "float64",
+    "file_sha256": "527e932a2b5f4e11e21652a8b37e594f669732b174bb073ab7d11c565e17cb7c",
+    "array_sha256": "d26d11b22dd35940b586cfe90643099ba07f2ede8a1dbdf9a345aeaf581f7c28",
+    "readback_exact": true
+  }
+}

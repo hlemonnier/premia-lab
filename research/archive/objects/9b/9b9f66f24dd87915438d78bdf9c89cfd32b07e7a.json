@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-29",
+  "allow": "build",
+  "archive_script_sha256": "a10ae02ea8e33022758ae210eff1ec48a3497ec6484b6ec22f4ec9f7db0ff28b",
+  "archive_spec_sha256": "d4615281cd0fd2a9464fa8644ba553eda11a17a1af09179b9f5114bbff257637",
+  "replay_result_sha256": "8665d0bf6748cc6c45d88da201cc4aadff258770cb7f0a5dab18916ee4c5fd66",
+  "output_directory": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v3_archive_20261029/packet",
+  "root_source_review": "Accepted exact-byte content deduplication, fixed metadata, split object archive, source and restored-byte readback; no strategy execution.",
+  "scope": "one deterministic build of the completed immutable actual-sample replay; preserve source files unchanged"
+}

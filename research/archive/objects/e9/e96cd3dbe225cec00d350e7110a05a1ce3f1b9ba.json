@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-10-28T16:43:06.420962+00:00",
+  "e2e_exit_code": 0,
+  "e2e_checks": 22,
+  "e2e_all_passed": true,
+  "actual_status": "completed",
+  "source_binding": {
+    "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "prototype.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "joint.py": "fcf6dd9a917299516bb3b5bee92f9488b0546f7bf3914f7a2289bfeb4c104b33",
+    "e2e.py": "2a0ebbcdbcf14bc95975729b7699474b25f2a21f754ed5d7fb2b0ac3748cc9ba",
+    "run_joint.py": "aef56c13068327c46c432c2f485c471fc333863f5ce3576eccafdd86b867ece4"
+  },
+  "actual_admitted_utc": "2026-10-28T16:45:18.317858+00:00",
+  "f2_causal_record": "evidence/v2_score_forecast_20261028/baseline_repair_001/verification.json",
+  "f2_causal_record_sha256": "b3de1ab2222d561e6f3a88630bc4053549e4284848defb0d3d2a9af47b5deaed",
+  "actual_completed_utc": "2026-10-28T16:46:07.029328+00:00",
+  "actual_exit_code": 0,
+  "actual_source_unchanged": true
+}

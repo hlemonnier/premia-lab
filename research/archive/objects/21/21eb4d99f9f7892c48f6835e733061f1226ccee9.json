@@ -1,0 +1,25 @@
+{
+  "status": "AUTHORED_SOURCE_STYLE_PASS_GENERATED_SVG_FINDINGS_RETAINED",
+  "reviewed_utc": "2026-10-27T11:51:08.581529+00:00",
+  "full_native_export_style_check": {
+    "returncode": 2,
+    "findings": 7550,
+    "paths": [
+      "artifacts/research_summary.svg",
+      "evidence/artifact_visual_review_001/initial_artifacts/research_summary.svg"
+    ],
+    "finding": "Native Matplotlib SVG path commands end with spaces before newlines."
+  },
+  "authored_source_style_check": {
+    "returncode": 0,
+    "excluded_paths": [
+      "artifacts/research_summary.svg",
+      "evidence/artifact_visual_review_001/initial_artifacts/research_summary.svg"
+    ],
+    "stdout": "",
+    "stderr": ""
+  },
+  "disposition": "Retain exact native exporter bytes and both recorded artifact hashes. The SVG formatting is valid; the full style-check finding is recorded, not described as passing. Source/text files outside those two generated exports pass. No numerical, causal, accounting, artifact-identity or strategy gate is changed.",
+  "staged_raw_market_arrays": false,
+  "publication_note": "The final remote Git tree must match the complete local index exactly; large source panels/NPY arrays remain excluded."
+}

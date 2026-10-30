@@ -1,0 +1,2 @@
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 BLIS_NUM_THREADS=1 taskset -c 7 python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/long_history_independent_readback_001/review.py
+Preserve an existing summary.json under a fresh name before rerunning; this review refuses to overwrite evidence.

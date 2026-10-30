@@ -1,0 +1,708 @@
+{
+  "status": "PASS_SCOPE_ONLY",
+  "started_utc": "2026-10-26T20:52:46.677229+00:00",
+  "checks": [
+    {
+      "name": "two_stock_active_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 0.0,
+        "gross_excess": -2.7755575615628914e-17,
+        "box_excess": -0.95
+      }
+    },
+    {
+      "name": "two_stock_active_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.15000000000000002,
+        "gross_iterations": 1,
+        "scalar_evaluations": 4,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 0.4,
+        "gross_excess": -2.7755575615628914e-17,
+        "normalized_beta_residual": 0.0
+      }
+    },
+    {
+      "name": "two_stock_active_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "two_stock_active_known_optimum",
+      "status": "PASS",
+      "actual": 1.3877787807814457e-17
+    },
+    {
+      "name": "nonbinding_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 1.1352030426792226e-14,
+        "gross_excess": -9.6,
+        "box_excess": -0.7999999999999943
+      }
+    },
+    {
+      "name": "nonbinding_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.0,
+        "gross_iterations": 0,
+        "scalar_evaluations": 0,
+        "gross_budget_bound": 0,
+        "unconstrained_gross": 0.4,
+        "gross_excess": -9.6,
+        "normalized_beta_residual": 1.1352030426792226e-14
+      }
+    },
+    {
+      "name": "nonbinding_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "nonbinding_reduction",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "zero_budget_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 0.0,
+        "gross_excess": 0.0,
+        "box_excess": -1.0
+      }
+    },
+    {
+      "name": "zero_budget_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.0,
+        "gross_iterations": 0,
+        "scalar_evaluations": 0,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 0.4,
+        "gross_excess": 0.0,
+        "normalized_beta_residual": 0.0
+      }
+    },
+    {
+      "name": "zero_budget_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "zero_budget_known_optimum",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "zero_caps_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 0.0,
+        "gross_excess": -0.1,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "zero_caps_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.0,
+        "gross_iterations": 0,
+        "scalar_evaluations": 0,
+        "gross_budget_bound": 0,
+        "unconstrained_gross": 0.0,
+        "gross_excess": -0.1,
+        "normalized_beta_residual": 0.0
+      }
+    },
+    {
+      "name": "zero_caps_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "zero_caps_known_optimum",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "zero_beta_l1_edge_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 0.0,
+        "gross_excess": 0.0,
+        "box_excess": -9.0
+      }
+    },
+    {
+      "name": "zero_beta_l1_edge_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 1.0,
+        "gross_iterations": 1,
+        "scalar_evaluations": 3,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 3.0,
+        "gross_excess": 0.0,
+        "normalized_beta_residual": 0.0
+      }
+    },
+    {
+      "name": "zero_beta_l1_edge_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "zero_beta_l1_edge_known_optimum",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "no_trade_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 0.0,
+        "gross_excess": -0.19999999999999996,
+        "box_excess": -0.8
+      }
+    },
+    {
+      "name": "no_trade_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.0,
+        "gross_iterations": 0,
+        "scalar_evaluations": 0,
+        "gross_budget_bound": 0,
+        "unconstrained_gross": 0.4,
+        "gross_excess": -0.19999999999999996,
+        "normalized_beta_residual": 0.0
+      }
+    },
+    {
+      "name": "no_trade_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "no_trade_known_optimum",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "no_trade_binding_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 0.0,
+        "gross_excess": -5.551115123125783e-17,
+        "box_excess": -0.9
+      }
+    },
+    {
+      "name": "no_trade_binding_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.4,
+        "gross_iterations": 3,
+        "scalar_evaluations": 5,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 0.4,
+        "gross_excess": -5.551115123125783e-17,
+        "normalized_beta_residual": 0.0
+      }
+    },
+    {
+      "name": "no_trade_binding_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "no_trade_binding_known_optimum",
+      "status": "PASS",
+      "actual": 2.7755575615628914e-17
+    },
+    {
+      "name": "four_stock_kkt_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 1.3877787807814457e-17,
+        "gross_excess": -5.551115123125783e-17,
+        "box_excess": -0.4
+      }
+    },
+    {
+      "name": "four_stock_kkt_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.30000000000000004,
+        "gross_iterations": 1,
+        "scalar_evaluations": 5,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 0.9392835083384812,
+        "gross_excess": -5.551115123125783e-17,
+        "normalized_beta_residual": 1.3877787807814457e-17
+      }
+    },
+    {
+      "name": "four_stock_kkt_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "four_stock_kkt_known_optimum",
+      "status": "PASS",
+      "actual": 3.469446951953614e-17
+    },
+    {
+      "name": "outside_held_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 3.642919299551295e-17,
+        "gross_excess": -2.7755575615628914e-17,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "outside_held_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.21000000000000002,
+        "gross_iterations": 4,
+        "scalar_evaluations": 11,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 0.35000000000000003,
+        "gross_excess": -2.7755575615628914e-17,
+        "normalized_beta_residual": 3.642919299551295e-17
+      }
+    },
+    {
+      "name": "outside_held_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "outside_held_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 2,
+        "objective": 0.09737499999999996
+      }
+    },
+    {
+      "name": "outside_held_objective",
+      "status": "PASS",
+      "actual": 1.0343692776010773e-16
+    },
+    {
+      "name": "reference_0_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 6.245004513516506e-17,
+        "gross_excess": 5.551115123125783e-17,
+        "box_excess": -0.006392812687337546
+      }
+    },
+    {
+      "name": "reference_0_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.5086410544887865,
+        "gross_iterations": 4,
+        "scalar_evaluations": 14,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 0.8781799662852146,
+        "gross_excess": 5.551115123125783e-17,
+        "normalized_beta_residual": 6.245004513516506e-17
+      }
+    },
+    {
+      "name": "reference_0_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "reference_0_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 5,
+        "objective": 0.07097154237446027
+      }
+    },
+    {
+      "name": "reference_0_objective",
+      "status": "PASS",
+      "actual": 1.0289965526913425e-17
+    },
+    {
+      "name": "reference_1_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 0.0,
+        "gross_excess": 5.551115123125783e-17,
+        "box_excess": -0.12352066942136736
+      }
+    },
+    {
+      "name": "reference_1_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.6111563975796024,
+        "gross_iterations": 4,
+        "scalar_evaluations": 6,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 1.6646159809539371,
+        "gross_excess": 5.551115123125783e-17,
+        "normalized_beta_residual": 0.0
+      }
+    },
+    {
+      "name": "reference_1_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "reference_1_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 10,
+        "objective": -0.1258643200584992
+      }
+    },
+    {
+      "name": "reference_1_objective",
+      "status": "PASS",
+      "actual": 1.533460435627512e-16
+    },
+    {
+      "name": "reference_2_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 1.565940915414985e-16,
+        "gross_excess": 1.1102230246251565e-16,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "reference_2_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.7571380956500703,
+        "gross_iterations": 4,
+        "scalar_evaluations": 21,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 1.5198711530587592,
+        "gross_excess": 1.1102230246251565e-16,
+        "normalized_beta_residual": 1.565940915414985e-16
+      }
+    },
+    {
+      "name": "reference_2_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "reference_2_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 4,
+        "objective": -0.01779276494109866
+      }
+    },
+    {
+      "name": "reference_2_objective",
+      "status": "PASS",
+      "actual": 5.962638540250976e-17
+    },
+    {
+      "name": "reference_3_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 5.786761874772117e-17,
+        "gross_excess": 1.1102230246251565e-16,
+        "box_excess": -0.09319800159983875
+      }
+    },
+    {
+      "name": "reference_3_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 1.0342993936473974,
+        "gross_iterations": 3,
+        "scalar_evaluations": 14,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 2.846773541505451,
+        "gross_excess": 1.1102230246251565e-16,
+        "normalized_beta_residual": 5.786761874772117e-17
+      }
+    },
+    {
+      "name": "reference_3_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "reference_3_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 7,
+        "objective": -0.4279969943720177
+      }
+    },
+    {
+      "name": "reference_3_objective",
+      "status": "PASS",
+      "actual": 1.2798547961189566e-16
+    },
+    {
+      "name": "reference_4_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 9.332216331230244e-17,
+        "gross_excess": -1.1102230246251565e-16,
+        "box_excess": -0.21037826376260654
+      }
+    },
+    {
+      "name": "reference_4_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 1.2717310557734316,
+        "gross_iterations": 4,
+        "scalar_evaluations": 23,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 2.6735426648331284,
+        "gross_excess": -1.1102230246251565e-16,
+        "normalized_beta_residual": 9.332216331230244e-17
+      }
+    },
+    {
+      "name": "reference_4_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "reference_4_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 11,
+        "objective": -0.36342017772031576
+      }
+    },
+    {
+      "name": "reference_4_objective",
+      "status": "PASS",
+      "actual": 4.1465590560088677e-17
+    },
+    {
+      "name": "reference_5_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 6.441968191750867e-15,
+        "gross_excess": -2.6682768369796923,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "reference_5_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 0.0,
+        "gross_iterations": 0,
+        "scalar_evaluations": 0,
+        "gross_budget_bound": 0,
+        "unconstrained_gross": 2.4510095265826557,
+        "gross_excess": -2.6682768369796923,
+        "normalized_beta_residual": 6.441968191750867e-15
+      }
+    },
+    {
+      "name": "reference_5_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "reference_5_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 24,
+        "objective": -1.3416118248569837
+      }
+    },
+    {
+      "name": "reference_5_objective",
+      "status": "PASS",
+      "actual": 9.641893299727903e-14
+    },
+    {
+      "name": "known_1000_feasibility",
+      "status": "PASS",
+      "actual": {
+        "beta_error": 3.8546863183200416e-17,
+        "gross_excess": -1.1102230246251565e-16,
+        "box_excess": -0.00539134433401832
+      }
+    },
+    {
+      "name": "known_1000_convergence",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "gross_multiplier": 5.000000000000006e-05,
+        "gross_iterations": 2,
+        "scalar_evaluations": 11,
+        "gross_budget_bound": 1,
+        "unconstrained_gross": 1.1356084284047543,
+        "gross_excess": -1.1102230246251565e-16,
+        "normalized_beta_residual": 3.8546863183200416e-17
+      }
+    },
+    {
+      "name": "known_1000_deterministic",
+      "status": "PASS",
+      "actual": "exact repeated output; inputs unchanged"
+    },
+    {
+      "name": "known_1000_known_optimum",
+      "status": "PASS",
+      "actual": 8.673617379884035e-19
+    },
+    {
+      "name": "sign_reflection",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "stock_permutation",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "invalid_negative_gross",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_nan_gross",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_inf_gross",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_vector_gross",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_negative_variance",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_negative_cost",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_bad_shape",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_negative_cap",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_zero_gamma",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_zero_horizon",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_zero_iterations",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_float_iterations",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "one_core_runtime",
+      "status": "PASS",
+      "actual": {
+        "calls": 8,
+        "milliseconds": [
+          3.7815120012965053,
+          3.029988001799211,
+          3.314563997264486,
+          4.193705004581716,
+          2.8498539977590553,
+          3.6248769974918105,
+          4.035776997625362,
+          7.141989997762721
+        ],
+        "mean_ms": 3.9965333744476084,
+        "p95_ms": 6.1100902501493675,
+        "max_ms": 7.141989997762721,
+        "scope": "synthetic complete gross allocator only"
+      }
+    }
+  ],
+  "market_rows_read": 0,
+  "oracle_only": false,
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_gross_portfolio.py --module submission/gross_portfolio.py --diagonal-module submission/portfolio.py --plan verification/GROSS_PORTFOLIO_PLAN.md --out evidence/gross_verify_001",
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/gross_verify_001/runner_used.py --module /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/gross_verify_001/gross_portfolio.py --diagonal-module /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/gross_verify_001/portfolio.py --plan /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/gross_verify_001/expectations.md --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/gross_verify_001_rerun",
+  "finished_utc": "2026-10-26T20:52:46.870307+00:00",
+  "exit_code": 0
+}

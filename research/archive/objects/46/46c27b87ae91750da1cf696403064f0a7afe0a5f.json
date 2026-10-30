@@ -1,0 +1,38 @@
+{
+ "name": "hl_inf",
+ "forecast_s": 4.1,
+ "rebalance_ms": 3.97,
+ "wall_s": 18.2,
+ "all": {
+  "sharpe": 0.777,
+  "gross_sharpe": 0.843,
+  "ret_pct": 4.44,
+  "cost_pct": 0.375,
+  "beta": 0.0069,
+  "gross": 0.85
+ },
+ "discovery": {
+  "sharpe": 0.668,
+  "gross_sharpe": 0.751,
+  "ret_pct": 4.62,
+  "cost_pct": 0.575,
+  "beta": 0.0125,
+  "gross": 0.992
+ },
+ "validation": {
+  "sharpe": 0.878,
+  "gross_sharpe": 0.922,
+  "ret_pct": 3.91,
+  "cost_pct": 0.194,
+  "beta": 0.0034,
+  "gross": 0.734
+ },
+ "audit": {
+  "sharpe": 1.35,
+  "gross_sharpe": 1.391,
+  "ret_pct": 5.03,
+  "cost_pct": 0.152,
+  "beta": 0.0039,
+  "gross": 0.676
+ }
+}

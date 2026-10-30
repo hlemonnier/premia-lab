@@ -1,0 +1,32 @@
+{
+  "reviewer": "score2_challenge",
+  "decision": "source_accepted_pending_independent_synthetic_readback",
+  "required_changes": [],
+  "source_sha256": {
+    "PLAN.md": "ef38677e96a486edea1b693490b399ed57ed028252dae7274b5d3671a7e95a00",
+    "E2E_SPEC.md": "400d6e73c38f9e8249b13259e81fea2da92418a03d7642b8c2718f1b5b9fd2cf",
+    "e2e.py": "70442c0f8d91cdb07b383d4ca74d80d83786f1b72585db00e259d20d8caa83d3",
+    "joint.py": "2beeb7beb6d2107818d7570047c02d24f0654912fcc2cd5217bd01580b10c48f",
+    "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "sleeve.py": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b"
+  },
+  "preimplementation_record_sha256": "1a9bd23de2caa32cd7eb946fc7dda7a3db503c4233808bbd3cf18595d6e12f82",
+  "scope_sha256": "de63c7ed1b0f8b3dc85ce9ae10556e2c585df30f8a77953c84feeef102c338c0",
+  "findings": {
+    "composition": "Thin factory constructs unchanged namespaced E2 wrapper then unchanged MarketSleeve; the one economic candidate and b=0 control match the master rule.",
+    "state_and_timing": "Outer sleeve computes E2 own drift before calling it. E2 retains independent actual allocator and F2 virtual book; observed forecast/reset/monotone contracts are unchanged.",
+    "costs": "Only the outer targets are returned to original scorer. Observer independently reconstructs outer and inner fees with their corresponding denominators. Known-component fee-netting comparison correctly uses the common outer denominator.",
+    "constraints": "Outer sleeve is added after E2 and VT, then total gross scaled to five. Observer verifies .10+.05/N stock bound, dynamic inner cap/gamma and both risk clocks/certificates.",
+    "observer": "All observer state is separate. Trace trimming occurs only after rebalance, hashing and state copies. It removes trace dictionary entries and older records, without changing the three live book arrays, risk state, warm starts or moment counters; unchanged policy code does not consume old trace records.",
+    "prospective_harness": "Written specification and executable harness precede factory; expected missing factory exit3 with zero economic executions retained. All dependent economic source files remain byte-identical to accepted originals.",
+    "release": "Actual/runtime modes require a root release matching all nine source hashes and qualifying E2/M1 components. Root release must bind the completed synthetic outcome and standalone evidence as specified; runtime has a separate permission field."
+  },
+  "limitations": [
+    "This source decision does not replace the independent saved-evidence readback that follows.",
+    "The inherited E2 optimizer certificate covers its solved problem before proportional gross scaling, not a globally optimal gross-constrained QP.",
+    "No actual joint strategy execution is authorized by this review alone."
+  ]
+}

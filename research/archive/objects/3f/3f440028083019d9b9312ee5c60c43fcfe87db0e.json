@@ -1,0 +1,37 @@
+[
+  {
+    "path": "strategy.py",
+    "git_blob_sha": "25c78db7f6ce77c918f8a066b87996c55fca215f",
+    "expected": "25c78db7f6ce77c918f8a066b87996c55fca215f",
+    "sha256": "1b004a0b5da145343028a010a0c53881bf0e04c5bde57a40c43626129f582e63",
+    "bytes": 3422
+  },
+  {
+    "path": "model_v3/engine.py",
+    "git_blob_sha": "30397d946d967265ef28cbaa1165d267f1077760",
+    "expected": "30397d946d967265ef28cbaa1165d267f1077760",
+    "sha256": "c134317d82effbf557481e7007e110a3209658d246a75a2257e856dd7047eb26",
+    "bytes": 14151
+  },
+  {
+    "path": "model_v3/allocator.py",
+    "git_blob_sha": "dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f",
+    "expected": "dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f",
+    "sha256": "b9d855b319beb76b4b6f7009e92181c5fef854be93b34cea7cbafa2c7c459f3b",
+    "bytes": 9762
+  },
+  {
+    "path": "model_v3/policy.py",
+    "git_blob_sha": "eef0be64dc44502a42378ee738c1cb4c5412c55d",
+    "expected": "eef0be64dc44502a42378ee738c1cb4c5412c55d",
+    "sha256": "58cec7e9a2665a1149766ce89e5a7c97ccfb03cf9d21c2f9f980240fd5d218e6",
+    "bytes": 7447
+  },
+  {
+    "path": "model_v3/__init__.py",
+    "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "expected": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+]

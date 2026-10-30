@@ -1,0 +1,107 @@
+{
+  "full": {
+    "n": 3526,
+    "sharpe": 1.2425030733031566,
+    "gross_sharpe": 1.2897547684439812,
+    "annual_net": 0.047550364408877575,
+    "annual_vol": 0.038269816333304014,
+    "annual_cost": 0.0017556622280725143,
+    "beta": 0.04649641302072478,
+    "mean_gross": 1.5837944354089444
+  },
+  "discovery": {
+    "n": 1762,
+    "sharpe": 1.0980016385754545,
+    "gross_sharpe": 1.1535512747495817,
+    "annual_net": 0.046339354743336524,
+    "annual_vol": 0.04220335663930076,
+    "annual_cost": 0.0022731681764684092,
+    "beta": 0.0425737252066896,
+    "mean_gross": 1.677343528714167
+  },
+  "validation": {
+    "n": 1007,
+    "sharpe": 1.6568592904246344,
+    "gross_sharpe": 1.6963391187378454,
+    "annual_net": 0.06315065775255146,
+    "annual_vol": 0.03811467764191771,
+    "annual_cost": 0.0014754176216559625,
+    "beta": 0.05378579790021658,
+    "mean_gross": 1.6550461840260675
+  },
+  "audit": {
+    "n": 755,
+    "sharpe": 1.1475575640626992,
+    "gross_sharpe": 1.1820257449036868,
+    "annual_net": 0.031170987272118002,
+    "annual_vol": 0.02716289644047426,
+    "annual_cost": 0.0009207266004920586,
+    "beta": 0.03855182594558804,
+    "mean_gross": 1.2708363243088423
+  },
+  "rounded_sharpe_matches_published": {
+    "full": true,
+    "discovery": true,
+    "validation": true,
+    "audit": true
+  },
+  "forecast_seconds_instrumented": 1.3842452540002341,
+  "rebalance_seconds_instrumented_mean": 0.004668838627060532,
+  "net_dollars": {
+    "mean": 0.4008620114638558,
+    "min": -0.20035105092618544,
+    "max": 0.7420842979311849
+  },
+  "allocator": {
+    "calls": 3527,
+    "factor_tolerance_failures": 3,
+    "hedge_tolerance_failures": 0,
+    "absolute_value_gap_gt_1e_10": 0,
+    "max_factor_residual": 6.9721901981635885e-12,
+    "max_dual_gap": 3.957337929572091e-18,
+    "min_dual_gap": -5.421010862427522e-19,
+    "max_gap_identity_error": 6.510761824278542e-19,
+    "max_beta_identity_error": 6.776263578034403e-20,
+    "gross_scaling_calls": 0
+  },
+  "risk_calibration": {
+    "full": {
+      "mean_realized_gross_squared": 5.837710724057903e-06,
+      "mean_predicted_second_moment": 2.181873750218855e-06,
+      "ratio": 2.675549272029303,
+      "mean_specific": 7.793348999580303e-07,
+      "mean_scaled_factor": 1.4025388502608252e-06
+    },
+    "discovery": {
+      "mean_realized_gross_squared": 7.084500302546542e-06,
+      "mean_predicted_second_moment": 2.8332914471645197e-06,
+      "ratio": 2.500448836506571,
+      "mean_specific": 8.852498300969191e-07,
+      "mean_scaled_factor": 1.9480416170676003e-06
+    },
+    "validation": {
+      "mean_realized_gross_squared": 5.825332794818041e-06,
+      "mean_predicted_second_moment": 1.5642991387051255e-06,
+      "ratio": 3.7239250797261554,
+      "mean_specific": 7.431387950867092e-07,
+      "mean_scaled_factor": 8.211603436184163e-07
+    },
+    "audit": {
+      "mean_realized_gross_squared": 2.9412548448181354e-06,
+      "mean_predicted_second_moment": 1.487148533659958e-06,
+      "ratio": 1.9777814913884482,
+      "mean_specific": 5.809532214247962e-07,
+      "mean_scaled_factor": 9.06195312235162e-07
+    }
+  },
+  "beta_forecast_description": {
+    "beta_coefficient": -5.290179837616689e-05,
+    "beta_forecast_objective": 6.730828806974213e-05,
+    "beta_net_dollar_term": 6.784108395377068e-05,
+    "beta_estimator_difference_term": -1.1547210328802209e-20,
+    "beta_hedge_tolerance_term": -1.3679989533288263e-20,
+    "beta_clipping_term": -5.327958840285156e-07,
+    "forecast_objective": 0.00043615794763560996,
+    "characteristics_forecast_objective": 0.00036884965956586783
+  }
+}

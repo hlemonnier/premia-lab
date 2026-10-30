@@ -1,0 +1,27 @@
+{
+  "original_F2_reproduction": {
+    "original_forecast_hash": true,
+    "original_target_hash": true,
+    "max_economic_difference": 4.440892098500626e-16,
+    "pass": true
+  },
+  "canonical_future": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 1501,
+    "protected_decisions": 1248,
+    "protected_earning_rows": 1247
+  },
+  "source_identity": {
+    "pass": true
+  },
+  "new_npz_integrity": {
+    "is_zipfile": true,
+    "bad_member": null
+  }
+}

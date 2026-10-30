@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-10-28T16:39:19.075438+00:00",
+  "order": [
+    "PLAN.md",
+    "copied unchanged dependencies",
+    "joint e2e.py",
+    "expected missing-joint import failure",
+    "joint.py"
+  ],
+  "red_exit_code": 1,
+  "red_reason": "ModuleNotFoundError: No module named joint",
+  "pre_implementation_e2e_sha256": "2a0ebbcdbcf14bc95975729b7699474b25f2a21f754ed5d7fb2b0ac3748cc9ba",
+  "hashes": {
+    "PLAN.md": "91235882e00185e912a0a383dd2f32e1ca3b5af0f49a26cc7a83f162eb955b2e",
+    "e2e.py": "2a0ebbcdbcf14bc95975729b7699474b25f2a21f754ed5d7fb2b0ac3748cc9ba",
+    "joint.py": "fcf6dd9a917299516bb3b5bee92f9488b0546f7bf3914f7a2289bfeb4c104b33",
+    "prototype.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "red.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "red.stderr.log": "020d5aba2cd2a090883b6db072e06cce2062a8f5690e0a3470e14eaf08235261"
+  }
+}

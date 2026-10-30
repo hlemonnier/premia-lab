@@ -1,0 +1,1 @@
+C09_additive_long_memory:locked_audit sharpe  1.80   return   9.7%/yr   vol  5.4%   beta  0.01   cost 0.33%/yr   gross 0.81   forecast 6.4s (0.01 h per century)   rebalance 2.3 ms/call

@@ -1,0 +1,18 @@
+{
+ "restart_same_length_history": {
+  "pass": true,
+  "max_target_diff": 0.0,
+  "max_gross_return_diff": 0.0
+ },
+ "characteristic_fortran_layout": {
+  "pass": true,
+  "max_forecast_diff": 0.0,
+  "max_target_diff": 0.0
+ },
+ "allocator_certificate_synthetic": {
+  "pass": true,
+  "calls": 87,
+  "recoveries": 0,
+  "failed": 0
+ }
+}

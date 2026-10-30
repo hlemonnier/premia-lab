@@ -1,0 +1,11 @@
+{
+  "status": "FAIL",
+  "started_utc": "2026-10-26T19:40:59.420066+00:00",
+  "checks": [],
+  "numeric_market_rows_read": 0,
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_factor_portfolio.py --module submission/factor_portfolio.py --diagonal-module submission/portfolio.py --plan verification/FACTOR_PORTFOLIO_PLAN.md --out evidence/factor_red_001",
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_red_001/runner_used.py --module /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_red_001/factor_portfolio.py --diagonal-module /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_red_001/portfolio.py --plan /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_red_001/expectations.md --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_red_001_rerun",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_factor_portfolio.py\", line 194, in main\n    raise FileNotFoundError(\"New factor solver absent: expected preimplementation red stage; numerical checks NOT RUN\")\nFileNotFoundError: New factor solver absent: expected preimplementation red stage; numerical checks NOT RUN\n",
+  "finished_utc": "2026-10-26T19:40:59.505251+00:00",
+  "exit_code": 1
+}

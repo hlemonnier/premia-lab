@@ -1,0 +1,38 @@
+{
+  "reviewer": "score2_execution",
+  "date_utc": "2026-10-29",
+  "review_kind": "read-only source and frozen-scope review; no policy or readback execution",
+  "status": "economic logic accepted; input provenance correction required",
+  "reviewed_source": "evidence/v2_score2_root_20261029/actual_readback.py",
+  "reviewed_source_sha256": "404d92c497e34bbb4531b514ebd927ee519718ff3df1b5756de26eb0e8eb4ae3",
+  "scope_sha256": "ec9d5b27e93583ec51a2e077393a3b61ed27e5b33f0a7d03c00084e5063e0463",
+  "original_scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+  "accepted": [
+    "The script imports no policy or allocator and reconstructs economics only from saved targets and original returns/costs.",
+    "Decisions 252 through 3778 and earning rows 253 through 3778 match the original scorer. Opening costs are zero; the final rebalance is charged without a further earning row or forced liquidation.",
+    "Position drift uses each previous target's own gross return; fees use the full absolute actual stock-weight change and original one-way stock costs.",
+    "Four economic columns are checked independently at absolute tolerance 1e-12 before computing performance from saved scorer rows.",
+    "Full and stage masks, population standard deviations, net-return market beta, arithmetic annualization, and fixed stock/gross limits match the frozen scope.",
+    "Paired block intervals use the same resampled indices for both books, 2000 draws, seed 20261027, lengths 21/63/126, and inclusive final legal block starts.",
+    "M1 minus M0 uses actual scored gross returns and actual netted stock fees. The fixed market-return identity is asserted only as an observed uncapped-path identity; it does not assign a free tradable market instrument.",
+    "The conditional joint comparison against M1 is descriptive and does not add a significance veto or parameter search."
+  ],
+  "required_correction": {
+    "issue": "Input hashes are recorded but original returns/costs and saved arrays are not compared with their existing frozen identities. Only the scorer is hash-asserted. The scope explicitly includes immutable original inputs and released output manifests.",
+    "minimal_remedy": "Before reconstruction, compare returns.csv, costs.csv and the fixed prior-leader CSV with the known hashes below. For each candidate validate targets.npy and rows.npy file hashes, shape and dtype against its existing verification.json or array_manifest.json, and record that manifest's hash. Bind optional forecast/virtual/inner arrays similarly if reporting them as released inputs. No new policy run is needed.",
+    "expected_input_sha256": {
+      "returns.csv": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+      "costs.csv": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186",
+      "prior_joint_daily.csv": "6b5a467fff8ca72be740195ca41e52b0d8b15057f899dfdb6b88fe448ced246c"
+    },
+    "manifest_formats": {
+      "execution": "verification.json: arrays[filename].file_sha256, shape, dtype",
+      "forecast_and_market": "array_manifest.json: [stem].sha256, shape, dtype"
+    }
+  },
+  "limitations": [
+    "This review does not claim that the readback has run or that its numerical assertions have passed.",
+    "Runtime figures are the saved original-scorer measurements; the separate production/runtime gate remains required.",
+    "Policy timing, state isolation, solver certification, and final-book constraints are also covered by their separately hash-bound release evidence."
+  ]
+}

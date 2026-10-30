@@ -1,0 +1,172 @@
+[
+  {
+    "case": "baseline",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "baseline",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "repeat",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "repeat",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "future",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "future",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "future_R_F",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "future_R_F",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "future_X_F",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "future_X_F",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "truncated",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "truncated",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "cold_alt_custom_start",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "cold_alt_custom_start",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "warm_alt_custom_start",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "warm_alt_custom_start",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "cold_alt_default_start",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "cold_alt_default_start",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  },
+  {
+    "case": "warm_alt_default_start",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001/run_e2e.py",
+      "--worker",
+      "warm_alt_default_start",
+      "--out",
+      "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_causality_review_20261028/run_001"
+    ],
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "exit_code": 0
+  }
+]

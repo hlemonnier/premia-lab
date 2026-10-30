@@ -1,0 +1,45 @@
+{
+  "forecast": {
+    "shape": [
+      3780,
+      1000
+    ],
+    "bytes": 30240128,
+    "file_sha256": "eaf4efefe539a476fdacbe05989e5e7c08feeb93b0d229b4f6269e18d3f69350",
+    "array_sha256": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927"
+  },
+  "targets": {
+    "shape": [
+      3527,
+      1000
+    ],
+    "bytes": 28216128,
+    "file_sha256": "4da574ed4313cf793af1a29d9236bf3652f1e1f922edf49dd00272f3327ea3aa",
+    "array_sha256": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850"
+  },
+  "indices": {
+    "shape": [
+      3527
+    ],
+    "bytes": 28344,
+    "file_sha256": "5eccf6dc463d3e6770117c3e0e9ffc4b19550f0802add212594b618efd20b7e1",
+    "array_sha256": "029cb92995c19c6e6a91f8a9a3541803fe1e1d63e12847ebb0a2295571019935"
+  },
+  "rows": {
+    "shape": [
+      3526,
+      5
+    ],
+    "bytes": 141168,
+    "file_sha256": "2b1358accf89fd12cf17f172213230d8daf813c66556e90e1ad5847878f4024f",
+    "array_sha256": "ae82bf6d57e4f98ead4fb07b9bf0dde6451cf943980c46919b233b288826dd61"
+  },
+  "days": {
+    "shape": [
+      3526
+    ],
+    "bytes": 28336,
+    "file_sha256": "5d4020b6128f11e4eb6a1bb26496c1857580438574443fab6f4b301825fd0d39",
+    "array_sha256": "14d037da9b457924a2036f455581754d043151fa7c4b3236c424f2a922658595"
+  }
+}

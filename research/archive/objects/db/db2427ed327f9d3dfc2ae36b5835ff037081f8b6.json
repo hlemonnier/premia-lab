@@ -1,0 +1,92 @@
+{
+  "checks": {
+    "finite": true,
+    "solvent": true,
+    "gross_bound": true,
+    "stock_bound": true,
+    "virtual_certificates": true,
+    "inner_certificates": true,
+    "risk_clock": true,
+    "independent_state": true,
+    "allocation_parameters": true,
+    "inner_raw_beta": true,
+    "inner_dynamic_stock_bound": true,
+    "error_supplied_held": true,
+    "error_recorded_fee": true,
+    "error_inner_fee": true,
+    "error_inner_held": true,
+    "error_target_formula": true,
+    "error_decomposition": true,
+    "error_virtual_return": true,
+    "error_q63": true,
+    "error_q1008": true,
+    "error_multiplier": true,
+    "error_recorded_inner_return": true,
+    "accounting": true,
+    "input_unchanged": true,
+    "finite_rows_forecast": true,
+    "row_count": true,
+    "decision_count": true,
+    "decision_clock": true,
+    "opening_free": true,
+    "endpoint_charged": true,
+    "forecast_warmup": true,
+    "decision_hash_readback": true
+  },
+  "all_passed": true,
+  "performance": {
+    "full": {
+      "n": 166,
+      "net_sharpe": null,
+      "gross_sharpe": null,
+      "net_return_ann_pct": 0.0,
+      "net_vol_ann_pct": 0.0,
+      "cost_ann_pct": 0.0,
+      "net_beta": null,
+      "mean_gross": 0.049999999999999996,
+      "worst_gross_daily_return": 0.0
+    },
+    "discovery": {
+      "n": 166,
+      "net_sharpe": null,
+      "gross_sharpe": null,
+      "net_return_ann_pct": 0.0,
+      "net_vol_ann_pct": 0.0,
+      "cost_ann_pct": 0.0,
+      "net_beta": null,
+      "mean_gross": 0.049999999999999996,
+      "worst_gross_daily_return": 0.0
+    }
+  },
+  "forecast_seconds": 0.06645170699630398,
+  "mean_rebalance_ms": 1.4958894763005819,
+  "p99_rebalance_ms": 2.950933449028524,
+  "accounting_max_error": 0.0,
+  "independent_errors": {
+    "supplied_held": 0.0,
+    "recorded_fee": 0.0,
+    "inner_fee": 0.0,
+    "inner_held": 0.0,
+    "target_formula": 0.0,
+    "decomposition": 0.0,
+    "virtual_return": 0.0,
+    "q63": 0.0,
+    "q1008": 0.0,
+    "multiplier": 0.0,
+    "recorded_inner_return": 0.0
+  },
+  "outer_cap_count": 0,
+  "decision_hashes": {
+    "targets": "3bd90617acda4a6ff6519a434b1ba90f1e0249a2b9ad3120988098127cd4ec3b",
+    "inner_targets": "b9aa5010ecaae3c15e6e144f81f381c66377c471c95eada9932cf828297deb53",
+    "virtual_targets": "b9aa5010ecaae3c15e6e144f81f381c66377c471c95eada9932cf828297deb53"
+  },
+  "input_array_sha256": [
+    "2ec3a6d3c0274e885a97dda06c53eb2e4d02aeaed87ff502d7435a8efc3fe7a9",
+    "b7f40ad6a2ac24b6fd86085d22c8e37082e4b1ab0bb01778466fccf4c1332b26",
+    "c86ba67a39a20bb3e2999b0496d51764f2cf42dc812cb76bda9c510cf36b2bc1"
+  ],
+  "trimmed_observation": false,
+  "runtime_stress_only": false,
+  "max_rss_kib": 69856
+}

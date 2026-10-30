@@ -1,0 +1,226 @@
+{
+  "reviewer": "score2_execution",
+  "date_utc": "2026-10-29T00:45:33Z",
+  "scope": "Read-only completed runtime packet reconciliation under the previously accepted source/observer review; no policy execution or new policy tests",
+  "status": "accepted",
+  "previous_source_review_sha256": "3afc7c5665c13aca6dfddc10d57011f224ae3805fd447a190584990d820a1a94",
+  "result_sha256": "f4983861a78b53f8a41dcc5b9b49d0a9ddac715a097175861db83ccc5c652bb5",
+  "artifact_manifest_sha256": "7d01ab4dd0c57a76d40343a4f319d08230016812a68ce08556872489235409e8",
+  "array_manifest_sha256": "166213d4aa91ba52c14db857392e04f511ab8845e04b235830e314337d6e1569",
+  "release_sha256": "ebfd08b2ec345c0b5116bc852cbeb585c6174711a0f3974603c14915db47dc2d",
+  "source_sha256": {
+    "PLAN.md": "ef38677e96a486edea1b693490b399ed57ed028252dae7274b5d3671a7e95a00",
+    "E2E_SPEC.md": "400d6e73c38f9e8249b13259e81fea2da92418a03d7642b8c2718f1b5b9fd2cf",
+    "e2e.py": "70442c0f8d91cdb07b383d4ca74d80d83786f1b72585db00e259d20d8caa83d3",
+    "joint.py": "2beeb7beb6d2107818d7570047c02d24f0654912fcc2cd5217bd01580b10c48f",
+    "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+    "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "sleeve.py": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b"
+  },
+  "checks": {
+    "result_identity": true,
+    "release_identity": true,
+    "runtime_authorized": true,
+    "release_prerequisites_bound": true,
+    "source_maps_identical": true,
+    "nine_source_copies": true,
+    "five_baseline_source_copies": true,
+    "one_cpu_one_thread": true,
+    "declared_artifact_hashes": true,
+    "array_rows": true,
+    "array_forecast": true,
+    "array_decision_indices": true,
+    "array_virtual_returns": true,
+    "array_controller_trace": true,
+    "array_final_targets": true,
+    "array_final_inner_targets": true,
+    "array_final_virtual_targets": true,
+    "runtime_dimensions": true,
+    "decision_counts_indices": true,
+    "finite_rows_forecasts": true,
+    "forecast_warmup": true,
+    "panel_raw_hash": true,
+    "panel_first_cycle_hash": true,
+    "panel_repeats_original_cycle": true,
+    "original_csv_hashes": true,
+    "tiled_return_hash": true,
+    "original_return_and_cost_array_hashes": true,
+    "timing_summary_matches_rows": true,
+    "forecast_seconds_matches_stdout": true,
+    "timing_gate": true,
+    "no_alpha_reported": true,
+    "all_recorded_workflow_checks_pass": true,
+    "no_stderr": true,
+    "csv_counts_indices": true,
+    "csv_rows_exact": true,
+    "opening_and_endpoint": true,
+    "scalar_rows_match": true,
+    "final_book_identities": true,
+    "final_books_finite": true,
+    "saved_controller_trace": true,
+    "stream_digest_records": true
+  },
+  "declared_artifacts_hash_verified": 41,
+  "incidental_nonoutput_entries_excluded_without_reading": 7,
+  "verified_persisted_arrays": {
+    "rows": {
+      "shape": [
+        24946,
+        5
+      ],
+      "dtype": "float64",
+      "file_sha256": "7e79542702df15bdbb6c26706a199102782937fa164e6ba6dce2bec0cff9fd33",
+      "array_sha256": "24c7b14812208fddd1211abc05bf20fe683d5bf445f41c27850d0ffae74511e1",
+      "c_contiguous": true,
+      "exact_file_length": true
+    },
+    "forecast": {
+      "shape": [
+        25200,
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "c5ba2508692dfdc0725f52bc0232735d6d560532be9b1001f94c0bc9e0d6ad7e",
+      "array_sha256": "67016067a78144f9e2e56116adb97f8317c58c0d1a9c2340308db2771dfb6004",
+      "c_contiguous": true,
+      "exact_file_length": true
+    },
+    "decision_indices": {
+      "shape": [
+        24947
+      ],
+      "dtype": "int64",
+      "file_sha256": "a7fa73df08b00ecc6f6a505eeac5c863ccd655eea7ab4b011ec30662a335bb7a",
+      "array_sha256": "b2a336bee90a6e1e647e97ce1a8491d4d1eddab7d1ee19d7b8a78af50cdfd69d",
+      "c_contiguous": true,
+      "exact_file_length": true
+    },
+    "virtual_returns": {
+      "shape": [
+        24947
+      ],
+      "dtype": "float64",
+      "file_sha256": "2c306a9f21df9f0feec8e811ce85ec70ed863281d70272cf38e0727be27bfe9e",
+      "array_sha256": "e7bb1c947069b8b8cfff93202b143e2ff57a913a3e7ceb8541c176ecf7e1fcfe",
+      "c_contiguous": true,
+      "exact_file_length": true
+    },
+    "controller_trace": {
+      "shape": [
+        24947,
+        3
+      ],
+      "dtype": "float64",
+      "file_sha256": "a7882546c861a8475c6a48084734b256f99545666543e6e9fd7d2810ed2b720e",
+      "array_sha256": "dd01716c9a23809876adc4f312c5fbaa95d9c6912cb968d39778e3289b2a0c61",
+      "c_contiguous": true,
+      "exact_file_length": true
+    },
+    "final_targets": {
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "638fe0b207ef36c5232d5b47294d81758555fe1c4b5f3b0931fc62f66591d875",
+      "array_sha256": "916eacf889d94aacc8374df1e34dc29080a5d79568420e28594380a2a9bbcdf6",
+      "c_contiguous": true,
+      "exact_file_length": true
+    },
+    "final_inner_targets": {
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "ec15b910e955e82a205fe1ff70fd25bd2838a9ecb2410376cc1d0eee726216ce",
+      "array_sha256": "531209d8e18d6ea422714da40160a7c51e3e56415d484ea44dc56cb66c481277",
+      "c_contiguous": true,
+      "exact_file_length": true
+    },
+    "final_virtual_targets": {
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "6832c44b40682a0c16c2de7005a6a25bacc8e02437b8e650eac62b0e7c00c8b7",
+      "array_sha256": "0b304e492a193a2d7821e11f85b189327b46616d71fa38fbcc303cb428ebe14a",
+      "c_contiguous": true,
+      "exact_file_length": true
+    }
+  },
+  "runtime_panel": {
+    "shape": [
+      25200,
+      1000,
+      13
+    ],
+    "dtype": "float64",
+    "file_sha256": "0f29c1fbbd22fd9c47fa9d805720e3edc4901cb0a1beeee3ac98124c785e24a4",
+    "array_sha256": "9a75bdb46170dc18f376ecf2122edb3e6c9476d337890d7bae53865453183f74",
+    "c_contiguous": true,
+    "exact_file_length": true
+  },
+  "timings": {
+    "forecast_seconds": 20.035996424994664,
+    "mean_rebalance_ms": 7.990192503556128,
+    "p99_rebalance_ms": 13.269608948394305,
+    "max_rebalance_ms": 150.26360000047134,
+    "total_recorded_rebalance_seconds": 199.32334219371114,
+    "max_rss_kib_recorded": 3835208
+  },
+  "counts": {
+    "input_rows": 25200,
+    "stocks": 1000,
+    "features": 13,
+    "decisions": 24947,
+    "scorer_rows": 24946,
+    "first_decision": 252,
+    "last_decision": 25198,
+    "first_earning": 253,
+    "last_earning": 25198
+  },
+  "final_book_max_errors": {
+    "outer_formula": 0.0,
+    "actual_gross": 0.0,
+    "inner_gross": 0.0,
+    "max_actual_weight": 0.0,
+    "net_dollars": 0.0
+  },
+  "recorded_stream_sha256": {
+    "targets": "1351eecb61a68838e694213e882238fd7cafbc62eb530c0607dee1604e973dc7",
+    "inner_targets": "0f4fbb03f1678180cc413b7ce8fd6bb819ceb08b9ce7d407b9a036425dcd6f27",
+    "virtual_targets": "e4a8114896b8f450607b01b27bafa210713accd30bc14ca17b947d58c26e74fd"
+  },
+  "recorded_certification_checks": {
+    "virtual_certificates": true,
+    "inner_certificates": true,
+    "risk_clock": true,
+    "independent_state": true,
+    "allocation_parameters": true,
+    "inner_raw_beta": true,
+    "inner_dynamic_stock_bound": true
+  },
+  "recorded_observer_errors": {
+    "supplied_held": 0.0,
+    "recorded_fee": 0.0,
+    "inner_fee": 0.0,
+    "inner_held": 0.0,
+    "target_formula": 0.0,
+    "decomposition": 6.179952383167375e-18,
+    "virtual_return": 0.0,
+    "q63": 0.0,
+    "q1008": 0.0,
+    "multiplier": 2.220446049250313e-16,
+    "recorded_inner_return": 0.0
+  },
+  "issues": [],
+  "review_logging_history": "First readback calculation reached JSON serialization but NumPy booleans were not serializable; no review file was written. The same read-only reconciliation was repeated with scalar normalization. No policy or prior evidence changed.",
+  "limitations": [
+    "Full decision books were intentionally not retained in runtime mode. Their rolling stream digests are source-bound recorded evidence; this readback cannot independently recompute the complete streams without rerunning the policy. Full-versus-trimmed stream equality was independently verified on the prior prospective synthetic run.",
+    "Per-solve runtime certificates are represented by the reviewed observer whole-path boolean accumulations, not separate persisted individual solver records.",
+    "The mean rebalance limit is 100 milliseconds. The approximately 150-millisecond maximum call is reported but is not the mean gate.",
+    "Tiled original history is a runtime/state stress, not additional alpha evidence.",
+    "This completed gate applies to the frozen ce3 research composition and reviewed observer; production integration preserving c51 fixes remains a separate gate."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "handoff_v2/model_v2/allocator.py": true,
+  "research/v2/test_allocator.py": true,
+  "research/v2/ALLOCATOR_SPEC.md": true,
+  "handoff/model/portfolio.py": true
+}

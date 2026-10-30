@@ -1,0 +1,79 @@
+{
+  "features": [
+    "Woe",
+    "Malice",
+    "Dread",
+    "Frolic",
+    "Up",
+    "Down",
+    "Charm",
+    "Strange",
+    "Top",
+    "Bottom",
+    "Snap",
+    "Crackle",
+    "Pop"
+  ],
+  "horizons": [
+    1,
+    5,
+    20
+  ],
+  "periods": [
+    [
+      "pooled",
+      0,
+      2016
+    ],
+    [
+      "block_1",
+      0,
+      504
+    ],
+    [
+      "block_2",
+      504,
+      1008
+    ],
+    [
+      "block_3",
+      1008,
+      1512
+    ],
+    [
+      "block_4",
+      1512,
+      2016
+    ]
+  ],
+  "first_feature_index": 252,
+  "target": "forward arithmetic daily-average return",
+  "beta": "centered trailing252 days through feature date, unshrunk",
+  "expected_origins_per_block": {
+    "1": [
+      251,
+      504,
+      504,
+      504
+    ],
+    "5": [
+      247,
+      500,
+      500,
+      500
+    ],
+    "20": [
+      232,
+      485,
+      485,
+      485
+    ]
+  },
+  "quantiles": 10,
+  "tie_method": "average ranks",
+  "contrasts": [
+    "top_minus_bottom",
+    "(Q1+Q10-Q5-Q6)/2"
+  ],
+  "temporal_summary_block": 63
+}

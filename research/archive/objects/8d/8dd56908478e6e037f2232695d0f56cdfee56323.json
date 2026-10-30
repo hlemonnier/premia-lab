@@ -1,0 +1,58 @@
+{
+  "mode": "actual",
+  "checks": {
+    "baseline_reproduction": {
+      "pass": true,
+      "max_difference": 4.440892098500626e-16,
+      "reference_path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/daily.csv",
+      "reference_sha256": "6b5a467fff8ca72be740195ca41e52b0d8b15057f899dfdb6b88fe448ced246c"
+    },
+    "state_reconstruction": {
+      "pass": true,
+      "max_difference": 6.1547988927657116e-15
+    },
+    "future": {
+      "pass": true,
+      "max_differences": {
+        "forecast": 0.0,
+        "targets": 0.0,
+        "economics": 0.0
+      },
+      "protected_forecast_rows": 1501,
+      "protected_decisions": 1248,
+      "protected_earning_rows": 1247
+    },
+    "prefix": {
+      "pass": true,
+      "max_differences": {
+        "forecast": 0.0,
+        "targets": 0.0,
+        "economics": 0.0
+      },
+      "protected_forecast_rows": 1501,
+      "protected_decisions": 1248,
+      "protected_earning_rows": 1247
+    },
+    "all_workflow_checks": {
+      "pass": true
+    },
+    "source_unchanged": {
+      "pass": true
+    }
+  },
+  "all_passed": true,
+  "source_commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+  "source_sha256": {
+    "e2e.py": "dfd1d01bb9af6718e8824f7aa62b8537da3c26296753fd65f60a2eac960901ea",
+    "prototype.py": "cc9df99a01cf991143aa03ef37d0ab3746b47ca9b417dec42eee9e069f662921",
+    "baseline_forecast.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+    "overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+    "PLAN.md": "033d147366e9a438947ef4603606eed471c728e068ba34a8cdda0fdaf288d183",
+    "E2E_SPEC.md": "47d14d3b23d257ca22a1e4faaab320f9c51e77e153d4eecffce55b51ecf18a25"
+  },
+  "policy_variants": [
+    "F2_VTvol",
+    "F3_VTvol"
+  ],
+  "production_modified": false
+}

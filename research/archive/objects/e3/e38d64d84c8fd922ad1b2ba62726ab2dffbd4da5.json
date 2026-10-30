@@ -1,0 +1,146 @@
+{
+  "reviewed_commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+  "retrieval_method": "github_fetch_commit on pinned first-parent revisions HEAD through HEAD~6",
+  "history": [
+    {
+      "first_parent_distance": 0,
+      "sha": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+      "created_at": "2026-10-28T12:51:50Z",
+      "message": "Explicit-beta results: exposure controlled, V2 retained under frozen rules\n\nB0 (corrected betas, zero target): realized beta -0.014, net Sharpe 1.044 (< 1.083 bar).\nB05 (corrected betas, explicit 0.05): realized 0.036, net Sharpe 1.231 vs V2 1.243\n(paired ranges symmetric around zero). Both pass the measurement check; neither\nclears its retention bar, so V2 stays. All three books have market-removed Sharpe\n1.08-1.10. Beta-corrected forecast passes the altered-future check.\nNote updated with the decomposition and rejected candidates.\n\nCo-Authored-By: Claude Opus 5.5 <[redacted-email]>\nClaude-Session: https://claude.ai/code/session_01EwDbFA79gVhKbupi2b3fKK",
+      "changed_files": [
+        "handoff_v2/strategy.py",
+        "research/v2/EXPLICIT_BETA_RESULTS.md",
+        "research/v2/results/candidates/V2_B05_explicit_beta.json",
+        "research/v2/results/candidates/V2_B0_beta_neutral.json",
+        "research/v2/results/candidates_B0.log",
+        "research/v2/results/explicit_beta_causality.txt",
+        "research/v2/results/explicit_beta_paired.txt",
+        "research/v2/results/ledgers/net_V2_B05_explicit_beta.npy",
+        "research/v2/results/ledgers/net_V2_B0_beta_neutral.npy"
+      ]
+    },
+    {
+      "first_parent_distance": 1,
+      "sha": "52a3a21da979b5a52b4068d06520ef6ad253817b",
+      "created_at": "2026-10-28T12:49:24Z",
+      "message": "Add in-progress logs for B0 and B05 runs\n\nCo-Authored-By: Claude Opus 5.5 <[redacted-email]>\nClaude-Session: https://claude.ai/code/session_01EwDbFA79gVhKbupi2b3fKK",
+      "changed_files": [
+        "research/v2/results/candidates_B0.log",
+        "research/v2/results/candidates_B05.log"
+      ]
+    },
+    {
+      "first_parent_distance": 2,
+      "sha": "c9fcbd8e4778395aaee1c4b2e6862fecb62ef090",
+      "created_at": "2026-10-28T12:49:01Z",
+      "message": "Explicit-beta experiment: frozen plan, allocator beta target, causal beta correction\n\nPlan and decision rules written first (EXPLICIT_BETA_PLAN.md). Allocator gains\nbeta_target (b'w = c); its tests were run before the change (failed: unknown\nargument) and pass after; target 0 is bitwise identical to the old default and\nthe original 38 checks still pass. Engine options beta_shrinkage / beta_target,\noff by default (package behaviour unchanged; package checks pass).\nPre-registered diagnostic: past-only corrected betas predict realized next-year\nbetas better on 97% of dates (MSE 0.0393 vs 0.0431); eta settles near 0.18.\n\nCo-Authored-By: Claude Opus 5.5 <[redacted-email]>\nClaude-Session: https://claude.ai/code/session_01EwDbFA79gVhKbupi2b3fKK",
+      "changed_files": [
+        "handoff_v2/model_v2/allocator.py",
+        "handoff_v2/model_v2/engine.py",
+        "research/v2/EXPLICIT_BETA_PLAN.md",
+        "research/v2/beta_correction_diagnostic.py",
+        "research/v2/results/beta_correction_diagnostic.json",
+        "research/v2/results/test_allocator_beta_target_after.log",
+        "research/v2/results/test_allocator_beta_target_before.log",
+        "research/v2/test_allocator_beta_target.py"
+      ]
+    },
+    {
+      "first_parent_distance": 3,
+      "sha": "ec312ec36fd7b18bf83b188140d00949743f34ee",
+      "created_at": "2026-10-28T12:20:21Z",
+      "message": "R27 rejected under frozen rule; matched-diagonal control; follow-up report and note\n\nR27 full-fee run: net Sharpe 1.167 vs packaged V2 1.243 (95% paired ranges\ninclude zero), realized beta 0.026 vs 0.047, net investment 24% vs 40%.\nRejected as specified; not tuned.\nMatched-marginal control (same marginal variances, no correlations): 0.938,\nso V2's gain over a C09-like book comes from the correlation structure\n(control book sizing not matched; gross cap active).\nresearch/v2/REVIEW_FOLLOWUP_20261028.md records every reviewer item and its\ndisposition; the handoff note now reflects the beta mechanism, the 0.3 penalty\nas a chosen exposure penalty, row ranges, and candidate-under-review status.\n\nCo-Authored-By: Claude Opus 5.5 <[redacted-email]>\nClaude-Session: https://claude.ai/code/session_01EwDbFA79gVhKbupi2b3fKK",
+      "changed_files": [
+        "handoff_v2/strategy.py",
+        "research/v2/REVIEW_FOLLOWUP_20261028.md",
+        "research/v2/results/candidates/V2_R27_beta_risk.json",
+        "research/v2/results/candidates/V2_matched_diagonal.json",
+        "research/v2/results/candidates_vs_v2_paired.txt",
+        "research/v2/results/ledgers/net_V2_R27_beta_risk.npy",
+        "research/v2/results/ledgers/net_V2_matched_diagonal.npy"
+      ]
+    },
+    {
+      "first_parent_distance": 4,
+      "sha": "b4aefa1488e201515a29d24eeadfd2ce346f7604",
+      "created_at": "2026-10-28T12:18:11Z",
+      "message": "Add in-progress logs for R27 and matched-diagonal runs\n\nCo-Authored-By: Claude Opus 5.5 <[redacted-email]>\nClaude-Session: https://claude.ai/code/session_01EwDbFA79gVhKbupi2b3fKK",
+      "changed_files": [
+        "research/v2/results/candidates_R27.log",
+        "research/v2/results/candidates_matched.log"
+      ]
+    },
+    {
+      "first_parent_distance": 5,
+      "sha": "2108ecafe7fea7147de280f144461f86aadcaea7",
+      "created_at": "2026-10-28T12:17:45Z",
+      "message": "R27 stage 1 passes the frozen risk gate; commit ledgers; matched-diagonal option\n\nStage 1 on frozen V2 holdings: mean loss difference R27 - R26 = -0.0368\n(21-day block range [-0.080, -0.002]; 63/126-day ranges include zero), gain\nconcentrated in validation. R26 calibration reproduces the reviewer's numbers.\nDaily ledgers and F26 force-added (ignored *.npy). Off-by-default\nmatched_diagonal control option and a portable candidate runner.\n\nCo-Authored-By: Claude Opus 5.5 <[redacted-email]>\nClaude-Session: https://claude.ai/code/session_01EwDbFA79gVhKbupi2b3fKK",
+      "changed_files": [
+        "handoff_v2/model_v2/engine.py",
+        "research/v2/results/F26.npy",
+        "research/v2/results/ledgers/net_C09_engine.npy",
+        "research/v2/results/ledgers/net_C09_reimpl.npy",
+        "research/v2/results/ledgers/net_beta_feat.npy",
+        "research/v2/results/ledgers/net_cost_h120.npy",
+        "research/v2/results/ledgers/net_cost_h250.npy",
+        "research/v2/results/ledgers/net_cost_h5.npy",
+        "research/v2/results/ledgers/net_cost_h60.npy",
+        "research/v2/results/ledgers/net_decor.npy",
+        "research/v2/results/ledgers/net_decor_beta.npy",
+        "research/v2/results/ledgers/net_fr_beta.npy",
+        "research/v2/results/ledgers/net_fr_beta_phi01.npy",
+        "research/v2/results/ledgers/net_fr_beta_phi03.npy",
+        "research/v2/results/ledgers/net_fr_beta_phi03_x5.npy",
+        "research/v2/results/ledgers/net_fr_decor_beta.npy",
+        "research/v2/results/ledgers/net_groups.npy",
+        "research/v2/results/ledgers/net_groups_plus.npy",
+        "research/v2/results/ledgers/net_h20.npy",
+        "research/v2/results/ledgers/net_h5.npy",
+        "research/v2/results/ledgers/net_hl_252.npy",
+        "research/v2/results/ledgers/net_hl_inf.npy",
+        "research/v2/results/ledgers/net_neutral_k10.npy",
+        "research/v2/results/ledgers/net_neutral_k20.npy",
+        "research/v2/results/ledgers/net_rev_scaled_h20.npy",
+        "research/v2/results/ledgers/net_rev_scaled_h60.npy",
+        "research/v2/results/ledgers/net_reversal.npy",
+        "research/v2/results/r27_shadow.json",
+        "research/v2/results/r27_shadow.log",
+        "research/v2/run_candidate.py"
+      ]
+    },
+    {
+      "first_parent_distance": 6,
+      "sha": "5bd1c16952e6132b27f7b514ac739903d60b6b00",
+      "created_at": "2026-10-28T12:16:46Z",
+      "message": "Fix V2 session reset, panel layout and allocator certificate; beta diagnostics\n\nEngineering (verification/V2_FIX_PLAN.md written first; checks failed on the\nunfixed package and pass after the fix, exit status binding):\n- forecast() starts a scoring session and resets the rebalance risk state and\n  warm start (restart on a different equal-length history now matches a fresh run)\n- basis() canonicalizes each characteristic panel to C-contiguous float64\n- allocator returns a certificate (caps, hedge, duality gap) and resumes the\n  joint solve once if it fails; 3,527/3,527 real calls certified, max gap 1.3e-17\n- real-data ledger identical to the pre-fix package (max diff 0.0)\n\nEvidence: daily ledgers committed; comparison.json regenerated with all 25\nvariants and n-L+1 block starts; drift test uses identical observed/null rows.\n\nBeta diagnostics: conditional on the 26 characteristics the beta factor has\nmarket slope -0.048 (NW t -19.7) and no significant intercept; estimated betas\nregress ~17.5% toward one; a zero-alpha synthetic market reproduces the pattern.\nOff-by-default risk_beta_column option and the frozen R27 plan added.\n\nCo-Authored-By: Claude Opus 5.5 <[redacted-email]>\nClaude-Session: https://claude.ai/code/session_01EwDbFA79gVhKbupi2b3fKK",
+      "changed_files": [
+        "handoff_v2/model_v2/allocator.py",
+        "handoff_v2/model_v2/engine.py",
+        "research/v2/R27_PLAN.md",
+        "research/v2/beta_diagnostics.py",
+        "research/v2/exploration/compare.py",
+        "research/v2/exploration/drift_test.py",
+        "research/v2/r27_shadow.py",
+        "research/v2/results/beta_diagnostics.json",
+        "research/v2/results/comparison.json",
+        "research/v2/results/comparison_stdout.txt",
+        "research/v2/results/drift_test_stdout.txt",
+        "verification/V2_FIX_PLAN.md",
+        "verification/v2_package_checks.py",
+        "verification/v2_package_checks_after_fix.json",
+        "verification/v2_package_checks_after_fix.log",
+        "verification/v2_package_checks_synthetic_after_fix.json",
+        "verification/v2_package_checks_synthetic_before_fix.json"
+      ]
+    }
+  ],
+  "conclusions": {
+    "r27_plan_precedes_shadow_result_commit": true,
+    "r27_plan_precedes_policy_result_commit": true,
+    "explicit_beta_plan_precedes_policy_result_commit": true,
+    "engineering_plan_tests_red_green_and_fix_share_one_commit": true,
+    "affine_target_plan_tests_red_green_and_implementation_share_one_commit": true,
+    "within_commit_execution_order_independently_established": false,
+    "commit_order_is_not_proof_of_actual_execution_timestamps": true
+  }
+}

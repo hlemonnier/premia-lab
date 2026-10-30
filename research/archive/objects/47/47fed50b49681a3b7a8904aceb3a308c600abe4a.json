@@ -1,0 +1,282 @@
+{
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "checks": [
+    {
+      "name": "complete_workflow",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "all_recorded_checks",
+      "status": "PASS",
+      "actual": 41
+    },
+    {
+      "name": "artifact:candidate_rebalance_seconds.npy",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:clean/model/__init__.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:clean/model/portfolio.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:clean/model/strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:clean/score.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:clean/strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:config.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:controller.stderr.log",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:controller.stdout.log",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:daily.csv",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:environment.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:expectations.md",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:forecasts.npy",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:held_books.npy",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:package_manifest.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:package_used/model/__init__.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:package_used/model/portfolio.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:package_used/model/strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:package_used/strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:protocol_used.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:reference/daily.csv",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:reference/input_manifest.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:reference/source_manifest.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:reference/summary.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:rerun.txt",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:runner_used.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:score_used.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:selection_used.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:setup.md",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:stderr.log",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:stdout.log",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:summary.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:targets.npy",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:worker_command.txt",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:worker_manifest.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "artifact:worker_summary.json",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "selected_identity",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "exact_member_set",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "current_package:model/__init__.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "clean_package:model/__init__.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "current_package:model/portfolio.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "clean_package:model/portfolio.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "current_package:model/strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "clean_package:model/strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "current_package:strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "clean_package:strategy.py",
+      "status": "PASS",
+      "actual": null
+    },
+    {
+      "name": "historical_array:forecasts.npy",
+      "status": "PASS",
+      "actual": "00e1a6f1c926528958f648f3da4693294b8a428bbdb8f994e1c4d3f1289f9b25"
+    },
+    {
+      "name": "historical_array:targets.npy",
+      "status": "PASS",
+      "actual": "bbaa32291f9b9cab008288d32fe25a6e687e4d54e4328bbe009a7fe9e033a5c2"
+    },
+    {
+      "name": "historical_array:held_books.npy",
+      "status": "PASS",
+      "actual": "bbfb2c76e6c72943c342a507163528b9dd0b408c795ede0b34a4abb8b355f0ae"
+    },
+    {
+      "name": "all_original_economic_rows",
+      "status": "PASS",
+      "actual": 1762
+    },
+    {
+      "name": "discovery_only",
+      "status": "PASS",
+      "actual": null
+    }
+  ],
+  "started_utc": "2026-10-27T11:35:02.494845+00:00",
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/handoff_discovery_independent_readback_001/review.py",
+  "model_executions": 0,
+  "audit_access": false,
+  "exit_code": 0,
+  "package_manifest_sha256": "97ec4469c51311730d906a68bd594ecd48b75d87bb29f0beccb6f7e3e5d8d813",
+  "source_summary_sha256": "095fa56f8b52758e504bfbdd035204a878a1dcda638d63a355f08c72353c423f",
+  "finished_utc": "2026-10-27T11:35:02.602839+00:00",
+  "review_source_sha256": "f09cf6faac16bdc653836dda41748f16ebab8149e8420c3eee280bcfb5a8ad3b",
+  "limitations": [
+    "Complete saved-artifact equivalence, not a new model execution or universal causal/overfit proof."
+  ]
+}

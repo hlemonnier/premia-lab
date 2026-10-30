@@ -1,0 +1,21 @@
+{
+ "net_sharpe": 1.2401251763846173,
+ "gross_sharpe": 1.2793163790627566,
+ "beta": 0.032491687407085634,
+ "ann_return": 0.02205120517104278,
+ "ann_vol": 0.01778143496395217,
+ "ann_fee": 0.0006796906049237934,
+ "mean_gross": 1.250302044434502,
+ "rebalance_ms": 10.57267259217216,
+ "rebalance_ms_max": 270.67143500016755,
+ "s1_net_sharpe": 1.0523515573220599,
+ "s2_net_sharpe": 1.7041287776473248,
+ "s3_net_sharpe": 1.097668095932087,
+ "cost_horizon": 10.0,
+ "factor_risk_scale": 1.0,
+ "cost_mult": 1.0,
+ "sleeve": 0.0,
+ "cert_statuses": [
+  "ok"
+ ]
+}

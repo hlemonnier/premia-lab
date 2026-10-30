@@ -1,0 +1,40 @@
+PASS seed 0: objective matches cvxpy  [rel 1.3e-10, caps 155, bands 2]
+PASS seed 0: weights match cvxpy  [max diff 3.0e-08]
+PASS seed 0: beta equality
+PASS seed 0: caps exact
+PASS seed 1: objective matches cvxpy  [rel 1.8e-11, caps 149, bands 2]
+PASS seed 1: weights match cvxpy  [max diff 7.0e-08]
+PASS seed 1: beta equality
+PASS seed 1: caps exact
+PASS seed 2: objective matches cvxpy  [rel 3.7e-11, caps 148, bands 3]
+PASS seed 2: weights match cvxpy  [max diff 6.1e-08]
+PASS seed 2: beta equality
+PASS seed 2: caps exact
+PASS seed 3: objective matches cvxpy  [rel 4.6e-12, caps 150, bands 3]
+PASS seed 3: weights match cvxpy  [max diff 4.6e-10]
+PASS seed 3: beta equality
+PASS seed 3: caps exact
+PASS seed 4: objective matches cvxpy  [rel 4.3e-11, caps 147, bands 4]
+PASS seed 4: weights match cvxpy  [max diff 5.0e-07]
+PASS seed 4: beta equality
+PASS seed 4: caps exact
+PASS seed 5: objective matches cvxpy  [rel 4.5e-12, caps 159, bands 5]
+PASS seed 5: weights match cvxpy  [max diff 1.1e-07]
+PASS seed 5: beta equality
+PASS seed 5: caps exact
+PASS zero factor risk reduces to diagonal allocator  [2.6e-16]
+PASS no trade at optimum  [1.3e-12]
+PASS cap 0 forces 0
+PASS rejects nan mu
+PASS rejects d <= 0
+PASS rejects gamma <= 0
+PASS rejects shape
+PASS rejects neg cap
+PASS rejects neg cost
+PASS beta solvable with one movable stock: holds zero
+PASS median solve under 10 ms at n=1000, k=26  [median 0.83 ms, max 1.22 ms]
+PASS full size matches cvxpy  [5.3e-10]
+PASS deterministic
+PASS inputs unchanged
+
+0 failure(s)

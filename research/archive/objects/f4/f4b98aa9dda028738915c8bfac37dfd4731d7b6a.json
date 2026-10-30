@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "evidence/v2_score2_review_20261029/m1/e2e.py",
+    "--mode",
+    "synthetic",
+    "--snapshot",
+    "/workspace/scratch/a83c191d516f/v2-followup-snapshot",
+    "--out",
+    "evidence/v2_score2_review_20261029/m1/synthetic_002"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 4.749809847999131,
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "clean/model_v2/__init__.py": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "clean/model_v2/allocator.py": {
+    "bytes": 6178,
+    "sha256": "8b50e5c4fa8ec2efb2baa9de8635ad8988f36387c780de271971245d50f3fe8f"
+  },
+  "clean/model_v2/engine.py": {
+    "bytes": 7263,
+    "sha256": "e06cb49f2cf6c396697687ae6607859541ff2054fd8b66320ef357a2ec696cd1"
+  },
+  "clean/score.py": {
+    "bytes": 4716,
+    "sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+  },
+  "clean/strategy.py": {
+    "bytes": 4211,
+    "sha256": "49269965f5f204a52ddb37d5723edbdf711da742db9cc6b75ffd7ced30549f73"
+  },
+  "daily.csv": {
+    "bytes": 455757,
+    "sha256": "8f19f15488c70123e3295356bdc5bed836d32cdcd30e8ac4a48eb1f1b14cba12"
+  },
+  "decision_observations.csv": {
+    "bytes": 2050549,
+    "sha256": "3a6ee63d7c8063d248785354becc08d2d0c11ed98c767831097c5b23825777f1"
+  },
+  "environment.json": {
+    "bytes": 1338,
+    "sha256": "e4ed1683cef93438d7a4ef6d46d93c60429ecd80460dfe0feef3eaef5376fbf2"
+  },
+  "existing_forecast_coefficients.npy": {
+    "bytes": 816608,
+    "sha256": "eb242fa64e42ec2461b8a99deda1c9dd96c6be2d10f819676cbbbb018bebda3e"
+  },
+  "forecasts.npy": {
+    "bytes": 30240128,
+    "sha256": "ba2c355f2a2563f8309848b4e53b57cd08861d326402d4a4bd7eed1540fe9f91"
+  },
+  "held.npy": {
+    "bytes": 28216128,
+    "sha256": "cd9bdae61d41871b101e678a2abc591e5e133b73fef9d128c1ba784a71dcbb44"
+  },
+  "input_csv_hashes.json": {
+    "bytes": 264,
+    "sha256": "cec22885d1cdda153ba7bc7411e35d94ea04cee9f52cc8b42557fb98bf241ab9"
+  },
+  "loaded_arrays.json": {
+    "bytes": 861,
+    "sha256": "5d8772954c11626fa153a0bea0e96bf2900f0350bcad8fd89f5fe345b43fec5d"
+  },
+  "replay.py": {
+    "bytes": 14678,
+    "sha256": "c31fb8ce836c6b9d500b8bcf6205cfe4576daac4076f231ef6e8714e509078f3"
+  },
+  "source_manifest.json": {
+    "bytes": 451,
+    "sha256": "bf89d1d56eb28ffc611b7e512cc70558103386d09b3b7c9e92a45d43228f5018"
+  },
+  "summary.json": {
+    "bytes": 3600,
+    "sha256": "80526ed0563ef0df1e1cee6a21e6dcc82cdbd3f2f548f0dbdcbfd982f317ba4b"
+  },
+  "targets.npy": {
+    "bytes": 28216128,
+    "sha256": "0824a38ebd9204ea3bf90133fafbd4cc74c9453d0b7966155bbcb2f7ff4ea632"
+  }
+}

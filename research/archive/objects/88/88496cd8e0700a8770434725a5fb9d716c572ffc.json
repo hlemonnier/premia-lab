@@ -1,0 +1,38 @@
+{
+ "name": "neutral_k10",
+ "forecast_s": 9.1,
+ "rebalance_ms": 3.35,
+ "wall_s": 21.0,
+ "all": {
+  "sharpe": 0.651,
+  "gross_sharpe": 0.769,
+  "ret_pct": 1.79,
+  "cost_pct": 0.326,
+  "beta": 0.0022,
+  "gross": 0.722
+ },
+ "discovery": {
+  "sharpe": 0.711,
+  "gross_sharpe": 0.854,
+  "ret_pct": 2.14,
+  "cost_pct": 0.429,
+  "beta": 0.0026,
+  "gross": 0.848
+ },
+ "validation": {
+  "sharpe": 0.535,
+  "gross_sharpe": 0.613,
+  "ret_pct": 1.33,
+  "cost_pct": 0.193,
+  "beta": 0.0024,
+  "gross": 0.574
+ },
+ "audit": {
+  "sharpe": 0.672,
+  "gross_sharpe": 0.777,
+  "ret_pct": 1.66,
+  "cost_pct": 0.259,
+  "beta": 0.0014,
+  "gross": 0.626
+ }
+}

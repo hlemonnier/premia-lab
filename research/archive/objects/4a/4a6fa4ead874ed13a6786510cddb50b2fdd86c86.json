@@ -1,0 +1,8 @@
+{
+  "reviewer": "v2_allocator_audit",
+  "approved": "observational formulas, unchanged returns, row alignment; absolute-gap flag corrected before execution",
+  "hashes": {
+    "PLAN.md": "04029aad97a84e6bbfa29500350eba6b98473c0fa5b05bce4fcc9baa4cae6e8c",
+    "replay.py": "c31fb8ce836c6b9d500b8bcf6205cfe4576daac4076f231ef6e8714e509078f3"
+  }
+}

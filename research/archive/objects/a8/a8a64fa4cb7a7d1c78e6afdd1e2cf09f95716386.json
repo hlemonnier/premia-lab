@@ -1,0 +1,38 @@
+{
+ "name": "decor_beta",
+ "forecast_s": 3.9,
+ "rebalance_ms": 3.29,
+ "wall_s": 15.6,
+ "all": {
+  "sharpe": 1.0,
+  "gross_sharpe": 1.096,
+  "ret_pct": 4.71,
+  "cost_pct": 0.452,
+  "beta": 0.0133,
+  "gross": 0.875
+ },
+ "discovery": {
+  "sharpe": 0.77,
+  "gross_sharpe": 0.891,
+  "ret_pct": 3.98,
+  "cost_pct": 0.625,
+  "beta": 0.0137,
+  "gross": 0.988
+ },
+ "validation": {
+  "sharpe": 0.81,
+  "gross_sharpe": 0.873,
+  "ret_pct": 2.98,
+  "cost_pct": 0.229,
+  "beta": 0.0123,
+  "gross": 0.719
+ },
+ "audit": {
+  "sharpe": 1.858,
+  "gross_sharpe": 1.93,
+  "ret_pct": 8.94,
+  "cost_pct": 0.347,
+  "beta": 0.0147,
+  "gross": 0.821
+ }
+}

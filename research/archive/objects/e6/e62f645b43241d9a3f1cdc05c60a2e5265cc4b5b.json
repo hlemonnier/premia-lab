@@ -1,0 +1,31 @@
+{
+  "scope": "Input hygiene and original equal-weight E2E on first504 rows only",
+  "started_utc": "2026-10-26T13:51:57.197153+00:00",
+  "run_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/305f831f543f/continual_takehome/tools/preflight.py --source '/workspace/scratch/305f831f543f/continual_takehome/source/Quant Research Take-Home' --out /workspace/scratch/305f831f543f/continual_takehome/evidence/preflight_001",
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/305f831f543f/continual_takehome/tools/preflight.py --source '/workspace/scratch/305f831f543f/continual_takehome/source/Quant Research Take-Home' --out /workspace/scratch/305f831f543f/continual_takehome/evidence/preflight_001_rerun",
+  "source": "/workspace/scratch/305f831f543f/continual_takehome/source/Quant Research Take-Home",
+  "checks": [
+    {
+      "name": "source_file_count",
+      "status": "FAIL",
+      "actual": 14
+    }
+  ],
+  "status": "FAIL",
+  "outcome_data_access": {
+    "start_inclusive": 0,
+    "end_exclusive": 504
+  },
+  "unverified": [
+    "candidate strategy",
+    "alpha",
+    "future beta",
+    "causality of a candidate",
+    "long-horizon runtime",
+    "all evaluator dependencies",
+    "remote CSV byte identity"
+  ],
+  "exception": "Traceback (most recent call last):\n  File \"/workspace/scratch/305f831f543f/continual_takehome/tools/preflight.py\", line 120, in main\n    record(\"source_file_count\", len(files) == 12, len(files))\n  File \"/workspace/scratch/305f831f543f/continual_takehome/tools/preflight.py\", line 103, in record\n    raise AssertionError(name)\nAssertionError: source_file_count\n",
+  "finished_utc": "2026-10-26T13:52:00.594976+00:00",
+  "exit_code": 1
+}

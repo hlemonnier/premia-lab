@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-27T10:34:13.136300+00:00",
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/prepare_discovery.py --project /workspace/scratch/a72f2bd378f1/continual-research-takehome --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/data_preparation_restored_20261027_v2 --cache /workspace/scratch/a72f2bd378f1/continual-research-takehome/cache/discovery",
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/data_preparation_restored_20261027_v2/runner_used.py --project /workspace/scratch/a72f2bd378f1/continual-research-takehome --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/data_preparation_restored_20261027_v2_rerun --cache /workspace/scratch/a72f2bd378f1/continual-research-takehome/cache/discovery_rerun",
+  "checks": [
+    {
+      "name": "source_identity_returns.csv",
+      "status": "PASS",
+      "actual": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d"
+    },
+    {
+      "name": "source_identity_characteristics.csv",
+      "status": "PASS",
+      "actual": "46b9df20aebb324bd0026090d54f04bd6835283881dd73e728e90f16a5279a08"
+    },
+    {
+      "name": "source_identity_costs.csv",
+      "status": "PASS",
+      "actual": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186"
+    },
+    {
+      "name": "returns_shape",
+      "status": "PASS",
+      "actual": [
+        2016,
+        1000
+      ]
+    },
+    {
+      "name": "day_sequence",
+      "status": "PASS",
+      "actual": [
+        1,
+        2016
+      ]
+    },
+    {
+      "name": "stock_order",
+      "status": "PASS",
+      "actual": "returns columns equal cost rows"
+    },
+    {
+      "name": "returns_finite",
+      "status": "PASS",
+      "actual": "finite prefix"
+    },
+    {
+      "name": "costs_valid",
+      "status": "PASS",
+      "actual": "finite nonnegative costs"
+    },
+    {
+      "name": "characteristics_rows_and_alignment",
+      "status": "PASS",
+      "actual": 2016000
+    }
+  ],
+  "numeric_input_slice": [
+    0,
+    2016
+  ],
+  "model_fitted": false,
+  "exit_code": 0,
+  "finished_utc": "2026-10-27T10:34:15.454994+00:00"
+}

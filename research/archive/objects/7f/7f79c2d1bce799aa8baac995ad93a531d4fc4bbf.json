@@ -1,0 +1,79 @@
+{
+  "checks": {
+    "finite": true,
+    "solvent": true,
+    "input_unchanged": true,
+    "economic_rows": true,
+    "decision_rows": true,
+    "decision_clock": true,
+    "scorer_accounting": true,
+    "held_drift": true,
+    "warmup": true,
+    "stock_bound": true,
+    "gross_bound": true,
+    "certificates": true,
+    "multiplier_clock": true,
+    "opening_free": true,
+    "last_rebalance_charged": true
+  },
+  "performance": {
+    "full": {
+      "n": 386,
+      "net_sharpe": null,
+      "net_return_ann_pct": 0.0,
+      "net_vol_ann_pct": 0.0,
+      "cost_ann_pct": 0.0,
+      "gross_sharpe": null,
+      "net_beta": null,
+      "mean_gross": 0.0,
+      "worst_gross_daily_return": 0.0
+    },
+    "discovery": {
+      "n": 386,
+      "net_sharpe": null,
+      "net_return_ann_pct": 0.0,
+      "net_vol_ann_pct": 0.0,
+      "cost_ann_pct": 0.0,
+      "gross_sharpe": null,
+      "net_beta": null,
+      "mean_gross": 0.0,
+      "worst_gross_daily_return": 0.0
+    }
+  },
+  "forecast_seconds": 0.14318477699998766,
+  "rebalance_ms_mean": 0.5739855490232229,
+  "rebalance_ms_p99": 0.9524420482193804,
+  "wall_seconds": 0.403744592993462,
+  "accounting_max_error": 0.0,
+  "multiplier_max_error": 0.0,
+  "input_array_sha256": [
+    "dae4d3dce1bb0a9414f61a65ee07622fa225ec01e6efe6df6e78f9ad5c58480d",
+    "9561d4aff4efc8b91a3412af96c22056f4fcaa2d9a535bbb69e35a23c69ab05f",
+    "c86ba67a39a20bb3e2999b0496d51764f2cf42dc812cb76bda9c510cf36b2bc1"
+  ],
+  "forecast_sha256": "dae4d3dce1bb0a9414f61a65ee07622fa225ec01e6efe6df6e78f9ad5c58480d",
+  "targets_sha256": "2ae54194b5275f06f8c614b57850299f48f914dabc71ce497d4cf95c5d022d3d",
+  "virtual_targets_sha256": "2ae54194b5275f06f8c614b57850299f48f914dabc71ce497d4cf95c5d022d3d",
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "instrumented_research_runtime": true,
+  "runtime_stress_only": false
+}

@@ -1,0 +1,17 @@
+{
+  "status": "EXACT_FROZEN_PACKAGE_ARCHIVE",
+  "archive": "continual_research_C09.zip",
+  "bytes": 8709,
+  "sha256": "cba024cae44dd84b17b17dcde48e4276e677a52883220c54da455664a770b7fa",
+  "files": {
+    "model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+    "model/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+    "strategy.py": "7f15248160efd09e65d7dcf4d79cb1c5c4897d87641f2c2057f8566c7de7d946"
+  },
+  "package_manifest_sha256": "97ec4469c51311730d906a68bd594ecd48b75d87bb29f0beccb6f7e3e5d8d813",
+  "configuration_sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+  "raw_market_data_included": false,
+  "note_or_source_changed": false,
+  "external_submission": false
+}

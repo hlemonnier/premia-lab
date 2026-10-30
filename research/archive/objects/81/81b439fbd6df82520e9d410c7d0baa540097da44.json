@@ -1,0 +1,79 @@
+{
+  "variant": "F1",
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "shape": [
+    420,
+    64
+  ],
+  "checks": {
+    "finite": true,
+    "warmup_zero": true,
+    "counts": true,
+    "input_unchanged": true,
+    "drift_reconciles": true,
+    "scorer_reconciles": true,
+    "all_certified": true,
+    "stock_caps": true,
+    "gross_cap": true,
+    "estimated_hedge": true
+  },
+  "performance": {
+    "full": {
+      "n": 166,
+      "sharpe": null,
+      "annual_net_return_pct": 0.0,
+      "annual_vol_pct": 0.0,
+      "annual_cost_pct": 0.0,
+      "beta": null,
+      "mean_gross": 0.0
+    },
+    "discovery": {
+      "n": 166,
+      "sharpe": null,
+      "annual_net_return_pct": 0.0,
+      "annual_vol_pct": 0.0,
+      "annual_cost_pct": 0.0,
+      "beta": null,
+      "mean_gross": 0.0
+    }
+  },
+  "forecast_seconds": 0.0545947079990583,
+  "observed_rebalance_ms": 0.5157180482883522,
+  "wall_seconds": 0.16955609299839125,
+  "forecast_century_extrapolation_seconds": 3.275682479943498,
+  "certificates": {
+    "ok": 167
+  },
+  "max_gross_before_scale": 0.0,
+  "gross_scalings": 0,
+  "max_estimated_hedge_error": 0.0,
+  "mean_net_stock_investment": 0.0,
+  "forecast_sha256": "2ec3a6d3c0274e885a97dda06c53eb2e4d02aeaed87ff502d7435a8efc3fe7a9",
+  "targets_sha256": "b9aa5010ecaae3c15e6e144f81f381c66377c471c95eada9932cf828297deb53",
+  "input_array_sha256": [
+    "2ec3a6d3c0274e885a97dda06c53eb2e4d02aeaed87ff502d7435a8efc3fe7a9",
+    "06ddfb18d29fd644927d31573c4078334e4b7cfe86b9a8772dc09cfa82d6fc02",
+    "7b6a70ccf264b9095bed3e411f526434fbe1f022accebd37251a11d4a793e10f"
+  ],
+  "scorer_max_error": 0.0,
+  "drift_max_error": 0.0
+}

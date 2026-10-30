@@ -1,0 +1,133 @@
+{
+  "commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+  "all_exact": true,
+  "files": [
+    {
+      "path": "verification/V3_INTEGRATION_SPEC.md",
+      "remote_git_blob_sha": "aec2ef92a63a4e95587e1c55ad066b3b201cc7df",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/V3_INTEGRATION_SPEC.md",
+      "sha256": "790b6d33cbb1e91c8460c1d176523bd04e3cba013b3c81da22df59ee82ab1ae5",
+      "bytes": 3149,
+      "local_git_blob_sha": "aec2ef92a63a4e95587e1c55ad066b3b201cc7df"
+    },
+    {
+      "path": "verification/v3_integration_checks.py",
+      "remote_git_blob_sha": "f061f712de339e0f6f0f2cea29eab739891cdef3",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_integration_checks.py",
+      "sha256": "91679f84d0598efe7e43553fd197d483373425c1c30c9046b8e7ed4db9b67b8c",
+      "bytes": 7134,
+      "local_git_blob_sha": "f061f712de339e0f6f0f2cea29eab739891cdef3"
+    },
+    {
+      "path": "verification/v3_integration_checks_after.json",
+      "remote_git_blob_sha": "f4987a8f3804fbc680732e4617b06edd711284d2",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_integration_checks_after.json",
+      "sha256": "480855b5d537eeca80ae7b8c8b1f8d2f066e63bf871fce86eaabc9e3c73fef40",
+      "bytes": 1365,
+      "local_git_blob_sha": "f4987a8f3804fbc680732e4617b06edd711284d2"
+    },
+    {
+      "path": "verification/v3_runtime_check.py",
+      "remote_git_blob_sha": "0b96964ccf6688ee6d5dc40f4780580702229f1a",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_runtime_check.py",
+      "sha256": "0ae1a4b160c910f869fa337f4e711ca6b18d6f0393fb4315e2e6d1519ee3043b",
+      "bytes": 2030,
+      "local_git_blob_sha": "0b96964ccf6688ee6d5dc40f4780580702229f1a"
+    },
+    {
+      "path": "verification/v3_sleeve_comparison.py",
+      "remote_git_blob_sha": "d2a98a3f8dfc773ff0016fea4b4dbd354318d0da",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_sleeve_comparison.py",
+      "sha256": "ec70802dd38b074fca194e01697f1055f4988afeb4533e481bcbaefc30b3f275",
+      "bytes": 2065,
+      "local_git_blob_sha": "d2a98a3f8dfc773ff0016fea4b4dbd354318d0da"
+    },
+    {
+      "path": "verification/v3_failure_paths.py",
+      "remote_git_blob_sha": "314a225fefb55b1dd1f10bc18b40ea52f2b27c35",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_failure_paths.py",
+      "sha256": "8e6e49ea8e1960beeaf3f61088b8a06211df6c7c924d69b0e0a0feaf3bea1bf9",
+      "bytes": 980,
+      "local_git_blob_sha": "314a225fefb55b1dd1f10bc18b40ea52f2b27c35"
+    },
+    {
+      "path": "verification/v3_integration_checks_after.log",
+      "remote_git_blob_sha": "d4b564aa44762ba1cc45b65ca1b3146b839eab4f",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_integration_checks_after.log",
+      "sha256": "e2c808f4f8b7912944616d45234147847b852ab5cd15d617f8319046c06fc6e4",
+      "bytes": 916,
+      "local_git_blob_sha": "d4b564aa44762ba1cc45b65ca1b3146b839eab4f"
+    },
+    {
+      "path": "verification/v3_runtime_check.log",
+      "remote_git_blob_sha": "c2d8446cb3ee6d084a4b8b8491615a5b8a23005c",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_runtime_check.log",
+      "sha256": "1f4c56c496a2ee30b756dcaf6f69828e2d5ae6c7ddff6f031e1ce4acb2a37ba1",
+      "bytes": 359,
+      "local_git_blob_sha": "c2d8446cb3ee6d084a4b8b8491615a5b8a23005c"
+    },
+    {
+      "path": "verification/v3_clean_folder_run.log",
+      "remote_git_blob_sha": "3387faf36154b21fa7d826d0042743df94040e8e",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_clean_folder_run.log",
+      "sha256": "ac6c76f97ec573ec59d826206685603a79e24c773b61ed83b3f8b0d2e8cff9b3",
+      "bytes": 178,
+      "local_git_blob_sha": "3387faf36154b21fa7d826d0042743df94040e8e"
+    },
+    {
+      "path": "verification/v3_failure_paths.log",
+      "remote_git_blob_sha": "c73233b4bf3ae9f2e133ee7740b39da04a9b6de9",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_failure_paths.log",
+      "sha256": "82235dc7f4f8562e66745c44ceb14d938fdef2641d04ec337352bac6e80a9c86",
+      "bytes": 826,
+      "local_git_blob_sha": "c73233b4bf3ae9f2e133ee7740b39da04a9b6de9"
+    },
+    {
+      "path": "verification/v3_integration_checks_before.log",
+      "remote_git_blob_sha": "20cd52fbb9976a3093fa315a0aae59af33a8bc47",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_integration_checks_before.log",
+      "sha256": "ef9fd6885cfa86575c9e13b6845dc4cf2be2345377a22bd6f836f37b6484647f",
+      "bytes": 111,
+      "local_git_blob_sha": "20cd52fbb9976a3093fa315a0aae59af33a8bc47"
+    },
+    {
+      "path": "verification/v3_clean_folder_run_attempt1_isolated_mode.log",
+      "remote_git_blob_sha": "394f62f8a58dafd7e7b8314208c623ec6ec18354",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_clean_folder_run_attempt1_isolated_mode.log",
+      "sha256": "53238648e2406fa66766d758045e2686f03515d37a1e0cc68d0646607843f932",
+      "bytes": 815,
+      "local_git_blob_sha": "394f62f8a58dafd7e7b8314208c623ec6ec18354"
+    },
+    {
+      "path": "verification/v2_failure_paths.py",
+      "remote_git_blob_sha": "366f4a5cb9b459a371ef974f5a3d5e893c938dc1",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v2_failure_paths.py",
+      "sha256": "54b68adfc31b2a830008cab95ecce7c85dbe73ae446d5e780ad7103039b3c728",
+      "bytes": 4844,
+      "local_git_blob_sha": "366f4a5cb9b459a371ef974f5a3d5e893c938dc1"
+    },
+    {
+      "path": "verification/v3_sleeve_comparison.json",
+      "remote_git_blob_sha": "0152de1a168f39bf0d718f79382936f83a45133d",
+      "remote_commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+      "url": "https://github.com/hlemonnier/continual-research-takehome/blob/978824d4b6140c43566ebd61a3ee8157f4080e35/verification/v3_sleeve_comparison.json",
+      "sha256": "6bf603f2bb2faaebaba2edb9c50c7e4928091598d7c1fe59763e2e48627ff239",
+      "bytes": 769,
+      "local_git_blob_sha": "0152de1a168f39bf0d718f79382936f83a45133d"
+    }
+  ],
+  "transfer_note": "An initial newline-normalizing transfer was detected before numerical use; exact source bytes were restored and verified against the retrieved Git-blob identities before execution."
+}

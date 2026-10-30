@@ -1,0 +1,44 @@
+{
+  "returns": {
+    "shape": [
+      3780,
+      1000
+    ],
+    "dtype": "float64",
+    "strides": [
+      8,
+      30240
+    ],
+    "c_contiguous": false,
+    "f_contiguous": true,
+    "logical_c_order_sha256": "49c750ec23a236807cdbb83171164d47e896b73ab0802d5e951d317dd607c409"
+  },
+  "characteristics": {
+    "shape": [
+      3780,
+      1000,
+      13
+    ],
+    "dtype": "float64",
+    "strides": [
+      8000,
+      8,
+      30240000
+    ],
+    "c_contiguous": false,
+    "f_contiguous": false,
+    "logical_c_order_sha256": "b2fcec939cd5769bd30f2b2d83d7caa002db8b672abfffc1a10703543b994f95"
+  },
+  "costs": {
+    "shape": [
+      1000
+    ],
+    "dtype": "float64",
+    "strides": [
+      8
+    ],
+    "c_contiguous": true,
+    "f_contiguous": true,
+    "logical_c_order_sha256": "f8f7aca2ca5ccc702e7910f5ee9ccb3a1f427d144d9719bb9b114817509de872"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "review_type": "independent pre-execution source review",
+  "reviewer": "followup_engineering",
+  "sha256": {
+    "evidence/v2_followup_review_20261028/PLAN.md": "361a029fcdeb1c831dda7b087a366e2f6c4192b83fc25068f61ef2d71c2c03db",
+    "evidence/v2_followup_review_20261028/ledger_readback.py": "c3063f1d75ddefb904f7d038f1f79b4bd3ddb8440adc8ce92e01c8251c310b9d",
+    "evidence/v2_followup_review_20261028/LATEST_PACKAGE_REPLAY_PLAN.md": "f4944462ab19f7f5b0b6c20286392222f08e648ca5e256d89293bf14490a31f2"
+  },
+  "approved_logic": [
+    "fixed earning row masks and original excluded boundaries",
+    "five-row ledger field mapping",
+    "net equals gross minus fees check",
+    "original market-return verification",
+    "intercept and market regression with Bartlett lag10 HAC covariance",
+    "ex-post market-removed Sharpe as intercept/residual volatility",
+    "B05 minus B0 incremental policy net, gross and fee accounting",
+    "shared-index moving-block bootstrap with all legal starts",
+    "bounded latest-head V2/B0/B05 replay need after source extension"
+  ],
+  "pre_run_recommendation": "Assert prior CSV return_index exactly equals candidate earning indices before field subtraction. Current CSV aliases and candidate JSON metric keys were checked against actual headers/keys.",
+  "executions_by_this_review": []
+}

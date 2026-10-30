@@ -1,0 +1,10 @@
+{
+  "branch": "review/v3-integration-audit-20261029",
+  "commit": "75032b0082f0ae8a98dd30efabdb2ab7b865ed10",
+  "tree": "90a18e010290c5505a0fb645f5d63415b70d3fb4",
+  "verified_files": 173,
+  "archive_parts_verified": 53,
+  "all_expected_blob_identities_match": true,
+  "production_and_original_scorer_unchanged": true,
+  "remote_head_verified": true
+}

@@ -1,0 +1,10 @@
+{
+  "imported_snapshots": 38,
+  "unique_public_objects": 2920,
+  "recorded_file_mappings": 42185,
+  "explicit_omissions": 1407,
+  "private_history_retained": true,
+  "repository_visibility_changed": false,
+  "rename_performed": false,
+  "note": "Do not make the legacy repository public: original third-party material is retained in its history. Use the clean-snapshot publisher."
+}

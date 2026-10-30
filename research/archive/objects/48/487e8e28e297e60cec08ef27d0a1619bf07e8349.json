@@ -1,0 +1,32 @@
+{
+  "reviewer": "/root/score2_forecast",
+  "scope": "Independent static mathematical review only: E1 global scalar minimizer/certificate; E2 homogeneity/gamma/caps. No strategy or new tests executed.",
+  "source_sha256": {
+    "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+    "PLAN.md": "44e808526fb83ba5dc8f635e67dee7d9852396bec40dfe497c3ade51e328e744"
+  },
+  "disposition": "accepted_for_synthetic_and_source_review_no_required_math_change",
+  "E1": {
+    "derivation": "For v_i != 0, cost_i*abs(a*v_i-held_i)/20 equals w_i*abs(a-r_i), with r_i=held_i/v_i and w_i=cost_i*abs(v_i)/20 >= 0. Terms with v_i=0 are constant. Curvature=200*max(q63,1e-12)>0 gives a unique scalar minimizer.",
+    "algorithm": "Sorted breakpoints and cumulative positive weights give the right derivative k*(a-desired)+2*sum_{r_i<=a}w_i-total. At the first breakpoint with nonnegative right derivative, the minimizer is the previous interval smooth root clipped to its endpoints; an upward derivative jump selects its knot. No crossing selects the upper bound; a nonnegative derivative at the lower bound selects that bound. Tied ratios, negative v and zero costs are handled correctly.",
+    "certificate": "Interior left<=0<=right; at lower bound right>=0; at upper bound left<=0. The implemented residual matches these conditions. Numerical tie and boundary tolerances are explicitly finite precision, not exact-real certificates.",
+    "units": "The quadratic is a chosen daily tracking-risk penalty; cost/20 is the existing cost amortization convention. Actual scorer still charges full costs. This is not a calibrated utility or future-Sharpe theorem.",
+    "caps": "Scalar upper=min(2,5/gross_virtual), lower=.5. Virtual gross<=5 yields upper>=1. Virtual stock cap.05 and a<=2 imply actual cap<=.10. Zero v leaves transaction-cost terms constant and target zero.",
+    "fee_claim": "Against the clipped desired scalar at the SAME actual held book, the minimized objective and the comparator's minimum tracking penalty imply weakly lower local fees. This does not compare aggregate fees across different evolving strategy paths."
+  },
+  "E2": {
+    "homogeneity": "At zero costs, w=a*x with gamma_actual=gamma/a gives objective a*(mu*x-gamma*x_Sigma_x/2); scaled stock caps and zero beta equality are homothetic. Thus the pre-gross-cap solution scales, subject to numerical solving tolerance.",
+    "gross_scope": "The ce3 engine does NOT solve a joint gross-constrained QP: it solves beta/stock-cap constraints and then proportionally rescales gross. If the virtual pre-cap gross does not bind, the baseline and E2 also agree after the shared actual gross rescaling, even when that outer rescaling binds. If a<1 and the virtual gross cap binds, the two paths need not agree. The stated identity scope is appropriate.",
+    "state_updates": "Daily gamma and stock-cap changes leave risk-absorption settings unchanged. The separate actual state and warm map are checked distinct. The math is compatible with preserving state instead of calling configure each day.",
+    "actual_costs": "With costs, the actual allocator uses the supplied drifted actual book. Its objective intentionally differs from scaling the virtual-book solution; exact zero-cost identity must not be claimed at positive costs."
+  },
+  "required_changes": [],
+  "reporting_clarification": "For E2, retain the inherited post-solve proportional gross-rescaling limitation. Do not describe the returned capped book as a globally optimal solution of a QP with a gross constraint. E1 has an exact scalar box formulation, including its gross bound.",
+  "not_reviewed": [
+    "independent namespaces/import implementation",
+    "full information clock",
+    "E2E fixture implementation",
+    "runtime/economic outputs"
+  ],
+  "no_policy_execution": true
+}

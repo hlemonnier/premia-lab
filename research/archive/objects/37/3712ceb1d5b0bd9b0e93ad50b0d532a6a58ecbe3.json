@@ -1,0 +1,18 @@
+{
+  "scope": "Isolated synthetic portfolio optimizer verification",
+  "started_utc": "2026-10-26T14:48:09.692269+00:00",
+  "run_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/305f831f543f/continual_takehome/tools/verify_portfolio.py --module submission/portfolio.py --plan verification/PORTFOLIO_PLAN.md --out evidence/portfolio_red_001 --expected-missing-module",
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/305f831f543f/continual_takehome/evidence/portfolio_red_001/runner_used.py --module /workspace/scratch/305f831f543f/continual_takehome/submission/portfolio.py --plan /workspace/scratch/305f831f543f/continual_takehome/evidence/portfolio_red_001/expectations.md --out /workspace/scratch/305f831f543f/continual_takehome/evidence/portfolio_red_001_rerun --expected-missing-module",
+  "status": "EXPECTED_RED_FAILURE",
+  "checks": [],
+  "expected_missing_module": true,
+  "unverified": [
+    "alpha",
+    "full strategy E2E",
+    "actual-cost backtest",
+    "long-history runtime"
+  ],
+  "exception": "Traceback (most recent call last):\n  File \"/workspace/scratch/305f831f543f/continual_takehome/tools/verify_portfolio.py\", line 279, in main\n    raise FileNotFoundError(\"Expected preimplementation failure: allocator does not exist; numerical cases NOT RUN\")\nFileNotFoundError: Expected preimplementation failure: allocator does not exist; numerical cases NOT RUN\n",
+  "finished_utc": "2026-10-26T14:48:09.782021+00:00",
+  "exit_code": 1
+}

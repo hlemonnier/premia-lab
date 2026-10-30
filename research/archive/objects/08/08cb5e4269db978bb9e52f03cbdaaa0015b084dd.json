@@ -1,0 +1,109 @@
+{
+  "scope": "Read-only existing-ledger marginal derivative; no new candidate score or execution",
+  "command_argv": [
+    "evidence/v2_score2_review_20261029/marginal_market_diagnostic.py",
+    "--ledger",
+    "evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/daily.csv",
+    "--costs",
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/costs.csv",
+    "--out",
+    "evidence/v2_score2_review_20261029/marginal_market_diagnostic.json"
+  ],
+  "source": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/marginal_market_diagnostic.py",
+    "bytes": 3641,
+    "sha256": "e003dc6b826bb8ff1cd355567ab0b98c9483de8eaea4b985c159f655067c83cc"
+  },
+  "plan": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/PLAN.md",
+    "bytes": 3547,
+    "sha256": "d6e0341141460e0392a8418843f315e2a25b07ec119d521b257ed62ee067814d"
+  },
+  "inputs": [
+    {
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_joint_20261028/actual_001/joint_F2_VTvol/daily.csv",
+      "bytes": 456159,
+      "sha256": "6b5a467fff8ca72be740195ca41e52b0d8b15057f899dfdb6b88fe448ced246c"
+    },
+    {
+      "path": "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home/costs.csv",
+      "bytes": 17011,
+      "sha256": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186"
+    }
+  ],
+  "results": {
+    "full": {
+      "n": 3526,
+      "joint_net_sharpe_reconciliation": 1.3183349660908277,
+      "joint_mean_daily": 0.0002296233003766168,
+      "market_mean_daily": 0.0005746001721497431,
+      "joint_variance_daily": 7.645060178680446e-06,
+      "market_variance_daily": 7.957066293909526e-05,
+      "joint_market_covariance_daily": 4.194993572249415e-06,
+      "joint_net_beta_reconciliation": 0.052720354679718265,
+      "joint_market_correlation": 0.17008435106489914,
+      "market_mean_annual_pct": 14.479924338173527,
+      "market_vol_annual_pct": 14.160440339428717,
+      "marginal_market_mean_threshold_annual_pct": 3.1751693007573727,
+      "sharpe_derivative_at_zero_market_addition_ignoring_incremental_cost": 2.5755526455571225,
+      "positive_marginal_spanning_direction_before_incremental_cost": true
+    },
+    "discovery": {
+      "n": 1762,
+      "joint_net_sharpe_reconciliation": 1.1035119417439896,
+      "joint_mean_daily": 0.000212222392683958,
+      "market_mean_daily": 0.0003968724262202021,
+      "joint_variance_daily": 9.320278280667341e-06,
+      "market_variance_daily": 5.777204686042505e-05,
+      "joint_market_covariance_daily": 3.018288453356869e-06,
+      "joint_net_beta_reconciliation": 0.052244789952638045,
+      "joint_market_correlation": 0.13007308032936324,
+      "market_mean_annual_pct": 10.001185140749092,
+      "market_vol_annual_pct": 12.065884057468443,
+      "marginal_market_mean_threshold_annual_pct": 1.7319031822797166,
+      "sharpe_derivative_at_zero_market_addition_ignoring_incremental_cost": 1.706290961334077,
+      "positive_marginal_spanning_direction_before_incremental_cost": true
+    },
+    "validation": {
+      "n": 1007,
+      "joint_net_sharpe_reconciliation": 1.6339700632722547,
+      "joint_mean_daily": 0.0002512498179513847,
+      "market_mean_daily": 0.0009427614250248248,
+      "joint_variance_daily": 5.958320516731965e-06,
+      "market_variance_daily": 0.00011617484105096252,
+      "joint_market_covariance_daily": 5.966536957023795e-06,
+      "joint_net_beta_reconciliation": 0.051358253672208164,
+      "joint_market_correlation": 0.22677979623978065,
+      "market_mean_annual_pct": 23.757587910625585,
+      "market_vol_annual_pct": 17.110248374831546,
+      "marginal_market_mean_threshold_annual_pct": 6.340226455605563,
+      "sharpe_derivative_at_zero_market_addition_ignoring_incremental_cost": 4.494901337695179,
+      "positive_marginal_spanning_direction_before_incremental_cost": true
+    },
+    "audit": {
+      "n": 755,
+      "joint_net_sharpe_reconciliation": 1.5930290672960639,
+      "joint_mean_daily": 0.00024571805445973964,
+      "market_mean_daily": 0.0004958563165562913,
+      "joint_variance_daily": 5.995525801754299e-06,
+      "market_variance_daily": 8.133744871074862e-05,
+      "joint_market_covariance_daily": 4.5597421239767765e-06,
+      "joint_net_beta_reconciliation": 0.056059566611095506,
+      "joint_market_correlation": 0.20648160661507153,
+      "market_mean_annual_pct": 12.495579177218541,
+      "market_vol_annual_pct": 14.316786327632558,
+      "marginal_market_mean_threshold_annual_pct": 4.7092377240690535,
+      "sharpe_derivative_at_zero_market_addition_ignoring_incremental_cost": 2.0031779741874582,
+      "positive_marginal_spanning_direction_before_incremental_cost": true
+    }
+  },
+  "costs": {
+    "n": 1000,
+    "minimum": 0.00020083,
+    "maximum": 0.00079917,
+    "equal_weight_oneway_cost_per_unit_notional": 0.00050420932,
+    "hypothetical_paid_005_basket_insertion_cost_bps": 0.25210466,
+    "disposition": "This insertion is free at the actual first trade; subsequent fees need stock-level drift/netting replay. No annual fee estimate is inferred."
+  },
+  "candidate_disposition": "One fixed +0.05 sleeve proposal; no optimized weight or dynamic premium fit calculated."
+}

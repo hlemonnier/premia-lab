@@ -1,0 +1,46 @@
+{
+  "targets": {
+    "path": "evidence/v2_score2_review_20261029/m1/synthetic_002/synthetic_M1_prefix/targets.npy",
+    "shape": [
+      108,
+      64
+    ],
+    "dtype": "float64",
+    "sha256": "0e3d17ff7de9b4918c4c014818997d21e5b5939de36624effd65f459c3c53551",
+    "array_sha256": "e02e02eb4f01457c58520ffa9ce49e286d3e718a3d7efa05e5e4dbf521441a7d",
+    "readback_exact": true
+  },
+  "inner_targets": {
+    "path": "evidence/v2_score2_review_20261029/m1/synthetic_002/synthetic_M1_prefix/inner_targets.npy",
+    "shape": [
+      108,
+      64
+    ],
+    "dtype": "float64",
+    "sha256": "ccd6039e6faa65a11fcfea62890153b0e5bd0eb9a703a4a6446dd38897caf445",
+    "array_sha256": "c0f0c5c8b004dbadfa64443f7306780b4a5e8f05efe5d5a9816fffe388a62ae8",
+    "readback_exact": true
+  },
+  "rows": {
+    "path": "evidence/v2_score2_review_20261029/m1/synthetic_002/synthetic_M1_prefix/rows.npy",
+    "shape": [
+      107,
+      5
+    ],
+    "dtype": "float64",
+    "sha256": "1bc86dfffd352f788740710355ea162b6a7e68e959b878a616b39d0f7ba83054",
+    "array_sha256": "83b15c86061093800d1a0b14b296f9ee943346a9526f639c7c8c69d4cb8b6504",
+    "readback_exact": true
+  },
+  "forecast": {
+    "path": "evidence/v2_score2_review_20261029/m1/synthetic_002/synthetic_M1_prefix/forecast.npy",
+    "shape": [
+      361,
+      64
+    ],
+    "dtype": "float64",
+    "sha256": "7b9ffd049bc4d2cdda04a871fc63c1928145e9c7dcbc148c80ee0fbf208a67e5",
+    "array_sha256": "0a7c5f240c97fcda773211527f4237fd48c7307091abbe2e406c6f86312bb8bc",
+    "readback_exact": true
+  }
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "name": ".daily_diagnostics.csv.8ILw4G",
+    "bytes": 38535168,
+    "sha256": "bda2c81599a1c379517e911425e24316b8eb74db4c5a6750f066cd5e247ba490"
+  },
+  {
+    "name": ".daily_diagnostics.csv.DAAbX3",
+    "bytes": 10485760,
+    "sha256": "b8ad889fd0e8c84403b59a5966bfac22fc063885c581444b5304ab60da7f0395"
+  },
+  {
+    "name": ".daily_diagnostics.csv.RdFtsD",
+    "bytes": 39583744,
+    "sha256": "aff41c1a5083d8cd29a74c186b3333152009d68a6fdba624569a7b39b3c7bc57"
+  },
+  {
+    "name": ".daily_diagnostics.csv.b3WJXW",
+    "bytes": 30408704,
+    "sha256": "1ddbe694c8049852f5ff66698cbba5ff466bc22ae170407e18cf3a1d951d1c75"
+  },
+  {
+    "name": ".daily_diagnostics.csv.b3WJXW.e21b9q",
+    "bytes": 4718592,
+    "sha256": "55d1db87fdfa65a36f36c862dc1f8eeb453aa01ed07bf2263f44c51c04108e1b"
+  },
+  {
+    "name": ".daily_diagnostics.csv.bNJ8zX",
+    "bytes": 16515072,
+    "sha256": "b33b430e85aab8e1b327f83733dcfc4e0b30e0175a4493e51c95c9aaa2b23708"
+  },
+  {
+    "name": ".daily_diagnostics.csv.bNJ8zX.gVGjhT",
+    "bytes": 12320768,
+    "sha256": "4de8faf3fc7e0deb759c590f65eef53374ff8b79c65b4176439a51b320b6592b"
+  },
+  {
+    "name": "beta_control_coverage.json",
+    "bytes": 264,
+    "sha256": "a0996b50dd91455638b32c7390c39098aada67c06cbb6140e0001663fbdd0308"
+  },
+  {
+    "name": "characteristic_summary.csv",
+    "bytes": 17046,
+    "sha256": "43e1f3d1c111a82c94a7be37dbf957b50ff91e6d49caed840bbd33d727854bd4"
+  },
+  {
+    "name": "checks.json",
+    "bytes": 18031,
+    "sha256": "cbefa93b733ffe14b10c4e91eb3313d0ca190acca886b13cbcfb44bdda8ef170"
+  },
+  {
+    "name": "command.txt",
+    "bytes": 257,
+    "sha256": "44a4ff3fd13a2108eb34ff9be73c5b635a991dd7de5928f1188f3e35f56c9681"
+  },
+  {
+    "name": "config.json",
+    "bytes": 1035,
+    "sha256": "8c64ef591b8ec6f2fe67ae84b1880278bd4c442c2324ca17db8d564ae73aaae1"
+  },
+  {
+    "name": "daily_diagnostics.csv",
+    "bytes": 47291585,
+    "sha256": "5b3223c3f23f371fcee37a8825386bb250ed4dfd4cb73686082b99c437f93249"
+  },
+  {
+    "name": "diagnostic_exposures.json",
+    "bytes": 23047,
+    "sha256": "8d6a6acfa6ad1da529ec1b98304aad92a7caa8e8620862d128dc173f09b37301"
+  },
+  {
+    "name": "environment.json",
+    "bytes": 447,
+    "sha256": "a150bd843f78bcbf07ea152a2d01c3d7942e3a4d847c03dfa28ae3b690ee2f9c"
+  },
+  {
+    "name": "expectations.md",
+    "bytes": 9461,
+    "sha256": "c04bec37edc55acac4579186d590cbf177ac4710dc490dc5ecd658aa6ea9f4f4"
+  },
+  {
+    "name": "horizon_1_summary.csv",
+    "bytes": 103651,
+    "sha256": "df3d512eec1ee447197b41051a863e248f04c5cc95b9b4a436f27654cd497481"
+  },
+  {
+    "name": "horizon_20_summary.csv",
+    "bytes": 103299,
+    "sha256": "a586f4c74b441ea3fc25384efe4498d5fd04fc6fb00799f1ebe3c145e2358dba"
+  },
+  {
+    "name": "horizon_5_summary.csv",
+    "bytes": 102984,
+    "sha256": "ca16db04eb620e7f9310d6c024860e4bebd1fc27d03719c0c4672614d8774dbd"
+  },
+  {
+    "name": "inputs.json",
+    "bytes": 17095,
+    "sha256": "e93b4cb6126c80d2ed6760cfcd4a2433c65b213572895f9a831765f7606dc4b4"
+  },
+  {
+    "name": "persistence.csv",
+    "bytes": 19502,
+    "sha256": "5d28d289a5a36d424a4d2278039e4a9bfb06769683587d5844b51c904fa505fe"
+  },
+  {
+    "name": "predictive_summary.csv",
+    "bytes": 307830,
+    "sha256": "6f07094331c070bf514ddb8a109479e8c2903fa4c7fbd58c60f28ece8b1e72e3"
+  },
+  {
+    "name": "protocol_used.json",
+    "bytes": 6688,
+    "sha256": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737"
+  },
+  {
+    "name": "quantile_shapes.csv",
+    "bytes": 274958,
+    "sha256": "6f2f8f754ea5eace067bd9696ab3817af23c5b08cbf08a712680942489922bfa"
+  },
+  {
+    "name": "redundancy.csv",
+    "bytes": 86511,
+    "sha256": "6b5d00cbe85a2c9b276b8bd3d13c2735ab3fa2f0e990d26e9a7bb608839cec38"
+  },
+  {
+    "name": "rerun.sh",
+    "bytes": 383,
+    "sha256": "ee86775b04c6e57ef06e33305831bad096e24bbfa50e46af2c2a3515636a72aa"
+  },
+  {
+    "name": "runner_used.py",
+    "bytes": 26255,
+    "sha256": "f34144f30d777dcb5c30ed976d2e89d965cd35d024e74c9c53501a423d335b8a"
+  },
+  {
+    "name": "undefined_values.json",
+    "bytes": 251,
+    "sha256": "38eaf1f215adea89a634a5d62a23672fecef06e3aabbb435ad6c01728a1c9cb5"
+  }
+]

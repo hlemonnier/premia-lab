@@ -1,0 +1,37 @@
+{
+ "mean_kurtosis_raw_characteristics": 3.0,
+ "specific_vol_max_over_min_median_day": 2.78,
+ "OLS": {
+  "ceiling": {
+   "sample": 2.021,
+   "bias_corrected": 1.456
+  },
+  "causal_timer_no_costs": {
+   "all": 0.844,
+   "first_half": 0.325,
+   "second_half": 1.254
+  }
+ },
+ "WLS": {
+  "ceiling": {
+   "sample": 2.021,
+   "bias_corrected": 1.456
+  },
+  "causal_timer_no_costs": {
+   "all": 0.819,
+   "first_half": 0.295,
+   "second_half": 1.234
+  }
+ },
+ "RANK": {
+  "ceiling": {
+   "sample": 2.006,
+   "bias_corrected": 1.436
+  },
+  "causal_timer_no_costs": {
+   "all": 0.824,
+   "first_half": 0.303,
+   "second_half": 1.234
+  }
+ }
+}

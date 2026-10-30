@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_WITH_EXPLICIT_F1_STOCK_LEVEL_LIMITATION",
+  "exit_code": 0,
+  "readback_source_sha256": "df4ac78a168fc4116d28871be35b61c624d09fdba4e768464e35a473287dfff7",
+  "result_sha256": "2b9d5c6cf0608dc911412a4c27f97cbf827efa42b703101d07a8ea6f4647cdad",
+  "files_final": true,
+  "winner": "F2_VTvol",
+  "score": 1.318334966090838,
+  "links_checked": 2,
+  "all_relative_links_resolve": true
+}

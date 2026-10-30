@@ -1,0 +1,63 @@
+{
+  "baseline_reproduction": {
+    "max_differences": [
+      0.0,
+      3.432366483049898e-10,
+      3.441221439748343e-10,
+      6.567205248575805e-12,
+      0.0
+    ],
+    "pass": true
+  },
+  "F1_future": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 2.044804880974027e-10,
+      "economics": 1.0182488185961347e-09
+    },
+    "tolerance": 1e-12,
+    "pass": false,
+    "protected_forecast_rows": 1501,
+    "protected_decisions": 1248,
+    "protected_earning_rows": 1247
+  },
+  "F1_prefix": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 1500,
+    "protected_decisions": 1247,
+    "protected_earning_rows": 1246
+  },
+  "F2_future": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 1.6722931633211813e-12,
+      "economics": 2.3102186830215032e-11
+    },
+    "tolerance": 1e-12,
+    "pass": false,
+    "protected_forecast_rows": 1501,
+    "protected_decisions": 1248,
+    "protected_earning_rows": 1247
+  },
+  "F2_prefix": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 1500,
+    "protected_decisions": 1247,
+    "protected_earning_rows": 1246
+  },
+  "source_identity": {
+    "pass": true
+  }
+}

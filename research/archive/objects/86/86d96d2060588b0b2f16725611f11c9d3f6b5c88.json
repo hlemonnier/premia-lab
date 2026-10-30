@@ -1,0 +1,82 @@
+{
+ "D1_univariate": {
+  "intercept_bp_per_day": -0.4202989978504259,
+  "intercept_t": -2.0169202458019613,
+  "market_slope": -0.05940410895008878,
+  "market_slope_t": -16.228208733882244,
+  "mean_f_bp": -0.7616960704846323,
+  "slope_times_mean_market_bp": -0.3413970726342062,
+  "r2": 0.16052255369363055,
+  "n": 3527
+ },
+ "D1_joint_with_26": {
+  "intercept_bp_per_day": -0.10392974098346795,
+  "intercept_t": -0.7657084072934303,
+  "market_slope": -0.048013376376170584,
+  "market_slope_t": -19.6784649073331,
+  "mean_f_bp": -0.3798639554985144,
+  "slope_times_mean_market_bp": -0.27593421451504646,
+  "r2": 0.24431885957794608,
+  "n": 3527
+ },
+ "D2_regression_to_one": {
+  "mean_slope": 0.8246591288947109,
+  "eta": 0.17534087110528906,
+  "min": 0.6584619093377242,
+  "max": 0.9273099021857854,
+  "n_dates": 156
+ },
+ "D3_beta_share_outside_26_span": {
+  "mean": 0.932029634516955,
+  "min": 0.8657912257246043
+ },
+ "D4_market_component": {
+  "C09_engine": {
+   "beta": 0.008838132510731393,
+   "beta_t": 1.3059021835917752,
+   "alpha_ann_pct": 5.056546413070795,
+   "alpha_t": 3.1548648427726076,
+   "net_ann_pct": 5.18452190311694,
+   "market_part_ann_pct": 0.12797549004614256,
+   "sharpe": 0.8848112300099408,
+   "sharpe_ex_post_market_removed": 0.86316733369827
+  },
+  "beta_feat": {
+   "beta": 0.016517098503286944,
+   "beta_t": 2.4179373918529934,
+   "alpha_ann_pct": 5.159690668253643,
+   "alpha_t": 3.230437732873028,
+   "net_ann_pct": 5.398857004867396,
+   "market_part_ann_pct": 0.23916633661375483,
+   "sharpe": 0.9227991924778716,
+   "sharpe_ex_post_market_removed": 0.8826252949249123
+  },
+  "fr_beta_phi03_x5": {
+   "beta": 0.0464964131150534,
+   "beta_t": 9.521223579465723,
+   "alpha_ann_pct": 4.081771873470102,
+   "alpha_t": 3.9685597839600324,
+   "net_ann_pct": 4.755036417372535,
+   "market_part_ann_pct": 0.6732645439024344,
+   "sharpe": 1.2425030656280773,
+   "sharpe_ex_post_market_removed": 1.0827215293418093
+  }
+ },
+ "D5_synthetic_zero_alpha": {
+  "intercept_bp_per_day": -0.07411323899516799,
+  "intercept_t": -0.5713553644308447,
+  "market_slope": -0.04588435540520143,
+  "market_slope_t": -29.307283844452627,
+  "mean_f_bp": -0.2634109710303783,
+  "slope_times_mean_market_bp": -0.18929773203521044,
+  "r2": 0.2819032974126937,
+  "n": 2247,
+  "regression_to_one": {
+   "mean_slope": 0.8870224128487443,
+   "eta": 0.11297758715125572,
+   "min": 0.8548441767821303,
+   "max": 0.9339606100271131,
+   "n_dates": 95
+  }
+ }
+}

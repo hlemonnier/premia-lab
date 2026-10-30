@@ -1,0 +1,38 @@
+{
+ "name": "C09_engine",
+ "forecast_s": 10.9,
+ "rebalance_ms": 3.54,
+ "wall_s": 23.5,
+ "all": {
+  "sharpe": 0.885,
+  "gross_sharpe": 0.957,
+  "ret_pct": 5.18,
+  "cost_pct": 0.425,
+  "beta": 0.0088,
+  "gross": 0.861
+ },
+ "discovery": {
+  "sharpe": 0.7,
+  "gross_sharpe": 0.786,
+  "ret_pct": 4.79,
+  "cost_pct": 0.588,
+  "beta": 0.0144,
+  "gross": 0.981
+ },
+ "validation": {
+  "sharpe": 0.659,
+  "gross_sharpe": 0.711,
+  "ret_pct": 2.68,
+  "cost_pct": 0.209,
+  "beta": 0.0059,
+  "gross": 0.692
+ },
+ "audit": {
+  "sharpe": 1.799,
+  "gross_sharpe": 1.861,
+  "ret_pct": 9.68,
+  "cost_pct": 0.333,
+  "beta": 0.0057,
+  "gross": 0.805
+ }
+}

@@ -1,0 +1,262 @@
+{
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "started_utc": "2026-10-27T11:08:02.864260+00:00",
+  "checks": [
+    {
+      "name": "historical_discovery_completed",
+      "status": "PASS",
+      "actual": "EXECUTED_PASS_SCOPE_ONLY"
+    },
+    {
+      "name": "source_identity:factor_portfolio.py",
+      "status": "PASS",
+      "actual": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5"
+    },
+    {
+      "name": "source_identity:gls_precision.py",
+      "status": "PASS",
+      "actual": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e"
+    },
+    {
+      "name": "source_identity:portfolio.py",
+      "status": "PASS",
+      "actual": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475"
+    },
+    {
+      "name": "source_identity:strategy.py",
+      "status": "PASS",
+      "actual": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7"
+    },
+    {
+      "name": "source_identity:strategy_factor.py",
+      "status": "PASS",
+      "actual": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959"
+    },
+    {
+      "name": "source_identity:strategy_gls.py",
+      "status": "PASS",
+      "actual": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6"
+    },
+    {
+      "name": "source_identity:strategy_gls_factor.py",
+      "status": "PASS",
+      "actual": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628"
+    },
+    {
+      "name": "candidate_in_historical_closure",
+      "status": "PASS",
+      "actual": "strategy_gls_factor.py"
+    },
+    {
+      "name": "scorer_identity",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "config_identity",
+      "status": "PASS",
+      "actual": "f424033fae2e2ca4a8f0a532a2da41dc4841235f1c8c67394e26e9081c9a49fb"
+    },
+    {
+      "name": "protocol_identity",
+      "status": "PASS",
+      "actual": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737"
+    },
+    {
+      "name": "input_shapes",
+      "status": "PASS",
+      "actual": [
+        [
+          25200,
+          1000
+        ],
+        [
+          25200,
+          1000,
+          13
+        ],
+        [
+          1000
+        ]
+      ]
+    },
+    {
+      "name": "inputs_read_only",
+      "status": "PASS",
+      "actual": "read-only memory maps"
+    },
+    {
+      "name": "input_values",
+      "status": "PASS",
+      "actual": "finite float64 arrays; nonnegative costs"
+    },
+    {
+      "name": "forecast_shape_finite",
+      "status": "PASS",
+      "actual": [
+        25200,
+        1000
+      ]
+    },
+    {
+      "name": "exact_discovery_forecast_prefix",
+      "status": "PASS",
+      "actual": "0149e9d11a5d681a5bf96df539468800685b31b09c210bfbedbebc94f8f36cf0"
+    },
+    {
+      "name": "complete_counts",
+      "status": "PASS",
+      "actual": {
+        "forecast_calls": 1,
+        "targets": 24947,
+        "scored_rows": [
+          24946,
+          5
+        ]
+      }
+    },
+    {
+      "name": "scored_rows_finite_and_solvency",
+      "status": "PASS",
+      "actual": "all official scored rows"
+    },
+    {
+      "name": "full_fee_reconciliation",
+      "status": "PASS",
+      "actual": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "gross_reconciliation",
+      "status": "PASS",
+      "actual": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "exact_discovery_prefix:targets.npy",
+      "status": "PASS",
+      "actual": "b4f2365512f31aa0dbf77e1e1bcfa9c32b187aa47ab516c5c0d878c42127d886"
+    },
+    {
+      "name": "exact_discovery_prefix:held_books.npy",
+      "status": "PASS",
+      "actual": "8cbfc1e2c61a58a2651ff9bb425a217ca18dceabcb6bd406f4883e4d0318c853"
+    },
+    {
+      "name": "historical_score_mask",
+      "status": "PASS",
+      "actual": 1762
+    },
+    {
+      "name": "exact_discovery_economics",
+      "status": "PASS",
+      "actual": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "name": "century_forecast_runtime",
+      "status": "PASS",
+      "actual": {
+        "forecast_candidate_seconds": 72.64216945599946,
+        "forecast_official_instrumented_seconds": 72.68454435100102,
+        "actual_century_executed": true,
+        "mean_candidate_rebalance_ms": 8.189541579667019,
+        "mean_scored_candidate_rebalance_ms": 8.189181422270218,
+        "mean_official_instrumented_rebalance_ms": 8.22500097125921,
+        "quantiles_candidate_ms": {
+          "0": 4.380055999718024,
+          "0.5": 7.686670000111917,
+          "0.9": 10.134789999574423,
+          "0.95": 12.810000799800031,
+          "0.99": 15.533853140295836,
+          "1": 69.6254209997278
+        },
+        "quarter_mean_candidate_ms": [
+          8.925755348890126,
+          7.904862877350399,
+          8.088302544652631,
+          7.8391893745818635
+        ]
+      }
+    },
+    {
+      "name": "mean_rebalance_runtime",
+      "status": "PASS",
+      "actual": {
+        "forecast_candidate_seconds": 72.64216945599946,
+        "forecast_official_instrumented_seconds": 72.68454435100102,
+        "actual_century_executed": true,
+        "mean_candidate_rebalance_ms": 8.189541579667019,
+        "mean_scored_candidate_rebalance_ms": 8.189181422270218,
+        "mean_official_instrumented_rebalance_ms": 8.22500097125921,
+        "quantiles_candidate_ms": {
+          "0": 4.380055999718024,
+          "0.5": 7.686670000111917,
+          "0.9": 10.134789999574423,
+          "0.95": 12.810000799800031,
+          "0.99": 15.533853140295836,
+          "1": 69.6254209997278
+        },
+        "quarter_mean_candidate_ms": [
+          8.925755348890126,
+          7.904862877350399,
+          8.088302544652631,
+          7.8391893745818635
+        ]
+      }
+    },
+    {
+      "name": "frozen_sources_unchanged",
+      "status": "PASS",
+      "actual": "frozen file hashes"
+    },
+    {
+      "name": "inputs_unchanged",
+      "status": "PASS",
+      "actual": "full synthetic array hashes"
+    }
+  ],
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_long_history.py --project . --strategy submission/strategy_gls_factor.py --config research/configs/C06_gls_factor.json --reference evidence/discovery_C06_001 --out evidence/C06_long_history_002 --cache cache/long_history_25200_layout --cpu 6",
+  "market_validation_opened": false,
+  "market_audit_opened": false,
+  "synthetic_only": true,
+  "days": 25200,
+  "timing": {
+    "forecast_candidate_seconds": 72.64216945599946,
+    "forecast_official_instrumented_seconds": 72.68454435100102,
+    "actual_century_executed": true,
+    "mean_candidate_rebalance_ms": 8.189541579667019,
+    "mean_scored_candidate_rebalance_ms": 8.189181422270218,
+    "mean_official_instrumented_rebalance_ms": 8.22500097125921,
+    "quantiles_candidate_ms": {
+      "0": 4.380055999718024,
+      "0.5": 7.686670000111917,
+      "0.9": 10.134789999574423,
+      "0.95": 12.810000799800031,
+      "0.99": 15.533853140295836,
+      "1": 69.6254209997278
+    },
+    "quarter_mean_candidate_ms": [
+      8.925755348890126,
+      7.904862877350399,
+      8.088302544652631,
+      7.8391893745818635
+    ]
+  },
+  "positions": {
+    "max_abs_weight": 0.007060322309932921,
+    "max_gross": 1.0000000000000004,
+    "factor_fallback_calls": 0
+  },
+  "exit_code": 0,
+  "finished_utc": "2026-10-27T11:12:56.944117+00:00",
+  "completed_rebalances": 24947,
+  "peak_rss_kib": 3063728,
+  "limitations": [
+    "Repeated discovery workload, not independent market history or alpha evidence.",
+    "Host-specific runtime with possible contention; finite path safety only."
+  ]
+}

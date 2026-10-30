@@ -1,0 +1,97 @@
+{
+  "variant": "F2",
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "shape": [
+    3780,
+    1000
+  ],
+  "checks": {
+    "finite": true,
+    "warmup_zero": true,
+    "counts": true,
+    "input_unchanged": true,
+    "drift_reconciles": true,
+    "scorer_reconciles": true,
+    "all_certified": true,
+    "stock_caps": true,
+    "gross_cap": true,
+    "estimated_hedge": true
+  },
+  "performance": {
+    "full": {
+      "n": 3526,
+      "sharpe": -1.3514486465994422,
+      "annual_net_return_pct": -3.7600176104226732,
+      "annual_vol_pct": 2.7822127166161645,
+      "annual_cost_pct": 5.386931220800287,
+      "beta": 0.04375609217825114,
+      "mean_gross": 0.8985967878916797
+    },
+    "discovery": {
+      "n": 1762,
+      "sharpe": -0.12429615940883289,
+      "annual_net_return_pct": -0.4770443942697595,
+      "annual_vol_pct": 3.8379656824365176,
+      "annual_cost_pct": 4.02584170055895,
+      "beta": 0.04260758770493541,
+      "mean_gross": 1.3213779105685832
+    },
+    "validation": {
+      "n": 1007,
+      "sharpe": -8.90813172996912,
+      "annual_net_return_pct": -7.992893671861107,
+      "annual_vol_pct": 0.8972581360658454,
+      "annual_cost_pct": 7.7311863761149855,
+      "beta": 0.12108144826500121,
+      "mean_gross": 0.5329691493862595
+    },
+    "audit": {
+      "n": 755,
+      "sharpe": -8.208743409678007,
+      "annual_net_return_pct": -5.7218644925017905,
+      "annual_vol_pct": 0.6970451148169382,
+      "annual_cost_pct": 5.426710349160053,
+      "beta": 0.027339380260361586,
+      "mean_gross": 0.4003396475147506
+    }
+  },
+  "forecast_seconds": 2.5720076319994405,
+  "observed_rebalance_ms": 5.597777318236268,
+  "wall_seconds": 22.579146105999826,
+  "forecast_century_extrapolation_seconds": 17.146717546662938,
+  "certificates": {
+    "ok": 3527
+  },
+  "max_gross_before_scale": 1.964042426423184,
+  "gross_scalings": 0,
+  "max_estimated_hedge_error": 4.144179197950264e-13,
+  "mean_net_stock_investment": 0.12374329867587115,
+  "forecast_sha256": "9851883a99a659536ce4cf50d78daf620c5b86d418609043b293e630548f8d75",
+  "targets_sha256": "d87dca56db40ab52ff20f4f56466bfea131504e4fce7cc379a344887ac387fda",
+  "input_array_sha256": [
+    "24e633ccd6be8a22af337dff18250d0bdeba7983560e7b44622b28bd271f627e",
+    "bc33108498c0989a87cd01fd05fecf91ec08dbfcb9707eb21c3f41e1b73fe1eb",
+    "f8f7aca2ca5ccc702e7910f5ee9ccb3a1f427d144d9719bb9b114817509de872"
+  ],
+  "scorer_max_error": 1.0408340855860843e-17,
+  "drift_max_error": 3.469446951953614e-18
+}

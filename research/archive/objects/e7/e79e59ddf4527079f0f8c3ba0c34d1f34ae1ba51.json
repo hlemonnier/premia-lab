@@ -1,0 +1,23 @@
+{
+  "command": [
+    "python",
+    "evidence/v2_score2_review_20261029/m1/e2e.py",
+    "--snapshot",
+    "/workspace/scratch/a83c191d516f/v2-followup-snapshot",
+    "--out",
+    "evidence/v2_score2_review_20261029/m1/expected_red_unexecuted"
+  ],
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "harness_sha256_before_policy": "e330cb61294201eb38804d96218d478b7c31d198305d8f22326eb4cc787cd134",
+  "plan_sha256_before_policy": "f8a0e5e084ca928ed418841689da9c0bc21949ecd51f4ceb834115a2d867d58a",
+  "policy_absent": true,
+  "expected_missing_policy_exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score2_review_20261029/m1/e2e.py\", line 2, in <module>\n    from sleeve import MarketSleeve\nModuleNotFoundError: No module named 'sleeve'\n",
+  "actual_market_execution": false,
+  "earlier_preimplementation_harness_checkpoint": "initial_build_order.json",
+  "preimplementation_addition": "Explicit nonfinite/ruin/skipped/unstarted fixture assertions and strict real-solver certification; all before sleeve.py exists."
+}

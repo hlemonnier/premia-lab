@@ -1,0 +1,1 @@
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python evidence/v2_real_review_20261028/paired_readback.py > evidence/v2_real_review_20261028/paired_stdout_003.log 2> evidence/v2_real_review_20261028/paired_stderr_003.log

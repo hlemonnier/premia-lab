@@ -1,0 +1,839 @@
+{
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "checks": [
+    {
+      "name": "metric_helper_identity",
+      "status": "PASS",
+      "actual": "6d34f2e9779ee50ab3a376e0f096c9524d09c3576649952c117fab32cb692f69"
+    },
+    {
+      "name": "protected_replay_discovery_001:completed",
+      "status": "PASS",
+      "actual": "EXECUTED_PASS_SCOPE_ONLY"
+    },
+    {
+      "name": "protected_replay_discovery_001:unopened",
+      "status": "PASS",
+      "actual": false
+    },
+    {
+      "name": "protected_replay_discovery_001:controller",
+      "status": "PASS",
+      "actual": "d3c3cfd4a1fde10398fc5546f3dc48d395f68a4c06fbe73311c8b5c2cdc37dfe"
+    },
+    {
+      "name": "protected_replay_discovery_001:reported_checks",
+      "status": "PASS",
+      "actual": 38
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:admission_plan_used.md",
+      "status": "PASS",
+      "actual": "105cc2ce46b4e84d98c0921f725ab90b13a4d8f13da9e854a085cb63840545cd"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:candidate_rebalance_seconds.npy",
+      "status": "PASS",
+      "actual": "30ae46be94b09d1dbb78b161f5e06ec94e2a901f0b7672212978124a686d4f61"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:config.json",
+      "status": "PASS",
+      "actual": "f424033fae2e2ca4a8f0a532a2da41dc4841235f1c8c67394e26e9081c9a49fb"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:daily.csv",
+      "status": "PASS",
+      "actual": "61b96bdda16c2dad29175809f9b2e8a98d82df81465ea9adc0c9e4aa6117b80e"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:discovery_forecast_prefix.npy",
+      "status": "PASS",
+      "actual": "0149e9d11a5d681a5bf96df539468800685b31b09c210bfbedbebc94f8f36cf0"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:discovery_held_books.npy",
+      "status": "PASS",
+      "actual": "8cbfc1e2c61a58a2651ff9bb425a217ca18dceabcb6bd406f4883e4d0318c853"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:discovery_targets.npy",
+      "status": "PASS",
+      "actual": "b4f2365512f31aa0dbf77e1e1bcfa9c32b187aa47ab516c5c0d878c42127d886"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:environment.json",
+      "status": "PASS",
+      "actual": "0e13002785cf5f8b986ef927097609f6895c163ab64fb5365b4af22f82166173"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:expectations.md",
+      "status": "PASS",
+      "actual": "32dc6a11c84ce4009490cccd057f0b0836f22581ef42e05ede77c51ebb0dd436"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:forecasts.npy",
+      "status": "PASS",
+      "actual": "0149e9d11a5d681a5bf96df539468800685b31b09c210bfbedbebc94f8f36cf0"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:held_books.npy",
+      "status": "PASS",
+      "actual": "8cbfc1e2c61a58a2651ff9bb425a217ca18dceabcb6bd406f4883e4d0318c853"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:input_manifest.json",
+      "status": "PASS",
+      "actual": "0874aacd431f45df83575b077717455fa6194525a8d228195d72a851e25489ff"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:inputs/.characteristics.npy.0zJQ33",
+      "status": "PASS",
+      "actual": "7cad25c2350c2450f3c1589dfe6e5aa0f5934e6dd5fd1a6ec2080df90fcc35f0"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:inputs/.characteristics.npy.0zJQ33.Hvgiyg",
+      "status": "PASS",
+      "actual": "36f84e545c97b9f6f512a17514dc73601a50abe27932cfa9b3453fd3aa55bd8b"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:inputs/characteristics.npy",
+      "status": "PASS",
+      "actual": "5b95d6c1ceb7c8a9209ca76fc6e7116f4b496933fe64771029a1192737fed1f4"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:inputs/costs.npy",
+      "status": "PASS",
+      "actual": "8a80bf28efe25c9e33e05c5a0d89b3787459fbcf51f7b4f378c2ba0c8e992ee1"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:inputs/returns.npy",
+      "status": "PASS",
+      "actual": "563cbcab745cc6ffc9d04739fd49a64a7881e3cfee81f2a157080a6336c3ba04"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:metric_helper_used.py",
+      "status": "PASS",
+      "actual": "6d34f2e9779ee50ab3a376e0f096c9524d09c3576649952c117fab32cb692f69"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:official_report_discovery.txt",
+      "status": "PASS",
+      "actual": "e1de3f9b97658165831e379aca7f075ef48cc65429e53089088a34a57b555b8a"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:protocol_used.json",
+      "status": "PASS",
+      "actual": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:reference/daily.csv",
+      "status": "PASS",
+      "actual": "4d87353339cd0fd2dc81fb75b303e05f5b1e3d3b530ba1abc8090810fc881cab"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:reference/input_manifest.json",
+      "status": "PASS",
+      "actual": "2c0475e569965440dab62714354ba7377b256f1c25332e459431da122300e1ec"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:reference/source_manifest.json",
+      "status": "PASS",
+      "actual": "cd377221a1bfad5eadedd920d553e09e2c4a95dd292f9f2bda83b59b1f9d5fbd"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:reference/summary.json",
+      "status": "PASS",
+      "actual": "7c457816f90e2dd8a4e7cdbd49cc1d4f44e6254d43486fe1b645798a89f913dc"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:rerun.txt",
+      "status": "PASS",
+      "actual": "35baa6db2400eb115381deed9f6762748bb86391d0f868442f8287ca8ee9db54"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:runner_used.py",
+      "status": "PASS",
+      "actual": "d3c3cfd4a1fde10398fc5546f3dc48d395f68a4c06fbe73311c8b5c2cdc37dfe"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:setup.md",
+      "status": "PASS",
+      "actual": "c568d2e1a01fe57b5d5adb6bf1936e2dfe7eb0a415a862cf1fb70b718ce757a0"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/candidate/factor_portfolio.py",
+      "status": "PASS",
+      "actual": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/candidate/gls_precision.py",
+      "status": "PASS",
+      "actual": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/candidate/portfolio.py",
+      "status": "PASS",
+      "actual": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/candidate/strategy.py",
+      "status": "PASS",
+      "actual": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/candidate/strategy_factor.py",
+      "status": "PASS",
+      "actual": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/candidate/strategy_gls.py",
+      "status": "PASS",
+      "actual": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/candidate/strategy_gls_factor.py",
+      "status": "PASS",
+      "actual": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source/score.py",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:source_manifest.json",
+      "status": "PASS",
+      "actual": "4353ed552829130d258898fc95bb889b5e0dde473d7bd682af1b011a25faa96c"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:stderr.log",
+      "status": "PASS",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:stdout.log",
+      "status": "PASS",
+      "actual": "bb6cc9cf685405b8280cf80528c4a6dc8750e72c7e4db4b26c04fc534278aabe"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:summary.json",
+      "status": "PASS",
+      "actual": "c93783920644352300a939af287fbaed53afbd0b6675fa2a3a08b0487be31bb1"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:targets.csv",
+      "status": "PASS",
+      "actual": "37bdb18de375bc9326c252d53c3eac392e913018f5b5eb4570a041c8f5399512"
+    },
+    {
+      "name": "protected_replay_discovery_001:artifact:targets.npy",
+      "status": "PASS",
+      "actual": "b4f2365512f31aa0dbf77e1e1bcfa9c32b187aa47ab516c5c0d878c42127d886"
+    },
+    {
+      "name": "protected_replay_discovery_001:arrays",
+      "status": "PASS",
+      "actual": [
+        [
+          2016,
+          1000
+        ],
+        [
+          2016,
+          1000,
+          13
+        ],
+        [
+          1000
+        ],
+        [
+          2016,
+          1000
+        ],
+        [
+          1763,
+          1000
+        ],
+        [
+          1763,
+          1000
+        ]
+      ]
+    },
+    {
+      "name": "protected_replay_discovery_001:canonical_layout",
+      "status": "PASS",
+      "actual": [
+        [
+          8,
+          16128
+        ],
+        [
+          104000,
+          104,
+          8
+        ]
+      ]
+    },
+    {
+      "name": "protected_replay_discovery_001:full_indices",
+      "status": "PASS",
+      "actual": 1762
+    },
+    {
+      "name": "protected_replay_discovery_001:net_identity",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "protected_replay_discovery_001:full_gross",
+      "status": "PASS",
+      "actual": 8.673617379884035e-18
+    },
+    {
+      "name": "protected_replay_discovery_001:full_drift",
+      "status": "PASS",
+      "actual": 1.734723475976807e-18
+    },
+    {
+      "name": "protected_replay_discovery_001:full_cost",
+      "status": "PASS",
+      "actual": 6.776263578034403e-20
+    },
+    {
+      "name": "protected_replay_discovery_001:full_market",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "protected_replay_discovery_001:gross_exposure",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "protected_replay_discovery_001:empty_opening",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "name": "protected_replay_discovery_001:path_controls",
+      "status": "PASS",
+      "actual": {
+        "max_stock": 0.007060322309932921,
+        "max_gross": 1.0000000000000004
+      }
+    },
+    {
+      "name": "protected_replay_discovery_001:metric_recomputation:discovery",
+      "status": "PASS",
+      "actual": {
+        "scored_days": 1762,
+        "first_return_index": 253,
+        "last_return_index": 2014,
+        "daily_net_mean": 0.00010280498678851387,
+        "daily_net_std_ddof0": 0.0021390540710406014,
+        "net_sharpe": 0.762944047825874,
+        "gross_sharpe": 0.9631218098155713,
+        "annual_arithmetic_net_return": 0.025906856670705497,
+        "annual_net_volatility": 0.03395643067736233,
+        "realized_net_market_beta": 0.00633029862192363,
+        "annual_full_cost": 0.006810310266232913,
+        "mean_gross_exposure": 0.937998462315836,
+        "min_daily_net_return": -0.010278705263568817,
+        "max_daily_net_return": 0.010705371501150444,
+        "min_daily_gross_return": -0.010248160607655788,
+        "net_bankruptcy_observed": false,
+        "geometric_total_return": 0.19375232837491807,
+        "annual_geometric_return": 0.025652444126982237,
+        "max_drawdown": 0.05277671403347994,
+        "official_instrumented_mean_rebalance_ms": 8.407195960294162,
+        "undefined_metrics": {}
+      }
+    },
+    {
+      "name": "protected_replay_discovery_001:original_array:forecasts.npy",
+      "status": "PASS",
+      "actual": "0149e9d11a5d681a5bf96df539468800685b31b09c210bfbedbebc94f8f36cf0"
+    },
+    {
+      "name": "protected_replay_discovery_001:original_array:targets.npy",
+      "status": "PASS",
+      "actual": "b4f2365512f31aa0dbf77e1e1bcfa9c32b187aa47ab516c5c0d878c42127d886"
+    },
+    {
+      "name": "protected_replay_discovery_001:original_array:held_books.npy",
+      "status": "PASS",
+      "actual": "8cbfc1e2c61a58a2651ff9bb425a217ca18dceabcb6bd406f4883e4d0318c853"
+    },
+    {
+      "name": "protected_replay_discovery_001:original_economics",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "protected_replay_zero_001:completed",
+      "status": "PASS",
+      "actual": "EXECUTED_PASS_SCOPE_ONLY"
+    },
+    {
+      "name": "protected_replay_zero_001:unopened",
+      "status": "PASS",
+      "actual": false
+    },
+    {
+      "name": "protected_replay_zero_001:controller",
+      "status": "PASS",
+      "actual": "d3c3cfd4a1fde10398fc5546f3dc48d395f68a4c06fbe73311c8b5c2cdc37dfe"
+    },
+    {
+      "name": "protected_replay_zero_001:reported_checks",
+      "status": "PASS",
+      "actual": 34
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:admission_plan_used.md",
+      "status": "PASS",
+      "actual": "105cc2ce46b4e84d98c0921f725ab90b13a4d8f13da9e854a085cb63840545cd"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:candidate_rebalance_seconds.npy",
+      "status": "PASS",
+      "actual": "953235bc1cf4c612fab9a35381e301c3fd97244355ece99a76f2ec69fc4bf5ee"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:config.json",
+      "status": "PASS",
+      "actual": "f424033fae2e2ca4a8f0a532a2da41dc4841235f1c8c67394e26e9081c9a49fb"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:daily.csv",
+      "status": "PASS",
+      "actual": "db3b78ed00fc254c93a9e9f46c2466ff0abc9408d9853458113929d7ce6ec9f1"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:environment.json",
+      "status": "PASS",
+      "actual": "0e13002785cf5f8b986ef927097609f6895c163ab64fb5365b4af22f82166173"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:expectations.md",
+      "status": "PASS",
+      "actual": "32dc6a11c84ce4009490cccd057f0b0836f22581ef42e05ede77c51ebb0dd436"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:forecasts.npy",
+      "status": "PASS",
+      "actual": "35146334f2235734206b5940ea17d5a7cbcb7d89bb2c25df2b1cb80dd9cd4614"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:held_books.npy",
+      "status": "PASS",
+      "actual": "80349bdfde0a3652908f30fca45c6766add3af1050d0628298b0eb04abcce0ec"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:input_manifest.json",
+      "status": "PASS",
+      "actual": "53f7c328fcae68b5d3ee8fae7471eeda29fc4c477608afe9e1598666022fd760"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:inputs/.characteristics.npy.R8BQQi",
+      "status": "PASS",
+      "actual": "051a8079e112ca6e7e5ea9f453491430582eb220ce3cbc2c2c383974898a501b"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:inputs/.characteristics.npy.R8BQQi.k7fUIo",
+      "status": "PASS",
+      "actual": "acd578e1e0241f94e90f6b627814506c1ba4871fe85f041f8a914e6dbf5a5065"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:inputs/characteristics.npy",
+      "status": "PASS",
+      "actual": "a8bdf2d277768fef488e038bc8c43745c7378aa03cf233e77027826dad2856ab"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:inputs/costs.npy",
+      "status": "PASS",
+      "actual": "6d439ccd370f4327c5093ea65b59b053dd7961abd8a3e4b13492f24d8e2e59ff"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:inputs/returns.npy",
+      "status": "PASS",
+      "actual": "b7f37b16ca750da0534f930a124350e6e6f53a05d6dd117079144cd905fefec0"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:metric_helper_used.py",
+      "status": "PASS",
+      "actual": "6d34f2e9779ee50ab3a376e0f096c9524d09c3576649952c117fab32cb692f69"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:official_report_pooled_validation.txt",
+      "status": "PASS",
+      "actual": "d4b658082651f9d92bb59a62eb2408f36015651b5e01b2e8dbb9a38b2c4c6af4"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:official_report_validation_a.txt",
+      "status": "PASS",
+      "actual": "d4b658082651f9d92bb59a62eb2408f36015651b5e01b2e8dbb9a38b2c4c6af4"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:official_report_validation_b.txt",
+      "status": "PASS",
+      "actual": "d4b658082651f9d92bb59a62eb2408f36015651b5e01b2e8dbb9a38b2c4c6af4"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:protocol_used.json",
+      "status": "PASS",
+      "actual": "cc2de53284feaeff97022c869ee8ee6e7b9fb40ab3f3dd1c0353e5b9923ed737"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:reference/daily.csv",
+      "status": "PASS",
+      "actual": "4d87353339cd0fd2dc81fb75b303e05f5b1e3d3b530ba1abc8090810fc881cab"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:reference/input_manifest.json",
+      "status": "PASS",
+      "actual": "2c0475e569965440dab62714354ba7377b256f1c25332e459431da122300e1ec"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:reference/source_manifest.json",
+      "status": "PASS",
+      "actual": "cd377221a1bfad5eadedd920d553e09e2c4a95dd292f9f2bda83b59b1f9d5fbd"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:reference/summary.json",
+      "status": "PASS",
+      "actual": "7c457816f90e2dd8a4e7cdbd49cc1d4f44e6254d43486fe1b645798a89f913dc"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:rerun.txt",
+      "status": "PASS",
+      "actual": "3e945bd81bf1aa880df578f504a318ee1a729de1ebc74f761c3d99ad062e9359"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:runner_used.py",
+      "status": "PASS",
+      "actual": "d3c3cfd4a1fde10398fc5546f3dc48d395f68a4c06fbe73311c8b5c2cdc37dfe"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:setup.md",
+      "status": "PASS",
+      "actual": "c568d2e1a01fe57b5d5adb6bf1936e2dfe7eb0a415a862cf1fb70b718ce757a0"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/candidate/factor_portfolio.py",
+      "status": "PASS",
+      "actual": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/candidate/gls_precision.py",
+      "status": "PASS",
+      "actual": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/candidate/portfolio.py",
+      "status": "PASS",
+      "actual": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/candidate/strategy.py",
+      "status": "PASS",
+      "actual": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/candidate/strategy_factor.py",
+      "status": "PASS",
+      "actual": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/candidate/strategy_gls.py",
+      "status": "PASS",
+      "actual": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/candidate/strategy_gls_factor.py",
+      "status": "PASS",
+      "actual": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source/score.py",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:source_manifest.json",
+      "status": "PASS",
+      "actual": "4353ed552829130d258898fc95bb889b5e0dde473d7bd682af1b011a25faa96c"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:stderr.log",
+      "status": "PASS",
+      "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:stdout.log",
+      "status": "PASS",
+      "actual": "e4a111641479fc8f5ef2d2faa9a59c33090f3fcee7dc3604caa7c2ae77997208"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:summary.json",
+      "status": "PASS",
+      "actual": "68da4f379866e7b10b1a4fe394ea2b41e232d17bbbed552193fd204368d216ad"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:targets.csv",
+      "status": "PASS",
+      "actual": "11d2c0c1ed07d155c2febf66d6b57a11457bd0e6cdcf33088b8e8b20444c0191"
+    },
+    {
+      "name": "protected_replay_zero_001:artifact:targets.npy",
+      "status": "PASS",
+      "actual": "80349bdfde0a3652908f30fca45c6766add3af1050d0628298b0eb04abcce0ec"
+    },
+    {
+      "name": "protected_replay_zero_001:arrays",
+      "status": "PASS",
+      "actual": [
+        [
+          3024,
+          1000
+        ],
+        [
+          3024,
+          1000,
+          13
+        ],
+        [
+          1000
+        ],
+        [
+          3024,
+          1000
+        ],
+        [
+          2771,
+          1000
+        ],
+        [
+          2771,
+          1000
+        ]
+      ]
+    },
+    {
+      "name": "protected_replay_zero_001:canonical_layout",
+      "status": "PASS",
+      "actual": [
+        [
+          8,
+          24192
+        ],
+        [
+          104000,
+          104,
+          8
+        ]
+      ]
+    },
+    {
+      "name": "protected_replay_zero_001:full_indices",
+      "status": "PASS",
+      "actual": 2770
+    },
+    {
+      "name": "protected_replay_zero_001:net_identity",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "protected_replay_zero_001:full_gross",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "protected_replay_zero_001:full_drift",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "protected_replay_zero_001:full_cost",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "protected_replay_zero_001:full_market",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "protected_replay_zero_001:gross_exposure",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "protected_replay_zero_001:empty_opening",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "name": "protected_replay_zero_001:path_controls",
+      "status": "PASS",
+      "actual": {
+        "max_stock": 0.0,
+        "max_gross": 0.0
+      }
+    },
+    {
+      "name": "protected_replay_zero_001:metric_recomputation:validation_a",
+      "status": "PASS",
+      "actual": {
+        "scored_days": 504,
+        "first_return_index": 2016,
+        "last_return_index": 2519,
+        "daily_net_mean": 0.0,
+        "daily_net_std_ddof0": 0.0,
+        "net_sharpe": null,
+        "gross_sharpe": null,
+        "annual_arithmetic_net_return": 0.0,
+        "annual_net_volatility": 0.0,
+        "realized_net_market_beta": null,
+        "annual_full_cost": 0.0,
+        "mean_gross_exposure": 0.0,
+        "min_daily_net_return": 0.0,
+        "max_daily_net_return": 0.0,
+        "min_daily_gross_return": 0.0,
+        "net_bankruptcy_observed": false,
+        "geometric_total_return": 0.0,
+        "annual_geometric_return": 0.0,
+        "max_drawdown": 0.0,
+        "official_instrumented_mean_rebalance_ms": 3.1574940952316592,
+        "undefined_metrics": {
+          "net_sharpe": "Zero variance or nonpositive compounding wealth",
+          "gross_sharpe": "Zero variance or nonpositive compounding wealth",
+          "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"
+        }
+      }
+    },
+    {
+      "name": "protected_replay_zero_001:null_ratios:validation_a",
+      "status": "PASS",
+      "actual": {
+        "net_sharpe": "Zero variance or nonpositive compounding wealth",
+        "gross_sharpe": "Zero variance or nonpositive compounding wealth",
+        "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"
+      }
+    },
+    {
+      "name": "protected_replay_zero_001:metric_recomputation:validation_b",
+      "status": "PASS",
+      "actual": {
+        "scored_days": 503,
+        "first_return_index": 2520,
+        "last_return_index": 3022,
+        "daily_net_mean": 0.0,
+        "daily_net_std_ddof0": 0.0,
+        "net_sharpe": null,
+        "gross_sharpe": null,
+        "annual_arithmetic_net_return": 0.0,
+        "annual_net_volatility": 0.0,
+        "realized_net_market_beta": null,
+        "annual_full_cost": 0.0,
+        "mean_gross_exposure": 0.0,
+        "min_daily_net_return": 0.0,
+        "max_daily_net_return": 0.0,
+        "min_daily_gross_return": 0.0,
+        "net_bankruptcy_observed": false,
+        "geometric_total_return": 0.0,
+        "annual_geometric_return": 0.0,
+        "max_drawdown": 0.0,
+        "official_instrumented_mean_rebalance_ms": 2.799671928398861,
+        "undefined_metrics": {
+          "net_sharpe": "Zero variance or nonpositive compounding wealth",
+          "gross_sharpe": "Zero variance or nonpositive compounding wealth",
+          "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"
+        }
+      }
+    },
+    {
+      "name": "protected_replay_zero_001:null_ratios:validation_b",
+      "status": "PASS",
+      "actual": {
+        "net_sharpe": "Zero variance or nonpositive compounding wealth",
+        "gross_sharpe": "Zero variance or nonpositive compounding wealth",
+        "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"
+      }
+    },
+    {
+      "name": "protected_replay_zero_001:metric_recomputation:pooled_validation",
+      "status": "PASS",
+      "actual": {
+        "scored_days": 1007,
+        "first_return_index": 2016,
+        "last_return_index": 3022,
+        "daily_net_mean": 0.0,
+        "daily_net_std_ddof0": 0.0,
+        "net_sharpe": null,
+        "gross_sharpe": null,
+        "annual_arithmetic_net_return": 0.0,
+        "annual_net_volatility": 0.0,
+        "realized_net_market_beta": null,
+        "annual_full_cost": 0.0,
+        "mean_gross_exposure": 0.0,
+        "min_daily_net_return": 0.0,
+        "max_daily_net_return": 0.0,
+        "min_daily_gross_return": 0.0,
+        "net_bankruptcy_observed": false,
+        "geometric_total_return": 0.0,
+        "annual_geometric_return": 0.0,
+        "max_drawdown": 0.0,
+        "official_instrumented_mean_rebalance_ms": 2.9787606792267955,
+        "undefined_metrics": {
+          "net_sharpe": "Zero variance or nonpositive compounding wealth",
+          "gross_sharpe": "Zero variance or nonpositive compounding wealth",
+          "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"
+        }
+      }
+    },
+    {
+      "name": "protected_replay_zero_001:null_ratios:pooled_validation",
+      "status": "PASS",
+      "actual": {
+        "net_sharpe": "Zero variance or nonpositive compounding wealth",
+        "gross_sharpe": "Zero variance or nonpositive compounding wealth",
+        "realized_net_market_beta": "Zero variance or nonpositive compounding wealth"
+      }
+    },
+    {
+      "name": "protected_replay_zero_001:zero_path",
+      "status": "PASS",
+      "actual": true
+    },
+    {
+      "name": "protected_replay_zero_001:positive_costs",
+      "status": "PASS",
+      "actual": true
+    }
+  ],
+  "started_utc": "2026-10-27T11:21:51.757299+00:00",
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/protected_controller_independent_readback_001/review.py",
+  "scope": "Independent saved-output readback of discovery parity and fully synthetic zero E2Es",
+  "protected_market_observations_read": false,
+  "input_packets": {
+    "protected_replay_discovery_001": {
+      "summary_sha256": "c93783920644352300a939af287fbaed53afbd0b6675fa2a3a08b0487be31bb1",
+      "artifact_manifest_sha256": "98d36da90ddeea71dadd25591905fe1fb8e5649059de24b977d8fa1beac991f5"
+    },
+    "protected_replay_zero_001": {
+      "summary_sha256": "68da4f379866e7b10b1a4fe394ea2b41e232d17bbbed552193fd204368d216ad",
+      "artifact_manifest_sha256": "f84210f08b7f79fb5be439db1740b9e93e31e56284c4f836e1399b41096868f5"
+    }
+  },
+  "exit_code": 0,
+  "reviewer_source_sha256": "73e106369cbc171aaa2bd263c8d609ea4381f0b2cbb094e060ced79b721399cf",
+  "finished_utc": "2026-10-27T11:21:52.944048+00:00",
+  "limitations": [
+    "Saved complete-workflow evidence only; no universal causality or no-overfit claim.",
+    "No actual validation or audit observations were read."
+  ]
+}

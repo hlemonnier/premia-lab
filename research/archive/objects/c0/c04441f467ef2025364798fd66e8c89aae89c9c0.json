@@ -1,0 +1,181 @@
+{
+  "files": [
+    {
+      "name": "characteristics.csv",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "1XdLKw_cakId5HPqRD4KEJEZV7eGkq4ea",
+        "title": "characteristics.csv",
+        "mime_type": "text/csv",
+        "size": "359865977",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "costs.csv",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "1wPhDbno2M6kauEdxwD49dKx9ddsTL_nl",
+        "title": "costs.csv",
+        "mime_type": "text/csv",
+        "size": "17011",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "example_equal_weight.py",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "1uR7dLKfgPo6JtIZObxA7nLgb3nR4Wf91",
+        "title": "example_equal_weight.py",
+        "mime_type": "text/x-python-script",
+        "size": "217",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "example_naive_mv.py",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "1RqrBiFZFg6b78qh_Qa1WKYHraYYHyprG",
+        "title": "example_naive_mv.py",
+        "mime_type": "text/x-python-script",
+        "size": "1547",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "README.md",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "1AsSkH5mIiO4nB0paZ9vZscKZfp1nhHdV",
+        "title": "README.md",
+        "mime_type": "text/markdown",
+        "size": "10889",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "score.py",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "174Nk_W_yZ8pyWHG6onTrf-lLfShABN6p",
+        "title": "score.py",
+        "mime_type": "text/x-python-script",
+        "size": "4716",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "strategy.py",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "1vrogO4Ux6xjJBSwDZayNCVTAjgluNpKM",
+        "title": "strategy.py",
+        "mime_type": "text/x-python-script",
+        "size": "1779",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:50:24.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    },
+    {
+      "name": "returns.csv",
+      "url": "[private-link-removed]",
+      "result": {
+        "id": "1Xp3zdgDO7x0H_b9m6EIuXFnFKvK8eOiv",
+        "title": "returns.csv",
+        "mime_type": "text/csv",
+        "size": "35898789",
+        "url": "[private-link-removed]",
+        "display_url": "[private-link-removed]",
+        "file_or_folder": "file",
+        "created_time": null,
+        "modified_time": "2026-10-18T04:49:38.000Z",
+        "parent_ids": null,
+        "drive_id": null,
+        "current_user_can_share": null,
+        "has_augmented_permissions": null,
+        "shared": null,
+        "permissions": null,
+        "source_visibility_status": "access_not_verified"
+      }
+    }
+  ],
+  "comparison_scope": "Remote names/sizes plus fetched README text; no remote CSV byte comparison"
+}

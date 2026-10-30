@@ -1,0 +1,111 @@
+{
+  "mode": "E2",
+  "performance": {
+    "full": {
+      "n": 3526,
+      "net_sharpe": 1.3395817822087963,
+      "gross_sharpe": 1.3971748186858823,
+      "net_return_ann_pct": 5.894598141826299,
+      "net_vol_ann_pct": 4.400327191750005,
+      "cost_ann_pct": 0.24415071450036768,
+      "net_beta": 0.052980727371826915,
+      "mean_gross": 1.8158809516030536,
+      "worst_gross_daily_return": -0.017497788262106857
+    },
+    "discovery": {
+      "n": 1762,
+      "net_sharpe": 1.1261287070905925,
+      "gross_sharpe": 1.1911180080453803,
+      "net_return_ann_pct": 5.463624921703943,
+      "net_vol_ann_pct": 4.851687810907049,
+      "cost_ann_pct": 0.30503035745961593,
+      "net_beta": 0.0524023056863471,
+      "mean_gross": 1.955375223254963,
+      "worst_gross_daily_return": -0.017497788262106857
+    },
+    "validation": {
+      "n": 1007,
+      "net_sharpe": 1.6712381664911555,
+      "gross_sharpe": 1.723430437818704,
+      "net_return_ann_pct": 6.512006046406228,
+      "net_vol_ann_pct": 3.8965158748609103,
+      "cost_ann_pct": 0.196846769930908,
+      "net_beta": 0.051361808278312805,
+      "mean_gross": 1.7369419165948061,
+      "worst_gross_daily_return": -0.01481169673634308
+    },
+    "audit": {
+      "n": 755,
+      "net_sharpe": 1.5860425112071623,
+      "gross_sharpe": 1.6303969124327105,
+      "net_return_ann_pct": 6.1872567468327055,
+      "net_vol_ann_pct": 3.9010661461548635,
+      "cost_ann_pct": 0.16524074763378468,
+      "net_beta": 0.0569702953193912,
+      "mean_gross": 1.5963700892707957,
+      "worst_gross_daily_return": -0.014018299716439912
+    }
+  },
+  "checks": {
+    "E2: accounting": true,
+    "E2: finite": true,
+    "E2: solvent": true,
+    "E2: gross": true,
+    "E2: stock bounds": true,
+    "E2: raw beta constraint": true,
+    "E2: base certificates": true,
+    "E2: startup": true,
+    "E2: first earned observation": true,
+    "E2: endpoint": true,
+    "E2: actual certificates": true,
+    "E2: independent actual risk clock": true,
+    "virtual_same_as_baseline": true,
+    "forecast_same_as_baseline": true
+  },
+  "all_checks_passed": true,
+  "forecast_sha256": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927",
+  "virtual_targets_sha256": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850",
+  "actual_targets_sha256": "4e07438a684c96bde15c9f154387b04e32e01629332f818ca55f7adf974c0b20",
+  "forecast_seconds": 2.583764399998472,
+  "instrumented_rebalance_ms_mean": 7.010666642602035,
+  "instrumented_rebalance_ms_p99": 9.839961998295621,
+  "instrumented_rebalance_ms_max": 140.77824400010286,
+  "accounting_max_error": 0.0,
+  "multiplier_min_mean_max": [
+    0.6566243912540833,
+    1.155960919411507,
+    1.6450943751806757
+  ],
+  "mean_absolute_desired_multiplier_deviation": 0.0,
+  "max_actual_weight": 0.016533975263491055,
+  "max_actual_gross": 3.0312166365557656,
+  "mean_net_dollars": 0.455284185129817,
+  "reference_economic_max_differences": null,
+  "paired_sharpe_intervals": {
+    "21": {
+      "point": 0.021246816117968574,
+      "lo": 0.010121807223066239,
+      "hi": 0.03303128606269318,
+      "draws": 2000,
+      "seed": 20261027,
+      "last_legal_block_start_included": true
+    },
+    "63": {
+      "point": 0.021246816117968574,
+      "lo": 0.010130384935426376,
+      "hi": 0.033602314719028345,
+      "draws": 2000,
+      "seed": 20261027,
+      "last_legal_block_start_included": true
+    },
+    "126": {
+      "point": 0.021246816117968574,
+      "lo": 0.011029690652772161,
+      "hi": 0.03429719326083136,
+      "draws": 2000,
+      "seed": 20261027,
+      "last_legal_block_start_included": true
+    }
+  },
+  "replacement_contender": true
+}

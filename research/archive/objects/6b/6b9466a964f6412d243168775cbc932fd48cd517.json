@@ -1,0 +1,17 @@
+[
+  {
+    "path": "characteristics.csv",
+    "bytes": 47502883,
+    "sha256": "18b344587fcbfb4418a744e482fd359db07127534679e8c848e14840fd76d75d"
+  },
+  {
+    "path": "costs.csv",
+    "bytes": 17011,
+    "sha256": "ec0930e480078ce4c8d6f59b802c4c303cdae2dea8d15d7e08417e6b414d0186"
+  },
+  {
+    "path": "returns.csv",
+    "bytes": 4788761,
+    "sha256": "4be2ca40815e24600fb62e31b6173161f97f9a76a2a33113e375c606a6b18c52"
+  }
+]

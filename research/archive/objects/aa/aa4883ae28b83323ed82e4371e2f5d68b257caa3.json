@@ -1,0 +1,38 @@
+{
+ "name": "fr_beta",
+ "forecast_s": 4.3,
+ "rebalance_ms": 7.53,
+ "wall_s": 31.2,
+ "all": {
+  "sharpe": 1.199,
+  "gross_sharpe": 1.25,
+  "ret_pct": 0.44,
+  "cost_pct": 0.018,
+  "beta": 0.0081,
+  "gross": 0.238
+ },
+ "discovery": {
+  "sharpe": 1.027,
+  "gross_sharpe": 1.09,
+  "ret_pct": 0.35,
+  "cost_pct": 0.021,
+  "beta": 0.0071,
+  "gross": 0.218
+ },
+ "validation": {
+  "sharpe": 1.761,
+  "gross_sharpe": 1.803,
+  "ret_pct": 0.78,
+  "cost_pct": 0.019,
+  "beta": 0.0097,
+  "gross": 0.287
+ },
+ "audit": {
+  "sharpe": 0.675,
+  "gross_sharpe": 0.714,
+  "ret_pct": 0.2,
+  "cost_pct": 0.012,
+  "beta": 0.0068,
+  "gross": 0.217
+ }
+}

@@ -1,0 +1,1 @@
+C07_additive_exact_gross sharpe  0.68   return   5.1%/yr   vol  7.5%   beta  0.02   cost 0.50%/yr   gross 0.97   forecast 22.8s (0.08 h per century)   rebalance 49.1 ms/call

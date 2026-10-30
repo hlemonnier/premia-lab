@@ -1,0 +1,28 @@
+{
+  "scope": "Static comparison with the exact prior winning research dependencies; no policy execution",
+  "files": {
+    "forecast_reference.py": {
+      "path": "evidence/v3_evidence_audit_20261029/research_reference/forecast_reference.py",
+      "sha256": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719"
+    },
+    "execution.py": {
+      "path": "evidence/v3_evidence_audit_20261029/research_reference/execution.py",
+      "sha256": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f"
+    },
+    "sleeve.py": {
+      "path": "evidence/v3_evidence_audit_20261029/research_reference/sleeve.py",
+      "sha256": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b"
+    },
+    "reference_overlay.py": {
+      "path": "evidence/v3_evidence_audit_20261029/research_reference/reference_overlay.py",
+      "sha256": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8"
+    }
+  },
+  "mappings": {
+    "F2": "Selected F2 branch arithmetic is preserved in f2_forecast; unused F1 branch removed, resets moved to instance-owned forecast session.",
+    "E2": "Independent actual-engine reference becomes independent Book state; same gamma200/a, cap.05a, cost horizon20, risk inputs and raw-beta target0. Additional current hardened recovery statuses are inherited as requested.",
+    "sleeve": "Same independent inner drift and .05/N stock addition followed by gross5 scaling. Research-only cost/held-identity trace arrays are removed; original scorer retains actual drift, fees and ruin handling.",
+    "controller": "Same own virtual earned gross returns, EW63/EW1008 mass normalization,63earned-observation warm-up and clipped square-root ratio."
+  },
+  "finding": "No selected-policy economic formula deviation found by source comparison. Numerical tolerance/reference-hash bridge is reviewed separately."
+}

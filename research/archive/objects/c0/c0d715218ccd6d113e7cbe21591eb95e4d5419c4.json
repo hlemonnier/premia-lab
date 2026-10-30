@@ -1,0 +1,79 @@
+{
+  "variant": "V2",
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "shape": [
+    420,
+    64
+  ],
+  "checks": {
+    "finite": true,
+    "warmup_zero": true,
+    "counts": true,
+    "input_unchanged": true,
+    "drift_reconciles": true,
+    "scorer_reconciles": true,
+    "all_certified": true,
+    "stock_caps": true,
+    "gross_cap": true,
+    "estimated_hedge": true
+  },
+  "performance": {
+    "full": {
+      "n": 166,
+      "sharpe": 34.20336039715751,
+      "annual_net_return_pct": 43.076099227842285,
+      "annual_vol_pct": 1.259411318877959,
+      "annual_cost_pct": 0.10814065140327343,
+      "beta": -380907276509115.2,
+      "mean_gross": 3.031966091195164
+    },
+    "discovery": {
+      "n": 166,
+      "sharpe": 34.20336039715751,
+      "annual_net_return_pct": 43.076099227842285,
+      "annual_vol_pct": 1.259411318877959,
+      "annual_cost_pct": 0.10814065140327343,
+      "beta": -380907276509115.2,
+      "mean_gross": 3.031966091195164
+    }
+  },
+  "forecast_seconds": 0.05973020899909898,
+  "observed_rebalance_ms": 4.468503554310602,
+  "wall_seconds": 0.834290073999,
+  "forecast_century_extrapolation_seconds": 3.5838125399459386,
+  "certificates": {
+    "ok": 167
+  },
+  "max_gross_before_scale": 3.053620446917477,
+  "gross_scalings": 0,
+  "max_estimated_hedge_error": 1.942890293094024e-15,
+  "mean_net_stock_investment": -4.853070706445295e-17,
+  "forecast_sha256": "ff11c0bf264708f57826bda24912cfcf478712c9f9e08c8300f43841649f58e0",
+  "targets_sha256": "cc82ee5529eeb120f20db184c7686563c3eed9e447ecbb7c00a134411ab04afd",
+  "input_array_sha256": [
+    "73f3da123b4be187cd5452b05f63f3be4ef383df4edfffe710e4aa0123b19f82",
+    "0403598a1e60285e8b2c18964bdfd13b05c44dc5e0e54b2ddeba8d438d3df707",
+    "7b6a70ccf264b9095bed3e411f526434fbe1f022accebd37251a11d4a793e10f"
+  ],
+  "scorer_max_error": 8.673617379884035e-19,
+  "drift_max_error": 0.0
+}

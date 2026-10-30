@@ -1,0 +1,7 @@
+{
+  "reviewed_utc": "2026-10-27T11:45:22.860860+00:00",
+  "disposition": "RENDER_REVISION_REQUIRED",
+  "finding": "Automatic 2.5% tick spacing was rounded to whole percentages by PercentFormatter decimals0. Preserve one decimal to display exact tick values.",
+  "scope": "Formatting only; data, policies, metrics and archive bytes unchanged.",
+  "environment_note": "First successful render used a temporary fallback matplotlib cache; explicitly select a writable task cache for reproduction."
+}

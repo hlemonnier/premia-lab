@@ -1,0 +1,60 @@
+{
+  "base": [
+    {
+      "name": "returns.npy",
+      "shape": [
+        600,
+        1000
+      ],
+      "dtype": "float64",
+      "sha256": "61aff640f0c47233f6752e5aaf6e4f6dcb688cf0589479736ef5d9e053b68be7",
+      "array_sha256": "0d972a0a2e8567814768e15f86e7ec9162bf9ffc29c15c2573e68455c20ea2a3",
+      "candidate_argument": true
+    },
+    {
+      "name": "characteristics.npy",
+      "shape": [
+        600,
+        1000,
+        13
+      ],
+      "dtype": "float64",
+      "sha256": "f12ab9ecaf85a6b917abe7838e61d45ded14b5095acbb78ad8351b751efe1fa7",
+      "array_sha256": "0afd23ebebd5c6b368d5b1577fff8a0fca1d4f6a60251dc16c1eade975ccad0d",
+      "candidate_argument": true
+    },
+    {
+      "name": "costs.npy",
+      "shape": [
+        1000
+      ],
+      "dtype": "float64",
+      "sha256": "bcc7a60436e048322ac0bae5815b0e1a7f0ed9ea7f3ca5618888b9dbc872ed33",
+      "array_sha256": "28238626dc7f44728e99b685842725aa78b2a487c36009b63ca0ad5f241c5541",
+      "candidate_argument": true
+    }
+  ],
+  "scenario": {
+    "name": "joint_from_400",
+    "kind": "suffix",
+    "cutoff": 400,
+    "mode": "joint",
+    "forecast_count": 600,
+    "earning_day_limit": 599,
+    "score_day_exclusive": 599
+  },
+  "actual_array_hashes": [
+    "81e17ddaf0cbf1aa032bf719130664d572606aec0740d8f2f398c522d857c3aa",
+    "8f37b0cbd6217693d6142fe7c192e3bdc566ff37b8359c45de48d2e330857e41",
+    "28238626dc7f44728e99b685842725aa78b2a487c36009b63ca0ad5f241c5541"
+  ],
+  "alteration": {
+    "kind": "suffix",
+    "returns_changed": 200000,
+    "characteristics_changed": 2600000,
+    "cutoff": 400,
+    "mode": "joint",
+    "prefix_returns_unchanged": true,
+    "prefix_characteristics_unchanged": true
+  }
+}

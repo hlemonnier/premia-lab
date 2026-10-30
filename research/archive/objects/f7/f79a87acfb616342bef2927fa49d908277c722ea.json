@@ -1,0 +1,46 @@
+{
+  "reviewer": "v3_policy_audit",
+  "date": "2026-10-29",
+  "scope": "Prospective static source review of the bounded V3 evidence-closure wrapper before any declared economic execution",
+  "verdict": "accepted_for_root_release",
+  "execution_authorized_by_this_review": false,
+  "required_next_authority": "Root must release each mode with the frozen identities and prerequisite result hash where applicable",
+  "identities": {
+    "harness_sha256": "ba5379050c51e20b74aba1e45f787e5e5f643fbaf2bb316179263b0289ce516d",
+    "plan_sha256": "8d64a56d242aaa516012fd8fa9cc9f1206175eb703591985d7a2e66d0d79acd8",
+    "bindings_sha256": "fce32c98e78cef9b008fd6823e98321327474b84e0ae268dfb3822a225f3f2f7"
+  },
+  "approved_modes": ["replay", "temporal", "runtime"],
+  "source_review_conclusions": [
+    "Replay invokes the exact frozen research and shipped policy files under the original scorer and data. Observer copies are taken after each unchanged decision and do not mutate the returned weights, forecasts or internal book states.",
+    "The same-environment comparisons retain all three target books, forecast rows, controller moments, state clocks, economic rows and certificates. The independent stock-level accounting reconstruction follows the scorer's gross drift denominator, free opening and charged endpoint.",
+    "Original published array identity is a separate diagnostic. Exact raw-hash recovery with matching shape and dtype can restore original numerical identity; if neither regenerated array matches, per-asset differences against the lost original remain unmeasured. Small P&L differences are not treated as position equivalence.",
+    "Temporal mode requires a root-bound successful replay result with identical wrapper, plan and bindings, and verifies all declared reference NPY file hashes, raw-array hashes, shapes and dtypes before invoking the unchanged existing 15-check harness.",
+    "Runtime mode requires a root-bound successful temporal result and executes the unchanged runtime file once. Catching its normal SystemExit retains the original module namespace; output observation occurs after the script's scorer timers have completed.",
+    "Runtime checks exact input dimensions, scored rows, earned count, last day and 49,894 accepted certificates, plus finite outputs and positive gross-return denominators. Actual process affinity and three thread settings are recorded and enforced, with the original timing limits retained.",
+    "A new empty output directory is required. The economic execution block preserves traceback and failure metadata, and the wrapper performs no automatic repair, new candidate selection or retry. Root controls the sequential releases.",
+    "No production implementation, model parameter, economic acceptance threshold or existing temporal cut is changed by this wrapper. No required source correction remains after the pre-execution provenance corrections."
+  ],
+  "independent_production_identity_readback": {
+    "commit": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "root_manifest": "/workspace/scratch/a83c191d516f/v3-audit-snapshot/source_manifest.json",
+    "consumed_production_files": 7,
+    "result": "All seven exact file byte streams independently matched the supplied SHA256 bindings, recomputed Git-blob SHA1 values, and corresponding root manifest entries; the declared commit matched the bindings."
+  },
+  "pre_execution_corrections": [
+    {
+      "item": "Reference chain",
+      "resolution": "Evidence agent added root-bound replay-to-temporal-to-runtime prerequisites and NPY reference file/raw identity verification before freezing the final wrapper."
+    },
+    {
+      "item": "Provenance wording",
+      "resolution": "Plan now attributes commit/Git-blob verification to root and the independent peer and accurately says the wrapper enforces the resulting SHA256 bindings before and after execution."
+    }
+  ],
+  "limits": [
+    "This is source-review acceptance, not a numerical pass or execution authorization.",
+    "Any fresh packet can close its stated evidence questions only; it cannot retroactively erase the historical failed exact-hash gate or establish absence of selection overfitting.",
+    "The existing forced-failure harness qualification in V3_POLICY_REVIEW_20261029.md remains: copied allocator/engine failure paths are exercised, while exhaustive forced-fallback coverage through the new wrapper has not been claimed.",
+    "The reviewer executed no strategy, added no retrospective unit test, changed no economic policy and made no production edit."
+  ]
+}

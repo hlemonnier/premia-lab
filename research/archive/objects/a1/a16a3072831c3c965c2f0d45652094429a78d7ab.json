@@ -1,0 +1,12 @@
+{
+  "V2": {
+    "exit_code": 1,
+    "economic_execution": false
+  },
+  "B0": {
+    "exit_code": 1,
+    "economic_execution": false
+  },
+  "B05": "not started",
+  "cause": "Extra closing brace in audit observer summary dictionary; Python parse failed before any strategy import or replay."
+}

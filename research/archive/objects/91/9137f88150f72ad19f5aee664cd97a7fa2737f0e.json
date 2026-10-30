@@ -1,0 +1,95 @@
+{
+  "constant_Gram_F1": {
+    "max_differences": {
+      "forecast": 9.107298248878237e-18,
+      "targets": 1.0535513000203833e-09,
+      "economics": 2.106065988272121e-09
+    },
+    "tolerance": 1e-09,
+    "pass": false,
+    "protected_forecast_rows": 420,
+    "protected_decisions": 167,
+    "protected_earning_rows": 166
+  },
+  "F1_repeat": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 420,
+    "protected_decisions": 167,
+    "protected_earning_rows": 166
+  },
+  "F1_future": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 1.0850034655451868e-09,
+      "economics": 1.9303389997560316e-09
+    },
+    "tolerance": 1e-12,
+    "pass": false,
+    "protected_forecast_rows": 321,
+    "protected_decisions": 68,
+    "protected_earning_rows": 67
+  },
+  "F1_prefix": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 360,
+    "protected_decisions": 107,
+    "protected_earning_rows": 106
+  },
+  "F1_zero": {
+    "pass": true
+  },
+  "F2_repeat": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 420,
+    "protected_decisions": 167,
+    "protected_earning_rows": 166
+  },
+  "F2_future": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 1.3010426069826053e-18
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 321,
+    "protected_decisions": 68,
+    "protected_earning_rows": 67
+  },
+  "F2_prefix": {
+    "max_differences": {
+      "forecast": 0.0,
+      "targets": 0.0,
+      "economics": 0.0
+    },
+    "tolerance": 1e-12,
+    "pass": true,
+    "protected_forecast_rows": 360,
+    "protected_decisions": 107,
+    "protected_earning_rows": 106
+  },
+  "F2_zero": {
+    "pass": true
+  },
+  "source_identity": {
+    "pass": true
+  }
+}

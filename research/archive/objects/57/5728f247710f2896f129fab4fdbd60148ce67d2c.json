@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "VALIDATION_RELEASE_AFTER_DURABLE_CHECKPOINT",
+  "recorded_utc": "2026-10-27T11:28:01.320016+00:00",
+  "nomination_path": "research/VALIDATION_NOMINATION.json",
+  "nomination_sha256": "fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5",
+  "nomination_published_commit": "c79f7b1165f976a003a0d26f177f9eda4fef4561",
+  "reporter_path": "tools/report_protected_uncertainty.py",
+  "reporter_sha256": "859829789c827670529b6065c914e9c60bf158b2d3badbdda3403222dc3a213c",
+  "reporter_source_review_sha256": "e3090462d702c0d9b6df1da908262792ae2f935b60edcf2f2653b80457136a2c",
+  "reporter_zero_workflow": {
+    "path": "evidence/protected_uncertainty_zero_001/summary.json",
+    "sha256": "1f83877501a2fd8c0bd7a5566a8ac0afd1ed0cd0b4de9fbf1dff3a5b7403eb20",
+    "status": "EXECUTED_PASS_SCOPE_ONLY",
+    "checks": 151
+  },
+  "input_scope": [
+    0,
+    3024
+  ],
+  "scored_validation_rows": 1007,
+  "audit_access_authorized": false,
+  "candidate_count": 2,
+  "commands": [
+    "python3 tools/run_protected_candidate.py --project . --strategy submission/strategy_gls_factor.py --config research/configs/C06_gls_factor.json --reference evidence/discovery_C06_001 --out evidence/validation_C06_001 --mode validation --cpu 5 --nomination-manifest research/VALIDATION_NOMINATION.json --nomination-sha256 fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5",
+    "python3 tools/run_protected_candidate.py --project . --strategy submission/strategy.py --config research/configs/C09_additive_long_memory.json --reference evidence/discovery_C09_001 --out evidence/validation_C09_001 --mode validation --cpu 6 --nomination-manifest research/VALIDATION_NOMINATION.json --nomination-sha256 fc41b27dccc8fc24b7952e66562f399b54b5c7a3109612dcfcfbae38e21e83a5"
+  ],
+  "selection": "Original eligibility and pooled net annualized daily Sharpe; no new threshold, retuning, restart or finalist substitution.",
+  "execution_condition": "Commit this record, reporter source and complete zero evidence before invoking either command. Then root explicitly releases exactly these two replays."
+}

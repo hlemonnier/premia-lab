@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-27T11:20:06.839131+00:00",
+  "controller_sha256": "d3c3cfd4a1fde10398fc5546f3dc48d395f68a4c06fbe73311c8b5c2cdc37dfe",
+  "plan_sha256": "32dc6a11c84ce4009490cccd057f0b0836f22581ef42e05ede77c51ebb0dd436",
+  "syntax_compile_only": "PASS",
+  "independent_reviewer": "/root",
+  "review_decision": "No remaining blocker; execute exactly discovery-parity and synthetic-zero on CPU5. Actual protected access remains blocked.",
+  "approved_modes": [
+    "discovery-parity",
+    "synthetic-zero"
+  ],
+  "commands": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python tools/run_protected_candidate.py --project . --strategy submission/strategy_gls_factor.py --config research/configs/C06_gls_factor.json --reference evidence/discovery_C06_001 --out evidence/protected_replay_discovery_001 --mode discovery-parity --cpu 5",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python tools/run_protected_candidate.py --project . --strategy submission/strategy_gls_factor.py --config research/configs/C06_gls_factor.json --reference evidence/discovery_C06_001 --out evidence/protected_replay_zero_001 --mode synthetic-zero --cpu 5"
+  ],
+  "candidate_executed_before_freeze": false,
+  "numeric_protected_access": false
+}

@@ -1,0 +1,79 @@
+{
+  "variant": "F1",
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "shape": [
+    420,
+    64
+  ],
+  "checks": {
+    "finite": true,
+    "warmup_zero": true,
+    "counts": true,
+    "input_unchanged": true,
+    "drift_reconciles": true,
+    "scorer_reconciles": true,
+    "all_certified": true,
+    "stock_caps": true,
+    "gross_cap": true,
+    "estimated_hedge": true
+  },
+  "performance": {
+    "full": {
+      "n": 166,
+      "sharpe": -3.142328685244954,
+      "annual_net_return_pct": -14.457607158191182,
+      "annual_vol_pct": 4.600921356851684,
+      "annual_cost_pct": 8.76473452084517,
+      "beta": -0.04273533581907582,
+      "mean_gross": 1.7303436050275631
+    },
+    "discovery": {
+      "n": 166,
+      "sharpe": -3.142328685244954,
+      "annual_net_return_pct": -14.457607158191182,
+      "annual_vol_pct": 4.600921356851684,
+      "annual_cost_pct": 8.76473452084517,
+      "beta": -0.04273533581907582,
+      "mean_gross": 1.7303436050275631
+    }
+  },
+  "forecast_seconds": 0.05900134599869489,
+  "observed_rebalance_ms": 4.433966277214363,
+  "wall_seconds": 0.831820436000271,
+  "forecast_century_extrapolation_seconds": 3.5400807599216932,
+  "certificates": {
+    "ok": 167
+  },
+  "max_gross_before_scale": 3.181669976683234,
+  "gross_scalings": 0,
+  "max_estimated_hedge_error": 1.4072076837123859e-14,
+  "mean_net_stock_investment": 0.04428808074391813,
+  "forecast_sha256": "c266636ff2626e0ef4d2005f92d44befc224bdf4779bfd86269077a74db0e796",
+  "targets_sha256": "8f964ec24d728fce4ad6c1a724a259fc338b13faf61234c936776225fe84d1ca",
+  "input_array_sha256": [
+    "068c7a6033f56e72f173ed049ce6e1ad72f75e427beff697faf8046a62510d7a",
+    "6abee671bcf42570935be135aa7c435b66a9a52e01d116a8a71c648f2f0475a1",
+    "7b6a70ccf264b9095bed3e411f526434fbe1f022accebd37251a11d4a793e10f"
+  ],
+  "scorer_max_error": 3.469446951953614e-18,
+  "drift_max_error": 6.938893903907228e-18
+}

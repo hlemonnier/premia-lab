@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "checks": "All prospectively specified readback/E2E conditions passed",
+  "stderr_bytes": 0,
+  "stdout_sha256": "f4a94fe346a9cb3934e1782d6288e1e54be68a2dc2196ce75e72eb95d3d6fbee",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "report_sha256": "c13398475f1a79380cc78952899f421d6a2904c1800f5dea5954b0742acfb93d",
+  "report_words": 2274,
+  "relative_links_resolve": true
+}

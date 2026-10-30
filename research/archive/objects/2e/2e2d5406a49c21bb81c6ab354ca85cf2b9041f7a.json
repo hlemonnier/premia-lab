@@ -1,0 +1,32 @@
+{
+  "constant": {
+    "first_target_difference": {
+      "decision_index": 252,
+      "max_target_difference": 2.9976021664879227e-15
+    },
+    "max_targets": 1.0535513000203833e-09,
+    "max_economic_columns_gross_cost_closinggross_market": [
+      1.8369528988204653e-12,
+      1.0534100803157248e-12,
+      2.106065988272121e-09,
+      0.0
+    ],
+    "max_net_difference": 2.8869849219570476e-12,
+    "max_forecast": 9.107298248878237e-18
+  },
+  "future": {
+    "first_target_difference": {
+      "decision_index": 285,
+      "max_target_difference": 1.3877787807814457e-16
+    },
+    "max_targets": 1.0850034655451868e-09,
+    "max_economic_columns_gross_cost_closinggross_market": [
+      5.853012302256544e-13,
+      5.736223941590207e-13,
+      1.9303389997560316e-09,
+      0.0
+    ],
+    "max_net_difference": 9.260883618127103e-13,
+    "max_forecast": 0.0
+  }
+}

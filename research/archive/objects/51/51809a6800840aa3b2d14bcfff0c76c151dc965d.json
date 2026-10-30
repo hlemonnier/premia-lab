@@ -1,0 +1,56 @@
+{
+  "scheduled_trades": {
+    "status": "PASS",
+    "metrics": {
+      "sharpe": 15.709977605575705,
+      "annual_return": 3.609288349514563,
+      "annual_volatility": 0.2297449710070607,
+      "beta": 0.9648381877022654,
+      "annual_cost": 0.1707116504854369,
+      "mean_gross": 0.8
+    },
+    "expected_metrics": {
+      "sharpe": 15.709977605575705,
+      "annual_return": 3.609288349514563,
+      "annual_volatility": 0.2297449710070607,
+      "beta": 0.9648381877022654,
+      "annual_cost": 0.17071165048543688,
+      "mean_gross": 0.8
+    },
+    "forecast_seconds": 0.0007562239989056252,
+    "returned_rows": 2,
+    "control_sha256": "40084a63aecc0697f08bd87cd3f2928c9f5240ed3adb8adf05990d86cfdeae14",
+    "input_hashes_after": [
+      "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+      "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+      "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+    ]
+  },
+  "buy_and_hold": {
+    "status": "PASS",
+    "metrics": {
+      "sharpe": 15.874507866387544,
+      "annual_return": 3.6540000000000004,
+      "annual_volatility": 0.2301803640626194,
+      "beta": 0.9666666666666667,
+      "annual_cost": 0.0,
+      "mean_gross": 1.0
+    },
+    "expected_metrics": {
+      "sharpe": 15.874507866387544,
+      "annual_return": 3.6540000000000004,
+      "annual_volatility": 0.2301803640626194,
+      "beta": 0.9666666666666668,
+      "annual_cost": 0.0,
+      "mean_gross": 1.0
+    },
+    "forecast_seconds": 0.0,
+    "returned_rows": 2,
+    "control_sha256": "b5e66b6d78829c9e3078aab06d15114850ec158e54c90a7159b6cd1ff4a79342",
+    "input_hashes_after": [
+      "5ba0d6791ae1751e4678e142afc0ed78f6cf12b6496c7d34db341db0f582922a",
+      "5fd0979fbbecbde4e4c00555c04c739c9769b18923009bc715c012201afeaa13",
+      "47b465894beef0d57e1ad2b1a91219e5c07c09335d47ee0775654c33009ec17c"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "method": "Python csv.DictReader and float conversion; source indices checked directly",
+  "rows": 3526,
+  "matching_indices": true,
+  "max_absolute_differences": {
+    "gross_return": 6.578568852860789e-12,
+    "full_cost": 4.627307075651035e-13,
+    "net_return": 6.351381009669921e-12,
+    "closing_target_gross": 2.490592176940254e-10,
+    "market_return": 0.0
+  },
+  "root_report_max_difference_by_field": {
+    "gross_return": 6.895525817007808e-17,
+    "full_cost": -1.6940658945086007e-21,
+    "net_return": -1.8865117801247777e-17,
+    "closing_target_gross": 2.220446049250313e-16,
+    "market_return": 0.0
+  },
+  "within_prespecified_1e_8": true
+}

@@ -1,0 +1,137 @@
+{
+  "scope_sha256": "94e8622231ce46186f4b4c6188f2caf3c92b1f3d55ef9886f5352ff1041ab386",
+  "readback_source_sha256": "e3c3e67040d823944dfb53b414af8711311ed71a6c35b5c8af06709a4d5aee1d",
+  "argv": [
+    "evidence/v3_market_challenge_20261029/mean_sensitivity_readback.py",
+    "--data",
+    "/workspace/scratch/a83c191d516f/v2-original-input/extracted/Quant Research Take-Home",
+    "--out",
+    "evidence/v3_market_challenge_20261029/mean_sensitivity_001.json"
+  ],
+  "source_heads": {
+    "claude": "978824d4b6140c43566ebd61a3ee8157f4080e35",
+    "research": "9e56aa755d20c5876485188f4c50ce959f6d63f3"
+  },
+  "inputs": {
+    "published_E2_daily.csv": {
+      "git_blob_sha": "566174db7c67933751611598e7cf3c521b290fd9",
+      "sha256": "dfdd79e56ee789521a73a1ed0129cf1ee2cd6d8895f13012ba7b47b5e8c2e357"
+    },
+    "published_joint_daily.csv": {
+      "git_blob_sha": "95d97e3ad1c0f906766e7897ad5b314ead35bedb",
+      "sha256": "460c9ade0270b219e89b7b834e4bd668a667c01aa20c9fa96746b9670211b0b6"
+    },
+    "claude_sleeve_comparison.py": {
+      "git_blob_sha": "d2a98a3f8dfc773ff0016fea4b4dbd354318d0da",
+      "sha256": "ec70802dd38b074fca194e01697f1055f4988afeb4533e481bcbaefc30b3f275"
+    },
+    "claude_sleeve_comparison.json": {
+      "git_blob_sha": "0152de1a168f39bf0d718f79382936f83a45133d",
+      "sha256": "6bf603f2bb2faaebaba2edb9c50c7e4928091598d7c1fe59763e2e48627ff239"
+    },
+    "claude_integration_results.md": {
+      "git_blob_sha": "fa5c6d93769790f49682d7afe26ffc60b49957eb",
+      "sha256": "6440565fdd4b5a1530bfbcf5137c87ed1737e9b12d54977fd587eee31cdcaa2f"
+    },
+    "claude_strategy.py": {
+      "git_blob_sha": "e674fbbc9d17a54264d622a3a7e79d59ffbc71c4",
+      "sha256": "715f8fb607fbbad6d078c3debfeb8dc3f7de12c674df14e4f4a05ed179649d59"
+    }
+  },
+  "returns_csv_sha256": "6ebf41a2f7ff09edb704e0a867c91d6d60c9eb135bd2c1f3a3f6917bf55bbe2d",
+  "earning_rows_zero_based_inclusive": [
+    253,
+    3778
+  ],
+  "no_strategy_execution": true,
+  "no_new_policy_or_weight_search": true,
+  "checks": {
+    "original_market_max_error": 1.0408340855860843e-16,
+    "E2_saved_net_identity_error": 0.0,
+    "joint_saved_net_identity_error": 0.0,
+    "claude_moment_absolute_differences": {
+      "E2": {
+        "net_sharpe": 3.0753177782116836e-13,
+        "ann_arithmetic_mean": 4.98212582300539e-15,
+        "ann_volatility": 6.390721285498557e-15,
+        "annual_actual_fees": 5.00901403688303e-16,
+        "descriptive_net_beta": 8.829048603331557e-14
+      },
+      "joint": {
+        "net_sharpe": 2.3425705819590803e-13,
+        "ann_arithmetic_mean": 4.649058915617843e-15,
+        "ann_volatility": 4.2049697057677804e-15,
+        "annual_actual_fees": 1.986258379993444e-16,
+        "descriptive_net_beta": 8.845701948700935e-14
+      }
+    },
+    "joint_minus_E2_gross_equals_point05_market_max_error": 6.179952383167375e-18
+  },
+  "market": {
+    "annual_arithmetic_mean": 0.14479924338173567,
+    "annual_volatility": 0.14160440339428737,
+    "sharpe": 1.022561727678429
+  },
+  "published_fixed_policy_moments": {
+    "E2": {
+      "n": 3526,
+      "ann_arithmetic_mean": 0.05894598141826299,
+      "ann_volatility": 0.04400327191750005,
+      "net_sharpe": 1.339581782208796,
+      "descriptive_net_beta": 0.052980727371826915,
+      "market_ols_explained_variance_fraction": 0.029068285003686193,
+      "beta_times_market_mean_ann": 0.007671569237254551,
+      "remaining_mean_after_beta_times_market_mean_ann": 0.051274412181008436,
+      "annual_actual_fees": 0.002441507145003677
+    },
+    "joint": {
+      "n": 3526,
+      "ann_arithmetic_mean": 0.06608952578373799,
+      "ann_volatility": 0.045745139091258734,
+      "net_sharpe": 1.4447333005566658,
+      "descriptive_net_beta": 0.10297751974238421,
+      "market_ols_explained_variance_fraction": 0.10161281132917786,
+      "beta_times_market_mean_ann": 0.014911066944024982,
+      "remaining_mean_after_beta_times_market_mean_ann": 0.051178458839713004,
+      "annual_actual_fees": 0.0025379249486154436
+    }
+  },
+  "claude_sleeve_only_mean_sensitivity_reconstructed": {
+    "meaning": "Change only the added .05 sleeve's annual mean contribution, retaining the inner book's historical mean, the final book's volatility and actual fees.",
+    "sleeve_mean_zero_sharpe": 1.286465945534671,
+    "sleeve_mean_reversed_sharpe": 1.1281985905126761,
+    "unchanged_E2_sharpe": 1.339581782208796
+  },
+  "common_market_mean_sensitivity": [
+    {
+      "scenario": "observed_mean",
+      "assumed_market_annual_arithmetic_mean": 0.14479924338173567,
+      "joint_frozen_mean_sharpe": 1.4447333005566658,
+      "E2_frozen_mean_sharpe": 1.339581782208796,
+      "joint_minus_E2": 0.10515151834786973
+    },
+    {
+      "scenario": "zero_common_market_mean",
+      "assumed_market_annual_arithmetic_mean": 0.0,
+      "joint_frozen_mean_sharpe": 1.1187737070296175,
+      "E2_frozen_mean_sharpe": 1.16524090020262,
+      "joint_minus_E2": -0.04646719317300252
+    },
+    {
+      "scenario": "reversed_common_market_mean",
+      "assumed_market_annual_arithmetic_mean": -0.14479924338173567,
+      "joint_frozen_mean_sharpe": 0.7928141135025694,
+      "E2_frozen_mean_sharpe": 0.9909000181964444,
+      "joint_minus_E2": -0.198085904693875
+    }
+  ],
+  "conditional_common_market_mean_breakeven_ann": 0.04437720348650681,
+  "sharpe_difference_slope_per_unit_annual_market_mean": 1.047096020530704,
+  "limitations": [
+    "Fixed full-sample beta, volatility, nonmarket mean, centered fluctuations, held positions and costs. These are descriptive scenarios, not policies or causal forecasts.",
+    "No strategy rerun under a different market process. Changed returns can change future forecasts, risk estimates, portfolio drift, positions and fees.",
+    "OLS remainder and beta-times-market mean are descriptive projections, not identified economic alpha or the result of a tradable hedge.",
+    "No confidence interval for the breakeven and no claim that future market moments equal observed moments.",
+    "All historical periods are exposed development data; no new out-of-sample evidence."
+  ]
+}

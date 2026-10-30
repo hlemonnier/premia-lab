@@ -1,0 +1,1 @@
+C06_gls_factor:validation_a sharpe  0.52   return   1.7%/yr   vol  3.2%   beta -0.00   cost 0.55%/yr   gross 0.91   forecast 7.7s (0.02 h per century)   rebalance 9.2 ms/call

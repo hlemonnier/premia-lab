@@ -1,0 +1,15 @@
+{
+  "reviewer": "score_opportunity_audit",
+  "file": "evidence/v2_score_forecast_20261028/run_c_layout_followup.py",
+  "sha256": "17eccbbd9366e86aa38fd75a5a499bc7b9d907b9ed1c03607de8c4e9d24b894c",
+  "status": "ACCEPT_SCOPED_CANONICAL_FUTURE_DIAGNOSTIC",
+  "source_parse": "PASS",
+  "findings": [
+    "Original fixture, seed, F1 prototype, scorer and comparison tolerances reused",
+    "Both histories C contiguous; returns and characteristics altered only from row320",
+    "Forecast rows<=320 and decisions/economics<320 protected under original1e-12 criterion",
+    "Fresh baseline also reconciled to saved synthetic001 baseline",
+    "No trading policy or hyperparameter change"
+  ],
+  "interpretation": "A pass separates future alteration on the canonical path from the earlier joint future/layout failure; original strict failures remain failures. Layout amplification remains supported inference until separately identified."
+}

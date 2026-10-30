@@ -1,0 +1,17 @@
+{
+  "candidate_id": "C11_interactions",
+  "basis": "additive",
+  "alpha_half_life": 252.0,
+  "ridge": 0.1,
+  "min_training_days": 126,
+  "feature_clip": 4.0,
+  "risk_window": 252,
+  "risk_min_days": 20,
+  "variance_shrinkage": 0.2,
+  "variance_floor": 1e-06,
+  "risk_aversion": 1000.0,
+  "cost_horizon": 20.0,
+  "weight_cap": 0.01,
+  "gross_cap": 1.0,
+  "interaction_ridge": 1.0
+}

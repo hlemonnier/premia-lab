@@ -1,0 +1,97 @@
+{
+  "forecast": {
+    "path": "forecast.npy",
+    "shape": [
+      1501,
+      1000
+    ],
+    "dtype": "float64",
+    "sha256": "dd1f6112d9a0094b0dd12a6fb9d483f1429dc57d22b0d29d479c9b6aba54be76",
+    "array_sha256": "2b85baac3e0ebd7f64de0329755695883bffbde1c1011346189bf540319d630e",
+    "readback": true
+  },
+  "targets": {
+    "path": "targets.npy",
+    "shape": [
+      1248,
+      1000
+    ],
+    "dtype": "float64",
+    "sha256": "c9ae99148bfcac66c5fba514f55d122d5fa5d2d98478fc1ed5bf08076e0ce959",
+    "array_sha256": "7d5f2e92530019b45b90156dfc57331acc91d66dc74ca06c08c2fca58a1e077d",
+    "readback": true
+  },
+  "virtual_targets": {
+    "path": "virtual_targets.npy",
+    "shape": [
+      1248,
+      1000
+    ],
+    "dtype": "float64",
+    "sha256": "509a30bdf810ca4653392d2a79798f2049269dbd542076dc7e4b06f4a7423fcf",
+    "array_sha256": "ed6022371c2ae87d93eac23c4887a539cd98c97903729338544fb515114ee93c",
+    "readback": true
+  },
+  "rows": {
+    "path": "rows.npy",
+    "shape": [
+      1247,
+      5
+    ],
+    "dtype": "float64",
+    "sha256": "d024ed8d0291cd598273aab856a696ac0f3e0886024378c391b4d37f763fcae2",
+    "array_sha256": "872d761bb8902ac361bb75fc27170152598552699e0a33a1d85c1cff7a1ff9df",
+    "readback": true
+  },
+  "decision_indices": {
+    "path": "decision_indices.npy",
+    "shape": [
+      1248
+    ],
+    "dtype": "int64",
+    "sha256": "2a6587ac3ca35bdd06b97baeb8eb342f2f086a4c3df47237e6d73aee362c7912",
+    "array_sha256": "62e42db925d1455255c863c38bcbfbeffd625ad57d6a40343557c1b4bbd097b9",
+    "readback": true
+  },
+  "trace_market_state": {
+    "path": "trace_market_state.npy",
+    "shape": [
+      1501
+    ],
+    "dtype": "float64",
+    "sha256": "195f9e51fd936c7cd585fda7d48722fba421fa010d894d4789ded2bb98f1ab37",
+    "array_sha256": "0adb0a8744d2880f374bd629051a4fc47a9e9997fc3cbfa868752506df29dbc9",
+    "readback": true
+  },
+  "trace_market_q63": {
+    "path": "trace_market_q63.npy",
+    "shape": [
+      1501
+    ],
+    "dtype": "float64",
+    "sha256": "24acc5d92f1f8b51bb050c3ea7a7d47db1c6ad0e815edbc8e0e70f57c3e11147",
+    "array_sha256": "41a208c1214af7a3846d2540a076ed4e3ec71ec2a59ab852ece1597ca8e3e20c",
+    "readback": true
+  },
+  "trace_market_q1008": {
+    "path": "trace_market_q1008.npy",
+    "shape": [
+      1501
+    ],
+    "dtype": "float64",
+    "sha256": "f789135ab7b69d42e89be20fa2adfcf961e601f1182f18b0bf13582e004c3887",
+    "array_sha256": "1060e52e7c9ebff1a72fc7159b1d9ca3cc7e90ece7e31c59e8ab379fccb12ace",
+    "readback": true
+  },
+  "trace_coefficients": {
+    "path": "trace_coefficients.npy",
+    "shape": [
+      1501,
+      53
+    ],
+    "dtype": "float64",
+    "sha256": "a96f796e82c051efbebc2d373891b723c04bee54a2eb4689d7d6662eb6877073",
+    "array_sha256": "801bf6ba07f4902ddc2ee898dd68e41e1055e884a7dcb64e20a64f2e1a25862d",
+    "readback": true
+  }
+}

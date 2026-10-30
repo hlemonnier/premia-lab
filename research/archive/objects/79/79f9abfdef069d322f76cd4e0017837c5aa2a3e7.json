@@ -1,0 +1,7 @@
+{
+  "pre_reviewed_hash_matches_failed_source": true,
+  "failed_source_sha256": "0cfaf778c85ff670e3b3dd947ebaee0c3cd562a346bc0a473abf448f89865bff",
+  "executed_source_sha256": "859a6db4e7a824475a38115332e4babf2423ceb23451c4606157b9140a0f02b3",
+  "diff": "--- failed_parse_observer\n+++ executed_observer\n@@ -165,7 +165,7 @@\n                           \"all_finite\": bool(obs.all_finite.all()),\n                           \"stock_caps\": bool(obs.max_abs_weight.max() <= engine.CONFIG[\"weight_cap\"]),\n                           \"gross_cap\": bool(obs.post_gross.max() <= engine.CONFIG[\"gross_cap\"] + 1e-12),\n-                          \"final_target_hedge\": bool(obs.post_target_error.abs().max() <= 1e-11)}}}\n+                          \"final_target_hedge\": bool(obs.post_target_error.abs().max() <= 1e-11)}}\n     write_json(args.out / \"summary.json\", summary)\n     write_json(args.out / \"artifact_manifest.json\", {\n         str(p.relative_to(args.out)): sha(p) for p in sorted(args.out.rglob(\"*\")) if p.is_file()})\n",
+  "reviewer_note": "The pre-execution source review correctly checked observer logic but missed an excess closing brace. Initial executions failed before importing a strategy or producing economics; the corrected source removes that single brace. This readback preserves the limitation of the earlier review."
+}

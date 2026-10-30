@@ -1,0 +1,79 @@
+{
+  "checks": {
+    "finite": true,
+    "solvent": true,
+    "input_unchanged": true,
+    "economic_rows": true,
+    "decision_rows": true,
+    "decision_clock": true,
+    "scorer_accounting": true,
+    "held_drift": true,
+    "warmup": true,
+    "stock_bound": true,
+    "gross_bound": true,
+    "certificates": true,
+    "multiplier_clock": true,
+    "opening_free": true,
+    "last_rebalance_charged": true
+  },
+  "performance": {
+    "full": {
+      "n": 147,
+      "net_sharpe": 13.36378265500693,
+      "net_return_ann_pct": 19.142070052348444,
+      "net_vol_ann_pct": 1.432384119564875,
+      "cost_ann_pct": 4.172105370087293,
+      "gross_sharpe": 16.355065498113117,
+      "net_beta": 0.008162902143840694,
+      "mean_gross": 3.089837110585726,
+      "worst_gross_daily_return": -0.0007129490742774391
+    },
+    "discovery": {
+      "n": 147,
+      "net_sharpe": 13.36378265500693,
+      "net_return_ann_pct": 19.142070052348444,
+      "net_vol_ann_pct": 1.432384119564875,
+      "cost_ann_pct": 4.172105370087293,
+      "gross_sharpe": 16.355065498113117,
+      "net_beta": 0.008162902143840694,
+      "mean_gross": 3.089837110585726,
+      "worst_gross_daily_return": -0.0007129490742774391
+    }
+  },
+  "forecast_seconds": 0.08007917399663711,
+  "rebalance_ms_mean": 4.541994816277946,
+  "rebalance_ms_p99": 64.72339680432923,
+  "wall_seconds": 0.7824864569993224,
+  "accounting_max_error": 0.0,
+  "multiplier_max_error": 0.0,
+  "input_array_sha256": [
+    "1b7431d49e8f036a62e1b7a50c2b810abd7598bf2dd6211fa6c54fc5807bf127",
+    "bd5ac1aa1e54adef8f4c8c44c96ee0bc63d4e6ab5f516605170f150cbbdad0be",
+    "c86ba67a39a20bb3e2999b0496d51764f2cf42dc812cb76bda9c510cf36b2bc1"
+  ],
+  "forecast_sha256": "82a5dca76526671a52748c5cd32fa78c632c9f61191dba91e19ffaaa1814658e",
+  "targets_sha256": "34cd5793cb3c19a45a9a29eac73de2baeb2dbfc44b0b08a188b1c5328acf9253",
+  "virtual_targets_sha256": "d58bf7ba153f4238a96072afdf495ca2d9deb9325bb80c462af09181b43d3ed5",
+  "configuration": {
+    "alpha_half_life": 1008.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "beta_window": 252,
+    "factor_half_life": 126.0,
+    "specific_half_life": 126.0,
+    "specific_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "factor_risk_scale": 0.3,
+    "risk_beta_column": false,
+    "matched_diagonal": false,
+    "beta_shrinkage": false,
+    "beta_target": 0.0,
+    "risk_aversion": 200.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.05,
+    "gross_cap": 5.0
+  },
+  "instrumented_research_runtime": true,
+  "runtime_stress_only": false
+}

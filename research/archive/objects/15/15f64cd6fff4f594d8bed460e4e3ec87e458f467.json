@@ -1,0 +1,40 @@
+{
+  "path": "evidence/v2_score2_root_20261029/JOINT_ACTUAL_RELEASE.json",
+  "sha256": "b3c6afc2f14995b1d5c3c29a5c4c79d84d4721bf4ce341e005aaa59f236ada9b",
+  "release": {
+    "date": "2026-10-29",
+    "timezone": "Europe/Paris",
+    "allow_actual": true,
+    "allow_runtime": false,
+    "qualifying_components": [
+      "E2",
+      "M1"
+    ],
+    "source_sha256": {
+      "PLAN.md": "ef38677e96a486edea1b693490b399ed57ed028252dae7274b5d3671a7e95a00",
+      "E2E_SPEC.md": "400d6e73c38f9e8249b13259e81fea2da92418a03d7642b8c2718f1b5b9fd2cf",
+      "e2e.py": "70442c0f8d91cdb07b383d4ca74d80d83786f1b72585db00e259d20d8caa83d3",
+      "joint.py": "2beeb7beb6d2107818d7570047c02d24f0654912fcc2cd5217bd01580b10c48f",
+      "common.py": "407ab5f736fd7939feefd1a0e4bb7e94b4e06e27af2eb8cd2f22aaa366b0e5e0",
+      "execution.py": "64dbb239848661fee97004e363d79a1568f02656e6b5e8ce5d76933faf338d1f",
+      "forecast_reference.py": "7854b2f763ae1bcc716282b68791503fe29f83d0aebc64835d8d0d919c722719",
+      "reference_overlay.py": "f603bc4e2e9ae8df6d407c8ba1d64b13753fcec19fde8c295e815fe2f09ca1f8",
+      "sleeve.py": "91f6c27a11d18e23ac937dd7f4962210ee081bd011e963431e2a495b16a8648b"
+    },
+    "master_plan_commit": "d2997e0d98c6407da4b503a77060966904486062",
+    "master_plan_sha256": "84e6d400dccc71c6a5b88ce189bd370c357d6bda0346246ce57ebf3c75a74fd2",
+    "review_and_evidence_sha256": {
+      "evidence/v2_score2_joint_20261029/synthetic_001/result.json": "f23fa2a55efaf9bbf6c8b120bfdeded7daec33ac961baef17dc68082410fdbe5",
+      "evidence/v2_score2_review_20261029/joint_source_review.json": "148b8420345d5ac0e8c3f15faa69610e365ec157b90fa8f265a09988237b4b53",
+      "evidence/v2_score2_review_20261029/joint_synthetic_review.json": "bccdfb2fef1931a42fd2d3f00c7ef8a2f871b1d59cb023ff07b32881a3fbbc76",
+      "evidence/v2_score2_execution_20261029/joint_execution_runtime_review.json": "3afc7c5665c13aca6dfddc10d57011f224ae3805fd447a190584990d820a1a94",
+      "evidence/v2_score2_root_20261029/CONDITIONAL_JOINT_ADMISSION.json": "f4f5c473e118bc9c0f9bed2f5d8090828751c100a723e12463de75f50031e177",
+      "evidence/v2_score2_root_20261029/standalone_readback_001.json": "af16207ccedc0cb380e332041f4d90260dd1af75db21d0fdb195c6db30c57926"
+    },
+    "promotion_rule": "Net Sharpe exceeds best admitted standalone M1 by more than 1e-8 and required operational checks pass.",
+    "best_standalone_net_sharpe": 1.426560898191992,
+    "one_composition_only": true,
+    "all_history_is_exposed_development": true,
+    "independent_root_readback_required": true
+  }
+}

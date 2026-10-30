@@ -1,0 +1,460 @@
+{
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "exit_code": 0,
+  "started_utc": "2026-10-27T14:29:20.047188+00:00",
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a83c191d516f/continual-research-takehome/tools/attribute_frozen_policy.py --project /workspace/scratch/a83c191d516f/continual-research-takehome --packet /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001 --mode real --allow-canonical --packet-manifest-sha256 2e1aff5ae8e1257a6abef712b821e4859778dd20f0bb60f2a9903cf0c350d95b --out evidence/frozen_attribution_real_001",
+  "mode": "real",
+  "packet": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001",
+  "numeric_content_read_started": true,
+  "model_executions": 0,
+  "checks": [
+    {
+      "name": "canonical_release_flag",
+      "status": "PASS"
+    },
+    {
+      "name": "packet_manifest_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "original_canonical_inventory",
+      "status": "PASS"
+    },
+    {
+      "name": "artifact_manifest_mapping",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:config.json",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:config.json",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:config.json",
+      "status": "PASS"
+    },
+    {
+      "name": "metadata_mappings",
+      "status": "PASS"
+    },
+    {
+      "name": "input_scope_kind",
+      "status": "PASS"
+    },
+    {
+      "name": "declared_return_shape",
+      "status": "PASS"
+    },
+    {
+      "name": "declared_input_slice",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_dimensions",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_risk_configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:inputs/returns.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:inputs/returns.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:targets.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:targets.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:daily.csv",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:daily.csv",
+      "status": "PASS"
+    },
+    {
+      "name": "return_manifest_agrees",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "return_shape_and_type",
+      "status": "PASS"
+    },
+    {
+      "name": "target_shape_and_type",
+      "status": "PASS"
+    },
+    {
+      "name": "finite_inputs",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_ledger_schema",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_scored_row_count",
+      "status": "PASS"
+    },
+    {
+      "name": "chronological_finite_ledger",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_attribution",
+      "status": "PASS"
+    },
+    {
+      "name": "all_daily_outputs_finite",
+      "status": "PASS"
+    },
+    {
+      "name": "covariance_additivity:discovery",
+      "status": "PASS",
+      "actual": 1.0
+    },
+    {
+      "name": "covariance_additivity:validation",
+      "status": "PASS",
+      "actual": 1.0
+    },
+    {
+      "name": "covariance_additivity:audit",
+      "status": "PASS",
+      "actual": 1.0
+    },
+    {
+      "name": "no_forecast_or_rebalance",
+      "status": "PASS"
+    },
+    {
+      "name": "consumed_inputs_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "private_helpers_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "consumed_files": {
+    "artifact_manifest.json": {
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/artifact_manifest.json",
+      "sha256": "2e1aff5ae8e1257a6abef712b821e4859778dd20f0bb60f2a9903cf0c350d95b",
+      "bytes": 6287
+    },
+    "input_manifest.json": {
+      "sha256": "df920fd644c6aba72817f9e04170dfcec935f1f25e5694bd717021bc2d38e4f9",
+      "bytes": 1284,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/input_manifest.json"
+    },
+    "source_manifest.json": {
+      "sha256": "8746451b648ff1a917cfc2fa9f3decb4e2e31060298ecf51274af1f1648f41c3",
+      "bytes": 2187,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source_manifest.json"
+    },
+    "config.json": {
+      "sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+      "bytes": 365,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/config.json"
+    },
+    "source/candidate/strategy.py": {
+      "sha256": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+      "bytes": 10951,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/strategy.py"
+    },
+    "source/candidate/portfolio.py": {
+      "sha256": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+      "bytes": 7640,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/portfolio.py"
+    },
+    "source/candidate/strategy_factor.py": {
+      "sha256": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+      "bytes": 7547,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/strategy_factor.py"
+    },
+    "source/candidate/factor_portfolio.py": {
+      "sha256": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+      "bytes": 6813,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/source/candidate/factor_portfolio.py"
+    },
+    "inputs/returns.npy": {
+      "sha256": "82544a656bcdcb53b6b5d001969a582406b5ac3537df8807f683a9225c21c95d",
+      "bytes": 30240128,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/inputs/returns.npy"
+    },
+    "targets.npy": {
+      "sha256": "948c0fb8aa9462586c6972ac409c25d0c768e20ab7817cf4fe434908ee4de617",
+      "bytes": 28216128,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/targets.npy"
+    },
+    "daily.csv": {
+      "sha256": "4ab5ba9808248a9ae28b1f5cfb835567a8ecf6a1d1adffc52242040d9d3b87f1",
+      "bytes": 456368,
+      "path": "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/audit_C09_001/daily.csv"
+    }
+  },
+  "stages": {
+    "discovery": {
+      "rows": 1762,
+      "index_slice": [
+        253,
+        2015
+      ],
+      "annual_arithmetic_mean": {
+        "market_component": 3.744750652560767e-15,
+        "residual_factor_component": 0.03153697702466987,
+        "remainder_component": 0.02224429715723772,
+        "full_cost": 0.005879786749547073,
+        "gross_return": 0.05378127418191134,
+        "net_return": 0.04790148743236427
+      },
+      "annual_volatility": {
+        "market_component": 7.617122638828165e-15,
+        "residual_factor_component": 0.05123216526808726,
+        "remainder_component": 0.025643171197694072,
+        "full_cost": 0.00014876646974617988,
+        "gross_return": 0.06841991720011589,
+        "net_return": 0.06841558128436026
+      },
+      "gross_covariance_contribution": {
+        "market_component": -3.1213052718573196e-15,
+        "residual_factor_component": 0.7101092434775336,
+        "remainder_component": 0.28989075652246954
+      },
+      "estimated_market_exposure": {
+        "mean_abs": 5.6502642864084785e-14,
+        "max_abs": 1.4101744418980702e-13
+      },
+      "factor_rank": {
+        "min": 10,
+        "max": 10
+      },
+      "max_risk_history_stop_exclusive": 2014,
+      "max_factor_history_stop_exclusive": 1996,
+      "max_factor_age_days": 20,
+      "max_abs_gross_reconciliation_error": 2.0816681711721685e-17,
+      "max_abs_net_reconciliation_error": 2.0816681711721685e-17,
+      "max_abs_opening_gross_reconciliation_error": 0.0,
+      "gross_covariance_contribution_sum": 1.0
+    },
+    "validation": {
+      "rows": 1007,
+      "index_slice": [
+        2016,
+        3023
+      ],
+      "annual_arithmetic_mean": {
+        "market_component": -1.018552577946654e-15,
+        "residual_factor_component": 0.014152620550698887,
+        "remainder_component": 0.014694411489606873,
+        "full_cost": 0.0020875968449677613,
+        "gross_return": 0.028847032040304733,
+        "net_return": 0.026759435195336974
+      },
+      "annual_volatility": {
+        "market_component": 1.2603540634439628e-14,
+        "residual_factor_component": 0.025714315830443875,
+        "remainder_component": 0.023979320070762387,
+        "full_cost": 7.665739742155715e-05,
+        "gross_return": 0.040590398398024356,
+        "net_return": 0.04059320689960052
+      },
+      "gross_covariance_contribution": {
+        "market_component": 1.9825056617655928e-14,
+        "residual_factor_component": 0.526165110172497,
+        "remainder_component": 0.4738348898274831
+      },
+      "estimated_market_exposure": {
+        "mean_abs": 6.247368608672011e-14,
+        "max_abs": 1.4197432200976404e-13
+      },
+      "factor_rank": {
+        "min": 10,
+        "max": 10
+      },
+      "max_risk_history_stop_exclusive": 3022,
+      "max_factor_history_stop_exclusive": 3004,
+      "max_factor_age_days": 20,
+      "max_abs_gross_reconciliation_error": 5.204170427930421e-18,
+      "max_abs_net_reconciliation_error": 5.204170427930421e-18,
+      "max_abs_opening_gross_reconciliation_error": 0.0,
+      "gross_covariance_contribution_sum": 1.0
+    },
+    "audit": {
+      "rows": 755,
+      "index_slice": [
+        3024,
+        3779
+      ],
+      "annual_arithmetic_mean": {
+        "market_component": -8.964271481833884e-15,
+        "residual_factor_component": 0.07746454532083091,
+        "remainder_component": 0.0226273479580551,
+        "full_cost": 0.003331189682351051,
+        "gross_return": 0.10009189327887706,
+        "net_return": 0.096760703596526
+      },
+      "annual_volatility": {
+        "market_component": 1.0013651663246586e-14,
+        "residual_factor_component": 0.038957340489187704,
+        "remainder_component": 0.022639612138633945,
+        "full_cost": 0.00013480411192103706,
+        "gross_return": 0.053777977289993686,
+        "net_return": 0.05377893059410654
+      },
+      "gross_covariance_contribution": {
+        "market_component": -4.8053646874958845e-15,
+        "residual_factor_component": 0.6737720815502399,
+        "remainder_component": 0.32622791844976495
+      },
+      "estimated_market_exposure": {
+        "mean_abs": 6.075653503377362e-14,
+        "max_abs": 1.418765180604096e-13
+      },
+      "factor_rank": {
+        "min": 10,
+        "max": 10
+      },
+      "max_risk_history_stop_exclusive": 3778,
+      "max_factor_history_stop_exclusive": 3760,
+      "max_factor_age_days": 20,
+      "max_abs_gross_reconciliation_error": 1.0408340855860843e-17,
+      "max_abs_net_reconciliation_error": 1.0408340855860843e-17,
+      "max_abs_opening_gross_reconciliation_error": 0.0,
+      "gross_covariance_contribution_sum": 1.0
+    }
+  },
+  "completed_rows": 3526,
+  "factor_settings": {
+    "factor_rank": 10,
+    "factor_shrinkage": 0.5,
+    "factor_refresh_days": 21
+  },
+  "svd_rank_rule": "s > eps(float64) * max(n_stocks, n_loading_columns) * s_max; empty if s_max=0",
+  "reconciliation_tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-10
+  },
+  "variance_convention": "population covariance and variance, ddof=0",
+  "interpretation": "Descriptive ex post accounting. The remainder is not identified economic alpha.",
+  "factor_cutoff_semantics": "factor_history_stop_exclusive dates cached correlation loadings; current marginal variance uses risk_history_stop_exclusive and can change the final span between refreshes",
+  "covariance_contribution_semantics": "Cov(component,gross)/Var(gross); can be negative or exceed one; undefined at zero gross variance",
+  "market_component_caveat": "Small estimated market attribution is partly constructional because C09 uses the same prior beta estimator; it is not independent realized-beta evidence",
+  "finished_utc": "2026-10-27T14:29:26.951592+00:00"
+}

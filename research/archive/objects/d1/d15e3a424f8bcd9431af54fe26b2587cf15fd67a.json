@@ -1,0 +1,38 @@
+{
+ "name": "hl_252",
+ "forecast_s": 3.4,
+ "rebalance_ms": 3.59,
+ "wall_s": 16.2,
+ "all": {
+  "sharpe": 0.867,
+  "gross_sharpe": 0.971,
+  "ret_pct": 6.12,
+  "cost_pct": 0.735,
+  "beta": 0.015,
+  "gross": 0.953
+ },
+ "discovery": {
+  "sharpe": 0.638,
+  "gross_sharpe": 0.75,
+  "ret_pct": 4.4,
+  "cost_pct": 0.777,
+  "beta": 0.0212,
+  "gross": 0.974
+ },
+ "validation": {
+  "sharpe": 0.386,
+  "gross_sharpe": 0.486,
+  "ret_pct": 2.68,
+  "cost_pct": 0.696,
+  "beta": 0.0123,
+  "gross": 0.91
+ },
+ "audit": {
+  "sharpe": 1.962,
+  "gross_sharpe": 2.053,
+  "ret_pct": 14.78,
+  "cost_pct": 0.689,
+  "beta": 0.0116,
+  "gross": 0.962
+ }
+}

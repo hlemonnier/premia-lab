@@ -1,0 +1,172 @@
+{
+  "status": "EXECUTED_PASS",
+  "started_utc": "2026-10-27T10:58:59.392443+00:00",
+  "scenario": {
+    "name": "characteristics_from_254",
+    "kind": "suffix",
+    "cutoff": 254,
+    "mode": "characteristics",
+    "forecast_count": 255,
+    "earning_day_limit": 254,
+    "score_day_exclusive": 254
+  },
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/worker_used.py --worker /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/manifests/characteristics_from_254.json",
+  "process_controls": {
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "cpu_affinity": [
+      3
+    ]
+  },
+  "returned_by_scorer": true,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "cvxpy": "NOT_INSTALLED",
+      "scikit-learn": "1.8.0",
+      "lightgbm": "NOT_INSTALLED"
+    },
+    "pid": 12,
+    "parent_pid": 2
+  },
+  "alteration": {
+    "kind": "suffix",
+    "returns_changed": 0,
+    "characteristics_changed": 22894506,
+    "cutoff": 254,
+    "mode": "characteristics",
+    "prefix_returns_unchanged": true,
+    "prefix_characteristics_unchanged": true
+  },
+  "input_shapes": [
+    [
+      2016,
+      1000
+    ],
+    [
+      2016,
+      1000,
+      13
+    ],
+    [
+      1000
+    ]
+  ],
+  "input_hashes_before": [
+    "e6f8a8bed0db39b28679ce2d2b238773b8bf58c6821aace4bfc40599370c2c51",
+    "8ef6d599868669732693711267a48614d6d24a113c17baf73ca7758c3f0652d7",
+    "f8f7aca2ca5ccc702e7910f5ee9ccb3a1f427d144d9719bb9b114817509de872"
+  ],
+  "source_hashes": {
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/factor_portfolio.py": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/gls_precision.py": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/gross_portfolio.py": "2a2d1fb7dfb6b9bcd1d8509e3b73b957d34d158eb198648c8ba78bdc2fe9cac8",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/portfolio.py": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/strategy.py": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/strategy_factor.py": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/strategy_gls.py": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/strategy_gls_factor.py": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/strategy_gross.py": "891bafcd0eff4c9b58c77fa3c12bfa851f71a1588113977f1fd0c2b43b54129b",
+    "/workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/C06_causality_B_001/project/submission/strategy_interactions.py": "6a66bf842ea4fbdfde53e9d3423ffeed60088c2db3c27699cdbab2e3c89c7ae2"
+  },
+  "scorer_sha256": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+  "requested_config": {
+    "candidate_id": "C06_gls_factor",
+    "basis": "additive",
+    "alpha_half_life": 252.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "risk_window": 252,
+    "risk_min_days": 20,
+    "variance_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "risk_aversion": 1000.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.01,
+    "gross_cap": 1.0,
+    "learning_factor_rank": 10,
+    "learning_factor_shrinkage": 0.5,
+    "learning_factor_refresh_days": 21,
+    "factor_rank": 10,
+    "factor_shrinkage": 0.5,
+    "factor_refresh_days": 21
+  },
+  "requested_config_sha256": "f424033fae2e2ca4a8f0a532a2da41dc4841235f1c8c67394e26e9081c9a49fb",
+  "candidate_config": {
+    "candidate_id": "C06_gls_factor",
+    "basis": "additive",
+    "alpha_half_life": 252.0,
+    "ridge": 0.1,
+    "min_training_days": 126,
+    "feature_clip": 4.0,
+    "risk_window": 252,
+    "risk_min_days": 20,
+    "variance_shrinkage": 0.2,
+    "variance_floor": 1e-06,
+    "risk_aversion": 1000.0,
+    "cost_horizon": 20.0,
+    "weight_cap": 0.01,
+    "gross_cap": 1.0,
+    "learning_factor_rank": 10,
+    "learning_factor_shrinkage": 0.5,
+    "learning_factor_refresh_days": 21,
+    "factor_rank": 10,
+    "factor_shrinkage": 0.5,
+    "factor_refresh_days": 21
+  },
+  "has_forecast": true,
+  "forecast_full_shape": [
+    2016,
+    1000
+  ],
+  "forecast_full_hash": "1bc78542b81d402685fc697dcf642fba92e8908ac6161e49485ce6cfe4cdf8bc",
+  "execution_seconds": 16.093544241999552,
+  "position_checks": {
+    "calls": 1763,
+    "all_shapes_valid": true,
+    "all_finite": true,
+    "held_input_unchanged": true
+  },
+  "forecast_seconds_instrumented": 3.697063805000653,
+  "input_hashes_after": [
+    "e6f8a8bed0db39b28679ce2d2b238773b8bf58c6821aace4bfc40599370c2c51",
+    "8ef6d599868669732693711267a48614d6d24a113c17baf73ca7758c3f0652d7",
+    "f8f7aca2ca5ccc702e7910f5ee9ccb3a1f427d144d9719bb9b114817509de872"
+  ],
+  "inputs_unchanged": true,
+  "saved_shapes": {
+    "targets": [
+      2,
+      1000
+    ],
+    "target_earning_days": [
+      2
+    ],
+    "scored_rows": [
+      1,
+      5
+    ],
+    "score_days": [
+      1
+    ],
+    "forecast_prefix": [
+      255,
+      1000
+    ]
+  },
+  "output_sha256": "89eb7e150b62be60fdbea3f9dfdb24f3a379f9665fa5d2ca8284f0087feb2c0f",
+  "finished_utc": "2026-10-27T10:59:16.516362+00:00",
+  "exit_code": 0
+}

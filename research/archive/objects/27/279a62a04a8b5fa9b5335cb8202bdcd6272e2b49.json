@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-26T19:47:49.178858+00:00",
+  "reason": "Independent source review: ignore fixed-zero-cap assets when normalizing outer beta; no effect on fixed C04 positive scalar cap",
+  "solver_sha256": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+  "verifier_sha256": "f510519c06aa8fe243505f1600885721357bc6acb8904c894280a0c1b60a1684",
+  "new_isolated_tests_added": false
+}

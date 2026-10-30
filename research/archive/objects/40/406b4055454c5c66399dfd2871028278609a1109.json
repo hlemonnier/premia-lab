@@ -1,0 +1,53 @@
+{
+  "initial_transfer_check": "Failed before any numerical calculations: apply_patch normalized original CSV CRLF line endings. Verified exact restoration by original Git blob SHA; no source numerical values changed.",
+  "files": [
+    {
+      "path": "published_E2_daily.csv",
+      "bytes": 454362,
+      "transfer_sha_before": "932c390a9ea9f9d7667a5b4029c3efd23f7bfac8",
+      "source_git_blob_sha": "566174db7c67933751611598e7cf3c521b290fd9",
+      "source_sha256": "dfdd79e56ee789521a73a1ed0129cf1ee2cd6d8895f13012ba7b47b5e8c2e357",
+      "transfer_action": "restore exact CRLF bytes normalized by patch transfer"
+    },
+    {
+      "path": "published_joint_daily.csv",
+      "bytes": 453765,
+      "transfer_sha_before": "18008a23ea15c20837b79690f7d180d117727b2a",
+      "source_git_blob_sha": "95d97e3ad1c0f906766e7897ad5b314ead35bedb",
+      "source_sha256": "460c9ade0270b219e89b7b834e4bd668a667c01aa20c9fa96746b9670211b0b6",
+      "transfer_action": "restore exact CRLF bytes normalized by patch transfer"
+    },
+    {
+      "path": "claude_sleeve_comparison.py",
+      "bytes": 2065,
+      "transfer_sha_before": "d2a98a3f8dfc773ff0016fea4b4dbd354318d0da",
+      "source_git_blob_sha": "d2a98a3f8dfc773ff0016fea4b4dbd354318d0da",
+      "source_sha256": "ec70802dd38b074fca194e01697f1055f4988afeb4533e481bcbaefc30b3f275",
+      "transfer_action": "unchanged"
+    },
+    {
+      "path": "claude_sleeve_comparison.json",
+      "bytes": 769,
+      "transfer_sha_before": "f5503690fff0ae583c47913a0950530606eec580",
+      "source_git_blob_sha": "0152de1a168f39bf0d718f79382936f83a45133d",
+      "source_sha256": "6bf603f2bb2faaebaba2edb9c50c7e4928091598d7c1fe59763e2e48627ff239",
+      "transfer_action": "restore exact original absence of final newline"
+    },
+    {
+      "path": "claude_integration_results.md",
+      "bytes": 6038,
+      "transfer_sha_before": "fa5c6d93769790f49682d7afe26ffc60b49957eb",
+      "source_git_blob_sha": "fa5c6d93769790f49682d7afe26ffc60b49957eb",
+      "source_sha256": "6440565fdd4b5a1530bfbcf5137c87ed1737e9b12d54977fd587eee31cdcaa2f",
+      "transfer_action": "unchanged"
+    },
+    {
+      "path": "claude_strategy.py",
+      "bytes": 3130,
+      "transfer_sha_before": "e674fbbc9d17a54264d622a3a7e79d59ffbc71c4",
+      "source_git_blob_sha": "e674fbbc9d17a54264d622a3a7e79d59ffbc71c4",
+      "source_sha256": "715f8fb607fbbad6d078c3debfeb8dc3f7de12c674df14e4f4a05ed179649d59",
+      "transfer_action": "unchanged"
+    }
+  ]
+}

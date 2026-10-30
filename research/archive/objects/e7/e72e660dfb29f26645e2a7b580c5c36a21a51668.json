@@ -1,0 +1,562 @@
+{
+  "status": "PASS_SCOPE_ONLY",
+  "started_utc": "2026-10-26T19:47:36.780243+00:00",
+  "checks": [
+    {
+      "name": "analytic_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 3.247505773394019e-14,
+        "box_excess": -9.864098100476518
+      }
+    },
+    {
+      "name": "analytic_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 5.974387651264124e-14,
+        "factor_rank": 2,
+        "dual_value": 0.04817478959263509
+      }
+    },
+    {
+      "name": "analytic_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "analytic_dense_kkt",
+      "status": "PASS",
+      "actual": 1.877664690397296e-14
+    },
+    {
+      "name": "no_factors_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 4.787901053147129e-13,
+        "box_excess": -9.85268977593297
+      }
+    },
+    {
+      "name": "no_factors_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 0,
+        "inner_solves": 1,
+        "dual_gradient_inf": 0.0,
+        "factor_rank": 0
+      }
+    },
+    {
+      "name": "no_factors_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "no_factors_reduction",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "zero_factors_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 4.787901053147129e-13,
+        "box_excess": -9.85268977593297
+      }
+    },
+    {
+      "name": "zero_factors_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 0,
+        "inner_solves": 1,
+        "dual_gradient_inf": 0.0,
+        "factor_rank": 2
+      }
+    },
+    {
+      "name": "zero_factors_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "zero_factors_reduction",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "zero_betas_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 0.0,
+        "box_excess": -9.832791167246798
+      }
+    },
+    {
+      "name": "zero_betas_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 2.7755575615628914e-17,
+        "factor_rank": 2,
+        "dual_value": 0.07848947246894203
+      }
+    },
+    {
+      "name": "zero_betas_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "zero_betas_dense_kkt",
+      "status": "PASS",
+      "actual": 2.7755575615628914e-17
+    },
+    {
+      "name": "mixed_zero_caps_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 8.854028621385623e-15,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "mixed_zero_caps_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 5.898059818321144e-16,
+        "factor_rank": 2,
+        "dual_value": 0.032318630588236044
+      }
+    },
+    {
+      "name": "mixed_zero_caps_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "mixed_zero_caps_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 7,
+        "objective": -0.032318630588062405
+      }
+    },
+    {
+      "name": "mixed_zero_caps_reference_objective",
+      "status": "PASS",
+      "actual": 2.0243753867652302e-13
+    },
+    {
+      "name": "no_trade_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 0.0,
+        "box_excess": -0.9
+      }
+    },
+    {
+      "name": "no_trade_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 0.0,
+        "factor_rank": 1,
+        "dual_value": 0.010050000000000002
+      }
+    },
+    {
+      "name": "no_trade_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "no_trade_known_optimum",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "reference_0_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 1.021670309001896e-14,
+        "box_excess": -0.03670676071737361
+      }
+    },
+    {
+      "name": "reference_0_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 2,
+        "inner_solves": 3,
+        "dual_gradient_inf": 5.551115123125783e-16,
+        "factor_rank": 3,
+        "dual_value": -0.10488938527860255
+      }
+    },
+    {
+      "name": "reference_0_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "reference_0_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 13,
+        "objective": 0.10488938527879677
+      }
+    },
+    {
+      "name": "reference_0_reference_objective",
+      "status": "PASS",
+      "actual": 9.753049914390904e-14
+    },
+    {
+      "name": "reference_1_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 4.274358644806853e-15,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "reference_1_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 2,
+        "inner_solves": 3,
+        "dual_gradient_inf": 2.636779683484747e-16,
+        "factor_rank": 3,
+        "dual_value": 0.5567195134731575
+      }
+    },
+    {
+      "name": "reference_1_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "reference_1_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 21,
+        "objective": -0.556719513473152
+      }
+    },
+    {
+      "name": "reference_1_reference_objective",
+      "status": "PASS",
+      "actual": 1.5793303508526954e-15
+    },
+    {
+      "name": "reference_2_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 0.0,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "reference_2_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 5.551115123125783e-17,
+        "factor_rank": 3,
+        "dual_value": 0.4441996732856848
+      }
+    },
+    {
+      "name": "reference_2_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "reference_2_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 27,
+        "objective": -0.44419967328378684
+      }
+    },
+    {
+      "name": "reference_2_reference_objective",
+      "status": "PASS",
+      "actual": 4.1894576412174335e-13
+    },
+    {
+      "name": "reference_3_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 1.9469198443133365e-15,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "reference_3_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 9.71445146547012e-16,
+        "factor_rank": 3,
+        "dual_value": 0.03274905346635056
+      }
+    },
+    {
+      "name": "reference_3_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "reference_3_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 21,
+        "objective": -0.03274905346620774
+      }
+    },
+    {
+      "name": "reference_3_reference_objective",
+      "status": "PASS",
+      "actual": 4.9151514454187414e-14
+    },
+    {
+      "name": "reference_4_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 2.442348834839021e-15,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "reference_4_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 9.039644033315142e-15,
+        "factor_rank": 3,
+        "dual_value": 0.20411679727636658
+      }
+    },
+    {
+      "name": "reference_4_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "reference_4_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 26,
+        "objective": -0.20411679727619553
+      }
+    },
+    {
+      "name": "reference_4_reference_objective",
+      "status": "PASS",
+      "actual": 3.943307939159735e-14
+    },
+    {
+      "name": "reference_5_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 2.3165226965617783e-14,
+        "box_excess": 0.0
+      }
+    },
+    {
+      "name": "reference_5_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 1,
+        "inner_solves": 2,
+        "dual_gradient_inf": 3.3306690738754696e-15,
+        "factor_rank": 3,
+        "dual_value": 3.1245794488724035
+      }
+    },
+    {
+      "name": "reference_5_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "reference_5_reference_valid",
+      "status": "PASS",
+      "actual": {
+        "success": true,
+        "feasible": true,
+        "message": "Optimization terminated successfully",
+        "iterations": 45,
+        "objective": -3.124579448866143
+      }
+    },
+    {
+      "name": "reference_5_reference_objective",
+      "status": "PASS",
+      "actual": 3.800077411421874e-13
+    },
+    {
+      "name": "known_1000_feasible",
+      "status": "PASS",
+      "actual": {
+        "beta_residual": 9.70314974564291e-16,
+        "box_excess": -0.007520671965741223
+      }
+    },
+    {
+      "name": "known_1000_converged",
+      "status": "PASS",
+      "actual": {
+        "converged": true,
+        "iterations": 2,
+        "inner_solves": 3,
+        "dual_gradient_inf": 1.5937771935536915e-17,
+        "factor_rank": 10,
+        "dual_value": 0.00015696035834792703
+      }
+    },
+    {
+      "name": "known_1000_determinism",
+      "status": "PASS",
+      "actual": "exact repeat; all inputs unchanged"
+    },
+    {
+      "name": "known_1000_kkt",
+      "status": "PASS",
+      "actual": 5.421010862427522e-18
+    },
+    {
+      "name": "sign_invariance",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "name": "orthogonal_invariance",
+      "status": "PASS",
+      "actual": 1.3877787807814457e-17
+    },
+    {
+      "name": "invalid_wrong_factor_rows",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_factor_vector",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_factor_nan",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_factor_inf",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_zero_diagonal",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_negative_cost",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_zero_gamma",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_zero_horizon",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_negative_cap",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_zero_iterations",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "invalid_float_iterations",
+      "status": "PASS",
+      "actual": "ValueError required"
+    },
+    {
+      "name": "single_core_runtime",
+      "status": "PASS",
+      "actual": {
+        "calls": 8,
+        "milliseconds": [
+          20.29389500239631,
+          13.714062995859422,
+          16.108654999698047,
+          16.643516995827667,
+          15.667688996472862,
+          14.99242099816911,
+          12.772235000738874,
+          10.68082099664025
+        ],
+        "mean_ms": 15.109161998225318,
+        "p95_ms": 19.016262700097283,
+        "max_ms": 20.29389500239631,
+        "scope": "new factor solver synthetic calls only"
+      }
+    }
+  ],
+  "numeric_market_rows_read": 0,
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/tools/verify_factor_portfolio.py --module submission/factor_portfolio.py --diagonal-module submission/portfolio.py --plan verification/FACTOR_PORTFOLIO_PLAN.md --out evidence/factor_verify_002",
+  "rerun_command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_verify_002/runner_used.py --module /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_verify_002/factor_portfolio.py --diagonal-module /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_verify_002/portfolio.py --plan /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_verify_002/expectations.md --out /workspace/scratch/a72f2bd378f1/continual-research-takehome/evidence/factor_verify_002_rerun",
+  "finished_utc": "2026-10-26T19:47:37.205783+00:00",
+  "exit_code": 0
+}

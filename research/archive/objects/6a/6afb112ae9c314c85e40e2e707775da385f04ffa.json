@@ -1,0 +1,18 @@
+{
+  "status": "VISUAL_REVIEW_ACCEPTED",
+  "reviewed_utc": "2026-10-27T11:48:38.309059+00:00",
+  "figure": "artifacts/research_summary.png",
+  "figure_sha256": "b272a44f10aa5bbf79d0710a3b752fe69c5a515be4b56558ed95e22b2891ddf4",
+  "svg_sha256": "707a4c2fe8d1df12c52d44cb2edc5dbcd43688aec6c4390742de486dafdc79c9",
+  "builder_sha256": "f7ddcaccec22cd8ea4f701594333a87b40c54e64e2b01716b12f582c58ae145f",
+  "review": [
+    "Exact percentage tick labels use one decimal",
+    "Titles, legends, axes and footnotes are readable",
+    "Validation and audit plotted separately; cumulative lines rebased only for display",
+    "Fixed bootstrap ranges retain correct zero reference and observed point estimates",
+    "All plotted values come from recorded saved ledgers/reports"
+  ],
+  "previous_render_retained": "initial_artifacts",
+  "data_or_model_changes": false,
+  "archive_sha256_unchanged": "cba024cae44dd84b17b17dcde48e4276e677a52883220c54da455664a770b7fa"
+}

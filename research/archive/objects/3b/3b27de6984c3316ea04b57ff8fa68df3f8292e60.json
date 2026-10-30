@@ -1,0 +1,434 @@
+{
+  "status": "EXECUTED_PASS_SCOPE_ONLY",
+  "exit_code": 0,
+  "started_utc": "2026-10-27T14:26:24.231153+00:00",
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python /workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/implementation_used.py --project /workspace/scratch/a83c191d516f/continual-research-takehome --packet /workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline --mode synthetic --packet-manifest-sha256 080ddff4e6cab61a8a52f5c2f6ca25ef8b855e073e8f6729d1209551df5863f9 --out /workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/runs/repeat",
+  "mode": "synthetic",
+  "packet": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline",
+  "numeric_content_read_started": true,
+  "model_executions": 0,
+  "checks": [
+    {
+      "name": "canonical_release_flag",
+      "status": "PASS"
+    },
+    {
+      "name": "packet_manifest_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "artifact_manifest_mapping",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:input_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:config.json",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:config.json",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:config.json",
+      "status": "PASS"
+    },
+    {
+      "name": "metadata_mappings",
+      "status": "PASS"
+    },
+    {
+      "name": "input_scope_kind",
+      "status": "PASS"
+    },
+    {
+      "name": "declared_return_shape",
+      "status": "PASS"
+    },
+    {
+      "name": "declared_input_slice",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_risk_configuration",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:source/candidate/factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:source/candidate/factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_identity:source/candidate/factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "source_manifest_agrees:factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:inputs/returns.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:inputs/returns.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:targets.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:targets.npy",
+      "status": "PASS"
+    },
+    {
+      "name": "inventory_entry:daily.csv",
+      "status": "PASS"
+    },
+    {
+      "name": "identity:daily.csv",
+      "status": "PASS"
+    },
+    {
+      "name": "return_manifest_agrees",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "copied_helper_identity:factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "return_shape_and_type",
+      "status": "PASS"
+    },
+    {
+      "name": "target_shape_and_type",
+      "status": "PASS"
+    },
+    {
+      "name": "finite_inputs",
+      "status": "PASS"
+    },
+    {
+      "name": "canonical_ledger_schema",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_scored_row_count",
+      "status": "PASS"
+    },
+    {
+      "name": "chronological_finite_ledger",
+      "status": "PASS"
+    },
+    {
+      "name": "complete_attribution",
+      "status": "PASS"
+    },
+    {
+      "name": "all_daily_outputs_finite",
+      "status": "PASS"
+    },
+    {
+      "name": "covariance_additivity:discovery",
+      "status": "PASS",
+      "actual": 0.9999999999999999
+    },
+    {
+      "name": "no_forecast_or_rebalance",
+      "status": "PASS"
+    },
+    {
+      "name": "consumed_inputs_unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "private_helpers_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "consumed_files": {
+    "artifact_manifest.json": {
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/artifact_manifest.json",
+      "sha256": "080ddff4e6cab61a8a52f5c2f6ca25ef8b855e073e8f6729d1209551df5863f9",
+      "bytes": 1485
+    },
+    "input_manifest.json": {
+      "sha256": "e084c00bf90664382ca20e72f971ebb1978196a4b6da71abf3330fe4f028a47b",
+      "bytes": 397,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/input_manifest.json"
+    },
+    "source_manifest.json": {
+      "sha256": "11eedccc38a4dd558f570d1e4ea455fb2cefd20a85b610c0fb2b7fc7d4fda905",
+      "bytes": 512,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/source_manifest.json"
+    },
+    "config.json": {
+      "sha256": "aac98ea250f067d79ef731737bfaec3f19112a4093d820bab0e6f170fbd420ba",
+      "bytes": 365,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/config.json"
+    },
+    "source/candidate/strategy.py": {
+      "sha256": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+      "bytes": 10951,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/source/candidate/strategy.py"
+    },
+    "source/candidate/portfolio.py": {
+      "sha256": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+      "bytes": 7640,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/source/candidate/portfolio.py"
+    },
+    "source/candidate/strategy_factor.py": {
+      "sha256": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+      "bytes": 7547,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/source/candidate/strategy_factor.py"
+    },
+    "source/candidate/factor_portfolio.py": {
+      "sha256": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+      "bytes": 6813,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/source/candidate/factor_portfolio.py"
+    },
+    "inputs/returns.npy": {
+      "sha256": "006fa64772040de5c1046309071422cf25f7ff1208900045c1221415e8bce407",
+      "bytes": 53888,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/inputs/returns.npy"
+    },
+    "targets.npy": {
+      "sha256": "55a24d97e238086d63c84912df5ef8c2ca631a2d24911f910f082d488ec95887",
+      "bytes": 21504,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/targets.npy"
+    },
+    "daily.csv": {
+      "sha256": "6ae1be607211e11ed45e400d7386917218fbecb7e55dcea93c3e953db4fcbfd8",
+      "bytes": 20644,
+      "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/frozen_attribution_synthetic_001/packets/baseline/daily.csv"
+    }
+  },
+  "stages": {
+    "discovery": {
+      "rows": 166,
+      "index_slice": [
+        253,
+        2015
+      ],
+      "annual_arithmetic_mean": {
+        "market_component": -0.0026029380249086693,
+        "residual_factor_component": 0.00614245523014378,
+        "remainder_component": -2.8662728539904966e-05,
+        "full_cost": 0.00022919774607162158,
+        "gross_return": 0.003510854476695206,
+        "net_return": 0.003281656730623583
+      },
+      "annual_volatility": {
+        "market_component": 0.0005762128462018562,
+        "residual_factor_component": 0.0021891523816294045,
+        "remainder_component": 0.00015024172868612572,
+        "full_cost": 3.1136797727113046e-06,
+        "gross_return": 0.002183924035560573,
+        "net_return": 0.002184083408749599
+      },
+      "gross_covariance_contribution": {
+        "market_component": 0.03143436509679345,
+        "residual_factor_component": 0.9654220905853109,
+        "remainder_component": 0.003143544317895546
+      },
+      "estimated_market_exposure": {
+        "mean_abs": 0.02510613427289418,
+        "max_abs": 0.029999673730366418
+      },
+      "factor_rank": {
+        "min": 10,
+        "max": 10
+      },
+      "max_risk_history_stop_exclusive": 418,
+      "max_factor_history_stop_exclusive": 400,
+      "max_factor_age_days": 20,
+      "max_abs_gross_reconciliation_error": 1.0842021724855044e-19,
+      "max_abs_net_reconciliation_error": 1.0842021724855044e-19,
+      "max_abs_opening_gross_reconciliation_error": 0.0,
+      "gross_covariance_contribution_sum": 0.9999999999999999
+    },
+    "validation": {
+      "rows": 0,
+      "index_slice": [
+        2016,
+        3023
+      ],
+      "annual_arithmetic_mean": {
+        "market_component": null,
+        "residual_factor_component": null,
+        "remainder_component": null,
+        "full_cost": null,
+        "gross_return": null,
+        "net_return": null
+      },
+      "annual_volatility": {
+        "market_component": null,
+        "residual_factor_component": null,
+        "remainder_component": null,
+        "full_cost": null,
+        "gross_return": null,
+        "net_return": null
+      },
+      "gross_covariance_contribution": {
+        "market_component": null,
+        "residual_factor_component": null,
+        "remainder_component": null
+      },
+      "estimated_market_exposure": {
+        "mean_abs": null,
+        "max_abs": null
+      },
+      "factor_rank": {
+        "min": null,
+        "max": null
+      },
+      "max_risk_history_stop_exclusive": null,
+      "max_factor_history_stop_exclusive": null,
+      "max_factor_age_days": null,
+      "max_abs_gross_reconciliation_error": null,
+      "max_abs_net_reconciliation_error": null,
+      "max_abs_opening_gross_reconciliation_error": null,
+      "gross_covariance_contribution_sum": null
+    },
+    "audit": {
+      "rows": 0,
+      "index_slice": [
+        3024,
+        3779
+      ],
+      "annual_arithmetic_mean": {
+        "market_component": null,
+        "residual_factor_component": null,
+        "remainder_component": null,
+        "full_cost": null,
+        "gross_return": null,
+        "net_return": null
+      },
+      "annual_volatility": {
+        "market_component": null,
+        "residual_factor_component": null,
+        "remainder_component": null,
+        "full_cost": null,
+        "gross_return": null,
+        "net_return": null
+      },
+      "gross_covariance_contribution": {
+        "market_component": null,
+        "residual_factor_component": null,
+        "remainder_component": null
+      },
+      "estimated_market_exposure": {
+        "mean_abs": null,
+        "max_abs": null
+      },
+      "factor_rank": {
+        "min": null,
+        "max": null
+      },
+      "max_risk_history_stop_exclusive": null,
+      "max_factor_history_stop_exclusive": null,
+      "max_factor_age_days": null,
+      "max_abs_gross_reconciliation_error": null,
+      "max_abs_net_reconciliation_error": null,
+      "max_abs_opening_gross_reconciliation_error": null,
+      "gross_covariance_contribution_sum": null
+    }
+  },
+  "completed_rows": 166,
+  "factor_settings": {
+    "factor_rank": 10,
+    "factor_shrinkage": 0.5,
+    "factor_refresh_days": 21
+  },
+  "svd_rank_rule": "s > eps(float64) * max(n_stocks, n_loading_columns) * s_max; empty if s_max=0",
+  "reconciliation_tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-10
+  },
+  "variance_convention": "population covariance and variance, ddof=0",
+  "interpretation": "Descriptive ex post accounting. The remainder is not identified economic alpha.",
+  "factor_cutoff_semantics": "factor_history_stop_exclusive dates cached correlation loadings; current marginal variance uses risk_history_stop_exclusive and can change the final span between refreshes",
+  "covariance_contribution_semantics": "Cov(component,gross)/Var(gross); can be negative or exceed one; undefined at zero gross variance",
+  "market_component_caveat": "Small estimated market attribution is partly constructional because C09 uses the same prior beta estimator; it is not independent realized-beta evidence",
+  "finished_utc": "2026-10-27T14:26:24.495606+00:00"
+}

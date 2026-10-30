@@ -1,0 +1,21 @@
+{
+  "reviewed_path": "research/v2/SCORE_RESEARCH_PLAN_20261028.md",
+  "sha256_at_recording": "ea0a70ea2e39265d7df49c56efe39cf7b09114e2efb1593cbb469013e4070c2e",
+  "reviewer": "score_opportunity_audit",
+  "scope": "Pre-output scientific and decision-rule review; not implementation execution",
+  "disposition": "Accept method, clarify three operational conventions",
+  "accepted": [
+    "Official net Sharpe is primary with original causal/runtime/beta/solvency constraints",
+    "All periods explicitly exposed development history",
+    "F1 and F2 differ from prior global half-life tests",
+    "Four standalone candidates plus one conditional joint recorded prospectively",
+    "No requirement of 95% difference interval excluding zero for selection",
+    "Reference mixtures explicitly retrospective and not executed strategies"
+  ],
+  "clarifications_requested": [
+    "Actual stock caps may reach twice virtual .05 under multiplier<=2; this is permitted by original brief and should be stated",
+    "Earned counter excludes empty opening row252; after63 real earned rows first scaled target may position for row316",
+    "Scores within numerical tolerance1e-8 should count as numerical ties, not trigger a joint candidate"
+  ],
+  "new_diagnostics_executed_for_this_review": false
+}

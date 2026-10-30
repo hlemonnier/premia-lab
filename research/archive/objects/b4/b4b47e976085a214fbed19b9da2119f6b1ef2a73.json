@@ -1,0 +1,8 @@
+{
+  "first_feature_index": 252,
+  "window": 252,
+  "available_feature_dates": 1764,
+  "unavailable_feature_dates": 0,
+  "reason_if_unavailable": "nonpositive trailing market variance",
+  "restriction": "This beta is a diagnostic label control, not a portfolio."
+}

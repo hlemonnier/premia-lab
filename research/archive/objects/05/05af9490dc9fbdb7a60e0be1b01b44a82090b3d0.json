@@ -1,0 +1,13 @@
+{
+  "repository": "hlemonnier/continual-research-takehome",
+  "branch": "research/v2-score-wave2-20261029",
+  "parent_commit": "37b323e00f2e79d0a5d799a3fdab6946ad04c2e8",
+  "plan_commit": "d2997e0d98c6407da4b503a77060966904486062",
+  "plan_tree": "3e496120421059c2941b0e4dfc0bbadac6023b34",
+  "plan_sha256": "84e6d400dccc71c6a5b88ce189bd370c357d6bda0346246ce57ebf3c75a74fd2",
+  "diff_verified": [
+    "WORKLOG.md",
+    "research/v2/SCORE2_RESEARCH_PLAN_20261029.md"
+  ],
+  "actual_policy_scores_at_commit": "none"
+}

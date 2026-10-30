@@ -1,0 +1,1 @@
+C06_gls_factor         sharpe  0.76   return   2.6%/yr   vol  3.4%   beta  0.01   cost 0.68%/yr   gross 0.94   forecast 19.5s (0.07 h per century)   rebalance 35.6 ms/call

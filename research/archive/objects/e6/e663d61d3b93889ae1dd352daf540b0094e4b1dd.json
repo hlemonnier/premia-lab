@@ -1,0 +1,223 @@
+{
+  "baseline": {
+    "full": {
+      "n": 3526,
+      "net_sharpe": 1.318334966090838,
+      "gross_sharpe": 1.3971448452491269,
+      "net_return_ann_pct": 5.786507169490866,
+      "net_vol_ann_pct": 4.389254110925369,
+      "cost_ann_pct": 0.3364064134436446,
+      "net_beta": 0.052720354679718875,
+      "mean_gross": 1.8236404523560383,
+      "worst_gross_daily_return": -0.017497788262106857
+    },
+    "stages": {
+      "full": 1.318334966090838,
+      "discovery": 1.1035119417440034,
+      "validation": 1.6339700632722531,
+      "audit": 1.5930290672960778
+    },
+    "forecast_seconds": 2.580425776002812,
+    "mean_ms": 3.8333655264618436,
+    "p99_ms": 5.797444999188883,
+    "max_ms": 119.08674600272207,
+    "max_weight": 0.016440760452184875,
+    "max_gross": 3.159930204588383,
+    "mean_net": 0.4575389063008126,
+    "multiplier": [
+      0.6566243912540833,
+      1.155960919411507,
+      1.6450943751806757
+    ],
+    "mean_multiplier_deviation": 0.0,
+    "accounting_max_error": 0.0,
+    "reference_differences": [
+      9.974659986866641e-17,
+      9.728003992626189e-17,
+      4.440892098500626e-16,
+      9.999054535747565e-17
+    ],
+    "intervals": {
+      "21": {
+        "point": 1.0354243430990765e-14,
+        "lo": 1.97997367736233e-15,
+        "hi": 1.8064850241303036e-14,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      },
+      "63": {
+        "point": 1.0354243430990765e-14,
+        "lo": 1.3163107340461665e-15,
+        "hi": 1.8064850241303036e-14,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      },
+      "126": {
+        "point": 1.0354243430990765e-14,
+        "lo": 1.5421213620624542e-15,
+        "hi": 1.850545634474945e-14,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      }
+    },
+    "base_certs": {
+      "ok": 3527
+    },
+    "actual_certs": {
+      "not_applicable": 3527
+    },
+    "max_base_gap": 6.0831747242094905e-18,
+    "max_actual_gap": 0.0,
+    "max_scalar_kkt": 0.0,
+    "forecast_sha": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927",
+    "virtual_sha": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850",
+    "targets_sha": "7d8582a62d0d4bcb03a4911484f2f30564abd0483e00e072f0a64d54778cb0c4"
+  },
+  "E1": {
+    "full": {
+      "n": 3526,
+      "net_sharpe": 1.3291230770162463,
+      "gross_sharpe": 1.391943523403332,
+      "net_return_ann_pct": 5.827363735314453,
+      "net_vol_ann_pct": 4.384367284026341,
+      "cost_ann_pct": 0.26587267342464194,
+      "net_beta": 0.0526650665456626,
+      "mean_gross": 1.8084979955136575,
+      "worst_gross_daily_return": -0.017497788262106857
+    },
+    "stages": {
+      "full": 1.3291230770162463,
+      "discovery": 1.124469279160606,
+      "validation": 1.6471598543611443,
+      "audit": 1.5706624197493684
+    },
+    "forecast_seconds": 2.5837055090014474,
+    "mean_ms": 4.037598035390502,
+    "p99_ms": 5.936490999374655,
+    "max_ms": 122.96606200106908,
+    "max_weight": 0.016051190728525493,
+    "max_gross": 2.976392461430585,
+    "mean_net": 0.45360757936408036,
+    "multiplier": [
+      0.665332182676965,
+      1.146376577620169,
+      1.5992591495166881
+    ],
+    "mean_multiplier_deviation": 0.024388875491966,
+    "accounting_max_error": 0.0,
+    "reference_differences": null,
+    "intervals": {
+      "21": {
+        "point": 0.010788110925418723,
+        "lo": -0.002485780775334474,
+        "hi": 0.02414503091192805,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      },
+      "63": {
+        "point": 0.010788110925418723,
+        "lo": -0.0014269987015905542,
+        "hi": 0.02355932948301084,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      },
+      "126": {
+        "point": 0.010788110925418723,
+        "lo": -0.0005266004171162469,
+        "hi": 0.023563120342549697,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      }
+    },
+    "base_certs": {
+      "ok": 3527
+    },
+    "actual_certs": {
+      "not_applicable": 3527
+    },
+    "max_base_gap": 6.0831747242094905e-18,
+    "max_actual_gap": 0.0,
+    "max_scalar_kkt": 5.488773498207866e-19,
+    "forecast_sha": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927",
+    "virtual_sha": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850",
+    "targets_sha": "1a340ba2641ae19a24d5a6973b85d6d8ad5e61d2a64d2d55a1559d1653445052"
+  },
+  "E2": {
+    "full": {
+      "n": 3526,
+      "net_sharpe": 1.3395817822087963,
+      "gross_sharpe": 1.3971748186858823,
+      "net_return_ann_pct": 5.894598141826299,
+      "net_vol_ann_pct": 4.400327191750005,
+      "cost_ann_pct": 0.24415071450036768,
+      "net_beta": 0.052980727371826915,
+      "mean_gross": 1.8158809516030536,
+      "worst_gross_daily_return": -0.017497788262106857
+    },
+    "stages": {
+      "full": 1.3395817822087963,
+      "discovery": 1.1261287070905925,
+      "validation": 1.6712381664911555,
+      "audit": 1.5860425112071623
+    },
+    "forecast_seconds": 2.583764399998472,
+    "mean_ms": 7.010666642602035,
+    "p99_ms": 9.839961998295621,
+    "max_ms": 140.77824400010286,
+    "max_weight": 0.016533975263491055,
+    "max_gross": 3.0312166365557656,
+    "mean_net": 0.455284185129817,
+    "multiplier": [
+      0.6566243912540833,
+      1.155960919411507,
+      1.6450943751806757
+    ],
+    "mean_multiplier_deviation": 0.0,
+    "accounting_max_error": 0.0,
+    "reference_differences": null,
+    "intervals": {
+      "21": {
+        "point": 0.021246816117968574,
+        "lo": 0.010121807223066239,
+        "hi": 0.03303128606269318,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      },
+      "63": {
+        "point": 0.021246816117968574,
+        "lo": 0.010130384935426376,
+        "hi": 0.033602314719028345,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      },
+      "126": {
+        "point": 0.021246816117968574,
+        "lo": 0.011029690652772161,
+        "hi": 0.03429719326083136,
+        "draws": 2000,
+        "seed": 20261027,
+        "last_legal_block_start_included": true
+      }
+    },
+    "base_certs": {
+      "ok": 3527
+    },
+    "actual_certs": {
+      "ok": 3527
+    },
+    "max_base_gap": 6.0831747242094905e-18,
+    "max_actual_gap": 1.671063439646902e-17,
+    "max_scalar_kkt": 0.0,
+    "forecast_sha": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927",
+    "virtual_sha": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850",
+    "targets_sha": "4e07438a684c96bde15c9f154387b04e32e01629332f818ca55f7adf974c0b20"
+  }
+}

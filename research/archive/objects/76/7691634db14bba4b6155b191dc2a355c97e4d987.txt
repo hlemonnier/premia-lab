@@ -1,0 +1,1 @@
+rows 24946  forecast 27.9s (0.008 h per century)  rebalance mean 4.77 ms  p99 7.8 ms  max 246 ms  wall 148s  min(1+r) 0.9825

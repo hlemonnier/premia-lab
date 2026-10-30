@@ -1,0 +1,112 @@
+{
+  "mode": "E1",
+  "performance": {
+    "full": {
+      "n": 3526,
+      "net_sharpe": 1.3291230770162463,
+      "gross_sharpe": 1.391943523403332,
+      "net_return_ann_pct": 5.827363735314453,
+      "net_vol_ann_pct": 4.384367284026341,
+      "cost_ann_pct": 0.26587267342464194,
+      "net_beta": 0.0526650665456626,
+      "mean_gross": 1.8084979955136575,
+      "worst_gross_daily_return": -0.017497788262106857
+    },
+    "discovery": {
+      "n": 1762,
+      "net_sharpe": 1.124469279160606,
+      "gross_sharpe": 1.1934959627355861,
+      "net_return_ann_pct": 5.44081721552823,
+      "net_vol_ann_pct": 4.838564571181253,
+      "cost_ann_pct": 0.3235877070980084,
+      "net_beta": 0.05218875739043589,
+      "mean_gross": 1.945445114862055,
+      "worst_gross_daily_return": -0.017497788262106857
+    },
+    "validation": {
+      "n": 1007,
+      "net_sharpe": 1.6471598543611443,
+      "gross_sharpe": 1.7071747112849671,
+      "net_return_ann_pct": 6.3849960432140564,
+      "net_vol_ann_pct": 3.8763669636002,
+      "cost_ann_pct": 0.2265426638157592,
+      "net_beta": 0.051166593164067055,
+      "mean_gross": 1.73662721158168,
+      "worst_gross_daily_return": -0.014752607723275918
+    },
+    "audit": {
+      "n": 755,
+      "net_sharpe": 1.5706624197493684,
+      "gross_sharpe": 1.6204917445472433,
+      "net_return_ann_pct": 6.097112317553433,
+      "net_vol_ann_pct": 3.8818731771314385,
+      "cost_ann_pct": 0.18370812626774402,
+      "net_beta": 0.056254584904046105,
+      "mean_gross": 1.5854029378345758,
+      "worst_gross_daily_return": -0.01432487323423764
+    }
+  },
+  "checks": {
+    "E1: accounting": true,
+    "E1: finite": true,
+    "E1: solvent": true,
+    "E1: gross": true,
+    "E1: stock bounds": true,
+    "E1: raw beta constraint": true,
+    "E1: base certificates": true,
+    "E1: startup": true,
+    "E1: first earned observation": true,
+    "E1: endpoint": true,
+    "E1: independent scalar KKT": true,
+    "E1: scalar objective comparator": true,
+    "E1: scalar bounds": true,
+    "virtual_same_as_baseline": true,
+    "forecast_same_as_baseline": true
+  },
+  "all_checks_passed": true,
+  "forecast_sha256": "10e86d588bbba22a3ed0f61673cc80a0d100df2b62d983711bc2365087747927",
+  "virtual_targets_sha256": "5d8bb12d46e76b1b5dd95a7c33f764496417c5f3bec136d6a2ffbc7147fc8850",
+  "actual_targets_sha256": "1a340ba2641ae19a24d5a6973b85d6d8ad5e61d2a64d2d55a1559d1653445052",
+  "forecast_seconds": 2.5837055090014474,
+  "instrumented_rebalance_ms_mean": 4.037598035390502,
+  "instrumented_rebalance_ms_p99": 5.936490999374655,
+  "instrumented_rebalance_ms_max": 122.96606200106908,
+  "accounting_max_error": 0.0,
+  "multiplier_min_mean_max": [
+    0.665332182676965,
+    1.146376577620169,
+    1.5992591495166881
+  ],
+  "mean_absolute_desired_multiplier_deviation": 0.024388875491966,
+  "max_actual_weight": 0.016051190728525493,
+  "max_actual_gross": 2.976392461430585,
+  "mean_net_dollars": 0.45360757936408036,
+  "reference_economic_max_differences": null,
+  "paired_sharpe_intervals": {
+    "21": {
+      "point": 0.010788110925418723,
+      "lo": -0.002485780775334474,
+      "hi": 0.02414503091192805,
+      "draws": 2000,
+      "seed": 20261027,
+      "last_legal_block_start_included": true
+    },
+    "63": {
+      "point": 0.010788110925418723,
+      "lo": -0.0014269987015905542,
+      "hi": 0.02355932948301084,
+      "draws": 2000,
+      "seed": 20261027,
+      "last_legal_block_start_included": true
+    },
+    "126": {
+      "point": 0.010788110925418723,
+      "lo": -0.0005266004171162469,
+      "hi": 0.023563120342549697,
+      "draws": 2000,
+      "seed": 20261027,
+      "last_legal_block_start_included": true
+    }
+  },
+  "replacement_contender": true
+}

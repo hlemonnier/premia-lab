@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-26T20:58:56.940047+00:00",
+  "scope": "Mechanical configuration and frozen source identity review only; no candidate import, market array, fit or scoring",
+  "checks": [
+    {
+      "name": "exact_three_key_configuration_difference",
+      "status": "PASS",
+      "expected": {
+        "candidate_id": {
+          "C06": "C06_gls_factor",
+          "C10": "C10_gls_factor_rank50"
+        },
+        "factor_rank": {
+          "C06": 10,
+          "C10": 50
+        },
+        "learning_factor_rank": {
+          "C06": 10,
+          "C10": 50
+        }
+      },
+      "actual": {
+        "candidate_id": {
+          "C06": "C06_gls_factor",
+          "C10": "C10_gls_factor_rank50"
+        },
+        "factor_rank": {
+          "C06": 10,
+          "C10": 50
+        },
+        "learning_factor_rank": {
+          "C06": 10,
+          "C10": 50
+        }
+      }
+    },
+    {
+      "name": "unchanged_strategy_gls_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_strategy_gls.py",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_gls_precision.py",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_strategy_factor.py",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_factor_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_strategy.py",
+      "status": "PASS"
+    },
+    {
+      "name": "unchanged_portfolio.py",
+      "status": "PASS"
+    },
+    {
+      "name": "original_official_scorer",
+      "status": "PASS",
+      "actual": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96"
+    },
+    {
+      "name": "unchanged_official_workflow_runner",
+      "status": "PASS",
+      "actual": {
+        "live": "6d34f2e9779ee50ab3a376e0f096c9524d09c3576649952c117fab32cb692f69",
+        "C06_frozen": "6d34f2e9779ee50ab3a376e0f096c9524d09c3576649952c117fab32cb692f69"
+      }
+    },
+    {
+      "name": "ledger_admission_before_run",
+      "status": "PASS"
+    }
+  ],
+  "source_hashes": {
+    "strategy_gls_factor.py": {
+      "live": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628",
+      "C06_frozen": "265df3204afe94b6e25703becc2209e7606783125c0a18aa6c5aa8c26de72628"
+    },
+    "strategy_gls.py": {
+      "live": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6",
+      "C06_frozen": "7a575391d8696a27ee1b25c027f206ad8af8620a24f3db0825569c9faad92aa6"
+    },
+    "gls_precision.py": {
+      "live": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e",
+      "C06_frozen": "0321bb41c340104e31b991d7e18437a5279182cfff955f6e4603c574a6c67c5e"
+    },
+    "strategy_factor.py": {
+      "live": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959",
+      "C06_frozen": "9e63257c14859430b5190763c5f1fd35320c582019c941ae28b43243587a4959"
+    },
+    "factor_portfolio.py": {
+      "live": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5",
+      "C06_frozen": "60af66f9797585fec4189206c50481bfd1d3554beb6442ed5c19b2399ce375e5"
+    },
+    "strategy.py": {
+      "live": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7",
+      "C06_frozen": "104a16789d2a9d78a9fa77e6e27b3e7f87952eff041a599634e96267de045bd7"
+    },
+    "portfolio.py": {
+      "live": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475",
+      "C06_frozen": "fed482fde5aafb17fe423fcf9bbeefc66bc8f8323b85e72531def52ebae87475"
+    }
+  },
+  "hashes": {
+    "C06_config.json": "f424033fae2e2ca4a8f0a532a2da41dc4841235f1c8c67394e26e9081c9a49fb",
+    "C10_config.json": "1f919c5dff46fceb9b47d5b882e494ec290d3dc0220e9782d086e43979afda19",
+    "plan_before_run.md": "847369032146345c6be641409bc72d3f40c1f6e984ecdab56f943b187aed0a83",
+    "ledger_before_run.md": "98866aea893e20ab0489242470d71a66f2c4b40c4ef90cf09365ffd15e00103f"
+  },
+  "command": "taskset -c 3 python -u tools/run_candidate.py --project . --strategy submission/strategy_gls_factor.py --config research/configs/C10_gls_factor_rank50.json --out evidence/discovery_C10_001",
+  "expected_input_slice": [
+    0,
+    2016
+  ],
+  "expected_scored_indices": [
+    253,
+    2014
+  ],
+  "expected_scored_days": 1762,
+  "mean_rebalance_requirement_ms": "strictly below 100",
+  "actual_market_run": "NOT_STARTED"
+}

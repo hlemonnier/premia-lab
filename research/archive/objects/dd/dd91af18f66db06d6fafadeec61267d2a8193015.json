@@ -1,0 +1,19 @@
+{
+  "clean/handoff_v2/__pycache__/strategy.cpython-312.pyc": "987a775dcc51f1fb38351c7c376d1232021113c6bd8bea785d03883f24c8d813",
+  "clean/handoff_v2/model_v2/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "clean/handoff_v2/model_v2/__pycache__/__init__.cpython-312.pyc": "cab3525888b27f60ae5db543c4fb84272c46f2b63e93eb1c29a143d2691e5cd9",
+  "clean/handoff_v2/model_v2/__pycache__/allocator.cpython-312.pyc": "955d00127eecade0fe8d4626eb32f4051e8d8fcca99e906ac8f09ba0037944b5",
+  "clean/handoff_v2/model_v2/__pycache__/engine.cpython-312.pyc": "aa01c375b5c25aa72306d5194fb10e3fc14ef18dfd9c0550256a9e896cbb99d1",
+  "clean/handoff_v2/model_v2/allocator.py": "70e744353440ec9daf57c4174cf61eb19144239bbba2a131e86abb5a3c395518",
+  "clean/handoff_v2/model_v2/engine.py": "eedb367984ac1d3d36c8901236cdeceb2205d7e51bb5cd6ef9e85c466ae88fb8",
+  "clean/handoff_v2/strategy.py": "e8e7b96b70aab1ef05a1fcb4af7e02ab2df74484dc3ffdebb719b27acad153d3",
+  "clean/source/Quant Research Take-Home/__pycache__/score.cpython-312.pyc": "78d0c1751e4986f9f16bc68f73d21eb5bcfb2bd58fdfce9b74b0c3a4ed2635dc",
+  "clean/source/Quant Research Take-Home/score.py": "ff1be0c7d4a2c074f9f5353bcaa536d0b883d5c3224df0bf4e22347ff3e57c96",
+  "daily.csv": "333028155380d77aa9ca6bfa1494212dd5f342fc8b12f61a3eea642a8999af17",
+  "decisions.csv": "847729e83a893d2a96266baa2f3051ab189fd2021be67f4f04c49aec67122354",
+  "environment.json": "c610903492f235eecc119c6566542c0026d23147a3596d413ce0c1d8adb9d246",
+  "executed_observer.py": "859a6db4e7a824475a38115332e4babf2423ceb23451c4606157b9140a0f02b3",
+  "input_hashes.json": "cec22885d1cdda153ba7bc7411e35d94ea04cee9f52cc8b42557fb98bf241ab9",
+  "source_manifest.json": "327bbdf5ca122ae66e344ea5ee74c01d6d0782d60574a3e266280a65aaeaf8ed",
+  "summary.json": "2085ef9d8171de0c7c22c32ce5ce01b38be270cddf0e435a16432f4b4f958027"
+}

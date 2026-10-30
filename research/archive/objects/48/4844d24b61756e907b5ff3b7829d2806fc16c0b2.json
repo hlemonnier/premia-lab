@@ -1,0 +1,38 @@
+{
+ "name": "rev_scaled_h60",
+ "forecast_s": 3.8,
+ "rebalance_ms": 3.46,
+ "wall_s": 16.1,
+ "all": {
+  "sharpe": 0.871,
+  "gross_sharpe": 0.964,
+  "ret_pct": 5.06,
+  "cost_pct": 0.538,
+  "beta": 0.0085,
+  "gross": 0.863
+ },
+ "discovery": {
+  "sharpe": 0.686,
+  "gross_sharpe": 0.787,
+  "ret_pct": 4.65,
+  "cost_pct": 0.683,
+  "beta": 0.0139,
+  "gross": 0.986
+ },
+ "validation": {
+  "sharpe": 0.654,
+  "gross_sharpe": 0.742,
+  "ret_pct": 2.65,
+  "cost_pct": 0.357,
+  "beta": 0.0055,
+  "gross": 0.693
+ },
+ "audit": {
+  "sharpe": 1.775,
+  "gross_sharpe": 1.858,
+  "ret_pct": 9.46,
+  "cost_pct": 0.443,
+  "beta": 0.0058,
+  "gross": 0.802
+ }
+}

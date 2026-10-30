@@ -1,0 +1,1 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python tools/alpha_diagnostics.py --project-root /workspace/scratch/305f831f543f/continual_takehome --output /workspace/scratch/305f831f543f/continual_takehome/evidence/alpha_diagnostics_001

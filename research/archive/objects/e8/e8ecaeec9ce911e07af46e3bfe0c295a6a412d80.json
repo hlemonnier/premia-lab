@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-27T11:00:05.750867+00:00",
+  "status": "INDEPENDENT_SOURCE_REVIEW_PASS_SCOPE_ONLY",
+  "candidate_sha256": "c832d4fb444f14ea714a21ce70a873e5c9f3c31e63dbe68f84fccb572d47760f",
+  "config_sha256": "7d37ef0d34bbb95fc33dd12e64a88688d9f995cba23e8223813b8e3e01edcd12",
+  "controller_sha256": "309d25d824e3fcd8964c50def826787b0f86fe4a4bde0a1c93f0abeb3c29471d",
+  "plan_sha256": "4fb69198d908491a52a5d0077140fd370def4dcf4a2da453742e3a1bfb43bea7",
+  "model_plan_sha256": "6734f57b354abd8b1e5e2102d196e10fe07b9e9bb5297f5f573d62848d39ab12",
+  "preexisting_candidate_sources_unchanged": {
+    "source/candidate/strategy_gls.py": true,
+    "source/candidate/gls_precision.py": true,
+    "source/candidate/strategy.py": true,
+    "source/candidate/strategy_interactions.py": true,
+    "source/candidate/gross_portfolio.py": true,
+    "source/candidate/portfolio.py": true,
+    "source/candidate/strategy_gls_factor.py": true,
+    "source/candidate/factor_portfolio.py": true,
+    "source/candidate/strategy_gross.py": true,
+    "source/candidate/strategy_factor.py": true
+  },
+  "green_workflows": "NOT_EXECUTED_AT_THIS_CHECKPOINT",
+  "review": "reviews/C12_INDEPENDENT_SOURCE_REVIEW.md"
+}

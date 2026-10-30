@@ -1,0 +1,15 @@
+{
+ "variant": "Flevel",
+ "sleeve": 0.0,
+ "net_sharpe": 1.340343022269169,
+ "beta": 0.05295048808624296,
+ "market_var_share": 0.029072281217265638,
+ "ann_vol": 0.0439751339298084,
+ "mean_gross": 1.8149618327228334,
+ "ann_fee": 0.002438174503298825,
+ "mean_common_mult": 1.0,
+ "mean_factor_mult": 1.004278234015978,
+ "certs": [
+  "ok"
+ ]
+}

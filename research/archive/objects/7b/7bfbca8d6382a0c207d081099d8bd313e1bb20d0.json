@@ -1,0 +1,38 @@
+{
+ "name": "cost_h120",
+ "forecast_s": 3.2,
+ "rebalance_ms": 3.36,
+ "wall_s": 15.2,
+ "all": {
+  "sharpe": 0.874,
+  "gross_sharpe": 0.973,
+  "ret_pct": 5.08,
+  "cost_pct": 0.576,
+  "beta": 0.0086,
+  "gross": 0.862
+ },
+ "discovery": {
+  "sharpe": 0.681,
+  "gross_sharpe": 0.783,
+  "ret_pct": 4.61,
+  "cost_pct": 0.692,
+  "beta": 0.0144,
+  "gross": 0.982
+ },
+ "validation": {
+  "sharpe": 0.667,
+  "gross_sharpe": 0.776,
+  "ret_pct": 2.7,
+  "cost_pct": 0.439,
+  "beta": 0.0054,
+  "gross": 0.692
+ },
+ "audit": {
+  "sharpe": 1.785,
+  "gross_sharpe": 1.876,
+  "ret_pct": 9.58,
+  "cost_pct": 0.489,
+  "beta": 0.0054,
+  "gross": 0.808
+ }
+}

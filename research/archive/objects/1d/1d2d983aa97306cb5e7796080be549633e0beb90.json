@@ -1,0 +1,156 @@
+[
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvar/replay_arrays.npz",
+    "bytes": 301533,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvar_future_mutated/replay_arrays.npz",
+    "bytes": 301596,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvar_prefix361/replay_arrays.npz",
+    "bytes": 212399,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvar_repeat_after_other_histories/replay_arrays.npz",
+    "bytes": 301542,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvol/replay_arrays.npz",
+    "bytes": 301555,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvol_future_mutated/replay_arrays.npz",
+    "bytes": 301596,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvol_prefix361/replay_arrays.npz",
+    "bytes": 212400,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/VTvol_repeat_after_other_histories/replay_arrays.npz",
+    "bytes": 301564,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_overlay_20261028/e2e_001/fixed_one/replay_arrays.npz",
+    "bytes": 301156,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_joint_20261028/e2e_001/fixed_one/replay_arrays.npz",
+    "bytes": 301204,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_joint_20261028/e2e_001/joint_F2_VTvol/replay_arrays.npz",
+    "bytes": 301586,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_joint_20261028/e2e_001/joint_F2_VTvol_future_mutated/replay_arrays.npz",
+    "bytes": 301656,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_joint_20261028/e2e_001/joint_F2_VTvol_prefix361/replay_arrays.npz",
+    "bytes": 212459,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  },
+  {
+    "path": "evidence/v2_score_joint_20261028/e2e_001/joint_F2_VTvol_repeat_after_other_histories/replay_arrays.npz",
+    "bytes": 301589,
+    "zip_crc_ok": true,
+    "members": [
+      "forecast.npy",
+      "actual_targets.npy",
+      "virtual_targets.npy",
+      "rows.npy"
+    ]
+  }
+]

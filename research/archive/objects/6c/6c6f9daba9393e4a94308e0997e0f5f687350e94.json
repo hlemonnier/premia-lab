@@ -1,0 +1,13 @@
+{
+  "latest_commit": "ce3fe4e76271709422165d6f24e2fbecd9d0fe07",
+  "prior_commit": "afed8d0cb017acda151c4ea262fc30db7568a4bb",
+  "max_absolute_differences": {
+    "gross_return": 6.578499897602619e-12,
+    "full_cost": 4.627307092591694e-13,
+    "net_return": 6.351399874787722e-12,
+    "closing_target_gross": 2.4905899564942047e-10,
+    "market_return": 0.0
+  },
+  "economic_tolerance": 1e-08,
+  "pass": true
+}

@@ -1,0 +1,16 @@
+{
+  "reviewed_harness_sha256": "cbae6a3bf591bc4fb770321e127b851d92b5390b8122b3f765bf6c9a95e72948",
+  "plan_sha256": "04029aad97a84e6bbfa29500350eba6b98473c0fa5b05bce4fcc9baa4cae6e8c",
+  "observational_hooks": "return original arrays; no optimizer or forecast refits introduced",
+  "coefficient_alignment": "first=127, count=T-127, captured27x27 solves",
+  "economic_alignment": "3527 decisions252..3778;3526 rows253..3778; prior-close diagnostics=observations[:-1]",
+  "math": "dual/primal gap identity, beta-feature identity, postgross scale squared checked algebraically",
+  "qualification": "PLAN absolute duality gap flag must use abs(gap), or be declared positive gap before run",
+  "absolute_gap_flag_observed": false,
+  "execution": "source readback only; this reviewer did not run the real replay",
+  "final_harness_sha256": "c31fb8ce836c6b9d500b8bcf6205cfe4576daac4076f231ef6e8714e509078f3",
+  "executed_copy_sha256": "c31fb8ce836c6b9d500b8bcf6205cfe4576daac4076f231ef6e8714e509078f3",
+  "absolute_gap_flag_observed_after_correction": true,
+  "executed_copy_matches_final_harness": true,
+  "qualification_resolved": true
+}

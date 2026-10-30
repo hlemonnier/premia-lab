@@ -1,0 +1,16 @@
+{
+ "restart_same_length_history": {
+  "pass": false,
+  "max_target_diff": 0.012302093486786271,
+  "max_gross_return_diff": 0.0014306598153332956
+ },
+ "characteristic_fortran_layout": {
+  "pass": false,
+  "max_forecast_diff": 6.071532165918825e-18,
+  "max_target_diff": 4.109329196366751e-12
+ },
+ "allocator_certificate_synthetic": {
+  "pass": false,
+  "reason": "engine exposes no CERTIFICATES record"
+ }
+}

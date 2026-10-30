@@ -1,0 +1,72 @@
+{
+ "forecast_exact": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "decision_indices": {
+  "pass": true,
+  "n": 3527
+ },
+ "virtual_targets_within_1e-8": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "inner_targets_within_1e-8": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "outer_targets_within_1e-8": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "economics_gross_return_within_1e-8": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "economics_fee_within_1e-8": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "economics_closing_gross_within_1e-8": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "economics_market_return_within_1e-8": {
+  "pass": true,
+  "max_abs_diff": 0.0
+ },
+ "net_sharpe_within_1e-8": {
+  "pass": true,
+  "package": 1.4447333005564316,
+  "reference": 1.4447333005564316,
+  "diff": 0.0
+ },
+ "all_solves_certified": {
+  "pass": true,
+  "solves": 7054,
+  "statuses": [
+   "ok"
+  ]
+ },
+ "outer_bounds": {
+  "pass": true,
+  "max_weight": 0.01648397526347724,
+  "max_gross": 3.0432651484632816
+ },
+ "virtual_bound": {
+  "pass": true,
+  "max_weight": 0.015033262260729423
+ },
+ "future_alteration_and_prefix_exact": {
+  "pass": true,
+  "max_protected_outer_diff": 0.0
+ },
+ "cross_history_restart_exact": {
+  "pass": true
+ },
+ "observed": {
+  "package_sharpe": 1.4447333005564316,
+  "forecast_seconds": 4.922944820999987,
+  "rebalance_ms": 10.900786614293414
+ }
+}

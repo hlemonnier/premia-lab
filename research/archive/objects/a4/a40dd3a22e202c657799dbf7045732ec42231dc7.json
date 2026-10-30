@@ -1,0 +1,110 @@
+{
+  "scope": "lossless completed-runtime evidence packaging; no strategy execution",
+  "runtime_result": "evidence/v3_evidence_audit_20261029/runtime_001/result.json",
+  "runtime_result_sha256": "241cd9b1f78191f9d2cfb19a7f3c886fb2dcba769988b731a10a68ffa1f30ca1",
+  "packaging_script_sha256": "fd1c75d4f6a6b1d27b9fb1318a18d20e77ab73a72563b6c47b2df17d7b79d996",
+  "packaging_plan_sha256": "602f1ffdeaf6a8e3aac313cd6c1f3402794f0971a33a89037d27d7a6aa6cf1d6",
+  "gzip_mtime": 0,
+  "gzip_level": 9,
+  "all_round_trips_exact": true,
+  "files": [
+    {
+      "original_path": "certificates.json",
+      "original_bytes": 11014397,
+      "original_sha256": "a5d24ff5ddd0c4719335467aaeab77744d70f725d516f815319fbf76e0c253cb",
+      "compressed_path": "certificates.json.gz",
+      "compressed_bytes": 2157489,
+      "compressed_sha256": "e9d4f2f24f2f83b437c575ef8ff0027f816b50592fc02d612b4e0bd1d0a1e3f6",
+      "round_trip_exact": true,
+      "array_identity": null
+    },
+    {
+      "original_path": "runtime_arrays/rows.npy",
+      "original_bytes": 997968,
+      "original_sha256": "7e3ee3ae6117934da67dd8071f02c2d2dc2794a69793433716711348a36dbb9e",
+      "compressed_path": "rows.npy.gz",
+      "compressed_bytes": 936591,
+      "compressed_sha256": "1a40944aa0bac34fc5f90e057f007e861b23dfed1af49a51dbc107b31c48f1c1",
+      "round_trip_exact": true,
+      "array_identity": {
+        "path": "rows.npy",
+        "shape": [
+          24946,
+          5
+        ],
+        "dtype": "float64",
+        "file_sha256": "7e3ee3ae6117934da67dd8071f02c2d2dc2794a69793433716711348a36dbb9e",
+        "array_sha256": "bbc4017bab27b132a8c05e8fc943b1e395cd3fafa2c267eaeedd4ac9d107ff04"
+      }
+    },
+    {
+      "original_path": "runtime_arrays/final_targets.npy",
+      "original_bytes": 8128,
+      "original_sha256": "638fe0b207ef36c5232d5b47294d81758555fe1c4b5f3b0931fc62f66591d875",
+      "compressed_path": "final_targets.npy.gz",
+      "compressed_bytes": 7778,
+      "compressed_sha256": "1572bb97dd4d0cdf43b16e3af46ebfb8d2526febd4d9c070ace81d44cf1d58dc",
+      "round_trip_exact": true,
+      "array_identity": {
+        "path": "final_targets.npy",
+        "shape": [
+          1000
+        ],
+        "dtype": "float64",
+        "file_sha256": "638fe0b207ef36c5232d5b47294d81758555fe1c4b5f3b0931fc62f66591d875",
+        "array_sha256": "916eacf889d94aacc8374df1e34dc29080a5d79568420e28594380a2a9bbcdf6"
+      }
+    },
+    {
+      "original_path": "runtime_arrays/final_inner_targets.npy",
+      "original_bytes": 8128,
+      "original_sha256": "ec15b910e955e82a205fe1ff70fd25bd2838a9ecb2410376cc1d0eee726216ce",
+      "compressed_path": "final_inner_targets.npy.gz",
+      "compressed_bytes": 7766,
+      "compressed_sha256": "8aeeee63eadc49009975fc8e42585bf0a815762739a673810909d224cebb22e0",
+      "round_trip_exact": true,
+      "array_identity": {
+        "path": "final_inner_targets.npy",
+        "shape": [
+          1000
+        ],
+        "dtype": "float64",
+        "file_sha256": "ec15b910e955e82a205fe1ff70fd25bd2838a9ecb2410376cc1d0eee726216ce",
+        "array_sha256": "531209d8e18d6ea422714da40160a7c51e3e56415d484ea44dc56cb66c481277"
+      }
+    },
+    {
+      "original_path": "runtime_arrays/final_virtual_targets.npy",
+      "original_bytes": 8128,
+      "original_sha256": "6832c44b40682a0c16c2de7005a6a25bacc8e02437b8e650eac62b0e7c00c8b7",
+      "compressed_path": "final_virtual_targets.npy.gz",
+      "compressed_bytes": 7782,
+      "compressed_sha256": "0ffd575aec308d1e0b09fec98f08a685f7aa4197651fe6e0401bcedfb8c34ee3",
+      "round_trip_exact": true,
+      "array_identity": {
+        "path": "final_virtual_targets.npy",
+        "shape": [
+          1000
+        ],
+        "dtype": "float64",
+        "file_sha256": "6832c44b40682a0c16c2de7005a6a25bacc8e02437b8e650eac62b0e7c00c8b7",
+        "array_sha256": "0b304e492a193a2d7821e11f85b189327b46616d71fa38fbcc303cb428ebe14a"
+      }
+    }
+  ],
+  "runtime_forecast": {
+    "durably_archived_by_this_packet": false,
+    "regenerable_from_frozen_runtime_workflow": true,
+    "captured_local_path": "runtime_arrays/forecast.npy",
+    "array_identity": {
+      "path": "forecast.npy",
+      "shape": [
+        25200,
+        1000
+      ],
+      "dtype": "float64",
+      "file_sha256": "c5ba2508692dfdc0725f52bc0232735d6d560532be9b1001f94c0bc9e0d6ad7e",
+      "array_sha256": "67016067a78144f9e2e56116adb97f8317c58c0d1a9c2340308db2771dfb6004"
+    }
+  }
+}

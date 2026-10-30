@@ -1,0 +1,26 @@
+{
+  "selected_model": "F",
+  "status": "selected_main_model",
+  "selection_date": "2026-10-29",
+  "selection_authority": "Hugo explicitly instructed: push F as the main model and update the README with the supplied rationale.",
+  "canonical_package": "handoff",
+  "entrypoint": "handoff/strategy.py",
+  "named_package": "handoff_f",
+  "selected_package_tree": "d027611ab4333c2a8a7095967ccbbfac848f3435",
+  "audited_source_commit": "b78de17a13161d65de4031a33dad2d7bde60c70f",
+  "audited_source_package": "handoff_f",
+  "audited_source_package_tree": "5202912f82bdfcafe5bb3b6617b8ec217eb48fa4",
+  "strategy_blob": "9446112212e6976910932c95bb6e463382d2ed26",
+  "model_f_tree": "d717841faec75186020c6dae18d0fc282c5dca4e",
+  "python_and_dependency_pins_changed": false,
+  "statistical_promotion_gate_passed": false,
+  "decision_basis": "Explicit user-authorized selection under uncertainty; exception to the previous statistical gate, not a retroactive pass.",
+  "development_net_sharpe": 1.493439947872387,
+  "fresh_promotion_replay_matches_audited_daily_economic_rows": true,
+  "references": {
+    "V3": "handoff_v3",
+    "previous_main_C09": "handoff_c09"
+  },
+  "previous_main_commit": "fb8c7024edbc432262709965dbeadc3da02547e1",
+  "external_submission_made": false
+}

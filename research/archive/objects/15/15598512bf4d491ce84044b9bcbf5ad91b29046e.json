@@ -1,0 +1,14 @@
+{
+  "V2": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/fixed_one/daily.csv",
+    "sha256": "86f2812c98570f47df619280c3a1c617a54bd0acb1542763ecdfc2c71e9dd973"
+  },
+  "F2": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_forecast_20261028/actual_001/F2_base/daily.csv",
+    "sha256": "9ba506a3d7743b862b0ed8a7dbf52759aedb5e4591e5632bcdae41be89b9e50b"
+  },
+  "VTvol": {
+    "path": "/workspace/scratch/a83c191d516f/continual-research-takehome/evidence/v2_score_overlay_20261028/actual_001/VTvol/daily.csv",
+    "sha256": "6d84e013edd344ed5aca3037ef479164802d4120fd93e35cef9f6cfd896a5218"
+  }
+}

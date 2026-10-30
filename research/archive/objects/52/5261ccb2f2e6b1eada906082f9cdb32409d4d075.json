@@ -1,0 +1,38 @@
+{
+ "name": "decor",
+ "forecast_s": 3.6,
+ "rebalance_ms": 3.42,
+ "wall_s": 15.7,
+ "all": {
+  "sharpe": 0.97,
+  "gross_sharpe": 1.065,
+  "ret_pct": 4.58,
+  "cost_pct": 0.446,
+  "beta": 0.0079,
+  "gross": 0.866
+ },
+ "discovery": {
+  "sharpe": 0.763,
+  "gross_sharpe": 0.882,
+  "ret_pct": 3.97,
+  "cost_pct": 0.621,
+  "beta": 0.0104,
+  "gross": 0.987
+ },
+ "validation": {
+  "sharpe": 0.694,
+  "gross_sharpe": 0.754,
+  "ret_pct": 2.53,
+  "cost_pct": 0.218,
+  "beta": 0.0048,
+  "gross": 0.697
+ },
+ "audit": {
+  "sharpe": 1.865,
+  "gross_sharpe": 1.937,
+  "ret_pct": 8.95,
+  "cost_pct": 0.343,
+  "beta": 0.0097,
+  "gross": 0.811
+ }
+}

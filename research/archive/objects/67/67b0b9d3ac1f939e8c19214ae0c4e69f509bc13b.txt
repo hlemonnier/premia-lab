@@ -1,0 +1,5 @@
+total statistic 166.4; block-shuffle null mean 150.1; p = 0.2114
+linear only: 110.1 vs null 77.6, p = 0.0270
+squares only: 56.3 vs null 72.6, p = 0.8824
+factors with p < 0.05: [('Frolic', np.float64(0.007)), ('Dread', np.float64(0.031)), ('Snap', np.float64(0.033))]
+cosine(segment mean, full-sample mean): [0.59, 0.4, -0.18, 0.74, 0.8, 0.62]
