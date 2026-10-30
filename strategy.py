@@ -1,48 +1,50 @@
-"""GLS ensemble: two causal return estimates with factor-risk allocation.
-Hugo Lemonnier, October 2026.
+"""N0: shared characteristic premia with a bounded own-residual correction.
 
-I treated the 13 characteristics as shared return and risk exposures rather
-than unrelated stock signals. I use their standardized levels, centred squares
-and trailing beta to estimate slowly changing premia across all stocks. My F2
-baseline uses pooled ridge learners with 1008/252-day half-lives, averaging the
-linear coefficients while retaining the slow fit for squares and beta.
+I treated the 13 characteristics as candidate factor loadings, not economic
+labels. Linear and squared exposures describe shared market-residual return
+variation. To turn that representation into a causal forecast, I estimate
+premia from matured observations using a pooled 27-column design that also
+includes trailing beta. The original ridge estimator has long and short
+memories; only its linear coefficients combine both memories.
 
-I selected a fixed 50/50 combination of two causal estimates of the same return premia: the original F2 forecast and a covariance-weighted, coefficient-wise-regularized forecast. The historical gain survives removing the explicit market sleeve and increasing trading costs, but its added value is not statistically established.
+I then separated two questions: whether factor risks vary predictably, and
+whether correlated estimation errors should have equal influence. I retain
+bounded multihorizon factor-variance adjustments and average the original
+return forecast 50/50 with a covariance-weighted, coefficient-wise-regularized
+estimate. Pure GLS performed worse than the combination. Matched controls
+showed that weighting and shrinkage work jointly, not independently.
 
-The second estimate weights matured observations by covariance known before
-their outcomes and profiles a daily nuisance intercept. Every forecast row t
-uses only rows before t. The blend was fixed before testing: pure GLS scored
-below F, while the combination scored 1.53322 versus 1.49344. Attribution tests
-support weighting and coefficient-wise shrinkage acting jointly, not a general
-advantage for GLS independent of its penalty.
+Cross-stock residual links failed after costs. Their own-history control N0
+was more promising. I keep sign-stable, thresholded own-lag slopes from 504
+matured dates, refit every 126 days from target row 505. The correction is
+projected off the existing design, halved and capped at 20% of core alpha RMS.
+The screen is heuristic, and the mostly reversal-like selected effects change.
 
-I retain F's bounded Gamma factor-variance forecasts, existing correlations
-and specific risk, certified cost-aware allocator, estimated-beta hedge and
-virtual-book sizing. The stock allocator uses its own drifted holdings; I add
-a fixed 0.05 equal-weight market position afterward. This is explicit market
-carry, not stock alpha. Without it, net Sharpe is 1.41900 and beta 0.044; with
-it, beta is 0.094 and annual costs are 0.231% on the supplied history.
+I selected the frozen N0 own-history correction on top of the GLS ensemble because its historical gain at the supplied fees survives removing the explicit market sleeve and the largest signal sources. Its added value remains statistically uncertain; the model was discovered as a control, and selection on the same exposed history can overstate its future performance.
 
-I directed the research, required causal tests and attribution, and selected
-this frozen combination after review. GPT implemented the models and checks;
-Claude separately reproduced and reviewed them as a different AI, not a human.
-I accepted the documented tiny stock-order solver discrepancy without changing
-the solver or relabelling the failed assertion as a pass.
+The cost-aware factor allocator uses an estimated-beta hedge, limits and
+reference-book sizing. I add a deliberate 0.05 equal-weight market position;
+it is carry, not stock alpha. Its internal stock-book cost objective is an
+approximation to combined-book trading, which the original scorer charges.
 
-All fifteen years were exposed during development. Incremental-performance
-intervals include zero, and repeated selection can inflate the score. Premia,
-covariances and market carry can change; the forecast combination may stop
-helping. I do not assume future outperformance, beta compliance or a downside
-floor. Extreme unseen returns can cause ruin despite the sizing safeguards.
+Supplied-history net Sharpe is 1.55078, beta 0.09329; without the market position,
+Sharpe is 1.43669. The gain over GLS is only 0.01756 and its uncertainty interval
+includes zero. All fifteen years are exposed development data. Unstable
+residual effects, changing premia/covariance, turnover and market carry can
+erase the gain. Causality checks do not establish future performance.
 
-Requires gls_alpha.py, all six adjacent model_f helpers, NumPy, SciPy and
-scikit-learn. requirements.txt pins tested versions; the original scorer also
-needs pandas. No research checkout, saved model, data-file read or network is
-required by the strategy. The supplied CSVs and scorer are not redistributed.
+I directed questions, required causal evidence and made selection decisions.
+AI tools implemented and tested the code and drafted analyses. A different AI
+reviewed GLS, not this N0 extension; I claim no separate N0 reviewer sign-off.
+I have not measured this update on the evaluator's hidden continuation.
+
+Run with the unchanged scorer and data. All helpers are in gls_alpha.py,
+model_f/ and model_n0/. NumPy, SciPy and scikit-learn are required; the scorer
+also needs pandas. No trained file, research checkout or network is needed.
 """
-from gls_alpha import CandidatePolicy
+from model_n0.network import NetworkPolicy
 
-POLICY = CandidatePolicy()
+POLICY = NetworkPolicy('N0')
 
 def forecast(returns_history, characteristics_history):
     return POLICY.forecast(returns_history, characteristics_history)

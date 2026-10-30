@@ -1,6 +1,6 @@
 """E2E release check: validate and execute the actual exported submission ZIP.
 
-Adapted before promoting the frozen GLS ensemble at the submission root.
+Adapted before packaging the frozen N0 own-history candidate.
 Uses constructed data only;
 this is a packaging/causality regression check, not an economic validation.
 """
@@ -18,6 +18,7 @@ import zipfile
 
 FILES = {
     'README.md', 'requirements.txt', 'strategy.py', 'gls_alpha.py',
+    'model_n0/__init__.py', 'model_n0/core.py', 'model_n0/network.py',
     'model_f/__init__.py', 'model_f/allocator.py', 'model_f/config.py',
     'model_f/engine.py', 'model_f/factor_risk.py', 'model_f/policy.py',
 }
@@ -26,6 +27,9 @@ MAINTENANCE = {
     '.github/scripts/check_submission.py', '.github/workflows/submission.yml',
 }
 FROZEN_BLOBS = {
+    'model_n0/__init__.py': 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391',
+    'model_n0/core.py': '3fb062edff05fb164fea4b9e04935de0dc13c8c4',
+    'model_n0/network.py': '05262c02863aeb2f5cce09831675798cd1836e5a',
     'gls_alpha.py': 'f26b3c5b8c8578525af7db19f01898140b9b7fc7',
     'model_f/__init__.py': 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391',
     'model_f/allocator.py': 'dc1cfcd4a1c7a3a4c1371525f3946518f5c7e01f',
@@ -35,11 +39,11 @@ FROZEN_BLOBS = {
     'model_f/policy.py': 'eef0be64dc44502a42378ee738c1cb4c5412c55d',
     'requirements.txt': 'f8c52fbb464d1ce17380b1450a954b25918e7459',
 }
-RATIONALE = 'I selected a fixed 50/50 combination of two causal estimates of the same return premia: the original F2 forecast and a covariance-weighted, coefficient-wise-regularized forecast. The historical gain survives removing the explicit market sleeve and increasing trading costs, but its added value is not statistically established.'
+RATIONALE = 'I selected the frozen N0 own-history correction on top of the GLS ensemble because its historical gain at the supplied fees survives removing the explicit market sleeve and the largest signal sources. Its added value remains statistically uncertain; the model was discovered as a control, and selection on the same exposed history can overstate its future performance.'
 
-# Executable structure of the audited standalone GLS entry point.
-ENTRYPOINT = '''from gls_alpha import CandidatePolicy
-POLICY = CandidatePolicy()
+# Executable structure of the frozen N0 submission adapter.
+ENTRYPOINT = '''from model_n0.network import NetworkPolicy
+POLICY = NetworkPolicy('N0')
 def forecast(returns_history, characteristics_history):
     return POLICY.forecast(returns_history, characteristics_history)
 def rebalance(held_positions, expected_returns, returns_history,
@@ -61,12 +65,17 @@ def inside(package: Path) -> dict:
     import strategy
     require(Path(strategy.__file__).resolve() == package / 'strategy.py', 'wrong imported strategy')
     rng = np.random.default_rng(20261029)
-    days, stocks = 420, 48
+    days, stocks = 760, 48
     x = np.empty((days, stocks, 13), dtype=np.float64)
     x[0] = rng.normal(size=(stocks, 13))
     for s in range(1, days):
         x[s] = .99 * x[s - 1] + np.sqrt(1 - .99**2) * rng.normal(size=(stocks, 13))
     r = .008 * rng.normal(size=(days, stocks)) + .003 * rng.normal(size=(days, 1))
+    # Known own-residual reversal ensures the correction is exercised.
+    for s in range(1, days):
+        r[s, 0] = -.5 * r[s - 1, 0] + .008 * rng.normal()
+    require(strategy.POLICY.mode == 'N0' and strategy.POLICY.shared is None,
+            'submission must select raw-history N0, never a cached path')
     costs = np.linspace(.0002, .0008, stocks)
 
     def replay(rr, xx):
@@ -97,13 +106,19 @@ def inside(package: Path) -> dict:
         require(error <= 1e-10, f'{name}: error {error}')
 
     full = replay(r, x)
-    prefix = replay(r[:379], x[:379])
-    equal('prefix_forecasts', full[0][:379], prefix[0])
+    from gls_alpha import CandidatePolicy
+    reference = CandidatePolicy().forecast(r, x)
+    equal('no_correction_before_activation', full[0][:505], reference[:505])
+    require(np.max(np.abs(full[0][505:, :stocks] - reference[505:, :stocks])) > 1e-12,
+            'own-history fixture did not activate N0')
+    equal('risk_payload_unchanged', full[0][:, stocks:], reference[:, stocks:])
+    prefix = replay(r[:631], x[:631])
+    equal('prefix_forecasts', full[0][:631], prefix[0])
     equal('prefix_positions', full[1][:len(prefix[1])], prefix[1])
     equal('prefix_cashflows', full[2][:len(prefix[2])], prefix[2])
     for kind in ('returns', 'characteristics', 'joint'):
         rr, xx = r.copy(), x.copy()
-        cut = 378
+        cut = 630
         if kind != 'characteristics':
             rr[cut:] = rng.normal(0, .012, rr[cut:].shape)
         if kind != 'returns':
@@ -140,7 +155,7 @@ def main() -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(['git', '-C', str(repo), 'archive', '--format=zip',
                     '--output=' + str(output), args.ref], check=True)
-    with zipfile.ZipFile(output) as archive, tempfile.TemporaryDirectory(prefix='gls_submission_') as temp:
+    with zipfile.ZipFile(output) as archive, tempfile.TemporaryDirectory(prefix='n0_submission_') as temp:
         names = {i.filename for i in archive.infolist() if not i.is_dir()}
         require(names == FILES, f'export contents differ: {sorted(names ^ FILES)}')
         package = Path(temp)
@@ -159,7 +174,7 @@ def main() -> None:
         require(RATIONALE in ' '.join(note.split()), 'selection rationale missing from strategy note')
         require(RATIONALE in ' '.join((package / 'README.md').read_text().split()), 'README rationale missing')
         module.body = module.body[1:]
-        require(ast.dump(module) == ast.dump(ast.parse(ENTRYPOINT)), 'audited GLS executable entry point changed')
+        require(ast.dump(module) == ast.dump(ast.parse(ENTRYPOINT)), 'audited N0 executable entry point changed')
         env = dict(os.environ, PYTHONPATH='', PYTHONDONTWRITEBYTECODE='1',
                    OPENBLAS_NUM_THREADS='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
         child = subprocess.run([sys.executable, '-I', str(Path(__file__).resolve()), '--inside', str(package)],
@@ -171,7 +186,7 @@ def main() -> None:
         'archive': output.name, 'archive_files': sorted(names),
         'archive_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
         'frozen_helper_and_requirements_checks': len(FROZEN_BLOBS),
-        'entrypoint_matches_audited_gls': True, 'e2e': result}
+        'entrypoint_matches_frozen_n0_adapter': True, 'e2e': result}
     output.with_suffix('.checks.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(receipt, indent=2))
 
