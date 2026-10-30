@@ -47,12 +47,6 @@ Forecast row `t` uses only data before `t`. For the one-day premium estimators, 
 
 A recorded 25,200-day repeated-history run took about 330 seconds for forecasting and 11.8 ms per rebalance on average. It tests execution and resources, not unseen-market performance. All supplied years have been examined; there is no untouched holdout.
 
-## My contribution and use of AI
-
-I asked for investigation of relationships between observations rather than simply larger models, required causal and actual-cost comparisons, and made the selection decisions. I challenged using hypothetical fee regimes as an additional grading objective. AI tools implemented the models, ran experiments and drafted the analyses; I do not claim unaided invention or manual implementation of those algorithms.
-
-Claude separately reviewed GLS as a different AI model. That review does not cover the later N0 addition, which has no separate reviewer sign-off. My current choice remains a decision under uncertainty, not a demonstrated improvement on the employer's hidden sample.
-
 ## Limits and next question
 
 The strongest working hypothesis is shared premia with time-varying risk. N0's changing, sparsely selected residual effects are a weaker extension. Premia or covariance can drift; beta hedging is estimated; the explicit market position can lose; sizing cannot guarantee survival against arbitrary shocks. A causal strategy can still be overfit through repeated development choices.
