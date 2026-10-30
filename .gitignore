@@ -19,3 +19,6 @@ dist/
 /characteristics.csv
 /costs.csv
 /score.py
+
+# Keep only reviewed archival logs; ordinary run logs remain ignored.
+!research/archive/objects/**
