@@ -1,18 +1,70 @@
-# Publishing the project safely
+# Public repository and discovery
 
-The existing private repository contains externally supplied material in its Git history. A clean current working tree or deleted branches do not remove old Git objects. Do not switch that legacy repository to public and assume the old content is hidden.
+## Current status
 
-The prepared route publishes **a new repository with a clean root commit**, called `premia-lab`, and keeps the old history private. The reviewed code, documentation and filtered research archive are copied; the original benchmark data, scorer and specification are not.
+The owner renamed the existing repository to
+[`hlemonnier/premia-lab`](https://github.com/hlemonnier/premia-lab) and made it public.
+Both settings were verified on 31 October 2026. This was an in-place change, not a
+new clean-history repository. `main` remains the maintained branch.
 
-On a machine with Git, Python and the GitHub CLI installed and authenticated, run from this project:
+The older [migration record](project-migration.md) describes the state and proposed
+publication route at that earlier point. It is retained as a historical record,
+not a statement that the repository is still private.
 
-```bash
-python tools/publish_public.py             # validate and preview; no remote writes
-python tools/publish_public.py --publish   # create OWNER/premia-lab, public, only main
+## Licensing and citation
+
+Original maintained code and associated documentation are MIT-licensed; see
+[LICENSE](../LICENSE) and [NOTICE.md](../NOTICE.md) for scope and external-material
+exceptions. [CITATION.cff](../CITATION.cff) contains the canonical repository URL,
+author and research keywords. Cite an exact commit for reproducibility.
+
+## Repository description and topics
+
+The intended About description is:
+
+> Characteristic-factor forecasts, conditional risk and cost-aware portfolios, with causal tests and an auditable research archive.
+
+Recommended GitHub topics:
+
+```text
+quantitative-finance, quantitative-research, factor-models,
+portfolio-optimization, risk-management, transaction-costs,
+backtesting, time-series, statistical-learning,
+reproducible-research, synthetic-data, python
 ```
 
-The script refuses to overwrite an existing destination. It uses `gh`'s existing authentication; do not paste tokens into chat. It does not delete the private repository or transfer its history. A software license is a separate decision and is not silently selected by this operation.
+These are repository settings, not inferred automatically from a README or citation
+file. Committing this document does **not** apply them. An authenticated repository
+administrator can apply the description and add the topics without changing code,
+visibility, branches or history:
 
-The original branch consolidation preserves all branch heads as parents in the private repository before removing the corresponding branch references. The public archive explicitly records retained source/report files, redactions and omissions. A historical source snapshot is not a claim that all experiments were rerun during publication.
+```bash
+gh repo edit hlemonnier/premia-lab \
+  --description "Characteristic-factor forecasts, conditional risk and cost-aware portfolios, with causal tests and an auditable research archive." \
+  --add-topic quantitative-finance,quantitative-research,factor-models,portfolio-optimization,risk-management,transaction-costs,backtesting,time-series,statistical-learning,reproducible-research,synthetic-data,python
+```
 
-References: GitHub's documentation on [removing sensitive data](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) and the [GitHub CLI repository creation command](https://cli.github.com/manual/gh_repo_create).
+Read back the actual settings with:
+
+```bash
+gh api repos/hlemonnier/premia-lab --jq '{name: .full_name, visibility: .visibility, description: .description, topics: .topics, license: .license.spdx_id}'
+```
+
+No RL, deep-learning or live-trading topic is suggested: those would misdescribe
+the maintained implementation.
+
+## Legacy history
+
+The maintained tree excludes raw benchmark inputs and the external scorer and
+specification. Renaming or changing visibility does not remove older Git objects.
+The existing history was not sanitized by the public-facing documentation update.
+No project license grants rights to third-party material in earlier revisions.
+
+`tools/publish_public.py` is retained as a clean-snapshot export utility. Its preview
+performs no remote write; its publish mode refuses an existing destination. It is
+not needed to publish this already-public repository, and must not be used to
+replace it accidentally. Never put an access token in a document or chat.
+
+References: [GitHub CLI repository editing](https://cli.github.com/manual/gh_repo_edit),
+[repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics),
+and [citation files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files).

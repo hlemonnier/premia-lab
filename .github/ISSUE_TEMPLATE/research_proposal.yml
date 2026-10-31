@@ -1,0 +1,32 @@
+name: Research proposal
+description: Define a mechanism, comparison and validation plan before new experiments.
+title: "[Research] "
+body:
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis and mechanism
+      description: What should improve, why, and what finding would contradict the hypothesis?
+    validations:
+      required: true
+  - type: textarea
+    id: controls
+    attributes:
+      label: Baseline, matched control and fixed experiment budget
+      description: Identify what changes, what stays fixed, and which settings are prespecified.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Information boundary and decision rule
+      description: Specify label maturity, fees, data already inspected, checks and stopping rule.
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: What has already been tried?
+      description: Disclose observed scores, failed runs and any post-result choices. Write none if not started.
+    validations:
+      required: true

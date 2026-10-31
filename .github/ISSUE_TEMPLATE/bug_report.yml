@@ -1,0 +1,35 @@
+name: Reproducible bug
+description: Report an execution, accounting, causality or documentation defect.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic inputs. Do not attach benchmark data, credentials or private correspondence."
+  - type: textarea
+    id: environment
+    attributes:
+      label: Revision and environment
+      description: Commit, Python, operating system and relevant package versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Exact command and a small synthetic input or code example.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+      description: Include the error and why it violates the documented contract.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Sharing check
+      options:
+        - label: "I removed credentials, private data and restricted benchmark material."
+          required: true

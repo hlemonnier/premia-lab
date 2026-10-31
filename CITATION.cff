@@ -1,15 +1,32 @@
 cff-version: 1.2.0
-message: "Please cite the project and the exact revision used in your research."
-title: "Premia Lab: causal forecasts and cost-aware portfolio research"
+message: "Please cite Premia Lab and record the exact commit used; historical scores are development results, not live performance."
+title: "Premia Lab: Causal Forecasts and Cost-Aware Portfolios"
 type: software
 version: "0.1.0"
 date-released: "2026-10-30"
 authors:
   - family-names: Lemonnier
     given-names: Hugo
-abstract: "An inspectable research workbench for characteristic-based equity forecasts, conditional risk and transaction-cost-aware portfolio construction. Historical results concern an exposed simulated development sample, not live trading."
+repository-code: "https://github.com/hlemonnier/premia-lab"
+url: "https://github.com/hlemonnier/premia-lab"
+license: MIT
+abstract: >-
+  A quantitative research workbench for characteristic-factor return estimation,
+  conditional risk and transaction-cost-aware portfolio construction. The maintained
+  N0 policy combines shared-premium estimates with a bounded own-stock residual
+  correction. The project retains causal execution tests, matched controls and
+  negative findings. An independent synthetic demo runs without benchmark inputs;
+  recorded historical scores concern an exposed simulated development sample.
 keywords:
   - quantitative finance
-  - portfolio construction
-  - causal backtesting
+  - quantitative research
   - factor models
+  - portfolio optimization
+  - risk management
+  - transaction costs
+  - backtesting
+  - time series
+  - statistical learning
+  - reproducible research
+  - synthetic data
+  - Python
