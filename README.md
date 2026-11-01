@@ -17,8 +17,6 @@
   <a href="docs/architecture.md">Architecture</a> ·
   <a href="research/README.md">Research ledger</a> ·
   <a href="docs/reproducibility.md">Reproducibility</a> ·
-  <a href="CONTRIBUTING.md">Contributing</a> ·
-  <a href="CITATION.cff">Cite</a>
 </p>
 
 ## The question
@@ -174,16 +172,15 @@ My next question is whether faster residual signals need trading decisions match
 to their own persistence. That is a research direction, **not an implemented improvement**.
 See the [protocol](docs/research-method.md) and [limitations](docs/limitations.md).
 
-## Reuse, citation and contributions
+## License and scope
 
 Original maintained code and associated project documentation are released under
 the [MIT License](LICENSE). Third-party material and dependencies retain their own
 rights; the research archive and legacy history are not a blanket redistribution
-grant. [NOTICE.md](NOTICE.md) records that boundary.
+grant. [NOTICE.md](NOTICE.md) explains these boundaries.
 
-[CITATION.cff](CITATION.cff) provides software-citation metadata. Please also record
-the exact commit used. For bugs or new experiments, read
-[CONTRIBUTING.md](CONTRIBUTING.md) and use the issue templates.
+For reproducibility, reference the exact Git commit used. Bugs and research
+proposals can be discussed through the repository's issue templates.
 
 **Related research:** [The Cost of Learning to Trade](https://github.com/hlemonnier/the-cost-of-learning-to-trade)
 studies execution feedback, Bayesian inference and sequential control. It is a

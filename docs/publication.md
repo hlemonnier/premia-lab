@@ -11,12 +11,11 @@ The older [migration record](project-migration.md) describes the state and propo
 publication route at that earlier point. It is retained as a historical record,
 not a statement that the repository is still private.
 
-## Licensing and citation
+## Licensing
 
 Original maintained code and associated documentation are MIT-licensed; see
 [LICENSE](../LICENSE) and [NOTICE.md](../NOTICE.md) for scope and external-material
-exceptions. [CITATION.cff](../CITATION.cff) contains the canonical repository URL,
-author and research keywords. Cite an exact commit for reproducibility.
+exceptions. Reference the canonical repository URL and exact commit for reproducibility.
 
 ## Repository description and topics
 
@@ -33,8 +32,7 @@ backtesting, time-series, statistical-learning,
 reproducible-research, synthetic-data, python
 ```
 
-These are repository settings, not inferred automatically from a README or citation
-file. Committing this document does **not** apply them. An authenticated repository
+These are repository settings, not inferred automatically from repository documentation. Committing this document does **not** apply them. An authenticated repository
 administrator can apply the description and add the topics without changing code,
 visibility, branches or history:
 
@@ -66,5 +64,4 @@ not needed to publish this already-public repository, and must not be used to
 replace it accidentally. Never put an access token in a document or chat.
 
 References: [GitHub CLI repository editing](https://cli.github.com/manual/gh_repo_edit),
-[repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics),
-and [citation files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files).
+[repository topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).
